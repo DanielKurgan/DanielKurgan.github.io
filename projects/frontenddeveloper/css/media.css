@@ -1,0 +1,469 @@
+@media screen and (max-width: 890px) {
+	
+	/*Menu*/
+	.containerMenu {
+		padding: 0px 25px;
+	}
+	.menu ul li {
+		padding: 5px;
+		margin-right: 20px;
+	}
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+	/*Background*/
+	.background {
+		width: 100%;
+		height: 100%;
+		background-size: 150% 150%;
+		background-position: center right;
+	}
+
+	/*Home*/
+	.home-content p {
+		line-height: 45px;
+		font-size: 48px;
+	}
+	.home-content p span2 {
+		font-size: 15px;
+		font-weight: 600;
+	}
+
+	/*Menu*/
+	.menu {
+		min-height: 60px;
+	}
+	.body_scroll {
+		padding-top: 60px;
+	}
+	.menu #logo {
+		max-width: 50px;
+		padding: 8px 15px;
+		border: 1px solid white;
+	}
+	button.switch {
+		font-size: 12px;
+		line-height: 30px;
+		height: 30px;
+		width: 110px;
+	}
+	button.switch:hover {
+		line-height: 40px;
+		height: 40px;
+	}
+
+	/*Info*/
+	.info {
+		padding: 0 60px;
+	}
+	.info > h2 {
+		margin-top: 20px;
+		font-size: 22px;
+	}
+	.info .wrapper .package {
+		margin-top: 30px;
+		width: 258px;
+		padding: 30px 20px;
+		border-radius: 10px;
+		transition: .3s;
+	}
+
+	/*MyWorks*/
+	.myworks {
+		padding: 0 60px;
+		padding-bottom: 60px;
+	}
+	.myworks > h2 {
+		font-size: 22px;
+	}
+
+	/*Footer*/
+	footer {
+		background-size: 40%;
+		background-position: 56% 90%;
+	}
+	#contacts {
+		padding: 22px 60px 9px 60px;
+	}
+	#feedback p {
+		font-size: 10px;
+	}
+}
+
+
+
+@media screen and (max-width: 680px) {
+	/*Home*/
+	.home-content p {
+		font-size:35px;
+	}
+	.home-content p span {
+		font-size:15px;
+	}
+
+	/*Menu*/
+	.menu ul {
+		padding-left: 10px;
+	}
+	.menu ul li {
+		padding: 0px;
+		margin-right: 5px;
+	}
+	a.switch {
+		line-height: 30px;
+		height: 30px;
+		width: 100px;
+	}
+
+	/*Info*/
+	.info {
+		padding: 0 30px;
+	}
+	.package h2 {
+		font-size: 16px;
+	}
+	.package p {
+		font-size: 12px;
+	}
+	/*Footer*/
+
+	#contacts {
+		padding: 22px 30px 9px 30px;
+	}
+	#feedback p {
+		font-size: 11px;
+	}
+	#contacts .wrapper .social ul li {
+		max-width: 40px;
+		margin-right: 10px;
+	}
+	.social h2 {
+		font-size: 19px;
+	}
+	#contacts .wrapper .social ul li a img {
+		max-width: 90%;
+	}
+}
+
+
+
+@media screen and (max-width: 570px) {
+
+	/*Menu*/
+	.menu {
+		min-height: 50px;
+	}
+	.body_scroll {
+		padding-top: 50px;
+	}
+	.menu #logo {
+		max-width: 40px;
+	}
+	.menu ul li a {
+		font-size: 12px;
+	}
+	a.switch {
+		font-size: 12px;
+	}
+	/*Info*/
+	.info > h2 {
+		font-size: 18px;
+	}
+	.info .wrapper .package {
+		width: 180px;
+		padding: 30px 5px;
+	}
+	.package img {
+		max-width: 100px;
+	}
+	/*MyWorks*/
+	.myworks > h2 {
+		font-size: 18px;
+	}
+	.myworks {
+		padding: 0 30px;
+		padding-bottom: 60px;
+	}
+	/*Footer*/
+	footer {
+		background-size: 50%;
+		background-position: 50% 90%;
+	}
+	.social h2 {
+		font-size: 16px;
+	}
+	#contacts .wrapper .social ul li a img {
+		max-width: 70%;
+	}
+	#feedback p {
+		font-size: 9px;
+	}
+}
+
+
+
+@media screen and (max-width: 425px) {
+
+	/*Background*/
+	.background {
+		background-image: url("../img/backgroundMobile.jpg");
+		background-size: 120% 130%;
+		width: 100%;
+		height: 100%;
+	}
+
+	/*Home*/
+	.home-content p span {
+		font-size: 10px;
+	}
+	.home-content p {
+		line-height: 25px;
+		font-size: 25px;
+	}
+
+	/*Menu*/
+	.containerMenu {
+		padding: 0px 5px;
+	}
+	.menu {
+		min-height: 20px;
+	}
+	.body_scroll {
+		padding-top: 20px;
+	}
+	.menu #logo {
+		max-width: 25px;
+		padding: 3px 6px;
+	}
+	.menu ul {
+		margin: 10px;
+	}
+	.menu ul li a {
+		font-size: 10px;
+	}
+	button.switch {
+		font-size: 8px;
+		line-height: 20px;
+		height: 20px;
+		width: inherit;
+	}
+	button.switch:hover {
+		margin-top: -10px;
+		height: 30px;
+	}
+	.menu ul li a {
+		padding: 3px;
+		border-radius: 2px;
+	}
+	.scroll-down {
+		height: 30px;
+		width: 30px;
+	}
+	.scroll-down a {
+		font-size: 12px;
+		margin-left: 8px;
+	}
+	.scroll-down .fa {
+		margin-top:-15px;
+	}
+
+	/*Info*/
+	.info .wrapper {
+		grid-template-columns: 1fr;
+		display: grid;
+	}
+	.info > h2 {
+		text-align:center;
+		font-size: 14px;
+	}
+	.info > p {
+		text-align:center;
+		font-size: 11px;
+		line-height: 15px;
+	}
+	.info .wrapper .package {
+		width: 180px;
+		padding: 5px 10px;
+		justify-self: center;
+		margin-top: 20px;
+		border: 1px solid #222;
+	}
+	.package img {
+		max-width: 100%;
+	}
+	.package h2 {
+		font-size: 14px;
+	}
+	.package p {
+		font-size: 10px;
+	}
+
+	/*MyWork*/
+	.block {
+		margin-bottom:10px;
+	}
+	.myworks > h2 {
+		margin-top: 150px;
+		font-size: 20px;
+		text-align: center;
+		margin-bottom: 40px;
+	}
+	.myworks .wrapper .block p {
+		margin-top: 40px;
+	}
+	.myworks .wrapper {
+		justify-content: center;
+		display: grid;
+	}
+
+	/*Footer*/
+	footer {
+		background-size: 70%;
+		background-position: 50% 95%;
+	}
+	.social h2 {
+		font-size: 12px;
+	}
+	#feedback p {
+		font-size: 6px;
+	}
+	#contacts .wrapper .social ul li {
+		margin-right: 0px;
+	}
+	#contacts .wrapper .social ul li a img {
+		max-width:60%;
+	}
+	#contacts #copyright {
+		margin-top: 20px;
+		font-size:10px;
+	}
+}
+
+
+
+@media screen and (max-width: 375px) {
+
+	/*Home*/
+	.home-content p span {
+		font-size: 10px;
+	}
+	.home-content p {
+		font-size: 25px;
+	}
+
+	/*Menu*/
+	.containerMenu {
+		padding: 0px 5px;
+	}
+	.menu #logo {
+		padding: 4px 6px;
+	}
+	.menu ul {
+		margin: 10px 0;
+	}
+	.menu ul li a {
+		font-size: 10px;
+		letter-spacing: 0.5px;
+	}
+	a.switch {
+		letter-spacing: 0.5px;
+		width: 60px;
+	}
+
+	/*Info*/
+	.info {
+		padding: 0px 20px;
+	}
+	.info > p {
+		font-size: 10px;
+		line-height: 13px;
+	}
+	.package h2 {
+		font-size: 10px;
+	}
+	.package p {
+		font-size: 8px;
+	}
+	.info .wrapper .package {
+		width: 180px;
+		padding: 10px 5px;
+	}
+	
+	/*MyWorks*/
+	.myworks {
+		padding: 0 20px;
+		padding-bottom: 60px;
+	}
+	#contacts {
+		padding: 11px 15px 10px 15px;
+	}
+	.social h2 {
+		font-size: 10px;
+	}
+	.myworks .wrapper .block img {
+		margin-top: 30px;
+	}
+
+	/*Footer*/
+	footer {
+		background-size: 100%;
+		background-position: 50% 90%;
+	}
+}
+
+
+
+@media screen and (max-width: 320px) {
+
+	/*Home*/
+	.home-content p span {
+		font-size: 9px;
+	}
+	.home-content p {
+		font-size: 22px;
+	}
+
+	/*Menu*/
+	.menu #logo {
+		padding: 4px 4px;
+	}
+	.menu ul {
+		margin: 5px 0;
+	}
+	button.switch {
+		font-size: 8px;
+		line-height: 20px;
+		height: 20px;
+		width: 80px;
+	}
+	.containerMenu {
+		padding: 0px 0px;
+	}
+
+	/*Info*/
+	.info {
+		padding: 0px 10px;
+	}
+	.info > h2 {
+		margin-top: 0px;
+	}
+	.info > p {
+		font-size: 10px;
+		line-height: 12px;
+	}
+
+	/*MyWorks*/
+	.myworks {
+		padding: 0 10px;
+		padding-bottom: 60px;
+	}
+
+	/*Footer*/
+	footer {
+		background-size: 100%;
+		background-position: 50% 90%;
+	}
+}

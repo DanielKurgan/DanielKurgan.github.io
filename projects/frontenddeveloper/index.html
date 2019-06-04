@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<title>Front-End Developer DKvinov</title>
+	<link rel="stylesheet" href="css/fonts.css"/>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" href="css/media.css"/>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+
+
+	<!-- Background -->
+	<div class="background"></div>
+	<!-- Home -->
+	<header class="home">
+		<div class="home-table">
+			<div class="home-cell">
+				<div class="home-content">
+					<p id="welcome"></p>
+				</div>
+			</div>
+		</div>
+		<div class="scroll-down">
+			<a href="#logo"><span><i class="fa fa-angle-down fa-2x" aria-hidden="true"></i></span></a>
+		</div>
+	</header>
+
+	<!-- Menu -->
+	<div class="containerMenu">
+		<div class="container">
+			<div class="menu">
+				<img id="logo" src="img/logo12.png" alt="logo">
+				<nav>
+					<ul>
+						<li><a href="#info">Обо мне</a></li>
+						<li><a href="#myworks">Портфолио</a></li>
+						<li><a href="#contacts">Контакты</a></li>
+					</ul>
+				</nav>
+				<div class="popUpButton"><button class="switch">Связаться</button></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="body_scroll">
+		<!-- Main -->
+		<section class="main">
+			<div class="container">
+				<a id="info"></a>
+				<div class="info">
+					<h2>Обо мне</h2>
+					<p>Меня зовут Даниил, я Front-End разработчик. Пишу семантичный, валидный и чистый код с использованием современных технологий. Мои сайты отлично смотрятся на всех современных устройствах и во всех браузерах. Сайты, созданные мною хорошо оптимизированы, просты в использовании и богаты функционалом. Делаю работу с удовольствием, качественно и в оговорённые дедлайны. Просто порядочный и честный человек.</p>
+					<div class="wrapper">
+						<div class="package">
+							<img alt="responsive" src="img/responsive.png">
+							<h2>Адаптивность</h2>
+							<p>Ваш сайт отзывчив на всех устройствах</p>
+						</div>
+						<div class="package">
+							<img alt="crossbrowser" src="img/crossbrowser.png">
+							<h2>Кроссбраузерность</h2>
+							<p>Во всех браузерах сайт будет выглядеть одинаково</p>
+						</div>
+						<div class="package">
+							<img alt="clearcode" src="img/clearcode.png">
+							<h2>Чистый код</h2>
+							<p>Читабельный не только для машины, но и  людей код</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- MyWorks -->
+				<section class="myworks">
+					<a id="myworks"></a>
+					<h2>Мои последние работы</h2>
+					<div class="wrapper">
+
+						<div class="block">
+							<p>Unique-Tech</p><a href="https://danielkurgan.github.io/projects/UniqueTech/index.html" target="_blank"><img src="img/uniquework.jpg" alt="Unique-Tech"></a>
+						</div>
+
+						<div class="block">
+							<p>GameOfBooms</p><a href="https://danielkurgan.github.io/projects/GameOfBooms/index.html" target="_blank"><img src="img/gamework.jpg" alt="GameWork"></a>
+						</div>
+
+						<div class="block">
+							<p>RazerMouse</p><a href="https://danielkurgan.github.io/projects/RazerMouse/index.html" target="_blank"><img src="img/razerwork.jpg" alt="RazerWork"></a>
+						</div>
+					</div>
+				</section>
+			</div>
+		</section>
+		<footer id="contacts">
+			<div class="container">
+				<div class="wrapper">
+					<div class="social">
+						<a name="contacts"></a>
+						<h2>Связь со мной</h2>
+						<ul>
+							<li><a href="http://t-do.ru/danielkvinov" target="_blank"><img src="img/telegram.png" alt="TELEGRAM"></a></li>
+							<li><a href="https://vk.com/danielkvinov" target="_blank"><img src="img/vk.png" alt="VK"></a></li>
+							<li><a href="https://freelancehunt.com/freelancer/WantMan.html " target="_blank"><img src="img/freelancehunt.png" alt="FREELANCEHUNT"></a></li>
+						</ul>
+					</div>
+					<div id="feedback">
+						<div class="block">
+							<p>Остались вопросы?</p>
+							<div class="popUpButton"><button class="switch">Связаться</button></div>
+						</div>
+					</div>
+				</div>
+				<p id="copyright">Все права защищены 2019г.</p>
+			</div>
+		</footer>
+	</div>
+	<div class="popUpContent">
+		<div class="popUpMain">
+			<div class="close closed">
+				<p>X</p>
+			</div>
+			<!-- Form -->
+			<form>
+				<input type="text" name="name" placeholder="Имя" required="">
+				<input type="text" name="telegram" placeholder="Telegram" required="">
+				<input type="text" name="vk" placeholder="VK" required="">
+				<div class="custom-select">
+					<select id="mySelect" name="service" required="">
+						<option value="Услуга:" selected="selected">Услуга:</option>
+						<option value="Landing page">Landing page</option>
+						<option value="Сайт визитка">Сайт визитка</option>
+					</select>
+					<div class="select-selected">Услуга:</div>
+					<div class="select-items select-hide">
+						<div>Услуга:</div>
+						<div>Landing page</div>
+						<div>Сайт визитка</div>
+						<div>Корпоративный сайт</div>
+					</div>
+				</div>
+				<button onclick="opennewtab('thanks.html')">Отправить заявку</button>
+			</form>
+		</div>
+	</div>
+
+
+	<!-- JAVASCRIPT -->
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+	<!-- For mobile background height -->
+	<script>
+		let vh = window.innerHeight * 0.01;
+		document.documentElement.style.setProperty('--vh', `${vh}px`);
+	</script>
+	<!-- Thanks html -->
+	<script>
+		function opennewtab(url ) {
+			var win=window.open(url);
+		}
+	</script>
+	<!-- Load content -->
+	<script>
+		$(document).ready(function(){
+			$('body').toggle(500);
+		});
+	</script>
+
+	<!-- PopUp -->
+	<script>
+		$('.popUpButton').click(function() {
+			$('.popUpContent' ).toggle();
+		})
+		$('.close').click(function() {
+			$('.popUpContent').hide();
+		})
+	</script>
+
+	<!-- Typeit -->
+	<script src="https://cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js"></script>
+	<script>
+		$('#welcome').typeIt({
+			speed: 70,
+			autoStart: true
+		})
+		.tiType('<span>Привет, меня зовут Даниил</span>')
+		.tiPause(650)
+		.tiBreak()
+		.tiType('Я ВЕБ-РАЗРАБОТЧИК ')
+		.tiBreak() .tiPause(450)
+		.tiType('<span id="span2">делаю крутые сайты для всех устройств </span>')
+		.tiPause(650)
+		.tiDelete(10)
+		.tiType('<span id="span2">типов устройств</span>')
+		.tiPause(450)
+		.tiType('<span id="span2"> :)</span>')
+		.tiSettings({speed: 700})
+	</script>
+
+	<!-- Top parallax effect -->
+	<script async src="js/backgroundParallax.js"></script>
+
+	<!-- Distance between menu and top -->
+	<script async src="js/fixmenu.js"></script>
+
+	<!-- Smooth scrolling -->
+	<script async src="js/scroll.js"></script>
+
+</body>
+</html>

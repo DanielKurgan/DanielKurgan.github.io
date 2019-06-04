@@ -1,0 +1,180 @@
+  /*Верхушка*/
+  body {
+  	font-family:Raleway, sans-serif;
+  	margin:0;
+  	box-sizing:border-box;
+  }
+  .fa {
+  	color:black;
+  }
+  .menu a {
+  	background: #333;
+  	letter-spacing: 1px;
+  	font-weight: normal;
+  }
+  .menu {
+  	z-index:3;
+  	left:1%;
+  	bottom:91%;
+  	position:fixed;
+  }
+  .menu li {
+  	color:white;
+  	font-size:1.2em;
+  }
+  .header {
+  	background-image: url("../img/background.jpeg");
+  	background-position:center center fixed;
+  	background-size:cover;
+  	background-repeat: no-repeat;
+  }
+  .top_job p {
+  	color:#082805;
+  	width:99%;
+  	margin-top:3%;
+  	text-align:center;
+  	font-family:Raleway, sans-serif;
+  	font-size:15px;
+  	font-weight:bold;
+  }
+  .top_text p {
+  	color: #082805;
+  	padding:10px 35px;
+  	margin-top:25%;
+  	margin-left:0%;
+  	text-align:center;
+  	font-family:PT Sans, sans-serif;
+  	font-weight:bold;
+  	font-size:2.8em;
+  	border: 6px solid #1f591a;
+  	box-shadow: 0 0 30px 1px;
+  }
+  .top_under_text p {
+  	color: #072704;
+  	width:45%;
+  	margin-left:27%;
+  	margin-bottom:44%;
+  	text-align:center;
+  	font-weight:bold;
+  	font-size:15px;
+  	font-family:Raleway, sans-serif;
+  }
+
+  /*Обо мне*/
+  .two_title p {
+  	width:27%;
+  	margin-top:10%;
+  	margin-left:37%;
+  	margin-bottom:16%;
+  	font-size:213%;
+  	font-weight:bold;
+  	border-bottom:2px solid grey;
+  	text-align:center;
+  }
+  g {
+  	font-size:160%;
+  }
+  e {
+  	font-size:140%;
+  }
+  .two_text p {
+  	width:90%;
+  	padding:11px;
+  	margin-top:-5%;
+  	margin-left:6%;
+  	margin-bottom:10%;
+  	text-align:center;
+  	font-size:130%;
+  	font-weight:bold;
+  	font-family:Raleway, sans-serif;
+  	border-left:2px solid grey;
+  	line-height: 230%
+  }
+
+  /*МОИ ПРОЕКТЫ*/
+  .title p {
+  	color:#FEFEFE;
+  	width: 21%;
+  	margin-left:40%;
+  	margin-top:10%;
+  	margin-bottom:17%;
+  	text-align:center;
+  	font-family:Raleway, sans-serif;
+  	font-size:213%;
+  	font-weight:bold;
+  	border-bottom:1px solid #FEFEFE;
+  }
+  .project img {
+  	width:100%;
+  	margin-bottom:11px;
+  	border:1px solid white;
+  }
+  .feature_title {
+  	color:white;
+  	font-family:Raleway, sans-serif;
+  	font-size:170%; 
+  	font-weight:bold;
+  }
+  .feature_text {
+  	color:white;
+  	padding-bottom:30%;
+  	font-size:140%;
+  	font-family:Raleway, sans-serif;
+  }
+
+  /*Связь Со Мной*/
+  .me_title p {
+  	width:24%;
+  	margin-left:35%;
+  	margin-top:10%;
+  	margin-bottom:23%;
+  	text-align:center;
+  	font-family:Raleway, sans-serif;
+  	font-size:213%;
+  	font-weight:bold;
+  	border-bottom:2px solid black;
+  }
+  .me1 {
+  	margin-left:8%;
+  }
+  .me1 i {
+  	color:#3DB22A;
+  	font-size:1000%;
+  	font-weight:normal;
+  }
+  .me1 h3 {
+  	color: #222222;
+  	text-align: left;
+  	font-size: 140%;
+  	font-weight:bold;
+  	font-family:Raleway, sans-serif;
+  }
+  .me1 p {
+  	color:#3DB22A;
+  	margin-top:3%;
+  	font-family:Raleway, sans-serif;
+  	font-size:130%;
+  }
+  .me1 a {
+  	color:#3DB22A;
+  }
+  .me {
+  	padding-bottom:20%;
+  }
+  /*FOOTER*/
+
+  footer {
+  	color:white;
+  	background-color:#222222;
+  	height:100px;
+		padding-top:30px;
+  	text-align:center;
+  	font-size:130%;
+  	font-family: Raleway, sans-serif;
+  	font-weight: normal;
+  }
+  footer .fa {
+  	color:white;
+  	margin-left:4%;
+  	font-size:230%;
+  }

@@ -1,0 +1,335 @@
+@media screen and (max-width: 1024px) /*min device*/ {
+	.header {
+		background-position: 50% 100%;
+	}
+	.menu {
+		bottom:93%;
+	}
+	.top_under_text p {
+		margin-bottom:57%;
+	}
+	/*Обо мне*/
+	.two_title p {
+		min-width:33%;
+		margin-left:33%;
+	}
+	.two_text p {
+		margin-left:4%;
+	}
+	/*ПОРТФОЛИО*/
+	.title p {
+		min-width:31%;
+		margin-bottom:19%;
+	}
+	.feature_text {
+		padding-bottom:49%;
+	}
+	/*СВЯЗЬ СО МНОЙ*/
+	.me_title p {
+		min-width:27%;
+	}
+	.me1 {
+		margin-left:12%;
+	}
+	.me {
+		padding-bottom:30%;
+	}
+}
+@media screen and (max-width: 960px) /*tablet*/ {
+	.header {
+		background-position:50% 100%
+	}
+	.top_text p {
+		margin-top:41%;
+	}
+	.top_under_text p {
+		width:50%;
+		margin-left:25%;
+		margin-bottom:85%;
+	}
+	/*ОБО МНЕ*/
+	.two_title p {
+		width:42%;
+	}
+	.two_text p {
+		margin-left:8%;
+	}
+	/*ПОРТФОЛИО*/
+	.title p {
+		width:32%;
+		margin-left:36%;
+	}
+	.feature_text {
+		padding-bottom:11%;
+	}
+	/*СВЯЗЬ СО МНОЙ*/
+	.me_title p {
+		width:35%;
+		margin-left:33%;
+	}
+	.me1 {
+		margin-left:0%;
+		text-align:center;
+	}
+	.me1 h3 {
+		text-align:center;
+	}
+	.me3 {
+		margin-top:3%;
+	}
+
+}
+
+@media screen and (max-width: 768px) /*mobile*/ {
+	.header {
+		background-position: 55% 100%;
+	}
+	.menu {
+		left:0%;
+		bottom:90%;
+	}
+	.top_job p {
+		width:31%;
+		color: #082801;
+		margin-left:33%;
+		font-size:1.2em;
+	}
+	.top_text p {
+		margin-top:47%;
+		font-size:2.7em;
+	}
+	.top_under_text p {
+		margin-bottom:83%;
+	}
+	/*ОБО МНЕ*/
+	.two_title p {
+		width:36%;
+		margin-top:17%;
+		margin-left:33%;
+		margin-bottom:23%;
+		font-size:180%;
+	}
+	g {
+		font-size: 127%;
+	}
+	e {
+		font-size:107;
+	}
+	.two_text p {
+		width:100%;
+		font-size:100%;
+		line-height:230%;
+		margin-left:0%;
+		margin-bottom:30%;
+	}
+	/*ПОРТФОЛИО*/
+	.title p {
+		width:27%;
+		font-size:180%;
+		margin-top:17%;
+		margin-left:37%;
+		margin-bottom:14%;
+	}
+	.feature_text {
+		padding-bottom:10%;
+	}
+	/*КОНТАКТЫ*/
+	.me_title p {
+		width:29%;
+		font-size:180%;
+		margin-left:35%;
+	}
+	.me {
+		padding-bottom:10%;
+	}
+	/*ФУТЕР*/
+	footer {
+		padding-top:7%;
+	}
+}
+@media screen and (max-width: 425px) {
+	.menu {
+		bottom:91%;
+	}
+	.top_job p {
+		width:58%;
+		margin-left:21%;
+	}
+	.top_text p {
+		margin-top:65%;
+		font-size:2.1em;
+	}
+	.top_under_text p {
+		width:65%;
+		margin-left:17%;
+	}
+	/*ОБО МНЕ*/
+	.two_title p {
+		width:74%;
+		margin-left:14%;
+	}
+	.two_text p {
+		font-size:101%;
+	}
+	/*ПОРТФОЛИО*/
+	.title p {
+		width:55%;
+		margin-left:23%;
+	}
+	/*КОНТАКТЫ*/
+	.me_title p {
+		width:61%;
+		margin-top:30%;
+		margin-left:21%;
+	}
+}
+@media screen and (max-width: 375px) {
+	.menu {
+		left:-2%;
+		bottom:92%;
+	}
+	.menu li {
+		font-size: 1em;
+	}
+	.top_job p {
+		min-width: 47%;
+		max-width:52%;
+		font-size:0.9em;
+		margin-left: 27%;
+	}
+	.top_text p {
+		margin-top: 65%;
+	}
+	.top_under_text p {
+		margin-bottom:95%;
+	}
+	/*ОБО МНЕ*/
+	.two_title p {
+		font-size:1.3em;
+		width:54%;
+		margin-left:24%;
+	}
+	.two_text p {
+		font-size:90%;
+	}
+	/*ПОРТФОЛИО*/
+	.title p {
+		font-size:1.3em;
+		width:41%;
+		margin-left:30%;
+	}
+	.feature_title {
+		font-size:150%;
+	}
+	.feature_text {
+		font-size:110%;
+	}
+	/*СВЯЗЬ*/
+	.me_title p {
+		width:46%;
+		font-size:1.3em;
+		margin-top: 14%;
+		margin-left:30%;
+	}
+	.me1 {
+		margin-bottom:10%;
+	}
+	.me1 i {
+		font-size:500%;
+	}
+	.me1 h3 {
+		font-size: 110%;
+	}
+	.me1 p {
+		font-size: 111%;
+	}
+	.me {
+		padding-bottom:4%;
+	}
+	/*ФУТЕР*/
+	footer {
+		height:90px;
+		font-size: 110%;
+	}
+}
+@media screen and (max-width: 320px) {
+	.menu {
+		left:-3%;
+		bottom:89%;
+	}
+	.top_job p {
+		width:59%;
+		font-size:0.9em;
+	}
+	.top_text p {
+		font-size:1.7em;
+		margin-top:50%;
+	}
+	.top_under_text p {
+		width:67%;
+		font-size:0.9em;
+		margin-left:15%;
+		margin-bottom:80%;
+	}
+	/*НЕМНОГО ОБО МНЕ*/
+	.two_title p {
+		width:64%;
+		font-size:1.3em;
+		margin-left:17%;
+	}
+	g {
+		font-size:140%;
+	}
+	e {
+		font-size:118%;
+	}
+	.two_text p {
+		font-size:80%;
+		line-height: 170%
+	}
+
+	/*ПОРТФОЛИО*/
+	.title p {
+		width:49%;
+		font-size:1.3em;
+		margin-left:24%;
+		margin-bottom:30%;
+	}
+	.feature_title {
+		font-size:150%;
+	}
+	.feature_text {
+		font-size:100%;
+		padding-bottom:21%;
+	}
+	/*КОНТАКТЫ*/
+	.me_title p {
+		width:37%;
+		font-size:1.3em;
+		margin-top:20%;
+		margin-left:31%;
+	}
+	.me1 {
+		margin-bottom:3%;
+	}
+	.me1 i {
+		font-size:500%;
+	}
+	.me h3 {
+		font-size:90%;
+	}
+	.me p {
+		font-size: 90%;
+	}
+	.me {
+		padding-bottom:14%;
+	}
+	/*ФУТЕР*/
+	footer {
+		height:70px;
+		font-size:90%;
+	}
+	footer .fa {
+		font-size:140%;
+	}
+}

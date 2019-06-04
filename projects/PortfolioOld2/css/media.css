@@ -1,0 +1,276 @@
+@media screen and (max-width: 1200px) /*min device*/ {
+	/*CONTACTS*/
+	.me1 {
+		text-align:center;
+		margin-left: 12%;
+	}
+  .me1 i {
+  	font-size: 1000%;
+  }
+  .me1 h3 {
+  	text-align: center;
+  	font-size: 140%;
+  }
+  .me1 p {
+  	margin-top: 0%;
+  	font-size:110%;
+  }
+}
+@media screen and (max-width: 1024px) /*min device*/ {
+	/*CONTACTS*/
+   .me_title p {
+    margin-bottom: 5%;
+  }
+	.me1 {
+		text-align:center;
+	}
+  .me1 i {
+  	font-size: 800%;
+  }
+  .me1 h3 {
+  	text-align: center;
+  	font-size: 140%;
+  }
+  .me1 p {
+  	margin-top: 0%;
+  	font-size:110%;
+  }
+	/*FOOTER*/
+	#footer {
+		font-size:150%;
+	}
+}
+@media screen and (max-width: 960px) /*tablet*/ {
+	#header {
+		background-position:50% 100%
+	}
+	/*ABOUT ME*/
+	.two_text p {
+		font-size:111%;
+	}
+	/*PORTFOLIO*/
+	.feature_text {
+		padding-bottom:11%;
+	}
+  .project img {
+  	width:100%;
+  	border:1px solid white;
+  }
+  .feature_text {
+  	font-size:130%;
+  } 
+	/*CONTACTS*/
+	.me1 i {
+		font-size: 600%;
+	}
+	.me1 {
+		margin-left:0%;
+		text-align:center;
+	}
+	.me1 h3 {
+		text-align:center;
+	}
+	/*FOOTER*/
+	#footer {
+		font-size: 130%;
+	}
+	#footer img {
+		width:100%;
+	}
+}
+
+@media screen and (max-width: 768px) /*mobile*/ {
+	#header {
+		background-position: 55% 100%;
+	}
+	/*ABOUT ME*/
+	.two_title p {
+		font-size: 140%;
+	}
+	.g {
+		font-size: 127%;
+	}
+	.e {
+		font-size: 110%;
+	}
+	.two_text p {
+		font-size: 105%;
+	}
+	/*PORTFOLIO*/
+	.title p {
+		font-size:190%;
+	}
+	.project img {
+		width: 100%;
+	}
+  .feature_title {
+  	font-size:130%;
+  	text-align: left; 
+  }
+  .feature_text {
+  	font-size:120%;
+  	text-align: left; 
+	}
+	/*CONTACTS*/
+	.me_title p {
+		font-size:150%;
+	}
+  .me1 i {
+  	font-size:700%;
+  }
+  .me1 h3 {
+  	font-size: 130%;
+  }
+  .me1 p {
+  	margin-top:0%;
+  	font-size:130%;
+  }
+
+	/*FOOTER*/
+	#footer {
+		font-size: 130%;
+	}
+	#footer img {
+		width: 100%;
+	}
+  #footer .fa {
+    padding-left: 10%;
+    font-size: 250%;
+  }
+}
+@media screen and (max-width: 425px) {
+	.top_text p {
+		font-size: 250%;
+	}
+	.top_under_text p {
+		font-size: 90%;
+	}
+	/*ОБО МНЕ*/
+	.two_title p {
+		font-size: 120%;
+	}
+	.two_text p {
+		font-size:90%;
+	}
+	/*ПОРТФОЛИО*/
+	.title p {
+		font-size: 120%;
+	}
+	/*КОНТАКТЫ*/
+  .me1 i {
+  	font-size:500%;
+  }
+  .me1 h3 {
+  	font-size: 100%;
+  }
+  .me1 p {
+  	margin-top:3%;
+  	font-size: 80%;
+  }
+}
+@media screen and (max-width: 375px) {
+	.top_job p {
+		font-size:90%;
+	}
+	.top_text p {
+		font-size: 150%;
+		border: 2px solid green;
+	}
+	.top_under_text p {
+		font-size: 65%;
+	}
+	/*ОБО МНЕ*/
+	.two_title p {
+		font-size:1em;
+	}
+	.two_text p {
+		font-size:80%;
+	}
+	/*ПОРТФОЛИО*/
+	.title p {
+		font-size:1em;
+	}
+	.feature_title {
+		font-size:100%;
+	}
+	.feature_text {
+		font-size:0%
+	}
+	.project img {
+		width:80%;
+	}
+	/*СВЯЗЬ*/
+	.me_title p {
+		font-size:1em;
+	}
+	.me1 i {
+		font-size:400%;
+	}
+	.me1 h3 {
+		font-size: 90%;
+	}
+	.me1 p {
+		font-size: 90%;
+	}
+	/*ФУТЕР*/
+	#footer {
+		font-size: 80%;
+	}
+}
+@media screen and (max-width: 320px) {
+	.top_job p {
+		font-size:0.8em;
+	}
+	.top_text p {
+		font-size:1.6em;
+	}
+	.top_under_text p {
+		font-size:0.7em;
+	}
+	/*НЕМНОГО ОБО МНЕ*/
+	.two_title p {
+		font-size:1em;
+	}
+	.g {
+		font-size:90%;
+	}
+	.e {
+		font-size: 80%;
+	}
+	.two_text p {
+		font-size:70%;
+	}
+
+	/*ПОРТФОЛИО*/
+	.title p {
+		font-size:1em;
+	}
+	.feature_title {
+		font-size:90%;
+	}
+	.feature_text {
+		font-size:0%;
+	}
+	/*КОНТАКТЫ*/
+	.me_title p {
+		font-size:1em;
+	}
+	.me1 i {
+		font-size:300%;
+	}
+	.me h3 {
+		font-size:70%;
+	}
+	.me1 p {
+		font-size: 80%;
+	}
+	/*ФУТЕР*/
+	#footer {
+		height:70px;
+		font-size:90%;
+	}
+	#footer .fa {
+	.me1 i {
+		font-size:201%;
+	}
+}
