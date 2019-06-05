@@ -43,7 +43,7 @@
 
 @media screen and (max-width: 576px) {
 	.ftext {
-		width:120%;
+		width:100%;
 		font-size:9px;
 	}
 	nav {
@@ -96,7 +96,7 @@
 	}
 	li {
 		font-size:13px;
-		width:120%;
+		width:100%;
 		line-height:17px;
 	} 	
 
@@ -148,8 +148,9 @@
 		font-size:21px;
 	}
 	.har p {
+		margin-top:10px;
 		font-size:13px;
-		width:120%;
+		width:100%;
 	}
 	footer {
 		height: 125px;
