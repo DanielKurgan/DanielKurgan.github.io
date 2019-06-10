@@ -1,0 +1,220 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 1170px;
+    margin: 0 auto;
+    color: white;
+    font-family: Akzidenz-Grotesk Pro Regular, sans-serif;
+    background: url(/img/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+header .head-top {
+    margin: 15px 0 120px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .head-top .logo img {
+    max-width: 180px;
+    padding-right: 5px;
+}
+
+header .head-top h4 {
+    font-size: 12px;
+    padding-left: 5px;
+    line-height: 16px;
+    padding-right: 90px;
+    color: #bcbfc4;
+}
+
+header .head-top .adv {
+    display: flex;
+    margin-right: 50px;
+}
+
+header .head-top .adv:nth-last-child(1) {
+    margin-right: 110px;
+}
+
+header .head-top .adv h3 {
+    font-size: 14px;
+    font-weight: 100;
+}
+
+header .head-top .adv img {
+    width: 26px;
+    padding-right: 10px;
+}
+
+header .head-top .number h3 {
+    margin: 0;
+    line-height: 0;
+    font-size: 20px
+}
+
+header .head-top .number p {
+    margin: 15px 0 0 0;
+    float: right;
+    cursor: pointer;
+    width: 115px;
+    font-size: 15px;
+    border-bottom: 1px dashed #e11e2d;
+}
+
+header .head-center .left-side {
+    float: left;
+    margin-right: 120px;
+    display: flex;
+    flex-direction: column;
+}
+
+header .head-center .left-side h1 {
+    font-family: Gotham Pro Bold, sans-serif;
+    line-height: 65px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 52px;
+    margin-bottom: 15px;
+}
+
+header .head-center .left-side .head-text h2 {
+    line-height: 28px;
+    margin-top: 0;
+    margin-bottom: 55px;
+    font-size: 22px;
+    font-family: "Gotham Pro Regular", sans-serif;
+}
+
+header .head-center .left-side .advantages {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+header .head-center .left-side .advantages .circle {
+    width: 60px;
+    height: 60px;
+    background: #424e59;
+    border-radius: 100px;
+    margin-right: 10px;
+    position: relative;
+    padding: 0;
+}
+
+header .head-center .left-side .advantages .circle .circle-inner {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 45px;
+    height: 45px;
+    background: white;
+    border-radius: 100px;
+    transform: translate(-50%, -50%);
+}
+
+header .head-center .left-side .advantages img {
+    max-width: 25px;
+    transform: translate(40%, 40%);
+}
+
+header .head-center .left-side .advantages h2 {
+    font-size: 24px;
+    margin-bottom: 0;
+}
+
+header .head-center .right-side {
+    margin-left: 670px;
+    width: 430px;
+    height: 500px;
+    background: white;
+    border-radius: 4px;
+    position: relative;
+}
+
+header .head-center .right-side .right-block {
+    position: absolute;
+    height: 480px;
+    width: 405px;
+    left: 10px;
+    top: 10px;
+    border: 2px solid #f1f1f1;
+}
+
+header .head-center .right-side .right-block h2 {
+    text-align: center;
+    color: black;
+    font-size: 24px;
+    line-height: 25px;
+    margin-bottom: 15px;
+}
+
+header .head-center .right-side .right-block h2 #redtext {
+    text-transform: uppercase;
+    color: #c22330;
+    font-family: Akzide-Grotnzesk Pro Regular
+}
+
+header .head-center .right-side .right-block p {
+    text-align: center;
+    font-size: 15px;
+    color: #a1a2a8;
+    margin-bottom: 35px;
+}
+
+header .head-center .right-side .right-block .consult-form {}
+
+header .head-center .right-side .right-block .consult-form form {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+}
+
+header .head-center .right-side .right-block .consult-form form input {
+    font-size: 15px;
+    border-radius: 5px;
+    border: 3px solid #f2f2f2;
+    margin-bottom: 10px;
+    padding: 20px 22px;
+}
+
+header .head-center .right-side .right-block .consult-form form input#submit {
+    background: #c22330;
+    color: white;
+    border-radius: 30px;
+    width: 300px;
+    box-shadow: inset 0px -2px 3px 0px rgba(50, 50, 50, 0.75);
+    margin: 30px auto 0 auto;
+}
+
+header .head-center .right-side .right-block .consult-form form label p {
+    font-size: 14px;
+    color: black;
+    line-height: 0px;
+    margin-bottom: 0;
+}
+
+header .head-center .right-side .right-block .form-decor {
+    position: relative;
+}
+
+header .head-center .right-side .right-block .form-decor .decor-first {
+    width: 405px;
+    background: white;
+    border-radius: 4px;
+    height: 15px;
+    margin-top: 45px;
+    opacity: 0.7;
+}
+
+
+header .head-center .right-side .right-block .form-decor .decor-second {
+    width: 385px;
+    background: white;
+    border-radius: 4px;
+    height: 25px;
+    opacity: 0.5;
+    margin: -15px auto;
+}
