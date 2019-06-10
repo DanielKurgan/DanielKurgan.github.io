@@ -6,7 +6,7 @@ body {
     margin: 0 auto;
     color: white;
     font-family: Akzidenz-Grotesk Pro Regular, sans-serif;
-    background: url(/img/background.png);
+    background: url(../img/background.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
