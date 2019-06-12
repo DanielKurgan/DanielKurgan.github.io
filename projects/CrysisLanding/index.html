@@ -9,83 +9,195 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="css/fonts.css">
-
 </head>
 
 <body>
-    <header>
-        <div class="head-top">
-            <div class="logo">
-                <img src="img/logo.svg" alt="Logo">
+    <div class="background">
+        <header>
+            <div class="top-header">
+                <div class="logo-block">
+                    <img src="img/logo.svg" alt="logo">
+                    <hr>
+                    <p class="description">Оказание юридических услуг<br>по принудительному выселению</p>
+                </div>
+                <div class="advantages">
+                    <div class="advantage">
+                        <img src="img/favourites.svg" alt="favourites">
+                        <p>Чистая репутация<br>с 2011 г.</p>
+                    </div>
+                    <div class="advantage">
+                        <img src="img/russia.svg" alt="russia"><p>Работаем на<br>федеральном уровне</p>
+                    </div>
+                </div>
+                <div class="contact-link">
+                    <a class="phone" href="tel: +78314154954">+7 (891) 415-49-54</a><br>
+                    <a class="call__form" href="#contact__popup">Заказать звонок</a>
+                </div>
             </div>
-            <h4>Оказание юридических услуг<br> по принудительному выселению</h4>
-            <div class="adv">
-                <img src="img/favourites.svg" alt="Favourites">
-                <h3>Чистая репутация<br>с 2011 г.</h3>
+            <div class="main-header">
+                <div class="left-side">
+                    <div class="main-text">
+                        <h1>ПРИНУДИТЕЛЬНОЕ<br>ВЫСЕЛЕНИЕ</h1>
+                        <h2>физических и юридических лиц из частных<br>и коммерческих помещений</h2>
+                    </div>
+                    <div class="main-advantages">
+                        <div class="main-advantage">
+                            <div class="circle">
+                                <div class="circle-inner">
+                                    <img src="img/shield.png" alt="Shield">
+                                </div>
+                            </div>
+                            <p>Безопасно</p>
+                        </div>
+                        <div class="main-advantage">
+                            <div class="circle">
+                                <div class="circle-inner">
+                                    <img src="img/clock.png" alt="Clock">
+                                </div>
+                            </div>
+                            <p>В кратчайшие сроки</p>
+                        </div>
+                        <div class="main-advantage" id="last-advantage">
+                            <div class="circle">
+                                <div class="circle-inner">
+                                    <img src="img/spy.png" alt="Spy">
+                                </div>
+                            </div>
+                            <p>Конфиденциально</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-side">
+                    <div class="contact-block">
+                        <div class="contact-inner">
+                            <div class="contact-text">
+                                <h3><span class="redtext">БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ</span><br>юриста с 8-ми летним стажем</h3>
+                                <p>Введите свои данные в поле ниже и наш специалист<br>перезвонит вам в течении 10 минут</p>
+                            </div>
+                            <div class="contact-form">
+                                <form action="#">
+                                        <fieldset>
+                                            <input type="text" id="name" placeholder="Ваше имя" required>
+                                            <input type="number" id="number" placeholder="+7( ____) ____ – ___ – ___" required>
+                                        </fieldset>
+                                        <input type="submit" id="submit" value="Получить консультацию">
+                                        <label>
+                                            <p><input type="checkbox" id="checkbox" /> Отправляя форму вы соглашаетесь<br>с политикой конфиденциальности</p>
+                                        </label>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="contact-decoration">
+                            <div class="line-first"></div>
+                            <div class="line-second"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="adv">
-                <img src="img/russia.svg" alt="Russia">
-                <h3>Работаем на<br>федеральном уровне</h3>
+        </header>
+    </div>
+    <div class="info">
+        <div class="info-first">
+            <div class="info-left">
+                <p>Мы смело можем назвать себя<br><span class="bluetext">профессионалами своего дела</span></p>
+                <div class="stats">
+                    <p>С нами <span class="big-number">85</span></p>
+                    <div class="circle-procent">
+                        <span class="procent">%</span>
+                    </div>
+                </div>
+                <p class="under-stat">дел решаются в пользу клиентов<br>в досудебном порядке</p>
             </div>
-            <div class="number">
-                <h3>+7 (831) 415-49-54</h3>
-                <p>Заказать звонок</p>
+            <div class="info-right">
+                <div class="warning-container">
+                    <img src="img/mainWarning.png" alt="Image Warning">
+                    <div class="warning-block">
+                        <p>При оказании услуг не допускается<br>противоправные действия</p>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="head-center">
-            <div class="left-side">
-                <div class="head-text">
-                    <h1>ПРИНУДИТЕЛЬНОЕ<br>ВЫСЕЛЕНИЕ</h1>
-                    <h2>физических и юредических лиц из частных<br>и коммерческих помещений</h2>
-                </div>
-                <div class="advantages">
-                    <div class="circle">
-                        <div class="circle-inner">
-                            <img src="img/shield.png" alt="Shield">
-                        </div>
-                    </div>
-                    <h2>Безопасно</h2>
-                </div>
-                <div class="advantages">
-                    <div class="circle">
-                        <div class="circle-inner">
-                            <img src="img/clock.png" alt="Clock">
-                        </div>
-                    </div>
-                    <h2>В кратчайшие сроки</h2>
-                </div>
-                <div class="advantages">
-                    <div class="circle">
-                        <div class="circle-inner">
-                            <img src="img/spy.png" alt="Spy">
-                        </div>
-                    </div>
-                    <h2>Конфиденциальность</h2>
-                </div>
-            </div>
-            <div class="right-side">
-                <div class="right-block">
-                    <h2><span id="redtext">Бесплатная консультация</span><br>юриста с 8-ми летним стажем</h2>
-                    <p>Введите свои данные в поле ниже и наш специалист<br>перезвонит вам в течении 10 минут</p>
-                    <div class="consult-form">
-                        <form action="#">
-                            <input type="text" id="name" placeholder="Ваше имя" required>
-                            <input type="number" id="number" placeholder="+7( ____) ____ – ___ – ___" required>
-                            <input type="submit" id="submit" value="Получить консультацию">
-                            <label>
-                                <p><input type="checkbox" id="checkbox" name="accept">  Отправляя фtорму вы соглашаетесь<br>с политикой конфиденциальности</p>
-                            </label>
-                        </form>
-                    </div>
-                    <div class="form-decor">
-                        <div class="decor-first"></div>
-                        <div class="decor-second"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
 
+        <div class="info-second">
+            <div class="info-left">
+                <img src="img/workImage.png" alt="Work image">
+            </div>
+            <div class="info-right">
+                <h2>РАБОТАЕМ С ФИЗИЧЕСКИМИ<br>И ЮРИДИЧЕСКИМИ ЛИЦАМИ</h2>
+                <p>В рамках предоставляемой услуги мы<br>обязуемся оказать:</p>
+                <ul>
+                    <li>
+                        <div class="circle-plus">
+                            <div class="plus-inner">
+                                +
+                            </div>
+                        </div>
+                        Проведение переговоров с лицами занимающими<br>помещения и сопровождение процесса выселения
+                    </li>
+                    <li>
+                        <div class="circle-plus">
+                            <div class="plus-inner">
+                                +
+                            </div>
+                        </div>
+                        Представление интересов в суде и прочих инстанциях
+                    </li>
+                    <li>
+                        <div class="circle-plus">
+                            <div class="plus-inner">
+                                +
+                            </div>
+                        </div>
+                        Гарантируем безопасность от возможной<br>административной и уголовной ответственности
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="services-background">
+            <div class="service-background"><img src="img/workBackground.png" alt="Work Background"></div>
+            <div class="services">
+                <h1>КОМЛЕКС ВСПОМОГАТЕЛЬНЫХ УСЛУГ<br><div class="service-line"></div></h1>
+                <ul>
+                    <li>
+                        <div class="circle-service">
+                            <div class="service-inner">
+                                <img src="img/truck.svg" alt="Truck image">
+                            </div>
+                        </div>
+                        <p>Вынос, вывоз и<br> перемещение имущества</p>
+                    </li>
+                    <li>
+                         <div class="circle-service">
+                            <div class="service-inner">
+                                <img src="img/broom.svg" alt="Broom image">
+                            </div>
+                        </div>
+                        <p>Уборка, восстановление<br>и ремонт помещений</p>
+                    </li>
+                    <li>
+                         <div class="circle-service">
+                            <div class="service-inner">
+                                <img src="img/box.svg" alt="Box image">
+                            </div>
+                        </div>
+                        <p>Ответственное хранение<br>вывезенного имущества</p>
+                    </li>
+                    <li>
+                         <div class="circle-service">
+                            <div class="service-inner">
+                                <img src="img/clipboard.svg" alt="Clipboard image">
+                            </div>
+                        </div>
+                        <p>Внесение изменений и<br>перерасчеты в системе ЖКХ</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    <script>
+    document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
+    </script>
     <script src="js/javascript.js"></script>
 </body>
 
