@@ -32,7 +32,7 @@
                     </div>
                 </div>
                 <div class="contact-link">
-                    <a class="phone" href="tel: +78314154954">+7 (891) 415-49-54</a><br>
+                    <a id="phone" href="tel: +78314154954">+7 (891) 415-49-54</a><br>
                     <a class="call__form" href="javascript:PopUpShow()">Заказать звонок</a>
                 </div>
             </div>
@@ -80,11 +80,11 @@
                                 <form action="#">
                                     <fieldset>
                                         <input type="text" id="name" placeholder="Ваше имя" required>
-                                        <input type="phone" id="phone" placeholder="+7( ____) ____ – ___ – ___" required>
+                                        <input type="phone" class="phone" placeholder="+7( ____) ____ – ___ – ___" required>
                                     </fieldset>
                                     <input type="submit" id="submit" value="Получить консультацию">
                                     <label>
-                                        <p><input type="checkbox" id="checkbox" /> Отправляя форму вы соглашаетесь<br>с политикой конфиденциальности</p>
+                                        <p><input type="radio" id="radio" /> Отправляя форму вы соглашаетесь<br>с политикой конфиденциальности</p>
                                     </label>
                                 </form>
                             </div>
@@ -461,13 +461,15 @@
                 <p>Ваша заявка получена и будет обработана в<br>течении 10 минут, мы вам</p>
             </div>
             <div class="popup-inner">
-                <a id="close-button" href="javascript:PopUpHide()"></a>
+                <a id="close-button" href="javascript:PopUpHide()"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.9 21.9" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 21.9 21.9">
+                  <path d="M14.1,11.3c-0.2-0.2-0.2-0.5,0-0.7l7.5-7.5c0.2-0.2,0.3-0.5,0.3-0.7s-0.1-0.5-0.3-0.7l-1.4-1.4C20,0.1,19.7,0,19.5,0  c-0.3,0-0.5,0.1-0.7,0.3l-7.5,7.5c-0.2,0.2-0.5,0.2-0.7,0L3.1,0.3C2.9,0.1,2.6,0,2.4,0S1.9,0.1,1.7,0.3L0.3,1.7C0.1,1.9,0,2.2,0,2.4  s0.1,0.5,0.3,0.7l7.5,7.5c0.2,0.2,0.2,0.5,0,0.7l-7.5,7.5C0.1,19,0,19.3,0,19.5s0.1,0.5,0.3,0.7l1.4,1.4c0.2,0.2,0.5,0.3,0.7,0.3  s0.5-0.1,0.7-0.3l7.5-7.5c0.2-0.2,0.5-0.2,0.7,0l7.5,7.5c0.2,0.2,0.5,0.3,0.7,0.3s0.5-0.1,0.7-0.3l1.4-1.4c0.2-0.2,0.3-0.5,0.3-0.7  s-0.1-0.5-0.3-0.7L14.1,11.3z"/>
+                </svg></a>
                 <h2>ОСТАВЬТЕ ЗАЯВКУ</h2>
                 <p>Введите свои данные в поле ниже и наш специалист<br>свяжется с вами в течении 10 минут</p>
                 <form action="#" id="popup-form">
                     <input type="name" id="popup-name" name="name" placeholder="Ваше имя" required>
-                    <input type="phone" id="phone" name="phone" placeholder="+7( ____) ____ – ___ – ___" required>
-                    <input type="submit" id="popup-submit" value="Получить консультацию">
+                    <input type="phone" class="phone" name="phone" placeholder="+7( ____) ____ – ___ – ___" required>
+                    <input type="submit" id="popup-submit" value="Отправить">
                     <label style="color: #04092b; font-size:14px"><input type="radio" id="popup-radio" name="radio" required>Отправляя форму вы соглашаетесь<br>с <a href="#">политикой конфиденциальности</a></label>
                 </form>
             </div>
@@ -478,6 +480,7 @@
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <script async src="js/preloader.js"></script>
     <script async src="js/popUp.js"></script>
     <script async src="js/mask.js"></script>
     <script async src="js/prefixer.js"></script>

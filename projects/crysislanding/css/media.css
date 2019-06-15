@@ -568,12 +568,13 @@
     }
 
     .services-background {
-        padding-bottom: 250px;
+        padding-bottom: 90px;
     }
 
     .services {
         padding: 0 20px 0 20px;
         margin: 0;
+        grid-template-rows: 50% 50%;
     }
 
     .services h1 {
@@ -584,15 +585,20 @@
 
     .services ul {
         margin-top: -60px;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+        .services ul li p {
+            font-size: 15px;
     }
 
     /*REASONS START*/
     .reasons-text {
         margin-left: 3%;
     }
-
+    .reasons-text h2 {
+        text-align: center;
+    }
     .reasons-cards-block {
         grid-template-rows: repeat(4, 1fr);
         grid-template-columns: repeat(2, 1fr);
@@ -725,7 +731,6 @@
     .contact-background {
         height: 400px;
         order: 2;
-        position: static;
     }
 
     .feedback {
@@ -1159,7 +1164,8 @@
 
     .accordion button {
         font-size: 15px;
-        width: 100%;
+        max-width: 100%;
+        width: auto;
     }
 
     .trust-block button {

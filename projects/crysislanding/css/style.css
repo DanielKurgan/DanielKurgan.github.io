@@ -1,4 +1,5 @@
 body {
+    display: none;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,20 +7,23 @@ body {
     font-family: Akzidenz-Grotesk Pro Regular, sans-serif;
     background: #f5f5f5;
 }
-
 .scroll-hidden {
     overflow: hidden;
 }
 
-a:hover,
-active {
+a:hover, active {
     outline: none;
 }
 
-input:hover {
+input:hover, active {
     outline: none;
 }
-
+button:active, button:focus {
+  outline: none;
+}
+button::-moz-focus-inner {
+  border: 0;
+}
 /*POPUP START*/
 .popup {
     background: rgba(102, 102, 102, 0.5);
@@ -28,6 +32,7 @@ input:hover {
     position: absolute;
     top: 0;
     left: 0;
+    z-index:3;
 }
 
 .popup-content {
@@ -69,13 +74,16 @@ input:hover {
     right: 0;
     top: 0;
     margin: 30px 40px;
-    background: url(../img/cancel.svg);
     background-repeat: no-repeat;
-    height: 15px;
-    width: 15px;
-    background-size: cover;
 }
-
+.popup a#close-button:hover {
+    fill: #c22330;
+    color: #c22330;
+}
+svg {
+    width: 15px;
+    height: 15px;
+}
 .popup h2 {
     margin-top: 50px;
     font-size: 23px;
@@ -96,16 +104,21 @@ input:hover {
     margin: 0 auto;
     grid-row-gap: 30px;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 20% 20% 25% 20%;;
+}
+.popup form label {
+    margin-top: -10px;
+}
+.popup form label input#radio {
+    color: red;
 }
 
 .popup form input {
     padding: 15px;
     border: 1px solid #f3f3f3;
 }
-
 .popup form input#popup-submit {
-    box-shadow: inset 0px -2px 3px 0px rgba(50, 50, 50, 0.75);
+    box-shadow: inset 0px -2px 3px 0px rgba(50, 50, 50, 0.55);
     width: 300px;
     margin: 0 auto;
     background-color: #c22330;
@@ -116,8 +129,14 @@ input:hover {
     transition: 0.4s;
 }
 
+.popup popup-submit {
+    height: 100px;
+}
 .popup form input#popup-submit:hover {
-    transform: translateY(-5px);
+    box-shadow:         inset 0px -6px 4px 0px rgba(50, 50, 50, 0.55);
+}
+.popup popup-submit:active {
+    background-color: #d00616;
 }
 
 /*POPUP RESULT*/
@@ -207,7 +226,7 @@ header {
     text-decoration: none;
 }
 
-.top-header .contact-link a.phone {
+.top-header .contact-link a#phone {
     font-size: 20px;
     font-weight: bold;
 }
@@ -342,11 +361,11 @@ header {
     padding: 20px 22px;
 }
 
-.contact-form form input#phone {
+.contact-form form input.phone {
     -moz-appearance: textfield;
 }
 
-.contact-form form input#phone::-webkit-inner-spin-button {
+.contact-form form input.phone::-webkit-inner-spin-button {
     display: none;
 }
 
@@ -360,16 +379,23 @@ header {
     color: white;
     border-radius: 30px;
     width: 300px;
-    box-shadow: inset 0px -2px 3px 0px rgba(50, 50, 50, 0.75);
+    box-shadow: inset 0px -4px 3px 0px rgba(50, 50, 50, 0.55);
     margin: 30px 0 0 auto;
     cursor: pointer;
     transition: 0.4s;
 }
 
 .contact-form form input#submit:hover {
-    transform: translateY(-5px);
+box-shadow:         inset 0px -8px 4px 0px rgba(50, 50, 50, 0.55);
 }
+.contact-form form input#submit:active {
+    background-color: #d00616;
 
+}
+input[type="radio"] {
+  color: red;
+  cursor: pointer;
+}
 .contact-form form label {
     text-align: center;
 }
@@ -860,6 +886,7 @@ header {
 }
 
 .offer-inside button {
+    border: 0;
     padding: 20px 60px;
     background: #c22330;
     border-radius: 100px;
@@ -869,18 +896,19 @@ header {
     font-weight: bold;
     transition: 0.4s;
     cursor: pointer;
-    box-shadow: inset 0px -2px 3px 0px rgba(50, 50, 50, 0.75);
+    box-shadow: inset 0px -4px 3px 0px rgba(50, 50, 50, 0.55);
 }
 
 .offer-inside button:hover {
-    box-shadow: inset 0px -2px 3px 0px rgba(50, 50, 50, 0.75);
-    transform: translateY(-5px);
+box-shadow:         inset 0px -8px 4px 0px rgba(50, 50, 50, 0.55);
 }
-
+.offer-inside button:active {
+    background-color: #d00616;
+}
 .offer-decor {
     position: absolute;
     background: white;
-    height: 275px;
+    height: 268px;
     width: 405px;
     border-radius: 6px;
     top: 0;
@@ -892,7 +920,7 @@ header {
 .offer-decor2 {
     position: absolute;
     background: white;
-    height: 285px;
+    height: 276px;
     width: 385px;
     border-radius: 6px;
     top: 0;
@@ -939,7 +967,6 @@ header {
     color: black;
     font-size: 20px;
     font-family: Gotham Pro Bold, sans-serif;
-    ;
     width: 100%;
 }
 
@@ -1025,13 +1052,16 @@ header {
     font-size: 15px;
     font-family: Gotham Pro Bold, sans-serif;
     font-weight: bold;
-    box-shadow: inset 0px -2px 3px 0px rgba(50, 50, 50, 0.75);
+    box-shadow: inset 0px -4px 3px 0px rgba(50, 50, 50, 0.55);
     transition: 0.4s;
     cursor: pointer;
 }
 
 .trust-block button:hover {
-    transform: translateY(-5px);
+box-shadow:         inset 0px -8px 4px 0px rgba(50, 50, 50, 0.55);
+}
+.trust-block button:active {
+    background-color: #d00616;
 }
 
 /*TRUST US END*/
