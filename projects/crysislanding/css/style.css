@@ -454,22 +454,22 @@ label p input[type="radio"] {
 
 .contact-decoration .line-first {
     z-index: 1;
-    width: 405px;
-    height: 20px;
+    width: 425px;
+    height: 26px;
     background: white;
-    border-radius: 6px;
+    border-radius: 2px;
     margin: 0 auto;
-    opacity: 0.8;
+    opacity: 0.6;
 }
 
 .contact-decoration .line-second {
     z-index: 3;
-    width: 385px;
+    width: 405px;
     height: 20px;
     background: white;
-    border-radius: 6px;
+    border-radius: 2px;
     margin: -11px auto 0 auto;
-    opacity: 0.5;
+    opacity: 0.3;
 }
 
 /*RIGHT SIDE END*/
@@ -928,11 +928,11 @@ label p input[type="radio"] {
 .offer-decor {
     position: absolute;
     background: white;
-    height: 268px;
-    width: 405px;
-    border-radius: 6px;
+    height: 270px;
+    width: 425px;
+    border-radius: 2px;
     top: 0;
-    left: 23px;
+    left: 13px;
     z-index: -1;
     opacity: 0.7;
 }
@@ -940,11 +940,11 @@ label p input[type="radio"] {
 .offer-decor2 {
     position: absolute;
     background: white;
-    height: 276px;
-    width: 385px;
-    border-radius: 6px;
+    height: 280px;
+    width: 405px;
+    border-radius: 2px;
     top: 0;
-    left: 33px;
+    left: 23px;
     z-index: -2;
     opacity: 0.5;
 }
@@ -1127,7 +1127,7 @@ div.panel h3 {
 }
 
 .feedback-block {
-    box-shadow: 0px 16px 20px 0px rgba(50, 50, 50, 0.22);
+    box-shadow: -10px 16px 20px 0px rgba(50, 50, 50, 0.45);
     z-index: 1;
     position: relative;
     background: white;
@@ -1266,24 +1266,24 @@ p#feedback-number:before {
 
 .feedback-decor {
     background: white;
-    height: 600px;
-    width: 480px;
+    height: 603px;
+    width: 490px;
     top: 0;
     position: absolute;
     z-index: -1;
-    opacity: 0.7;
+    opacity: 0.4;
     border-radius: 6px;
 }
 
 .feedback-decor2 {
-    box-shadow: 0px 16px 20px 0px rgba(50, 50, 50, 0.49);
+    box-shadow: 0px 16px 20px 0px rgba(50, 50, 50, 0.75);
     top: 0;
     background: white;
     position: absolute;
     width: 445px;
-    height: 610px;
+    height: 615px;
     z-index: -2;
-    opacity: 0.5;
+    opacity: 0.2;
     border-radius: 6px;
 }
 
