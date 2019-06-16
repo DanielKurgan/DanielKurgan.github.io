@@ -5,8 +5,8 @@
     function init() {
         // Создание карты.    
         var myMap = new ymaps.Map("map", {
-            center: [56.24473764, 43.97324747],
-            zoom: 16
+            center: [56.24424015, 43.97108515],
+            zoom: 15
         });
         myMap.controls 
             .remove('geolocationControl') 
