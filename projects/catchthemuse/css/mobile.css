@@ -1,0 +1,6 @@
+/*Mobile*/
+@media (max-width: 480px) and (min-width: 414px) { }
+
+@media (max-width: 414px) and (min-width: 320px) { }
+
+@media (max-width: 320px) { }
