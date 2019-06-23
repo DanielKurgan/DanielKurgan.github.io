@@ -345,7 +345,7 @@ header p span {
     background-color: #d1d1d1;
 }
 
-.fourth .one-image hr:nth-child(2) {
+.fourth .one-image hr:nth-child(5) {
     border: 0;
     top: -85px;
     left: 210px;
@@ -705,9 +705,9 @@ header p span {
     background: #ad2789;
 }
 
-.seventh .first-block .text-block hr:nth-child(4) {
+.seventh .first-block .text-block hr:nth-child(8) {
     top: 275px;
-    left: 640px;
+    left: 635px;
     margin: 0;
     border: 0;
     width: 57px;
@@ -882,7 +882,7 @@ header p span {
     background: #ad2789;
 }
 
-.seventh .third-block .text-block hr:nth-child(4) {
+.seventh .third-block .text-block hr:nth-child(6) {
     border: 0;
     position: absolute;
     top: 459px;
@@ -2128,6 +2128,10 @@ header {
     margin-left: -20px;
     padding-bottom: 0px;
 }
+.second ul li span {
+    font-size: 14px;
+    line-height: 25px;
+}
 .third {
     background-image: url("../img/3/mobile-background.png");
 }
@@ -2136,7 +2140,7 @@ header {
     padding-top: 70px;
 }
 .third .left-block .block-image img {
-    margin-top: -15px;
+    margin-top: -18px;
     max-height: 330px;
     max-width: 430px;
 }
@@ -2149,7 +2153,7 @@ header {
     font-size: 19px;
 }
 .third .right-block hr {
-    margin-bottom: 290px;
+    margin-bottom: 300px;
 }
 .third .left-block .block-image {
     height: 260px;
@@ -2159,7 +2163,8 @@ header {
     margin-bottom: 320px;
 }
 .third .right-block p {
-    line-height: 25px;
+    font-size: 14px;
+    line-height: 20px;
     padding-bottom: 20px;
 }
 .fourth .text h2 {
@@ -2168,9 +2173,10 @@ header {
     margin-bottom: 13px;
 }
 .fourth p {
-    letter-spacing: -0.5px;
-    font-size: 18px;
+    letter-spacing: 0;
+    font-size: 14px;
     margin-top: 11px;
+    line-height: 20px;
 }
 .fourth .one-image {
     top: 199px;
@@ -2183,9 +2189,9 @@ header {
     margin-bottom: 18px;
 }
 .fifth p {
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 300;
-    line-height: 29px;
+    line-height: 20px;
     text-align: left;
     margin-top: 14px;
 }
@@ -2210,7 +2216,7 @@ header {
     margin-bottom: 290px;
 }
 .fifth .block .right-block p {
-    font-size: 18px;
+    font-size: 14px;
     line-height: 20px;
 }
 .sixth .text h2 {
@@ -2227,6 +2233,9 @@ header {
     max-height: 350px;
 
 }
+.sixth .image-block .inner-block img {
+    margin-left: 0px;
+}
 .sixth .double-block .inner-block {
     top: -470px;
 }
@@ -2234,9 +2243,10 @@ header {
     margin-bottom: 380px;
 }
 .sixth p {
+    width: auto;
     letter-spacing: 0px;
-    font-size: 18px;
-    line-height: 25px;
+    font-size: 14px;
+    line-height: 20px;
 }
 .sixth .block .text-block h2 {
     margin-bottom: 19px;
@@ -2272,15 +2282,12 @@ header {
     letter-spacing: 0px;
     line-height: 30px;
     height: 74px;
-    font-size: 18px;
-    line-height: 25px;
+    font-size: 14px;
+    line-height: 20px;
 }
 .sixth {
     padding: 0 89px;
     background: url(../img/6/mobile-background.png);
-}
-.sixth p {
-    width: auto;
 }
 .seventh .first-block .text-block h2 {
     padding-top: 105px;
@@ -2298,9 +2305,9 @@ header {
 }
 .seventh .first-block .text-block p {
     height: 45px;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 300;
-    line-height: 25px;
+    line-height: 20px;
     padding-bottom: 10px;
 }
 .seventh .second-block .text-block h2 {
@@ -2311,9 +2318,9 @@ header {
 }
 .seventh .second-block .text-block p {
     height: 74px;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 300;
-    line-height: 25px;
+    line-height: 20px;
     padding-bottom: 52px;
 }
 .seventh .third-block .text-block h2 {
@@ -2354,9 +2361,9 @@ header {
     top: -200px;
 }
 .seventh .third-block .text-block p {
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 300;
-    line-height: 25px;
+    line-height: 20px;
 }
 .seventh .third-block .text-block hr:nth-child(2) {
     margin: 0 auto;
@@ -2502,6 +2509,12 @@ footer .footer-content a {
     height: 74px;
     font-size: 14px;
     line-height: 20px;
+}
+.sixth .image-block .inner-block img {
+    margin-left: 0px;
+}
+.sixth .inner-block img {
+    width: 410px;
 }
 .seventh .first-block .text-block h2 {
     margin-bottom: 9px;
