@@ -24,7 +24,7 @@ header p::after {
     content: url("../img/cat.png");
     height: 20px;
     width: 46px;
-    left: 190px;
+    left: 150px;
     position: absolute;
 }
 
@@ -41,13 +41,13 @@ header p span {
     background-size: cover;
     padding: 0 89px;
     position: relative;
-    z-index: -1;
+    z-index: 1;
 }
 
 .first .background img {
     z-index: -1;
     right: 0px;
-    top: -50px;
+    top: 0px;
     position: absolute;
 }
 
@@ -92,6 +92,8 @@ header p span {
     margin-top: 51px;
     border: 0;
     margin-bottom: 123px;
+    z-index: 30;
+    cursor: pointer;
 }
 .first button:hover {
     background-color: #c39f76;
@@ -116,28 +118,30 @@ header p span {
 }
 
 .second p {
-    padding-top: 200px;
-    margin-bottom: 39px;
+    padding-top: 201px;
+    margin-bottom: 37px;
     text-transform: uppercase;
     font-size: 33px;
+    margin-top: 0;
     font-family: Gilroy Extra Bold, sans-serif;
 }
 
 .second ul {
     margin-left: -20px;
-    padding-bottom: 60px;
+    padding-bottom: 69px;
+    margin-bottom: 0;
 }
 
 .second ul li {
-    letter-spacing: -1.5px;
-    font-size: 16px;
-    font-family: Roboto Light, sans-serif;
-    padding-bottom: 13px;
     color: #ad2789;
 }
 
 .second ul li span {
-    color: black;
+    color: #373737;
+    font-family: Roboto Light, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
 }
 
 /*Second block end*/
@@ -154,7 +158,7 @@ header p span {
 
 .third .left-block {
     display: flex;
-    width: 70%;
+    width: 60%;
 }
 
 .third .left-block .block-image {
@@ -340,6 +344,7 @@ header p span {
 }
 
 .fourth .text hr {
+    border: 0;
     height: 2px;
     width: 58px;
     margin: 0;
@@ -359,7 +364,7 @@ header p span {
 }
 
 .fifth .text h2 {
-    margin-top: 860px;
+    margin-top: 876px;
     margin-bottom: 23px;
     text-transform: uppercase;
     font-family: Gilroy Extra Bold, sans-serif;
@@ -367,6 +372,7 @@ header p span {
 }
 
 .fifth .text hr {
+    border: 0;
     height: 2px;
     width: 58px;
     margin: 0;
@@ -391,6 +397,7 @@ header p span {
 }
 
 .fifth .block .left-block .block-image {
+    box-shadow: 0 0 15px rgba(22, 22, 22, 0.5);
     margin-top: 108px;
     margin-bottom: 156px;
     height: 350px;
@@ -413,12 +420,13 @@ header p span {
     right: -85px;
     height: 1px;
     width: 88px;
-    background: white;
+    background-color: #d1d1d1;
     position: absolute;
     border: 0;
 }
 
 .fifth .block .left-block .block-image hr#hr2 {
+    background-color: #35acfa;
     width: 5px;
     height: 5px;
     border-radius: 5px;
@@ -442,14 +450,18 @@ header p span {
 }
 
 .fifth .block .right-block hr {
+    margin: 0;
     border: 0;
-    margin: 19px 0 0 0;
     height: 2px;
     width: 60px;
     background-color: #ad2789;
 }
 
 .fifth .block .right-block p {
+    color: #373737;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 29px;
     line-height: 25px;
     font-family: Gilroy Light, sans-serif;
 }
@@ -477,6 +489,7 @@ header p span {
     width: 58px;
     margin: 0;
     background: #ad2789;
+    border: 0;
 }
 
 .sixth p {
@@ -500,6 +513,10 @@ header p span {
 }
 
 .sixth .double-block .inner-block {
+    box-shadow: 0 0 15px rgba(22, 22, 22, 0.5);
+    border-radius: 5px;
+    background-color: #b1d1e7;
+    background-image: linear-gradient(to top, #b1d1e7 0%, #9bb7cb 100%);
     position: relative;
     box-shadow: 0 0 15px rgba(22, 22, 22, 0.5);
 }
@@ -720,31 +737,36 @@ line-height: 29px;
 }
 
 .seventh .first-block .decoration-block {
-    left: 15px;
-    top: 65px;
-    width: 520px;
-    height: 690px;
-    background-color: white;
-    position: absolute;
+    width: 499px;
+    height: 688px;
     box-shadow: 0 0 9px 1px rgba(22, 22, 22, 0.75);
+    background-color: #b1d1e7;
+    background-image: linear-gradient(to top, #e3e3e3 0%, #e3e3e3 1%, #eff0f1 100%);
+    opacity: 0.5;
+    left: 24px;
+    top: 65px;
+    position: absolute;
     border-radius: 5px;
-    opacity: 0.7;
 }
 
 .seventh .first-block .inner-decoration {
-    top: 105px;
-    width: 550px;
-    height: 615px;
-    background-color: white;
-    position: absolute;
+    width: 541px;
+    height: 611px;
     box-shadow: 0 0 9px 1px rgba(22, 22, 22, 0.75);
     border-radius: 5px;
-    opacity: 0.3;
+    background-color: #b1d1e7;
+    background-image: linear-gradient(to top, #e3e3e3 0%, #e3e3e3 1%, #eff0f1 100%);
+    opacity: 0.5;
+    left: 3px;
+    top: 105px;
+    position: absolute
 }
 
 .seventh .first-block img {
-    left: 23px;
-    top: 0;
+    width: 476px;
+    height: 772px;
+    left: 35px;
+    top: 20px;
     position: absolute;
 }
 
@@ -791,7 +813,7 @@ line-height: 29px;
 }
 
 .seventh .second-block .text-block .buttons-link a {
-    margin-right: 23px;
+    margin-right: 12px;
 }
 
 .seventh .second-block .image-block img {
@@ -869,33 +891,38 @@ line-height: 29px;
 }
 
 .seventh .third-block .decoration-block {
-    left: 20px;
-    top: 355px;
-    width: 550px;
+    left: 0px;
+    top: 375px;
+    width: 547px;
     height: 310px;
-    width: 510px;
-    height: 350px;
-    background-color: white;
     position: absolute;
-    box-shadow: 0px 0px 8px 0px rgba(50, 50, 50, 1);
     border-radius: 5px;
-    opacity: 0.9;
+    box-shadow: 0 0 14px 2px rgba(22, 22, 22, 0.75);
+    background-color: #b1d1e7;
+    background-image: linear-gradient(to top, #e3e3e3 0%, #e3e3e3 1%, #eff0f1 100%);
+    opacity: 0.5;
 }
 
 .seventh .third-block .inner-decoration {
-    top: 375px;
-    width: 550px;
-    height: 310px;
-    background-color: white;
+    left: 24px;
+    top: 355px;
+    width: 501px;
+    height: 348px;
     position: absolute;
-    box-shadow: 0px 0px 3px 1.5px rgba(50, 50, 50, 1);
     border-radius: 5px;
-    opacity: 0.3;
+    box-shadow: 0 0 14px 2px rgba(22, 22, 22, 0.75);
+    background-color: #b1d1e7;
+    background-image: -webkit-linear-gradient(bottom, #e3e3e3 0%, #e3e3e3 1%, #eff0f1 100%);
+    background-image: -o-linear-gradient(bottom, #e3e3e3 0%, #e3e3e3 1%, #eff0f1 100%);
+    background-image: linear-gradient(to top, #e3e3e3 0%, #e3e3e3 1%, #eff0f1 100%);
+    opacity: 0.5;
 }
 
 .seventh .third-block img {
-    left: 24px;
-    top: 320px;
+    width: 476px;
+    height: 393px;
+    left: 35px;
+    top: 330px;
     position: absolute;
 }
 
@@ -934,7 +961,7 @@ line-height: 29px;
     font-weight: 300;
     font-style: italic;
     line-height: 24px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 .eighth button {
@@ -943,6 +970,10 @@ line-height: 29px;
     height: 60px;
     background-color: #ae278a;
     margin-bottom: 342px;
+    cursor: pointer;
+}
+.eighth button:hover {
+    background-color: #c39f76;
 }
 
 .eighth button a {
