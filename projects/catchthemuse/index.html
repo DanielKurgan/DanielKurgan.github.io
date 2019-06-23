@@ -4,26 +4,33 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Catch the muse - online-сервис для писателей</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/fonts.css">
-	<link rel="stylesheet" type="text/css" href="css/desktop.css">
-	<link rel="stylesheet" type="text/css" href="css/mobile.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
 <header>
 	<p><span class="first-letter">C</span>atch <span class="first-letter">T</span>he <span class="first-letter">M</span>use</p>
+	<!-- Hamburger -->
+	<div class="menu">
+	  <span class="menu-global menu-top"></span>
+	  <span class="menu-global menu-middle"></span>
+	  <span class="menu-global menu-bottom"></span>
+	</div>
 </header>
 <div class="first">
 	<div class="background"><img src="img/1/imac.png" alt="iMac"></div>
 	<div class="container">
-		<h1>Online-сервис<br>для писателей</h1>
-		<span class="subtitle">Полностью бесплатный</span>
-		<p>«Catch the Muse» — это сервис, который я, копимаркетолог<br>
+		<div class="mobile-background">
+			<h1>Online-сервис<br>для писателей</h1>
+			<span class="subtitle">Полностью бесплатный</span>
+		</div>
+		<p class="desktop">«Catch the Muse» — это сервис, который я, копимаркетолог<br>
 			<a href="#">Андрей Веретенников</a>, создал для себя и друзей.
 			<br>Его идея появилась в тот момент, когда я так и не смог найти
 			<br>программу, в которой было бы приятно работать над 
 			<br>собственной книгой. Что-то простое, удобное и красивое.
 		</p>
+		<p class="mobile">«Catch the Muse» — это сервис, который я создал<br>для себя и друзей. Его идея появилась когда я <br>так и не смог найти программу, в которой было<br>бы приятно работать над собственной книгой.</p>
+		<p class="mobile">Андрей Веретенников, копимаркетолог</p>
 		<button><a href="#">Перейти в сервис</a></button>
 	</div>
 </div>
@@ -35,55 +42,63 @@
 	    <li><span>Любое количество персонажей</span></li>
 	    <li><span>Данные защищены шифрованием</span></li>
 	    <li><span>Адаптирован под ПК и мобильный формат</span></li>
-	    <li><span>Файлы можно хранить онлайн или на своем диске</span></li>
+	    <li class="desktop"><span>Файлы можно хранить онлайн или на своем диске</span></li>
+	    <li class="mobile"><li><span>Сохранение он-лайн или ПК</span></li>
 	</ul>
 </div>
 <div class="third">
 	<div class="left-block">
 		<div class="block-image">
 			<img src="img/3/girlOnWalk.png" alt="Девушка на прогулке">
-			<hr><hr id="hr2">
+			<hr class="mobile-hr"><hr class="mobile-hr" id="hr2">
 		</div>
 	</div>
 	<div class="right-block">
-		<h2>Творчество<br>Без ограничений</h2>
-		<span class="subtitle">Даже на прогулке</span>
+		<h2 class="desktop">Творчество<br>Без ограничений</h2>
+		<h2 class="mobile">Никаких ограничений<br> для творчества</h2>
+		<span class="subtitle desktop">Даже на прогулке</span>
+		<span class="subtitle mobile">Пишите даже на прогулке</span>
 		<hr>
-		<p>Возможность работать с любого гаджета<br>и в любых обстоятельствах</p>
+		<p class="desktop">Возможность работать с любого гаджета<br>и в любых обстоятельствах</p>
+		<p class="mobile">Возможность работать с любого гаджета</p>
 	</div>
 </div>
 <div class="fourth">
 	<div class="text">
 		<h2>Работа на одном экране</h2>
 		<hr>
-		<p>Возможность писать книгу в черновике и переносить<br>готовые блоки в чистовик</p>
+		<p class="desktop">Возможность писать книгу в черновике и переносить<br>готовые блоки в чистовик</p>
+		<p class="mobile">Возможность работать в черновике,<br>копируя готовые блоки в чистовик</p>
 	</div>
 	<div class="two-image">
-		<img src="img/4/back-screen1.png" alt="">
-		<hr><hr><hr><hr>
+		<img src="img/4/back-screen1.png" alt="Backscreen">
+		<hr class="mobile-hr"><hr class="mobile-hr"><hr class="mobile-hr"><hr class="mobile-hr">
 	</div>
 	<div class="one-image">
-		<img src="img/4/back-screen2.png" alt="">
-		<hr><hr><hr>
+		<img class="mobile" src="img/4/mobile-backscreen.png" alt="Backscreen">
+		<img class="desktop" src="img/4/back-screen2.png" alt="">
+		<hr class="mobile-hr"><hr class="mobile-hr"><hr class="mobile-hr">
 	</div>
 </div>
 <div class="fifth">
 	<div class="text">
 		<h2>Ничего лишнего</h2>
 		<hr>
-		<p>Без сложных настроек и запутанных таблиц.<br>Чистый дизайн и стильный интерфейс,<br>в котором только нужные элементы.<br><br>Пишите книги с удовольствием<br>Первый некоммерческий проект<br>Если Вам понравится, пользуйтесь!</p>
+		<p class="desktop">Без сложных настроек и запутанных таблиц.<br>Чистый дизайн и стильный интерфейс,<br>в котором только нужные элементы.<br><br>Пишите книги с удовольствием<br>Первый некоммерческий проект<br>Если Вам понравится, пользуйтесь!</p>
+		<p class="mobile">Это первый некоммерческий сервис,<br>в которм нет сложных настроек и запутанных<br>таблиц. Здесь только нужные функции.<br>Пишите книги с удовольствием.</p>
 	</div>
 	<div class="block">
 		<div class="left-block">
 			<div class="block-image">
 				<img src="img/5/preparation-img.png" alt="Пример формы">
-				<hr><hr id="hr2">
+				<hr class="mobile-hr"><hr class="mobile-hr" id="hr2">
 			</div>
 		</div>
 		<div class="right-block">
 			<h2>Подготовка для<br>издательства</h2>
 			<hr>
-			<p>Возможность внесения информации, которая<br>понадобится для начала работы над книгой,<br>а также для отправки  в издательство</p>
+			<p class="desktop">Возможность внесения информации, которая<br>понадобится для начала работы над книгой,<br>а также для отправки  в издательство</p>
+			<p class="mobile">Возможность внесения информации,<br>которая понадобится для начала работы<br>над книгой и для подготовки к отправке<br>в издательство</p>
 		</div>
 	</div>
 </div>
@@ -91,13 +106,14 @@
 	<div class="text">
 		<h2>Неограниченное<br> число персонажей</h2>
 		<hr>
-		<p>Книга начинается с персонажей. Каждый персонаж имеет свой характер и черты,<br>которые можно корректировать по ходу написания книги<br></p>
+		<p class="desktop">Книга начинается с персонажей. Каждый персонаж имеет свой характер и черты,<br>которые можно корректировать по ходу написания книги<br></p>
+		<p class="mobile">Книга начинается с персонажей.<br>Каждый персонаж имеет свой характер<br>и черты, которые можно корректировать<br>по ходу написания книги<br></p>
 	</div>
 	<div class="image-block">
 		<div class="double-block">
 
 			<div class="inner-block">
-				<hr><hr>
+				<hr class="mobile-hr"><hr class="mobile-hr">
 				<img src="img/6/first-image.png" alt="Первый скрин">
 			</div>
 			<div class="inner-block">
@@ -110,10 +126,11 @@
 			<div class="text-block">
 				<h2>БЕСКОНЕЧНОЕ ЧИСЛО<br>КНИГ И ГЛАВ</h2>
 				<hr>
-				<p>Возможность добавлять неограниченное количество книг<br>и неограниченное количество глав,<br>а также легко удалять ненужное<br></p>
+				<p class="desktop">Возможность добавлять неограниченное количество книг<br>и неограниченное количество глав,<br>а также легко удалять ненужное<br></p>
+				<p class="mobile">Возможность добавлять<br>неограниченное число статей,<br>книжных глав и самих книг</p>
 			</div>
 			<div class="third-block">
-				<hr><hr>
+				<hr class="mobile-hr"><hr class="mobile-hr">
 				<div class="decoration-block"></div>
 				<div class="inner-decoration"></div>
 				<img src="img/6/third-image.png" alt="Третий скрин">
@@ -128,15 +145,17 @@
 		<div class="image-block">
 			<div class="decoration-block"></div>
 			<div class="inner-decoration"></div>
-			<img src="img/7/work-articles.png" alt="Печатающий человек">
+			<img src="img/7/work-articles.png" alt="Печатающий человек" class="desktop">
+			<img src="img/7/mob-work-articles.png" alt="Печатающий человек" class="mobile">
 		</div>
 
 		<div class="text-block">
 			<h2>Работа над статьями</h2>
 			<hr>
-			<p>Возможность работать не только с целыми книгами,<br>но и писать статьи и публицистические заметки</p>
-			<hr><hr>
-			<hr><hr>
+			<p class="desktop">Возможность работать не только с целыми книгами,<br>но и писать статьи и публицистические заметки</p>
+			<p class="mobile">Возможность работать не только<br>с целыми книгами, но и писать статьи и<br>публицистические заметки</p>
+			<hr class="mobile-hr"><hr class="mobile-hr">
+			<hr class="mobile-hr"><hr class="mobile-hr">
 		</div>
 
 	</div>
@@ -145,7 +164,8 @@
 		<div class="text-block">
 			<h2>Сохранность данных</h2>
 			<hr>
-			<p>Элементы, которые позволяют переслать себе на почту<br>или сохранить как целую книгу, так и отдельную главу.<br>При он-лайн хранении используется система шифрования</p>
+			<p class="desktop">Элементы, которые позволяют переслать себе на почту<br>или сохранить как целую книгу, так и отдельную главу.<br>При он-лайн хранении используется система шифрования</p>
+			<p class="mobile">Элементы, которые позволяют<br>переслать себе на почту или сохранить<br>как целую книгу, так и отдельную главу.<br>При он-лайн хранении используется<br>система шифрования</p>
 			<div class="buttons-link">
 				<a href="#"><img src="img/7/download.png" alt="Download"></a>
 				<a href="#"><img src="img/7/telegram.png" alt="Telegram"></a>
@@ -161,13 +181,31 @@
 		<div class="image-block">
 			<div class="decoration-block"></div>
 			<div class="inner-decoration"></div>
-			<img src="img/7/register.png" alt="Форма регистрации">
+			<div class="authorize-form">
+				<div class="authorize-content">
+					<p>Авторизуйся<br><span class="subtitle">в своём пространстве для творчества</span></p>
+					<hr>
+					<button id="fb-color">
+						<a href="#">Войти через Facebook</a>
+					</button>
+					<button id="vk-color">
+						<a href="#">Войти через Вконтакте</a>
+					</button>
+					<button id="g-color">
+						<a href="#">Войти через Google+</a>
+					</button>
+					<hr>
+					<a href="#">Связаться с тех.поддержкой</a>
+					<a href="#">Политики и согласие на обработку данных</a>
+				</div>
+			</div>
 		</div>
 		<div class="text-block">
 			<h2>Простая регистрация</h2>
 			<hr>
-			<p>Легкая регистрация через социальные сети<br>без необходимости устанавливать программу<br>на свой компьютер или телефон</p>
-			<hr><hr>
+			<p class="desktop">Легкая регистрация через социальные сети<br>без необходимости устанавливать программу<br>на свой компьютер или телефон</p>
+			<p class="mobile">Легкая регистрация через социальные<br>сети без необходимости устанавливать<br>программу на свой компьютер или телефон</p>
+			<hr class="mobile-hr"><hr class="mobile-hr">
 		</div>
 	</div>
 </div>
@@ -189,6 +227,7 @@
 		<p><a href="#">Предложения и вопросы:  Facebook</a></p>
 	</div>
 </footer>
+
 	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
 </html>
