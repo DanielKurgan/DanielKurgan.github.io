@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Card</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+
+<body>
+    <div class="pay-block">
+        <div class="pay-form">
+            <div class="left-card">
+
+                <div class="top-card">
+                    <h1>Card Details</h1>
+                    <img src="img/logo.png" alt="Visa Mastercard">
+                </div>
+				<div id="hide-block">
+			        <input class="mask-card-code" placeholder="Code" type="text" id="cvv-code">
+				</div>
+				<div class="content-card" id="hide-content">
+	                <label id="label-number" for="name" class="name-lbl">Your Card Number</label>
+	                <input class="mask-card-number" placeholder="****   ****   ****   ****" type="text" id="card-number">
+
+	                <label id="label-expiry" for="name" class="name-lbl">Expiry date</label>
+	                <div class="expiry-date">
+	                    <select type="text" id="card-month">
+	                        <option value="" disabled selected>Month</option>
+	                    </select>
+	                    <select type="text" id="card-year">
+	                        <option value="" disabled selected>Year</option>
+	                    </select>
+	                </div>
+	            </div>
+
+            </div>
+            <div class="right-card">
+				<hr>
+				<div id="hide-cvv" class="cvv-code">
+	                <label id="label-code" for="name" class="name-lbl">CVV</label>
+	                <input class="mask-card-code" placeholder="Code" type="text" id="cvv-code">
+                </div>
+            </div>
+        </div>
+        <div class="pay-bottom">
+        	<img id="hide-logos" src="img/bottom-logos.png" alt="Verified by VISA">
+        	<button id="button-cancel" onclick="goback()" class="cancel">CANCEL</button>
+        	<button class="button" onclick="paynow()">Pay Now</button>
+        </div>
+    </div>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
+<script>
+	$('.mask-card-number').mask('9999 9999 9999 9999');
+	$('.mask-card-code').mask('999');
+</script>
+<script src="js/script.js"></script>
+</body>
+
+</html>

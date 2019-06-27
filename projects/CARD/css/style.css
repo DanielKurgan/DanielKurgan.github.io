@@ -1,0 +1,209 @@
+.pay-block {
+    width: 415px;
+}
+
+.pay-form {
+    width: 415px;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+/*Left side card*/
+.left-card {
+    box-shadow: 6px 0px 9px 0px rgba(50, 50, 50, 0.25);
+    width: 320px;
+    height: 100%;
+    background: #EDF2F7;
+    border-radius: 20px;
+    border: 1px solid #CCD1E6;
+    padding: 25px 30px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    color: #7B7EA7;
+    z-index: 2;
+}
+
+.top-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-card h1 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.top-card img {
+    width: 94px;
+    height: 21px;
+}
+
+label#label-number {
+    margin-top: 20px;
+}
+
+.name-lbl {
+    display: block;
+}
+
+.name-lbl:after {
+    content: '*';
+    color: red;
+}
+
+input {
+    letter-spacing: 1px;
+    height: 34px;
+    border-radius: 10px;
+    border: 1px solid #DFDFFD;
+    box-sizing: border-box;
+    color: #D9DAFC;
+    font-size: 12px;
+	outline: none;
+}
+input:focus {
+	border: 1px solid #388CFD;
+}
+input#card-number {
+    width: 100%;
+    padding: 10px;
+}
+
+input#card-number::placeholder {
+    color: #D3D4FC;
+}
+
+.expiry-date {
+    display: flex;
+    flex-direction: row;
+}
+
+.expiry-date select {
+	outline: none;
+    width: 85px;
+    margin-right: 5px;
+    height: 34px;
+    border-radius: 8px;
+    border: 1px solid #DFDFFD;
+    box-sizing: border-box;
+    color: #D9DAFC;
+}
+
+.expiry-date select {
+    font-size: 12px;
+    padding: 5px 10px;
+}
+.expiry-date select:focus {
+	border: 1px solid #388CFD;
+}
+label#label-expiry {
+    margin-bottom: 2px;
+    margin-top: 10px;
+}
+
+label {
+    font-size: 12px;
+}
+
+/*Right side card*/
+.right-card {
+    border-radius: 20px;
+    width: 100%;
+    z-index: 1;
+    height: 100%;
+    background: #EDF2F7;
+    position: absolute;
+    border: 1px solid #CCD1E6;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.right-card hr {
+    box-sizing: border-box;
+    border: 0;
+    background: #E1E8F0;
+    margin-top: 43px;
+    height: 33px;
+    width: 413px;
+}
+
+.right-card .cvv-code {
+    margin-top: 40px;
+    position: absolute;
+    right: 14px;
+}
+
+.right-card input#cvv-code {
+	outline: none;
+    display: flex;
+    width: 65px;
+    padding: 10px 15px;
+    font-size: 11px;
+}
+
+.right-card .cvv-code input#cvv-code::placeholder {
+    color: #D3D4FC;
+}
+
+.pay-bottom {
+    margin-top: 15px;
+    width: 415px;
+    display: flex;
+    justify-content: space-between;
+	box-sizing: border-box;
+	align-items: center;
+	font-family: Arial, sans-serif;
+}
+
+.pay-bottom img {
+    width: 195px;
+    height: 28px;
+}
+.pay-bottom button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+    background: #456CF8;
+    height: 35px;
+    width: 128px;
+    max-width: 138px;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    font-weight: normal;
+    outline: 0;
+    border: 0;
+}
+
+/*Hide elements*/
+#hide-block {
+	display: none;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+#hide-block input#cvv-code {
+	outline: none;
+    display: flex;
+    font-size: 11px;
+	width: 120px;
+	text-align: center;
+}
+
+#hide-block input#cvv-code::placeholder {
+    color: #D3D4FC;
+}
+
+.pay-bottom button.cancel {
+	display: none;
+	background-color: #0224A2;
+	width: 82px;
+	height: 35px;
+	border: none;
+	outline: 0;
+}
