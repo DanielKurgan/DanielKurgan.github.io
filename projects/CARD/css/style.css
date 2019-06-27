@@ -61,7 +61,7 @@ input {
     border-radius: 10px;
     border: 1px solid #DFDFFD;
     box-sizing: border-box;
-    color: #D9DAFC;
+    color: #ccceff;
     font-size: 12px;
 	outline: none;
 }
@@ -74,7 +74,7 @@ input#card-number {
 }
 
 input#card-number::placeholder {
-    color: #D3D4FC;
+    color: #ccceff;
 }
 
 .expiry-date {
@@ -90,7 +90,7 @@ input#card-number::placeholder {
     border-radius: 8px;
     border: 1px solid #DFDFFD;
     box-sizing: border-box;
-    color: #D9DAFC;
+    color: #ccceff;
 }
 
 .expiry-date select {
@@ -146,7 +146,7 @@ label {
 }
 
 .right-card .cvv-code input#cvv-code::placeholder {
-    color: #D3D4FC;
+    color: #ccceff;
 }
 
 .pay-bottom {
@@ -179,6 +179,10 @@ label {
     outline: 0;
     border: 0;
 }
+.pay-bottom button#secondstap {
+	display: none;
+}
+
 
 /*Hide elements*/
 #hide-block {
@@ -196,7 +200,7 @@ label {
 }
 
 #hide-block input#cvv-code::placeholder {
-    color: #D3D4FC;
+    color: #ccceff;
 }
 
 .pay-bottom button.cancel {
@@ -206,4 +210,15 @@ label {
 	height: 35px;
 	border: none;
 	outline: 0;
+}
+
+/*Loader*/
+#loader {
+	display: none;
+	height: 100%;
+	width: 100%;
+	justify-content: center;
+	align-self: center;
+}
+.gif-loader img {
 }
