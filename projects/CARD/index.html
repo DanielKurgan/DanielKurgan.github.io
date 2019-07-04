@@ -6,6 +6,7 @@
     <title>Card</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<script type="text/javascript" src="js/jquery3.3.1.js"></script>
 </head>
 
 <body>
@@ -21,7 +22,7 @@
                 	<img src="img/91.svg" alt="Gif">
                 </div>
 				<div id="hide-block">
-			        <input class="mask-card-code" placeholder="Code" type="text" id="cvv-code">
+			        <input class="mask-card-code second-code" placeholder="SMS Code" type="text" id="cvv-code">
 				</div>
 				<div class="content-card" id="hide-content">
 	                <label id="label-number" for="name" class="name-lbl">Your Card Number</label>
@@ -72,7 +73,10 @@
         <div class="pay-bottom">
         	<img id="hide-logos" src="img/bottom-logos.png" alt="Verified by VISA">
         	<button id="button-cancel" onclick="goback()" class="cancel">CANCEL</button>
-        	<button id="firststap" class="button" onclick="paynow()">Pay Now</button>
+        	<div class="button-check">
+        		<button id="firststap" class="button" onclick="paynow()">Pay Now</button>
+        		<div id="over-button" class="over-button"></div>
+        	</div>
         	<button id="secondstap" class="button">Pay Now</button>
         </div>
     </div>
@@ -83,6 +87,7 @@
  $(function() {
    	$('.mask-card-number').mask('9999 9999 9999 9999');
 	$('.mask-card-code').mask('999');
+	$('.second-code').mask('99999999');
  });
 </script>    
 <!-- /jQuery Mask Plugin -->
