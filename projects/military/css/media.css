@@ -1,0 +1,302 @@
+/* Девайсы < 1440*/
+@media screen and (max-width: 1440px) {
+	.main-soldier {
+    left: 925px;
+}
+.main-soldier img {
+    height: 696px;
+    width: 427px;
+}
+	.top-bar nav.menu ul li a {
+    font-size: 19px;
+    padding: 0 26.5px;
+}
+.main-text button span#main-button_inner {
+    font-size: 44px;
+}
+.main-text button#main-button {
+    margin-left: 51px;
+    width: 100%;
+    max-width: 686px;
+    height: 90px;
+}
+.main-text ul li {
+    font-size: 37px;
+}
+.proposition-button button span#proposition-button_inner {
+    font-size: 27px;
+}
+.proposition-button button#proposition-button_outer {
+    padding: 10px
+}
+#countdown {
+    top: 425px;
+}
+
+
+
+
+
+}
+/*Девайсы < 1280*/
+@media (max-width: 1280px) {
+.main-text button span#main-button_inner {
+    font-size: 34px;
+}
+.main-text button#main-button {
+    margin-left: 51px;
+    width: 100%;
+    max-width: 661px;
+    height: 90px;
+}
+.main-text ul li {
+    font-size: 37px;
+    margin-left: 200px;
+}
+#countdown {
+    left: 140px;
+}
+.proposition-button button#proposition-button_outer {
+    padding: 10px;
+    margin-left: 10px;
+}
+.proposition-button button span#proposition-button_inner {
+    font-size: 37px;
+}
+.proposition-button p {
+    font-size: 14px;
+    padding-top: 0;
+}
+.main-text button#main-button:before {
+    top: -20px;
+  }
+.proposition-button hr {
+    width: 22px;
+    bottom: 12px;
+    left: 140px;
+}
+#countdown {
+    height: 88px;
+    width: 220px;
+}
+#countdown:before {
+    width: 8px;
+    height: 50px;
+    top: 18px;
+    left: -10px;
+}
+#countdown:after {
+    width: 8px;
+    height: 50px;
+    top: 18px;
+    right: -10px;
+}
+#countdown #tiles{position:relative;z-index:1}
+#countdown #tiles > span{width:100%;max-width:35px;height:35px;font:bold 22px 'Droid Sans',Arial,sans-serif;text-align:center;color:#111;background-color:#ddd;background-image:-webkit-linear-gradient(top,#bbb,#eee);background-image:-moz-linear-gradient(top,#bbb,#eee);background-image:-ms-linear-gradient(top,#bbb,#eee);background-image:-o-linear-gradient(top,#bbb,#eee);border-top:1px solid #fff;border-radius:3px;-webkit-box-shadow:0 0 12px rgba(-1,0,0,0.7);box-shadow:0 0 12px rgba(-1,0,0,0.7);margin:0 7px;padding:5px 0;display:inline-block;position:relative; -webkit-box-sizing: border-box; box-sizing: border-box;}
+#countdown #tiles > span:before{content:"";width:100%;height:13px;background:#111;display:block;padding:0 3px;position:absolute;top:41%;left:-3px;z-index:-1}
+#countdown #tiles > span:after{content:"";width:100%;height:1px;background:#eee;border-top:1px solid #333;display:block;position:absolute;top:48%;left:0}
+#countdown .labels {
+    width: 100%;
+    height: 5px;
+    bottom: 22px;
+}
+#countdown .labels li {
+    width: 46px;
+    font: bold 9px 'Droid Sans',Arial,sans-serif;
+}
+.proposition-button {
+    margin-left: 370px;
+    margin-top: 35px;
+    position: relative
+}
+.main-soldier {
+    left: 795px;
+}
+
+
+
+
+}
+
+/*Большие девайсы (Десктопы, < 1024px)*/
+@media (max-width: 1024px) {
+	.top-bar {
+    margin-bottom: 100px;
+}
+.main-text button span#main-button_inner {
+    font-size: 24px;
+}
+.main-text button#main-button {
+    margin-left: 51px;
+    width: 100%;
+    max-width: 381px;
+    height: 60px;
+}
+.main-text ul li {
+    font-size: 25px;
+    margin-left: 160px;
+}
+#countdown {
+    left: 100px;
+}
+.proposition-button {
+    margin-left: 340px;
+    margin-top: 60px;
+}
+.main-text button#main-button:before {
+    top: -30px;
+    right: -200px;
+}
+.main-soldier {
+    left: 595px;
+}
+.main-soldier img {
+    height: 596px;
+    width: 327px;
+}
+
+
+
+
+
+
+}
+
+/*Средние девайсы («таблетки», < 992px) */
+@media (max-width: 992px) {
+	
+}
+
+/*Малые девайсы («ландшафтные», < 768px)
+*/@media (max-width: 768px) {
+	.top-bar {
+    flex-direction: column;
+}
+.top-bar nav.menu ul {
+	margin-top: 30px;
+}
+.main-text button#main-button {
+    margin-left: 22px;
+    width: 100%;
+    max-width: 381px;
+    height: 60px;
+}
+.main-text ul li {
+    font-size: 22px;
+    margin-left: 131px;
+}
+#countdown {
+    left: 70px;
+    top: 395px;
+}
+.proposition-button {
+    margin-left: 300px;
+    margin-top: 35px;
+}
+.main-text button#main-button:before {
+	display: none;
+}
+.main-soldier {
+    left: 505px;
+}
+.main-soldier img {
+    height: 496px;
+    width: 227px;
+}
+
+
+
+
+}
+/*Экстрамалые девайсы («телефоны», < 576px)
+*/@media (max-width: 576px) {
+.main-soldier {
+    left: 505px;
+    display: none;
+}
+.top-bar {
+    margin-bottom: 22px;
+}
+.top-bar nav.menu ul li a {
+    font-size: 19px;
+    padding: 0 6.5px;
+}
+.main-center {
+    justify-content: center;
+}
+.main-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-text button#main-button {
+    margin: 0 auto;
+}
+.main-text button span#main-button_inner {
+    font-size: 22px;
+}
+.main-text ul li {
+    font-size: 21px;
+}
+.main-text ul li {
+    font-size: 22px;
+    margin-left: 81px;
+}
+.main .container .container-cell {
+    padding: 0 16px;
+}
+#countdown {
+	left: 65px;
+    top: 475px;
+}
+.proposition-button {
+    margin-left: 0;
+    margin-top: 15px;
+}
+}
+
+@media (max-width: 410px) {
+.top-bar .logo p {
+    font-size: 42px;
+    margin-left: 60px;
+}
+.top-bar nav.menu ul li a {
+    font-size: 16px;
+    padding: 0 6.5px;
+}
+}
+
+@media (max-width: 320px) {
+.top-bar .logo p {
+    font-size: 32px;
+    margin-left: 82px;
+}
+.top-bar nav.menu ul {
+    margin-top: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+.top-bar nav.menu ul li a {
+	border-right:0;
+}
+.main-text button span#main-button_inner {
+    font-size: 20px;
+}
+.main-text button#main-button {
+    height: 50px;
+}
+.main-text ul li {
+    font-size: 18px;
+    margin-left: 81px;
+}
+.top-bar nav.menu ul li {
+    height: 22px;
+}
+.main-text ul li {
+    padding-bottom: 17px;
+}
+#countdown {
+    left: 40px;
+    top: 425px;
+}
+}
