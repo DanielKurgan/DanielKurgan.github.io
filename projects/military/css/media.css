@@ -1,11 +1,30 @@
-/* Девайсы < 1440*/
+@media screen and (max-width: 1600px) {
+.popup-content_container {
+    width: 90%;
+    height: 90%;
+}
+main-soldier {
+    bottom: -100px;
+    left: 895px;
+}
+main-soldier img {
+    height: 796px;
+    width: 497px;
+}
+.popup-content .popup-content_container ul li {
+    font-size: 38px;
+    line-height: 42.08px;
+}
+
+}
 @media screen and (max-width: 1440px) {
-	.main-soldier {
-    left: 925px;
+.main-soldier {
+    bottom: -50px;
+    left: 885px;
 }
 .main-soldier img {
     height: 696px;
-    width: 427px;
+    width: 377px;
 }
 .main-text button#main-button:before {
     top: -10px;
@@ -36,15 +55,15 @@
     top: 425px;
 }
 .proposition-button hr {
-    width: 31px;
-    left: 90px;
+    width: 41px;
+    left: 125px;
 }
 .popup-content_container {
     width: 90%;
 }
 .popup-content .popup-content_container ul li {
-    font-size: 32px;
-    line-height: 42.08px;
+    font-size: 31px;
+    line-height: 32.08px;
 }
 
 
@@ -75,11 +94,11 @@
 #countdown {
     left: 140px;
 }
-.proposition-button button#proposition-button_outer {
+.proposition-button #proposition-button_outer {
     padding: 10px;
     margin-left: 10px;
 }
-.proposition-button button span#proposition-button_inner {
+.proposition-button span#proposition-button_inner {
     font-size: 37px;
 }
 .proposition-button p {
@@ -133,7 +152,7 @@
 }
 .popup-content .popup-content_container ul li {
     font-size: 28px;
-    line-height: 40.08px;
+    line-height: 35px;
 }
 
 
@@ -165,17 +184,32 @@
     margin-left: 340px;
     margin-top: 60px;
 }
+.proposition-button #proposition-button_outer {
+    padding: 10px;
+    margin-left: 150px;
+}
+.proposition-button p {
+    font-size: 14px;
+    padding-top: 0;
+    margin-left: 150px;
+}
 .main-text button#main-button:before {
     top: -30px;
-    right: -200px;
+    right: -230px;
+    display: none;
+}
+.proposition-button hr {
+    width: 22px;
+    bottom: 12px;
+    left: 290px;
 }
 .main-soldier {
-    left: 655px;
-    bottom: 40px;
+    left: 505px;
+    bottom: 90px;
 }
 .main-soldier img {
-    height: 596px;
-    width: 327px;
+    height: 486px;
+    width: 317px;
 }
 .popup-bonus h2 {
     font-size: 65px;
@@ -223,11 +257,15 @@
 
 /*Средние девайсы («таблетки», < 992px) */
 @media (max-width: 992px) {
-	
+.top-bar {
+    flex-direction: column;
 }
-
+.top-bar .logo {
+    margin-bottom: 15px;
+}
+}
 /*Малые девайсы («ландшафтные», < 768px)
-*/@media (max-width: 768px) {
+*/@media (max-width: 800px) {
 	.top-bar {
     flex-direction: column;
 }
@@ -252,22 +290,23 @@
     margin-left: 300px;
     margin-top: 35px;
 }
-.main-text button#main-button:before {
+.main-text #main-button:before {
 	display: none;
 }
 .main-soldier {
     left: 405px;
-    bottom: 150px;
+    bottom: 190px;
 }
 .main-soldier img {
     height: 476px;
     width: 287px;
 }
-.proposition-button button#proposition-button_outer {
+.proposition-button #proposition-button_outer {
     margin-left: 70px;
 }
 .proposition-button p {
     margin-left: 70px;
+    padding-bottom: 100px;
 }
 .proposition-button hr {
     width: 22px;
@@ -311,7 +350,7 @@
 }
 .popup-content .popup-content_container ul li {
     font-size: 24px;
-    line-height: 41.08px;
+    line-height: 30px;
 }
 .popup-main h2 {
     font-size: 55px;
@@ -348,13 +387,14 @@
 }
 .proposition-button hr {
     width: 22px;
-    bottom: 12px;
+    bottom: 112px;
     left: 210px;
 }
 }
 
 /*Экстрамалые девайсы («телефоны», < 576px)
 */@media (max-width: 576px) {
+
 .main-soldier {
     left: 505px;
     display: none;
@@ -398,7 +438,7 @@
     margin-left: 0;
     margin-top: 15px;
 }
-.proposition-button button#proposition-button_outer {
+.proposition-button #proposition-button_outer {
     margin-left: 0;
 }
 .proposition-button p {
@@ -409,6 +449,9 @@
 }
 #countdown {
     left: 55px;
+}
+.popup-content .popup-content_container hr {
+    margin-left: 13px;
 }
 .popup-contacts p.name-channel {
     font-size: 36.8px;
@@ -456,7 +499,7 @@
 }
 .popup-content .popup-content_container ul li {
     font-size: 16px;
-    line-height: 31.08px;
+    line-height: 21.08px;
 }
 .popup-main p {
     font-size: 18px;
@@ -552,7 +595,7 @@
 
 }
 
-@media (max-width: 320px) {
+@media (max-width: 385px) {
 .close-button {
     top: 5px;
     right: 5px;
@@ -588,9 +631,9 @@
 }
 #countdown {
     left: 40px;
-    top: 435px;
+    top: 445px;
 }
-.proposition-button button span#proposition-button_inner {
+.proposition-button #proposition-button_inner {
     font-size: 27px;
 }
 .proposition-button hr {
@@ -606,7 +649,7 @@
     font-size: 35px;
 }
 .slider-dots {
-    margin-bottom: 90px;
+    margin-bottom: 20px;
 }
 .popup-bonus_container {
     width: 90%;
@@ -648,10 +691,18 @@
 .popup-content_container {
     height: 60%;
 }
-
-
-
-
+.popup-bonus_container img.bonus-image {
+    height: 90px;
+}
+.popup-contacts .youtube-contact_block {
+    margin-bottom: 50px;
+}
+.popup-contacts .youtube-contact {
+    height: 130%;
+}
+.popup-contacts .vk-contact {
+    height: 130%;
+}
 
 
 }

@@ -15,7 +15,7 @@
 				<div class="container-cell">
 					<div class="top-bar">
 						<div class="logo">
-							<a target="_blank" href="https://www.youtube.com/c/%D0%9F%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D1%82%D0%B8%D0%B9?reload=9">Павлентий</a>
+							<a target="_blank" href="https://youtube.com/c/Павлентий">Павлентий</a>
 						</div>
 						<nav class="menu">
 						    <ul>
@@ -28,7 +28,7 @@
 					</div>
 					<div class="main-center">
 						<div class="main-text">
-							<button id="main-button" onclick="PopUpShowMain()">
+							<button id="main-button" >
 								<span id="main-button_inner">20 рекомендаций призывнику</span>
 							</button>
 							<ul>
@@ -50,9 +50,20 @@
 									</div>
 								</div>
 								<div class="proposition-button">
-									<button id="proposition-button_outer">
-										<span id="proposition-button_inner">Приобрести курс</span>
-									</button>
+									<div  id="proposition-button_outer">
+				                        <form method="POST" action="https://money.yandex.ru/quickpay/confirm.xml">
+				                            <input class="native-input native-input_type_hidden" name="quickpay-form" value="small" type="hidden">
+				                            <input class="native-input native-input_type_hidden" name="is-inner-form" value="true" type="hidden">
+				                            <input class="native-input native-input_type_hidden" name="paymentType" value="AC" type="hidden">
+				                            <input class="native-input native-input_type_hidden" name="targets" value="Курс по заработку на светящихся шарах" type="hidden">
+				                            <input type="hidden" name="sum" value="1490" data-type="hidden">
+											<input class="native-input native-input_type_hidden" name="successURL" value="https://yadi.sk/d/mBa6alQ_MeyfjA" type="hidden">
+				                            <input class="native-input native-input_type_hidden" name="referer" value="" type="hidden">
+				                            <input class="native-input native-input_type_hidden" name="need-fio" value="true" type="hidden">
+				                            <input class="native-input native-input_type_hidden" name="need-email" value="true" type="hidden">
+				                            <input id="proposition-button_inner" type="submit" value="Приобрести курс">
+				                        </form>
+									</div>
 									<p>всего за <span class="cross"> 2 490 </span> 1490 рублей</p><hr>
 								</div>
 							</div>
@@ -144,7 +155,7 @@
 							<h2>Контакты</h2>
 							<div class="youtube-contact_block">
 								<button class="youtube-contact">
-									<a href="#">
+									<a href="https://youtube.com/c/Павлентий">
 										<div class="youtube-name">
 											<img src="img/youtube-icon.png" alt="Youtube">
 											<p class="name-channel">Павлентий</p>
@@ -158,7 +169,7 @@
 							
 							<div class="vk-contact_block">
 								<button class="vk-contact">
-									<a href="#">
+									<a href="https://vk.com/id260872348">
 										<div class="vk-name">
 											<img src="img/vk-icon.png" alt="vk">
 											<p class="name-channel">Павлентий</p>
