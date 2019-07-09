@@ -1,4 +1,4 @@
-var target_date = new Date().getTime() + (1000*3600*48); // установить дату обратного отсчета
+var target_date = new Date().getTime() + (8000*3600*48); // установить дату обратного отсчета
 var days, hours, minutes, seconds; // переменные для единиц времени
  
 var countdown = document.getElementById("tiles"); // получить элемент тега
