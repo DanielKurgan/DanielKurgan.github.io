@@ -1,6 +1,16 @@
 @media screen and (max-width: 1920px) and (min-width: 1601px) {
 .main {
-    padding-top: 125px;
+    padding-top: 45px;
+}
+.top-bar {
+    margin-bottom: 170px;
+}
+.proposition-button #proposition-button_inner {
+    line-height: 68px;
+    padding: 0 20px;
+}
+.proposition-button #proposition-button_outer {
+    padding: 0px;
 }
 }
 
@@ -323,10 +333,10 @@
         left: 290px;
     }
 
-    .main-soldier {
-        left: 505px;
-        bottom: 100px;
-    }
+.main-soldier {
+    left: 475px;
+    bottom: 100px;
+}
 
     .main-soldier img {
         height: 486px;
@@ -446,9 +456,9 @@
         width: 287px;
     }
 
-    .proposition-button #proposition-button_outer {
-        margin-left: 70px;
-    }
+.proposition-button #proposition-button_outer {
+    margin-left: 100px;
+}
 
     .proposition-button p {
         margin-left: 70px;
@@ -637,11 +647,12 @@
     }
 
     .proposition-button hr {
-        left: 135px;
+        left: 105px;
     }
 
     #countdown {
         left: 55px;
+        top: 485px;
     }
 
     .popup-content .popup-content_container hr {
