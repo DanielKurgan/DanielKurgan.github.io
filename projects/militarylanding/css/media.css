@@ -44,7 +44,7 @@
 }
 
 .main-soldier img {
-    height: 926px;
+    height: 756px;
     width: 517px;
 }
 
@@ -70,7 +70,7 @@
 @media screen and (max-width: 1440px) {
 .main-soldier {
     bottom: 0px;
-    left: 945px;
+    left: 915px;
 }
 
 .main-soldier img {
@@ -324,7 +324,7 @@
 }*/
 .main-soldier {
     bottom: 0px;
-    left: 605px;
+    left: 595px;
 }
     .popup-content .popup-content_container ul li {
         font-size: 28px;
@@ -454,7 +454,12 @@
         line-height: 48.75px;
     }
 }
-
+@media (max-width: 960px) {
+.main-soldier {
+    left: 495px;
+    bottom: 100px;
+}
+}
 /*Средние девайсы («таблетки», < 992px) */
 @media (max-width: 992px) {
     .top-bar {
