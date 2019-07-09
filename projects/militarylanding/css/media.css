@@ -2,6 +2,7 @@
 .main {
     padding-top: 45px;
 }
+
 .top-bar {
     margin-bottom: 200px;
 }
@@ -14,14 +15,19 @@
 }
 .main-soldier {
     bottom: 0px;
-    left: 1085px;
+    left: 1025px;
 }
 .main-soldier img {
     height: 966px;
     width: 637px;
 }
 }
-
+@media screen and (max-width: 1680px) {
+    .main-soldier img {
+        height: 786px;
+        width: 547px;
+    }
+}
 @media screen and (max-width: 1650px) {
     .popup-content_container {
         width: 90%;
@@ -30,12 +36,12 @@
 
 .main-soldier {
     bottom: 0px;
-    left: 955px;
+    left: 1025px;
 }
 
 .main-soldier img {
-    height: 716px;
-    width: 447px;
+    height: 926px;
+    width: 517px;
 }
 
     .popup-content .popup-content_container ul li {
@@ -44,16 +50,21 @@
     }
 
 }
-
-@media screen and (max-width: 1440px) {
-    .main-soldier {
-        bottom: 0px;
-        left: 885px;
+@media screen and (max-width: 1600px) {
+    .main-soldier img {
+        height: 776px;
+        width: 517px;
     }
+}
+@media screen and (max-width: 1440px) {
+.main-soldier {
+    bottom: 0px;
+    left: 915px;
+}
 
 .main-soldier img {
     height: 736px;
-    width: 377px;
+    width: 447px;
 }
 
     .main-text button#main-button:before {
@@ -112,6 +123,9 @@
 
 /*Девайсы < 1280*/
 @media (max-width: 1280px) {
+    .main {
+        position: relative;
+    }
     .main-text button span#main-button_inner {
         font-size: 34px;
     }
@@ -120,7 +134,10 @@
     bottom: 0px;
     left: 645px;
 }
-
+.main-soldier img {
+    height: 686px;
+    width: 377px;
+}
     .main-text button#main-button {
         margin-left: 22px;
         width: 80%;
@@ -277,6 +294,17 @@
 
 /*Большие девайсы (Десктопы, < 1024px)*/
 @media (max-width: 1024px) {
+    .main {
+        position: relative;
+    }
+.main-soldier img {
+    height: 696px;
+    width: 377px;
+}
+.main-soldier {
+    bottom: 0px;
+    left: 615px;
+}
     .popup-content .popup-content_container ul li {
         font-size: 28px;
         line-height: 30px;
