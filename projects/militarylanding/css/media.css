@@ -13,7 +13,7 @@
     padding: 0px;
 }
 .main-soldier {
-    bottom: -50px;
+    bottom: 0px;
     left: 1085px;
 }
 .main-soldier img {
@@ -47,7 +47,7 @@
 
 @media screen and (max-width: 1440px) {
     .main-soldier {
-        bottom: -50px;
+        bottom: 0px;
         left: 885px;
     }
 
