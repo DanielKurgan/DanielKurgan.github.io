@@ -1,52 +1,59 @@
 @media screen and (max-width: 1920px) and (min-width: 1601px) {
-.main {
-    padding-top: 45px;
+    .main {
+        padding-top: 45px;
+    }
+
+    .top-bar {
+        margin-bottom: 200px;
+    }
+
+    .proposition-button #proposition-button_inner {
+        line-height: 68px;
+        padding: 0 20px;
+    }
+
+    .proposition-button #proposition-button_outer {
+        padding: 0px;
+    }
+
+    .main-soldier {
+        bottom: 0px;
+        left: 1065px;
+    }
+
+    .main-soldier img {
+        height: 966px;
+        width: 637px;
+    }
 }
 
-.top-bar {
-    margin-bottom: 200px;
-}
-.proposition-button #proposition-button_inner {
-    line-height: 68px;
-    padding: 0 20px;
-}
-.proposition-button #proposition-button_outer {
-    padding: 0px;
-}
-.main-soldier {
-    bottom: 0px;
-    left: 1065px;
-}
-.main-soldier img {
-    height: 966px;
-    width: 637px;
-}
-}
 @media screen and (max-width: 1680px) {
-.main-soldier {
-    bottom: 0px;
-    left: 1035px;
-}
+    .main-soldier {
+        bottom: 0px;
+        left: 1035px;
+    }
+
     .main-soldier img {
         height: 936px;
         width: 637px;
     }
 }
+
 @media screen and (max-width: 1650px) {
     .popup-content_container {
         width: 90%;
         height: 90%;
     }
 
-.main-soldier {
-    bottom: 0px;
-    left: 1025px;
-}
+    .main-soldier {
+        bottom: 0px;
+        left: 1025px;
+    }
 
-.main-soldier img {
-    height: 756px;
-    width: 517px;
-}
+    .main-soldier img {
+        height: 756px;
+        width: 517px;
+    }
 
     .popup-content .popup-content_container ul li {
         font-size: 38px;
@@ -54,29 +61,33 @@
     }
 
 }
+
 @media screen and (max-width: 1600px) {
     .main {
         position: relative;
     }
-.main-soldier img {
-    height: 716px;
-    width: 447px;
-}
-.main-soldier {
-    bottom: 0px;
-    left: 955px;
-}
-}
-@media screen and (max-width: 1440px) {
-.main-soldier {
-    bottom: 0px;
-    left: 915px;
+
+    .main-soldier img {
+        height: 716px;
+        width: 447px;
+    }
+
+    .main-soldier {
+        bottom: 0px;
+        left: 955px;
+    }
 }
 
-.main-soldier img {
-    height: 736px;
-    width: 447px;
-}
+@media screen and (max-width: 1440px) {
+    .main-soldier {
+        bottom: 0px;
+        left: 915px;
+    }
+
+    .main-soldier img {
+        height: 736px;
+        width: 447px;
+    }
 
     .main-text button#main-button:before {
         top: -10px;
@@ -141,20 +152,25 @@
     .main {
         position: relative;
     }
+
     .main-text button span#main-button_inner {
         font-size: 34px;
     }
-.main-text button#main-button:before {
-    display: none;
-}
-.main-soldier {
-    bottom: 0px;
-    left: 685px;
-}
-.main-soldier img {
-    height: 686px;
-    width: 377px;
-}
+
+    .main-text button#main-button:before {
+        display: none;
+    }
+
+    .main-soldier {
+        bottom: 0px;
+        left: 685px;
+    }
+
+    .main-soldier img {
+        height: 686px;
+        width: 377px;
+    }
+
     .main-text button#main-button {
         margin-left: 22px;
         width: 80%;
@@ -298,14 +314,16 @@
         font-size: 28px;
         line-height: 40px;
     }
-.popup-bonus p {
-    font-size: 39px;
-    line-height: 48.75px;
-}
-.popup-bonus_container {
-    width: 90%;
-    height: 95%;
-}
+
+    .popup-bonus p {
+        font-size: 39px;
+        line-height: 48.75px;
+    }
+
+    .popup-bonus_container {
+        width: 90%;
+        height: 95%;
+    }
 
 }
 
@@ -314,30 +332,39 @@
     .main {
         position: relative;
     }
-.main-soldier img {
-    height: 696px;
-    width: 377px;
+.main-soldier {
+    bottom: 0px;
+    left: 605px;
 }
-/*.main-soldier {
+    .main-soldier img {
+        height: 696px;
+        width: 377px;
+    }
+
+    /*.main-soldier {
     left: 495px;
     bottom: 100px;
 }*/
-.main-soldier {
-    bottom: 0px;
-    left: 595px;
-}
+    .main-soldier {
+        bottom: 0px;
+        left: 595px;
+    }
+
     .popup-content .popup-content_container ul li {
         font-size: 28px;
         line-height: 30px;
     }
-.popup-bonus_container {
-    width: 90%;
-    height: 90%;
-}
-.popup-bonus p {
-    font-size: 29px;
-    line-height: 28.75px;
-}
+
+    .popup-bonus_container {
+        width: 90%;
+        height: 90%;
+    }
+
+    .popup-bonus p {
+        font-size: 29px;
+        line-height: 28.75px;
+    }
+
     .top-bar {
         margin-bottom: 100px;
     }
@@ -384,16 +411,16 @@
         display: none;
     }
 
-.proposition-button hr {
-    width: 22px;
-    bottom: 0px;
-    left: 260px;
-}
+    .proposition-button hr {
+        width: 22px;
+        bottom: 0px;
+        left: 260px;
+    }
 
-.main-soldier {
-    left: 495px;
-    bottom: 240px;
-}
+    .main-soldier {
+        left: 495px;
+        bottom: 240px;
+    }
 
     .main-soldier img {
         height: 486px;
@@ -454,12 +481,14 @@
         line-height: 48.75px;
     }
 }
+
 @media (max-width: 960px) {
-.main-soldier {
-    left: 495px;
-    bottom: 100px;
+    .main-soldier {
+        left: 495px;
+        bottom: 100px;
+    }
 }
-}
+
 /*Средние девайсы («таблетки», < 992px) */
 @media (max-width: 992px) {
     .top-bar {
@@ -508,23 +537,23 @@
         display: none;
     }
 
-.main-soldier {
-    left: 415px;
-    bottom: 100px;
-}
+    .main-soldier {
+        left: 415px;
+        bottom: 100px;
+    }
 
     .main-soldier img {
         height: 476px;
         width: 287px;
     }
 
-.proposition-button #proposition-button_outer {
-    margin-left: 90px;
-}
+    .proposition-button #proposition-button_outer {
+        margin-left: 90px;
+    }
 
-.proposition-button p {
-    margin-left: 90px;
-}
+    .proposition-button p {
+        margin-left: 90px;
+    }
 
     .proposition-button hr {
         width: 32px;
@@ -599,6 +628,7 @@
     .proposition-button #proposition-button_outer {
         margin-left: 0;
     }
+
     .main-soldier {
         display: none;
     }
@@ -617,11 +647,11 @@
         margin-bottom: 30px;
     }
 
-#countdown {
-    left: 75px;
-    top: 485px;
-    height: 78px;
-}
+    #countdown {
+        left: 75px;
+        top: 485px;
+        height: 78px;
+    }
 
     .proposition-button {
         margin-left: 0px;
@@ -838,17 +868,21 @@
         font-size: 42px;
         margin-left: 60px;
     }
+
     .proposition-button hr {
         left: 105px;
     }
+
     .proposition-button {
         margin-left: 0;
         margin-top: 5px;
     }
+
     #countdown {
         left: 65px;
         top: 495px;
     }
+
     .top-bar nav.menu ul li a {
         font-size: 16px;
         padding: 0 6.5px;
