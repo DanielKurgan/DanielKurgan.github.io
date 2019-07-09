@@ -127,9 +127,13 @@
         font-size: 31px;
         line-height: 38.08px;
     }
+}
 
-
-
+@media (max-width: 1366px) {
+    .main-soldier {
+        bottom: 0px;
+        left: 885px;
+    }
 }
 
 /*Девайсы < 1280*/
@@ -314,9 +318,13 @@
     height: 696px;
     width: 377px;
 }
-.main-soldier {
+/*.main-soldier {
     left: 495px;
     bottom: 100px;
+}*/
+.main-soldier {
+    bottom: 0px;
+    left: 605px;
 }
     .popup-content .popup-content_container ul li {
         font-size: 28px;
