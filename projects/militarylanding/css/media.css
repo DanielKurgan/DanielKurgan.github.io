@@ -3,7 +3,7 @@
     padding-top: 45px;
 }
 .top-bar {
-    margin-bottom: 170px;
+    margin-bottom: 250px;
 }
 .proposition-button #proposition-button_inner {
     line-height: 68px;
@@ -11,6 +11,9 @@
 }
 .proposition-button #proposition-button_outer {
     padding: 0px;
+}
+.main-soldier {
+    bottom: 0px;
 }
 }
 
