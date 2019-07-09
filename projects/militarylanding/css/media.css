@@ -1,7 +1,7 @@
 @media screen and (max-width: 1920px) and (min-width: 1601px) {
-    .main {
-        padding-top: 215px;
-    }
+.main {
+    padding-top: 125px;
+}
 }
 
 @media screen and (max-width: 1600px) {
