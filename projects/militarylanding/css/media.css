@@ -3,7 +3,7 @@
     padding-top: 45px;
 }
 .top-bar {
-    margin-bottom: 250px;
+    margin-bottom: 200px;
 }
 .proposition-button #proposition-button_inner {
     line-height: 68px;
@@ -13,25 +13,30 @@
     padding: 0px;
 }
 .main-soldier {
-    bottom: 0px;
+    bottom: -50px;
+    left: 1085px;
+}
+.main-soldier img {
+    height: 966px;
+    width: 637px;
 }
 }
 
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1650px) {
     .popup-content_container {
         width: 90%;
         height: 90%;
     }
 
-    main-soldier {
-        bottom: -100px;
-        left: 895px;
-    }
+.main-soldier {
+    bottom: 0px;
+    left: 955px;
+}
 
-    main-soldier img {
-        height: 796px;
-        width: 497px;
-    }
+.main-soldier img {
+    height: 716px;
+    width: 447px;
+}
 
     .popup-content .popup-content_container ul li {
         font-size: 38px;
@@ -46,10 +51,10 @@
         left: 885px;
     }
 
-    .main-soldier img {
-        height: 696px;
-        width: 377px;
-    }
+.main-soldier img {
+    height: 736px;
+    width: 377px;
+}
 
     .main-text button#main-button:before {
         top: -10px;
@@ -111,10 +116,10 @@
         font-size: 34px;
     }
 
-    .main-soldier {
-        bottom: -50px;
-        left: 615px;
-    }
+.main-soldier {
+    bottom: 0px;
+    left: 645px;
+}
 
     .main-text button#main-button {
         margin-left: 22px;
@@ -330,15 +335,15 @@
         display: none;
     }
 
-    .proposition-button hr {
-        width: 22px;
-        bottom: 0px;
-        left: 290px;
-    }
+.proposition-button hr {
+    width: 22px;
+    bottom: 0px;
+    left: 260px;
+}
 
 .main-soldier {
-    left: 475px;
-    bottom: 100px;
+    left: 495px;
+    bottom: 240px;
 }
 
     .main-soldier img {
@@ -449,10 +454,10 @@
         display: none;
     }
 
-    .main-soldier {
-        left: 405px;
-        bottom: 100px;
-    }
+.main-soldier {
+    left: 415px;
+    bottom: 180px;
+}
 
     .main-soldier img {
         height: 476px;
@@ -460,12 +465,12 @@
     }
 
 .proposition-button #proposition-button_outer {
-    margin-left: 100px;
+    margin-left: 90px;
 }
 
-    .proposition-button p {
-        margin-left: 70px;
-    }
+.proposition-button p {
+    margin-left: 90px;
+}
 
     .proposition-button hr {
         width: 32px;
@@ -537,6 +542,9 @@
 }
 
 @media (max-width: 737px) {
+    .proposition-button #proposition-button_outer {
+        margin-left: 0;
+    }
     .main-soldier {
         display: none;
     }
@@ -555,11 +563,11 @@
         margin-bottom: 30px;
     }
 
-    #countdown {
-        left: 115px;
-        top: 485px;
-        height: 78px;
-    }
+#countdown {
+    left: 75px;
+    top: 485px;
+    height: 78px;
+}
 
     .proposition-button {
         margin-left: 0px;
@@ -573,7 +581,7 @@
     }
 
     .proposition-button p {
-        margin-left: 70px;
+        margin-left: 0px;
         padding-bottom: 100px;
     }
 
