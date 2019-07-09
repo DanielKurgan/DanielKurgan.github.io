@@ -63,7 +63,7 @@ main-soldier img {
 }
 .popup-content .popup-content_container ul li {
     font-size: 31px;
-    line-height: 32.08px;
+    line-height: 38.08px;
 }
 
 
@@ -152,7 +152,7 @@ main-soldier img {
 }
 .popup-content .popup-content_container ul li {
     font-size: 28px;
-    line-height: 35px;
+    line-height: 40px;
 }
 
 
@@ -349,8 +349,8 @@ main-soldier img {
     height: 103px;
 }
 .popup-content .popup-content_container ul li {
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 21px;
+    line-height: 40px;
 }
 .popup-main h2 {
     font-size: 55px;
@@ -469,8 +469,8 @@ main-soldier img {
     height: 100px;
 }
 .popup-content .popup-content_container ul li {
-    font-size: 21px;
-    line-height: 31.08px;
+    font-size: 16px;
+    line-height: 30px;
 }
 .popup-content .popup-content_container .content_left-block {
     margin: auto;
@@ -496,10 +496,6 @@ main-soldier img {
 }
 .popup-contacts p.name-channel_under {
     font-size: 15px;
-}
-.popup-content .popup-content_container ul li {
-    font-size: 16px;
-    line-height: 21.08px;
 }
 .popup-main p {
     font-size: 18px;
@@ -534,7 +530,7 @@ main-soldier img {
 }
 }
 
-@media (max-width: 410px) {
+@media (max-width: 440px) {
 .top-bar .logo p {
     font-size: 42px;
     margin-left: 60px;
