@@ -5,163 +5,247 @@
 }
 
 @media screen and (max-width: 1600px) {
-.popup-content_container {
-    width: 90%;
-    height: 90%;
-}
-main-soldier {
-    bottom: -100px;
-    left: 895px;
-}
-main-soldier img {
-    height: 796px;
-    width: 497px;
-}
-.popup-content .popup-content_container ul li {
-    font-size: 38px;
-    line-height: 42.08px;
-}
+    .popup-content_container {
+        width: 90%;
+        height: 90%;
+    }
+
+    main-soldier {
+        bottom: -100px;
+        left: 895px;
+    }
+
+    main-soldier img {
+        height: 796px;
+        width: 497px;
+    }
+
+    .popup-content .popup-content_container ul li {
+        font-size: 38px;
+        line-height: 42.08px;
+    }
 
 }
+
 @media screen and (max-width: 1440px) {
-.main-soldier {
-    bottom: -50px;
-    left: 885px;
-}
-.main-soldier img {
-    height: 696px;
-    width: 377px;
-}
-.main-text button#main-button:before {
-    top: -10px;
-}
-	.top-bar nav.menu ul li a {
-    font-size: 19px;
-    padding: 0 26.5px;
-}
-.main-text button span#main-button_inner {
-    font-size: 44px;
-}
-.main-text button#main-button {
-    margin-left: 51px;
-    width: 100%;
-    max-width: 686px;
-    height: 90px;
-}
-.main-text ul li {
-    font-size: 37px;
-}
-.proposition-button button span#proposition-button_inner {
-    font-size: 27px;
-}
-.proposition-button button#proposition-button_outer {
-    padding: 10px
-}
-#countdown {
-    top: 425px;
-}
-.proposition-button hr {
-    width: 41px;
-    left: 125px;
-}
-.popup-content_container {
-    width: 90%;
-}
-.popup-content .popup-content_container ul li {
-    font-size: 31px;
-    line-height: 38.08px;
-}
+    .main-soldier {
+        bottom: -50px;
+        left: 885px;
+    }
+
+    .main-soldier img {
+        height: 696px;
+        width: 377px;
+    }
+
+    .main-text button#main-button:before {
+        top: -10px;
+    }
+
+    .top-bar nav.menu ul li a {
+        font-size: 19px;
+        padding: 0 26.5px;
+    }
+
+    .main-text button span#main-button_inner {
+        font-size: 44px;
+    }
+
+    .main-text button#main-button {
+        margin-left: 51px;
+        width: 100%;
+        max-width: 686px;
+        height: 90px;
+    }
+
+    .main-text ul li {
+        font-size: 37px;
+    }
+
+    .proposition-button button span#proposition-button_inner {
+        font-size: 27px;
+    }
+
+    .proposition-button button#proposition-button_outer {
+        padding: 10px
+    }
+
+    #countdown {
+        top: 425px;
+    }
+
+    .proposition-button hr {
+        width: 41px;
+        left: 125px;
+    }
+
+    .popup-content_container {
+        width: 90%;
+    }
+
+    .popup-content .popup-content_container ul li {
+        font-size: 31px;
+        line-height: 38.08px;
+    }
 
 
 
 }
+
 /*Девайсы < 1280*/
 @media (max-width: 1280px) {
-.main-text button span#main-button_inner {
-    font-size: 34px;
-}
-.main-soldier {
-    bottom: -50px;
-    left: 615px;
-}
-.main-text button#main-button {
-    margin-left: 22px;
-    width: 80%;
-    max-width: 661px;
-    height: 90px;
-}
-.main-text button#main-button iframe {
-    bottom: -35px;
-    right:0;
-}
-.main-text ul li {
-    font-size: 37px;
-    margin-left: 150px;
-}
-#countdown {
-    left: 100px;
-}
-.proposition-button #proposition-button_outer {
-    padding: 10px;
-    margin-left: 10px;
-}
-.proposition-button span#proposition-button_inner {
-    font-size: 37px;
-}
-.proposition-button p {
-    font-size: 14px;
-    padding-top: 0;
-}
-.main-text button#main-button:before {
-    top: -20px;
-  }
-.proposition-button hr {
-    width: 32px;
-    bottom: 0px;
-    left: 110px;
-}
-#countdown {
-    height: 88px;
-    width: 220px;
-}
-#countdown:before {
-    width: 8px;
-    height: 50px;
-    top: 18px;
-    left: -10px;
-}
-#countdown:after {
-    width: 8px;
-    height: 50px;
-    top: 18px;
-    right: -10px;
-}
-#countdown #tiles{position:relative;z-index:1}
-#countdown #tiles > span{width:100%;max-width:35px;height:35px;font:bold 22px 'Droid Sans',Arial,sans-serif;text-align:center;color:#111;background-color:#ddd;background-image:-webkit-linear-gradient(top,#bbb,#eee);background-image:-moz-linear-gradient(top,#bbb,#eee);background-image:-ms-linear-gradient(top,#bbb,#eee);background-image:-o-linear-gradient(top,#bbb,#eee);border-top:1px solid #fff;border-radius:3px;-webkit-box-shadow:0 0 12px rgba(-1,0,0,0.7);box-shadow:0 0 12px rgba(-1,0,0,0.7);margin:0 7px;padding:5px 0;display:inline-block;position:relative; -webkit-box-sizing: border-box; box-sizing: border-box;}
-#countdown #tiles > span:before{content:"";width:100%;height:13px;background:#111;display:block;padding:0 3px;position:absolute;top:41%;left:-3px;z-index:-1}
-#countdown #tiles > span:after{content:"";width:100%;height:1px;background:#eee;border-top:1px solid #333;display:block;position:absolute;top:48%;left:0}
-#countdown .labels {
-    width: 100%;
-    height: 5px;
-    bottom: 22px;
-}
-#countdown .labels li {
-    width: 46px;
-    font: bold 9px 'Droid Sans',Arial,sans-serif;
-}
-.proposition-button {
-    margin-left: 330px;
-    margin-top: 35px;
-    position: relative;
-}
-.proposition-button #proposition-button_inner {
-    font-size: 31px;
-}
+    .main-text button span#main-button_inner {
+        font-size: 34px;
+    }
 
-.popup-content .popup-content_container ul li {
-    font-size: 28px;
-    line-height: 40px;
-}
+    .main-soldier {
+        bottom: -50px;
+        left: 615px;
+    }
+
+    .main-text button#main-button {
+        margin-left: 22px;
+        width: 80%;
+        max-width: 661px;
+        height: 90px;
+    }
+
+    .main-text button#main-button iframe {
+        bottom: -35px;
+        right: 0;
+    }
+
+    .main-text ul li {
+        font-size: 37px;
+        margin-left: 150px;
+    }
+
+    #countdown {
+        left: 100px;
+    }
+
+    .proposition-button #proposition-button_outer {
+        padding: 10px;
+        margin-left: 10px;
+    }
+
+    .proposition-button span#proposition-button_inner {
+        font-size: 37px;
+    }
+
+    .proposition-button p {
+        font-size: 14px;
+        padding-top: 0;
+    }
+
+    .main-text button#main-button:before {
+        top: -20px;
+    }
+
+    .proposition-button hr {
+        width: 32px;
+        bottom: 0px;
+        left: 110px;
+    }
+
+    #countdown {
+        height: 88px;
+        width: 220px;
+    }
+
+    #countdown:before {
+        width: 8px;
+        height: 50px;
+        top: 18px;
+        left: -10px;
+    }
+
+    #countdown:after {
+        width: 8px;
+        height: 50px;
+        top: 18px;
+        right: -10px;
+    }
+
+    #countdown #tiles {
+        position: relative;
+        z-index: 1
+    }
+
+    #countdown #tiles>span {
+        width: 100%;
+        max-width: 35px;
+        height: 35px;
+        font: bold 22px 'Droid Sans', Arial, sans-serif;
+        text-align: center;
+        color: #111;
+        background-color: #ddd;
+        background-image: -webkit-linear-gradient(top, #bbb, #eee);
+        background-image: -moz-linear-gradient(top, #bbb, #eee);
+        background-image: -ms-linear-gradient(top, #bbb, #eee);
+        background-image: -o-linear-gradient(top, #bbb, #eee);
+        border-top: 1px solid #fff;
+        border-radius: 3px;
+        -webkit-box-shadow: 0 0 12px rgba(-1, 0, 0, 0.7);
+        box-shadow: 0 0 12px rgba(-1, 0, 0, 0.7);
+        margin: 0 7px;
+        padding: 5px 0;
+        display: inline-block;
+        position: relative;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    #countdown #tiles>span:before {
+        content: "";
+        width: 100%;
+        height: 13px;
+        background: #111;
+        display: block;
+        padding: 0 3px;
+        position: absolute;
+        top: 41%;
+        left: -3px;
+        z-index: -1
+    }
+
+    #countdown #tiles>span:after {
+        content: "";
+        width: 100%;
+        height: 1px;
+        background: #eee;
+        border-top: 1px solid #333;
+        display: block;
+        position: absolute;
+        top: 48%;
+        left: 0
+    }
+
+    #countdown .labels {
+        width: 100%;
+        height: 5px;
+        bottom: 22px;
+    }
+
+    #countdown .labels li {
+        width: 46px;
+        font: bold 9px 'Droid Sans', Arial, sans-serif;
+    }
+
+    .proposition-button {
+        margin-left: 330px;
+        margin-top: 35px;
+        position: relative;
+    }
+
+    .proposition-button #proposition-button_inner {
+        font-size: 31px;
+    }
+
+    .popup-content .popup-content_container ul li {
+        font-size: 28px;
+        line-height: 40px;
+    }
 
 
 
@@ -169,567 +253,726 @@ main-soldier img {
 
 /*Большие девайсы (Десктопы, < 1024px)*/
 @media (max-width: 1024px) {
-	.top-bar {
-    margin-bottom: 100px;
-}
-.main-text button span#main-button_inner {
-    font-size: 24px;
-}
-.main-text button#main-button {
-    margin-left: 51px;
-    width: 100%;
-    max-width: 381px;
-    height: 60px;
-}
-.main-text ul li {
-    font-size: 25px;
-    margin-left: 160px;
-}
-#countdown {
-    left: 100px;
-}
-.proposition-button {
-    margin-left: 340px;
-    margin-top: 60px;
-}
-.proposition-button #proposition-button_outer {
-    padding: 10px;
-    margin-left: 150px;
-}
-.proposition-button p {
-    font-size: 14px;
-    padding-top: 0;
-    margin-left: 150px;
-}
-.main-text button#main-button:before {
-    top: -30px;
-    right: -230px;
-    display: none;
-}
-.proposition-button hr {
-    width: 22px;
-    bottom: 0px;
-    left: 290px;
-}
-.main-soldier {
-    left: 505px;
-    bottom: 100px;
-}
-.main-soldier img {
-    height: 486px;
-    width: 317px;
-}
-.popup-bonus h2 {
-    font-size: 65px;
-}
-.popup-bonus p {
-    font-size: 49px;
-    line-height: 48.75px;
-}
+    .popup-content .popup-content_container ul li {
+        font-size: 28px;
+        line-height: 30px;
+    }
 .popup-bonus_container {
     width: 90%;
     height: 90%;
 }
-.popup-comment h2 {
-    font-size: 65px;
+.popup-bonus p {
+    font-size: 29px;
+    line-height: 28.75px;
 }
-.popup-comment_container {
-    width: 90%;
-    height: 90%;
-}
-.popup-contacts_container {
-    width: 90%;
-    height: 90%;
-}
-.popup-contacts h2 {
-    font-size: 65px;
-}
-.popup-contacts p.name-channel {
-    font-size: 76.8px;
-    line-height: 58.89px;
-}
-.popup-contacts p.name-channel_under {
-    font-size: 32px;
-}
-.popup-content_container {
-    height: 90%;
-}
-.popup-main h2 {
-    font-size: 65px;
-}
-.popup-main p {
-    font-size: 49px;
-    line-height: 48.75px;
-}
+    .top-bar {
+        margin-bottom: 100px;
+    }
+
+    .main-text button span#main-button_inner {
+        font-size: 24px;
+    }
+
+    .main-text button#main-button {
+        margin-left: 51px;
+        width: 100%;
+        max-width: 381px;
+        height: 60px;
+    }
+
+    .main-text ul li {
+        font-size: 25px;
+        margin-left: 160px;
+    }
+
+    #countdown {
+        left: 100px;
+    }
+
+    .proposition-button {
+        margin-left: 340px;
+        margin-top: 60px;
+    }
+
+    .proposition-button #proposition-button_outer {
+        padding: 10px;
+        margin-left: 150px;
+    }
+
+    .proposition-button p {
+        font-size: 14px;
+        padding-top: 0;
+        margin-left: 150px;
+    }
+
+    .main-text button#main-button:before {
+        top: -30px;
+        right: -230px;
+        display: none;
+    }
+
+    .proposition-button hr {
+        width: 22px;
+        bottom: 0px;
+        left: 290px;
+    }
+
+    .main-soldier {
+        left: 505px;
+        bottom: 100px;
+    }
+
+    .main-soldier img {
+        height: 486px;
+        width: 317px;
+    }
+
+    .popup-bonus h2 {
+        font-size: 65px;
+    }
+
+    .popup-bonus p {
+        font-size: 49px;
+        line-height: 48.75px;
+    }
+
+    .popup-bonus_container {
+        width: 90%;
+        height: 90%;
+    }
+
+    .popup-comment h2 {
+        font-size: 65px;
+    }
+
+    .popup-comment_container {
+        width: 90%;
+        height: 90%;
+    }
+
+    .popup-contacts_container {
+        width: 90%;
+        height: 90%;
+    }
+
+    .popup-contacts h2 {
+        font-size: 65px;
+    }
+
+    .popup-contacts p.name-channel {
+        font-size: 76.8px;
+        line-height: 58.89px;
+    }
+
+    .popup-contacts p.name-channel_under {
+        font-size: 32px;
+    }
+
+    .popup-content_container {
+        height: 90%;
+    }
+
+    .popup-main h2 {
+        font-size: 65px;
+    }
+
+    .popup-main p {
+        font-size: 49px;
+        line-height: 48.75px;
+    }
 }
 
 /*Средние девайсы («таблетки», < 992px) */
 @media (max-width: 992px) {
-.top-bar {
-    flex-direction: column;
+    .top-bar {
+        flex-direction: column;
+    }
+
+    .top-bar .logo {
+        margin-bottom: 15px;
+    }
 }
-.top-bar .logo {
-    margin-bottom: 15px;
-}
-}
+
 /*Малые девайсы («ландшафтные», < 768px)
-*/@media (max-width: 800px) {
-	.top-bar {
-    flex-direction: column;
-}
-.top-bar nav.menu ul {
-	margin-top: 30px;
-}
-.main-text button#main-button {
-    margin-left: 22px;
-    width: 100%;
-    max-width: 381px;
-    height: 60px;
-}
-.main-text ul li {
-    font-size: 22px;
-    margin-left: 131px;
-}
-#countdown {
-    left: 70px;
-    top: 395px;
-}
-.proposition-button {
-    margin-left: 300px;
-    margin-top: 35px;
-}
-.main-text #main-button:before {
-	display: none;
-}
-.main-soldier {
-    left: 405px;
-    bottom: 100px;
-}
-.main-soldier img {
-    height: 476px;
-    width: 287px;
-}
-.proposition-button #proposition-button_outer {
-    margin-left: 70px;
-}
-.proposition-button p {
-    margin-left: 70px;
-}
-.proposition-button hr {
-    width: 32px;
-    bottom: 2px;
-    left: 200px;
-}
-.popup-bonus_container img.bonus-image {
-    height: 260px;
-}
-.popup-bonus h2 {
-    font-size: 55px;
-}
-.popup-bonus p {
-    font-size: 29px;
-    line-height: 38.75px;
-}
-.popup-comment h2 {
-    font-size: 55px;
-}
-.popup-contacts h2 {
-    font-size: 55px;
-}
-.popup-contacts p.name-channel {
-    font-size: 56.8px;
-    line-height: 38.89px;
-}
-.popup-contacts .youtube-contact .youtube-name img {
-    margin-bottom: 10px;
-    margin-right: 42px;
-    width: 135px;
-    height: 94px;
-}
-.popup-contacts p.name-channel_under {
-    font-size: 22px;
-}
-.popup-contacts .vk-contact .vk-name img {
-    margin-bottom: 10px;
-    margin-right: 42px;
-    width: 103px;
-    height: 103px;
-}
-.popup-content .popup-content_container ul li {
-    font-size: 21px;
-    line-height: 40px;
-}
-.popup-main h2 {
-    font-size: 55px;
-}
-.popup-main p {
-    font-size: 29px;
-    line-height: 28.75px;
-}
-img.d-block.w-100 {
-    height: 120px;
-}
+*/
+@media (max-width: 800px) {
+    .top-bar {
+        flex-direction: column;
+    }
+
+    .top-bar nav.menu ul {
+        margin-top: 30px;
+    }
+
+    .main-text button#main-button {
+        margin-left: 22px;
+        width: 100%;
+        max-width: 381px;
+        height: 60px;
+    }
+
+    .main-text ul li {
+        font-size: 22px;
+        margin-left: 131px;
+    }
+
+    #countdown {
+        left: 70px;
+        top: 395px;
+    }
+
+    .proposition-button {
+        margin-left: 300px;
+        margin-top: 35px;
+    }
+
+    .main-text #main-button:before {
+        display: none;
+    }
+
+    .main-soldier {
+        left: 405px;
+        bottom: 100px;
+    }
+
+    .main-soldier img {
+        height: 476px;
+        width: 287px;
+    }
+
+    .proposition-button #proposition-button_outer {
+        margin-left: 70px;
+    }
+
+    .proposition-button p {
+        margin-left: 70px;
+    }
+
+    .proposition-button hr {
+        width: 32px;
+        bottom: 2px;
+        left: 175px;
+    }
+
+    .popup-bonus_container img.bonus-image {
+        height: 260px;
+    }
+
+    .popup-bonus h2 {
+        font-size: 55px;
+    }
+
+    .popup-bonus p {
+        font-size: 29px;
+        line-height: 38.75px;
+    }
+
+    .popup-comment h2 {
+        font-size: 55px;
+    }
+
+    .popup-contacts h2 {
+        font-size: 55px;
+    }
+
+    .popup-contacts p.name-channel {
+        font-size: 56.8px;
+        line-height: 38.89px;
+    }
+
+    .popup-contacts .youtube-contact .youtube-name img {
+        margin-bottom: 10px;
+        margin-right: 42px;
+        width: 135px;
+        height: 94px;
+    }
+
+    .popup-contacts p.name-channel_under {
+        font-size: 22px;
+    }
+
+    .popup-contacts .vk-contact .vk-name img {
+        margin-bottom: 10px;
+        margin-right: 42px;
+        width: 103px;
+        height: 103px;
+    }
+
+    .popup-content .popup-content_container ul li {
+        font-size: 21px;
+        line-height: 40px;
+    }
+
+    .popup-main h2 {
+        font-size: 55px;
+    }
+
+    .popup-main p {
+        font-size: 29px;
+        line-height: 28.75px;
+    }
+
+    img.d-block.w-100 {
+        height: 120px;
+    }
 }
 
 @media (max-width: 737px) {
-	.main-soldier {
-		display: none;
-	}
-	.main-center {
-	    justify-content: center;
-	}
-	.main-text {
-	    display: flex;
-	    flex-direction: column;
-	    align-items: center;
-	}
-	.top-bar {
-    margin-bottom: 30px;
-}
-#countdown {
-    left: 115px;
-    top: 485px;
-    height: 78px;
-}
-.proposition-button {
-    margin-left: 0px;
-    margin-top: 15px;
-}
-.proposition-button hr {
-    width: 32px;
-    bottom: 112px;
-    left: 200px;
-}
-.proposition-button p {
-    margin-left: 70px;
-    padding-bottom: 100px;
-}
-img.d-block.w-100 {
-    height: 100px;
-}
+    .main-soldier {
+        display: none;
+    }
+
+    .main-center {
+        justify-content: center;
+    }
+
+    .main-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .top-bar {
+        margin-bottom: 30px;
+    }
+
+    #countdown {
+        left: 115px;
+        top: 485px;
+        height: 78px;
+    }
+
+    .proposition-button {
+        margin-left: 0px;
+        margin-top: 15px;
+    }
+
+    .proposition-button hr {
+        width: 32px;
+        bottom: 112px;
+        left: 200px;
+    }
+
+    .proposition-button p {
+        margin-left: 70px;
+        padding-bottom: 100px;
+    }
+
+    img.d-block.w-100 {
+        height: 100px;
+    }
 }
 
 /*Экстрамалые девайсы («телефоны», < 576px)
-*/@media (max-width: 576px) {
+*/
+@media (max-width: 576px) {
 
-.main-soldier {
-    left: 505px;
-    display: none;
-}
-.top-bar {
-    margin-bottom: 22px;
-}
-.top-bar nav.menu ul li a {
-    font-size: 19px;
-    padding: 0 6.5px;
-}
-.main-center {
-    justify-content: center;
-}
-.main-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.main-text button#main-button {
-    margin: 0 auto;
-}
-.main-text button span#main-button_inner {
-    font-size: 22px;
-}
-.main-text ul li {
-    font-size: 21px;
-}
-.main-text ul li {
-    font-size: 22px;
-    margin-left: 81px;
-}
-.main .container .container-cell {
-    padding: 0 16px;
-}
-#countdown {
-	left: 65px;
-    top: 475px;
-}
-.proposition-button {
-    margin-left: 0;
-    margin-top: 15px;
-}
-.proposition-button #proposition-button_outer {
-    margin-left: 0;
-}
-.proposition-button p {
-    margin-left: 0px;
-}
-.proposition-button hr {
-    left: 135px;
-}
-#countdown {
-    left: 55px;
-}
-.popup-content .popup-content_container hr {
-    margin-left: 13px;
-}
-.popup-contacts p.name-channel {
-    font-size: 36.8px;
-    line-height: 18.89px;
-}
-.popup-contacts p.name-channel_under {
-    font-size: 20px;
-}
-.popup-contacts .youtube-contact .youtube-name img {
-    width: 131px;
-    height: 90px;
-}
-.popup-contacts .vk-contact .vk-name img {
-    width: 100px;
-    height: 100px;
-}
-.popup-content .popup-content_container ul li {
-    font-size: 16px;
-    line-height: 20px;
-}
-.popup-content .popup-content_container .content_left-block {
-    margin: auto;
-}
-.popup-bonus p {
-    font-size: 22px;
-    line-height: 22px;
-}
-.popup-comment_container {
-    padding: 32px 20px 70px 20px;
-}
-.popup-contacts p.name-channel {
-    font-size: 26.8px;
-    line-height: 0;
-}
-.popup-contacts .youtube-contact .youtube-name img {
-    width: 131px;
-    height: 70px;
-}
-.popup-contacts .vk-contact .vk-name img {
-    width: 80px;
-    height: 80px;
-}
-.popup-contacts p.name-channel_under {
-    font-size: 15px;
-}
-.popup-main p {
-    font-size: 18px;
-    line-height: 18.75px;
-}
-.popup-bonus_container img.bonus-image {
-    height: 160px;
-}
-.popup-bonus_container {
-    padding: 32px 20px 70px 20px;
-}
-.popup-contacts_container {
-    width: 90%;
-    height: 90%;
-}
-.popup-comment_container {
-    width: 90%;
-    height: 70%;
-}
-.slider-dots {
-    margin-bottom: 170px;
-}
-.popup-bonus_container {
-    width: 90%;
-    height: 70%;
-}
-.popup-content_container {
-    height: 70%;
-}
-.popup-main_container {
-    height: 70%;
-}
-.popup-contacts .youtube-contact {
-    height: 90%;
-}
-.popup-contacts .vk-contact {
-    height: 90%;
-}
-img.d-block.w-100 {
-    height: 80px;
-}
+    .main-soldier {
+        left: 505px;
+        display: none;
+    }
+
+    .top-bar {
+        margin-bottom: 22px;
+    }
+
+    .top-bar nav.menu ul li a {
+        font-size: 19px;
+        padding: 0 6.5px;
+    }
+
+    .main-center {
+        justify-content: center;
+    }
+
+    .main-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-text button#main-button {
+        margin: 0 auto;
+    }
+
+    .main-text button span#main-button_inner {
+        font-size: 22px;
+    }
+
+    .main-text ul li {
+        font-size: 21px;
+    }
+
+    .main-text ul li {
+        font-size: 22px;
+        margin-left: 81px;
+    }
+
+    .main .container .container-cell {
+        padding: 0 16px;
+    }
+
+    #countdown {
+        left: 65px;
+        top: 475px;
+    }
+
+    .proposition-button {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+
+    .proposition-button #proposition-button_outer {
+        margin-left: 0;
+    }
+
+    .proposition-button p {
+        margin-left: 0px;
+    }
+
+    .proposition-button hr {
+        left: 135px;
+    }
+
+    #countdown {
+        left: 55px;
+    }
+
+    .popup-content .popup-content_container hr {
+        margin-left: 13px;
+    }
+
+    .popup-contacts p.name-channel {
+        font-size: 36.8px;
+        line-height: 18.89px;
+    }
+
+    .popup-contacts p.name-channel_under {
+        font-size: 20px;
+    }
+
+    .popup-contacts .youtube-contact .youtube-name img {
+        width: 131px;
+        height: 90px;
+    }
+
+    .popup-contacts .vk-contact .vk-name img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .popup-content .popup-content_container ul li {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .popup-content .popup-content_container .content_left-block {
+        margin: auto;
+    }
+
+    .popup-bonus p {
+        font-size: 22px;
+        line-height: 22px;
+    }
+
+    .popup-comment_container {
+        padding: 32px 20px 70px 20px;
+    }
+
+    .popup-contacts p.name-channel {
+        font-size: 26.8px;
+        line-height: 0;
+    }
+
+    .popup-contacts .youtube-contact .youtube-name img {
+        width: 131px;
+        height: 70px;
+    }
+
+    .popup-contacts .vk-contact .vk-name img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .popup-contacts p.name-channel_under {
+        font-size: 15px;
+    }
+
+    .popup-main p {
+        font-size: 18px;
+        line-height: 18.75px;
+    }
+
+    .popup-bonus_container img.bonus-image {
+        height: 160px;
+    }
+
+    .popup-bonus_container {
+        padding: 32px 20px 70px 20px;
+    }
+
+    .popup-contacts_container {
+        width: 90%;
+        height: 90%;
+    }
+
+    .popup-comment_container {
+        width: 90%;
+        height: 70%;
+    }
+
+    .slider-dots {
+        margin-bottom: 170px;
+    }
+
+    .popup-bonus_container {
+        width: 90%;
+        height: 70%;
+    }
+
+    .popup-content_container {
+        height: 70%;
+    }
+
+    .popup-main_container {
+        height: 70%;
+    }
+
+    .popup-contacts .youtube-contact {
+        height: 90%;
+    }
+
+    .popup-contacts .vk-contact {
+        height: 90%;
+    }
+
+    img.d-block.w-100 {
+        height: 80px;
+    }
 }
 
 @media (max-width: 440px) {
-.top-bar .logo p {
-    font-size: 42px;
-    margin-left: 60px;
-}
-.top-bar nav.menu ul li a {
-    font-size: 16px;
-    padding: 0 6.5px;
-}
-.popup-contacts h2 {
-    font-size: 35px;
-}
-.popup-contacts p.name-channel {
-    font-size: 22px;
-    line-height: 0;
-}
-.popup-contacts .youtube-contact .youtube-name img {
-    margin-right: 12px;
-}
-.popup-contacts p.name-channel_under {
-    font-size: 12px;
-}
-.popup-contacts .youtube-undername {
-    padding: 0 16px;
-}
-.popup-contacts p.name-channel_under {
-    padding-top: 5px;
-}
-.popup-contacts .vk-undername {
-    padding: 0 16px;
-}
-.popup-content h2 {
-    font-size: 32px;
-}
-.popup-content_container {
-    padding: 32px 20px 70px 20px;
-}
-.popup-content .popup-content_container ul li {
-    font-size: 14px;
-}
-.popup-bonus h2 {
-    font-size: 45px;
-}
-.popup-comment h2 {
-    font-size: 45px;
-}
-.popup-main h2 {
-    font-size: 45px;
-}
-.popup-bonus p {
-    font-size: 14px;
-    line-height: 12px;
-}
-.popup-bonus_container {
-    width: 90%;
-    height: 60%;
-}
+    .top-bar .logo p {
+        font-size: 42px;
+        margin-left: 60px;
+    }
+
+    .top-bar nav.menu ul li a {
+        font-size: 16px;
+        padding: 0 6.5px;
+    }
+
+    .popup-contacts h2 {
+        font-size: 35px;
+    }
+
+    .popup-contacts p.name-channel {
+        font-size: 22px;
+        line-height: 0;
+    }
+
+    .popup-contacts .youtube-contact .youtube-name img {
+        margin-right: 12px;
+    }
+
+    .popup-contacts p.name-channel_under {
+        font-size: 12px;
+    }
+
+    .popup-contacts .youtube-undername {
+        padding: 0 16px;
+    }
+
+    .popup-contacts p.name-channel_under {
+        padding-top: 5px;
+    }
+
+    .popup-contacts .vk-undername {
+        padding: 0 16px;
+    }
+
+    .popup-content h2 {
+        font-size: 32px;
+    }
+
+    .popup-content_container {
+        padding: 32px 20px 70px 20px;
+    }
+
+    .popup-content .popup-content_container ul li {
+        font-size: 14px;
+    }
+
+    .popup-bonus h2 {
+        font-size: 45px;
+    }
+
+    .popup-comment h2 {
+        font-size: 45px;
+    }
+
+    .popup-main h2 {
+        font-size: 45px;
+    }
+
+    .popup-bonus p {
+        font-size: 14px;
+        line-height: 12px;
+    }
+
+    .popup-bonus_container {
+        width: 90%;
+        height: 60%;
+    }
 
 
 }
 
 @media (max-width: 385px) {
-.close-button {
-    top: 5px;
-    right: 5px;
-    cursor: pointer;
-}
-.top-bar .logo a {
-    font-size: 32px;
-    margin-left: 82px;
-}
-.top-bar nav.menu ul {
-    margin-top: 10px;
-    flex-direction: column;
-    align-items: center;
-}
-.top-bar nav.menu ul li a {
-	border-right:0;
-}
-.main-text button span#main-button_inner {
-    font-size: 20px;
-}
-.main-text button#main-button {
-    height: 50px;
-}
-.main-text ul li {
-    font-size: 18px;
-    margin-left: 81px;
-}
-.top-bar nav.menu ul li {
-    height: 22px;
-}
-.main-text ul li {
-    padding-bottom: 17px;
-}
-#countdown {
-    left: 40px;
-    top: 445px;
-}
-.proposition-button #proposition-button_inner {
-    font-size: 27px;
-}
-.proposition-button hr {
-    left: 90px;
-}
-.popup-comment_container {
-    padding: 32px 10px 70px 10px;
-}
-.popup-comment_container {
-    height: 50%;
-}
-.popup-comment h2 {
-    font-size: 35px;
-}
-.slider-dots {
-    margin-bottom: 20px;
-}
-.popup-bonus_container {
-    width: 90%;
-    height: 50%;
-}
-.popup-bonus h2 {
-    font-size: 35px;
-}
-.popup-contacts_container {
-    padding: 32px 10px 70px 10px;
-}
-.popup-contacts .youtube-contact .youtube-name {
-    padding: 5px 5px;
-}
-.popup-contacts .youtube-contact .youtube-name img {
-    width: 91px;
-}
-.popup-contacts .vk-contact .vk-name {
-    padding: 5px 5px;
-}
-.popup-contacts .vk-contact .vk-name img {
-    margin-bottom: 10px;
-    margin-right: 12px;
-}
-.popup-contacts_container {
-    width: 90%;
-    height: 60%;
-    padding: 0px 10px 70px 10px;
-}
-.popup-content h2 {
-    font-size: 22px;
-}
-.popup-content .popup-content_container ul li {
-    font-size: 11px;
-    line-height: 16.08px;
-}
-.popup-content .popup-content_container hr {
-    margin-left: 13px;
-}
-.popup-content_container {
-    height: 60%;
-}
-.popup-bonus_container img.bonus-image {
-    height: 90px;
-}
-.popup-contacts .youtube-contact_block {
-    margin-bottom: 50px;
-}
-.popup-contacts .youtube-contact {
-    height: 150%;
-    margin-bottom: 30px;
-}
-.popup-contacts .vk-contact {
-    height: 180%;
-}
-img.d-block.w-100 {
-    height: 50px;
-}
+    .close-button {
+        top: 5px;
+        right: 5px;
+        cursor: pointer;
+    }
+
+    .top-bar .logo a {
+        font-size: 32px;
+        margin-left: 82px;
+    }
+
+    .top-bar nav.menu ul {
+        margin-top: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .top-bar nav.menu ul li a {
+        border-right: 0;
+    }
+
+    .main-text button span#main-button_inner {
+        font-size: 20px;
+    }
+
+    .main-text button#main-button {
+        height: 50px;
+    }
+
+    .main-text ul li {
+        font-size: 18px;
+        margin-left: 81px;
+    }
+
+    .top-bar nav.menu ul li {
+        height: 22px;
+    }
+
+    .main-text ul li {
+        padding-bottom: 17px;
+    }
+
+    #countdown {
+        left: 40px;
+        top: 445px;
+    }
+
+    .proposition-button #proposition-button_inner {
+        font-size: 27px;
+    }
+
+    .proposition-button hr {
+        left: 90px;
+    }
+
+    .popup-comment_container {
+        padding: 32px 10px 70px 10px;
+    }
+
+    .popup-comment_container {
+        height: 50%;
+    }
+
+    .popup-comment h2 {
+        font-size: 35px;
+    }
+
+    .slider-dots {
+        margin-bottom: 20px;
+    }
+
+    .popup-bonus_container {
+        width: 90%;
+        height: 50%;
+    }
+
+    .popup-bonus h2 {
+        font-size: 35px;
+    }
+
+    .popup-contacts_container {
+        padding: 32px 10px 70px 10px;
+    }
+
+    .popup-contacts .youtube-contact .youtube-name {
+        padding: 5px 5px;
+    }
+
+    .popup-contacts .youtube-contact .youtube-name img {
+        width: 91px;
+    }
+
+    .popup-contacts .vk-contact .vk-name {
+        padding: 5px 5px;
+    }
+
+    .popup-contacts .vk-contact .vk-name img {
+        margin-bottom: 10px;
+        margin-right: 12px;
+    }
+
+    .popup-contacts_container {
+        width: 90%;
+        height: 60%;
+        padding: 0px 10px 70px 10px;
+    }
+
+    .popup-content h2 {
+        font-size: 22px;
+    }
+
+    .popup-content .popup-content_container ul li {
+        font-size: 11px;
+        line-height: 16.08px;
+    }
+
+    .popup-content .popup-content_container hr {
+        margin-left: 13px;
+    }
+
+    .popup-content_container {
+        height: 60%;
+    }
+
+    .popup-bonus_container img.bonus-image {
+        height: 90px;
+    }
+
+    .popup-contacts .youtube-contact_block {
+        margin-bottom: 50px;
+    }
+
+    .popup-contacts .youtube-contact {
+        height: 150%;
+        margin-bottom: 30px;
+    }
+
+    .popup-contacts .vk-contact {
+        height: 180%;
+    }
+
+    img.d-block.w-100 {
+        height: 50px;
+    }
 
 
 
@@ -749,41 +992,50 @@ img.d-block.w-100 {
 
 
 @media (max-width: 320px) {
-.main {
-    padding-top: 5px;
-}
-.main-text button span#main-button_inner {
-    font-size: 16px;
-}
-.main-text ul li {
-    font-size: 14px;
-    margin-left: 81px;
-}
-#countdown {
-    left: 10px;
-    top: 445px;
-}
-.popup-content .popup-content_container ul li {
-    font-size: 11px;
-    line-height: 14.08px;
-}
-.popup-contacts .youtube-contact {
-    height: 130%;
-}
-.popup-contacts .youtube-contact .youtube-name img {
-    width: 81px;
-    height: 50px;
-}
-.popup-contacts .vk-contact {
-    height: 160%;
-}
-.popup-contacts .vk-contact .vk-name img {
-    width: 60px;
-    height: 60px;
-}
-.popup-contacts_container {
-    padding: 2px 10px 70px 10px;
-}
+    .main {
+        padding-top: 5px;
+    }
+
+    .main-text button span#main-button_inner {
+        font-size: 16px;
+    }
+
+    .main-text ul li {
+        font-size: 14px;
+        margin-left: 81px;
+    }
+
+    #countdown {
+        left: 10px;
+        top: 445px;
+    }
+
+    .popup-content .popup-content_container ul li {
+        font-size: 11px;
+        line-height: 14.08px;
+    }
+
+    .popup-contacts .youtube-contact {
+        height: 130%;
+    }
+
+    .popup-contacts .youtube-contact .youtube-name img {
+        width: 81px;
+        height: 50px;
+    }
+
+    .popup-contacts .vk-contact {
+        height: 160%;
+    }
+
+    .popup-contacts .vk-contact .vk-name img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .popup-contacts_container {
+        padding: 2px 10px 70px 10px;
+    }
 
 
 
