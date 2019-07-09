@@ -7,6 +7,9 @@
     height: 696px;
     width: 427px;
 }
+.main-text button#main-button:before {
+    top: -10px;
+}
 	.top-bar nav.menu ul li a {
     font-size: 19px;
     padding: 0 26.5px;
@@ -32,8 +35,17 @@
 #countdown {
     top: 425px;
 }
-
-
+.proposition-button hr {
+    width: 31px;
+    left: 90px;
+}
+.popup-content_container {
+    width: 90%;
+}
+.popup-content .popup-content_container ul li {
+    font-size: 32px;
+    line-height: 42.08px;
+}
 
 
 
@@ -43,11 +55,18 @@
 .main-text button span#main-button_inner {
     font-size: 34px;
 }
+.main-soldier {
+    bottom: -50px;
+}
 .main-text button#main-button {
     margin-left: 51px;
     width: 100%;
     max-width: 661px;
     height: 90px;
+}
+.main-text button#main-button iframe {
+    bottom: -35px;
+    right:0;
 }
 .main-text ul li {
     font-size: 37px;
@@ -112,7 +131,10 @@
 .main-soldier {
     left: 795px;
 }
-
+.popup-content .popup-content_container ul li {
+    font-size: 28px;
+    line-height: 40.08px;
+}
 
 
 
@@ -148,18 +170,55 @@
     right: -200px;
 }
 .main-soldier {
-    left: 595px;
+    left: 655px;
+    bottom: 40px;
 }
 .main-soldier img {
     height: 596px;
     width: 327px;
 }
-
-
-
-
-
-
+.popup-bonus h2 {
+    font-size: 65px;
+}
+.popup-bonus p {
+    font-size: 49px;
+    line-height: 48.75px;
+}
+.popup-bonus_container {
+    width: 90%;
+    height: 90%;
+}
+.popup-comment h2 {
+    font-size: 65px;
+}
+.popup-comment_container {
+    width: 90%;
+    height: 90%;
+}
+.popup-contacts_container {
+    width: 90%;
+    height: 90%;
+}
+.popup-contacts h2 {
+    font-size: 65px;
+}
+.popup-contacts p.name-channel {
+    font-size: 76.8px;
+    line-height: 58.89px;
+}
+.popup-contacts p.name-channel_under {
+    font-size: 32px;
+}
+.popup-content_container {
+    height: 90%;
+}
+.popup-main h2 {
+    font-size: 65px;
+}
+.popup-main p {
+    font-size: 49px;
+    line-height: 48.75px;
+}
 }
 
 /*Средние девайсы («таблетки», < 992px) */
@@ -197,17 +256,103 @@
 	display: none;
 }
 .main-soldier {
-    left: 505px;
+    left: 405px;
+    bottom: 150px;
 }
 .main-soldier img {
-    height: 496px;
-    width: 227px;
+    height: 476px;
+    width: 287px;
+}
+.proposition-button button#proposition-button_outer {
+    margin-left: 70px;
+}
+.proposition-button p {
+    margin-left: 70px;
+}
+.proposition-button hr {
+    width: 22px;
+    bottom: 12px;
+    left: 205px;
+}
+.popup-bonus_container img.bonus-image {
+    height: 260px;
+}
+.popup-bonus h2 {
+    font-size: 55px;
+}
+.popup-bonus p {
+    font-size: 29px;
+    line-height: 38.75px;
+}
+.popup-comment h2 {
+    font-size: 55px;
+}
+.popup-contacts h2 {
+    font-size: 55px;
+}
+.popup-contacts p.name-channel {
+    font-size: 56.8px;
+    line-height: 38.89px;
+}
+.popup-contacts .youtube-contact .youtube-name img {
+    margin-bottom: 10px;
+    margin-right: 42px;
+    width: 135px;
+    height: 94px;
+}
+.popup-contacts p.name-channel_under {
+    font-size: 22px;
+}
+.popup-contacts .vk-contact .vk-name img {
+    margin-bottom: 10px;
+    margin-right: 42px;
+    width: 103px;
+    height: 103px;
+}
+.popup-content .popup-content_container ul li {
+    font-size: 24px;
+    line-height: 41.08px;
+}
+.popup-main h2 {
+    font-size: 55px;
+}
+.popup-main p {
+    font-size: 29px;
+    line-height: 28.75px;
+}
 }
 
-
-
-
+@media (max-width: 737px) {
+	.main-soldier {
+		display: none;
+	}
+	.main-center {
+	    justify-content: center;
+	}
+	.main-text {
+	    display: flex;
+	    flex-direction: column;
+	    align-items: center;
+	}
+	.top-bar {
+    margin-bottom: 30px;
 }
+#countdown {
+	left: 115px;
+    top: 475px;
+    height: 78px;
+}
+.proposition-button {
+    margin-left: 0px;
+    margin-top: 15px;
+}
+.proposition-button hr {
+    width: 22px;
+    bottom: 12px;
+    left: 210px;
+}
+}
+
 /*Экстрамалые девайсы («телефоны», < 576px)
 */@media (max-width: 576px) {
 .main-soldier {
@@ -253,6 +398,97 @@
     margin-left: 0;
     margin-top: 15px;
 }
+.proposition-button button#proposition-button_outer {
+    margin-left: 0;
+}
+.proposition-button p {
+    margin-left: 0px;
+}
+.proposition-button hr {
+    left: 135px;
+}
+#countdown {
+    left: 55px;
+}
+.popup-contacts p.name-channel {
+    font-size: 36.8px;
+    line-height: 18.89px;
+}
+.popup-contacts p.name-channel_under {
+    font-size: 20px;
+}
+.popup-contacts .youtube-contact .youtube-name img {
+    width: 131px;
+    height: 90px;
+}
+.popup-contacts .vk-contact .vk-name img {
+    width: 100px;
+    height: 100px;
+}
+.popup-content .popup-content_container ul li {
+    font-size: 21px;
+    line-height: 31.08px;
+}
+.popup-content .popup-content_container .content_left-block {
+    margin: auto;
+}
+.popup-bonus p {
+    font-size: 22px;
+    line-height: 22px;
+}
+.popup-comment_container {
+    padding: 32px 20px 70px 20px;
+}
+.popup-contacts p.name-channel {
+    font-size: 26.8px;
+    line-height: 0;
+}
+.popup-contacts .youtube-contact .youtube-name img {
+    width: 131px;
+    height: 70px;
+}
+.popup-contacts .vk-contact .vk-name img {
+    width: 80px;
+    height: 80px;
+}
+.popup-contacts p.name-channel_under {
+    font-size: 15px;
+}
+.popup-content .popup-content_container ul li {
+    font-size: 16px;
+    line-height: 31.08px;
+}
+.popup-main p {
+    font-size: 18px;
+    line-height: 18.75px;
+}
+.popup-bonus_container img.bonus-image {
+    height: 160px;
+}
+.popup-bonus_container {
+    padding: 32px 20px 70px 20px;
+}
+.popup-contacts_container {
+    width: 90%;
+    height: 70%;
+}
+.popup-comment_container {
+    width: 90%;
+    height: 70%;
+}
+.slider-dots {
+    margin-bottom: 170px;
+}
+.popup-bonus_container {
+    width: 90%;
+    height: 70%;
+}
+.popup-content_container {
+    height: 70%;
+}
+.popup-main_container {
+    height: 70%;
+}
 }
 
 @media (max-width: 410px) {
@@ -264,10 +500,65 @@
     font-size: 16px;
     padding: 0 6.5px;
 }
+.popup-contacts h2 {
+    font-size: 35px;
+}
+.popup-contacts p.name-channel {
+    font-size: 22px;
+    line-height: 0;
+}
+.popup-contacts .youtube-contact .youtube-name img {
+    margin-right: 12px;
+}
+.popup-contacts p.name-channel_under {
+    font-size: 12px;
+}
+.popup-contacts .youtube-undername {
+    padding: 0 16px;
+}
+.popup-contacts p.name-channel_under {
+    padding-top: 5px;
+}
+.popup-contacts .vk-undername {
+    padding: 0 16px;
+}
+.popup-content h2 {
+    font-size: 32px;
+}
+.popup-content_container {
+    padding: 32px 20px 70px 20px;
+}
+.popup-content .popup-content_container ul li {
+    font-size: 14px;
+}
+.popup-bonus h2 {
+    font-size: 45px;
+}
+.popup-comment h2 {
+    font-size: 45px;
+}
+.popup-main h2 {
+    font-size: 45px;
+}
+.popup-bonus p {
+    font-size: 14px;
+    line-height: 12px;
+}
+.popup-bonus_container {
+    width: 90%;
+    height: 60%;
+}
+
+
 }
 
 @media (max-width: 320px) {
-.top-bar .logo p {
+.close-button {
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+}
+.top-bar .logo a {
     font-size: 32px;
     margin-left: 82px;
 }
@@ -297,6 +588,70 @@
 }
 #countdown {
     left: 40px;
-    top: 425px;
+    top: 435px;
 }
+.proposition-button button span#proposition-button_inner {
+    font-size: 27px;
+}
+.proposition-button hr {
+    left: 100px;
+}
+.popup-comment_container {
+    padding: 32px 10px 70px 10px;
+}
+.popup-comment_container {
+    height: 50%;
+}
+.popup-comment h2 {
+    font-size: 35px;
+}
+.slider-dots {
+    margin-bottom: 90px;
+}
+.popup-bonus_container {
+    width: 90%;
+    height: 50%;
+}
+.popup-bonus h2 {
+    font-size: 35px;
+}
+.popup-contacts_container {
+    padding: 32px 10px 70px 10px;
+}
+.popup-contacts .youtube-contact .youtube-name {
+    padding: 5px 5px;
+}
+.popup-contacts .youtube-contact .youtube-name img {
+    width: 91px;
+}
+.popup-contacts .vk-contact .vk-name {
+    padding: 5px 5px;
+}
+.popup-contacts .vk-contact .vk-name img {
+    margin-bottom: 10px;
+    margin-right: 12px;
+}
+.popup-contacts_container {
+    width: 90%;
+    height: 60%;
+}
+.popup-content h2 {
+    font-size: 22px;
+}
+.popup-content .popup-content_container ul li {
+    font-size: 13px;
+    line-height: 20.08px;
+}
+.popup-content .popup-content_container hr {
+    margin-left: 13px;
+}
+.popup-content_container {
+    height: 60%;
+}
+
+
+
+
+
+
 }
