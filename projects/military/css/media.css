@@ -250,7 +250,10 @@
     font-size: 39px;
     line-height: 48.75px;
 }
-
+.popup-bonus_container {
+    width: 90%;
+    height: 95%;
+}
 
 }
 
