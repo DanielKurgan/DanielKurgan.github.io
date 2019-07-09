@@ -246,7 +246,10 @@
         font-size: 28px;
         line-height: 40px;
     }
-
+.popup-bonus p {
+    font-size: 39px;
+    line-height: 48.75px;
+}
 
 
 }
