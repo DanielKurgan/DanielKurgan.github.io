@@ -85,8 +85,8 @@ main-soldier img {
     left: 845px;
 }
 .main-text button#main-button {
-    margin-left: 51px;
-    width: 100%;
+    margin-left: 22px;
+    width: 80%;
     max-width: 661px;
     height: 90px;
 }
@@ -96,10 +96,10 @@ main-soldier img {
 }
 .main-text ul li {
     font-size: 37px;
-    margin-left: 200px;
+    margin-left: 150px;
 }
 #countdown {
-    left: 140px;
+    left: 100px;
 }
 .proposition-button #proposition-button_outer {
     padding: 10px;
@@ -118,7 +118,7 @@ main-soldier img {
 .proposition-button hr {
     width: 32px;
     bottom: 0px;
-    left: 135px;
+    left: 110px;
 }
 #countdown {
     height: 88px;
@@ -150,9 +150,12 @@ main-soldier img {
     font: bold 9px 'Droid Sans',Arial,sans-serif;
 }
 .proposition-button {
-    margin-left: 370px;
+    margin-left: 330px;
     margin-top: 35px;
-    position: relative
+    position: relative;
+}
+.proposition-button #proposition-button_inner {
+    font-size: 31px;
 }
 .main-soldier {
     left: 795px;
