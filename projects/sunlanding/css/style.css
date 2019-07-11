@@ -1,0 +1,187 @@
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+body {
+}
+.container {
+	max-width: 1170px;
+	width: 100%;
+}
+
+/*Header top*/
+.top-header_background {
+	width: 100%;
+	height: 100%;
+	background: white;
+}
+.top-header {
+	margin: 48px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.top-header img.logo {
+	width: 255px;
+	height: 48px;
+}
+.top-header .menu {
+	max-width: 518px;
+	width: 100%;
+}
+.top-header .menu a {
+color: #474747;
+font-family: Montserrat Regular;
+font-size: 18px;
+font-weight: 700;
+line-height: 25px;
+text-transform: uppercase;
+margin-right: 65px;
+}
+.top-header .menu a:last-child {
+	margin-right: 0;
+}
+.contacts-links {
+	text-align: right;
+}
+.contacts-links a.number {
+color: #474747;
+font-family: Montserrat Regular;
+font-size: 18px;
+font-weight: 400;
+line-height: 25px;
+text-transform: uppercase;
+}
+.contacts-links a.order-call {
+color: #c79c6e;
+text-decoration: underline;
+font-size: 18px;
+letter-spacing: 1px;
+}
+
+/*Header center*/
+.center-header_background {
+	background: url("../img/header-background.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.center-header {
+	padding-top: 216px;
+	display: flex;
+	flex-direction: row;
+}
+
+/*Header center Left side*/
+.center-header .center-header_left h1 {
+color: #474747;
+font-family: Montserrat Bold;
+font-size: 65px;
+font-weight: 700;
+margin-top: 25px;
+margin-bottom: 46px;
+}
+.center-header .center-header_left p {
+color: #474747;
+font-family: Montserrat Bold;
+font-size: 30px;
+font-weight: 700;
+}
+.center-header .center-header_left p#studysize {
+	margin-bottom: 45px;
+}
+.center-header .center-header_left p#studysize:before {
+	content: url("../img/27м2.png");
+	margin-right: 20px;
+	width: 113px;
+	height: 43px;
+}
+.center-header .center-header_left p#clock {
+	display: flex;
+	align-items: center;
+	margin-bottom: 45px;
+}
+.center-header .center-header_left p#clock:before {
+	content: url("../img/clock.png");
+	margin-right: 27px;
+	width: 70px;
+	height: 67px;
+}
+
+/*Header center Right Side*/
+.center-header_right p {
+	color: #474747;
+	font-family: Montserrat;
+	font-size: 24px;
+	font-weight: 700;
+	text-align: center;
+	margin-bottom: 45px;
+}
+.center-header_right p span.pbigger {
+	font-size: 27px;
+}
+
+/*Form*/
+.form-block {
+}
+.form-content {
+	margin-bottom: 265px;
+	box-sizing: content-box;
+	padding: 45px 35px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 390px;
+	width: 100%;
+	max-height: 480px;
+	height: 100%;
+	border-radius: 10px;
+	background-color: #ffffff
+}
+.form-content form ul li {
+	display: flex;
+	flex-direction: column;
+
+}
+.form-content form ul li:first-child {
+	margin-bottom: 25px;
+}
+.form-content form ul li label {
+	color: #474747;
+	font-family: Montserrat;
+	font-size: 16px;
+	font-weight: 300;
+}
+.form-content form ul li input {
+	max-width: 330px;
+	width: 100%;
+	height: 48px;
+	border-radius: 10px;
+	background-color: #ececec;
+	border: 0;
+	outline: 0;
+	padding: 0 20px;
+}
+.form-content form ul li input:last-child {
+	margin-bottom: 25px;
+}
+.form-content form ul li.form-button {
+	width: 329px;
+	height: 60px;
+	border-radius: 10px;
+	background-color: #c79c6e;	
+}
+.form-content form ul li.form-button button {
+	height: 100%;
+	width: 100%;
+	background: 0;
+	border: 0;
+	margin: auto auto;
+	color: #ffffff;
+	font-family: Montserrat;
+	font-size: 18px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
