@@ -1,21 +1,79 @@
-/*Экстрабольшие девайсы (большие десктопы)*/
+@media (max-width: 1600px) {
+.center-header {
+    padding-top: 90px;
+}
+.form-content {
+    margin-bottom: 90px;
+}
 
-/*Большие девайсы (большие десктопы, < 1200px)*/
+}
+
+@media (max-width: 1366px) {
+.top-header .menu a {
+    font-size: 16px;
+}
+.contacts-links a.number {
+    font-size: 16px;
+}
+.contacts-links a.order-call {
+    font-size: 16px;
+}
+.center-header {
+    padding-top: 30px;
+}
+.form-content {
+    margin-bottom: 30px;
+}
+.center-header .center-header_left h1 {
+    font-size: 55px;
+}
+.center-header .center-header_left p {
+    font-size: 27px;
+}
+.center-header_right p {
+    font-size: 21px;
+}
+.center-header_right p span.pbigger {
+    font-size: 24px;
+}
+
+}
+
 @media (max-width: 1200px) {
 	
 }
 
-/*Средние девайсы («таблетки», < 992px) */
+@media (max-width: 1024px) {
+.top-header {
+    margin: 18px 0;
+}
+.top-header img.logo {
+    width: 235px;
+    height: 38px;
+}
+.top-header .menu a {
+    font-size: 14px;
+}
+.contacts-links a.number {
+    font-size: 14px;
+}
+.contacts-links a.order-call {
+    font-size: 14px;
+}
+
+
+
+
+}
+
 @media (max-width: 992px) {
 	
 }
 
-/*Малые девайсы («ландшафтные», < 768px)
 */@media (max-width: 768px) {
 	
 }
 
-/*Экстрамалые девайсы («телефоны», < 576px)
 */@media (max-width: 576px) {
 
 }
