@@ -8,6 +8,27 @@ header .container {
     padding-top: 116px;
     padding-bottom: 164px;
 }
+.slick-next {
+    right: 60px !important;
+}
+.slick-prev {
+    left: 60px !important;
+}
+.about-zone .container .about-text p {
+    font-size: 18px;
+    line-height: 25px;
+    padding: 0 5px;
+}
+}
+
+@media screen and (max-width: 1249px) {
+/*HOMEVARIABLES*/
+
+.home-variables .container .variables-column {
+    justify-content: center;
+}
+
+/*HOMEVARIABLES*/
 }
 
 @media screen and (max-width: 1168px) {
@@ -79,59 +100,26 @@ header .container {
 .tour-block p br.mobile_visible {
     display: block;
 }
-}
+/*TOUR*/
 
-@media screen and (max-width: 641px) {
-.tour-room_content_small {
-    flex-direction: column;
-}
-.tour-block {
-    margin-top: 0; 
-}
-.tour-room_content_small {
-}
-.tour-room_content_small .tour-room_content_unit {
+/*PLAN3D*/
+.plan3d .container img {
+    max-width: 700px;
+    max-height: 616px;
+    width: 100%;
     height: 100%;
 }
-.tour-room_content_small {
-    height: 706px;
-}
-.tour-room_content_small {
-    /*height: 1056px;*/
-    width: 100%;
-    flex-direction: column;
-}
-.tour-room_content_small a:nth-child(1) {
-    margin-right: 0;
-    margin-bottom: 13px;
-}
-.tour-room_content_big {
-    height: 346px;
-}
-.tour-block {
-    margin-top: 30px;
+/*PLAN3D*/
 }
 
-}
+@media screen and (max-width: 1160px) {
 
-@media screen and (max-width: 471px) {
-.tour p.top-title {
-    font-size: 16px;
-    padding: 29px 32px 32px 27px;
+/*ADVANTAGES*/
+.advantage-part {
+    margin-bottom: 40px;
 }
-.tour-block p {
-    font-size: 14px;
-}
-.tour h2 {
-    font-size: 22px;
-}
-}
+/*ADVANTAGES*/
 
-@media screen and (max-width: 321px) {
-.tour p.top-title {
-    font-size: 16px;
-    padding: 29px 12px 32px 7px;
-}
 }
 
 @media screen and (max-width: 1157px) {
@@ -139,6 +127,87 @@ header .container {
 .tour-room_content_big {
     margin-right: 0;
 }    
+}
+
+@media screen and (max-width: 1124px) {
+    .about-zone .container .about-text {
+        flex-direction: column;
+        margin-bottom: 49px;
+    }
+.about-zone .container .about-text_left {
+    margin-bottom: 50px;
+}
+.about-zone .container .about-text_left br {
+    display: none;
+}
+.about-zone .container .about-text_right {
+    margin-bottom: 50px;
+}
+.about-zone .container .about-text_right br {
+    display: none;
+}
+
+
+
+
+
+
+}
+
+@media screen and (max-width: 1106px) {
+/*COMMENT*/
+
+br.mobile {
+    display: block;
+}
+.comment .container h2 {
+    line-height: 35px;
+}
+.comment .comment-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.comment .comment-content p br {
+    display: none;
+}
+.comment .comment-content img {
+    width: 261px;
+    height: 311px;
+    margin-right: 0;
+    margin-bottom: 30px;
+}
+.comment .container {
+    max-width: 570px;
+}
+.comment .comment-content span.name {
+    text-align: center;
+}
+.comment .comment-content span.profession {
+    text-align: center;
+}
+.comment .comment-content p {
+    line-height: 30px;
+}
+/*COMMENT*/
+}
+
+@media screen and (max-width: 1098px) {
+footer p.copyright {
+    margin: 0 auto;
+}
+footer p.copyright br {
+    display: none;
+}
+footer .container {
+    max-width: 700px;
+    justify-content: center;
+}
+footer .menu {
+    display: flex;
+    flex-direction: row;
+    padding: 30px 30px;
+}
 }
 
 @media screen and (max-width: 1039px) {
@@ -256,11 +325,53 @@ a {
     margin-bottom: 0;
 }
 }
+
+@media screen and (max-width: 920px) {
+.contacts .container .contacts-content {
+    padding: 58px 38px 60px 44px;
+    max-width: 555px;
+    max-height: 384px;
+    position: static;
+    margin: 0 auto;
+}
+.contacts .contacts-content .mini-block_last {
+    flex-direction: column;
+    align-items: center;
+}
+.contacts .contacts-content .mini-block_last a button {
+    margin-top: 15px;
+}
+.contacts .container {
+    position: relative;
+    padding: 0 0px;
+    max-width: 320px;
+}
+.contacts .container .contacts-content .mini-block {
+    text-align: center;
+}
+
+.contacts .container h2 {
+    margin-top: 45px;
+    margin-bottom: 0;
+}
+.contacts .contacts-content .mini-block_last a button {
+    margin-left: 0px;
+}
+.contacts #map {
+    height: 380px;
+    margin-top: 40px;
+}
+
+
+
+}
+
 @media screen and (max-width: 887px) {
 .main .form-content {
     margin-left: 0px;
 }
 }
+
 @media screen and (max-width: 702px) {
 .main {
     padding-top: 36px;
@@ -290,6 +401,96 @@ header .header-contacts {
     padding: 0 20px;
 }
 }
+@media screen and (max-width: 646px) {
+/*HOMEVARIABLES*/
+.home-variables .container .variables-part {
+    justify-content: center;
+}
+/*HOMEVARIABLES*/
+}
+
+@media screen and (max-width: 641px) {
+
+/*TOUR*/
+.tour-room_content_small {
+    flex-direction: column;
+}
+.tour-block {
+    margin-top: 0; 
+}
+.tour-room_content_small {
+}
+.tour-room_content_small .tour-room_content_unit {
+    height: 100%;
+}
+.tour-room_content_small {
+    height: 706px;
+}
+.tour-room_content_small {
+    /*height: 1056px;*/
+    width: 100%;
+    flex-direction: column;
+}
+.tour-room_content_small a:nth-child(1) {
+    margin-right: 0;
+    margin-bottom: 13px;
+}
+.tour-room_content_big {
+    height: 346px;
+}
+.tour-block {
+    margin-top: 30px;
+}
+/*TOUR*/
+
+/*3DPLAN*/
+.plan3d .container img {
+    max-width: 400px;
+    max-height: 316px;
+    width: 100%;
+    height: 100%;
+}
+/*3DPLAN*/
+
+/*ADVANTAGES*/
+.advantages-apartment .advantage-image {
+    margin: 0 10px;
+    width: 190px;
+    height: 170px;
+}
+.advantages-apartment span {
+    left: 50%;
+    transform: translate(-50%, -15%);
+    font-size: 12px;
+    line-height: 18px;
+}
+.advantages-apartment .container h2 {
+    line-height: 35px;
+}
+/*ADVANTAGES*/
+
+}
+
+@media screen and (max-width: 622px) {
+footer .menu {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 30px;
+}
+footer .container {
+    display: flex;
+    flex-direction: column;
+}
+footer .menu a {
+    margin-right: 0px;
+    text-align:center;
+}
+
+
+
+
+
+}
 
 @media screen and (max-width: 537px) {
 header .container {
@@ -316,6 +517,74 @@ header a.header-call {
 .main .container .advantage:nth-last-child(3) {
     margin-bottom: 23px;
 }
+.home-variables .container h2 {
+    line-height: 35px;
+}
+.about-zone .container .about-text p {
+    font-size: 15px;
+}
+.about-zone .container .about-text {
+    margin-bottom: 3px;
+}
+}
+
+
+@media screen and (max-width: 471px) {
+
+/*TOUR*/
+.tour p.top-title {
+    font-size: 16px;
+    padding: 29px 32px 32px 27px;
+}
+.tour-block p {
+    font-size: 14px;
+}
+.tour h2 {
+    font-size: 22px;
+}
+/*TOUR*/
+
+/*PLAN3D*/
+.plan3d .container h2 {
+    font-size: 22px;
+}
+/*PLAN3D*/
+
+/*ADVANTAGES*/
+.advantages-apartment .container h2 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 43px;
+    color: #474747;
+    font-family: Montserrat;
+    font-size: 22px;
+}
+.advantages-apartment .advantage-image {
+    margin: 0 10px;
+    width: 140px;
+    height: 140px;
+}
+.advantages-apartment .advantage-mass {
+    margin-bottom: 0px; 
+}
+.advantages-apartment span {
+    font-size: 11px;
+}
+/*ADVANTAGES*/
+
+/*HOMEPLAN*/
+.homemap .container h2 {
+    margin-top: 10px;
+    margin-bottom: 43px;
+    font-size: 22px;
+}
+/*HOMEPLAN*/
+
+/*COMMENT*/
+.comment .container h2 {
+    font-size: 22px;
+}
+/*COMMENT*/
 }
 
 @media screen and (max-width: 431px) {
@@ -368,15 +637,94 @@ header a.header-call {
     width: 280px;
     height: 40px;
 }
+/*MAIN*/
+
+/*COMMENT*/
+.comment .comment-content p {
+    line-height: 20px;
+    font-size: 14px;
+}
+/*COMMENT*/
+}
+
+@media screen and (max-width: 374px) {
+/*HOMEVARIABLES*/
+.home-variables .container h2 {
+    margin-top: 0px; /*del*/
+    margin-bottom: 23px;
+    font-size: 22px;
+    line-height: 35px;
+}
+.home-variables .container .variable span.opinion {
+    font-size: 16px;
+}
+/*HOMEVARIABLES*/
+
+/*ABOUTZONE*/
+
+.about-zone .container h2 {
+    padding-top: 24px;
+    margin-bottom: 27px;
+    text-align: center;
+    font-size: 22px;
+    line-height: 35px;
+}
+
+/*ABOUTZONE*/
 }
 
 @media screen and (max-width: 361px) {
+
+/*HEADER*/
 header .logo img {
     width: 105px;
     height: 25px;
 }
 header .container {
     padding: 0 10px;
+}
+/*HEADER*/
+
+/*ADVANTAGES*/
+.advantages-apartment .advantage-image {
+    margin: 0 10px;
+    width: 120px;
+    height: 120px;
+}
+.advantages-apartment .container h2 {
+    font-size: 18px;
+    line-height: 25px;
+}
+.advantages-apartment span {
+    transform: translate(-50%, -15%);
+    font-size: 8px;
+    line-height: 13px;
+}
+/*ADVANTAGES*/
+
+/*HOMEMAP*/
+.homemap .container h2 {
+    margin-top: 10px;
+    margin-bottom: 23px;
+    font-size: 18px;
+}
+/*HOMEMAP*/
+
+/*COMMENT*/
+
+/*COMMENT*/
+
+/*HOMEVARIABLES*/
+.home-variables .container .variable {
+    margin: 20px 0;
+}
+/*HOMEVARIABLES*/
+}
+
+@media screen and (max-width: 321px) {
+.tour p.top-title {
+    font-size: 16px;
+    padding: 29px 12px 32px 7px;
 }
 
 

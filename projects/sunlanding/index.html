@@ -7,6 +7,8 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/media.css">
 	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="css/slick.css">
+	<link rel="stylesheet" type="text/css" href="css/slick-theme.css">
 </head>
 <body>
 
@@ -17,9 +19,9 @@
 		</div>
 		<nav>
 			<div class="menu">
-				<a href="#">О районе</a>
+				<a href="#anchor-about">О районе</a>
 				<a href="#">О застройщике</a>
-				<a href="#">Контакты</a>
+				<a href="#anchor-contacts">Контакты</a>
 			</div>
 		</nav>
 		<div class="header-contacts">
@@ -34,9 +36,9 @@
 </header>
 <div class="nav__mobile" id="hamburger-menu">
 	<div class="nav__mobile__close" onclick="closeHamburger(); "><span></span><span></span></div>
-	<div class="nav__mobile__unit"><a href="#about">О РАЙОНЕ</a></div>
-	<div class="nav__mobile__unit"><a href="#developer">О ЗАСТРОЙЩИКЕ</a></div>
-	<div class="nav__mobile__unit"><a href="#contacts">КОНТАКТЫ</a></div>
+	<div class="nav__mobile__unit"><a onclick="closeHamburger();" href="#anchor-about">О РАЙОНЕ</a></div>
+	<div class="nav__mobile__unit"><a onclick="closeHamburger();" href="#anchor-developer">О ЗАСТРОЙЩИКЕ</a></div>
+	<div class="nav__mobile__unit"><a onclick="closeHamburger();" href="#anchor-contacts">КОНТАКТЫ</a></div>
 </div>
 
 <div class="main">
@@ -60,15 +62,15 @@
 					больше о квартире?<br>
 					Мы вам перезвоним!
 				</p>
-				<form>
+				<form action="mail.php" method="POST">
 					<ul>
 						<li>
 							<label>Ваше имя</label>
-							<input type="text" name="text" required>
+							<input type="text" name="user_name" required>
 						</li>
 						<li>
 							<label>Ваш телефон</label>
-							<input type="number" name="phone" required>
+							<input type="number" name="user_phone" maxlength="12" required>
 						</li>
 						<li class="button-form">
 							<button type="submit" name="submit">Перезвоните мне</button>
@@ -88,23 +90,23 @@
 		<div class="tour-room_wrapper">
 			<div class="tour-room_content">
 				<div class="tour-room_content_big">
-					<a class="tour-room_content_unit" href="#" style="background-image: url('img/g1.png')">
+					<a class="tour-room_content_unit" href="#acnhor-lounge" style="background-image: url('img/g1.png')">
 						<span class="tour-room_content_title">Гостиная</span>
 					</a>
 				</div>
 
 				<div class="tour-room_content_small">
-					<a class="tour-room_content_unit" href="#" style="background-image: url('img/g2.png')">
+					<a class="tour-room_content_unit" href="#acnhor-kitchen" style="background-image: url('img/g2.png')">
 						<span class="tour-room_content_title">Кухня</span>
 					</a>
-					<a class="tour-room_content_unit" href="#" style="background-image: url('img/g3.png')">
+					<a class="tour-room_content_unit" href="#acnhor-bathroom" style="background-image: url('img/g3.png')">
 						<span class="tour-room_content_title">Ванная</span>
 					</a>
 				</div>
 			</div>
 		</div>
 		<div class="tour-block">
-			<p><span class="block-title">Гостиная</span><br class="mobile_visible"><br> Гостиная-спальня получилась хоть и yмаленькая, но чрезвычайно комфортная и удобная: здесь все под рукой. <br>Полка для книг и мелочей над диваном, удобный и красивый столик по середине.Когда площадь большая, зонирование с помощью мебели часто не оправдывает ожидания хозяев квартиры, но в данном случае все вполне удалось — для этого использовалась не только мебель, но и свет. <br><br>Если планируете позвать гостей или организовать холостяцкую вечерку, то в гостинной нужно предусмотреть достаточное количество посадочных мест. Для этого выбраны 2 вместительных дивана. Место хватит всем гостям. <br><br>«Голые» стены не добавляют нужного уюта интерьеру, именно поэтому добавлены различные элементы декора:картины,зеркала, черно-белые репродукции или необычные тематические постеры. </p>
+			<p><span class="block-title" id="acnhor-lounge">Гостиная</span><br class="mobile_visible"><br> Гостиная-спальня получилась хоть и yмаленькая, но чрезвычайно комфортная и удобная: здесь все под рукой. <br>Полка для книг и мелочей над диваном, удобный и красивый столик по середине.Когда площадь большая, зонирование с помощью мебели часто не оправдывает ожидания хозяев квартиры, но в данном случае все вполне удалось — для этого использовалась не только мебель, но и свет. <br><br>Если планируете позвать гостей или организовать холостяцкую вечерку, то в гостинной нужно предусмотреть достаточное количество посадочных мест. Для этого выбраны 2 вместительных дивана. Место хватит всем гостям. <br><br>«Голые» стены не добавляют нужного уюта интерьеру, именно поэтому добавлены различные элементы декора:картины,зеркала, черно-белые репродукции или необычные тематические постеры. </p>
 			<div class="tour-room_wrapper">
 				<div class="tour-room_content">
 					<div class="tour-room_content_big">
@@ -119,7 +121,7 @@
 			</div>
 		</div>
 		<div class="tour-block">
-			<p><span class="block-title">Кухня</span><br class="mobile_visible"><br> Гостиная-спальня получилась хоть и yмаленькая, но чрезвычайно комфортная и удобная: здесь все под рукой. <br>Полка для книг и мелочей над диваном, удобный и красивый столик по середине.Когда площадь большая, зонирование с помощью мебели часто не оправдывает ожидания хозяев квартиры, но в данном случае все вполне удалось — для этого использовалась не только мебель, но и свет. <br><br>Если планируете позвать гостей или организовать холостяцкую вечерку, то в гостинной нужно предусмотреть достаточное количество посадочных мест. Для этого выбраны 2 вместительных дивана. Место хватит всем гостям. <br><br>«Голые» стены не добавляют нужного уюта интерьеру, именно поэтому добавлены различные элементы декора:картины,зеркала, черно-белые репродукции или необычные тематические постеры. </p>
+			<p><span class="block-title" id="acnhor-kitchen">Кухня</span><br class="mobile_visible"><br> Гостиная-спальня получилась хоть и yмаленькая, но чрезвычайно комфортная и удобная: здесь все под рукой. <br>Полка для книг и мелочей над диваном, удобный и красивый столик по середине.Когда площадь большая, зонирование с помощью мебели часто не оправдывает ожидания хозяев квартиры, но в данном случае все вполне удалось — для этого использовалась не только мебель, но и свет. <br><br>Если планируете позвать гостей или организовать холостяцкую вечерку, то в гостинной нужно предусмотреть достаточное количество посадочных мест. Для этого выбраны 2 вместительных дивана. Место хватит всем гостям. <br><br>«Голые» стены не добавляют нужного уюта интерьеру, именно поэтому добавлены различные элементы декора:картины,зеркала, черно-белые репродукции или необычные тематические постеры. </p>
 			<div class="tour-room_wrapper">
 				<div class="tour-room_content">
 					<div class="tour-room_content_big">
@@ -134,13 +136,226 @@
 			</div>
 		</div>
 		<div class="tour-block">
-			<p><span class="block-title">Ванная</span><br class="mobile_visible"><br>В ванной комнате находится и туалет, для экономия места. А еще здесь располагается стиральная машинка. <br>Мы решили переместить ее в ванную комнату, поскольку на кухне она доставляет неудобства. <br><br>Небольшую площадь ванной компенсирует ее функциональность: здесь все на своих местах и нет ничего лишнего. А это в квартире — главное!</p>
+			<p><span class="block-title" id="acnhor-bathroom">Ванная</span><br class="mobile_visible"><br>В ванной комнате находится и туалет, для экономия места. А еще здесь располагается стиральная машинка. <br>Мы решили переместить ее в ванную комнату, поскольку на кухне она доставляет неудобства. <br><br>Небольшую площадь ванной компенсирует ее функциональность: здесь все на своих местах и нет ничего лишнего. А это в квартире — главное!</p>
 			<img class="bathroom-image" src="img/bathroom-picture.png">
 		</div>
 	</div>
 </div>
 
+<div class="plan3d">
+	<div class="container">
+		<h2>3D планировка</h2>
+		<img src="img/3d.png">
+	</div>
+</div>
+
+<div class="advantages-apartment">
+	<div class="container">
+		<h2>Преимущества квартир в "Солнечном"</h2>
+		<div class="advantages-list">
+			<div class="advantage-column">
+				<div class="advantage-mass">
+					<div class="advantage-part">
+						<div class="advantage-image" style="background-image: url('img/advantage1.png')"><span class="onelineadv">Отделка «под ключ»</span></div>
+						<div class="advantage-image" style="background-image: url('img/advantage2.png')"><span>Эргономичное<br>пространство</span></div>
+					</div>
+					<div class="advantage-part">
+						<div class="advantage-image" style="background-image: url('img/advantage3.png')"><span>Гибкое<br>пространство</span></div>
+						<div class="advantage-image" style="background-image: url('img/advantage4.png')"><span>Мебель<br>стандартных размеров</span></div>
+					</div>
+				</div>
+				<div class="advantage-mass">
+					<div class="advantage-part">
+						<div class="advantage-image" style="background-image: url('img/advantage5.png')"><span>Удобно спроекти-<br>рованная кухня</span></div>
+						<div class="advantage-image" style="background-image: url('img/advantage6.png')"><span>Множество мест<br>для хранения</span></div>
+					</div>
+					<div class="advantage-part">
+						<div class="advantage-image" style="background-image: url('img/advantage7.png')"><span>Горячая вода —<br>круглый год</span></div>
+						<div class="advantage-image" style="background-image: url('img/advantage8.png')"><span>«Грязная» зона<br>не мешает жилой</span></div>
+					</div>
+				</div>
+				<div class="advantage-mass">
+					<div class="advantage-part">
+						<div class="advantage-image" style="background-image: url('img/advantage9.png')"><span>Свря управля-<br>ющая компания</span></div>
+						<div class="advantage-image" style="background-image: url('img/advantage10.png')"><span>Фитнес центр<br>на 1 этаже</span></div>
+					</div>
+					<div class="advantage-part">
+						<div class="advantage-image" style="background-image: url('img/advantage11.png')"><span>Комьюнити-центр<br>на 1 этаже</span></div>
+						<div class="advantage-image" style="background-image: url('img/advantage12.png')"><span>Прачечная<br>на 1 этаже</span></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="homemap">
+	<div class="container">
+		<h2>Квартира на плане дома</h2>
+		<img src="img/homemap.png">
+	</div>
+</div>
+<div class="comment">
+	<div class="container">
+		<h2>Что думают специалисты <br class="mobile">о квартирах в «Солнечном»</h2>
+		<div class="comment-content">
+			<img src="img/comment-image.png">
+			<div class="comment-data">
+				<span class="name">Татьяна Миленова</span>
+				<span class="profession">менеджер</span>
+				<p>«Только твои метры» — очень функциональная квартира-студия для холостяка. <br>В ней удалось реализовать зонирование, продумать приватную и общественную зону, организовать полноценную кухню, спальню-гостиную, санузел и прихожую. <br>Кухню и гостиную разделяет дверной проем,	который является объектом интерьера. <br><br>Выбирать, что лучше — дверной проём или барная стойка — сможете вы сами, <br>в зависимости от личных предпочтений.</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="home-variables">
+	<div class="container">
+		<h2>Другие варианты квартир</h2>
+		<div class="variables-list">
+			<div class="variables-column">
+				<div class="variables-part">
+					<div class="variable">
+						<img src="img/kvartira1.png">
+						<span class="opinion-title">Личное пространство<br>каждому</span>
+						<span class="opinion">просторная двушка<br>для семьи с 2 детьми<br>45 м2</span>
+					</div>
+					<div class="variable">
+						<img src="img/kvartira2.png">
+						<span class="opinion-title">Первые<br>шаги</span>
+						<span class="opinion">чудесная квартира для<br>молодой семьи с малышом<br>34 м2</span>
+					</div>
+				</div>
+				<div class="variables-part">
+					<div class="variable">
+						<img src="img/kvartira3.png">
+						<span class="opinion-title">вдвое больше счастья<br>в новой двушке</span>
+						<span class="opinion">идеально для семьи<br> с двумя детьми<br>41 м2</span>
+					</div>
+					<div class="variable">
+						<img src="img/kvartira4.png">
+						<span class="opinion-title">счастливы<br>вместе</span>
+						<span class="opinion">комфортная однушка<br>для семьи с 2-мя детьми<br>39 м2</span>
+					</div>
+				</div>
+			</div>
+			<div class="variables-column">
+				<div class="variables-part">
+					<div class="variable">
+						<img src="img/kvartira5.png">
+						<span class="opinion-title">своя квартира —<br>свои правила</span>
+						<span class="opinion">однокомнатная для пары<br>35 м2</span>
+					</div>
+					<div class="variable">
+						<img src="img/kvartira6.png">
+						<span class="opinion-title">комфортная студия для<br>семьи с дошкольником</span>
+						<span class="opinion">с паркоместом для роботов<br>28 м2</span>
+					</div>
+				</div>
+				<div class="variables-part">
+					<div class="variable">
+						<img src="img/kvartira7.png">
+						<span class="opinion-title">любовное гнездышко<br>с огромным диваном</span>
+						<span class="opinion">крутая студия для двоих<br>28 м2</span>
+					</div>
+					<div class="variable">
+						<img src="img/kvartira8.png">
+						<span class="opinion-title">твое личное рабочее<br>место</span>
+						<span class="opinion">личный коворкинг на<br>27 м2</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="about-zone">
+	<div class="container">
+		<h2 id="anchor-about">О районе солнечный</h2>
+		<div class="about-text">
+			<div class="about-text_left">
+				<p>«Солнечный» — это перспективный район комплексной «зелёной» застройки на юге Екатеринбурга. <br><br> Для кого-то это 2,5 миллиона квадратных метров жилья <br> для 85 000 жителей на площади 362 Га, а для кого-то это <br> новый глоток жизни, где важны свобода и комфорт, <br> удобство, безопасность, спорт для семей с детьми, работа <br> и отдых.</p>
+			</div>
+			<div class="about-text_right">
+				<p>Красивый вид из окна квартир- ключевое проектное <br> решение. Прогулочные зоны с классным <br> благоустройством — хороший поводь побыть на свежем воздухе! <br><br> Понравилась квартира? Посмотрите на район, где вы будете проводить массу времени! <br>И мы надеемся — с радостью!</p>
+			</div>
+		</div>
+		<div class="about-cards_block">
+			<div class="about-card">
+				<img src="img/about1.png">
+				<p>В шаговой доступности — аутлет <br> Brands’ Stories. делать шопинг <br> выгодным как никогда ранее.</p>
+			</div>
+			<div class="about-card">
+				<img src="img/about2.png">
+				<p>Новый детский сад «Солнечный <br> лучик» на 350 мест — рядом <br>с вашим домом..</p>
+			</div>
+			<div class="about-card">
+				<img src="img/about3.png">
+				<p>«Комфортный район, добрососедство, <br> лучший район города» —	слова не <br> просто дизайнера, а, прежде всего, <br> жителя района!</p>
+			</div>
+			<div class="about-card">
+				<img src="img/about4.jpg">
+				<p>В шаговой доступности — аутлет <br> Brands’ Stories. делать шопинг <br> выгодным как никогда ранее.</p>
+			</div>
+			<div class="about-card">
+				<img src="img/about5.jpg">
+				<p>Новый детский сад «Солнечный <br> лучик» на 350 мест — рядом <br>с вашим домом..</p>
+			</div>
+			<div class="about-card">
+				<img src="img/about6.jpg">
+				<p>«Комфортный район, <br> добрососедство, лучший район <br> города» —	слова не просто <br> дизайнера, а, прежде всего, жителя <br> района!</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="contacts">
+	<div class="container">
+		<h2 id="anchor-contacts">Наши контакты</h2>
+		<div class="contacts-content">
+
+			<div class="mini-block">
+				<span class="ctitle">Телефон</span>
+				<span class="ctext">+7 (922) 209-77-58</span>
+			</div>
+			<div class="mini-block">
+				<span class="ctitle">E-mail</span>
+				<span class="ctext">ialazarev@lider-cc.ru</span>
+			</div>
+			<div class="mini-block">
+				<span class="ctitle">Адрес</span>
+				<span class="ctext">г. Екатеринбург, ул. Счастливая 8</span>
+			</div>
+			<div class="mini-block_last">
+				<div class="clast_text"><span class="ltitle">Оформление <br> ипотеки от </span><span class="ltitle_bronze">9,9%</span></div>
+				<a href="#"><button>Узнать больше</button></a>
+			</div>
+		</div>
+	</div>
+	<div id="map"></div>
+</div>
+<footer>
+	<div class="container">
+		<div class="logo">
+			<a href="#"><img src="img/logo.png"></a>
+		</div>
+		<nav>
+			<div class="menu">
+				<a href="#anchor-about">О районе</a>
+				<a href="#">О застройщике</a>
+				<a href="#anchor-contacts">Контакты</a>
+			</div>
+		</nav>
+		<p class="copyright">Все права защищены ©<br> 2019</p>
+	</div>
+</footer>
+
+
+<script src="js/jquery-3.4.1.js"></script>
+<script src="js/anchor-smooth.js"></script>
 <script src="js/hamburger.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/aboutslider.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?apikey=<90160568-367e-4883-892e-539a2b5a59d1>&lang=ru_RU"></script>
+<script src="js/yandex-map.js"></script>
 <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
 </html>

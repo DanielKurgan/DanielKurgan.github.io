@@ -4,4 +4,3 @@ function openHamburger() {
 function closeHamburger() {
 	document.getElementById("hamburger-menu").classList.remove("nav__mobile--shown");
 }
-
