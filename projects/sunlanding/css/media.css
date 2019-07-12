@@ -11,6 +11,8 @@ header .container {
 }
 
 @media screen and (max-width: 1168px) {
+
+/*MAIN*/
 .main .form-content {
     margin-left: 0;
 }
@@ -30,8 +32,113 @@ header .container {
 .main .form-content {
     margin-left: 60px;
 }
+/*MAIN*/
 
+/*TOUR*/
+.tour-room_content {
+    justify-content: center;
+}
+.tour-room_content_small {
+    flex-direction: row;
+}
+.tour-room_content_small .tour-room_content_unit {
+    height: 50%;
+}
+.tour .container {
+    max-width: 737px;
+}
+.tour-room_content_small {
+    margin-top: 13px;
+}
+.tour-room_content_small a:nth-child(1) {
+    margin-right: 13px;
+    margin-bottom: 0;
+}
+/*TOUR*/
+.tour-room_content_big {
+    width: 100%;
+     margin-right: 0; 
+}
+.tour-room_content_small {
+    width: 100%;
+}
+.tour p.top-title {
+     margin-top: 0; 
+     margin-bottom: 0;
+     text-align: left; 
+}
+.tour p.top-title br {
+    display: none;
+}
+.tour-block {
+    margin-top: -235px;
+}
+.tour-block p br {
+    display: none;
+}
+.tour-block p br.mobile_visible {
+    display: block;
+}
+}
 
+@media screen and (max-width: 641px) {
+.tour-room_content_small {
+    flex-direction: column;
+}
+.tour-block {
+    margin-top: 0; 
+}
+.tour-room_content_small {
+}
+.tour-room_content_small .tour-room_content_unit {
+    height: 100%;
+}
+.tour-room_content_small {
+    height: 706px;
+}
+.tour-room_content_small {
+    /*height: 1056px;*/
+    width: 100%;
+    flex-direction: column;
+}
+.tour-room_content_small a:nth-child(1) {
+    margin-right: 0;
+    margin-bottom: 13px;
+}
+.tour-room_content_big {
+    height: 346px;
+}
+.tour-block {
+    margin-top: 30px;
+}
+
+}
+
+@media screen and (max-width: 471px) {
+.tour p.top-title {
+    font-size: 16px;
+    padding: 29px 32px 32px 27px;
+}
+.tour-block p {
+    font-size: 14px;
+}
+.tour h2 {
+    font-size: 22px;
+}
+}
+
+@media screen and (max-width: 321px) {
+.tour p.top-title {
+    font-size: 16px;
+    padding: 29px 12px 32px 7px;
+}
+}
+
+@media screen and (max-width: 1157px) {
+/*Отступ который мешает сдвигу*/
+.tour-room_content_big {
+    margin-right: 0;
+}    
 }
 
 @media screen and (max-width: 1039px) {
@@ -149,7 +256,11 @@ a {
     margin-bottom: 0;
 }
 }
-
+@media screen and (max-width: 887px) {
+.main .form-content {
+    margin-left: 0px;
+}
+}
 @media screen and (max-width: 702px) {
 .main {
     padding-top: 36px;
@@ -251,6 +362,7 @@ header a.header-call {
 }
 .main .form-content form ul li.button-form button {
     font-size: 14px;
+    line-height: 40px;
 }
 .main .form-content form ul li.button-form {
     width: 280px;
