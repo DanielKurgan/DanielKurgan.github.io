@@ -17,10 +17,11 @@ $('.about-cards_block').slick({
  			}
  		},
  		{
- 			breakpoint: 1060,
+ 			breakpoint: 1095,
  			settings: {
 				slidesToShow: 2,
 				slidesToScroll: 2,
+				arrows: false,
  			}
  		},
  		{

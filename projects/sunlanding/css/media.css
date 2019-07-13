@@ -661,7 +661,6 @@ header a.header-call {
 /*HOMEVARIABLES*/
 
 /*ABOUTZONE*/
-
 .about-zone .container h2 {
     padding-top: 24px;
     margin-bottom: 27px;
@@ -669,8 +668,16 @@ header a.header-call {
     font-size: 22px;
     line-height: 35px;
 }
-
 /*ABOUTZONE*/
+
+/*CONTACTS*/
+.contacts .container h2 {
+    font-size: 22px;
+}
+.contacts .container .contacts-content {
+    padding: 18px 38px 60px 44px;
+}
+/*CONTACTS*/
 }
 
 @media screen and (max-width: 361px) {
