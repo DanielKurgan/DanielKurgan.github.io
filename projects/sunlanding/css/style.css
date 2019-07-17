@@ -42,7 +42,7 @@ header .menu {
 }
 header .menu a {
 	color: #474747;
-	font-family: Montserrat Regular;
+	font-family: Montserrat;
 	font-size: 18px;
 	font-weight: 700;
 	line-height: 25px;
@@ -65,7 +65,7 @@ header .header-contacts {
 }
 header a.header-number {
 color: #474747;
-font-family: Montserrat Regular;
+font-family: Montserrat;
 font-size: 18px;
 font-weight: 400;
 line-height: 25px;
@@ -73,7 +73,7 @@ text-transform: uppercase;
 text-decoration: none;
 }
 header a.header-call {
-font-family: Montserrat Regular;
+font-family: Montserrat;
 font-size: 18px;
 font-weight: 400;
 line-height: 25px;
@@ -103,7 +103,7 @@ text-decoration: underline;
 }
 .main .container h1 {
 color: #474747;
-font-family: Montserrat Regular;
+font-family: Montserrat;
 font-size: 65px;
 font-weight: 700;
 margin-bottom: 46px;
@@ -131,7 +131,7 @@ margin-bottom: 46px;
 }
 .main .container .advantage span {
 color: #474747;
-font-family: Montserrat Regular;
+font-family: Montserrat;
 font-size: 30px;
 font-weight: 700;
 }
@@ -148,7 +148,7 @@ background-color: #ffffff;
 }
 .main .form-content p {
 color: #474747;
-font-family: Montserrat Regular;
+font-family: Montserrat;
 font-size: 24px;
 font-weight: 700;
 text-align:center;
@@ -163,7 +163,7 @@ margin-bottom: 45px;
 }
 .main .form-content form ul li label {
 color: #474747;
-font-family: Montserrat Regular;
+font-family: Montserrat;
 font-size: 16px;
 font-weight: 300;
 }
@@ -186,7 +186,7 @@ margin-top: 26px;
 }
 .main .form-content form ul li.button-form button {
 color: #ffffff;
-font-family: Montserrat Regular;
+font-family: Montserrat;
 font-size: 18px;
 font-weight: 700;
 text-transform: uppercase;
@@ -207,7 +207,7 @@ cursor: pointer;
 }
 .tour p.top-title {
 color: #474747;
-font-family: Montserrat Regular;
+font-family: Montserrat;
 font-size: 18px;
 font-weight: 400;
 line-height: 25px;
@@ -217,7 +217,7 @@ padding: 59px 62px 42px 57px;
 }
 .tour h2 {
 color: #474747;
-font-family: Montserrat Regular;
+font-family: Montserrat;
 font-size: 30px;
 font-weight: 700;
 line-height: 25px;
@@ -263,7 +263,7 @@ margin-bottom: 48px;
 	height: 36px;
 	background-color: #c79c6e;
 	color: #ffffff;
-	font-family: Montserrat Regular;
+	font-family: Montserrat;
 	font-size: 18px;
 	font-weight: 400;
 	line-height: 36px;
@@ -278,7 +278,7 @@ margin-bottom: 48px;
 	height: 36px;
 	background-color: #c79c6e;
 	color: #ffffff;
-	font-family: Montserrat Regular;
+	font-family: Montserrat;
 	font-size: 18px;
 	font-weight: 400;
 	line-height: 36px;
@@ -298,7 +298,7 @@ text-transform: uppercase;
 }
 .tour-block p {
 color: #474747;
-font-family: Montserrat Regular;
+font-family: Montserrat;
 font-size: 18px;
 font-weight: 400;
 	margin-bottom: 29px;
@@ -321,7 +321,7 @@ height: 100%;
 }
 .plan3d .container h2 {
 color: #474747;
-font-family: Montserrat Regular;
+font-family: Montserrat;
 font-size: 30px;
 font-weight: 700;
 line-height: 25px;
@@ -350,7 +350,7 @@ height: 100%;
 	margin-top: 50px;
 	margin-bottom: 43px;
 	color: #474747;
-	font-family: Montserrat Regular;
+	font-family: Montserrat;
 	font-size: 30px;
 	font-weight: 700;
 	line-height: 25px;
@@ -389,7 +389,7 @@ position: relative;
 	text-align: center;
 	transform: translate(-50%, -15%);
 color: #474747;
-font-family: Montserrat Regular;
+font-family: Montserrat;
 font-size: 18px;
 font-weight: 400;
 line-height: 25px;
@@ -413,7 +413,7 @@ line-height: 25px;
 	margin-bottom: 43px;
 	text-align: center;
 color: #474747;
-font-family: Montserrat Regular;
+font-family: Montserrat;
 font-size: 30px;
 font-weight: 700;
 line-height: 25px;
@@ -437,7 +437,7 @@ height: 100%;
 	margin-bottom: 43px;
 text-align: center;
 color: #474747;
-font-family: Montserrat Regular;
+font-family: Montserrat;
 font-size: 30px;
 font-weight: 700;
 line-height: 25px;
@@ -459,7 +459,7 @@ margin-right: 63px;
 }
 .comment .comment-content span.name {
 color: #474747;
-font-family: Montserrat Regular;
+font-family: Montserrat;
 font-size: 24px;
 font-weight: 700;
 line-height: 35px;
@@ -473,7 +473,7 @@ margin-bottom: 10px;
 }
 .comment .comment-content p {
 color: #474747;
-font-family: Montserrat Regular;
+font-family: Montserrat;
 font-size: 18px;
 font-weight: 400;
 line-height: 25px;
@@ -493,7 +493,7 @@ line-height: 25px;
 	margin-bottom: 43px;
 	text-align: center;
 color: #474747;
-font-family: Montserrat Regular;
+font-family: Montserrat;
 font-size: 30px;
 font-weight: 700;
 line-height: 25px;
@@ -522,14 +522,14 @@ text-transform: uppercase;
 }
 .home-variables .container .variable span.opinion-title {
 color: #c79c6e;
-font-family: Montserrat Regular;
+font-family: Montserrat;
 font-size: 17px;
 font-weight: 700;
 text-transform: uppercase;
 } 
 .home-variables .container .variable span.opinion {
 color: #474747;
-font-family: Montserrat Regular;
+font-family: Montserrat;
 font-size: 18px;
 font-weight: 400;
 }
@@ -554,7 +554,7 @@ padding-top: 44px;
 margin-bottom: 47px;
 text-align: center;
 color: #474747;
-font-family: Montserrat Regular;
+font-family: Montserrat;
 font-size: 30px;
 font-weight: 700;
 line-height: 25px;
@@ -562,7 +562,7 @@ text-transform: uppercase;
 }
 .about-zone .container .about-text p {
 color: #474747;
-font-family: Montserrat Regular;
+font-family: Montserrat;
 font-size: 18px;
 font-weight: 400;
 line-height: 25px;
@@ -581,13 +581,14 @@ line-height: 25px;
 .about-zone .container .about-card p {
 	margin-top: 10px;
 color: #474747;
-font-family: Montserrat Regular;
+font-family: Montserrat;
 font-size: 16px;
 font-weight: 400;
 line-height: 25px;
 }
 
 .slick-prev {
+	z-index: 4;
     left: -40px !important;
 }
 .slick-next {
@@ -646,7 +647,7 @@ line-height: 25px;
 margin-top: 45px;
 margin-bottom: 48px;
 color: #474747;
-font-family: Montserrat Regular;
+font-family: Montserrat;
 font-size: 30px;
 font-weight: 700;
 line-height: 25px;
@@ -700,7 +701,7 @@ font-weight: 600;
 }
 .contacts .contacts-content .mini-block_last span.ltitle_bronze {
 color: #c79c6e;
-font-family: Montserrat Regular;
+font-family: Montserrat;
 font-weight: 700;
 }
 .contacts .contacts-content .mini-block_last a button {
@@ -747,7 +748,7 @@ footer .menu {
 }
 footer .menu a {
 	color: #474747;
-	font-family: Montserrat Regular;
+	font-family: Montserrat;
 	font-size: 18px;
 	font-weight: 700;
 	line-height: 25px;
@@ -765,7 +766,7 @@ footer .menu a:hover {
 }
 footer p.copyright {
 color: #474747;
-font-family: Montserrat Regular;
+font-family: Montserrat;
 font-size: 18px;
 font-weight: 400;
 line-height: 24px;
