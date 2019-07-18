@@ -1,0 +1,675 @@
+.wrapper {
+	margin: 0 auto 0;
+}
+.header {
+	max-width: 1404px;
+	max-height: 165px;
+	background: #f6f7f8;
+	display: flex;
+	margin: -8px;
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+}
+#graphiclogo {
+	width: 133px;
+	height: 138px;
+	margin-top: 15px;
+	margin-left: 45px;
+}
+.logotext {
+	font-family: MuseoSansCyrl3;
+	letter-spacing: 6px;
+	font-size: 2.5em;
+	margin-top: 60px;
+	margin-left: 10px;
+}
+.aboutlogo {
+	font-family: MuseoSansCyrl;
+	margin-left: -38px;
+	margin-top: 48px;
+	font-size: 15px;
+}
+#graphicfounder {
+	width: 457px;
+	height: 138px;
+	margin-top: 7px;
+	margin-left: -48.5px;
+}
+.graphicfoundertext {
+	font-family: MuseoSansCyrl;
+	text-decoration: underline;
+	font-size: 15px;
+	color: #5f636e;
+	margin-top: 107.5px;
+	margin-left: 107px;
+}
+
+#buttmail {
+	width: 133px;
+	height: 138px;
+	margin-top: -36px;
+	margin-left: -185px;
+}
+.connect {
+	font-family: MuseoSansCyrl;
+	font-size: 0.9em;
+	color: silver;
+	margin-top: 31px;
+	margin-left: -250px;
+}
+.telnumber {
+	font-family: MuseoSansCyrl3;
+	font-size: 1.4em;
+	margin-top: 25px;
+	margin-left: -180px;
+}
+#inst_vk {
+	width: 138px;
+	height: 133px;
+	margin-top: -30px;
+	margin-left: -12px;
+}
+#profile_and_cart {
+	width: 134px;
+	height: 138px;
+	margin-top: 30px;
+	margin-left: -159.5px;
+}
+.underheader {
+	max-width: 1397px;
+	max-height: 3072px;
+	background: #f6f7f8;
+	box-sizing: border-box;
+}
+.sizing_toplinetext {
+}
+#bgunderheader {
+	margin-left: -8px;
+	width: 1343px;
+	max-width: 3840px;
+	max-height: 2160px;
+	display: block;
+	box-sizing: border-box;
+}
+.toplinetext {
+	box-sizing: border-box;
+	list-style-type: none;
+	font-family: MuseoSansCyrl2;
+	display: flex;
+	float: center;
+	color: white;
+	font-size: 1.2em;
+	margin-left: 70px;
+	margin-top: -500px;
+}
+.leftmenutext1 {
+	font-family: MuseoSansCyrl1;
+	list-style-type: none;
+	color: white;
+	font-size: 0.8em;
+	line-height: 2.6em;
+	margin-top: -42px;
+	margin-left: 40px;
+}
+#cockz {
+	margin-top: -4px;
+}
+#aselected {
+	color: #d9ceba;
+}
+.leftmenutext2 {
+	font-family: MuseoSansCyrl1;
+	list-style-type: none;
+	color: white;
+	font-size: 0.8em;
+	line-height: 2.6em;
+	margin-top: -15px;
+	margin-left: 40px;
+}
+.leftmenutext3 {
+	font-family: MuseoSansCyrl1;
+	list-style-type: none;
+	color: white;
+	font-size: 0.8em;
+	line-height: 2.6em;
+	margin-top: -15px;
+	margin-left: 40px;
+}
+.leftmenutext4 {
+	font-family: MuseoSansCyrl1;
+	list-style-type: none;
+	color: white;
+	font-size: 0.8em;
+	line-height: 2.6em;
+	margin-top: -20px;
+	margin-left: 40px;
+}
+.leftmenutext5 {
+	font-family: MuseoSansCyrl1;
+	list-style-type: none;
+	color: white;
+	font-size: 0.8em;
+	margin-top: -5px;
+	margin-left: 40px;
+}
+#rarcoll {
+	font-size: 1.4em;
+	margin-top: 10px;
+}
+.leftmenutext6 {
+	font-family: MuseoSansCyrl1;
+	list-style-type: none;
+	color: white;
+	font-size: 0.8em;
+	margin-top: 5px;
+	margin-left: 40px;
+}
+.shari {
+	position: absolute;
+	font-family: MuseoSansCyrl2;
+	letter-spacing: 4px;
+	font-size: 2em;
+	color: #c7b99c;
+	margin-left: 280px;
+	margin-top: 60px;
+}
+#abuy1 {
+	position: absolute;
+	box-sizing: border-box;
+	margin-left: 270px;
+	margin-top: -220px;
+}
+.abuy1name {
+	position: absolute;
+	color: black;
+	font-family: MuseoSansCyrl2;
+	font-size: 1.2em;
+	margin-left: 340px;
+	margin-top: 100px;
+}
+.abuy1desc {
+	position: absolute;
+	color: #696a6d;
+	font-family: MuseoSansCyrl;
+	font-size: 1em;
+	margin-left: 380px;
+	margin-top: 155px;
+}
+.abuy1cost {
+	position: absolute;
+	color: #b19e77;
+	font-family: MuseoSansCyrl1;
+	font-size: 1.2em;
+	margin-left: 296px;
+	margin-top: 205px;
+}
+#bbuy2 {
+	position: absolute;
+	box-sizing: border-box;
+	margin-left: 570px;
+	margin-top: -220px;
+}
+.bbuy2name {
+	position: absolute;
+	color: black;
+	font-family: MuseoSansCyrl2;
+	font-size: 1.2em;
+	margin-left: 647px;
+	margin-top: 100px;
+}
+.bbuy2desc {
+	position: absolute;
+	color: #696a6d;
+	font-family: MuseoSansCyrl;
+	font-size: 1em;
+	margin-left: 690px;
+	margin-top: 155px;
+}
+.bbuy2cost {
+	position: absolute;
+	color: #b19e77;
+	font-family: MuseoSansCyrl1;
+	font-size: 1.2em;
+	margin-left: 596px;
+	margin-top: 205px;
+}
+#cbuy3 {
+	position: absolute;
+	box-sizing: border-box;
+	margin-left: 870px;
+	margin-top: -220px;
+}
+.cbuy3name {
+	position: absolute;
+	color: black;
+	font-family: MuseoSansCyrl2;
+	font-size: 1.2em;
+	margin-left: 949px;
+	margin-top: 100px;
+}
+.cbuy3desc {
+	position: absolute;
+	color: #696a6d;
+	font-family: MuseoSansCyrl;
+	font-size: 1em;
+	margin-left: 989px;
+	margin-top: 157px;
+}
+.cbuy3cost {
+	position: absolute;
+	color: #b19e77;
+	font-family: MuseoSansCyrl1;
+	font-size: 1.2em;
+	margin-left: 897px;
+	margin-top: 209px;
+}
+#abuy4 {
+	position: absolute;
+	box-sizing: border-box;
+	margin-left: 270px;
+	margin-top: 264px;
+}
+.abuy4name {
+	position: absolute;
+	color: black;
+	font-family: MuseoSansCyrl2;
+	font-size: 1.2em;
+	margin-left: 340px;
+	margin-top: 584px;
+}
+.abuy4desc {
+	position: absolute;
+	color: #696a6d;
+	font-family: MuseoSansCyrl;
+	font-size: 1em;
+	margin-left: 380px;
+	margin-top: 639px;
+}
+.abuy4cost {
+	position: absolute;
+	color: #b19e77;
+	font-family: MuseoSansCyrl1;
+	font-size: 1.2em;
+	margin-left: 296px;
+	margin-top: 689px;
+}
+#bbuy5 {
+	position: absolute;
+	box-sizing: border-box;
+	margin-left: 570px;
+	margin-top: 264px;
+}
+.bbuy5name {
+	position: absolute;
+	color: black;
+	font-family: MuseoSansCyrl2;
+	font-size: 1.2em;
+	margin-left: 647px;
+	margin-top: 584px;
+}
+.bbuy5desc {
+	position: absolute;
+	color: #696a6d;
+	font-family: MuseoSansCyrl;
+	font-size: 1em;
+	margin-left: 690px;
+	margin-top: 639px;
+}
+.bbuy5cost {
+	position: absolute;
+	color: #b19e77;
+	font-family: MuseoSansCyrl1;
+	font-size: 1.2em;
+	margin-left: 596px;
+	margin-top: 689px;
+}
+#cbuy6 {
+	position: absolute;
+	box-sizing: border-box;
+	margin-left: 870px;
+	margin-top: 264px;
+}
+.cbuy6name {
+	position: absolute;
+	color: black;
+	font-family: MuseoSansCyrl2;
+	font-size: 1.2em;
+	margin-left: 949px;
+	margin-top: 584px;
+}
+.cbuy6desc {
+	position: absolute;
+	color: #696a6d;
+	font-family: MuseoSansCyrl;
+	font-size: 1em;
+	margin-left: 989px;
+	margin-top: 639px;
+}
+.cbuy6cost {
+	position: absolute;
+	color: #b19e77;
+	font-family: MuseoSansCyrl1;
+	font-size: 1.2em;
+	margin-left: 897px;
+	margin-top: 689px;
+}
+#abuy7 {
+	position: absolute;
+	box-sizing: border-box;
+	margin-left: 270px;
+	margin-top: 748px;
+}
+.abuy7name {
+	position: absolute;
+	color: black;
+	font-family: MuseoSansCyrl2;
+	font-size: 1.2em;
+	margin-left: 340px;
+	margin-top: 1068px;
+}
+.abuy7desc {
+	position: absolute;
+	color: #696a6d;
+	font-family: MuseoSansCyrl;
+	font-size: 1em;
+	margin-left: 380px;
+	margin-top: 1123px;
+}
+.abuy7cost {
+	position: absolute;
+	color: #b19e77;
+	font-family: MuseoSansCyrl1;
+	font-size: 1.2em;
+	margin-left: 296px;
+	margin-top: 1173px;
+}
+#bbuy8 {
+	position: absolute;
+	box-sizing: border-box;
+	margin-left: 570px;
+	margin-top: 748px;
+}
+.bbuy8name {
+	position: absolute;
+	color: black;
+	font-family: MuseoSansCyrl2;
+	font-size: 1.2em;
+	margin-left: 647px;
+	margin-top: 1068px;
+}
+.bbuy8desc {
+	position: absolute;
+	color: #696a6d;
+	font-family: MuseoSansCyrl;
+	font-size: 1em;
+	margin-left: 690px;
+	margin-top: 1123px;
+}
+.bbuy8cost {
+	position: absolute;
+	color: #b19e77;
+	font-family: MuseoSansCyrl1;
+	font-size: 1.2em;
+	margin-left: 596px;
+	margin-top: 1173px;
+}
+#cbuy9 {
+	position: absolute;
+	box-sizing: border-box;
+	margin-left: 870px;
+	margin-top: 748px;
+}
+.cbuy9name {
+	position: absolute;
+	color: black;
+	font-family: MuseoSansCyrl2;
+	font-size: 1.2em;
+	margin-left: 949px;
+	margin-top: 1068px;
+}
+.cbuy9desc {
+	position: absolute;
+	color: #696a6d;
+	font-family: MuseoSansCyrl;
+	font-size: 1em;
+	margin-left: 989px;
+	margin-top: 1123px;
+}
+.cbuy9cost {
+	position: absolute;
+	color: #b19e77;
+	font-family: MuseoSansCyrl1;
+	font-size: 1.2em;
+	margin-left: 897px;
+	margin-top: 1173px;
+}
+#iconz {
+	position: absolute;
+	display: block;
+	margin-top: 1320px;
+	float: center;
+	margin-left: 169px;
+	box-sizing: border-box;
+}
+.undericontexth1 {
+	font-family: MuseoSansCyrl2;
+	position: absolute;
+	font-size: 1em;
+	margin-top: 1480px;
+	margin-left: 145px;
+	font-weight: bold;
+}
+.undericontext1 {
+	font-family: MuseoSansCyrl;
+	position: absolute;
+	font-size: 1em;
+	margin-top: 1530px;
+	margin-left: 115px;
+}
+.undericontexth2 {
+	font-family: MuseoSansCyrl2;
+	position: absolute;
+	font-size: 1em;
+	margin-top: 1480px;
+	margin-left: 580px;
+	font-weight: bold;
+}
+.undericontext2 {
+	font-family: MuseoSansCyrl;
+	position: absolute;
+	font-size: 1em;
+	margin-top: 1530px;
+	margin-left: 495px;
+}
+.undericontexth3 {
+	font-family: MuseoSansCyrl2;
+	position: absolute;
+	font-size: 1em;
+	margin-top: 1480px;
+	margin-left: 925px;
+	font-weight: bold;
+}
+.undericontext3 {
+	font-family: MuseoSansCyrl;
+	position: absolute;
+	font-size: 1em;
+	margin-top: 1530px;
+	margin-left: 885px;
+}
+#button {
+	position: absolute;
+	box-sizing: border-box;
+	margin-left: 625px;
+	margin-top: 1250px;
+}
+#mainrassilka {
+	position: absolute;
+	box-sizing: border-box;
+	margin-left: 70px;
+	margin-top: 1770px;
+}
+#galka {
+	box-sizing: border-box;
+	margin-left: 440px;
+	margin-top: 1845px;
+}
+#ultraline {
+	position: absolute;
+	box-sizing: border-box;
+	margin-top: 1600px;
+	margin-left: 85px;
+}
+.bigtext {
+	box-sizing: border-box;
+}
+.htext {
+	font-family: MuseoSansCyrl2;
+	letter-spacing: 1px;
+	position: absolute;
+	box-sizing: border-box;
+	margin-top: 1680px;
+	margin-left: 590px;
+}
+.maintext {
+	font-family: MuseoSansCyrl;
+	text-align: justify;
+	position: absolute;
+	box-sizing: border-box;
+	margin-top: 1700px;
+}
+footer {
+	position: absolute;
+	box-sizing: border-box;
+	max-width: 1404px;
+	height: 320px;
+	background-color: #d3d5d9;
+	margin-top: 150px;
+	margin-left: -8px;
+}
+#graphiclogo_footer {
+	position: absolute;
+	box-sizing: border-box;
+	max-width: 10%;
+	margin-left: 100px;
+}
+.logotext_footer {
+	position: absolute;
+	font-family: MuseoSansCyrl3;
+	letter-spacing: 5px;
+	font-size: 2em;
+	margin-left: 75px;
+	margin-top: 135px;
+}
+.aboutlogo_footer {
+	position: absolute;
+	font-family: MuseoSansCyrl;
+	margin-left: 20px;
+	margin-top: 180px;
+	font-size: 0.9em;
+	color: #77787b;
+}
+.catalog_footer {
+	position: absolute;
+	list-style-type: none;
+	color: #77787b;
+	font-family: MuseoSansCyrl;
+	line-height: 0.7em;
+	margin-left: 335px;
+	font-size: 1.2em;
+}
+.catalog {
+	font-family: MuseoSansCyrl2;
+	color: black;
+	font-size: 0.8em;
+	line-height: 1.5em;
+}
+.opisanie_footer {
+	font-family: MuseoSansCyrl;
+	color: #77787b;
+	font-size: 0.8em;
+	margin-top: 65px;
+	margin-left: 570px;
+	line-height: 1.7em;
+}
+#phooter_graphicfounder {
+	width: 457px;
+	height: 138px;
+	margin-top: -60px;
+	margin-left: 460px;
+}
+.help_footer {
+	position: absolute;
+	list-style-type: none;
+	font-family: MuseoSansCyrl;
+	line-height: 2em;
+	color: #77787b;
+	font-size: 0.9em;
+	margin-left: 835px;
+	margin-top: -115px;
+}
+.help {
+	line-height: 3em;
+	font-family: MuseoSansCyrl2;
+	color: black;
+	font-size: 1em;
+}
+.contacts {
+	position: absolute;
+	font-family: MuseoSansCyrl2;
+	font-size: 1.2em;
+	color: black;
+	margin-left: 1100px;
+	margin-top: -190px;
+}
+.telnumber2 {
+	position: absolute;
+	font-family: MuseoSansCyrl3;
+	font-size: 1.4em;
+	margin-top: -145px;
+	margin-left: 1100px;
+}
+.zakaz_zvonka {
+	font-family: MuseoSansCyrl;
+	position: absolute;
+	font-size: 1em;
+	color: #f15e49;
+	margin-top: -115px;
+	margin-left: 1100px;
+}
+#buttmail2 {
+	position: absolute;
+	width: 133px;
+	height: 138px;
+	margin-top: -155px;
+	margin-left: 1040px;
+}
+.connect2 {
+	position: absolute;
+	font-family: MuseoSansCyrl;
+	font-size: 0.9em;
+	color: #696a6d;
+	margin-top: -87.5px;
+	margin-left: 1125px;
+}
+.copyright {
+	color: #77787b;
+	font-family: MuseoSansCyrl;
+	font-size: 0.8em;
+	margin-left: 75px;
+}
+.copyright2 {
+	color: #77787b;
+	font-family: MuseoSansCyrl;
+	font-size: 0.8em;
+	margin-left: 1015px;
+	margin-top: -30px;
+}
+#leftsidemenu {
+	position: absolute;
+	box-sizing: border-box;
+	margin-left: 44px;
+	margin-top: 70px;
+	width: 15%;
+}
