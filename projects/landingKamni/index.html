@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Landing</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/media.css">
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="css/slick.css">
+	<link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+</head>
+<body>
+<div class="page">
+
+	<header>
+		<div class="container">
+			<div class="header-content">
+
+					<div class="header-top">
+							<a class="header-feedback" href="#">Обратная связь</a>
+							<a class="header-number" href="#" tel="+79643072868">+7 (964) 307-28-68</a>
+							<a class="header-vk"></a>
+							<a class="header-instagram"></a>
+					</div>
+					<div class="header-middle">
+						<div class="logo-left_part">
+							<a href="#"><img class="logo" src="img/logo.png"></a>
+							<span class="logo-title">Kameshki</span>
+						</div>
+						<div class="logo-right_part">
+							<p class="logo-subtitle">Изделия из цветного камня, сувениры, кабошоны: шкатулки, колленкционные минералы</p>
+							<a class="header-number mobile" href="#" tel="+79643072868">+7 (964) 307-28-68</a>
+						</div>
+					</div>
+					<div class="header-bottom">
+						<div class="header-bottom_left">
+							<form action="/search/" target="_blank" class="form-search">
+							  <input type="hidden" name="searchid" value="808327">
+							  <input type="search" class="search-field" name="text" required>
+							  <input type="submit" class="search-button" value=" ">
+							</form>
+							<button class="search-ultra">Расширенный поиск</button>
+						</div>
+						<div class="header-bottom_right">
+							<a href="#" class="header-client"></a>
+							<a href="#" class="header-truck"></a>
+						</div>
+					</div>
+
+			</div>
+		</div>
+
+		<div class="header_nav">
+			<div class="container">
+				<div class="nav-left">
+					<nav class="header_nav_left">
+						<dropdown>
+						  <input id="toggle2" type="checkbox">
+						  <label for="toggle2" class="animate">Каталог<i class="fa fa-list float-right"></i></label>
+						  <ul class="animate">
+						    <a href="#"><li class="animate">Распродажа</li></a>
+						    <a href="#"><li class="animate">Шары</li></a>
+						    <a href="#"><li class="animate">Яйца</li></a>
+						    <a href="#"><li class="animate">Кабошоны, Галька</li></a>
+						    <a href="#"><li class="animate">Бусины</li></a>
+						    <a href="#"><li class="animate">Шкатулки</li></a>
+						    <a href="#"><li class="animate">Сувениры, Подарки</li></a>
+						    <a href="#"><li class="animate collect">Коллекционные<br>минералы</li></a>
+						    <a href="#"><li class="animate hamburger_last-item">Кристаллы</li></a>
+						  </ul>
+						</dropdown>
+					</nav>
+				</div>
+				<div class="nav-right">
+					<nav class="header_nav_right">
+						<span><a href="#">О нас</a></span>
+						<span><a href="#">Галерея</a></span>
+						<span><a href="#">Выставки</a></span>
+						<span class="long"><a href="#">Доставка и оплата</a></span>
+						<span><a href="#">Гостевая</a></span>
+						<span><a href="#">Контакты</a></span>
+					</nav>
+					<div class="nav-hamburger">
+						<div class="header_nav_hamburger" onclick="openHamburger(); ">
+							<input type="checkbox" id="checkbox3" class="checkbox3 visuallyHidden">
+							<label for="checkbox3">
+								<div class="hamburger hamburger3">
+									<span class="bar bar1"></span>
+									<span class="bar bar2"></span>
+									<span class="bar bar3"></span>
+									<span class="bar bar4"></span>
+
+								</div>
+								<div class="hamburgerMenu">
+								  <ul class="animate">
+								    <a href="#"><li class="animate">О нас</li></a>
+								    <a href="#"><li class="animate">Галерея</li></a>
+								    <a href="#"><li class="animate">Выставки</li></a>
+								    <a href="#"><li class="animate">Доставка и оплата</li></a>
+								    <a href="#"><li class="animate">Гостевая</li></a>
+								    <a href="#"><li class="animate">Контакты</li></a>
+								  </ul>
+								</div>
+							</label>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="main">
+		<div class="container">
+			<div class="main-slider">
+				<div class="main-slider_slide">
+					<img src="img/6-layers.png" class="desktop">
+					<img src="img/2-layers-mob.png" class="mobile">
+					<div class="main-slide_card">
+						<span class="slide-title">Коллекционные<br>минералы</span>
+						<hr>
+						<p>отдельные кристаллы, друзы,<br> щетки, жеоды, декоративные<br> горные породы, полировки </p>
+						<a href="#">Подробнее</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="innovation">
+		<div class="container">
+			<span class="innovation-title">Новинки</span>
+			<div class="innovation-wrapper">
+					
+				<div class="innovation-wrapper_panel">
+					<ul class="filter clearfix">
+					  <li data-filter="filter-all">Все</li>
+					  <li data-filter="filter-eggs">Яйца</li>
+					  <li data-filter="filter-stones">Кабошоны</li>
+					  <li data-filter="filter-beads">Бусины</li>
+					  <li data-filter="filter-clusters">Шкатулки</li>
+					  <li data-filter="filter-souvenirs">Сувениры</li>
+					  <li data-filter="filter-crystals">Кристаллы</li>
+					</ul>
+				</div>
+
+				<div class="innovation-sliders">
+
+					<div class="innovation-slide ">
+
+						<img src="img/innovation-ball.png">
+						<div class="innovation-slide_text">
+							<span class="innovation-slide_title">Шар<br>рубин в цоизите</span>
+							<span class="innovation-slide_subtitle">Танзания</span>
+						</div>
+						<div class="innovation-slide_price">
+							<span class="innovation_price">12000 р.</span>
+							<a class="innovation_price-icon" href="#"></a>
+						</div>
+
+					</div>
+
+					<div class="innovation-slide ">
+
+						<img src="img/innovation-cluster.png">
+						<!-- <span class="innovation-good innovation-cluster"></span> -->
+						<div class="innovation-slide_text">
+							<span class="innovation-slide_title">Шкатулка- нефрит</span>
+							<span class="innovation-slide_subtitle">Забайкалье</span>
+						</div>
+						<div class="innovation-slide_price">
+							<span class="innovation_price">55000 р.</span>
+							<a class="innovation_price-icon" href="#"></a>
+						</div>
+
+					</div>
+
+					<div class="innovation-slide">
+
+						<img src="img/innovation-pyramide.png">
+						<div class="innovation-slide_text">
+							<span class="innovation-slide_title">Пирамида-<br>фуксит в кварце</span>
+							<span class="innovation-slide_subtitle">Танзания</span>
+						</div>
+						<div class="innovation-slide_price">
+							<span class="innovation_price">1000 р.</span>
+							<a class="innovation_price-icon" href="#"></a>
+						</div>
+
+					</div>
+
+					<div class="innovation-slide">
+
+						<img src="img/innovation-stones.png">
+						<div class="innovation-slide_text">
+							<span class="innovation-slide_title">Шар<br>рубин в цоизите</span>
+							<span class="innovation-slide_subtitle">Танзания</span>
+						</div>
+						<div class="innovation-slide_price">
+							<span class="innovation_price">12000 р.</span>
+							<a class="innovation_price-icon" href="#"></a>
+						</div>
+
+					</div>
+
+					<!-- UNNAMED -->
+					<div class="innovation-slide">
+						<img src="img/innovation-ball.png">
+						<div class="innovation-slide_text">
+							<span class="innovation-slide_title">Шар<br>рубин в цоизите</span>
+							<span class="innovation-slide_subtitle">Танзания</span>
+						</div>
+						<div class="innovation-slide_price">
+							<span class="innovation_price">12000 р.</span>
+							<a class="innovation_price-icon" href="#"></a>
+						</div>
+					</div>
+					<div class="innovation-slide ">
+						<img src="img/innovation-ball.png">
+						<div class="innovation-slide_text">
+							<span class="innovation-slide_title">Шар<br>рубин в цоизите</span>
+							<span class="innovation-slide_subtitle">Танзания</span>
+						</div>
+						<div class="innovation-slide_price">
+							<span class="innovation_price">12000 р.</span>
+							<a class="innovation_price-icon" href="#"></a>
+						</div>
+					</div>
+					<div class="innovation-slide">
+						<img src="img/innovation-ball.png">
+						<div class="innovation-slide_text">
+							<span class="innovation-slide_title">Шар<br>рубин в цоизите</span>
+							<span class="innovation-slide_subtitle">Танзания</span>
+						</div>
+						<div class="innovation-slide_price">
+							<span class="innovation_price">12000 р.</span>
+							<a class="innovation_price-icon" href="#"></a>
+						</div>
+					</div>
+					<div class="innovation-slide">
+						<img src="img/innovation-ball.png">
+						<div class="innovation-slide_text">
+							<span class="innovation-slide_title">Шар<br>рубин в цоизите</span>
+							<span class="innovation-slide_subtitle">Танзания</span>
+						</div>
+						<div class="innovation-slide_price">
+							<span class="innovation_price">12000 р.</span>
+							<a class="innovation_price-icon" href="#"></a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="shop">
+		<div class="container">
+			<div class="shop-title mobile">
+				<h1 class="mobile">Камнерезная мастерская<br>«Камешки»</h1>
+			</div>
+			<div class="shop-left">
+				<div class="shop-left_big">
+					<a href="https://vk.com/kameshki51"><img src="img/shop1.png"><span></span></a>
+				</div>
+				<div class="shop-left_small">
+					<a href="https://vk.com/kameshki51"><img src="img/shop2.png"><span></span></a>
+					<a href="https://vk.com/kameshki51"><img src="img/shop3.png"><span></span></a>
+				</div>
+			</div>
+			<div class="shop-right">
+				<img src="img/shop-bgstone.png">
+				<div class="shop-right_text">
+					<h1 class="desktop">Камнерезная мастерская<br>«Камешки»</h1>
+					<p>Камнерезная мастерская «Камешки» под руководством Виктора <br class="desktop">Журавлева приветствует всех знатоков, коллекционеров и просто<br class="desktop"> любителей камня.<br><br>Велика и притягательна сила камня. Она украшает жизнь человека, делает<br class="desktop"> ее радостной и оптимистичной. Сверкая и переливаясь всеми цветами<br class="desktop"> радуги, самоцветы доставляют огромное эстетическое наслаждение. Мы<br class="desktop"> очарованы этими уникальными образованиями необъятного<br class="desktop"> минерального царства.<br><br>Живем и работаем мы за Полярным кругом, в городе Апатиты<br class="desktop"> Мурманской области, у подножия Хибин. Минералы, которые здесь<br class="desktop"> добывают, известны своей редкостью, а многие не имеют аналогов ни в<br class="desktop"> одном месте земного шара.</p>
+					<a href="#">Подробнее</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="advantages">
+		<div class="container">
+			<div class="advantage">
+				<img src="img/advantage1.png">
+				<h2>Собственная<br> камнерезная мастерская</h2>
+				<p>в городе Апатиты Мурманской области,<br>у подножия Хибин</p>
+			</div>
+			<div class="advantage">
+				<img src="img/advantage2.png">
+				<h2>Полный цикл<br> работы с камнем</h2>
+				<p>от летних полевых работ по добыче<br> камнесамоцветного сырья до его обработки<br>и реализации</p>
+			</div>
+			<div class="advantage">
+				<img src="img/advantage3.png">
+				<h2>Участки<br>минералогических выставок</h2>
+				<p>в городах России (Москва, Санкт-Петербург,<br> Мурманск, Апатиты) и на европейских <br> ежегодных выставках минералов во Франции (Сан Мари), Германии (Мюнхен)</p>
+			</div>
+		</div>
+	</div>
+	<div class="exposition">
+		<div class="container">
+			<div class="exposition-top">
+				<span class="title">Выставки</span> <a class="title-href" href="#">Смотреть все</a>
+			</div>
+		</div>
+		<div class="exposition-background">
+			<div class="exposition-block">
+				<div class="container">
+
+					<div class="exposition-block_first">
+						<div class="exposition-block_first_left">
+							<h3>«Мир камня»</h3>
+							<hr>
+							<span class="exposition-city">Санкт-Петербург</span>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. onsectetur adipiscing elit. Maecenas vel lorem adipiscing ipsum dolor sit amet, consectetur adipiscing elit. onsectetur adipiscing elit. Maecenas vel lorem adipiscing ipsum dolor sit amet, consectetur adipiscing elit. onsectetu</p>
+							<span class="exposition-button desktop"><a href="#">Подробнее</a></span>
+						</div>
+						<div class="exposition-block_first_right">
+							<img src="img/exposition1.png">
+							<span class="exposition-button mobile"><a href="#">Подробнее</a></span>
+						</div>
+					</div>
+
+					<div class="exposition-block_second">
+						
+					</div>
+				</div>
+			</div>
+
+			<div class="exposition-block">
+				<div class="container">
+
+					<div class="exposition-block_second">
+						<div class="exposition-block_second_left">
+							<img src="img/exposition2.png">
+							<span class="exposition-button mobile"><a href="#">Подробнее</a></span>
+						</div>
+						<div class="exposition-block_second_right">
+							<h3>«Каменный цветок»</h3>
+							<hr>
+							<span class="exposition-city">Апатиты, Мурманская область</span>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. onsectetur adipiscing elit. Maecenas vel lorem adipiscing ipsum dolor sit amet, consectetur adipiscing elit. onsectetur adipiscing elit. Maecenas vel lorem adipiscing ipsum dolor sit amet, consectetur adipiscing elit. onsectetu</p>
+							<span class="exposition-button desktop"><a href="#">Подробнее</a></span>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+		
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/slick.js"></script>
+<script src="js/innovation-slider.js"></script>
+<script src="js/hamburger.js"></script>
+<script src="js/code.js"></script>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>
