@@ -65,7 +65,8 @@ body {
 header {
 	padding-top: 31px;
     padding-bottom: 10px;
-	background-image: url("../img/headerbg.jpg");
+	 background: url(../img/headerbg.jpg) no-repeat top center;
+    background-color: #f1f1f1;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -157,11 +158,12 @@ text-align: center;
 .header-contacts .header-contacts_top .header-contacts_top_numbers {
 	line-height: 15px;
 }
-.header-contacts .header-contacts_top .header-contacts_top_numbers a {
-color: #000000;
-font-family: "Open Sans Semibold";
-font-size: 16px;
-font-weight: 400;
+.header-contacts .header-contacts_top .header-contacts_top_numbers a { 
+color: #000000; 
+font-family: "Open Sans Semibold"; 
+font-size: 16px; 
+font-weight: 400; 
+line-height: 1.2; 
 }
 .header-contacts .header-contacts_bottom {
 	display: flex;
@@ -244,6 +246,9 @@ font-family: "Open Sans";
 font-size: 24px;
 font-weight: 400;
 outline: 0;
+}
+.main .main-left .main-left_buttons form input::placeholder {
+	color: white;
 }
 .main .main-left .main-left_buttons button.button-call {
 width: 288px;
@@ -385,7 +390,6 @@ font-size: 25px;
 font-weight: 400;
 line-height: 40.22px;
 text-transform: uppercase;
-letter-spacing: -2px;
 }
 .services-block button {
 	margin-top: 23px;
