@@ -818,7 +818,7 @@ line-height: 21.83px;
 .comments .slick-next {
     right: -85px;
 }
-.slick-prev {
+.comments .slick-prev {
     left: -85px;
     z-index: 10;
 }
