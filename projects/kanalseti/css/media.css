@@ -1,0 +1,564 @@
+/*Экстрабольшие девайсы (большие десктопы)*/
+
+/*Большие девайсы (большие десктопы, < 1200px)*/
+@media (max-width: 1200px) {
+
+/*HEADER*/
+header {
+    background-image: none; 
+    background-color: #f1f1f1;
+}
+.header-menu {
+    max-width: 100%;
+}
+.header-contacts .contacts-worktime {
+	margin-right: 15px;
+}
+/*HEADER END*/
+
+/*MAIN*/
+.main {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+.main .main-right_content {
+    top: 100px;
+    left: -20px;
+}
+.main .main-right_man {
+    margin-right: -70px;
+}
+.main .main-left .main-left_buttons form input {
+    margin-bottom: 5px;
+}
+.main .main-left h1 {
+    font-size: 45px;
+    margin-top: 0;
+}
+.main .main-left h2 {
+    font-size: 28px;
+}
+.main .main-left p {
+    font-size: 20px;
+}
+.main .main-left .main-left_buttons form input {
+    width: 249px;
+    height: 49px;
+}
+.main .main-left .main-left_buttons button.button-call {
+    width: 278px;
+    height: 50px;
+}
+/*MAIN END*/
+
+/*TECHNOLOGIES*/
+.technologies .technologies-block p.technologies-block_text {
+    font-size: 22px;
+}
+.technologies .technologies-content_right {
+    right: 250px;
+}
+.technologies .technologies-content_left {
+    left: 270px;
+}
+/*TECHNOLOGIES END*/
+
+/*SERVICES*/
+.services-blocks .services-blocks_top_left {
+	justify-content: center;
+}
+.services-blocks .services-blocks_top_right {
+	justify-content: center;
+}
+.services-blocks .services-blocks_bottom_left {
+	justify-content: center;
+}
+.services-blocks .services-blocks_bottom_right {
+	justify-content: center;
+}
+/*SERVICES END*/
+
+/*EQUIPMENT*/
+.equipment .equipment-content {
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.equipment .slick-dots {
+    bottom: -45px !important;
+}
+.equipment .slick-prev, .slick-next {
+    top: 22%;
+}
+.equipment-slide_block {
+	flex-direction: column;
+    margin-top: 40px;
+}
+.equipment .equipment-slide_block_cell.d-flex.flex-column {
+    margin-top: 10px;
+}
+.equipment .equipment-slide_block_cell.d-flex.flex-column .equipment-slide_block_cell_number {
+    margin-top: -10px;
+}
+.equipment .slick-initialized .slick-slide {
+    margin-left: 80px !important;
+}
+.equipment .slick-next {
+    top: 30% !important;
+    right: 20px !important;
+}
+.equipment .slick-prev {
+    top: 30% !important;
+    left: 20px !important;
+}
+/*EQUIPMENT END*/
+
+/*COMMENTS*/
+.comments-slider_block {
+    align-items: center;
+    flex-direction: column;
+}
+.comments-slide {
+	margin-bottom: 30px;
+}
+.comments .slick-prev {
+    top: 45% !important;
+    right: 0 !important;
+    left: 210px !important;
+}
+.comments .slick-next {
+    top: 45% !important;
+    right: 0 !important;
+    left: 710px !important;
+}
+/*COMMENTS END*/
+
+/*QUESTIONS*/
+.questions-block {
+    flex-direction: column;
+    align-items: center;
+}
+.questions-block_right button {
+    margin-top: 30px;
+}
+/*QUESTIONS END*/
+}
+
+/*Средние девайсы («таблетки», < 992px) */
+@media (max-width: 992px) {
+
+/*MAIN*/
+.main .main-left h1 {
+    font-size: 35px;
+}
+.main .main-right_content {
+    left: -60px;
+    top: 70px;
+}
+.main .main-left h2 {
+    font-size: 25px;
+    margin-bottom: 16px;
+}
+.main .main-left p {
+    font-size: 17px;
+    line-height: 25px;
+}
+.main .main-right_content img {
+    width: 145px;
+    height: 168px;
+}
+/*MAIN END*/
+
+/*ADVANTAGES*/
+.advantages {
+	padding-bottom: 0;
+}
+
+.advantages .advantages-content {
+    margin-top: 46px;
+    margin-bottom: 46px;
+}
+.advantages .advantages-content {
+    flex-direction: column;
+    align-items: center;
+}
+.advantages .advantages-content .advantage-block {
+    padding-bottom: 200px;
+}
+/*ADVANTAGES END*/
+
+/*TECHNOLOGIES*/
+.technologies .technologies-block p.technologies-block_text {
+    font-size: 19px;
+}
+.technologies .technologies-background img {
+    width: 562px;
+    height: 544px;
+}
+.technologies .technologies-content_left {
+    left: 130px;
+    top: -85px;
+}
+.technologies .technologies-content_right {
+    right: 190px;
+    top: 160px;
+}
+.technologies .technologies-content_right .technologies-block p.technologies-block_text {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.technologies .technologies-content_left .technologies-block p.technologies-block_text {
+    padding-top: 5px;
+}
+.technologies .technologies-content_left .technologies-block:nth-child(1) {
+    margin-bottom: 5px;
+}
+/*TECHNOLOGIES END*/
+
+/*EQUIPMENT*/
+.equipment .slick-next {
+    right: -10px !important;
+}
+.equipment .slick-prev {
+    left: 10px !important;
+}
+/*EQUIPMENT END*/
+
+/*WORK*/
+.work-text {
+    font-size: 23px;
+}
+/*WORK END*/
+
+/*COMMENTS*/
+.comments .slick-next {
+    left: 580px !important;
+}
+.comments .slick-prev {
+    left: 80px !important;
+}
+/*COMMENTS END*/
+
+/*QUESTIONS*/
+span.questions-block_left {
+    font-size: 29px;
+}
+span.questions-block_left br {
+	display: none;
+}
+span.questions-title {
+    font-size: 37px;
+    margin-top: 40px;
+    margin-bottom: 32px;
+}
+/*QUESTIONS END*/
+}
+
+@media (max-width: 825px) {
+	.main .main-right_man {
+	    margin-right: 0;
+	    overflow: visible;
+	}
+}
+
+/*Малые девайсы («ландшафтные», < 768px)
+*/@media (max-width: 768px) {
+
+/*MAIN*/
+.main .main-right_content {
+    left: 20px;
+    top: 80px;
+}
+.main .main-left {
+	text-align: center;
+	margin-bottom: 30px;
+}
+.main .main-left .main-left_buttons {
+	flex-direction: column;
+	align-items: center;
+}
+.main .main-left .main-left_buttons form {
+     margin-right: 0; 
+}
+.main .main-right_man {
+     margin-right: 0px; 
+}
+/*MAIN END*/
+
+/*TECHNOLOGIES*/
+.technologies .technologies-content_left {
+    left: 50px;
+    top: -85px;
+}
+.technologies .technologies-content_right {
+    right: 80px;
+    top: 160px;
+}
+/*TECHNOLOGIES END*/
+
+/*EQUIPMENT*/
+.equipment .slick-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.equipment img {
+    margin-right: 0; 
+}
+.equipment_title br {
+	display: none;
+}
+.equipment_title {
+	text-align: center;
+}
+.equipment .slick-initialized .slick-slide {
+    margin-left: 0px !important;
+}
+.equipment .slick-next {
+    right: 80px !important;
+    top: 20% !important;
+}
+.equipment .slick-prev {
+    left: 70px !important;
+    top: 20% !important;
+}
+/*EQUIPMENT END*/
+
+/*EMERGENCY*/
+.emergency-car img {
+    top: 57px;
+    right: 15px;
+    width: 408px;
+    height: 250px;
+}
+.emergency-content {
+    flex-direction: column;
+}
+.emergency-icon img {
+    display: none;
+}
+/*EMERGENCY END*/
+
+/*WORK*/
+.work-title {
+    font-size: 37px;
+    display: flex;
+	justify-content: center;
+}
+.work-numbers_top .work-block {
+	margin-top: 100px;
+	text-align: center;
+}
+.work-numbers_bottom .work-block {
+	text-align: center;
+}
+.work-numbers_bottom .col-md-4 .work-block {
+	margin-top: 100px;
+}
+.mobile {
+	display: block;
+}
+.desktop {
+	display: none;
+}
+.work-text {
+    margin-left: 0;
+}
+.work span.blue-text {
+	padding-left: 5px;
+}
+/*WORK END*/
+
+/*COMMENTS*/
+.comments .slick-next {
+    left: 480px !important;
+}
+.comments .slick-prev {
+    left: 0px !important;
+}
+/*COMMENTS END*/
+
+/*DISCOUNT*/
+.discount-content_undertitle br {
+	display: none;
+}
+.discount-content_title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 27px;
+}
+.discount-content_undertitle {
+    font-size: 22px;
+    line-height: 33px;
+}
+/*DISCOUNT END*/
+
+/*QUESTIONS*/
+span.questions-block_left {
+    font-size: 22px;
+    text-align: center;
+}
+/*QUESTIONS END*/
+
+}
+
+@media (max-width: 630px) {
+
+
+}
+/*Экстрамалые девайсы («телефоны», < 576px)
+*/@media (max-width: 576px) {
+
+/*HEADER*/
+.header-menu nav ul {
+	margin-top: 30px;
+	flex-direction: column;
+	align-items: center;
+}
+.header-menu nav ul li a {
+	line-height: 30px;
+}
+/*HEADER END*/
+
+/*MAIN*/
+.main .main-right_man {
+    margin-right: 0; 
+}
+.main .main-right_content {
+    left: 20px;
+    top: 80px;
+    text-align: left;
+}
+.main .main-right_man img {
+    margin-top: 60px;
+}
+.main .main-right_content {
+    top: 0px;
+    text-align: left;
+}
+.main .main-right_content img {
+    width: 115px;
+    height: 138px;
+}
+/*MAIN END*/
+/*TECHNOLOGIES*/
+
+.technologies {
+	margin-bottom: 30px;
+}
+.technologies .technologies-background {
+    margin: 0;
+}
+.technologies .technologies-title {
+     padding-bottom: 0;
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+.technologies-block {
+	text-align: center;
+}
+.technologies .technologies-block span.technologies-block_title br {
+	display: none;
+}
+.technologies .technologies-background img {
+	display: none
+}
+.technologies .technologies-content {
+    position: static;
+}
+.technologies .technologies-content_left {
+	position: static;
+}
+.technologies .technologies-content_right {
+	position: static;
+}
+.technologies_both {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.technologies .technologies-content_left .technologies-block p.technologies-block_text {
+    padding-top: 15px;
+}
+.technologies .technologies-content_right .technologies-block:nth-child(2) p.technologies-block_text {
+    padding-top: 15px;
+}
+.technologies .technologies-content_left .technologies-block p.technologies-block_text br {
+	display: none;
+}
+/*TECHNOLOGIES END*/
+
+
+/*EMERGENCY*/
+.emergency-car img {
+    display: none;
+}
+span.emergency-undertitle {
+    display: flex;
+    flex-direction: column;
+}
+a.emergency-number {
+    font-size: 22px;
+}
+/*EMERGENCY END*/
+
+/*COMMENTS*/
+.comments-title {
+    text-align: center;
+}
+.comments-slide_block_top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.comments-slide {
+    max-width: 391px;
+    height: 322px;
+}
+.comments-slide_block_bottom p br {
+	display: none;
+}
+/*COMMENTS END*/
+}
+
+@media (max-width: 460px) {
+	span.questions-locate {
+	    font-size: 22px;
+	}
+	.technologies .technologies-title {
+	    text-align: center;
+	}
+}
+
+@media (max-width: 400px) {
+	.main .main-left h2 {
+	    font-size: 20px;
+	}
+	.main .main-left p br {
+		display: none;
+	}
+	.discount form li input {
+	    width: 236px;
+	}
+	.work-title {
+	    justify-content: center;
+	    flex-direction: column;
+	    align-items: center;
+	}
+}
+
+@media (max-width: 385px) {
+	/*QUESTIONS*/
+span.questions-title {
+    font-size: 27px;
+}
+.questions-block_right button {
+    width: 299px;
+    height: 59px;
+    font-size: 30px;
+}
+	/*QUESTIONS END*/
+}

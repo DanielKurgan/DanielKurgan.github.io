@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="ru"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>Заголовок</title>
+	<meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+	
+
+	<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+	<link rel="stylesheet" href="libs/slick/slick-theme.css">
+	<link rel="stylesheet" href="libs/slick/slick.css">
+</head>
+
+<body>
+
+	<!-- Здесь пишем код -->
+	<header>
+		<div class="container">
+			<div class="row slim d-flex justify-content-xl-between ">
+				<div class="logo d-flex justify-content-center justify-content-xl-start col-xl-3 col-md-12">
+					<div class="logo-image">
+						<a href="#"><img src="img/logo.png"></a>
+					</div>
+					<div class="logo-content">
+						<h1>Мастерканал</h1>
+						<h2>Канализационная служба</h2>
+						<div class="dropdown show">
+						  <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						    Выбор города
+						  </a>
+
+						  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+						    <a class="dropdown-item" href="#">Москва и Московская область</a>
+						    <a class="dropdown-item" href="#">Санкт-Петербург</a>
+						    <a class="dropdown-item" href="#">Владивосток</a>
+						  </div>
+						</div>
+					</div>
+				</div>
+
+				<div class="header-menu col-xl-6 col-md-12">
+					<nav>
+						<ul class="justify-content-sm-around">
+							<li>
+								<a href="#">О компании</a>
+							</li>
+							<li>
+								<a href="#">Услуги</a>
+							</li>
+							<li>
+								<a href="#">Отзывы</a>
+							</li>
+							<li>
+								<a href="#">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+
+				<div class="header-contacts col-xl-3 col-md-12">
+					<div class="header-contacts_top justify-content-center justify-content-xl-between">
+						<span class="contacts-worktime">Круглосуточно<br>и без выходных!</span>
+						<div class="header-contacts_top_numbers">
+							<a href="tel:+71115555555" class="header-contacts_top_number_first">+7 (111) 555-55-55</a><br>
+							<a href="tel:+72225555555" class="header-contacts_top_number_second">+7 (222) 555-55-55</a>
+						</div>
+					</div>
+					<div class="header-contacts_bottom">
+						<button class="btn">Заказать звонок</button>
+						<span class="header-contacts_bottom_underbutton">Вам перезвонят!</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="main">
+		<div class="container">
+			<div class="row">
+				<div class="main-left d-flex flex-column align-items-sm-center align-items-md-start col-xl-8 col-md-7 col-sm-12">
+					<h1>Прочистка <span class="blue-text">канализации</span></h1>
+					<h2>Работаем оперативно, чисто и<br>по выгодным ценам!</h2>
+					<p>Мы предлагаем услуги чистки канализации<br>с гарантией на оказанные услуги! <br>Выезжаем через 10 минут, после звонка</p>
+					<div class="main-left_buttons ">
+						<form active="mail.php" method="POST">
+							<input type="number" name="number" placeholder="+7">
+						</form>
+						<button type="submit" class="button-call">Вызвать службу</button>
+					</div>
+				</div>
+				<div class="main-right col-md-5 col-xl-4">
+					<div class="main-right_man">
+						<img src="img/man.png">
+					</div>
+					<div class="main-right_content">
+						<span class="main-right_content_text">Новым клиентам<br><span class="discount-word">- скидки!</span></span>
+						<img src="img/10procent.png">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="advantages">
+		<div class="container">
+			<div class="row">
+				<div class="advantage-title_block col-12">
+					<div class="advantages-title">Наши <span class="blue-text">преимущества</span></div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="advantages-content col-12">
+					<div class="advantage-block col-sm-12 col-xl-4">
+						<img src="img/advantage1.png">
+						<div class="advantage-block_span">
+							<span class="advantage-block_text">Оперативная<br>работа 24/7</span>
+						</div>
+					</div>
+					<div class="advantage-block col-sm-12 col-xl-4">
+						<img src="img/advantage2.png">
+						<div class="advantage-block_span">
+							<span class="advantage-block_text">Гарантия на все<br>виды услуг</span>
+						</div>
+					</div>
+					<div class="advantage-block col-sm-12 col-xl-4">
+						<img src="img/advantage3.png">
+						<div class="advantage-block_span">
+							<span class="advantage-block_text">Квалифицированные<br>специалисты</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="services">
+		<div class="container">
+			<div class="row">
+				<div class="services-blocks col-xl-12">
+					<div class="row">
+						<div class="services-blocks_top d-flex flex-wrap col-xl-12 slim">
+							<div class="services-blocks_top_left d-flex flex-wrap col-xl-6">
+
+								<div class="services-block">
+									<span class="services-block_title">Прочистка<br>канализации</span>
+									<button>Подробнее</button>
+								</div>
+
+								<div class="services-block services-block_image">
+									<span class="services-block_title">ПРОМЫВКА<br>ПОД&nbspДАВЛЕНИЕМ</span>
+									<button>Подробнее</button>
+								</div>
+							</div>
+							<div class="services-blocks_top_right d-flex flex-wrap col-xl-6">
+
+								<div class="services-block">
+									<span class="services-block_title">УСЛУГИ<br>ИЛОСОСА</span>
+									<button>Подробнее</button>
+								</div>
+
+								<div class="services-block services-block_image">
+									<span class="services-block_title">УТИЛИЗАЦИЯ<br>ОТХОДОВ</span>
+									<button>Подробнее</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="services-blocks_bottom d-flex flex-wrap col-xl-12 slim">
+
+							<div class="services-blocks_bottom_left d-flex flex-wrap  col-xl-6">
+								<div class="services-block services-block_image">
+									<span class="services-block_title">УСТРАНЕНИЕ<br>ЗАСОРОВ</span>
+									<button>Подробнее</button>
+								</div>
+								<div class="services-block services-block_black-text">
+									<span class="services-block_title">АВАРИЙНАЯ<br>СЛУЖБА</span>
+									<button>Подробнее</button>
+								</div>
+							</div>
+
+							<div class="services-blocks_bottom_right d-flex flex-wrap col-xl-6">
+								<div class="services-block services-block_image">
+									<span class="services-block_title">ОБСЛУЖИВАНИЕ<br>КАНАЛИЗАЦИИ</span>
+									<button>Подробнее</button>
+								</div>
+								<div class="services-block services-block_black-text">
+									<span class="services-block_title">ВИДЕО<br>ДИАГНОСТИКА</span>
+									<button>Подробнее</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="technologies">
+		<div class="container">
+			<div class="row">
+				<div class="technologies-content_block col-12">
+					<div class="row">
+						<div class="technologies-background">
+							<img src="img/technologiescran.png" alt="">
+						</div>
+					</div>
+					<div class="technologies-content col-12">
+						<div class="row">
+							<div class="technologies-title d-flex justify-content-center justify-content-sm-start col-sm-12">
+								<span><span class="black-text">Технологии </span>работы</span>
+							</div>
+						</div>
+						<div class="row">
+							<div class="technologies_both col-md-12">
+								<div class="technologies-content_left d-flex flex-column">
+									<div class="technologies-block text-md-right">
+										<span class="technologies-block_title">Гидродинамическая промывка</span>
+										<p class="technologies-block_text">Применяется при работе с ливневыми,<br>дренажными и фекальными<br> канализационными системами.</p>
+									</div>
+									<div class="technologies-block text-md-left">
+										<span class="technologies-block_title ">Механическая промывка</span>
+										<p class="technologies-block_text">Извлекаем из труб тряпки, ветошь<br>и такие твёрдые отложения как<br>орни деревьев и бетонные пробки.</p>
+									</div>
+								</div>
+								<div class="technologies-content_right d-flex flex-column">
+									<div class="technologies-block text-md-right">
+										<span class="technologies-block_title">Телеинспекция</span>
+										<p class="technologies-block_text">Видеокамера диагностирует<br>место засора или дефекта<br>трубопровода.</p>
+									</div>
+									<div class="technologies-block text-md-left">
+										<span class="technologies-block_title">Услуги илососа</span>
+										<p class="technologies-block_text">Вакуумная очистка колодцев, выгребных<br> ям, отстойников, ливневой и <br>канализационной сетей от ила.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="equipment">
+		<div class="container">
+			<div class="row">
+				<div class="equipment_title col-xl-10 offset-xl-2">
+					<span>Наше<br><span class="black-text"> оборудование</span></span>
+				</div>
+			</div>
+			<div class="row">
+				<div class="equipment-content col-xl-10 offset-xl-1">
+					<div class="slider">
+						<div class="slide d-flex">
+					        <div class="slide-image"><img src="img/equipment1.png"></div>
+					        <div class="equipment-slide equipment-slide d-flex flex-column">
+					           	<span class="equipment-slide_model">Модель TIS 06-40</span>
+					           	<span class="equipment-slide_name">Система телеинспеции</span>
+								<div class="equipment-slide_block d-flex">
+									<div class="equipment-slide_block_cell d-flex flex-column">
+										<span class="equipment-slide_block_cell_name">Диаметр<br>обследования труб:</span>
+										<span class="equipment-slide_block_cell_number">40-300 мм</span>
+									</div>
+									<div class="equipment-slide_block_cell d-flex flex-column">
+										<span class="equipment-slide_block_cell_name">Максимальная<br>рабочая длина:</span>
+										<span class="equipment-slide_block_cell_number">до&nbsp40&nbspметров</span>
+									</div>
+									<div class="equipment-slide_block_cell d-flex flex-column">
+										<span class="equipment-slide_block_cell_name">Страна<br>производитель:</span>
+										<span class="equipment-slide_block_cell_number">Китай</span>
+									</div>
+								</div>
+					        </div>
+					    </div>
+						<div class="slide d-flex">
+					        <img src="img/equipment1.png">
+					        <div class="equipment-slide d-flex flex-column">
+					           	<span class="equipment-slide_model">Модель TIS 06-40</span>
+					           	<span class="equipment-slide_name">Система телеинспеции</span>
+								<div class="equipment-slide_block d-flex">
+									<div class="equipment-slide_block_cell d-flex flex-column">
+										<span class="equipment-slide_block_cell_name">Диаметр<br>обследования труб:</span>
+										<span class="equipment-slide_block_cell_number">40-300 мм</span>
+									</div>
+									<div class="equipment-slide_block_cell d-flex flex-column">
+										<span class="equipment-slide_block_cell_name">Максимальная<br>рабочая длина:</span>
+										<span class="equipment-slide_block_cell_number">до&nbsp40&nbspметров</span>
+									</div>
+									<div class="equipment-slide_block_cell d-flex flex-column">
+										<span class="equipment-slide_block_cell_name">Страна<br>производитель:</span>
+										<span class="equipment-slide_block_cell_number">Китай</span>
+									</div>
+								</div>
+					        </div>
+					    </div>
+						<div class="slide d-flex">
+					        <img src="img/equipment1.png">
+					        <div class="equipment-slide equipment-slide d-flex flex-column">
+					           	<span class="equipment-slide_model">Модель TIS 06-40</span>
+					           	<span class="equipment-slide_name">Система телеинспеции</span>
+								<div class="equipment-slide_block d-flex">
+									<div class="equipment-slide_block_cell d-flex flex-column">
+										<span class="equipment-slide_block_cell_name">Диаметр<br>обследования труб:</span>
+										<span class="equipment-slide_block_cell_number">40-300 мм</span>
+									</div>
+									<div class="equipment-slide_block_cell d-flex flex-column">
+										<span class="equipment-slide_block_cell_name">Максимальная<br>рабочая длина:</span>
+										<span class="equipment-slide_block_cell_number">до&nbsp40&nbspметров</span>
+									</div>
+									<div class="equipment-slide_block_cell d-flex flex-column">
+										<span class="equipment-slide_block_cell_name">Страна<br>производитель:</span>
+										<span class="equipment-slide_block_cell_number">Китай</span>
+									</div>
+								</div>
+					        </div>
+					    </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="emergency">
+		<div class="container">
+			<div class="row">
+				<div class="emergency-border col-sm-11 offset-sm-1 offset-1 col-10">
+					<div class="emergency-car col-12">
+						<img src="img/caricon.png">
+					</div>
+					<div class="col-12">
+						<span class="emergency-title">Аварийная служба<br>канализации</span>
+					</div>
+					<div class="col-12">
+						<div class="emergency-content d-flex">
+							<div class="emergency-icon">
+								<img src="img/callicon.png">
+							</div>
+							<div class="emegency-text d-flex flex-column">
+								<span class="emergency-text_title">Заметили засор в канализации?</span>
+								<span class="emergency-undertitle">Звоните <a href="tel:+74955454933" class="emergency-number">+7 (495) 545-49-33</a></span>
+								<span class="emergency-slogan">Приедем быстро!</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="work">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<span class="work-title">Как мы <span class="blue-text"> работаем</span></span>
+				</div>
+				<div class="work-numbers col-12">
+					<div class="work-numbers_top">
+						<div class="row">
+							<div class="col-md-4">
+								<div class="work-block">
+									<span class="work-number">1<br></span>
+									<span class="work-number_first work-text">Выезд&nbspспециалиста</span>
+								</div>
+							</div>
+							<div class="col-md-7 offset-md-1 desktop">
+								<div class="work-block">
+									<span class="work-number bright-blue">3<br></span>
+									<span class="work-number_second work-text">Согласование стоимости<br>и оформление договора</span>
+								</div>
+							</div>
+							<div class="col-md-7 offset-md-1 mobile">
+								<div class="work-block">
+									<span class="work-number bright-blue">2<br></span>
+									<span class="work-number_second work-text">Осмотр&nbspобъекта</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="work-numbers_bottom">
+						<div class="row">
+							<div class="col-md-3 offset-md-2 desktop">
+								<div class="work-block">
+									<span class="work-number">2<br></span>
+									<span class="work-number_three work-text">Осмотр&nbspобъекта</span>
+								</div>
+							</div>
+							<div class="col-md-3 offset-md-2 mobile">
+								<div class="work-block">
+									<span class="work-number">3<br></span>
+									<span class="work-number_three work-text">Согласование стоимости<br>и оформление договора</span>
+								</div>
+							</div>
+							<div class="col-md-4 offset-md-2">
+								<div class="work-block">
+									<span class="work-number bright-blue">4<br></span>
+									<span class="work-number_four work-text">Выполнение&nbspработ,<br> подписание&nbspакта</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="comments">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 d-flex justify-content-center">
+					<span class="comments-title"><span class="blue-text">Отзывы</span> наших клиентов</span>
+				</div>
+				<div class="col-12 d-flex justify-content-center">
+					<div class="comments-slider">
+						<div class="comments-slider_block d-flex">
+							<div class="comments-slide">
+								<div class="comments-slide_block">
+									<div class="comments-slide_block_top">
+										<div class="comments-slide_block_avatar">
+											<img src="img/comment1.png">
+										</div>
+										<div class="comments-slide_block_content">
+											<span class="comments-slide_block_content_name">Алексей Иванов</span>
+											<div class="comments-slide_block_content_do">
+												<span class="comments-slide_block_content_title">Что делалось: </span>
+												<span class="comments-slide_block_content_item">промывка канализации<br>300 метров</span>
+											</div>
+											<div class="comments-slide_block_content_location">
+												<span class="comments-slide_block_content_title">Местонахождение объекта: </span>
+												<span class="comments-slide_block_content_item">д. Вавилово</span>
+											</div>
+										</div>
+									</div>
+									<div class="comments-slide_block_bottom">
+										<hr>
+										<p>Заказал услуги у данной компании, выполнено<br>все в срок и еще со скидкой в 10%! Вот это да, я<br> очень рад теперь, всем спасибо</p>
+									</div>
+								</div>
+							</div>
+							<div class="comments-slide">
+								<div class="comments-slide_block">
+									<div class="comments-slide_block_top">
+										<div class="comments-slide_block_avatar">
+											<img src="img/comment1.png">
+										</div>
+										<div class="comments-slide_block_content">
+											<span class="comments-slide_block_content_name">Алексей Иванов</span>
+											<div class="comments-slide_block_content_do">
+												<span class="comments-slide_block_content_title">Что делалось: </span>
+												<span class="comments-slide_block_content_item">промывка канализации<br>300 метров</span>
+											</div>
+											<div class="comments-slide_block_content_location">
+												<span class="comments-slide_block_content_title">Местонахождение объекта: </span>
+												<span class="comments-slide_block_content_item">д. Вавилово</span>
+											</div>
+										</div>
+									</div>
+									<div class="comments-slide_block_bottom">
+										<hr>
+										<p>Заказал услуги у данной компании, выполнено<br>все в срок и еще со скидкой в 10%! Вот это да, я<br> очень рад теперь, всем спасибо</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="comments-slider_block d-flex">
+							<div class="comments-slide">
+								<div class="comments-slide_block">
+									<div class="comments-slide_block_top">
+										<div class="comments-slide_block_avatar">
+											<img src="img/comment1.png">
+										</div>
+										<div class="comments-slide_block_content">
+											<span class="comments-slide_block_content_name">Алексей Иванов</span>
+											<div class="comments-slide_block_content_do">
+												<span class="comments-slide_block_content_title">Что делалось: </span>
+												<span class="comments-slide_block_content_item">промывка канализации<br>300 метров</span>
+											</div>
+											<div class="comments-slide_block_content_location">
+												<span class="comments-slide_block_content_title">Местонахождение объекта: </span>
+												<span class="comments-slide_block_content_item">д. Вавилово</span>
+											</div>
+										</div>
+									</div>
+									<div class="comments-slide_block_bottom">
+										<hr>
+										<p>Заказал услуги у данной компании, выполнено<br>все в срок и еще со скидкой в 10%! Вот это да, я<br> очень рад теперь, всем спасибо</p>
+									</div>
+								</div>
+							</div>
+							<div class="comments-slide">
+								<div class="comments-slide_block">
+									<div class="comments-slide_block_top">
+										<div class="comments-slide_block_avatar">
+											<img src="img/comment1.png">
+										</div>
+										<div class="comments-slide_block_content">
+											<span class="comments-slide_block_content_name">Алексей Иванов</span>
+											<div class="comments-slide_block_content_do">
+												<span class="comments-slide_block_content_title">Что делалось: </span>
+												<span class="comments-slide_block_content_item">промывка канализации<br>300 метров</span>
+											</div>
+											<div class="comments-slide_block_content_location">
+												<span class="comments-slide_block_content_title">Местонахождение объекта: </span>
+												<span class="comments-slide_block_content_item">д. Вавилово</span>
+											</div>
+										</div>
+									</div>
+									<div class="comments-slide_block_bottom">
+										<hr>
+										<p>Заказал услуги у данной компании, выполнено<br>все в срок и еще со скидкой в 10%! Вот это да, я<br> очень рад теперь, всем спасибо</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12">
+					<div class="comments-button d-flex justify-content-center">
+						<button>Читать отзывы</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="discount">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="discount-content d-flex flex-column align-items-center">
+						<span class="discount-content_title"><span class="yellow-text">Скидка</span> для новых клиентов!</span>
+						<span class="discount-content_undertitle text-center">Оформите заявку прямо сейчас<br> и получите скидку <span class="yellow-text">10%</span> на любую из услуг!</span>
+						<form>
+							<ul>
+								<li><input type="text" name="name" placeholder="Ваше имя"></li>
+								<li><input type="number" name="phone" placeholder="Номер телефона"></li>
+								<li><button type="submit" name="submit">Отправить</button></li>
+							</ul>
+						</form>
+					</div>
+				</div>
+				<div class="waves"></div>
+			</div>
+		</div>
+	</section>
+	<section class="questions">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<span class="questions-title d-flex justify-content-center">
+						Остались вопросы?
+					</span>
+				</div>
+				<div class="col-12">
+					<div class="questions-block d-flex justify-content-between">
+						<span class="questions-block_left">
+							Позвоните нам по номеру <a href="tel:+71111231212" class="blue-text">+7&nbsp(111)&nbsp123&nbsp12-12</a><br> или закажите обратный звонок специалиста:
+						</span>
+						<div class="questions-block_right">
+							<button>Заказать звонок</button>
+						</div>
+					</div>
+					<span class="questions-locate">
+						Мы находимся по адресу:<br> <span class="blue-text">ул.Ленина 123, офис 10</span>
+					</span>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="libs/slick/slick.min.js"></script>
+	<script src="js/sliders.js"></script>
+	<script src="libs/plugins-scroll/plugins-scroll.js"></script>
+	<script src="js/interactive.js"></script>
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>
