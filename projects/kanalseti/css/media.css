@@ -46,7 +46,7 @@ header {
     height: 49px;
 }
 .main .main-left .main-left_buttons button.button-call {
-    width: 278px;
+    width: 248px;
     height: 50px;
 }
 /*MAIN END*/
@@ -223,6 +223,21 @@ header {
 }
 /*EQUIPMENT END*/
 
+/*EMERGENCY*/
+span.emergency-text_title {
+    text-shadow: 4px 3px 0px black, -3px 4px 0px rgba(0,0,0,0.55);
+}
+span.emergency-undertitle {
+    text-shadow: 4px 3px 0px black, -3px 4px 0px rgba(0,0,0,0.55);
+}
+a.emergency-number {
+    text-shadow: 4px 3px 0px black, -3px 4px 0px rgba(0,0,0,0.55);
+}
+span.emergency-slogan {
+	    text-shadow: 4px 3px 0px black, -3px 4px 0px rgba(0,0,0,0.55);
+}
+/*EMERGENCY END*/
+
 /*WORK*/
 .work-text {
     font-size: 23px;
@@ -264,6 +279,9 @@ span.questions-title {
 */@media (max-width: 768px) {
 
 /*MAIN*/
+.main {
+	margin-bottom: 0; 
+}
 .main .main-right_content {
     left: 20px;
     top: 80px;
@@ -326,7 +344,7 @@ span.questions-title {
 
 /*EMERGENCY*/
 .emergency-car img {
-    top: 57px;
+    top: 47px;
     right: 15px;
     width: 408px;
     height: 250px;

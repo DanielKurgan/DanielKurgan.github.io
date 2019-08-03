@@ -28,6 +28,7 @@
 
 	<!-- Здесь пишем код -->
 	<header>
+		<div class="header-waves"></div>
 		<div class="container">
 			<div class="row slim d-flex justify-content-xl-between ">
 				<div class="logo d-flex justify-content-center justify-content-xl-start col-xl-3 col-md-12">
@@ -95,7 +96,7 @@
 					<p>Мы предлагаем услуги чистки канализации<br>с гарантией на оказанные услуги! <br>Выезжаем через 10 минут, после звонка</p>
 					<div class="main-left_buttons ">
 						<form active="mail.php" method="POST">
-							<input type="number" name="number" placeholder="+7">
+							<input type="text" name="number" class="form-number" placeholder="+7">
 						</form>
 						<button type="submit" class="button-call">Вызвать службу</button>
 					</div>
@@ -151,7 +152,7 @@
 						<div class="services-blocks_top d-flex flex-wrap col-xl-12 slim">
 							<div class="services-blocks_top_left d-flex flex-wrap col-xl-6">
 
-								<div class="services-block">
+								<div class="services-block" onmouseover="topblockover1();" onmouseout="topblockout1();">
 									<span class="services-block_title">Прочистка<br>канализации</span>
 									<button>Подробнее</button>
 								</div>
@@ -163,7 +164,7 @@
 							</div>
 							<div class="services-blocks_top_right d-flex flex-wrap col-xl-6">
 
-								<div class="services-block">
+								<div class="services-block" onmouseover="topblockover2();" onmouseout="topblockout2();">
 									<span class="services-block_title">УСЛУГИ<br>ИЛОСОСА</span>
 									<button>Подробнее</button>
 								</div>
@@ -183,7 +184,7 @@
 									<span class="services-block_title">УСТРАНЕНИЕ<br>ЗАСОРОВ</span>
 									<button>Подробнее</button>
 								</div>
-								<div class="services-block services-block_black-text">
+								<div class="services-block services-block_black-text" onmouseover="bottomblockover1();" onmouseout="bottomblockout1();">
 									<span class="services-block_title">АВАРИЙНАЯ<br>СЛУЖБА</span>
 									<button>Подробнее</button>
 								</div>
@@ -194,7 +195,7 @@
 									<span class="services-block_title">ОБСЛУЖИВАНИЕ<br>КАНАЛИЗАЦИИ</span>
 									<button>Подробнее</button>
 								</div>
-								<div class="services-block services-block_black-text">
+								<div class="services-block services-block_black-text" onmouseover="bottomblockover2();" onmouseout="bottomblockout2();">
 									<span class="services-block_title">ВИДЕО<br>ДИАГНОСТИКА</span>
 									<button>Подробнее</button>
 								</div>
@@ -537,7 +538,7 @@
 						<form>
 							<ul>
 								<li><input type="text" name="name" placeholder="Ваше имя"></li>
-								<li><input type="number" name="phone" placeholder="Номер телефона"></li>
+								<li><input type="text" name="phone" placeholder="Номер телефона" class="form-number"></li>
 								<li><button type="submit" name="submit">Отправить</button></li>
 							</ul>
 						</form>
@@ -578,6 +579,11 @@
 	<script src="js/sliders.js"></script>
 	<script src="libs/plugins-scroll/plugins-scroll.js"></script>
 	<script src="js/interactive.js"></script>
+	<script src="js/mouseoverservices.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script>
+		$('.form-number').mask('+7 (999) 999-99-99');
+	</script>
 	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
 </html>

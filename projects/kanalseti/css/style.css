@@ -67,7 +67,6 @@ header {
     padding-bottom: 10px;
 	 background: url(../img/headerbg.jpg) no-repeat top center;
     background-color: #f1f1f1;
-	background-repeat: no-repeat;
 	background-size: cover;
 }
 .logo .logo-image {
@@ -410,15 +409,28 @@ text-transform: uppercase;
 
 .services-blocks_top .services-block {
 background-color: #3a8cff;
+transition: 0.5s;
+}
+.services-blocks_top .services-block:hover {
+	background-color: white;
 }
 
 .services-blocks_bottom .services-block {
 background-color: #ffde00;
+transition: 0.5s;
+}
+.services-blocks_bottom .services-block:hover {
+background-color: black;
 }
 .services-blocks .services-block_image {
 	background-image: url("../img/serviceicon1.png");
 	background-repeat: no-repeat;
 	background-size: cover;
+	transition: background-size 0.5s ease;
+	background-size: 100% 100%;
+}
+.services-blocks .services-block_image:hover {
+	background-size: 110% 110%;
 }
 .services-blocks .services-block_black-text span {
 	color: black;
@@ -662,11 +674,10 @@ text-align: center;
 }
 .emergency-car img {
 	position: absolute;
-	top: 27px;
+    top: 20px;
 	right: 15px;
 width: 508px;
 height: 280px;
-box-shadow: 0 0 52px 5px rgba(250, 218, 6, 0.11);
 }
 /*EMERGENCY END*/
 
