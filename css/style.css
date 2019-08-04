@@ -42,6 +42,9 @@ body {
 	font-family: Open Sans Bold;
 	color: #222222;
 }
+.hover {
+	display: none;
+}
 
 /*HOME*/
 .boss img.boss-image {
@@ -50,6 +53,28 @@ body {
 	position: absolute;
 	bottom: 0;
 	left: 15%;
+}
+.boss img.boss-image.hover {
+    animation: bosshover 0.9s infinite 0s linear;
+    width: 42px;
+    height: 28px;
+    position: absolute;
+    top: 51px;
+    left: 51%;
+}
+@keyframes bosshover{
+    0%{
+        transform: skewX(0);
+        }
+    25%{
+        transform: skewX(5deg) rotate(10deg);
+        }
+    79%{
+        transform: skewX(-5deg) rotate(-10deg);
+        }
+    100%{
+        transform: skewX(0deg) skewY(0deg);
+        }
 }
 .boss-border {
 	position: relative;
@@ -156,5 +181,17 @@ body {
 	position: absolute;
 	top: 35%;
 	right: 83px;
+    animation: arrownext 1s infinite 0s linear;
+}
+@keyframes arrownext{
+    0%{
+        transform: translateX(0);
+        }
+    50%{
+        transform: translateX(10px);
+        }
+    100%{
+        transform: translateX(0);
+        }
 }
 /*HOME END*/
