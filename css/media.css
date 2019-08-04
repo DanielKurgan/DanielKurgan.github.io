@@ -1,10 +1,122 @@
 /*Экстрабольшие девайсы (большие десктопы)*/
 @media (max-width: 1600px) {
-	
+	/*HOME*/
+	.home h1 {
+	    font-size: 115px;
+	}
+	.home h2 {
+	    font-size: 70px;
+	}
+	.boss-border {
+	    width: 310px;
+	    height: 307px;
+	}
+	.boss img.boss-image {
+	    width: 221px;
+	    height: 294px;
+	}
+	.boss-border img.money {
+	    top: 5px;
+	    left: 15px;
+	    position: absolute;
+	    width: 30px;
+	    height: 50px;
+	}
+	.home button.vs-subview-next {
+	    background: url(../img/arrow-next.png);
+	    background-size: contain;
+	    background-repeat: no-repeat;
+	    width: 36px;
+	    height: 75px;
+	}
+	.boss img.boss-image.hover {
+	    top: 48px;
+	    left: 49%;
+	}
+	/*HOME END*/
 }
+
+@media (max-width: 1440px) {
+	/*HOME*/
+	.home button.vs-subview-next {
+	    width: 30px;
+	    height: 70px;
+	    right: 33px;
+	    top: 32%;
+	}
+	.boss img.boss-image.hover {
+	    top: 37px;
+	    left: 46%;
+	    width: 36px;
+	    height: 23px;
+	}
+	.boss-border {
+	    width: 250px;
+	    height: 237px;
+	}
+	.boss img.boss-image {
+	    width: 161px;
+	    height: 224px;
+	}
+	.boss-border img.money {
+	    width: 25px;
+	    height: 45px;
+	}
+	.home h1 {
+	    font-size: 85px;
+	}
+	.home h2 {
+	    font-size: 60px;
+	    margin-top: -20px;
+	    margin-bottom: 0px;
+	}
+	.home h3 {
+	    font-size: 35px;
+	    text-transform: uppercase;
+	}
+	/*HOME END*/
+
+}
+
 /*Большие девайсы (большие десктопы, < 1200px)*/
 @media (max-width: 1200px) {
-	
+.boss-border {
+    width: 200px;
+    height: 187px;
+}
+.boss img.boss-image {
+    width: 131px;
+    height: 174px;
+}
+.boss-border img.money {
+    width: 15px;
+    height: 30px;
+}
+.home h1 {
+    font-size: 70px;
+}
+.home h2 {
+    font-size: 40px;
+}
+.home h3 {
+    font-size: 20px;
+}
+.home button.vs-subview-next {
+    width: 24px;
+    height: 60px;
+    right: 33px;
+    top: 30%;
+}
+.boss img.boss-image.hover {
+    top: 30px;
+    width: 31px;
+    height: 22px;
+    left: 47%;
+}
+}
+
+@media (max-width: 1024px) {
+
 }
 
 /*Средние девайсы («таблетки», < 992px) */
@@ -13,11 +125,72 @@
 }
 
 /*Малые девайсы («ландшафтные», < 768px)
-*/@media (max-width: 768px) {
-	
+*/@media (max-width: 700px) {
+.home h1 {
+    font-size: 50px;
+}
+.home h2 {
+    font-size: 30px;
+}
+.home h3 {
+    font-size: 15px;
+}
+.boss img.boss-image {
+    width: 111px;
+    height: 154px;
+}
+.boss img.boss-image.hover {
+    top: 25px;
+    width: 27px;
+    height: 22px;
+    left: 47%;
+}
+.boss-border {
+    width: 170px;
+    height: 167px;
+}
+.home button.vs-subview-next {
+    width: 24px;
+    height: 60px;
+    right: 33px;
+    top: 20%;
+}
+.boss-border img.money {
+    width: 15px;
+    height: 25px;
+}
 }
 
 /*Экстрамалые девайсы («телефоны», < 576px)
-*/@media (max-width: 576px) {
+*/@media (max-width: 525px) {
+.home button.vs-subview-next {
+    right: 23px;
+    top: 20%;
+}
+.home h1 {
+    font-size: 40px;
+}
+.home h1.shadow-text {
+    top: -5px;
+}
+.home h2 {
+    margin-top: -10px;
+}
+.home h2.shadow-text {
+    top: 5px;
+    left: -10px;
+}
+}
 
+@media (max-width: 400px){
+.home h1 {
+    font-size: 35px;
+}
+.home h2 {
+    font-size: 27px;
+}
+.home button.vs-subview-next {
+    width: 17px;
+    right: 17px;
+}
 }
