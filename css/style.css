@@ -36,11 +36,10 @@ body {
 	min-width: 320px;
 	position: relative;
 	line-height: 1.6;
-	font-family: "RobotoRegular", sans-serif;
 	overflow-x: hidden;
 }
 body {
-	font-family: Fira Sans Bold;
+	font-family: Open Sans Bold;
 	color: #222222;
 }
 
