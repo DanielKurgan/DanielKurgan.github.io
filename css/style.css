@@ -44,49 +44,39 @@ body {
 }
 
 /*HOME*/
-.animation-logo {
+.boss img.boss-image {
+	width: 241px;
+	height: 314px;
 	position: absolute;
-	top: 35px;
-	left: 35px;
-
+	bottom: 0;
+	left: 15%;
 }
-.animation-logo img {
-	position: absolute;
+.boss-border {
+	position: relative;
+	margin: 0 auto;
+	width: 340px;
+	height: 327px;
+	border: 5px solid #a5a70a;
+	z-index: 1;
 }
-.animation-logo img:nth-child(1) {
-	height: 146px;
-	width: 146px;
-	top: -20px;
-	left: -20px;
-    animation: logo 1s infinite 0s linear;
-}
-.animation-logo img:nth-child(2) {
-	height: 96px;
-	width: 96px;
+.boss-border img.money {
 	top: 5px;
-	left: 5px;
-    animation: logoReverse 4s infinite 0s linear;
+	left: 20px;
+	position: absolute;
+    width: 35px;
+    height: 60px;
+	z-index: -1;
+    animation: money 2s infinite 0s linear;
 }
-@keyframes logo {
+@keyframes money {
     0%{
         transform: rotate(0deg);
         }
-    49%{
+    50%{
         transform: rotate(180deg);
         }
     100%{
         transform: rotate(360deg);
-        }
-}
-@keyframes logoReverse {
-    0%{
-        transform: rotate(0deg);
-        }
-    49%{
-        transform: rotate(-180deg);
-        }
-    100%{
-        transform: rotate(-360deg);
         }
 }
 
@@ -164,7 +154,7 @@ body {
 	border: 0;
 	outline: 0;
 	position: absolute;
-	top: 37%;
+	top: 35%;
 	right: 83px;
 }
 /*HOME END*/
