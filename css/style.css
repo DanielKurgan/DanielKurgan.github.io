@@ -68,7 +68,7 @@ body {
 	position: absolute;
 }
 .hidden {
-	display: none;
+	/*display: none;*/
 }
 .hover {
 	display: none;
