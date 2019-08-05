@@ -1,8 +1,13 @@
 /*Экстрабольшие девайсы (большие десктопы)*/
 @media (max-width: 1600px) {
 	/*HOME*/
+	svg {
+	}
 	.home h1 {
 	    font-size: 115px;
+	}
+	.home h1.shadow-text {
+	    top: -5px;
 	}
 	.home h2 {
 	    font-size: 70px;
@@ -22,12 +27,15 @@
 	    width: 30px;
 	    height: 50px;
 	}
-	.home button.vs-subview-next {
-	    background: url(../img/arrow-next.png);
-	    background-size: contain;
-	    background-repeat: no-repeat;
+	button.vs-subview-next {
 	    width: 36px;
 	    height: 75px;
+	    top: 62%;
+	}
+	button.vs-subview-prev {
+	    width: 36px;
+	    height: 75px;
+	    top: 62%;
 	}
 	.boss img.boss-image.hover {
 	    top: 48px;
@@ -38,12 +46,25 @@
 
 @media (max-width: 1440px) {
 	/*HOME*/
-	.home button.vs-subview-next {
-	    width: 30px;
-	    height: 70px;
-	    right: 33px;
-	    top: 32%;
+	button.vs-subview-next {
+	    top: 57%;
 	}
+	button.vs-subview-prev {
+    top: 57%;
+}
+	svg {
+	    height: 90px;
+	}
+	.name-svg {
+		margin-bottom: 30px;
+	}
+	.home h1.shadow-text {
+	    left: -10px;
+	}
+	.home h2.shadow-text {
+	    top: 15px;
+	}
+
 	.boss img.boss-image.hover {
 	    top: 37px;
 	    left: 46%;
@@ -74,6 +95,10 @@
 	    font-size: 35px;
 	    text-transform: uppercase;
 	}
+	.home h3.shadow-text {
+	    top: -3px;
+	    left: -8px;
+	}
 	/*HOME END*/
 
 }
@@ -101,22 +126,60 @@
 .home h3 {
     font-size: 20px;
 }
-.home button.vs-subview-next {
-    width: 24px;
-    height: 60px;
-    right: 33px;
-    top: 30%;
+text {
+    font-size: 83px;
 }
+
 .boss img.boss-image.hover {
     top: 30px;
     width: 31px;
     height: 22px;
     left: 47%;
 }
+.projects-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.projects-wrapper {
+    margin: 20px 130px 0 130px;
+}
+.projects-wrapper_block:nth-child(2) {
+    margin-bottom: 50px;
+}
+.projects-wrapper_block {
+    flex-direction: column;
+}
+a.project {
+    margin: 5px 45px;
+    width: 223px;
+    height: 154px;
+}
+.projects span.text-shadow {
+    top: -1px;
+    margin-left: -3px;
+}
+.projects span.title {
+    font-size: 32px;
+    text-transform: uppercase;
+    line-height: 35px;
+}
 }
 
-@media (max-width: 1024px) {
-
+@media (max-width: 1045px) {
+svg {
+    height: 80px;
+}
+button.vs-subview-next {
+    width: 26px;
+    height: 55px;
+    top: 57%;
+}
+button.vs-subview-prev {
+    width: 26px;
+    height: 55px;
+    top: 57%;
+}
 }
 
 /*Средние девайсы («таблетки», < 992px) */
@@ -124,13 +187,44 @@
 	
 }
 
+@media (max-width:  878px) {
+
+	.projects-wrapper {
+    margin: 20px 60px 0 60px;
+}
+	a.project {
+    margin: 5px 5px;
+    width: 193px;
+    height: 134px;
+  }
+  button.vs-subview-next {
+    right: 33px;
+  }
+  button.vs-subview-prev {
+    left: 33px;
+  }
+}
 /*Малые девайсы («ландшафтные», < 768px)
 */@media (max-width: 700px) {
+.name-svg {
+    margin-bottom: 10px;
+}
+svg {
+    height: 60px;
+}
 .home h1 {
     font-size: 50px;
 }
+.home h1.shadow-text {
+    top: -5px;
+    left: -5px;
+}
 .home h2 {
     font-size: 30px;
+    margin-top: -10px;
+}
+.home h2.shadow-text {
+    top: 5px;
 }
 .home h3 {
     font-size: 15px;
@@ -149,23 +243,42 @@
     width: 170px;
     height: 167px;
 }
-.home button.vs-subview-next {
-    width: 24px;
-    height: 60px;
-    right: 33px;
-    top: 20%;
-}
+
 .boss-border img.money {
     width: 15px;
     height: 25px;
 }
+button.vs-subview-next {
+    top: 57%;
+    right: 30px;
+}
 }
 
+@media (max-width: 575px) {
+	svg {
+	    height: 60px;
+	}
+	button.vs-subview-next {
+    width: 16px;
+    right: 10px;
+  }
+	button.vs-subview-prev {
+    width: 16px;
+    left: 10px;
+  }
+  a.project {
+    margin: 5px 5px;
+    width: 140px;
+    height: 104px;
+}
+	.projects-wrapper {
+    margin: 20px 10px 0 10px;
+}
+}
 /*Экстрамалые девайсы («телефоны», < 576px)
 */@media (max-width: 525px) {
-.home button.vs-subview-next {
-    right: 23px;
-    top: 20%;
+svg {
+    height: 50px;
 }
 .home h1 {
     font-size: 40px;
@@ -189,8 +302,22 @@
 .home h2 {
     font-size: 27px;
 }
-.home button.vs-subview-next {
-    width: 17px;
-    right: 17px;
+svg {
+    height: 40px;
+}
+}
+
+@media (max-width: 370px) {
+	button.vs-subview-next {
+    animation: none;
+  }
+	button.vs-subview-prev {
+    animation: none;
+  }
+  button.vs-subview-next {
+    right: 1px;
+}
+button.vs-subview-prev {
+    left: 1px;
 }
 }

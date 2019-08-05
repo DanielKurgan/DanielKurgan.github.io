@@ -37,10 +37,38 @@ body {
 	position: relative;
 	line-height: 1.6;
 	overflow-x: hidden;
-}
-body {
+	background-color: #fbfe00;
 	font-family: Open Sans Bold;
 	color: #222222;
+}
+
+ .loader {
+	background: none repeat scroll 0 0 #ffffff;
+	bottom: 0;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 100%;
+	z-index: 9999;
+}
+ .loader_inner {
+	background-image: url("../img/preloader.gif");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-color: #fff;
+	height: 60px;
+	width: 60px;
+	margin-top: -30px;
+	margin-left: -30px;
+	left: 50%;
+	top: 50%;
+	position: absolute;
+}
+.hidden {
+	display: none;
 }
 .hover {
 	display: none;
@@ -51,8 +79,8 @@ body {
 	width: 241px;
 	height: 314px;
 	position: absolute;
-	bottom: 0;
-	left: 15%;
+	bottom: 5px;
+	left: 17%;
 }
 .boss img.boss-image.hover {
     animation: bosshover 0.9s infinite 0s linear;
@@ -76,14 +104,70 @@ body {
         transform: skewX(0deg) skewY(0deg);
         }
 }
+
+button.draw {
+	outline: 0;
+  background: none;
+  border: 0;
+  box-sizing: border-box;
+  margin: 1em;
+  padding: 1em 2em;
+  box-shadow: inset 0 0 0 5px #a5a70a;
+  color: #f45e61;
+  font-size: inherit;
+  font-weight: 700;
+  position: relative;
+  vertical-align: middle;
+}
+button::before, button::after {
+  box-sizing: inherit;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.draw {
+  transition: color 0.25s;
+}
+.draw::before, .draw::after {
+  border: 5px solid transparent;
+  width: 0;
+  height: 0;
+}
+.draw::before {
+  top: 0;
+  left: 0;
+}
+.draw::after {
+  bottom: 0;
+  right: 0;
+}
+.draw:hover {
+  color: limegreen;
+}
+.draw:hover::before, .draw:hover::after {
+  width: 100%;
+  height: 100%;
+}
+.draw:hover::before {
+  border-top-color: limegreen;
+  border-right-color: limegreen;
+  transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+}
+.draw:hover::after {
+  border-bottom-color: limegreen;
+  border-left-color: limegreen;
+  transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
+}
 .boss-border {
 	position: relative;
 	margin: 0 auto;
 	width: 340px;
 	height: 327px;
-	border: 5px solid #a5a70a;
 	z-index: 1;
 	cursor: pointer;
+	background-image: url("../img/dollar.png");
+	background-size: 4%;
 }
 .boss-border img.money {
 	top: 5px;
@@ -92,7 +176,7 @@ body {
     width: 35px;
     height: 60px;
 	z-index: -1;
-    animation: money 2s infinite 0s linear;
+    /*animation: money 2s infinite 0s linear;*/
 }
 @keyframes money {
     0%{
@@ -106,9 +190,6 @@ body {
         }
 }
 
-.home {
-	background-color: #fbfe00;
-}
 .home .name {
 	position: relative;
 }
@@ -121,6 +202,22 @@ body {
 
 
 
+
+svg {
+  height: 120px;
+  display: block;
+  position: relative;
+  overflow: hidden; 
+  margin: 0 auto;
+  background: #fbfe00;
+}
+text {
+	filter: url(#filter);
+	fill: #222222;
+	font-size: 90px;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
 
 
 .home h1 {
@@ -136,11 +233,10 @@ body {
 .home h2 {
 	font-size: 80px;
 	text-transform: uppercase;
-	margin-top: -30px;
 	margin-bottom: -10px;
 }
 .home h2.shadow-text {
-	top: 25px;
+	top: -7px;
 	left: -10px;
 }
 
@@ -161,6 +257,7 @@ body {
 	width: 100%;
     animation: bgtext 5s infinite 0s linear;
 }
+
 @keyframes bgtext {
     0%{
         transform: translateX(0px);
@@ -173,18 +270,19 @@ body {
         }
 }
 
-.home button.vs-subview-next {
+button.vs-subview-next {
+	z-index: 10;
 	background: url("../img/arrow-next.png");
-    background-size: contain;
+    background-size: 100%;
     background-repeat: no-repeat;
-
+	
+    top: 62%;
+	right: 83px;
 	width: 46px;
 	height: 85px;
 	border: 0;
 	outline: 0;
-	position: absolute;
-	top: 35%;
-	right: 83px;
+	position: fixed;
     animation: arrownext 1s infinite 0s linear;
 }
 @keyframes arrownext{
@@ -199,3 +297,79 @@ body {
         }
 }
 /*HOME END*/
+
+/* PROJECTS */
+button.vs-subview-prev {
+	z-index: 10;
+	background: url("../img/arrow-left.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+	
+	width: 46px;
+	height: 85px;
+	border: 0;
+	outline: 0;
+	position: absolute;
+    top: 62%;
+	left: 83px;
+    animation: arrownext 1s infinite 0s linear;
+}
+
+.projects .title-block {
+	position: relative;
+	display: flex;
+	justify-content: center;
+}
+.projects span.title {
+    font-size: 62px;
+    text-transform: uppercase;
+    line-height: 60px;
+}
+.projects span.text-shadow {
+    position: absolute;
+    top: -5px;
+    margin-left: -5px;
+    opacity: 0.22;
+}
+.projects-wrapper {
+	display: flex;
+	flex-direction: column;
+    margin: 40px 130px 0 130px;
+}
+.projects-wrapper_block {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+}
+
+.projects-wrapper_block {
+	margin-bottom: 50px;
+}
+.projects-wrapper_block:nth-child(2) {
+	margin-bottom: -120px;
+}
+a.project {
+    display: block;
+    margin: 5px 15px;
+	border: 3px solid black;
+	width: 283px;
+	height: 194px;
+	overflow: hidden;
+}
+.project img:hover {
+ transform: scale(1.3);
+}
+.project img  {
+	width: 100%;
+	height: 100%;
+}
+.project6 img {
+	background-image: url("../img/dollar.png");
+	background-size: 5%;
+}
+.project7 img {
+	background-image: url("../img/dollar.png");
+	background-size: 5%;
+}
+/* PROJECTS END */
