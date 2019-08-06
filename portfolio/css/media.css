@@ -383,4 +383,15 @@ svg {
 button.vs-subview-prev {
     left: 1px;
 }
+
+/*SKILLBAR*/
+.skillbar {
+    padding-left: 90px;
+    width: 180px;
+}
+.skillbar-title {
+    width: 90px;
+    padding: 0;
+}
+/*SKILLBAR END*/
 }

@@ -29,19 +29,21 @@ body input:required:valid,
 body textarea:required:valid {
 	
 }
-
+html {
+	overflow: hidden !important;
+}
 body {
 	font-family: sans-serif;
 	font-size: 16px;
 	min-width: 320px;
 	position: relative;
 	line-height: 1.6;
-	overflow-x: hidden;
 	background-color: #fbfe00;
 	font-family: Open Sans Bold;
 	color: #222222;
 }
-
+.main {
+}
  .loader {
 	background: none repeat scroll 0 0 #fbfe00;
 	bottom: 0;
