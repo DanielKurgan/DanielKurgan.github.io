@@ -23,7 +23,7 @@
 
                 // Steering
                 useKeyboard: true, // Use keyboard to change views
-                useScrollbar: false, // Use scrollbar to change views
+                useScrollbar: true, // Use scrollbar to change views
                 changeWhenAnim: true, // Change views when they are changing
                 loopMainViews: false, // Change horizontal views (mainviews) in loop mode
                 loopSubViews: false, // Change vertical views (subviews) in loop mode

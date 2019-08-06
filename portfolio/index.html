@@ -22,29 +22,26 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/media.css">
 	<link rel="stylesheet" href="libs/viewscroller/viewScroller.css">
-
-
 </head>
 
 <body>
-	
 	<div class="loader ">
 		<div class="loader_inner"></div>
 	</div>
 
-<section class="mainbag hidden">
-	<section vs-anchor="firstview" class="mainview">
+<div class="mainbag hidden">
+	<div vs-anchor="firstview" class="mainview">
 
 		<button class="vs-subview-next"></button>
 
-		<section class="subbag">
-			<section vs-anchor="firstsubview" class="home subview">
+		<div class="subbag">
+			<div vs-anchor="firstsubview" class="home subview">
 				<div class="vs-center-wrap">
 					<div class="vs-center">
 						<div class="boss">
 							<button class="draw boss-border " onclick="bosshoverOver();" onmouseout="bosshoverOut();">
-								<img class="boss-image not-hover" src="img/boss.png">
-								<img class="boss-image hover" src="img/eyes2.png">
+								<img class="boss-image not-hover" src="img/boss.png" alt="bossNotHover">
+								<img class="boss-image hover" src="img/eyes2.png" alt="bossHover">
 							</button>
 						</div>
 						<!-- <div class="name"></div> -->
@@ -148,8 +145,8 @@
 
 					</div>
 				</div>
-			</section>
-			<section vs-anchor="secondsubview" class="projects subview">
+			</div>
+			<div vs-anchor="secondsubview" class="projects subview">
 				<div class="vs-center-wrap">
 					<div class="vs-center">
 						<button class="vs-subview-prev"></button>
@@ -162,19 +159,19 @@
 							<div class="projects-wrapper_block">
 									<div class="project-block">
 										<a href="https://danielkurgan.github.io/projects/sunlanding/index.html" class="project project1">
-											<img src="img/sun.png">
+											<img src="img/sun.png" alt="sun">
 										</a>
 									</div>
 
 									<div class="project-block">
 										<a href="https://danielkurgan.github.io/projects/catchthemuse/" class="project project2">
-											<img src="img/muse.png">
+											<img src="img/muse.png" alt="muse">
 										</a>
 									</div>
 
 									<div class="project-block">
 										<a href="https://danielkurgan.github.io/projects/UniqueTech/" class="project project3">
-											<img src="img/uniq.png">
+											<img src="img/uniq.png" alt="unique">
 										</a>
 									</div>
 
@@ -183,7 +180,7 @@
 
 									<div class="project-block">
 										<a href="https://danielkurgan.github.io/projects/kanalseti/" class="project project5">
-											<img src="img/seti.png">
+											<img src="img/seti.png" alt="seti">
 										</a>
 									</div>
 									<div class="project-block">
@@ -196,8 +193,8 @@
 						</div>
 					</div>
 				</div>
-			</section>
-			<section vs-anchor="thirdsubview" class="skillblock subview">
+			</div>
+			<div vs-anchor="thirdsubview" class="skillblock subview">
 				<div class="vs-center-wrap">
 					<div class="vs-center">
 						<button class="vs-subview-prev"></button>
@@ -291,9 +288,9 @@
 						</div>
 					</div>
 				</div>
-			</section>
+			</div>
 
-			<section vs-anchor="fourthsubview" class="contacts subview">
+			<div vs-anchor="fourthsubview" class="contacts subview">
 				<div class="vs-center-wrap">
 					<div class="vs-center">
 						<button class="vs-subview-prev"></button>
@@ -303,17 +300,17 @@
 							<span class="title text-shadow">Contacts</span>
 						</div>
 						<div class="contacts-block">
-							<a href="https://teleg.run/danielkvinov"><img src="img/telegram.png"></a>
-							<a href="https://vk.com/danielkvinov"><img src="img/vk.png"></a>
-							<a href="https://www.weblancer.net/users/DKvinov/"><img src="img/weblancer.jpg"></a>
+							<a href="https://teleg.run/danielkvinov"><img src="img/telegram.png" alt="telegram"></a>
+							<a href="https://vk.com/danielkvinov"><img src="img/vk.png" alt="vk"></a>
+							<a href="https://www.weblancer.net/users/DKvinov/"><img src="img/weblancer.jpg" alt="weblancer"></a>
 						</div>
 					</div>
 				</div>
-			</section>
+			</div>
 
-		</section>
-	</section>
-</section>
+		</div>
+	</div>
+</div>
 
 
 	<script src="js/jquery-3.4.1.min.js"></script>
@@ -329,6 +326,5 @@
 
 	<script src="libs/plugins-scroll/plugins-scroll.js"></script>
 
-	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
 </html>
