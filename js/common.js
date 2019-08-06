@@ -39,9 +39,43 @@ $(function() {
 	
 });
 
-$(window).load(function() {
-
+$(document).ready(function() {
 	$(".loader_inner").fadeOut();
-	$(".loader").delay(400).fadeOut("slow");
+	$(".loader").delay(500).fadeOut("slow");
 
+});
+
+// $(document).ready(function(){
+
+// 	});
+
+$('.skillbar').skillBars({
+
+  // number start
+  from: 0,       
+
+  // number end 
+  to: false,      
+
+  // animation speed
+  speed: 1500,   
+
+  // how often the element should be up<a href="https://www.jqueryscript.net/time-clock/">date</a>d
+  interval: 500,    
+
+  // the number of decimal places to show
+  decimals: 0,      
+
+  // callback method for every time the element is updated,
+  onUpdate: null,   
+
+  // callback method for when the element finishes updating
+  onComplete: null,   
+
+  // CSS classes
+  classes:{
+    skillBarBar : '.skillbar-bar',
+    skillBarPercent : '.skill-bar-percent',
+  }
+  
 });

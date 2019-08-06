@@ -42,6 +42,12 @@
 	    left: 49%;
 	}
 	/*HOME END*/
+
+	/*CONTACTS*/
+	.contacts .title-block span {
+	    margin-bottom: 140px;
+	}
+	/*CONTACTS END*/
 }
 
 @media (max-width: 1440px) {
@@ -101,10 +107,26 @@
 	}
 	/*HOME END*/
 
+	/*CONTACTS*/
+	.contacts .title-block span {
+    margin-bottom: 100px;
+}
+	/*CONTACTS END*/
+
 }
 
 /*Большие девайсы (большие десктопы, < 1200px)*/
 @media (max-width: 1200px) {
+	/*ARROWS*/
+	button.vs-subview-next {
+    top: 55%;
+    width: 26px;
+  }
+	button.vs-subview-prev {
+    width: 26px;
+    top: 55%;
+  }
+	/*ARROWS END*/
 .boss-border {
     width: 200px;
     height: 187px;
@@ -155,15 +177,25 @@ a.project {
     width: 223px;
     height: 154px;
 }
-.projects span.text-shadow {
+span.text-shadow {
     top: -1px;
     margin-left: -3px;
 }
-.projects span.title {
+span.title {
     font-size: 32px;
     text-transform: uppercase;
     line-height: 35px;
 }
+
+/*CONTACTS*/
+.contacts img {
+    width: 80px;
+    height: 80px;
+}
+.contacts .title-block span {
+    margin-bottom: 100px;
+}
+/*CONTACTS END*/
 }
 
 @media (max-width: 1045px) {
@@ -180,6 +212,11 @@ button.vs-subview-prev {
     height: 55px;
     top: 57%;
 }
+/*CONTACTS*/
+.contacts .title-block span {
+    margin-bottom: 100px;
+}
+/*CONTACTS END*/
 }
 
 /*Средние девайсы («таблетки», < 992px) */
@@ -203,6 +240,12 @@ button.vs-subview-prev {
   button.vs-subview-prev {
     left: 33px;
   }
+}
+
+@media (max-width: 725px) {
+	.contacts a {
+	    margin-right: 50px;
+	}
 }
 /*Малые девайсы («ландшафтные», < 768px)
 */@media (max-width: 700px) {
@@ -274,6 +317,12 @@ button.vs-subview-next {
 	.projects-wrapper {
     margin: 20px 10px 0 10px;
 }
+
+/*CONTACTS*/
+.contacts .title-block span {
+    margin-bottom: 70px;
+}
+/*CONTACTS END*/
 }
 /*Экстрамалые девайсы («телефоны», < 576px)
 */@media (max-width: 525px) {
@@ -293,6 +342,20 @@ svg {
     top: 5px;
     left: -10px;
 }
+
+/*CONTACTS*/
+.contacts .title-block span {
+    margin-bottom: 70px;
+}
+.contacts-block {
+    display: flex;
+    flex-direction: column;
+}
+.contacts a {
+    margin-right: 0px;
+    margin-bottom: 15px;
+ }
+/*CONTACTS END*/
 }
 
 @media (max-width: 400px){
