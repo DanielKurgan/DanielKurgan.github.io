@@ -37,10 +37,10 @@
 	    height: 75px;
 	    top: 62%;
 	}
-	.boss img.boss-image.hover {
-	    top: 48px;
-	    left: 49%;
-	}
+.boss img.boss-image.hover {
+    top: 49px;
+    left: 52%;
+}
 	/*HOME END*/
 
 	/*CONTACTS*/
@@ -71,12 +71,12 @@
 	    top: 15px;
 	}
 
-	.boss img.boss-image.hover {
-	    top: 37px;
-	    left: 46%;
-	    width: 36px;
-	    height: 23px;
-	}
+.boss img.boss-image.hover {
+    top: 41px;
+    left: 46.5%;
+    width: 36px;
+    height: 23px;
+}
 	.boss-border {
 	    width: 250px;
 	    height: 237px;
