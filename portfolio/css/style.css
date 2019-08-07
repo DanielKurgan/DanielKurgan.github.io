@@ -21,6 +21,38 @@
 	opacity: 1;
 }
 
+html, body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+/*SETTINGS*/
+
+.page {
+  width: 100%;
+  height: 100%;
+}
+
+.horizon-prev, .horizon-next {
+    position: fixed;
+    top: 50%;
+    margin-top: -24px;
+    z-index: 9999;
+    cursor: pointer;
+}
+
+.horizon-prev {
+    left: 20px;
+}
+
+.horizon-next {
+    right: 20px;
+}
+
+/*SETTINGS END*/
 body input:focus:required:invalid,
 body textarea:focus:required:invalid {
 	
@@ -28,9 +60,6 @@ body textarea:focus:required:invalid {
 body input:required:valid,
 body textarea:required:valid {
 	
-}
-html {
-	overflow: hidden !important;
 }
 body {
 	font-family: sans-serif;
@@ -42,8 +71,11 @@ body {
 	font-family: Open Sans Bold;
 	color: #222222;
 }
-.main {
+.hover {
+	display: none;
 }
+
+/*PRELOADER*/
  .loader {
 	background: none repeat scroll 0 0 #fbfe00;
 	bottom: 0;
@@ -68,11 +100,48 @@ body {
 	top: 40%;
 	position: absolute;
 }
-.hidden {
-}
-.hover {
-	display: none;
-}
+/*PRELOADER END*/
+
+
+
+/*Typed js*/
+    .typed-cursor{
+        opacity: 1;
+        font-weight: 100;
+        -webkit-animation: blink 0.7s infinite;
+        -moz-animation: blink 0.7s infinite;
+        -ms-animation: blink 0.7s infinite;
+        -o-animation: blink 0.7s infinite;
+        animation: blink 0.7s infinite;
+    }
+    @-keyframes blink{
+        0% { opacity:1; }
+        50% { opacity:0; }
+        100% { opacity:1; }
+    }
+    @-webkit-keyframes blink{
+        0% { opacity:1; }
+        50% { opacity:0; }
+        100% { opacity:1; }
+    }
+    @-moz-keyframes blink{
+        0% { opacity:1; }
+        50% { opacity:0; }
+        100% { opacity:1; }
+    }
+    @-ms-keyframes blink{
+        0% { opacity:1; }
+        50% { opacity:0; }
+        100% { opacity:1; }
+    }
+    @-o-keyframes blink{
+        0% { opacity:1; }
+        50% { opacity:0; }
+        100% { opacity:1; }
+    }
+/*Typed js end*/
+
+
 
 /*HOME*/
 .boss img.boss-image {
@@ -105,6 +174,8 @@ body {
         }
 }
 
+
+
 button.draw {
 	outline: 0;
   background: none;
@@ -119,17 +190,16 @@ button.draw {
   position: relative;
   vertical-align: middle;
 }
-button::before, button::after {
+.draw {
+  transition: color 0.25s;
+}
+.draw::before, .draw::after {
   box-sizing: inherit;
   content: '';
   position: absolute;
   width: 100%;
   height: 100%;
-}
-.draw {
-  transition: color 0.25s;
-}
-.draw::before, .draw::after {
+
   border: 5px solid transparent;
   width: 0;
   height: 0;
@@ -159,17 +229,21 @@ button::before, button::after {
   border-left-color: limegreen;
   transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
 }
+
+
+
 .boss-border {
 	position: relative;
 	margin: 0 auto;
 	width: 340px;
 	height: 327px;
-	z-index: 1;
+	z-index: 100;
 	cursor: pointer;
 	background-image: url("../img/dollar.png");
 	background-size: 4%;
 }
 .boss-border img.money {
+	z-index: 100;
 	top: 5px;
 	left: 20px;
 	position: absolute;
@@ -189,6 +263,48 @@ button::before, button::after {
         transform: rotate(360deg);
         }
 }
+section {
+    float: left;
+    display: block;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+section.home-content {
+  position: relative;
+}
+section.home {
+    max-width: 1920px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+section.projects {
+  left: 500px;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+section.skillblock {
+  left: 1500px;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+section.contacts {
+  left: 2000px;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+
 
 .home .name {
 	position: relative;
@@ -269,8 +385,21 @@ text {
         transform: translateX(0px);
         }
 }
-
 button.vs-subview-next {
+    z-index: 11;
+    height: 100%;
+    max-width: 200px;
+    width: 100%;
+    top:0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+.button-next {
     z-index: 10;
     background: url(../img/arrow-next.png);
     background-size: 100%;
@@ -298,7 +427,22 @@ button.vs-subview-next {
 /*HOME END*/
 
 /* PROJECTS */
+
 button.vs-subview-prev {
+    z-index: 11;
+    height: 100%;
+    max-width: 200px;
+    width: 100%;
+    top:0;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+.button-prev {
     z-index: 10;
     background: url(../img/arrow-left.png);
     background-size: 100%;
@@ -309,16 +453,16 @@ button.vs-subview-prev {
     outline: 0;
     position: absolute;
     top: 66%;
-	left: 83px;
+		left: 83px;
     animation: arrownext 1s infinite 0s linear;
 }
-
 .title-block {
 	position: relative;
 	display: flex;
 	justify-content: center;
 }
-span.title {
+span.title,
+.typed {
     font-size: 62px;
     text-transform: uppercase;
     line-height: 60px;
@@ -330,15 +474,6 @@ span.text-shadow {
     opacity: 0.22;
 }
 .projects-wrapper {
-	display: flex;
-	flex-direction: column;
-    margin: 40px 130px 0 130px;
-}
-.projects-wrapper_block {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-		align-items: center;
 }
 
 .projects-wrapper_block {
@@ -382,7 +517,7 @@ a.project span.image-text {
 }
 .project  {
 	background-image: url("../img/dollar.png");
-	background-size: 5%;
+	background-size: 1%;
 }
 .project7 img {
 	background-image: url("../img/dollar.png");
@@ -404,7 +539,7 @@ a.project span.image-text {
   background: #eee;
   height: 35px;
   border-radius: 3px;
-  width: 50%;
+    width: 300px;
   display: flex;
 	padding-left: 110px;
 }

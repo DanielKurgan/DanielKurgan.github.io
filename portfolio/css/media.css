@@ -27,12 +27,12 @@
 	    width: 30px;
 	    height: 50px;
 	}
-	button.vs-subview-next {
+	.button-next {
 	    width: 36px;
 	    height: 75px;
 	    top: 62%;
 	}
-	button.vs-subview-prev {
+	.button-prev {
 	    width: 36px;
 	    height: 75px;
 	    top: 62%;
@@ -51,11 +51,18 @@
 }
 
 @media (max-width: 1440px) {
-	/*HOME*/
+	/*ARROWS HITBOX*/
 	button.vs-subview-next {
+    max-width: 150px;
+  }
+  button.vs-subview-prev {
+    max-width: 150px;
+  }
+	/*ARROWS HITBOX END*/
+	.button-next {
 	    top: 57%;
 	}
-	button.vs-subview-prev {
+	.button-prev {
     top: 57%;
 }
 	svg {
@@ -118,11 +125,11 @@
 /*Большие девайсы (большие десктопы, < 1200px)*/
 @media (max-width: 1200px) {
 	/*ARROWS*/
-	button.vs-subview-next {
+	.button-next {
     top: 55%;
     width: 26px;
   }
-	button.vs-subview-prev {
+	.button-prev {
     width: 26px;
     top: 55%;
   }
@@ -181,7 +188,8 @@ span.text-shadow {
     top: -1px;
     margin-left: -3px;
 }
-span.title {
+span.title,
+.typed {
     font-size: 32px;
     text-transform: uppercase;
     line-height: 35px;
@@ -202,12 +210,12 @@ span.title {
 svg {
     height: 80px;
 }
-button.vs-subview-next {
+.button-next {
     width: 26px;
     height: 55px;
     top: 57%;
 }
-button.vs-subview-prev {
+.button-prev {
     width: 26px;
     height: 55px;
     top: 57%;
@@ -234,12 +242,19 @@ button.vs-subview-prev {
     width: 193px;
     height: 134px;
   }
-  button.vs-subview-next {
+  .button-next {
     right: 33px;
   }
-  button.vs-subview-prev {
+  .button-prev {
     left: 33px;
   }
+
+  /*CONTACTS*/
+  .contacts a {
+    margin-right: 90px;
+}
+  /*CONTACTS END*/
+
 }
 
 @media (max-width: 725px) {
@@ -291,9 +306,16 @@ svg {
     width: 15px;
     height: 25px;
 }
-button.vs-subview-next {
+.button-next {
     top: 57%;
     right: 30px;
+}
+
+button.vs-subview-next {
+    max-width: 100px;
+}
+button.vs-subview-prev {
+    max-width: 100px;
 }
 }
 
@@ -301,11 +323,11 @@ button.vs-subview-next {
 	svg {
 	    height: 60px;
 	}
-	button.vs-subview-next {
+	.button-next {
     width: 16px;
     right: 10px;
   }
-	button.vs-subview-prev {
+	.button-prev {
     width: 16px;
     left: 10px;
   }
@@ -356,6 +378,13 @@ svg {
     margin-bottom: 15px;
  }
 /*CONTACTS END*/
+
+button.vs-subview-next {
+    max-width: 49px;
+}
+button.vs-subview-prev {
+    max-width: 49px;
+}
 }
 
 @media (max-width: 400px){
@@ -372,15 +401,18 @@ svg {
 
 @media (max-width: 370px) {
 	button.vs-subview-next {
+    max-width: 22px;
+  }
+	.button-next {
     animation: none;
   }
-	button.vs-subview-prev {
+	.button-prev {
     animation: none;
   }
-  button.vs-subview-next {
+  .button-next {
     right: 1px;
 }
-button.vs-subview-prev {
+.button-prev {
     left: 1px;
 }
 
