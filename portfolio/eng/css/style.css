@@ -32,6 +32,13 @@ html, body {
 
 /*SETTINGS*/
 
+span.page-counter {
+position: absolute;
+right: 31px;
+bottom: 22px;
+font-size: 24px;
+}
+
 .page {
   width: 100%;
   height: 100%;
@@ -140,6 +147,8 @@ font-weight: bold;
 
 /*Typed js*/
     .typed-cursor{
+      font-size: 25px;
+      line-height: 25px;
         opacity: 1;
         font-weight: 100;
         -webkit-animation: blink 0.7s infinite;
@@ -352,53 +361,10 @@ section {
     height: 100%;
     padding: 0;
     margin: 0;
-}
-section.home {
+
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    text-align: center;
-}
-section.projects {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    height: 100%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    text-align: center;
-}
-section.skillblock {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    height: 100%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    text-align: center;
-}
-section.contacts {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    height: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -410,7 +376,9 @@ section.contacts {
 }
 
 
-
+.home {
+  position: relative;
+}
 .home .name {
 	position: relative;
 }
@@ -515,7 +483,9 @@ text {
 /*HOME END*/
 
 /* PROJECTS */
-
+.projects {
+  position: relative;
+}
 .title-block {
 	position: relative;
 	display: -webkit-box;
@@ -524,6 +494,7 @@ text {
 	-webkit-box-pack: center;
 	-ms-flex-pack: center;
 	justify-content: center;
+    margin-bottom: 40px;
 }
 span.title, .typed {
     font-size: 42px;
@@ -633,6 +604,9 @@ a.project span.image-text {
 /* PROJECTS END */
 
 /*ABOUT ME*/
+.skill-block {
+  position: relative;
+}
 .skillbar-content {
 	max-width: 100%;
 	display: -webkit-box;
@@ -647,37 +621,37 @@ a.project span.image-text {
 	align-items: center;
 }
 .skillbar {
-  position: relative;
-  display: inline-block;
-  margin: 3px 0;
-  background: #eee;
-  height: 35px;
+    position: relative;
+    display: inline-block;
+    margin: 3px 0;
+    background: #eee;
+    height: 55px;
   border-radius: 3px;
-    width: 300px;
+    width: 430px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-	padding-left: 110px;
+padding-left: 170px;
 }
 .skillbar-title {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 110px;
-  font-weight: bold;
-  font-size: 13px;
-  color: #ffffff;
-  background: #6adcfa;
-  border-top-left-radius: 3px;
-  border-bottom-left-radius: 3px;
-  background: rgba(0, 0, 0, 0.1);
-  padding: 0 20px;
-  height: 35px;
-  line-height: 35px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 172px;
+    font-weight: bold;
+    font-size: 22px;
+    color: #ffffff;
+    background: #6adcfa;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 0px 10px;
+    height: 55px;
+    line-height: 55px;
 }
 
 .skillbar-bar {
-  height: 35px;
+    height: 55px;
   width: 0px;
   background: #6adcfa;
   border-radius: 3px;
@@ -685,21 +659,89 @@ a.project span.image-text {
 }
 
 .skill-bar-percent {
-  position: absolute;
-  right: 10px;
-  top: 0;
-  font-size: 11px;
-  height: 35px;
-  line-height: 35px;
+    position: absolute;
+    right: 10px;
+    top: 0;
+    font-size: 22px;
+    height: 55px;
+    line-height: 55px;
   color: #ffffff;
   color: rgba(0, 0, 0, 0.4);
 }
 
 /*ABOUT ME END*/
 
+/*COMMENTS*/
+.comments {
+  position: relative;
+}
+.comments-content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.comments-slider {
+  max-width: 600px;
+}
+.comments .slick-next {
+    right: -60px;
+}
+.comments .slick-prev {
+    left: -60px;
+}
+.comments-slide {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.comments-slide span {
+  font-size: 18px;
+}
+.comments .slick-slide {
+    justify-content: center;
+     align-items: flex-start; 
+    text-align: left;
+}
+.comments-slide_top {
+  display: flex;
+}
+.comments-slide_top_right {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.comments-slide_bottom {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+span.comments-slide_bottom_name-project {
+  border-left: 5px solid #238f23;
+  padding-left: 5px;
+  line-height: 1.2em;
+  height: 25px;
+  display: flex;
+  align-items: center;
+}
+span.comments-slide_bottom_comment {
+  border-left: 5px solid #5AD75A;
+  padding-left: 5px;
+  line-height: 1.2em;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  font-weight: normal;
+}
+.comments-slide img {
+  width: 120px;
+  height: 120px;
+}
+/*COMMENTS END*/
+
 /*CONTACTS*/
-.contacts .title-block span {
-	margin-bottom: 40px;
+.contacts {
+  position: relative;
 }
 .contacts a {
 	margin-right: 150px;
@@ -709,6 +751,7 @@ a.project span.image-text {
 }
 .contacts img:hover {
 	opacity: 0.5;
+  transform: scale(1.1);
 }
 .contacts img {
 	-webkit-transition: 0.3s;

@@ -44,9 +44,6 @@
 	/*HOME END*/
 
 	/*CONTACTS*/
-	.contacts .title-block span {
-	    margin-bottom: 140px;
-	}
 	/*CONTACTS END*/
 }
 
@@ -105,9 +102,7 @@
 	/*HOME END*/
 
 	/*CONTACTS*/
-	.contacts .title-block span {
-    margin-bottom: 100px;
-}
+    
 	/*CONTACTS END*/
 
 }
@@ -173,9 +168,6 @@ span.title,
     width: 80px;
     height: 80px;
 }
-.contacts .title-block span {
-    margin-bottom: 100px;
-}
 /*CONTACTS END*/
 }
 
@@ -194,9 +186,6 @@ svg {
     top: 57%;
 }
 /*CONTACTS*/
-.contacts .title-block span {
-    margin-bottom: 100px;
-}
 /*CONTACTS END*/
 }
 
@@ -301,9 +290,6 @@ button.vs-subview-prev {
 
 
 /*CONTACTS*/
-.contacts .title-block span {
-    margin-bottom: 70px;
-}
 /*CONTACTS END*/
 }
 /*Экстрамалые девайсы («телефоны», < 576px)
@@ -326,9 +312,6 @@ svg {
 }
 
 /*CONTACTS*/
-.contacts .title-block span {
-    margin-bottom: 70px;
-}
 .contacts-block {
     display: -webkit-box;
     display: -ms-flexbox;
