@@ -324,7 +324,35 @@ a.project {
     height: 45px;
     line-height: 45px;
 }
+.skillbar-bar {
+    height: 45px;
+}
 /*SKILLBOX END*/
+
+/*NAVIGATION ARROWS*/
+.horizon-prev, .horizon-next {
+    top: 80%;
+}
+.horizon-next {
+    right: 210px;
+}
+.horizon-prev {
+    right: 210px;
+}
+.horizon-prev img , .horizon-next img {
+    width: 36px;
+    height: 55px;
+}
+/*NAVIGATION ARROWS END*/
+
+/*COMMENTS*/
+.comments-slide {
+    max-width: 400px;
+}
+.comments-slider {
+    max-width: 400px;
+}
+/*COMMENTS END*/
 }
 
 @media (max-width: 575px) {

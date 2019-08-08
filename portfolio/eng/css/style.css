@@ -50,9 +50,12 @@ font-size: 24px;
     margin-top: -24px;
     z-index: 9999;
     cursor: pointer;
-    animation: arrownext 1s infinite 0s linear;
+    animation: arrownext 1s infinite 0s linear;img {
   }
-
+.horizon-prev img , .horizon-next img {
+    width: 46px;
+    height: 85px;
+}
 .horizon-prev {
     left: 20px;
 }
