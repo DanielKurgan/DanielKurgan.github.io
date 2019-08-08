@@ -162,8 +162,8 @@ font-weight: bold;
     width: 42px;
     height: 28px;
     position: absolute;
-    top: 54px;
-    left: 52%;
+    top: 49px;
+    left: 49%;
 }
 @-webkit-keyframes bosshover{
     0%{
@@ -580,11 +580,10 @@ button.vs-subview-prev {
 	-ms-flex-pack: center;
 	justify-content: center;
 }
-span.title,
-.typed {
-    font-size: 62px;
+span.title, .typed {
+    font-size: 42px;
     text-transform: uppercase;
-    line-height: 60px;
+    line-height: 40px;
 }
 span.text-shadow {
     position: absolute;
@@ -616,9 +615,16 @@ span.text-shadow {
   -ms-flex-pack: center;
   justify-content: center;
 }
+.slick-initialized .slick-slide {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+
 
 a.project {
-  margin-top: 150px;
+    margin-top: 40px;
     display: block;
     /*margin: 5px 15px;*/
 	border: 3px solid #a5a70a;;
