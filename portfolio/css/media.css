@@ -51,13 +51,6 @@
 }
 
 @media (max-width: 1440px) {
-	/*ARROWS HITBOX*/
-	button.vs-subview-next {
-    max-width: 150px;
-  }
-  button.vs-subview-prev {
-    max-width: 150px;
-  }
 	/*ARROWS HITBOX END*/
 	.button-next {
 	    top: 57%;
@@ -73,9 +66,6 @@
 	}
 	.home h1.shadow-text {
 	    left: -10px;
-	}
-	.home h2.shadow-text {
-	    top: 15px;
 	}
 
 .boss img.boss-image.hover {
@@ -165,25 +155,8 @@ text {
     height: 22px;
     left: 47%;
 }
-.projects-wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-.projects-wrapper {
-    margin: 20px 130px 0 130px;
-}
-.projects-wrapper_block:nth-child(2) {
-    margin-bottom: 50px;
-}
-.projects-wrapper_block {
-    flex-direction: column;
-}
-a.project {
-    margin: 5px 45px;
-    width: 223px;
-    height: 154px;
-}
+
+
 span.text-shadow {
     top: -1px;
     margin-left: -3px;
@@ -234,14 +207,8 @@ svg {
 
 @media (max-width:  878px) {
 
-	.projects-wrapper {
-    margin: 20px 60px 0 60px;
-}
-	a.project {
-    margin: 5px 5px;
-    width: 193px;
-    height: 134px;
-  }
+
+
   .button-next {
     right: 33px;
   }
@@ -331,14 +298,7 @@ button.vs-subview-prev {
     width: 16px;
     left: 10px;
   }
-  a.project {
-    margin: 5px 5px;
-    width: 140px;
-    height: 104px;
-}
-	.projects-wrapper {
-    margin: 20px 10px 0 10px;
-}
+
 
 /*CONTACTS*/
 .contacts .title-block span {
@@ -370,7 +330,12 @@ svg {
     margin-bottom: 70px;
 }
 .contacts-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 }
 .contacts a {
@@ -404,9 +369,11 @@ svg {
     max-width: 22px;
   }
 	.button-next {
+    -webkit-animation: none;
     animation: none;
   }
 	.button-prev {
+    -webkit-animation: none;
     animation: none;
   }
   .button-next {
