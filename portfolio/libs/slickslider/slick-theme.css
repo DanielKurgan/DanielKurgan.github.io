@@ -79,7 +79,7 @@
 
 .slick-prev
 {
-    left: -25px;
+    left: -40px;
 }
 [dir='rtl'] .slick-prev
 {
@@ -88,7 +88,7 @@
 }
 .slick-prev:before
 {
-    content: '←';
+    content: url('../../img/slider-arrowL.png');
 }
 [dir='rtl'] .slick-prev:before
 {
@@ -97,7 +97,7 @@
 
 .slick-next
 {
-    right: -25px;
+    right: -40px;
 }
 [dir='rtl'] .slick-next
 {
@@ -106,7 +106,7 @@
 }
 .slick-next:before
 {
-    content: '→';
+    content: url('../../img/slider-arrowR.png');
 }
 [dir='rtl'] .slick-next:before
 {
@@ -178,7 +178,7 @@
 .slick-dots li button:before
 {
     font-family: 'slick';
-    font-size: 6px;
+    font-size: 66px;
     line-height: 20px;
 
     position: absolute;

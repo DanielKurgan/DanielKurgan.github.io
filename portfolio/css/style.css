@@ -43,7 +43,8 @@ html, body {
     margin-top: -24px;
     z-index: 9999;
     cursor: pointer;
-}
+    animation: arrownext 1s infinite 0s linear;
+  }
 
 .horizon-prev {
     left: 20px;
@@ -52,7 +53,35 @@ html, body {
 .horizon-next {
     right: 20px;
 }
-
+@-webkit-keyframes arrownext{
+  
+    0%{
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        }
+    50%{
+        -webkit-transform: translateX(10px);
+        transform: translateX(10px);
+        }
+    100%{
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        }
+}
+@keyframes arrownext{
+    0%{
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        }
+    50%{
+        -webkit-transform: translateX(10px);
+        transform: translateX(10px);
+        }
+    100%{
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        }
+}
 /*SETTINGS END*/
 body input:focus:required:invalid,
 body textarea:focus:required:invalid {
@@ -481,96 +510,12 @@ text {
         transform: translateX(0px);
         }
 }
-button.vs-subview-next {
-    z-index: 11;
-    height: 100%;
-    max-width: 200px;
-    width: 100%;
-    top:0;
-    right: 0;
-    bottom: 0;
-    position: absolute;
-    background: transparent;
-    border: 0;
-    outline: 0;
-    cursor: pointer;
-}
-.button-next {
-    z-index: 10;
-    background: url(../img/arrow-next.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    top: 66%;
-    right: 83px;
-    width: 36px;
-	height: 85px;
-	border: 0;
-	outline: 0;
-	position: fixed;
-    -webkit-animation: arrownext 1s infinite 0s linear;
-    animation: arrownext 1s infinite 0s linear;
-}
-@-webkit-keyframes arrownext{
-    0%{
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-        }
-    50%{
-        -webkit-transform: translateX(10px);
-        transform: translateX(10px);
-        }
-    100%{
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-        }
-}
-@keyframes arrownext{
-    0%{
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-        }
-    50%{
-        -webkit-transform: translateX(10px);
-        transform: translateX(10px);
-        }
-    100%{
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-        }
-}
+
+
 /*HOME END*/
 
 /* PROJECTS */
 
-button.vs-subview-prev {
-    z-index: 11;
-    height: 100%;
-    max-width: 200px;
-    width: 100%;
-    top:0;
-    left: 0;
-    bottom: 0;
-    position: absolute;
-    background: transparent;
-    border: 0;
-    outline: 0;
-    cursor: pointer;
-}
-.button-prev {
-    z-index: 10;
-    background: url(../img/arrow-left.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    width: 36px;
-    height: 85px;
-    border: 0;
-    outline: 0;
-    position: absolute;
-    top: 66%;
-		left: 83px;
-    -webkit-animation: arrownext 1s infinite 0s linear;
-    animation: arrownext 1s infinite 0s linear;
-}
 .title-block {
 	position: relative;
 	display: -webkit-box;
@@ -615,6 +560,12 @@ span.text-shadow {
   -ms-flex-pack: center;
   justify-content: center;
 }
+.slick-prev, .slick-next {
+    width: 30px;
+    height: 40px;
+    animation: arrownext 1s infinite 0s linear;
+}
+
 .slick-initialized .slick-slide {
     display: flex !important;
     justify-content: center;
@@ -748,7 +699,7 @@ a.project span.image-text {
 
 /*CONTACTS*/
 .contacts .title-block span {
-	margin-bottom: 200px;
+	margin-bottom: 40px;
 }
 .contacts a {
 	margin-right: 150px;
