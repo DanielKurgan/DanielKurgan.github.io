@@ -93,7 +93,7 @@ $(function(){
 			// time before backspacing
 			backDelay: 2000,
 			// loop
-			loop: true,
+			loop: false,
 			// false = infinite
 			loopCount: 3,
 			// show cursor

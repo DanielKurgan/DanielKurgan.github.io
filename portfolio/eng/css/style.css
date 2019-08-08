@@ -384,6 +384,7 @@ section {
 }
 .home .front-end {
 	position: relative;
+    line-height: 100px;
 }
 .home .developer {
 	position: relative;
@@ -433,6 +434,7 @@ text {
 .home h3 {
 	font-size: 40px;
 	text-transform: uppercase;
+    line-height: 50px;
 }
 .home h3.shadow-text {
 	top: -7px;
@@ -546,9 +548,7 @@ span.text-shadow {
 
 
 a.project {
-    margin-top: 40px;
     display: block;
-    /*margin: 5px 15px;*/
 	border: 3px solid #a5a70a;;
     width: 500px;
     height: 400px;
@@ -626,7 +626,6 @@ a.project span.image-text {
     margin: 3px 0;
     background: #eee;
     height: 55px;
-  border-radius: 3px;
     width: 430px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -642,8 +641,6 @@ padding-left: 170px;
     font-size: 22px;
     color: #ffffff;
     background: #6adcfa;
-    border-top-left-radius: 3px;
-    border-bottom-left-radius: 3px;
     background: rgba(0, 0, 0, 0.1);
     padding: 0px 10px;
     height: 55px;
@@ -682,6 +679,7 @@ padding-left: 170px;
 }
 .comments-slider {
   max-width: 600px;
+  width: 100%;
 }
 .comments .slick-next {
     right: -60px;
@@ -691,6 +689,7 @@ padding-left: 170px;
 }
 .comments-slide {
   max-width: 600px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -717,7 +716,7 @@ padding-left: 170px;
   flex-direction: column;
 }
 span.comments-slide_bottom_name-project {
-  border-left: 5px solid #238f23;
+  border-left: 5px solid #2980b9;
   padding-left: 5px;
   line-height: 1.2em;
   height: 25px;
@@ -725,7 +724,7 @@ span.comments-slide_bottom_name-project {
   align-items: center;
 }
 span.comments-slide_bottom_comment {
-  border-left: 5px solid #5AD75A;
+  border-left: 5px solid #39E639;
   padding-left: 5px;
   line-height: 1.2em;
   height: 55px;
@@ -759,6 +758,6 @@ span.comments-slide_bottom_comment {
 	transition: 0.3s;
 	width: 100px;
 	height: 100px;
-	border-radius: 15px;
+	border-radius: 5px;
 }
 /*CONTACTS END*/
