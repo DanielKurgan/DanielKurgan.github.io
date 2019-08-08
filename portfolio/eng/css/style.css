@@ -124,7 +124,7 @@ font-weight: bold;
 	right: 0;
 	top: 0;
 	width: 100%;
-	z-index: 9999;
+	z-index: 99999;
 }
  .loader_inner {
 	background-color: #fbfe00;
