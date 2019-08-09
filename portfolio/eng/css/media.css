@@ -370,11 +370,10 @@ a.project {
     width: 16px;
     left: 10px;
   }
-
-
 /*CONTACTS*/
 /*CONTACTS END*/
 }
+
 /*Экстрамалые девайсы («телефоны», < 576px)
 */@media (max-width: 525px) {
 /*NAVIGATION ARROWS*/
@@ -422,6 +421,48 @@ svg {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.comments .slick-slide {
+    justify-content: center;
+    align-items: center;
+}
+span.comments-slide_bottom_comment {
+    height: 80px;
+    align-items: center;
+    font-weight: normal;
+    text-align: left;
+}
+.comments-slide span {
+    font-size: 15px;
+}
+span.comments-slide_bottom_name-project {
+    height: 22px;
+    align-items: center;
+}
+span.comments-slide_bottom_comment {
+    border-bottom: 5px solid #39E639;
+    border-right: 5px solid #39E639;
+    border-left: 5px solid #39E639;
+    height: 80px;
+    align-items: center;
+    text-align: center;
+}
+span.comments-slide_bottom_name-project {
+    justify-content: center;
+    text-align: center;
+    border: 5px solid #2980b9;
+    padding-left: 5px;
+    line-height: -0.8em;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+.comments-slide_bottom {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 /*COMMENTS END*/
 
