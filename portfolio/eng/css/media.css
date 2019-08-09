@@ -331,13 +331,14 @@ a.project {
 
 /*NAVIGATION ARROWS*/
 .horizon-prev, .horizon-next {
-    top: 80%;
+    top: 82%;
+    animation: 0;
 }
 .horizon-next {
     right: 210px;
 }
 .horizon-prev {
-    right: 210px;
+    left: 210px;
 }
 .horizon-prev img , .horizon-next img {
     width: 36px;
@@ -376,6 +377,14 @@ a.project {
 }
 /*Экстрамалые девайсы («телефоны», < 576px)
 */@media (max-width: 525px) {
+/*NAVIGATION ARROWS*/
+.horizon-next {
+    right: 160px;
+}
+.horizon-prev {
+    left: 160px;
+}
+/*NAVIGATION ARROWS END*/
 svg {
     height: 50px;
 }
@@ -393,6 +402,29 @@ svg {
     left: -10px;
 }
 
+/*COMMENTS*/
+.comments .slick-next, .comments .slick-prev {
+    animation: 0;
+}
+.comments .slick-next {
+    right: -40px;
+}
+.comments .slick-prev {
+    left: -40px;
+}
+.comments-slide {
+    max-width: 300px;
+}
+.comments-slider {
+    max-width: 300px;
+}
+.comments-slide_top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*COMMENTS END*/
+
 /*CONTACTS*/
 .contacts-block {
     display: -webkit-box;
@@ -408,13 +440,6 @@ svg {
     margin-bottom: 15px;
  }
 /*CONTACTS END*/
-
-button.vs-subview-next {
-    max-width: 49px;
-}
-button.vs-subview-prev {
-    max-width: 49px;
-}
 }
 
 @media (max-width: 400px){
