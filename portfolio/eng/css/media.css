@@ -510,6 +510,7 @@ svg {
 }
 
 @media (max-width: 370px) {
+/*NAVIGATION ARROWS*/
 .horizon-next {
     right: 130px;
 }
@@ -530,8 +531,26 @@ svg {
 .button-prev {
     left: 1px;
 }
+a.project {
+    width: 270px;
+    height: 190px;
+}
+/*NAVIGATION ARROWS END*/
+
+/*PROJECTS*/
+.projects-slider {
+    max-width: 240px;
+}
+a.project {
+    width: 240px;
+    height: 170px;
+}
+/*PROJECTS END*/
 
 /*SKILLBAR*/
+.skillbar-title {
+    font-size: 12px;
+}
 .skillbar {
     padding-left: 90px;
     width: 180px;
@@ -541,4 +560,16 @@ svg {
     padding: 0;
 }
 /*SKILLBAR END*/
+
+/*COMMENTS*/
+.comments-slider {
+    max-width: 240px;
+}
+span.comments-slide_bottom_comment {
+    height: 110px;
+}
+.comments-slide_top_right {
+    text-align: center;
+}
+/*COMMENTS END*/
 }
