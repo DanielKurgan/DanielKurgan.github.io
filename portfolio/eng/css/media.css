@@ -429,7 +429,10 @@
     .comments-slide {
         margin: 15px !important;
     }
-
+    
+    span.comments-slide_bottom_name-project {
+        height: 55px;
+    }
     /*NAVIGATION ARROWS END*/
 
     /*COMMENTS*/
