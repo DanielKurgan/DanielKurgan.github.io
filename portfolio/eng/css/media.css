@@ -376,12 +376,22 @@ a.project {
 
 /*Экстрамалые девайсы («телефоны», < 576px)
 */@media (max-width: 525px) {
+
 /*NAVIGATION ARROWS*/
+.horizon-prev img, .horizon-next img {
+    width: 26px;
+    height: 45px;
+}
 .horizon-next {
     right: 160px;
 }
 .horizon-prev {
     left: 160px;
+}
+.horizon-prev, .horizon-next {
+    top: auto;
+    animation: 0;
+    bottom: 10px;
 }
 /*NAVIGATION ARROWS END*/
 svg {
@@ -391,10 +401,10 @@ svg {
     font-size: 40px;
 }
 .home h1.shadow-text {
-    top: -5px;
+    top: -3px;
 }
 .home h2 {
-    margin-top: -10px;
+    margin-top: 5px;
 }
 .home h2.shadow-text {
     top: 5px;
@@ -465,6 +475,7 @@ span.comments-slide_bottom_name-project {
     text-align: center;
 }
 /*COMMENTS END*/
+
 
 /*CONTACTS*/
 .contacts-block {
