@@ -335,8 +335,9 @@ a.project {
 
 /*NAVIGATION ARROWS*/
 .horizon-prev, .horizon-next {
-    top: 82%;
+    top: auto;
     animation: 0;
+    bottom: 10px;
 }
 .horizon-next {
     right: 210px;
