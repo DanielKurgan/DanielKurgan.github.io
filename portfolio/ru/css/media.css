@@ -299,7 +299,6 @@
 /*Малые девайсы («ландшафтные», < 768px)
 */
 @media (max-width: 700px) {
-
     .slick-prev,
     .slick-next {
         animation: 0;
@@ -451,7 +450,10 @@
     .comments-slider {
         max-width: 400px;
     }
-
+    
+    span.comments-slide_bottom_name-project {
+        height: 55px;
+    }
     /*COMMENTS END*/
 }
 
