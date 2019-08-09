@@ -240,6 +240,10 @@ svg {
 }
 /*Малые девайсы («ландшафтные», < 768px)
 */@media (max-width: 700px) {
+    .slick-prev, .slick-next {
+    animation: 0;
+}
+
 .name-svg {
     margin-bottom: 10px;
 }
@@ -407,7 +411,6 @@ svg {
     margin-top: 5px;
 }
 .home h2.shadow-text {
-    top: 5px;
     left: -10px;
 }
 
@@ -507,9 +510,12 @@ svg {
 }
 
 @media (max-width: 370px) {
-	button.vs-subview-next {
-    max-width: 22px;
-  }
+.horizon-next {
+    right: 130px;
+}
+.horizon-prev {
+    left: 130px;
+}
 	.button-next {
     -webkit-animation: none;
     animation: none;
