@@ -343,6 +343,8 @@ a.project {
     width: 36px;
     height: 55px;
 }
+.comments-slider {margin: 0 -15px !important;}
+.comments-slide {margin: 15px !important;}
 /*NAVIGATION ARROWS END*/
 
 /*COMMENTS*/
