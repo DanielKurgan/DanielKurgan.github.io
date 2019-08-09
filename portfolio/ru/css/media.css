@@ -9,9 +9,16 @@
 	.home h1.shadow-text {
 	    top: -5px;
 	}
-	.home h2 {
-	    font-size: 70px;
-	}
+svg {
+    height: 100px;
+}
+.home h2 {
+    font-size: 50px;
+}
+.home h3 {
+    font-size: 28px;
+    line-height: 30px;
+}
 	.boss-border {
 	    width: 310px;
 	    height: 307px;
@@ -64,6 +71,19 @@
 	.home h1.shadow-text {
 	    left: -10px;
 	}
+    .home h1 {
+        font-size: 85px;
+    }
+    .home h2 {
+    font-size: 50px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+    .home h3 {
+        font-size: 28px;
+            text-transform: uppercase;
+        line-height: 70px;
+    }
 
 .boss img.boss-image.hover {
     top: 41px;
@@ -83,25 +103,15 @@
 	    width: 25px;
 	    height: 45px;
 	}
-	.home h1 {
-	    font-size: 85px;
-	}
-	.home h2 {
-	    font-size: 60px;
-	    margin-bottom: 0px;
-	}
+
     .home .front-end {
         line-height: 10px;
     }
-    .home h3 {
-        font-size: 40px;
-        text-transform: uppercase;
-        line-height: 90px;
-    }
-	.home h3.shadow-text {
-	    top: -3px;
-	    left: -8px;
-	}
+
+    	.home h3.shadow-text {
+    	    top: -3px;
+    	    left: -8px;
+    	}
 	/*HOME END*/
 
 	/*CONTACTS*/
@@ -112,6 +122,7 @@
 
 /*Большие девайсы (большие десктопы, < 1200px)*/
 @media (max-width: 1200px) {
+
 	/*ARROWS*/
 	.button-next {
     top: 55%;
@@ -122,6 +133,13 @@
     top: 55%;
   }
 	/*ARROWS END*/
+/*HOME*/
+svg {
+    height: 70px;
+}
+text {
+    font-size: 70px;
+}
 .boss-border {
     width: 200px;
     height: 187px;
@@ -150,7 +168,7 @@
     line-height: 50px;
 }
 text {
-    font-size: 83px;
+    font-size: 73px;
 }
 
 .boss img.boss-image.hover {
@@ -192,9 +210,6 @@ a.project {
 }
 
 @media (max-width: 1045px) {
-svg {
-    height: 80px;
-}
 .button-next {
     width: 26px;
     height: 55px;
@@ -248,7 +263,10 @@ svg {
     margin-bottom: 10px;
 }
 svg {
-    height: 60px;
+    height: 50px;
+}
+text {
+    font-size: 67px;
 }
 .home h1 {
     font-size: 50px;
@@ -349,8 +367,6 @@ a.project {
     width: 36px;
     height: 55px;
 }
-.comments-slider {margin: 0 -15px !important;}
-.comments-slide {margin: 15px !important;}
 /*NAVIGATION ARROWS END*/
 
 /*COMMENTS*/
@@ -503,14 +519,26 @@ span.comments-slide_bottom_name-project {
     font-size: 35px;
 }
 .home h2 {
-    font-size: 27px;
+    margin-top: 0px;
+    font-size: 22px;
+}
+.home h3 {
+    font-size: 13px;
+    line-height: 30px;
 }
 svg {
     height: 40px;
 }
+
 }
 
 @media (max-width: 370px) {
+    text {
+    font-size: 70px;
+}
+svg {
+    height: 35px;
+}
 /*NAVIGATION ARROWS*/
 .horizon-next {
     right: 130px;

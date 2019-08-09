@@ -408,7 +408,7 @@ text {
 	-webkit-filter: url(#filter);
 	filter: url(#filter);
 	fill: #222222;
-	font-size: 90px;
+font-size: 70px;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -425,9 +425,10 @@ text {
 
 
 .home h2 {
-	font-size: 80px;
+  margin-top: -10px;
+    font-size: 60px;
 	text-transform: uppercase;
-	margin-bottom: -10px;
+	margin-bottom: -20px;
 }
 .home h2.shadow-text {
 	top: -7px;
@@ -435,7 +436,7 @@ text {
 }
 
 .home h3 {
-	font-size: 40px;
+    font-size: 30px;
 	text-transform: uppercase;
     line-height: 50px;
 }
@@ -680,6 +681,8 @@ padding-left: 170px;
   display: flex;
   justify-content: center;
 }
+.comments-slider {margin: 0 -15px !important;}
+.comments-slide {margin: 15px !important;}
 .comments-slider {
   max-width: 600px;
   width: 100%;
