@@ -43,7 +43,7 @@ $(function(){
 	// Когда класс class появляется в области видимости экрана срабатывает нужный нам код.
 	$('.projects .title-block').on('appear', function(event, $all_appeared_elements) {
 		$(".typed-projects").typed({
-			strings: ["Лучшие проекты<br> из лучших"],
+			strings: ["Проекты"],
 			// Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
 			stringsElement: null,
 			// typing speed

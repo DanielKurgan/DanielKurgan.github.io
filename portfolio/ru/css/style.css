@@ -134,7 +134,9 @@ body {
 
 /*PRELOADER*/
 .loader {
-    background: none repeat scroll 0 0 #fbfe00;
+    background-color: #fbfe00;
+    background-position: center;
+    background-repeat: no-repeat;
     bottom: 0;
     height: 100%;
     left: 0;
