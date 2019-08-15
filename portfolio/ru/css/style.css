@@ -874,6 +874,7 @@ span.comments-slide_bottom_comment {
     display: flex;
     align-items: center;
     font-weight: normal;
+    font-size: 16px;
 }
 
 .comments-slide img {

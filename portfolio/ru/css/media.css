@@ -285,9 +285,16 @@
     .contacts a {
         margin-right: 90px;
     }
-
     /*CONTACTS END*/
-
+		
+		/*COMMENTS*/
+		.comments-slide {
+			max-width: 450px;
+		}
+		.comments-slider {
+		    max-width: 450px;
+		}
+		/*COMMENTS END*/
 }
 
 @media (max-width: 725px) {
@@ -587,7 +594,7 @@
         border: 5px solid #2980b9;
         padding-left: 5px;
         line-height: -0.8em;
-        height: 22px;
+  		  height: 62px;
         display: flex;
         align-items: center;
         padding: 10px 0;

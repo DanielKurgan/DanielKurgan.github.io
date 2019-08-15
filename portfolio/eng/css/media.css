@@ -12,8 +12,17 @@
         top: -5px;
     }
 
+    svg {
+        height: 100px;
+    }
+
     .home h2 {
-        font-size: 70px;
+        font-size: 50px;
+    }
+
+    .home h3 {
+        font-size: 28px;
+        line-height: 30px;
     }
 
     .boss-border {
@@ -80,6 +89,22 @@
         left: -10px;
     }
 
+    .home h1 {
+        font-size: 85px;
+    }
+
+    .home h2 {
+        font-size: 50px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+
+    .home h3 {
+        font-size: 28px;
+        text-transform: uppercase;
+        line-height: 70px;
+    }
+
     .boss img.boss-image.hover {
         top: 41px;
         left: 46.5%;
@@ -102,23 +127,8 @@
         height: 45px;
     }
 
-    .home h1 {
-        font-size: 85px;
-    }
-
-    .home h2 {
-        font-size: 60px;
-        margin-bottom: 0px;
-    }
-
     .home .front-end {
         line-height: 10px;
-    }
-
-    .home h3 {
-        font-size: 40px;
-        text-transform: uppercase;
-        line-height: 90px;
     }
 
     .home h3.shadow-text {
@@ -149,6 +159,15 @@
     }
 
     /*ARROWS END*/
+    /*HOME*/
+    svg {
+        height: 70px;
+    }
+
+    text {
+        font-size: 70px;
+    }
+
     .boss-border {
         width: 200px;
         height: 187px;
@@ -184,7 +203,7 @@
     }
 
     text {
-        font-size: 83px;
+        font-size: 73px;
     }
 
     .boss img.boss-image.hover {
@@ -231,10 +250,6 @@
 }
 
 @media (max-width: 1045px) {
-    svg {
-        height: 80px;
-    }
-
     .button-next {
         width: 26px;
         height: 55px;
@@ -270,9 +285,16 @@
     .contacts a {
         margin-right: 90px;
     }
-
     /*CONTACTS END*/
-
+		
+		/*COMMENTS*/
+		.comments-slide {
+			max-width: 450px;
+		}
+		.comments-slider {
+		    max-width: 450px;
+		}
+		/*COMMENTS END*/
 }
 
 @media (max-width: 725px) {
@@ -284,7 +306,6 @@
 /*Малые девайсы («ландшафтные», < 768px)
 */
 @media (max-width: 700px) {
-
     .slick-prev,
     .slick-next {
         animation: 0;
@@ -295,7 +316,11 @@
     }
 
     svg {
-        height: 60px;
+        height: 50px;
+    }
+
+    text {
+        font-size: 67px;
     }
 
     .home h1 {
@@ -422,17 +447,6 @@
         height: 55px;
     }
 
-    .comments-slider {
-        margin: 0 -15px !important;
-    }
-
-    .comments-slide {
-        margin: 15px !important;
-    }
-    
-    span.comments-slide_bottom_name-project {
-        height: 55px;
-    }
     /*NAVIGATION ARROWS END*/
 
     /*COMMENTS*/
@@ -443,7 +457,10 @@
     .comments-slider {
         max-width: 400px;
     }
-
+    
+    span.comments-slide_bottom_name-project {
+        height: 55px;
+    }
     /*COMMENTS END*/
 }
 
@@ -577,7 +594,7 @@
         border: 5px solid #2980b9;
         padding-left: 5px;
         line-height: -0.8em;
-        height: 22px;
+  		  height: 62px;
         display: flex;
         align-items: center;
         padding: 10px 0;
@@ -618,15 +635,29 @@
     }
 
     .home h2 {
-        font-size: 27px;
+        margin-top: 0px;
+        font-size: 22px;
+    }
+
+    .home h3 {
+        font-size: 13px;
+        line-height: 30px;
     }
 
     svg {
         height: 40px;
     }
+
 }
 
 @media (max-width: 370px) {
+    text {
+        font-size: 70px;
+    }
+
+    svg {
+        height: 35px;
+    }
 
     /*NAVIGATION ARROWS*/
     .horizon-next {
