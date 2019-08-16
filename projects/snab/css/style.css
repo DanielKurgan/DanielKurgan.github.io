@@ -123,6 +123,9 @@ list-style-type: none;
   content: url("../img/Icons_PNG/Буллит.png");
   padding-right: 13px;
 }
+.main button.main-sell:hover {
+	background-color: #274bdb;
+}
 .main button.main-sell {
 	margin-top: 44px;
 	margin-bottom: 64px;
