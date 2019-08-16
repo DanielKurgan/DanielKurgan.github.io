@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13" height="10" viewBox="0 0 13 10">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #0076bd;
+        fill-rule: evenodd;
+        filter: url(#filter);
+      }
+    </style>
+    <filter id="filter" x="722" y="814" width="13" height="10" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#00b887"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <path id="Галочка" class="cls-1" d="M726.411,823.8a0.6,0.6,0,0,0,.914,0l7.491-7.71a0.718,0.718,0,0,0,0-.944l-0.94-.944a0.556,0.556,0,0,0-.444-0.209,0.633,0.633,0,0,0-.47.209l-6.094,6.294-2.843-2.937a0.636,0.636,0,0,0-.47-0.21,0.56,0.56,0,0,0-.445.21l-0.939.944a0.715,0.715,0,0,0,0,.944Z" transform="translate(-722 -814)"/>
+</svg>

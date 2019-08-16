@@ -1,0 +1,110 @@
+@media (max-width: 1200px) {
+	.visible {
+		display: none;
+	}
+	.goods .container {
+	    justify-content: space-around;
+	}
+}
+
+@media (max-width: 1080px) {
+	footer .desktop {
+		display: none;
+	}
+	footer .mobile {
+		display: inline-block;
+	}
+	footer input#mail {
+    width: 100%;
+  }
+  footer input#submit {
+    width: 100%;
+  }
+  footer form {
+    max-width: 400px;
+  }
+  footer .container {
+    justify-content: space-around;
+  }
+  footer input.submit {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  footer textarea {
+     margin-top: 0; 
+  }
+}
+
+@media (max-width: 870px) {
+
+	header .desktop {
+		display: none;
+	}
+	.mobile {
+		display: flex;
+	}
+	.hamburger {
+		display: flex;
+		background-image: url("../img/Icons_PNG/Кнопка-меню.png");
+		width: 24px;
+		height: 17px;
+	}
+	.menu-feedback {
+		display: none;
+    z-index: 1;
+		width: 100%;
+		height: 312px;
+		border-radius: 0 0 16px 16px;
+		background-color: #ffffff;
+		position: absolute;
+		left: 0;
+		top: 78px;
+
+    flex-direction: column;
+    align-items: center;
+		/*visibility: hidden;*/
+	}
+	.menu-feedback a {
+    margin-right: 0;
+  }
+  .menu-feedback a::before {
+  	display: none;
+  }
+  .menu-feedback a.feedback-number {
+  	margin-top: 45px;
+		order: -1;
+		margin-bottom: 36px;
+	}
+  .menu-feedback a.feedback-mail {
+		margin-bottom: 37px;
+	}
+	.menu-feedback a {
+		color: #0095ff;
+		font-family: "Montserrat Semibold";
+		font-size: 16px;
+	}
+	.menu-feedback button {
+		width: 200px;
+		height: 54px;
+		border-radius: 27px;
+		border: 2px solid #00d68f;
+		background: transparent;
+
+		color: #00d68f;
+		font-family: Montserrat;
+		font-size: 14px;
+		font-weight: 700;
+		transition: 0.4s;
+	}
+	.menu-feedback button:hover {
+		background-color: #fff;
+	}
+}
+
+@media (max-width: 768px) {
+	
+}
+
+@media (max-width: 576px) {
+
+}
