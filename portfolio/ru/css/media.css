@@ -580,9 +580,9 @@
     }
 
     span.comments-slide_bottom_comment {
-        border-bottom: 5px solid #39E639;
-        border-right: 5px solid #39E639;
-        border-left: 5px solid #39E639;
+        border-bottom: 5px solid #444;
+        border-right: 5px solid #444;
+        border-left: 5px solid #444;
         height: 80px;
         align-items: center;
         text-align: center;
@@ -591,7 +591,7 @@
     span.comments-slide_bottom_name-project {
         justify-content: center;
         text-align: center;
-        border: 5px solid #2980b9;
+        border: 5px solid #333;
         padding-left: 5px;
         line-height: -0.8em;
   		  height: 62px;
