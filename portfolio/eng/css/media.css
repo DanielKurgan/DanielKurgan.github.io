@@ -165,7 +165,7 @@
     }
 
     text {
-        font-size: 70px;
+		    font-size: 90px;
     }
 
     .boss-border {
@@ -200,10 +200,6 @@
     .home h3 {
         font-size: 20px;
         line-height: 50px;
-    }
-
-    text {
-        font-size: 73px;
     }
 
     .boss img.boss-image.hover {
@@ -317,10 +313,6 @@
 
     svg {
         height: 50px;
-    }
-
-    text {
-        font-size: 67px;
     }
 
     .home h1 {
@@ -651,9 +643,9 @@
 }
 
 @media (max-width: 370px) {
-    text {
-        font-size: 70px;
-    }
+		text {
+		    font-size: 87px;
+		}
 
     svg {
         height: 35px;

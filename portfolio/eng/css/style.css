@@ -499,7 +499,7 @@ text {
     -webkit-filter: url(#filter);
     filter: url(#filter);
     fill: #fff;
-    font-size: 70px;
+    font-size: 90px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
