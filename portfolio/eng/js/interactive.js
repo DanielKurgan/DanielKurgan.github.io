@@ -1,3 +1,10 @@
+$(document).ready(function(){
+    setTimeout(function(){
+        window.scrollTo(0, 0);
+    }, 1);
+});
+
+
 function bosshoverOver() {
 	$(".boss-image.hover").css("display", "block");
 }
