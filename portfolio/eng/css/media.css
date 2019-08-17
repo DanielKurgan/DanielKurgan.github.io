@@ -562,9 +562,9 @@
         text-align: left;
     }
 
-    .comments-slide span {
-        font-size: 15px;
-    }
+		.comments-slide span {
+		    font-size: 12px;
+		}
 
     span.comments-slide_bottom_name-project {
         height: 22px;
@@ -718,10 +718,13 @@
     .comments-slider {
         max-width: 240px;
     }
-
-    span.comments-slide_bottom_comment {
-        height: 110px;
-    }
+		.slick-dots {
+		    bottom: 30px;	
+		}
+		
+		span.comments-slide_bottom_comment {
+		    height: 80px;
+		}
 
     .comments-slide_top_right {
         text-align: center;
