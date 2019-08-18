@@ -5,5 +5,5 @@
 			 url("../fonts/OpenSans/OpenSans-Bold.woff") format("woff"),
 			 url("../fonts/OpenSans/OpenSans-Bold.ttf") format("truetype");
 	font-style: normal;
-	font-weight: normal;
+	font-weight: bold;
 }
