@@ -29,7 +29,7 @@
 html,
 body {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     padding: 0;
     margin: 0;
     overflow: hidden;
@@ -46,7 +46,7 @@ span.page-counter {
 
 .page {
     width: 100%;
-    height: 100%;
+    height: 100vh;
 }
 
 .horizon-prev,
@@ -447,7 +447,7 @@ button.draw {
 section {
     float: left;
     display: block;
-    height: 100%;
+    height: 100vh;
     padding: 0;
     margin: 0;
 
@@ -766,7 +766,6 @@ a.project span.image-text {
     height: 55px;
     width: 0px;
     background: #6adcfa;
-    border-radius: 3px;
     display: inline-block;
 }
 
