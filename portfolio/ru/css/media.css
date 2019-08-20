@@ -758,12 +758,12 @@
     .comments-slider {
         max-width: 240px;
     }
-		.slick-dots {
-		    bottom: 30px;	
-		}
-		span.comments-slide_bottom_comment {
-		    height: 80px;
-		}
+    .slick-dots {
+        bottom: -10px;
+    }
+	span.comments-slide_bottom_comment {
+	    height: 80px;
+	}
 
     .comments-slide_top_right {
         text-align: center;
