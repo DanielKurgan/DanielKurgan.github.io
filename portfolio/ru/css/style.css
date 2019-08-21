@@ -859,6 +859,7 @@ a.project span.image-text {
 }
 
 .comments .slick-slide {
+    outline: 0;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
