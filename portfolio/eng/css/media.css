@@ -760,6 +760,7 @@
         bottom: -10px;
     }
     span.comments-slide_bottom_comment {
+        height: auto;
     }
 
     .comments-slide_top_right {
