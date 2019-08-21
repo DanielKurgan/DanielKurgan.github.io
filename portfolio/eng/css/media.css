@@ -165,7 +165,7 @@
     }
 
     text {
-		    font-size: 90px;
+        font-size: 90px;
     }
 
     .boss-border {
@@ -304,6 +304,7 @@
 @media (max-width: 700px) {
     .slick-prev,
     .slick-next {
+        -webkit-animation: 0;
         animation: 0;
     }
 
@@ -421,6 +422,7 @@
     .horizon-prev,
     .horizon-next {
         top: auto;
+        -webkit-animation: 0;
         animation: 0;
         bottom: 10px;
     }
@@ -497,6 +499,7 @@
     .horizon-prev,
     .horizon-next {
         top: auto;
+        -webkit-animation: 0;
         animation: 0;
         bottom: 10px;
     }
@@ -525,15 +528,16 @@
     /*COMMENTS*/
     .comments .slick-next,
     .comments .slick-prev {
+        -webkit-animation: 0;
         animation: 0;
     }
 
     .comments .slick-next {
-        right: -40px;
+        right: -30px;
     }
 
     .comments .slick-prev {
-        left: -40px;
+        left: -30px;
     }
 
     .comments-slide {
@@ -545,29 +549,44 @@
     }
 
     .comments-slide_top {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
     }
 
     .comments .slick-slide {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
     }
 
     span.comments-slide_bottom_comment {
         height: 80px;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         font-weight: normal;
         text-align: left;
     }
 
-		.comments-slide span {
-		    font-size: 12px;
-		}
+    .comments-slide span {
+        font-size: 11px;
+    }
 
     span.comments-slide_bottom_name-project {
         height: 22px;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
     }
 
@@ -575,26 +594,40 @@
         border-bottom: 5px solid #444;
         border-right: 5px solid #444;
         border-left: 5px solid #444;
-        height: 80px;
+        height: auto;
+        padding: 10px 5px;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         text-align: center;
     }
 
     span.comments-slide_bottom_name-project {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
         text-align: center;
         border: 5px solid #333;
         padding-left: 5px;
         line-height: -0.8em;
-  		  height: 62px;
+        height: auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
-        padding: 10px 0;
+        padding: 10px 5px;
     }
 
     .comments-slide_bottom {
         margin-top: 10px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
         text-align: center;
     }
@@ -639,13 +672,18 @@
     svg {
         height: 40px;
     }
-
+    .horizon-prev {
+        left: 150px;
+    }
+    .horizon-next {
+        right: 150px;
+    }
 }
 
 @media (max-width: 370px) {
-		text {
-		    font-size: 87px;
-		}
+    text {
+        font-size: 87px;
+    }
 
     svg {
         height: 35px;
@@ -718,16 +756,24 @@
     .comments-slider {
         max-width: 240px;
     }
-    .slick-dots {
+    .comments .slick-dots {
         bottom: -10px;
     }
-	span.comments-slide_bottom_comment {
-	    height: 80px;
-	}
+    span.comments-slide_bottom_comment {
+    }
 
     .comments-slide_top_right {
         text-align: center;
     }
 
     /*COMMENTS END*/
+}
+
+@media (max-width: 340px) {
+    .horizon-prev {
+        right: 120px;
+    }
+    .horizon-next {
+        right: 120px;
+    }
 }

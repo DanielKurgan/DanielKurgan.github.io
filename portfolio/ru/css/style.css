@@ -33,6 +33,7 @@ body {
     padding: 0;
     margin: 0;
     overflow: hidden;
+    display: flex;
 }
 
 /*SETTINGS*/
@@ -52,7 +53,8 @@ span.page-counter {
 .horizon-prev,
 .horizon-next {
     position: fixed;
-    top: 0;
+    top: 50%;
+    margin-top: -25px;
     z-index: 9999;
     cursor: pointer;
     -webkit-animation: arrownext 1s infinite 0s linear;
@@ -117,7 +119,6 @@ body textarea:required:valid {}
 
 body {
     font-size: 16px;
-    min-width: 320px;
     position: relative;
     line-height: 1.6;
     background-color: #211e1f;
@@ -899,7 +900,7 @@ span.comments-slide_bottom_name-project {
     border-left: 5px solid #333;
     padding-left: 5px;
     line-height: 1.2em;
-    height: 25px;
+    height: 31px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -912,7 +913,7 @@ span.comments-slide_bottom_comment {
     border-left: 5px solid #444;
     padding-left: 5px;
     line-height: 1.2em;
-    height: 55px;
+    height: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -921,13 +922,17 @@ span.comments-slide_bottom_comment {
     align-items: center;
     font-weight: normal;
     font-size: 16px;
+    color: lightgray;
 }
 
 .comments-slide img {
     width: 120px;
     height: 120px;
 }
-
+.comments .slick-prev,
+.comments .slick-next {
+    margin-top: -20px;
+}
 /*COMMENTS END*/
 
 /*CONTACTS*/
