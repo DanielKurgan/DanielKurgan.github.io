@@ -291,7 +291,7 @@ margin-bottom: 48px;
 }
 .tour-block p span.block-title {
 color: #c79c6e;
-font-family: "Montserrat Regular Medium";
+font-family: "Montserrat Medium";
 font-weight: 500;
 line-height: 25px;
 text-transform: uppercase;
@@ -466,7 +466,7 @@ line-height: 35px;
 }
 .comment .comment-content span.profession {
 color: #c79c6e;
-font-family: "Montserrat Regular Regular";
+font-family: "Montserrat Regular";
 font-size: 18px;
 font-weight: 400;
 margin-bottom: 10px;
@@ -696,7 +696,7 @@ height: 40px;
 color: #494346;
 font-size: 18px;
 line-height: 24px;
-font-family: "Montserrat Regular Semibold";
+font-family: "Montserrat Semibold";
 font-weight: 600;
 }
 .contacts .contacts-content .mini-block_last span.ltitle_bronze {
@@ -711,7 +711,7 @@ height: 60px;
 border-radius: 10px;
 background-color: #c79c6e;
 color: white;
-font-family: Montserrat Regular Regular;
+font-family: Montserrat Regular;
 font-size: 18px;
 font-weight: 700;
 text-transform: uppercase;
