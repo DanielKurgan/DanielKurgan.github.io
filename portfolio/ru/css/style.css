@@ -178,8 +178,8 @@ body {
 
 /*Typed js*/
 .typed-cursor {
-    font-size: 25px;
-    line-height: 25px;
+    display: inline-block;
+    font-size: 30px;
     opacity: 1;
     font-weight: 100;
     -webkit-animation: blink 0.7s infinite;

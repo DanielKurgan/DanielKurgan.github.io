@@ -4,7 +4,7 @@
   var checkBinded = false;
   var checkLock = false;
   var defaults = {
-    interval: 250,
+    interval: 500,
     force_process: false
   };
   var $window = $(window);
