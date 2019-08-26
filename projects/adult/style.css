@@ -1,7 +1,8 @@
 * {
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 }
 *::-webkit-input-placeholder {
 	color: #666;
@@ -52,8 +53,13 @@ body {
 .page {
 	height: 100vh;
 	width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 	background-color: black;
 }
 /*TOP-BAR*/
@@ -82,9 +88,15 @@ header {
 	padding: 10px 10px;
 }
 header .container {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 header .logo {
 	width: 50%;
@@ -97,16 +109,26 @@ header .logo-24 {
 }
 header .search {
 	width: 50%;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	max-height: 30px;
-	justify-content: flex-end;
+	-webkit-box-pack: end;
+	    -ms-flex-pack: end;
+	        justify-content: flex-end;
 }
 header span.warning {
 	color: white;
 	background-color: black;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	padding: 10px 3px;
 	border: 2px solid orange;
 	border-radius: 13px;
@@ -148,9 +170,15 @@ header button::before {
 	width: 100%;
 	line-height: 30px;
   content: url("img/search-icon.png");
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 3px;
 }
 /*HEADER END*/
@@ -181,16 +209,24 @@ header button::before {
 	top: 0;
 	width: 100%;
 	position: absolute;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 }
 
 .main .video-bottom {
 	width: 100%;
 	bottom: 0;
 	position: absolute;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	background-color: #1e242c;
 }
 .video-block {
@@ -203,12 +239,18 @@ header button::before {
 	padding: 17px 17px;
 }
 .video-title {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 .video-rating {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 .video-rating_comments {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	margin-right: 20px;
 }
@@ -218,6 +260,8 @@ header button::before {
 	margin-top: 3px;
 }
 .video-rating_likes {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 .video-rating_likes::before {
@@ -230,9 +274,15 @@ header button::before {
 }
 .video-bottom {
 	padding: 8px 15px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
-	justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 }
 .video-bottom  {
 	cursor: pointer;
@@ -250,14 +300,22 @@ header button::before {
 	content: url("img/button-sound.png");
 }
 .video-bottom_left {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 .video-bottom_middle {
 	width: 770px;
 	padding-right: 5px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 .progress-line {
 	height: 4px;
@@ -277,9 +335,13 @@ header button::before {
 	left: 0;
 	background-color: white;
 	line-height: 0px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 .video-bottom_right {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 .progress-line_active::after {
@@ -308,9 +370,15 @@ a.video-button_look {
 	width: 400px;
 	border: 2px solid white;
 	border-radius: 40px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	background: #0e0e0e;
 	bottom: 0;
 	left: 30%;	
@@ -320,9 +388,15 @@ a.video-button_cancel {
 	position: absolute;
 	color: #717171;
 	font-size: 14px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	background: #0e0e0e;
 	bottom: -30px;
 	left: 50%;	
@@ -350,9 +424,13 @@ a.video-button_look::before {
 	margin: 0;
 }
 .video-ad_top {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 .video-ad_bottom {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 /*VIDEO BLOCK END*/
