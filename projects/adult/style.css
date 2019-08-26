@@ -524,6 +524,9 @@ a.video-button_cancel {
 	.video-ad img {
 	    height: 50px;
 	}
+	.video-ad {
+    padding: 10px;
+  }
 }
 @media (max-width: 380px) {
 a.video-button_look {
