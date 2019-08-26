@@ -64,7 +64,7 @@ body {
 }
 /*TOP-BAR*/
 .top-bar {
-    line-height: 12px;
+    line-height: 9px;
     background-color: #000000;
     padding: 3px 15px;
     width: 100%;
@@ -284,9 +284,6 @@ header button::before {
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
 }
-.video-bottom  {
-	cursor: pointer;
-}
 .video-bottom_play {
 	margin-right: 20px;
 }
@@ -442,7 +439,7 @@ footer {
 	height: 5%;
 }
 footer p {
-	line-height: 12px;
+	line-height: 8px;
 	padding: 5px;
 	font-size: 10px;
 	text-align: center;
@@ -517,5 +514,22 @@ a.video-button_cancel {
 footer p {
 	font-size: 8px;
 }
+}
+
+	@media (max-width: 900px) and (orientation:landscape) {
+		.main {
+	     padding-top: 0; 
+	  }
+		.video-ad {
+			display: none;
+		}
+		footer {
+	    margin-top: 37px;
+	  }
+	  a.video-button_look {
+		    height: 110px;
+		}
+	}
+
 }
 /*MEDIA QUERIES*/
