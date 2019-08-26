@@ -62,7 +62,7 @@ body {
 }
 /*TOP-BAR*/
 .top-bar {
-    line-height: 9px;
+    line-height: 11px;
     background-color: #000000;
     padding: 3px 15px;
     width: 100%;
@@ -475,8 +475,8 @@ footer a {
   }
 }
 @media (max-width: 801px) {
-	a.video-button_look {
-    height: 130px;
+a.video-button_look {
+    height: 90px;
     width: 280px;
 	}
 	.top-bar span {
