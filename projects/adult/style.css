@@ -475,7 +475,7 @@ footer a {
   }
 }
 @media (max-width: 801px) {
-a.video-button_look {
+	a.video-button_look {
     height: 90px;
     width: 280px;
 	}
@@ -528,12 +528,6 @@ a.video-button_cancel {
 .main {
     max-height: 310px;
 }
-}
-
-@media (max-height: 801px) {
-	a.video-button_look {
-	    height: 140px;
-	}
 }
 
 @media (max-height: 701px) {
