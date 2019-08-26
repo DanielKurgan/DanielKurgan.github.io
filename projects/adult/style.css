@@ -529,6 +529,9 @@ footer p {
 	  a.video-button_look {
 		    height: 110px;
 		}
+		footer p {
+				padding: 0;
+		}
 	}
 
 }
