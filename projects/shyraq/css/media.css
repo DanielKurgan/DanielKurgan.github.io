@@ -236,6 +236,9 @@
 }
 
 @media (max-width: 600px) {
+    body {
+        overflow: visible;
+    }
     .page {
         height: auto;
     }
