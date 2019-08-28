@@ -317,7 +317,7 @@ a.video-button__close {
 
 footer {
 	width: 100%;
-	height: 1px;
+	height: 0px;
 	background-color: black;
 	display: table-row;
 }
