@@ -303,11 +303,25 @@ footer img {
 	button.video-button {
 		max-width: 300px;
 	}
+	.video-line__active::after {
+		top: -4px;
+	}
 }
 
 @media (max-height: 700px) {
 	button.video-button {
-		max-width: 401px;
-		height: 111px;
+		height: 71px;
+	}
+}
+
+@media (max-height: 470px) {
+	.ad-block-content {
+		display: none;
+	}
+	button.video-button {
+		height: 51px;
+	}
+	button.video-button__close {
+		bottom: -25px;
 	}
 }
