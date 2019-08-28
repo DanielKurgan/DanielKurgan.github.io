@@ -327,6 +327,7 @@ footer {
 	height: 100%;
 }
 .ad-block__top {
+	font-size: 0;
 	display: block;
 	/* display: -webkit-box;
 	display: -ms-flexbox;
@@ -336,11 +337,11 @@ footer {
 }
 .ad-block__bottom {
 	display: block;
+	font-size: 0;
 }
 
 footer img {
-    width: 20%;
-    margin: -2.1px;
+	width: 20%;
 }
 
 @media (max-width: 500px) {
@@ -364,10 +365,14 @@ footer img {
 	}
 }
 
-@media (max-height: 470px) {
+@media (max-height: 550px) {
 	.ad-block-content {
 		display: none;
 	}
+}
+
+@media (max-height: 470px) {
+
 	a.video-button {
 		height: 51px;
 	}
