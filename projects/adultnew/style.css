@@ -51,6 +51,11 @@ body {
 	margin: 0 auto;
 }
 
+button {
+	outline: 0;
+	cursor: pointer;
+}
+
 .page {
 	height: 100%;
 	width: 100%;
