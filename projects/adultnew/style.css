@@ -90,8 +90,12 @@ header {
 	height: 1px;
 }
 .top-bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding: 24px 10px 16px 10px;
 }
 
@@ -106,6 +110,8 @@ img.years {
 }
 
 .top-bar__vidjets {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 
@@ -142,11 +148,17 @@ img.years {
 	
 }
 .video-top {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	padding: 17px 17px;
 }
 .video-rating {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 .video-title {
@@ -186,9 +198,15 @@ img.years {
 	bottom:0;
 	position: absolute;
 	background-color: #2b333f;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	padding: 8px 15px;
 }
 .video-play {
@@ -242,8 +260,12 @@ img.years {
 	width: 100%;
 	left: 50%;
 	transform: translate(-50%,-50%);
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	-webkit-transform: translate(-50%,-50%);
 	-moz-transform: translate(-50%,-50%);
 	-ms-transform: translate(-50%,-50%);
@@ -260,9 +282,15 @@ a.video-button {
 	font-size: 32px;
 	font-weight: 400;
 	text-transform: uppercase;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	position: relative;
 }
 a.video-button::before {
@@ -298,11 +326,15 @@ footer {
 	height: 100%;
 }
 .ad-block__top {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	width: 100%;
 	height: 100%;
 }
 .ad-block__bottom {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	width: 100%;
 	height: 100%;
