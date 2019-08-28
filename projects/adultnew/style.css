@@ -343,4 +343,7 @@ footer img {
 	a.video-button__close {
 		bottom: -25px;
 	}
+	.top-bar {
+		padding: 14px 10px 6px 10px;
+	}
 }
