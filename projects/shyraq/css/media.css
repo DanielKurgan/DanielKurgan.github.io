@@ -202,37 +202,37 @@
     .main-block__signboard-sign1 {
         width: 100px;
         height: 38px;
-        top: 25px;
+        top: 35px;
         left: -135px;
     }
     .main-block__signboard-sign2 {
         width: 86px;
         height: 57px;
-        top: 90px;
+        top: 100px;
         left: -120px;
     }
     .main-block__signboard-sign3 {
         width: 90px;
         height: 42px;
-        top: 198px;
+        top: 208px;
         left: -105px;
     }
     .main-block__signboard-sign4 {
         width: 111px;
         height: 51px;
-        top: 25px;
+        top: 35px;
         right: -125px;
     }
     .main-block__signboard-sign5 {
         width: 92px;
         height: 56px;
-        top: 90px;
+        top: 100px;
         right: -132px;
     }
     .main-block__signboard-sign6 {
         width: 92px;
         height: 52px;
-        top: 200px;
+        top: 210px;
         right: -135px;
     }
     footer {
@@ -279,7 +279,7 @@
     }
     .main-block img {
         max-width: 315px;
-        margin-top: -32px;
+        margin-top: -31px;
     }
     .main-block__signboard {
         margin-top: 75px;
