@@ -135,6 +135,12 @@
     .menu {
         display: none;
     }
+    button.change-language {
+        position: static;
+        font-size: 15px;
+        width: 49px;
+        height: 24px;
+    }
     .menu-mobile {
         display: -webkit-box;
         display: -ms-flexbox;
