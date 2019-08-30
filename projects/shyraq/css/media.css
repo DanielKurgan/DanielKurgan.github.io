@@ -176,6 +176,7 @@
         display: none;
         padding: 0 20px;
         background-color: #5d6c83;
+        background: #5d6c83;
         margin-top: 32px;
         width: 100%;
         /*display: flex;*/
@@ -189,6 +190,8 @@
         padding-bottom: 20px;
     }
     .menu-mobile_panel a {
+        background-color: #5d6c83;
+        background: #5d6c83;
         font-size: 18px;
         font-weight: 400;
         text-transform: uppercase;
