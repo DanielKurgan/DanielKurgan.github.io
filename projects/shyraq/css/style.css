@@ -153,6 +153,9 @@ span.main-block__text-subtitle {
 	width: 100%;
 }
 .main-block__signboard-sign {
+ 	display: flex;
+ 	flex-direction: column;
+ 	justify-content: center;
 	position: absolute;
 	top:0;
 	background-color: #5d6c83;
