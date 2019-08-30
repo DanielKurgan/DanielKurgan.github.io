@@ -4,7 +4,7 @@ $(function(){
 	// Когда класс class появляется в области видимости экрана срабатывает нужный нам код.
 	$('.contacts .title-block').on('appear', function(event, $all_appeared_elements) {
 		$(".typed-contacts").typed({
-			strings: ["Контакты"],
+			strings: ["Contacts"],
 			// Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
 			stringsElement: null,
 			// typing speed
@@ -43,7 +43,7 @@ $(function(){
 	// Когда класс class появляется в области видимости экрана срабатывает нужный нам код.
 	$('.projects .title-block').on('appear', function(event, $all_appeared_elements) {
 		$(".typed-projects").typed({
-			strings: ["Проекты"],
+			strings: ["Projects"],
 			// Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
 			stringsElement: null,
 			// typing speed
@@ -82,7 +82,7 @@ $('.skill-block .title-block').appear();
 	// Когда класс class появляется в области видимости экрана срабатывает нужный нам код.
 	$('.skill-block .title-block').on('appear', function(event, $all_appeared_elements) {
 		$(".typed-skillblock").typed({
-			strings: ["Навыки"],
+			strings: ["Skills"],
 			// Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
 			stringsElement: null,
 			// typing speed
@@ -121,7 +121,7 @@ $('.comments .title-block').appear();
 	// Когда класс class появляется в области видимости экрана срабатывает нужный нам код.
 	$('.comments .title-block').on('appear', function(event, $all_appeared_elements) {
 		$(".typed-comments").typed({
-			strings: ["Отзывы"],
+			strings: ["Comments"],
 			// Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
 			stringsElement: null,
 			// typing speed
