@@ -58,6 +58,9 @@
         &-block 
             flex-wrap: wrap
         
+    .header-top__menu a
+        color: #333333
+        font-size: 12px
 
 @media (max-width: 1005px) 
     footer .container
@@ -91,6 +94,12 @@
     .address-block 
         align-items: center
 
+@media (max-width: 960px)
+    .store-catalog__directory__bunch-card
+        width: 28%
+    .bunch-card__name
+        font-size: 12px
+
 @media (max-width: 950px) 
     .makers .slick-next
         top: 70%
@@ -99,11 +108,8 @@
         top: 70%
 
 @media (max-width: 925px) 
-    .header-top__menu .nav-part
-        flex-direction: column
-
-    .header-top__menu .nav-part hr 
-        display: none
+    .dropdown-content
+        top: 37px
 
     .header-top__menu a 
         padding: 5px 6px
@@ -112,8 +118,94 @@
         height: 79px
 
 @media (max-width: 880px)
-    .menu-visible
+    .mobile 
+        display: flex !important
+
+    .header-top__line 
+        .header-top__anchors 
+            display: none
+            ul
+                flex-direction: column
+        .hamburger
+            display: block
+            background: white
+            .hamburger-inner
+                background: black
+                &::after
+                    background: black
+                &::before
+                    background: black
+        .dropdown-content
+            top: 38px
+            background-color: #191919
+            a
+                color: white
+                border: 0
+                width: 100%
+                padding: 10px 16px
+                border-bottom: 1px solid white
+        .menu-visible
+            z-index: 10
+            display: flex
+            background-color: #191919
+            max-width: 260px
+            top: 104px
+            left: 70px
+
+    .header-top__menu
+        position: relative
+        nav
+            z-index: 5
+            opacity: 0
+            position: absolute
+            top: 74px
+            max-width: 852px
+        nav ul
+            flex-wrap: wrap
+            width: 100%
+        .container
+            padding: 0
+        .hamburger
+            margin-left: 15px
+            .dropdown-content
+                top: 30px
+
+    .dropdown-content
+        top: 28px
+        width: 100%
+        max-width: 850px
+    .header-top__menu nav ul li::after
+        display: none
+
+    header .hamburger
+        background-color: black
+        margin-top: 15px
+    header .title
+        justify-content: center
+        font-weight: 700
+        font-size: 24px
+        margin-top: -42px
+        padding-bottom: 15px
+        margin-bottom: 0
+
+    .store-menu__content 
+        z-index: -1
+        position: absolute
+        opacity: 0 
+        ul
+            width: 100%
+    .menu-visible 
+        position: absolute
+        opacity: 1 !important
+        z-index: 1
         top: 44px
+        width: 100%
+        max-width: 860px
+        background-color: white
+
+    .store .dropdown:hover .dropdown-content
+        display: block
+        max-width: 860px
         width: 100%
 
     .header-top__bar .container
@@ -126,26 +218,18 @@
     .header-top__contacts 
         padding: 0 10px
 
-    .header-top__anchors a 
-        margin-right: 19px
-
-    .header-top__line .container 
-        flex-direction: column
-        align-items: center
+    .header-top__anchors
+        nav
+            max-width: 260px
+            width: 100%
+        a 
+            margin-right: 19px
 
     .store .container 
         flex-direction: column
 
     .store-menu__hamburger 
         margin-right: 0
-
-    #menu-featured-categories button 
-        width: 212px
-        height: 43px
-
-    #menu-featured-categories ul.visible 
-        position: absolute
-        z-index: 5
 
     .hamburger-inner::before 
         top: -5.5px
@@ -154,31 +238,20 @@
         width: 100%
         height: 44px
 
-    #menu-featured-categories button 
-        width: 100%
-        height: 33px
-
-    #menu-featured-categories ul.visible 
-        position: static
-
     ul.sub-menu a 
         line-height: 32px
         width: 100%
         height: 32px
 
     .bunch-card__image 
-        max-width: 245px
+        max-width: 100%
         width: 100%
         height: 210px
-
-    .store-catalog__directory__bunch-card 
-        width: 245px
 
     .store-catalog__directory__bunch 
         grid-template-columns: repeat(auto-fit, 245px)
         &-card 
-            width: 100%
-            max-width: 245px
+            width: 31%
         
         &-card 
             justify-self: center
@@ -194,7 +267,10 @@
     .news-block 
         margin-right: 0
         margin-bottom: 15px
-
+    .title
+        text-align: center
+    .store-slider
+        margin: 0 auto
 @media (max-width: 801px) 
     .store-catalog__directory__bunch
         grid-template-columns: 1fr 1fr
@@ -208,6 +284,8 @@
 @media (max-width: 701px) 
     .main-slider__slide
         background-position: 75%
+    .store-catalog__directory__bunch-card
+        width: 30%
 
 @media (max-width: 601px) 
     .main-slider
@@ -225,6 +303,10 @@
     .store-catalog .slick-prev 
         left: 210px
 
+@media (max-width: 580px)
+    .store-catalog__directory__bunch-card
+        width: 46%
+
 @media (max-width: 485px) 
     .header-top__call-gager
         margin-top: 10px
@@ -236,6 +318,10 @@
         grid-template-columns: 1fr
 
 @media (max-width: 431px) 
+    .header-top__line .menu-visible
+        top: 84px
+        background-color: #191919
+        max-width: 180px
     .slick-prev
         left: -5px
 
@@ -250,7 +336,15 @@
     .header-top__line .container 
         padding: 8px 10px
 
+@media (max-width: 395px)
+    .store-catalog__directory__bunch-card
+        width: 100%
+
 @media (max-width: 360px) 
+    .header-top__menu .hamburger
+        margin-left: 10px
+    header .title
+        font-size: 20px
     .header-top__bar .container
         flex-direction: column
 
@@ -265,4 +359,5 @@
 
     .hamburger-inner::before 
         top: -5px
-
+    .store .dropbtn 
+        padding: 10px
