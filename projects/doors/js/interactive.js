@@ -247,3 +247,35 @@ $(".bunch-card8").hover(
   $(".bunch-name8").css("background-color", "#191919");
 });
 
+// POPUPS
+$('.header-top__call-gager').click(function() { // Вызываем функцию по нажатию на кнопку 
+  $(".fancybox-ruler").show(); // Открываем окно
+}) 
+$('a.authorization').click(function() { // Вызываем функцию по нажатию на кнопку 
+  $(".fancybox-login").show(); // Открываем окно
+}) 
+$('.fancybox-close-small').click(function() { // Обрабатываем клик по заднему фону
+  $('.fancybox-ruler').hide(); // Скрываем затемнённый задний фон и основное всплывающее окно
+  $('.fancybox-login').hide(); // Скрываем затемнённый задний фон и основное всплывающее окно
+})
+
+// BLOCKS HEIGHT
+$(document).ready(function(){
+  $.fn.equivalent = function (){
+          //запишем значение jQuery выборки к которой будет применена эта функция в локальную переменную $blocks
+      var $blocks = $(this),
+          //примем за максимальную высоту - высоту первого блока в выборке и запишем ее в переменную maxH
+          maxH    = $blocks.eq(0).height(); 
+
+      //делаем сравнение высоты каждого блока с максимальной
+      $blocks.each(function(){
+          maxH = ( $(this).height() > maxH ) ? $(this).height() : maxH;
+      });
+
+      //устанавливаем найденное максимальное значение высоты для каждого блока jQuery выборки
+      $blocks.height(maxH); 
+  }
+
+  //применяем нашу функцию в элементам jQuery выборки - $('.nav')
+  $('.store-slide').equivalent(); 
+});

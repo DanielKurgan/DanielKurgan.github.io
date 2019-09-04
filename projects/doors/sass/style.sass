@@ -31,15 +31,14 @@ $var14: #0a0a0a
 	&:-ms-input-placeholder
 		color: $var1
 		opacity: 1
+
 .hidden
 	visibility: hidden
-
 button
 	outline: 0
 
 .mobile
 	display: none !important
-
 a
 	text-decoration: none
 	&.header-top__like
@@ -60,10 +59,8 @@ a
 		i
 			color: white
 			font-size: 29px
-
 li
 	list-style: none
-
 body
 	display: none
 	font-size: 16px
@@ -106,7 +103,6 @@ body
 		padding: 0px 10px
 		font-size: 12px
 		font-weight: 400
-
 header
 	.container
 
@@ -184,15 +180,15 @@ form.header-top__search
 .header-top__bar-first
 	display: flex
 	align-items: center
-	justify-content: space-between
-	width: 85%
+	justify-content: space-around
+	width: 80%
 	flex-wrap:wrap
 
 .header-top__bar-second
 	display: flex
 	align-items: center
 	justify-content: space-between
-	width: 15%
+	width: 20%
 	flex-wrap:wrap
 
 .header-top__contacts
@@ -422,7 +418,6 @@ form.header-top__search
 		&:before
 			opacity: 1
 			content: url("../img/main-slider_left.png")
-
 	.slick-next
 		right: 0
 		top: -10%
@@ -634,122 +629,126 @@ form.header-top__search
 	display: block
 
 .store-slider
-	height: auto
-.store-slide
-	margin-left: 10px
-	margin-right: 18px
-	padding: 0 13px
-	position: relative
-	width: 95% !important
-	height: auto
-	display: flex !important
-	flex-direction: column
-	align-items: center
-	border-radius: 3px
-	border: 1px solid $var5
-	transition: 0.2s
-	-webkit-transition: 0.2s
-	-moz-transition: 0.2s
-	-ms-transition: 0.2s
-	-o-transition: 0.2s
-	&:hover
-		box-shadow: 5px 9px 18px rgba(21, 21, 21, 0.2)
-	&__title
-		margin-bottom: 20px
-		font-size: 14px
-		color: $var1
-		line-height: 18px
-		text-align: center
-		max-width: 190px
-	&__prices
-		margin-bottom: 27px
-		display: flex
+	height: 100%
+	.store-slide
+		margin-left: 10px
+		margin-right: 18px
+		padding: 0 13px
+		position: relative
+		width: 95% !important
+		display: flex !important
 		justify-content: space-between
-		max-width: 154px
-		width: 100%
-	&__price
-		font-size: 18px
-		color: $var11
-		font-weight: 900
-		text-align: center
-		width: 100%
-	&__prev-price
-		color: $var7
-		text-decoration: line-through
-	&__buttons
-		display: flex
-		justify-content: space-between
-		margin-bottom: 15px
-	&__button
-		cursor: pointer
-		border-radius: 3px
-		background-color: $var10
-		font-size: 14px
-		color: $var6
-		line-height: 18px
-		height: 38px
-		border: 0
-		transition: 0.1s
-		-webkit-transition: 0.1s
-		-moz-transition: 0.1s
-		-ms-transition: 0.1s
-		-o-transition: 0.1s
-		&:hover
-			background-color: $var12
-		&-buy
-			width: 97px
-			margin-right: 8px
-		&-oneclick
-			width: 137px
-		&-like
-			top: 11px
-			right: 11px
-			position: absolute
-			width: 20px
-			height: 18px
-			background-image: url("../img/store-slider_like.png")
-			background-color: transparent
-			background-repeat: no-repeat
-			background-size: 100%
-			border: 0
-			cursor: pointer
-	&__image
-		width: 270px
-		height: 266px
-		background-repeat: no-repeat
-		background-size: auto
-		background-position: center
-	&1
-		background-image: url("../img/store-slider1.png")
-	&2
-		background-image: url("../img/store-slider2.png")
-	&3
-		background-image: url("../img/store-slider3.png")
-	&__filters
-		position: absolute
-		left: -9px
-		top: 10px
-	&__filter
-		border: 0
-		width: 59px
-		height: 24px
-		border-radius: 10px
-		background-color: $var3
-		font-size: 12px
-		font-weight: 700
-		line-height: 24px
-		display: flex
 		flex-direction: column
 		align-items: center
-		margin-bottom: 3px
-		color: white
-		cursor: pointer
-		&-hit
+		border-radius: 3px
+		border: 1px solid $var5
+		transition: 0.2s
+		-webkit-transition: 0.2s
+		-moz-transition: 0.2s
+		-ms-transition: 0.2s
+		-o-transition: 0.2s
+		.store-slide__bottom
+			display: flex
+			flex-direction: column
+			align-items: center
+		&:hover
+			box-shadow: 5px 9px 18px rgba(21, 21, 21, 0.2)
+		&__title
+			margin-bottom: 20px
+			font-size: 14px
+			color: $var1
+			line-height: 18px
+			text-align: center
+			max-width: 190px
+		&__prices
+			margin-bottom: 27px
+			display: flex
+			justify-content: space-between
+			max-width: 154px
+			width: 100%
+		&__price
+			font-size: 18px
+			color: $var11
+			font-weight: 900
+			text-align: center
+			width: 100%
+		&__prev-price
+			color: $var7
+			text-decoration: line-through
+		&__buttons
+			display: flex
+			justify-content: space-between
+			margin-bottom: 15px
+		&__button
+			cursor: pointer
+			border-radius: 3px
+			background-color: $var10
+			font-size: 14px
+			color: $var6
+			line-height: 18px
+			height: 38px
+			border: 0
+			transition: 0.1s
+			-webkit-transition: 0.1s
+			-moz-transition: 0.1s
+			-ms-transition: 0.1s
+			-o-transition: 0.1s
+			&:hover
+				background-color: $var12
+			&-buy
+				width: 97px
+				margin-right: 8px
+			&-oneclick
+				width: 137px
+			&-like
+				top: 11px
+				right: 11px
+				position: absolute
+				width: 20px
+				height: 18px
+				background-image: url("../img/store-slider_like.png")
+				background-color: transparent
+				background-repeat: no-repeat
+				background-size: 100%
+				border: 0
+				cursor: pointer
+		&__image
+			width: 270px
+			height: 266px
+			background-repeat: no-repeat
+			background-size: auto
+			background-position: center
+		&1
+			background-image: url("../img/store-slider1.png")
+		&2
+			background-image: url("../img/store-slider2.png")
+		&3
+			background-image: url("../img/store-slider3.png")
+		&__filters
+			position: absolute
+			left: -9px
+			top: 10px
+		&__filter
+			border: 0
+			width: 59px
+			height: 24px
+			border-radius: 10px
 			background-color: $var3
-		&-new
-			background-color: $var13
-		&-discount
-			background-color: $var12
+			font-size: 12px
+			font-weight: 700
+			line-height: 24px
+			display: flex
+			flex-direction: column
+			align-items: center
+			margin-bottom: 3px
+			color: white
+			cursor: pointer
+			&-hit
+				background-color: $var3
+			&-new
+				background-color: $var13
+			&-discount
+				background-color: $var12
 
 .makers .container
 	position: relative
@@ -807,8 +806,10 @@ form.header-top__search
 .news-wrapper
 	display: flex
 	justify-content: space-between
+	overflow: hidden
 
 .news-block
+	height: auto
 	max-width: 374px
 	width: 100%
 	margin-right: 8px
@@ -838,6 +839,7 @@ form.header-top__search
 		display: flex
 		flex-direction: column
 		padding: 21px 15px
+		height: 100%
 
 .news .title
 	text-align: center
@@ -885,14 +887,12 @@ form.header-top__search
 		font-size: 16px
 		color: $var1
 		line-height: 18px
-
 	img
 		width: 70px
 		height: 70px
 	&-bold
 		font-family: "Ubuntu Bold"
 		font-weight: 700
-
 footer
 	background-color: $var14
 	color: $var7
@@ -924,7 +924,6 @@ footer
 	ul
 		font-size: 16px
 		line-height: 25px
-
 	li a
 		font-size: 14px
 		color: $var7
@@ -983,3 +982,116 @@ footer
 	display: flex
 	flex-direction: column
 	width: 100%
+
+// FANCYBOX
+
+.fancybox-ruler
+	display: none
+
+.fancybox-active.compensate-for-scrollbar
+    overflow-x: hidden
+    overflow-y: auto
+.fancybox-iosfix
+    position: relative
+.fancybox-stage .fancybox-content
+    padding: 30px
+    max-height: 100%
+    overflow: auto
+    width: 450px
+
+.fancybox-container h3
+    text-align: center
+    font-size: 24px
+    line-height: 1
+    color: #333333
+    margin-bottom: 20px
+    font-weight: 500
+
+.fancybox-container input:not([type="submit"]):not([type="button"]):not([type="hidden"]), .fancybox-container textarea
+    border: 1px solid #e8e8e8
+    background: #fff
+.fancybox-container input:not([type="submit"]):not([type="button"]):not([type="hidden"]), .fancybox-container textarea
+    width: 100%
+    height: 34px
+    margin-bottom: 20px
+    border: 1px solid #d2d2d2
+    background: #fff
+    padding-left: 10px
+    font-size: 13px
+.fancybox-container .infofield
+    float: left
+    font-size: 14px
+    line-height: 30px
+    color: #1c1c1c
+    display: none
+.btn
+    font-size: 13px
+    background: #f24841
+    text-transform: uppercase
+    color: #fff
+    font-weight: 600
+    border: 0
+    padding: 10px 20px
+    display: inline-block
+
+.fancybox-container textarea
+    height: 90px
+    padding-top: 10px
+    resize: none
+
+.fancybox-container .button_privacy
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.fancybox-container .button_privacy .privacy_field
+    font-size: 12px
+    font-weight: 400
+    margin-left: 20px
+    margin-top: 0
+
+.fancybox-container .button_privacy a
+    font-size: 12px
+    font-weight: 400
+    text-decoration: underline
+    color: #d03e3e
+
+.fancybox-container .required_field
+    display: none
+
+
+// FANCYBOX LOGIN
+.fancybox-login
+	display: none
+	
+#form_login .block__title
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 15px
+
+.rega
+	margin-top: -10px
+	display: flex
+	justify-content: space-between
+
+a.registration-link
+	line-height: 25px !important
+
+.moda 
+	a.arrow-link.black
+		color: #222222
+		font-size: 14px
+		border-bottom: 1px solid
+		display: inline-block
+		margin-left: 10px
+		font-weight: 500
+		float: right
+		line-height: 1em
+	h4
+		margin: 0
+		color: #222222
+		font-size: 14px
+		font-weight: 500
+		display: inline-block

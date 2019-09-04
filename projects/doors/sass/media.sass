@@ -127,6 +127,7 @@
         height: 79px
 
 @media (max-width: 880px)
+    
     .desktop
         display: none
 
@@ -136,9 +137,12 @@
     .header-top__bar-first
         width: 100%
 
+    .header-top__bar-first
+        justify-content: space-between
+
     .header-top__bar-second
         width: 100%
-            
+
     .main-slider 
         z-index: 3 !important
         &__slide 
@@ -309,6 +313,7 @@
         text-align: center
     .store-slider
         margin: 0 auto
+
 @media (max-width: 801px)   
     .store-catalog__directory__bunch
         grid-template-columns: 1fr 1fr
@@ -320,6 +325,10 @@
         margin: 0 auto
 
 @media (max-width: 701px) 
+    .fancybox-stage .fancybox-content
+        width: 90%
+        max-width: 90%
+
     .main-slider__slide
         background-position: 75%
     .store-catalog__directory__bunch-card

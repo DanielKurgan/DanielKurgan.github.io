@@ -186,6 +186,11 @@
   .header-top__bar-first {
     width: 100%;
   }
+  .header-top__bar-first {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
   .header-top__bar-second {
     width: 100%;
   }
@@ -419,6 +424,10 @@
 }
 
 @media (max-width: 701px) {
+  .fancybox-stage .fancybox-content {
+    width: 90%;
+    max-width: 90%;
+  }
   .main-slider__slide {
     background-position: 75%;
   }
