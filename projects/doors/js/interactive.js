@@ -292,60 +292,13 @@ $(document).ready(function(){
   $('.store-slide').equivalent(); 
 });
 
-$(".like1").click(function(){
-  $(".like1").css("backgroundImage", "url('../img/heartActive.svg')");
+$(".store-slide__button-like").click(function(like){
+  $(like.target).css("backgroundImage", "url('../img/heartActive.svg')");
 })
-$(".like2").click(function(){
-  $(".like2").css("backgroundImage", "url('../img/heartActive.svg')");
-})
-$(".like3").click(function(){
-  $(".like3").css("backgroundImage", "url('../img/heartActive.svg')");
-})
-$(".like4").click(function(){
-  $(".like4").css("backgroundImage", "url('../img/heartActive.svg')");
-})
-$(".like5").click(function(){
-  $(".like5").css("backgroundImage", "url('../img/heartActive.svg')");
-})
-$(".like6").click(function(){
-  $(".like6").css("backgroundImage", "url('../img/heartActive.svg')");
-})
-$(".like7").click(function(){
-  $(".like7").css("backgroundImage", "url('../img/heartActive.svg')");
-})
-$(".like8").click(function(){
-  $(".like8").css("backgroundImage", "url('../img/heartActive.svg')");
-})
-$(".like9").click(function(){
-  $(".like9").css("backgroundImage", "url('../img/heartActive.svg')");
-})
-$(".like10").click(function(){
-  $(".like10").css("backgroundImage", "url('../img/heartActive.svg')");
-})
-$(".like11").click(function(){
-  $(".like11").css("backgroundImage", "url('../img/heartActive.svg')");
-})
-$(".like12").click(function(){
-  $(".like12").css("backgroundImage", "url('../img/heartActive.svg')");
-})
-$(".like13").click(function(){
-  $(".like13").css("backgroundImage", "url('../img/heartActive.svg')");
-})
-$(".like14").click(function(){
-  $(".like14").css("backgroundImage", "url('../img/heartActive.svg')");
-})
-$(".like15").click(function(){
-  $(".like15").css("backgroundImage", "url('../img/heartActive.svg')");
-})
-$(".like16").click(function(){
-  $(".like16").css("backgroundImage", "url('../img/heartActive.svg')");
-})
-$(".like17").click(function(){
-  $(".like17").css("backgroundImage", "url('../img/heartActive.svg')");
-})
-$(".like18").click(function(){
-  $(".like18").css("backgroundImage", "url('../img/heartActive.svg')");
-})
-$(".like19").click(function(){
-  $(".like19").css("backgroundImage", "url('../img/heartActive.svg')");
-})
+
+$( "a" ).click(function(e) {
+  if($(e.target).hasClass("active-link")) {
+      event.preventDefault();
+      $(e.target).removeClass("active-link");
+  } else {}
+});

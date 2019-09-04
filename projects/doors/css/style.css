@@ -1304,7 +1304,7 @@ footer .container {
           justify-content: space-between;
 }
 
-.footer-copyright__block {
+footer .footer-copyright__block {
   padding-right: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1319,12 +1319,12 @@ footer .container {
   width: auto;
 }
 
-.footer-copyright__block img {
+footer .footer-copyright__block img {
   width: 165px;
   height: 97px;
 }
 
-.footer-text {
+footer .footer-copyright__block .footer-text {
   font-size: 12px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1335,7 +1335,9 @@ footer .container {
           flex-direction: column;
 }
 
-.footer-links {
+footer .footer-links {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1345,26 +1347,27 @@ footer .container {
   padding: 0 10px;
 }
 
-.footer-links ul {
+footer .footer-links ul {
   font-size: 16px;
   line-height: 25px;
+  padding: 0 10px;
 }
 
-.footer-links li a {
+footer .footer-links li a {
   font-size: 14px;
   color: #999999;
 }
 
-.footer-links li a:hover {
+footer .footer-links li a:hover {
   opacity: 0.8;
 }
 
-.footer-ul {
+footer .footer-ul {
   display: block;
   margin-bottom: 10px;
 }
 
-.footer-icons {
+footer .footer-icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1374,15 +1377,15 @@ footer .container {
   width: 100%;
 }
 
-.footer-icons a {
+footer .footer-icons a {
   background-size: 100%;
 }
 
-.footer-icons a i:hover {
+footer .footer-icons a i:hover {
   opacity: 0.8;
 }
 
-.footer-contacts {
+footer .footer-contacts {
   padding-left: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1395,16 +1398,16 @@ footer .container {
   width: auto;
 }
 
-.footer-contacts a {
+footer .footer-contacts a {
   color: #999999;
   display: block;
 }
 
-.footer-contacts a:hover {
+footer .footer-contacts a:hover {
   opacity: 0.8;
 }
 
-.footer-contacts .footer-number::before {
+footer .footer-contacts .footer-number::before {
   font-family: FontAwesome;
   content: "\f095";
   display: inline-block;
@@ -1413,7 +1416,7 @@ footer .container {
   color: white;
 }
 
-.footer-contacts .footer-email::before {
+footer .footer-contacts .footer-email::before {
   font-family: FontAwesome;
   content: "\f0e0";
   display: inline-block;
@@ -1422,12 +1425,12 @@ footer .container {
   color: white;
 }
 
-.address-block__title {
+footer .address-block__title {
   font-size: 16px;
   margin-bottom: 5px;
 }
 
-.address-block {
+footer .address-block {
   margin-top: 30px;
   margin-bottom: 42px;
   font-size: 14px;
@@ -1597,7 +1600,6 @@ footer .container {
 .fancybox-login .moda a.arrow-link.black {
   color: #222222;
   font-size: 14px;
-  border-bottom: 1px solid;
   display: inline-block;
   margin-left: 10px;
   font-weight: 500;
