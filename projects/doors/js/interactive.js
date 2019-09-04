@@ -21,9 +21,10 @@ $hamburger2.on("click", function(e) {
   // Do something else, like open/close menu
 });
 
-var $hamburger3 = $(".store .hamburger");
+var $hamburger3 = $(".store-menu__hamburger-opener");
+var $hamburger4 = $(".store .hamburger");
 $hamburger3.on("click", function(e) {
-  $hamburger3.toggleClass("is-active");
+  $hamburger4.toggleClass("is-active");
   $(".store .hamburger-box").toggleClass("hamburger-height");
   // Do something else, like open/close menu
 });
@@ -53,22 +54,88 @@ $(document).ready(function() {
 });
 
 $('.store-slider1').slick({
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     arrows: true,
-    variableWidth: true,
+    responsive: [
+      {
+        breakpoint: 1170,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 845,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 580,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      },
+    ]
   });
 $('.store-slider2').slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    arrows: true,
-    variableWidth: true,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  arrows: true,
+  responsive: [
+    {
+      breakpoint: 1170,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+      }
+    },
+    {
+      breakpoint: 845,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      }
+    },
+    {
+      breakpoint: 580,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      }
+    },
+  ]
 });
 $('.store-slider3').slick({
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     arrows: true,
-    variableWidth: true,
+    responsive: [
+      {
+        breakpoint: 1170,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 845,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 580,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      },
+    ]
 });
 
 $('.makers-slider').slick({
@@ -110,7 +177,7 @@ $(".header-top__menu .hamburger").click(function(){
     $('.header-top__menu nav').toggleClass('menu-visible');
 });
 
-$(".store .hamburger").click(function(){
+$(".store-menu__hamburger-opener").click(function(){
     $('.store-menu__content').toggleClass('menu-visible');
 });
 
