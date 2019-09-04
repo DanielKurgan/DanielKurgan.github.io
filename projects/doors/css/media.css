@@ -32,14 +32,11 @@
     left: 510px;
   }
   .news-block__img {
-    width: 274px;
+    width: 305px;
     height: 186px;
   }
   .news-block {
-    max-width: 274px;
-  }
-  .news-block__content {
-    padding: 5px 15px;
+    max-width: 305px;
   }
   .news-wrapper {
     -ms-flex-pack: distribute;
@@ -99,6 +96,7 @@
   }
   .footer-text {
     margin-top: 10px;
+    margin-bottom: 10px;
   }
   .footer-links {
     width: 100%;
@@ -175,6 +173,20 @@
 }
 
 @media (max-width: 880px) {
+  .news-block {
+    max-width: 505px;
+  }
+  .news-block__img {
+    width: 505px;
+    height: 286px;
+  }
+  .dropbtn {
+    padding: 15px !important;
+  }
+  form.header-top__search {
+    position: relative;
+    max-width: 70%;
+  }
   .desktop {
     display: none;
   }
@@ -452,6 +464,19 @@
 }
 
 @media (max-width: 580px) {
+  .store-slide:hover {
+    -webkit-box-shadow: 2px 4px 24px rgba(21, 21, 21, 0.2) !important;
+            box-shadow: 2px 4px 24px rgba(21, 21, 21, 0.2) !important;
+  }
+  .header-top__bin {
+    margin: 10px 0;
+  }
+  form.header-top__search {
+    margin-top: 0px;
+  }
+  .header-top__contacts {
+    margin-bottom: 0;
+  }
   .store-catalog__directory__bunch-card {
     width: 46%;
   }
@@ -471,10 +496,7 @@
             flex-direction: column;
   }
   .header-top__bar img {
-    margin-bottom: 10px;
-  }
-  .header-top__contacts {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
   .header-top__bar-second {
     margin-top: 10px;
@@ -482,6 +504,10 @@
 }
 
 @media (max-width: 485px) {
+  .news-block__img {
+    width: 505px;
+    height: 199px;
+  }
   .main .slick-prev {
     left: 21px;
   }
@@ -497,6 +523,25 @@
   .store-catalog__directory__bunch {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 450px) {
+  .fancybox-container .button_privacy {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .fancybox-ruler .btn {
+    width: 100%;
+    margin-bottom: 11px;
+  }
+  .fancybox-container .button_privacy .privacy_field {
+    margin-left: 0;
   }
 }
 
@@ -535,6 +580,9 @@
   }
   .header-top__menu nav {
     top: 64px;
+  }
+  header .title {
+    margin-left: 40px;
   }
 }
 

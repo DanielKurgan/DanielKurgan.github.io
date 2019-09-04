@@ -15,19 +15,28 @@ $hamburger1.on("click", function(e) {
 });
 
 var $hamburger2 = $(".header-top__menu .hamburger");
+var $hamburger22 = $(".navigation-title");
 $hamburger2.on("click", function(e) {
   $hamburger2.toggleClass("is-active");
   $(".header-top__menu .hamburger-box").toggleClass("hamburger-height");
   // Do something else, like open/close menu
 });
-
-var $hamburger3 = $(".store-menu__hamburger-opener");
-var $hamburger4 = $(".store .hamburger");
-$hamburger3.on("click", function(e) {
-  $hamburger4.toggleClass("is-active");
-  $(".store .hamburger-box").toggleClass("hamburger-height");
+$hamburger22.on("click", function(e) {
+  $hamburger2.toggleClass("is-active");
+  $(".header-top__menu .hamburger-box").toggleClass("hamburger-height");
   // Do something else, like open/close menu
 });
+
+if(document.documentElement.clientWidth < 881) {
+  var $hamburger3 = $(".store-menu__hamburger-opener");
+  var $hamburger4 = $(".store .hamburger");
+  $hamburger3.on("click", function(e) {
+    $hamburger4.toggleClass("is-active");
+    $(".store .hamburger-box").toggleClass("hamburger-height");
+    // Do something else, like open/close menu
+  });
+
+}
 
 $(document).ready(function() {
     $('.mihc1').click(function() {
@@ -176,6 +185,9 @@ $(".header-top__line .container .hamburger").click(function(){
 $(".header-top__menu .hamburger").click(function(){
     $('.header-top__menu nav').toggleClass('menu-visible');
 });
+$(".navigation-title").click(function(){
+    $('.header-top__menu nav').toggleClass('menu-visible');
+});
 
 $(".store-menu__hamburger-opener").click(function(){
     $('.store-menu__content').toggleClass('menu-visible');
@@ -279,3 +291,61 @@ $(document).ready(function(){
   //применяем нашу функцию в элементам jQuery выборки - $('.nav')
   $('.store-slide').equivalent(); 
 });
+
+$(".like1").click(function(){
+  $(".like1").css("backgroundImage", "url('../img/heartActive.svg')");
+})
+$(".like2").click(function(){
+  $(".like2").css("backgroundImage", "url('../img/heartActive.svg')");
+})
+$(".like3").click(function(){
+  $(".like3").css("backgroundImage", "url('../img/heartActive.svg')");
+})
+$(".like4").click(function(){
+  $(".like4").css("backgroundImage", "url('../img/heartActive.svg')");
+})
+$(".like5").click(function(){
+  $(".like5").css("backgroundImage", "url('../img/heartActive.svg')");
+})
+$(".like6").click(function(){
+  $(".like6").css("backgroundImage", "url('../img/heartActive.svg')");
+})
+$(".like7").click(function(){
+  $(".like7").css("backgroundImage", "url('../img/heartActive.svg')");
+})
+$(".like8").click(function(){
+  $(".like8").css("backgroundImage", "url('../img/heartActive.svg')");
+})
+$(".like9").click(function(){
+  $(".like9").css("backgroundImage", "url('../img/heartActive.svg')");
+})
+$(".like10").click(function(){
+  $(".like10").css("backgroundImage", "url('../img/heartActive.svg')");
+})
+$(".like11").click(function(){
+  $(".like11").css("backgroundImage", "url('../img/heartActive.svg')");
+})
+$(".like12").click(function(){
+  $(".like12").css("backgroundImage", "url('../img/heartActive.svg')");
+})
+$(".like13").click(function(){
+  $(".like13").css("backgroundImage", "url('../img/heartActive.svg')");
+})
+$(".like14").click(function(){
+  $(".like14").css("backgroundImage", "url('../img/heartActive.svg')");
+})
+$(".like15").click(function(){
+  $(".like15").css("backgroundImage", "url('../img/heartActive.svg')");
+})
+$(".like16").click(function(){
+  $(".like16").css("backgroundImage", "url('../img/heartActive.svg')");
+})
+$(".like17").click(function(){
+  $(".like17").css("backgroundImage", "url('../img/heartActive.svg')");
+})
+$(".like18").click(function(){
+  $(".like18").css("backgroundImage", "url('../img/heartActive.svg')");
+})
+$(".like19").click(function(){
+  $(".like19").css("backgroundImage", "url('../img/heartActive.svg')");
+})
