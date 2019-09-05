@@ -989,12 +989,18 @@ form.header-top__search button, form.header-top__search input {
   position: absolute;
   width: 20px;
   height: 18px;
-  background-image: url("../img/heart.svg");
+  color: black;
   background-color: transparent;
   background-repeat: no-repeat;
   background-size: 100%;
   border: 0;
   cursor: pointer;
+}
+
+.store-slider .store-slide__button-like::before {
+  font-size: 19px;
+  font-family: "FontAwesome";
+  content: "\f08a";
 }
 
 .store-slider .store-slide__image {

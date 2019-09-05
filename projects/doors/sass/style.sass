@@ -710,12 +710,17 @@ form.header-top__search
 				position: absolute
 				width: 20px
 				height: 18px
-				background-image: url("../img/heart.svg")
+				color: black
+				// background-image: url("../img/heart.svg")
 				background-color: transparent
 				background-repeat: no-repeat
 				background-size: 100%
 				border: 0
 				cursor: pointer
+				&::before
+					font-size: 19px
+					font-family: "FontAwesome"
+					content: "\f08a"
 		&__image
 			width: 270px
 			height: 266px

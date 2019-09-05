@@ -293,8 +293,8 @@ $(document).ready(function(){
 });
 
 $(".store-slide__button-like").click(function(like){
-  $(like.target).css("backgroundImage", "url('../img/heartActive.svg')");
-})
+  $(like.target).css("color", "#eb4141");
+});
 
 $( "a" ).click(function(e) {
   if($(e.target).hasClass("active-link")) {
