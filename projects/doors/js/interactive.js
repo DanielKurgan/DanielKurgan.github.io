@@ -272,33 +272,47 @@ $('.fancybox-close-small').click(function() { // Обрабатываем кли
 })
 
 // BLOCKS HEIGHT
-$(document).ready(function(){
-  $.fn.equivalent = function (){
-          //запишем значение jQuery выборки к которой будет применена эта функция в локальную переменную $blocks
-      var $blocks = $(this),
-          //примем за максимальную высоту - высоту первого блока в выборке и запишем ее в переменную maxH
-          maxH    = $blocks.eq(0).height(); 
+$(document).ready(heightBlock);
+$(window).on('resize',heightBlock);
 
-      //делаем сравнение высоты каждого блока с максимальной
-      $blocks.each(function(){
-          maxH = ( $(this).height() > maxH ) ? $(this).height() : maxH;
-      });
+function heightBlock() {
 
-      //устанавливаем найденное максимальное значение высоты для каждого блока jQuery выборки
-      $blocks.height(maxH); 
-  }
+  $(document).ready(function() {
 
-  //применяем нашу функцию в элементам jQuery выборки - $('.nav')
-  $('.store-slide').equivalent(); 
-});
+    $.fn.equivalent = function (){
+            //запишем значение jQuery выборки к которой будет применена эта функция в локальную переменную $blocks
+        var $blocks = $(this),
+            //примем за максимальную высоту - высоту первого блока в выборке и запишем ее в переменную maxH
+            maxH    = $blocks.eq(0).height(); 
+  
+        //делаем сравнение высоты каждого блока с максимальной
+        $blocks.each(function(){
+            maxH = ( $(this).height() > maxH ) ? $(this).height() : maxH;
+        });
+  
+        //устанавливаем найденное максимальное значение высоты для каждого блока jQuery выборки
+        $blocks.height(maxH); 
+    }
+  
+    //применяем нашу функцию в элементам jQuery выборки - $('.nav')
+    $('.store-slide').equivalent(); 
+  });
+
+};
+
 
 $(".store-slide__button-like").click(function(like){
   $(like.target).css("color", "#eb4141");
 });
 
-$( "a" ).click(function(e) {
-  if($(e.target).hasClass("active-link")) {
-      event.preventDefault();
-      $(e.target).removeClass("active-link");
-  } else {}
-});
+
+if(document.documentElement.clientWidth < 881) {
+
+  $( "a" ).click(function(e) {
+    if($(e.target).hasClass("active-link")) {
+        event.preventDefault();
+        $(e.target).removeClass("active-link");
+    } else {}
+  });
+
+};
