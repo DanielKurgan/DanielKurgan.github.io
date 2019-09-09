@@ -54,11 +54,6 @@ button, a {
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
 }
-
-.mobile {
-	display: none;
-}
-
 /* HEADER */
 .main-panel {
 	background-color: #5d6c83;
