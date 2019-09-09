@@ -117,6 +117,7 @@
 	}
 	span.main-block__text-subtitle {
 		font-size: 7px;
+    margin-top: -15px;
 	}
 
 	.main-block__signboard-sign {
