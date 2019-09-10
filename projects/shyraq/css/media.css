@@ -107,7 +107,7 @@
 		width: 100%;
 	}
 	.main-block__text {
-		width: 233px;
+		width: 234px;
 		height: 116px;
 		top: 110px;
 		left: 283px;
@@ -117,7 +117,7 @@
 	}
 	span.main-block__text-subtitle {
 		font-size: 8px;
-    margin-top: -15px;
+		margin-top: -15px;
 	}
 
 	.main-block__signboard-sign {
@@ -208,24 +208,24 @@
 		display: flex !important;
 	}
 	.main {
-    margin: 62px 0;
-  }
+		margin: 62px 0;
+	}
 	.main-panel {
-    height: 62px;
-  }
-  .menu-mobile {
-  	height: 62px;
-  	display: flex;
-  	align-items: center;
-  	padding: 0;
-  }
-  .menu-mobile_bar {
-    align-items: center;
-    height: 100%;
-  }
+		height: 62px;
+	}
+	.menu-mobile {
+		height: 62px;
+		display: flex;
+		align-items: center;
+		padding: 0;
+	}
+	.menu-mobile_bar {
+		align-items: center;
+		height: 100%;
+	}
 	.menu-mobile_panel {
 		margin-top: 62px;
-    position: absolute;
+		position: absolute;
 		display: none;
 		padding: 0 20px;
 		background-color: #5d6c83;
@@ -254,88 +254,88 @@
 	.hamburger {
 		cursor: pointer;
 /*		width: 32px;
-		height: 19px;*/
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: normal;
-		-ms-flex-direction: column;
-		flex-direction: column;
-		-webkit-box-pack: justify;
-		-ms-flex-pack: justify;
-		justify-content: space-between;
-	}
-	.hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner:after, .hamburger.is-active .hamburger-inner:before {
-    background-color: white;
-	}
-	.hamburger-inner,
-	.hamburger-inner:before,
-	.hamburger-inner:after {
-		width: 32px;
-		height: 3px;
-		background-color: #ffffff;
-	}
-	.main {
-		background-image: url(../img/main-backgroundMobile1.png);
-	}
-	.main-block img {
-		max-width: 868px;
-	}
-.main-block__text {
-    top: -60px;
-    left: -120px;
-    width: 243px;
-    height: 87px;
-    background-color: #5d6c83;
+height: 19px;*/
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+-ms-flex-direction: column;
+flex-direction: column;
+-webkit-box-pack: justify;
+-ms-flex-pack: justify;
+justify-content: space-between;
 }
-	span.main-block__text-title {
-		font-size: 47px;
-	}
-	span.main-block__text-subtitle {
-		margin-top: -10px;
-		font-size: 6px;
-	}
-	.main-block__signboard-sign {
-		font-size: 8px;
-		padding: 6px 14px;
-		line-height: 10px;
-	}
+.hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner:after, .hamburger.is-active .hamburger-inner:before {
+	background-color: white;
+}
+.hamburger-inner,
+.hamburger-inner:before,
+.hamburger-inner:after {
+	width: 32px;
+	height: 3px;
+	background-color: #ffffff;
+}
+.main {
+	background-image: url(../img/main-backgroundMobile1.png);
+}
+.main-block img {
+	max-width: 868px;
+}
+.main-block__text {
+	top: -60px;
+	left: -120px;
+	width: 243px;
+	height: 87px;
+	background-color: #5d6c83;
+}
+span.main-block__text-title {
+	font-size: 47px;
+}
+span.main-block__text-subtitle {
+	margin-top: -10px;
+	font-size: 6px;
+}
+.main-block__signboard-sign {
+	font-size: 8px;
+	padding: 6px 14px;
+	line-height: 10px;
+}
 .main-block__signboard-sign1 {
-    width: 100px;
-    height: 38px;
-    top: -145px;
-    left: -346px;
+	width: 100px;
+	height: 38px;
+	top: -145px;
+	left: -346px;
 }
 .main-block__signboard-sign2 {
-    width: 86px;
-    height: 57px;
-    top: -50px;
-    left: -340px;
+	width: 86px;
+	height: 57px;
+	top: -50px;
+	left: -340px;
 }
 .main-block__signboard-sign3 {
-    width: 90px;
-    height: 42px;
-    top: 71px;
-    left: -325px;
+	width: 90px;
+	height: 42px;
+	top: 71px;
+	left: -325px;
 }
 .main-block__signboard-sign4 {
-    width: 111px;
-    height: 51px;
-    top: -145px;
-    right: -345px;
+	width: 111px;
+	height: 51px;
+	top: -145px;
+	right: -345px;
 }
 .main-block__signboard-sign5 {
-    width: 92px;
-    height: 46px;
-top: -50px;
-    right: -342px;
+	width: 92px;
+	height: 46px;
+	top: -50px;
+	right: -342px;
 }
 .main-block__signboard-sign6 {
-    width: 92px;
-    height: 52px;
-    top: 70px;
-    right: -355px;
+	width: 92px;
+	height: 52px;
+	top: 70px;
+	right: -355px;
 }
 
 }
@@ -345,12 +345,12 @@ top: -50px;
 		display: block;
 	}
 	.main-block img {
-    margin-left: 3px;
-  }
+		margin-left: 3px;
+	}
 	.main-block__text {
 		top: 80px;
-		left: 66px;
-		width: 183px;
+		left: 69px;
+		width: 182px;
 	}
 	span.main-block__text-subtitle {
 		font-size: 6px;
@@ -360,8 +360,6 @@ top: -50px;
 	}
 	.page {
 		height: auto;
-	}
-	header {
 	}
 	.main {
 		background-image: url(../img/main-backgroundMobile2.png);
