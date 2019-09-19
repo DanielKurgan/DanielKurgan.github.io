@@ -62,12 +62,14 @@ $('.license-slider').slick({
   ]
 });
 
+// АНИМАЦИЯ ГАМБУРГЕРА
  var $hamburger = $(".hamburger");
  $hamburger.on("click", function(e) {
    $hamburger.toggleClass("is-active");
    // Do something else, like open/close menu
  });
 
+// ПОПАПЫ
 $( ".cross" ).click(function() {
   $( ".popup" ).hide();
 });
@@ -78,3 +80,15 @@ $( ".call-me" ).click(function() {
 $( ".services-block a" ).click(function() {
   $( ".popup-example" ).toggle();
 });
+
+// ПЛАВНАЯ ПРОКРУТКА ДО ЯКОРЯ
+$(document).ready(function(){
+          $('a[href*=#]').bind("click", function(e){
+            var anchor = $(this);
+            $('html, body').stop().animate({
+              scrollTop: $(anchor.attr('href')).offset().top
+            }, 1000);
+            e.preventDefault();
+          });
+          return false;
+         });
