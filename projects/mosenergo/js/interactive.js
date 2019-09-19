@@ -86,6 +86,11 @@ $("body").on('click', '[href*="#"]', function(e){
 // FANCYBOX
   $(document).ready(function() {
 
+  $(".services-popup").fancybox({
+    'width': false,
+    'height': false,
+  });
+
   $(".comments-popup").fancybox({
     'width': 456,
     'height': 565,
@@ -107,9 +112,9 @@ $("body").on('click', '[href*="#"]', function(e){
   });
   
 });
+// FANCYBOX END
 
 // TABS
-
 $(".tab-first").click(function(){
   $(".mass-tab__first").css("display", "block");
   $(".mass-tab__second").css("display", "none");
@@ -156,3 +161,4 @@ $(".tab-third").click(function(){
   $(".tab-third").css("border", "2px solid #3e7ebf");
   $(".tab-third").css("color", "#3e7ebf");
 });
+// TABS END
