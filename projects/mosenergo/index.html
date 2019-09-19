@@ -12,6 +12,7 @@
 	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
 	
 	<!-- LINKS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
 	<link rel="stylesheet" href="css/hamburgers.css">
 	<link rel="stylesheet" href="css/slick-theme.css">
 	<link rel="stylesheet" href="css/slick.css">
@@ -79,14 +80,12 @@
 							</form>
 						</div>
 					</div>
-					<!-- <img class="car-image" src="img/car-image.png"></img> -->
 				</div>
 			</div>
 		</div>
 	</header>
 	
-	<a id="services"></a>
-	<div class="services">
+	<div class="services" id="services">
 		<div class="container">
 			<div class="title">Услуги электролаборатории</div>
 			
@@ -244,8 +243,8 @@
 
 				<div class="advantages-certificate">
 					<div class="advantages-certificate__images">
-						<img src="img/certificate1.png" alt="certificate1">
-						<img src="img/certificate2.png" alt="certificate2">
+						<a href="img/certificate1.png" class="certificate-popup"><img src="img/certificate1.png" alt="certificate1"></a>
+						<a href="img/certificate2.png" class="certificate-popup"><img src="img/certificate2.png" alt="certificate2"></a>
 					</div>
 					<div class="advantages-certificate__text">
 						<span class="advantages-certificate__title">
@@ -324,28 +323,28 @@
 			<div class="comments-content">
 				<div class="comments-slider">
 					<div class="comments-slider__slide">
-						<img src="img/comments1.png"></img>
+						<a href="img/comments1.png" class="comments-popup"><img src="img/comments1.png"></img></a>
 					</div>
 					<div class="comments-slider__slide">
-						<img src="img/comments1.png"></img>
+						<a href="img/comments1.png" class="comments-popup"><img src="img/comments1.png"></img></a>
 					</div>
 					<div class="comments-slider__slide">
-						<img src="img/comments1.png"></img>
+						<a href="img/comments1.png" class="comments-popup"><img src="img/comments1.png"></img></a>
 					</div>
 					<div class="comments-slider__slide">
-						<img src="img/comments1.png"></img>
+						<a href="img/comments1.png" class="comments-popup"><img src="img/comments1.png"></img></a>
 					</div>
 					<div class="comments-slider__slide">
-						<img src="img/comments1.png"></img>
+						<a href="img/comments1.png" class="comments-popup"><img src="img/comments1.png"></img></a>
 					</div>
 					<div class="comments-slider__slide">
-						<img src="img/comments1.png"></img>
+						<a href="img/comments1.png" class="comments-popup"><img src="img/comments1.png"></img></a>
 					</div>
 					<div class="comments-slider__slide">
-						<img src="img/comments1.png"></img>
+						<a href="img/comments1.png" class="comments-popup"><img src="img/comments1.png"></img></a>
 					</div>
 					<div class="comments-slider__slide">
-						<img src="img/comments1.png"></img>
+						<a href="img/comments1.png" class="comments-popup"><img src="img/comments1.png"></img></a>
 					</div>
 				</div>
 			</div>
@@ -358,43 +357,41 @@
 			<div class="title">Пример нормативного отчета</div>
 			<div class="example-block">
 				<div class="example-content">
-					<img src="img/example1.png" alt="">
-					<img src="img/example2.png" alt="">
+					<img class="example-background" src="img/example1.png" alt="">
+					<a href="img/example2.png" class="example-popup"><img src="img/example2.png" alt=""></a>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<a id="licenses"></a>
-	<div class="license">
+	<div class="license" id="licenses">
 		<div class="container">
 			<div class="title">Лицензии и сертификаты</div>
 			<div class="license-content">
 				<div class="license-slider">
 					<div class="license-slider__slide">
-						<img src="img/license1.png" alt="">
+						<a href="img/license1.png" class="licenses-popup"><img src="img/license1.png" alt=""></a>
 					</div>
 					<div class="license-slider__slide">
-						<img src="img/license1.png" alt="">
+						<a href="img/license1.png" class="licenses-popup"><img src="img/license1.png" alt=""></a>
 					</div>
 					<div class="license-slider__slide">
-						<img src="img/license1.png" alt="">
+						<a href="img/license1.png" class="licenses-popup"><img src="img/license1.png" alt=""></a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<a id="prices"></a>
-	<div class="prices">
+	<div class="prices" id="prices">
 		<div class="container">
 			<div class="title">Цены</div>
 
 			<div class="prices-content">
 				<div class="prices-tabs">
-					<button class="prices-tabs__tab">Цены на электроизмерительные работы</button>
-					<button class="prices-tabs__tab">Цены на испытание СИЗ</button>
-					<button class="prices-tabs__tab">Цены на обслуживание электроустановок</button>
+					<button class="prices-tabs__tab tab-first">Цены на электроизмерительные работы</button>
+					<button class="prices-tabs__tab tab-second">Цены на испытание СИЗ</button>
+					<button class="prices-tabs__tab tab-third">Цены на обслуживание электроустановок</button>
 				</div>
 
 				<div class="prices-table__block">
@@ -408,77 +405,196 @@
 							<span>Стоимость за единицу измерения, руб.</span>
 						</div>
 					</div>
+					
+					<div class="prices-table__mass mass-tab__first">
+						<div class="prices-table">
+							<div class="prices-table__title">Первая</div>
+								<div class="prices-table__cell dark-bg">
+									<span class="prices-table__service">Проверка соответствия смонтированной электроустановки требованиям документации проектной документации (Визуальный осмотр электроустановки)</span>
+									<span class="prices-table__unit"><span class="unit-title mobile-xs">Ед.изм.:</span>осмотр</span>
+									<span class="prices-table__price"><span class="unit-price mobile-xs">Стоимость:</span>от 3000</span>
+								</div>
+								<div class="prices-table__cell">
+									<span class="prices-table__service">Проверка соответствия смонтированной электроустановки требованиям документации проектной документации (Визуальный осмотр электроустановки)</span>
+									<span class="prices-table__unit"><span class="unit-title mobile-xs">Ед.изм.:</span>осмотр</span>
+									<span class="prices-table__price"><span class="unit-price mobile-xs">Стоимость:</span>от 3000</span>
+								</div>
+								<div class="prices-table__cell dark-bg">
+									<span class="prices-table__service">Проверка соответствия смонтированной электроустановки требованиям документации проектной документации (Визуальный осмотр электроустановки)</span>
+									<span class="prices-table__unit"><span class="unit-title mobile-xs">Ед.изм.:</span>осмотр</span>
+									<span class="prices-table__price"><span class="unit-price mobile-xs">Стоимость:</span>от 3000</span>
+								</div>
+								<div class="prices-table__cell">
+									<span class="prices-table__service">Проверка соответствия смонтированной электроустановки требованиям документации проектной документации (Визуальный осмотр электроустановки)</span>
+									<span class="prices-table__unit"><span class="unit-title mobile-xs">Ед.изм.:</span>осмотр</span>
+									<span class="prices-table__price"><span class="unit-price mobile-xs">Стоимость:</span>от 3000</span>
+								</div>
+								<div class="prices-table__cell dark-bg">
+									<span class="prices-table__service">Проверка соответствия смонтированной электроустановки требованиям документации проектной документации (Визуальный осмотр электроустановки)</span>
+									<span class="prices-table__unit"><span class="unit-title mobile-xs">Ед.изм.:</span>осмотр</span>
+									<span class="prices-table__price"><span class="unit-price mobile-xs">Стоимость:</span>от 3000</span>
+								</div>
+						</div>
 
-					<div class="prices-table">
-						<div class="prices-table__title">Электроустановки до 1000 В</div>
+						<div class="prices-table">
+							<div class="prices-table__title">Первая</div>
 
-							<div class="prices-table__cell dark-bg">
-								<span class="prices-table__service">Проверка соответствия смонтированной электроустановки требованиям документации проектной документации (Визуальный осмотр электроустановки)</span>
-								<span class="prices-table__unit"><span class="unit-title mobile-xs">Ед.изм.:</span>осмотр</span>
-								<span class="prices-table__price"><span class="unit-price mobile-xs">Стоимость:</span>от 3000</span>
-							</div>
-							<div class="prices-table__cell">
-								<span class="prices-table__service">Проверка соответствия смонтированной электроустановки требованиям документации проектной документации (Визуальный осмотр электроустановки)</span>
-								<span class="prices-table__unit"><span class="unit-title mobile-xs">Ед.изм.:</span>осмотр</span>
-								<span class="prices-table__price"><span class="unit-price mobile-xs">Стоимость:</span>от 3000</span>
-							</div>
-							<div class="prices-table__cell dark-bg">
-								<span class="prices-table__service">Проверка соответствия смонтированной электроустановки требованиям документации проектной документации (Визуальный осмотр электроустановки)</span>
-								<span class="prices-table__unit"><span class="unit-title mobile-xs">Ед.изм.:</span>осмотр</span>
-								<span class="prices-table__price"><span class="unit-price mobile-xs">Стоимость:</span>от 3000</span>
-							</div>
-							<div class="prices-table__cell">
-								<span class="prices-table__service">Проверка соответствия смонтированной электроустановки требованиям документации проектной документации (Визуальный осмотр электроустановки)</span>
-								<span class="prices-table__unit"><span class="unit-title mobile-xs">Ед.изм.:</span>осмотр</span>
-								<span class="prices-table__price"><span class="unit-price mobile-xs">Стоимость:</span>от 3000</span>
-							</div>
-							<div class="prices-table__cell dark-bg">
-								<span class="prices-table__service">Проверка соответствия смонтированной электроустановки требованиям документации проектной документации (Визуальный осмотр электроустановки)</span>
-								<span class="prices-table__unit"><span class="unit-title mobile-xs">Ед.изм.:</span>осмотр</span>
-								<span class="prices-table__price"><span class="unit-price mobile-xs">Стоимость:</span>от 3000</span>
-							</div>
-
+								<div class="prices-table__cell dark-bg">
+									<span class="prices-table__service">Проверка соответствия смонтированной электроустановки требованиям документации проектной документации (Визуальный осмотр электроустановки)</span>
+									<span class="prices-table__unit"><span class="unit-title mobile-xs">Ед.изм.:</span>осмотр</span>
+									<span class="prices-table__price"><span class="unit-price mobile-xs">Стоимость:</span>от 3000</span>
+								</div>
+								<div class="prices-table__cell">
+									<span class="prices-table__service">Проверка соответствия смонтированной электроустановки требованиям документации проектной документации (Визуальный осмотр электроустановки)</span>
+									<span class="prices-table__unit"><span class="unit-title mobile-xs">Ед.изм.:</span>осмотр</span>
+									<span class="prices-table__price"><span class="unit-price mobile-xs">Стоимость:</span>от 3000</span>
+								</div>
+								<div class="prices-table__cell dark-bg">
+									<span class="prices-table__service">Проверка соответствия смонтированной электроустановки требованиям документации проектной документации (Визуальный осмотр электроустановки)</span>
+									<span class="prices-table__unit"><span class="unit-title mobile-xs">Ед.изм.:</span>осмотр</span>
+									<span class="prices-table__price"><span class="unit-price mobile-xs">Стоимость:</span>от 3000</span>
+								</div>
+								<div class="prices-table__cell">
+									<span class="prices-table__service">Проверка соответствия смонтированной электроустановки требованиям документации проектной документации (Визуальный осмотр электроустановки)</span>
+									<span class="prices-table__unit"><span class="unit-title mobile-xs">Ед.изм.:</span>осмотр</span>
+									<span class="prices-table__price"><span class="unit-price mobile-xs">Стоимость:</span>от 3000</span>
+								</div>
+								<div class="prices-table__cell dark-bg">
+									<span class="prices-table__service">Проверка соответствия смонтированной электроустановки требованиям документации проектной документации (Визуальный осмотр электроустановки)</span>
+									<span class="prices-table__unit"><span class="unit-title mobile-xs">Ед.изм.:</span>осмотр</span>
+									<span class="prices-table__price"><span class="unit-price mobile-xs">Стоимость:</span>от 3000</span>
+								</div>
+						</div>
 					</div>
 
-					<div class="prices-table">
-						<div class="prices-table__title">Электроустановки до 1000 В</div>
+					<div class="prices-table__mass mass-tab__second">
+						<div class="prices-table">
+							<div class="prices-table__title">Вторая</div>
+								<div class="prices-table__cell dark-bg">
+									<span class="prices-table__service">Проверка соответствия смонтированной электроустановки требованиям документации проектной документации (Визуальный осмотр электроустановки)</span>
+									<span class="prices-table__unit"><span class="unit-title mobile-xs">Ед.изм.:</span>осмотр</span>
+									<span class="prices-table__price"><span class="unit-price mobile-xs">Стоимость:</span>от 3000</span>
+								</div>
+								<div class="prices-table__cell">
+									<span class="prices-table__service">Проверка соответствия смонтированной электроустановки требованиям документации проектной документации (Визуальный осмотр электроустановки)</span>
+									<span class="prices-table__unit"><span class="unit-title mobile-xs">Ед.изм.:</span>осмотр</span>
+									<span class="prices-table__price"><span class="unit-price mobile-xs">Стоимость:</span>от 3000</span>
+								</div>
+								<div class="prices-table__cell dark-bg">
+									<span class="prices-table__service">Проверка соответствия смонтированной электроустановки требованиям документации проектной документации (Визуальный осмотр электроустановки)</span>
+									<span class="prices-table__unit"><span class="unit-title mobile-xs">Ед.изм.:</span>осмотр</span>
+									<span class="prices-table__price"><span class="unit-price mobile-xs">Стоимость:</span>от 3000</span>
+								</div>
+								<div class="prices-table__cell">
+									<span class="prices-table__service">Проверка соответствия смонтированной электроустановки требованиям документации проектной документации (Визуальный осмотр электроустановки)</span>
+									<span class="prices-table__unit"><span class="unit-title mobile-xs">Ед.изм.:</span>осмотр</span>
+									<span class="prices-table__price"><span class="unit-price mobile-xs">Стоимость:</span>от 3000</span>
+								</div>
+								<div class="prices-table__cell dark-bg">
+									<span class="prices-table__service">Проверка соответствия смонтированной электроустановки требованиям документации проектной документации (Визуальный осмотр электроустановки)</span>
+									<span class="prices-table__unit"><span class="unit-title mobile-xs">Ед.изм.:</span>осмотр</span>
+									<span class="prices-table__price"><span class="unit-price mobile-xs">Стоимость:</span>от 3000</span>
+								</div>
+						</div>
 
-							<div class="prices-table__cell dark-bg">
-								<span class="prices-table__service">Проверка соответствия смонтированной электроустановки требованиям документации проектной документации (Визуальный осмотр электроустановки)</span>
-								<span class="prices-table__unit"><span class="unit-title mobile-xs">Ед.изм.:</span>осмотр</span>
-								<span class="prices-table__price"><span class="unit-price mobile-xs">Стоимость:</span>от 3000</span>
-							</div>
-							<div class="prices-table__cell">
-								<span class="prices-table__service">Проверка соответствия смонтированной электроустановки требованиям документации проектной документации (Визуальный осмотр электроустановки)</span>
-								<span class="prices-table__unit"><span class="unit-title mobile-xs">Ед.изм.:</span>осмотр</span>
-								<span class="prices-table__price"><span class="unit-price mobile-xs">Стоимость:</span>от 3000</span>
-							</div>
-							<div class="prices-table__cell dark-bg">
-								<span class="prices-table__service">Проверка соответствия смонтированной электроустановки требованиям документации проектной документации (Визуальный осмотр электроустановки)</span>
-								<span class="prices-table__unit"><span class="unit-title mobile-xs">Ед.изм.:</span>осмотр</span>
-								<span class="prices-table__price"><span class="unit-price mobile-xs">Стоимость:</span>от 3000</span>
-							</div>
-							<div class="prices-table__cell">
-								<span class="prices-table__service">Проверка соответствия смонтированной электроустановки требованиям документации проектной документации (Визуальный осмотр электроустановки)</span>
-								<span class="prices-table__unit"><span class="unit-title mobile-xs">Ед.изм.:</span>осмотр</span>
-								<span class="prices-table__price"><span class="unit-price mobile-xs">Стоимость:</span>от 3000</span>
-							</div>
-							<div class="prices-table__cell dark-bg">
-								<span class="prices-table__service">Проверка соответствия смонтированной электроустановки требованиям документации проектной документации (Визуальный осмотр электроустановки)</span>
-								<span class="prices-table__unit"><span class="unit-title mobile-xs">Ед.изм.:</span>осмотр</span>
-								<span class="prices-table__price"><span class="unit-price mobile-xs">Стоимость:</span>от 3000</span>
-							</div>
+						<div class="prices-table">
+							<div class="prices-table__title">Вторая</div>
+								<div class="prices-table__cell dark-bg">
+									<span class="prices-table__service">Проверка соответствия смонтированной электроустановки требованиям документации проектной документации (Визуальный осмотр электроустановки)</span>
+									<span class="prices-table__unit"><span class="unit-title mobile-xs">Ед.изм.:</span>осмотр</span>
+									<span class="prices-table__price"><span class="unit-price mobile-xs">Стоимость:</span>от 3000</span>
+								</div>
+								<div class="prices-table__cell">
+									<span class="prices-table__service">Проверка соответствия смонтированной электроустановки требованиям документации проектной документации (Визуальный осмотр электроустановки)</span>
+									<span class="prices-table__unit"><span class="unit-title mobile-xs">Ед.изм.:</span>осмотр</span>
+									<span class="prices-table__price"><span class="unit-price mobile-xs">Стоимость:</span>от 3000</span>
+								</div>
+								<div class="prices-table__cell dark-bg">
+									<span class="prices-table__service">Проверка соответствия смонтированной электроустановки требованиям документации проектной документации (Визуальный осмотр электроустановки)</span>
+									<span class="prices-table__unit"><span class="unit-title mobile-xs">Ед.изм.:</span>осмотр</span>
+									<span class="prices-table__price"><span class="unit-price mobile-xs">Стоимость:</span>от 3000</span>
+								</div>
+								<div class="prices-table__cell">
+									<span class="prices-table__service">Проверка соответствия смонтированной электроустановки требованиям документации проектной документации (Визуальный осмотр электроустановки)</span>
+									<span class="prices-table__unit"><span class="unit-title mobile-xs">Ед.изм.:</span>осмотр</span>
+									<span class="prices-table__price"><span class="unit-price mobile-xs">Стоимость:</span>от 3000</span>
+								</div>
+								<div class="prices-table__cell dark-bg">
+									<span class="prices-table__service">Проверка соответствия смонтированной электроустановки требованиям документации проектной документации (Визуальный осмотр электроустановки)</span>
+									<span class="prices-table__unit"><span class="unit-title mobile-xs">Ед.изм.:</span>осмотр</span>
+									<span class="prices-table__price"><span class="unit-price mobile-xs">Стоимость:</span>от 3000</span>
+								</div>
+						</div>
+					</div>
+
+					<div class="prices-table__mass mass-tab__third">
+						<div class="prices-table">
+							<div class="prices-table__title">Третья</div>
+								<div class="prices-table__cell dark-bg">
+									<span class="prices-table__service">Проверка соответствия смонтированной электроустановки требованиям документации проектной документации (Визуальный осмотр электроустановки)</span>
+									<span class="prices-table__unit"><span class="unit-title mobile-xs">Ед.изм.:</span>осмотр</span>
+									<span class="prices-table__price"><span class="unit-price mobile-xs">Стоимость:</span>от 3000</span>
+								</div>
+								<div class="prices-table__cell">
+									<span class="prices-table__service">Проверка соответствия смонтированной электроустановки требованиям документации проектной документации (Визуальный осмотр электроустановки)</span>
+									<span class="prices-table__unit"><span class="unit-title mobile-xs">Ед.изм.:</span>осмотр</span>
+									<span class="prices-table__price"><span class="unit-price mobile-xs">Стоимость:</span>от 3000</span>
+								</div>
+								<div class="prices-table__cell dark-bg">
+									<span class="prices-table__service">Проверка соответствия смонтированной электроустановки требованиям документации проектной документации (Визуальный осмотр электроустановки)</span>
+									<span class="prices-table__unit"><span class="unit-title mobile-xs">Ед.изм.:</span>осмотр</span>
+									<span class="prices-table__price"><span class="unit-price mobile-xs">Стоимость:</span>от 3000</span>
+								</div>
+								<div class="prices-table__cell">
+									<span class="prices-table__service">Проверка соответствия смонтированной электроустановки требованиям документации проектной документации (Визуальный осмотр электроустановки)</span>
+									<span class="prices-table__unit"><span class="unit-title mobile-xs">Ед.изм.:</span>осмотр</span>
+									<span class="prices-table__price"><span class="unit-price mobile-xs">Стоимость:</span>от 3000</span>
+								</div>
+								<div class="prices-table__cell dark-bg">
+									<span class="prices-table__service">Проверка соответствия смонтированной электроустановки требованиям документации проектной документации (Визуальный осмотр электроустановки)</span>
+									<span class="prices-table__unit"><span class="unit-title mobile-xs">Ед.изм.:</span>осмотр</span>
+									<span class="prices-table__price"><span class="unit-price mobile-xs">Стоимость:</span>от 3000</span>
+								</div>
+						</div>
+
+						<div class="prices-table">
+							<div class="prices-table__title">Третья</div>
+
+								<div class="prices-table__cell dark-bg">
+									<span class="prices-table__service">Проверка соответствия смонтированной электроустановки требованиям документации проектной документации (Визуальный осмотр электроустановки)</span>
+									<span class="prices-table__unit"><span class="unit-title mobile-xs">Ед.изм.:</span>осмотр</span>
+									<span class="prices-table__price"><span class="unit-price mobile-xs">Стоимость:</span>от 3000</span>
+								</div>
+								<div class="prices-table__cell">
+									<span class="prices-table__service">Проверка соответствия смонтированной электроустановки требованиям документации проектной документации (Визуальный осмотр электроустановки)</span>
+									<span class="prices-table__unit"><span class="unit-title mobile-xs">Ед.изм.:</span>осмотр</span>
+									<span class="prices-table__price"><span class="unit-price mobile-xs">Стоимость:</span>от 3000</span>
+								</div>
+								<div class="prices-table__cell dark-bg">
+									<span class="prices-table__service">Проверка соответствия смонтированной электроустановки требованиям документации проектной документации (Визуальный осмотр электроустановки)</span>
+									<span class="prices-table__unit"><span class="unit-title mobile-xs">Ед.изм.:</span>осмотр</span>
+									<span class="prices-table__price"><span class="unit-price mobile-xs">Стоимость:</span>от 3000</span>
+								</div>
+								<div class="prices-table__cell">
+									<span class="prices-table__service">Проверка соответствия смонтированной электроустановки требованиям документации проектной документации (Визуальный осмотр электроустановки)</span>
+									<span class="prices-table__unit"><span class="unit-title mobile-xs">Ед.изм.:</span>осмотр</span>
+									<span class="prices-table__price"><span class="unit-price mobile-xs">Стоимость:</span>от 3000</span>
+								</div>
+								<div class="prices-table__cell dark-bg">
+									<span class="prices-table__service">Проверка соответствия смонтированной электроустановки требованиям документации проектной документации (Визуальный осмотр электроустановки)</span>
+									<span class="prices-table__unit"><span class="unit-title mobile-xs">Ед.изм.:</span>осмотр</span>
+									<span class="prices-table__price"><span class="unit-price mobile-xs">Стоимость:</span>от 3000</span>
+								</div>
+						</div>
 
 					</div>
 
 				</div>
 			</div>
-
 		</div>
 	</div>
 
-	<a id="company"></a>
-	<div class="company">
+	<div class="company" id="company">
 		<div class="container">
 			<div class="title">О компании</div>
 			
@@ -561,7 +677,7 @@
 		</div>
 	</div>
 
-	<div class="popup-example popup">
+<!-- 	<div class="popup-example popup">
 		<div class="popup-background">
 			<div class="popup-content">
 				<span class="cross"></span>
@@ -569,11 +685,13 @@
 					<img src="img/popup-example.png">
 			</div>
 		</div>
-	</div>
+	</div> -->
 
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.js"></script>
 	<script src="js/slick.js"></script>	
 	<script src="js/interactive.js"></script>
+	<script src="js/plugins-scroll.js"></script>
 	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
 </html>

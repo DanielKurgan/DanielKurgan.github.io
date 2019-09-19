@@ -99,6 +99,9 @@
 }
 
 @media (max-width: 1255px) {
+  .company-border img {
+    margin-left: 20px;
+  }
   .comments-slider img {
     margin-right: 10px;
   }
@@ -156,7 +159,7 @@
     max-width: 450px;
   }
   .main-form {
-    width: 60%;
+    width: auto;
   }
   .main-form__title {
     font-size: 33px;
@@ -318,6 +321,11 @@
     font-size: 30px;
     line-height: 42px;
   }
+  .input-group input {
+    max-width: 150px;
+    margin-bottom: 20px;
+    height: 36px;
+  }
   .main-form {
     width: 40%;
   }
@@ -325,7 +333,7 @@
     font-size: 23px;
   }
   .main-form__subtitle {
-    font-size: 11px;
+    font-size: 10px;
     padding-top: 0;
     padding-bottom: 10px;
   }
@@ -380,6 +388,9 @@
 }
 
 @media (max-width: 970px) {
+  .input-group input {
+    margin-bottom: 10px;
+  }
   .main-subtext {
     flex-direction: column;
   }
@@ -669,6 +680,19 @@
 }
 
 @media (max-width: 700px) {
+
+  .input-group {
+    flex-direction: column;
+    align-items: center;
+  }
+  .input-group input {
+    margin-right: 0;
+    max-width: 223px;
+  }
+  .callback .main-form form input {
+    margin-bottom: 15px;
+  }
+
   .company-text {
     font-size: 16px;
     font-weight: 400;
@@ -761,19 +785,6 @@
 @media (max-width: 600px) {
   .title {
     font-size: 22px;
-  }
-}
-
-@media (max-width: 550px) {
-  .input-group {
-    flex-direction: column;
-    align-items: center;
-  }
-  .input-group input {
-    margin-right: 0;
-  }
-  .callback .main-form form input {
-    margin-bottom: 15px;
   }
 }
 

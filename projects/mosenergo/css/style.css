@@ -233,7 +233,7 @@ button.call-me {
 }
 
 .main-form {
-	width: 50%;
+	width: auto;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -258,6 +258,7 @@ button.call-me {
 	align-items: center;
 }
 .input-group {
+	width: 100%;
 	display: flex;
 	justify-content: center;
 }
@@ -556,6 +557,10 @@ button.call-me {
 	margin-bottom: 46px;
 }
 
+.certificate-popup {
+	opacity: 1;
+}
+
 .advantages-certificate__images img {
 	width: 222px;
 	height: 333px;
@@ -810,6 +815,9 @@ button.call-me {
 	width: 100%;
 }
 
+.comments-slider__slide a {
+	opacity: 1;
+}
 .comments-content {
 	position: relative;
 	max-width: 1213px;
@@ -901,7 +909,7 @@ height: 100%;*/
 	position: relative;
 }
 
-.example-content img:nth-child(1) {
+img.example-background {
 	max-width: 1023px;
 	width: 100%;
 	height: 380px;
@@ -909,7 +917,8 @@ height: 100%;*/
 	top: 40px;
 	position: absolute;
 }
-.example-content img:nth-child(2) {
+.example-popup {
+	opacity: 1;
 	max-width: 490px;
 	width: 100%;
 	height: 380px;
@@ -972,6 +981,9 @@ height: 100%;*/
 	width: 100%;
 	height: 545px;
 }
+.licenses-popup {
+	opacity: 1;
+}
 /*LICENSE END*/
 
 /*PRICES*/
@@ -995,6 +1007,18 @@ height: 100%;*/
 	justify-content: space-between;
 }
 
+.tab-first {
+	  color: #3e7ebf;
+    border: 2px solid #3e7ebf;
+}
+
+.mass-tab__second {
+	display: none;
+}
+.mass-tab__third {
+	display: none;
+}
+
 .prices-tabs__tab {
 	margin: 0 10px;
 	color: #808080;
@@ -1011,7 +1035,7 @@ height: 100%;*/
 	line-height: 20px;
 }
 
-.prices-tabs__tab:hover {
+.prices-tabs__tab:focus {
 	color: #3e7ebf;
 	border: 2px solid #3e7ebf;
 }
@@ -1326,7 +1350,9 @@ footer .container {
 /*FOOTER END*/
 
 /*POPUPS*/
-
+.fancybox-image, .fancybox-spaceball {
+    position: static;
+}
 .popup-title {
 	text-transform: uppercase;
 }
