@@ -455,7 +455,6 @@ header {
 	z-index: -1;
 	content: ' ';
 	position: absolute;
-	mix-blend-mode: color-burn;
 	bottom: -520px;
 	left: 50%;
 	transform: translateX(-50%);
