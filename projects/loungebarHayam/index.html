@@ -12,197 +12,269 @@
 	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
 	
 	<!-- LINKS -->
+	<link rel="stylesheet" href="css/jquery.fancybox.css">
+	<link rel="stylesheet" href="css/slick-theme.css">
+	<link rel="stylesheet" href="css/slick.css">
 	<link href="https://fonts.googleapis.com/css?family=El+Messiri&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/media.css">
-</head>
-<body>
-	<!-- Здесь пишем код -->
-	<header>
-		<div class="container">
 
-			<div class="top-header">
-				<nav>
-					<a href="#">Главная</a>
-					<a href="#">Главная</a>
-					<a href="#">Главная</a>
-				</nav>
-				<div class="logo">
-					<img src="./img/logo.png">
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=<34a9ee76-430a-49d3-a9cf-be5bcb172ae4>&lang=ru_RU" type="text/javascript"></script>
+	</head>
+	<body>
+		<!-- Здесь пишем код -->
+		<header>
+			<div class="container">
+
+				<div class="top-header">
+					<nav>
+						<a href="#">Главная</a>
+						<a href="#">Главная</a>
+						<a href="#">Главная</a>
+					</nav>
+					<div class="logo">
+						<img src="./img/logo.png">
+					</div>
+					<nav>
+						<a href="#">Главная</a>
+						<a href="#">Главная</a>
+						<a href="#">Главная</a>
+					</nav>
 				</div>
-				<nav>
-					<a href="#">Главная</a>
-					<a href="#">Главная</a>
-					<a href="#">Главная</a>
-				</nav>
-			</div>
 
-			<div class="header-text">
-				<h2>Омар Хайям</h2>
-				<h3 class="subtext">Lounge bar</h3>
-				<span class="address">Большой Черкасский переулок, с2</span>
-			</div>
-
-			<div class="header-buttons">
-				<div class="buttons-group">
-					<a href="#" class="btn">Позвонить</a>
-					<a href="#" class="btn">Бронь стола</a>
-					<a href="#" class="btn">Как добраться</a>
+				<div class="header-text">
+					<h2>Омар Хайям</h2>
+					<h3 class="subtext">Lounge bar</h3>
+					<span class="address">Большой Черкасский переулок, с2</span>
 				</div>
-				<a href="#" class="btn btn-big">Открытие Омар-Хайям</a>
-			</div>
-			
-			<div class="page-counter">
-				<span>01</span>
-			</div>
 
+				<div class="header-buttons">
+					<div class="buttons-group">
+						<a href="#" class="btn">Позвонить</a>
+						<a href="#" class="btn">Бронь стола</a>
+						<a href="#" class="btn">Как добраться</a>
+					</div>
+					<a href="#" class="btn btn-big">Открытие Омар-Хайям</a>
+				</div>
+
+				<div class="page-counter">
+					<span>01</span>
+				</div>
+
+			</div>
+		</header>
+
+		<div class="about">
+			<img src="./img/pattern1.png" class="about-pattern1">
+			<img src="./img/pattern2.png" class="about-pattern2">
+			<div class="container">
+				<div class="block-title">
+					<h4>О нас</h4>
+				</div>
+				<div class="advantage-block advantage-big">
+					<p class="info__title">Лаунж-бар ОМАР ХАЙЯМ</p>
+					<p class="info__text">What can we say about us, well we basically are a creative agency with over <b>10 years of experience</b> in design and video production, and we are the ones who create da funky stuff.</p>
+				</div>
+				<img src="./img/divider1.png" class="divider">
+				<div class="advantage-group">
+					<div class="advantage-block">
+						<p class="info__title">4 зала</p>
+						<p class="info__text">What can we say about us, well we basically are a creative agency with over <b>10 years of experience</b> in design and video production, and we are the ones who create da funky stuff.</p>
+					</div>
+					<div class="advantage-block">
+						<p class="info__title">Парковка</p>
+						<p class="info__text">What can we say about us, well we basically are a creative agency with over <b>10 years of experience</b> in design and video production, and we are the ones who create da funky stuff.</p>
+					</div>
+					<div class="advantage-block">
+						<p class="info__title">Парковка</p>
+						<p class="info__text">What can we say about us, well we basically are a creative agency with over <b>10 years of experience</b> in design and video production, and we are the ones who create da funky stuff.</p>
+					</div>
+				</div>
+				<div class="page-counter">
+					<span>02</span>
+				</div>
+			</div>
 		</div>
-	</header>
 
-	<div class="about">
-		<img src="./img/pattern1.png" class="about-pattern1">
-		<img src="./img/pattern2.png" class="about-pattern2">
-		<div class="container">
+		<div class="photo">
+			<img src="./img/background3.png" class="photo-background">
 			<div class="block-title">
-				<h4>О нас</h4>
+				<h4>Фотографии</h4>
 			</div>
-			<div class="advantage-block advantage-big">
-				<p class="advantage__title">Лаунж-бар ОМАР ХАЙЯМ</p>
-				<p class="advantage__text">What can we say about us, well we basically are a creative agency with over <b>10 years of experience</b> in design and video production, and we are the ones who create da funky stuff.</p>
+			<div class="photo-slider">
+				<a href="./img/rectangle-image.png" class="photo-slider__slide photo1">
+					<img src="./img/rectangle-image.png" alt="image">
+				</a>
+				<a href="./img/rectangle-image.png" class="photo-slider__slide photo2">
+					<img src="./img/rectangle-image.png" alt="image">
+				</a>
+				<a href="./img/rectangle-image.png" class="photo-slider__slide photo3">
+					<img src="./img/rectangle-image.png" alt="image">
+				</a>
+				<a href="./img/rectangle-image.png" class="photo-slider__slide photo4">
+					<img src="./img/rectangle-image.png" alt="image">
+				</a>
 			</div>
-			<img src="./img/divider1.png" class="divider">
-			<div class="advantage-group">
-				<div class="advantage-block">
-					<p class="advantage__title">4 зала</p>
-					<p class="advantage__text">What can we say about us, well we basically are a creative agency with over <b>10 years of experience</b> in design and video production, and we are the ones who create da funky stuff.</p>
-				</div>
-				<div class="advantage-block">
-					<p class="advantage__title">Парковка</p>
-					<p class="advantage__text">What can we say about us, well we basically are a creative agency with over <b>10 years of experience</b> in design and video production, and we are the ones who create da funky stuff.</p>
-				</div>
-				<div class="advantage-block">
-					<p class="advantage__title">Парковка</p>
-					<p class="advantage__text">What can we say about us, well we basically are a creative agency with over <b>10 years of experience</b> in design and video production, and we are the ones who create da funky stuff.</p>
-				</div>
+			<div class="divider-block">
+				<img src="./img/divider2.png" class="divider">
 			</div>
 			<div class="page-counter">
-				<span>02</span>
+				<span>03</span>
 			</div>
 		</div>
-	</div>
 
-	<div class="photo">
-		<img src="./img/background3.png" class="photo-background">
-		<div class="block-title">
-			<h4>Фотографии</h4>
-		</div>
-		<div class="photo-slider">
-			<div class="photo-slider__slide photo1">
-				<img src="./img/rectangle-image.png" alt="image">
-			</div>
-			<div class="photo-slider__slide photo2">
-				<img src="./img/rectangle-image.png" alt="image">
-			</div>
-			<div class="photo-slider__slide photo3">
-				<img src="./img/rectangle-image.png" alt="image">
-			</div>
-			<div class="photo-slider__slide photo4">
-				<img src="./img/rectangle-image.png" alt="image">
-			</div>
-		</div>
-		<div class="divider-block">
-			<img src="./img/divider2.png" class="divider">
-		</div>
-		<div class="page-counter">
-			<span>03</span>
-		</div>
-	</div>
+		<div class="menu-section">
+			<div class="container">
+				<div class="block-title">
+					<h4>Меню</h4>
+				</div>
+				<div class="menu-table">
 
-	<div class="menu-section">
-		<div class="container">
-			<div class="block-title">
-				<h4>Меню</h4>
-			</div>
-			<div class="menu-table">
-
-				<div class="menu-block">
-					<span class="menu-title">Классика</span>
-					<div class="menu-block__table">
-						<div class="menu-block__cell">
-							<span class="menu-block__cell-name">Dark side</span>
-							<span class="menu-block__cell-price">1000</span>
-						</div>
-						<div class="menu-block__cell">
-							<span class="menu-block__cell-name">Dark side</span>
-							<span class="menu-block__cell-price">1000</span>
-						</div>
-						<div class="menu-block__cell">
-							<span class="menu-block__cell-name">Dark side</span>
-							<span class="menu-block__cell-price">1000</span>
-						</div>
-						<div class="menu-block__cell">
-							<span class="menu-block__cell-name">Dark side</span>
-							<span class="menu-block__cell-price">1000</span>
+					<div class="menu-block">
+						<span class="menu-title">Классика</span>
+						<div class="menu-block__table">
+							<div class="menu-block__cell">
+								<span class="menu-block__cell-name">Dark side</span>
+								<span class="menu-block__cell-price">1000</span>
+							</div>
+							<div class="menu-block__cell">
+								<span class="menu-block__cell-name">Dark side</span>
+								<span class="menu-block__cell-price">1000</span>
+							</div>
+							<div class="menu-block__cell">
+								<span class="menu-block__cell-name">Dark side</span>
+								<span class="menu-block__cell-price">1000</span>
+							</div>
+							<div class="menu-block__cell">
+								<span class="menu-block__cell-name">Dark side</span>
+								<span class="menu-block__cell-price">1000</span>
+							</div>
 						</div>
 					</div>
-				</div>
 
-				<div class="menu-block">
-					<span class="menu-title">На фрукте</span>
-					<div class="menu-block__table">
-						<div class="menu-block__cell">
-							<span class="menu-block__cell-name">Dark side</span>
-							<span class="menu-block__cell-price">1000</span>
-						</div>
-						<div class="menu-block__cell">
-							<span class="menu-block__cell-name">Dark side</span>
-							<span class="menu-block__cell-price">1000</span>
-						</div>
-						<div class="menu-block__cell">
-							<span class="menu-block__cell-name">Dark side</span>
-							<span class="menu-block__cell-price">1000</span>
-						</div>
-						<div class="menu-block__cell">
-							<span class="menu-block__cell-name">Dark side</span>
-							<span class="menu-block__cell-price">1000</span>
+					<div class="menu-block">
+						<span class="menu-title">На фрукте</span>
+						<div class="menu-block__table">
+							<div class="menu-block__cell">
+								<span class="menu-block__cell-name">Dark side</span>
+								<span class="menu-block__cell-price">1000</span>
+							</div>
+							<div class="menu-block__cell">
+								<span class="menu-block__cell-name">Dark side</span>
+								<span class="menu-block__cell-price">1000</span>
+							</div>
+							<div class="menu-block__cell">
+								<span class="menu-block__cell-name">Dark side</span>
+								<span class="menu-block__cell-price">1000</span>
+							</div>
+							<div class="menu-block__cell">
+								<span class="menu-block__cell-name">Dark side</span>
+								<span class="menu-block__cell-price">1000</span>
+							</div>
 						</div>
 					</div>
-				</div>
 
-				<div class="menu-block">
-					<span class="menu-title">Премиум</span>
-					<div class="menu-block__table">
-						<div class="menu-block__cell">
-							<span class="menu-block__cell-name">Dark side</span>
-							<span class="menu-block__cell-price">1000</span>
-						</div>
-						<div class="menu-block__cell">
-							<span class="menu-block__cell-name">Dark side</span>
-							<span class="menu-block__cell-price">1000</span>
-						</div>
-						<div class="menu-block__cell">
-							<span class="menu-block__cell-name">Dark side</span>
-							<span class="menu-block__cell-price">1000</span>
-						</div>
-						<div class="menu-block__cell">
-							<span class="menu-block__cell-name">Dark side</span>
-							<span class="menu-block__cell-price">1000</span>
+					<div class="menu-block">
+						<span class="menu-title">Премиум</span>
+						<div class="menu-block__table">
+							<div class="menu-block__cell">
+								<span class="menu-block__cell-name">Dark side</span>
+								<span class="menu-block__cell-price">1000</span>
+							</div>
+							<div class="menu-block__cell">
+								<span class="menu-block__cell-name">Dark side</span>
+								<span class="menu-block__cell-price">1000</span>
+							</div>
+							<div class="menu-block__cell">
+								<span class="menu-block__cell-name">Dark side</span>
+								<span class="menu-block__cell-price">1000</span>
+							</div>
+							<div class="menu-block__cell">
+								<span class="menu-block__cell-name">Dark side</span>
+								<span class="menu-block__cell-price">1000</span>
+							</div>
 						</div>
 					</div>
+
 				</div>
 
-			</div>
-			
-			<div class="menu-button">
-				<a href="#" class="btn">Кухня</a>
+				<div class="menu-button">
+					<a href="#" class="btn">Кухня</a>
+				</div>
+
+				<div class="page-counter">
+					<span>04</span>
+				</div>
 			</div>
 		</div>
-	</div>
-	
 
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="js/interactive.js"></script>
-	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
-</body>
-</html>
+		<div class="rent">
+			<div class="container">
+				<div class="block-title">
+					<h4>Забронировать</h4>
+				</div>
+				<div class="social-media__block">
+					<a href="#" class="social-vk">Вконтакте</a>
+					<a href="#" class="social-instagram">Instagram</a>
+				</div>
+				<p class="rent-text">I don't understand the question, and I won't respond to it. First place chick is hot, but has an attitude, doesn't date magicians</p>
+				<div class="rent-info">
+					<div class="rent-contacts">
+						<div class="rent-block">
+							<p class="info__title">Адрес</p>
+							<p class="info__text">Большой Черкасский переулок, с2</p>
+						</div>
+						<div class="rent-block">
+							<p class="info__title">Телефон</p>
+							<p class="info__text">8 (888) 888 88 88</p>
+						</div>
+					</div>
+					<div class="rent-wtime">
+						<div class="rent-block">
+							<p class="info__title">Время работы</p>
+							<p class="info__text">ПН-ПТ:с 08:00-12:00</p>
+							<p class="info__text">ПН-ПТ:с 08:00-12:00</p>
+						</div>
+						<a href="#" class="btn">Забронировать</a>
+					</div>
+					<div class="page-counter">
+						<span>05</span>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="map" id="map"></div>
+
+		<footer>
+			<div class="container">
+				<div class="footer-info">
+					<div class="logo">
+						<img src="./img/logo.png">
+					</div>
+					<div class="footer-company">
+						<span class="footer-company__title">ООО “Омар Хайям”</span>
+						<a href="#" class="footer-company__text">Большой Черкасский переулок, С2</a>
+						<a href="#" class="footer-company__text">Большой Черкасский переулок, С2</a>
+					</div>
+				</div>
+				<span class="copyright">Powered by</span>
+			</div>
+		</footer>
+
+
+		<script
+		src="https://code.jquery.com/jquery-3.4.1.min.js"
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+		crossorigin="anonymous"></script>
+		<script src="js/slick.js"></script>
+		<script src="js/jquery.fancybox.pack.js"></script>
+		<script src="js/jquery.fancybox.js"></script>
+		<script src="js/interactive.js"></script>
+		<script src="js/yandexmap.js"></script>
+		<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+		
+	</body>
+	</html>
