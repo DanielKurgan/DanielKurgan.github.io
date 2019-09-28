@@ -1,13 +1,4 @@
 $(document).ready(function() {
-	// FANCYBOX
-
-		$(".photo-slider__slide").fancybox({
-			minWidth: 530,
-			minHeight: 629,
-			autoScale: true,
-		});
-
-	// FANCYBOX END
 
 	// SLIDER
 	$('.photo-slider').slick({
@@ -22,8 +13,32 @@ $(document).ready(function() {
 	});
 	// SLIDER END
 
+// FANCYBOX
+var gallery = []; // array of gallery elements
+jQuery(document).ready(function ($) {
+	$(".photo-slider__slide").each(function (i) {
+        gallery.push(this.href); // push element to the array
 
+        // bind your click and double-click events
+        $(this).on({
+        	click: function (event) {
+        		event.preventDefault();
+        	},
+        	dblclick: function (event) {
+        		$.fancybox(gallery, {
+        			minWidth: 530,
+        			minHeight: 629,
+        			autoScale: true,
+                    // API options
+                    padding: 0,
+                    index: i // starts gallery from (double) clicked element
+                  });
+        	}
+        });
+      });
+}); // ready
 
+// FANCYBOX END
 
 
 
