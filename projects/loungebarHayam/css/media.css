@@ -252,11 +252,11 @@
 		display: none;
 	}
 	.social-media__block {
-	    padding-bottom: 43px;
-	    flex-direction: column;
-	    align-items: right;
-	    width: 70px;
-	    margin: 43px auto 0 auto;
+		padding-bottom: 43px;
+		flex-direction: column;
+		align-items: right;
+		width: 70px;
+		margin: 43px auto 0 auto;
 	}
 	.social-media__block a {
 		margin-left: -50px;
@@ -283,7 +283,7 @@
 		align-items: center;
 	}
 	.rent-wtime .rent-block {
-	    width: 42%;
+		width: 42%;
 	}
 	footer .container {
 		justify-content: space-between;
@@ -304,25 +304,28 @@
 		text-align: center;
 	}
 	.block-title {
-    letter-spacing: 10px;
-  }
+		letter-spacing: 10px;
+	}
 }
 
 @media (max-width: 500px) {
 	.block-title {
-    max-width: 320px;
+		max-width: 320px;
 	}
 	.menu-section .block-title {
-    background: url(../img/block-title4.png) no-repeat 55% 60%/110%;
+		background: url(../img/block-title4.png) no-repeat 55% 60%/110%;
 	}
 	.rent::before {
-    left: 79%;
-  }
-  .photo::after {
-    left: 82%;
+		left: 79%;
+	}
+	.photo::after {
+		left: 82%;
 	}
 	.about .block-title {
-    background: url(../img/block-title1.png) no-repeat 55% 731%/110%;
+		background: url(../img/block-title1.png) no-repeat 55% 731%/110%;
+	}
+	.rent-wtime .rent-block {
+		width: 52%;
 	}
 }
 
@@ -337,32 +340,32 @@
 
 @media (max-width: 355px) {
 	.block-title {
-    max-width: 270px;
-    font-size: 18px;
-}
+		max-width: 270px;
+		font-size: 18px;
+	}
 
 	.header-text h3 {
-    font-size: 14px;
+		font-size: 14px;
 	}
-.about .block-title {
-    background: url(../img/block-title1.png) no-repeat 55% 151%/110%;
-}
-.info__title {
-    font-size: 22px;
-    }
+	.about .block-title {
+		background: url(../img/block-title1.png) no-repeat 55% 151%/110%;
+	}
+	.info__title {
+		font-size: 22px;
+	}
 	.menu-section .block-title {
-    background: url(../img/block-title4.png) no-repeat 55% 50%/110%;
-}
+		background: url(../img/block-title4.png) no-repeat 55% 50%/110%;
+	}
 	.block-title {
-	    font-size: 22px;
+		font-size: 22px;
 	}
 	.rent-wtime .rent-block {
-    width: 70%;
+		width: 70%;
 	}
 	.rent .block-title {
-    background: none;
-}
+		background: none;
+	}
 	.header-text span {
-    font-size: 10px;
-  }
+		font-size: 10px;
+	}
 }
