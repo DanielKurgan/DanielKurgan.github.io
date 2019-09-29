@@ -45,6 +45,9 @@ a:hover {
 /*DEFAULT SETTINGS END*/
 
 /*GLOBAL*/
+.mobile {
+	display: none;
+}
 .block-title {
 	margin: 0 auto;
 	max-width: 450px;
@@ -93,6 +96,12 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	padding-top: 20px;
+}
+.desktop-menu {
+	display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 .top-header nav {
 	display: flex;
@@ -366,7 +375,8 @@ header {
 	content: ' ';
 	background: url(../img/omar.png) no-repeat 100% 100%/cover;
 	position: absolute;
-	width: 484px;
+	max-width: 484px;
+	width: 100%;
 	height: 737px;
 	top: 0;
 	left: 50%;
@@ -430,7 +440,7 @@ header {
 }
 .menu-button {
 	text-align: center;
-	margin-bottom: 80px;
+	padding-bottom: 80px;
 }
 /*MENU END*/
 
@@ -485,7 +495,7 @@ header {
 }
 .social-vk::before {
 	content: ' ';
-	background: url('../img/instagram-icon.png') no-repeat 100% 100%/cover;
+	background: url('../img/instagram-icon.png') no-repeat 100% 100%/100%;
 	width: 23px;
 	height: 23px;
 	position: absolute;
@@ -497,7 +507,19 @@ header {
 }
 .social-instagram::before {
 	content: ' ';
-	background: url('../img/instagram-icon.png') no-repeat 100% 100%/cover;
+	background: url('../img/instagram-icon.png') no-repeat 100% 100%/100%;
+	width: 23px;
+	height: 23px;
+	position: absolute;
+	right: -42px;
+	top: -5px;
+}
+.social-facebook {
+	position: relative;
+}
+.social-facebook::before {
+	content: ' ';
+	background: url('../img/instagram-icon.png') no-repeat 100% 100%/100%;
 	width: 23px;
 	height: 23px;
 	position: absolute;
