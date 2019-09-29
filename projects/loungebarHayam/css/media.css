@@ -335,13 +335,21 @@
 	}
 }
 
-@media (max-width: 350px) {
+@media (max-width: 355px) {
+	.block-title {
+    max-width: 270px;
+    font-size: 18px;
+}
+
 	.header-text h3 {
     font-size: 14px;
 	}
-	.about .block-title {
-    background: url(../img/block-title1.png) no-repeat 55% 271%/110%;
-	}
+.about .block-title {
+    background: url(../img/block-title1.png) no-repeat 55% 151%/110%;
+}
+.info__title {
+    font-size: 22px;
+    }
 	.menu-section .block-title {
     background: url(../img/block-title4.png) no-repeat 55% 50%/110%;
 }
@@ -351,6 +359,9 @@
 	.rent-wtime .rent-block {
     width: 70%;
 	}
+	.rent .block-title {
+    background: none;
+}
 	.header-text span {
     font-size: 10px;
   }
