@@ -166,7 +166,7 @@ header {
 .btn {
 	display: inline-block;
 	background: transparent;
-	border: 0.3px solid #FCC870;
+	border: 1px solid #FCC870;
 	line-height: 40px;
 	width: 100%;
 	max-width: 200px;
@@ -557,7 +557,7 @@ header {
 }
 .rent-wtime .btn {
 	height: 45px;
-	border: 0.3px solid #4C4052;
+	border: 1px solid #4C4052;
 	color: #4C4052;
 	font-weight: 900;
 }

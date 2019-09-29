@@ -303,6 +303,27 @@
 		margin: 40px 0;
 		text-align: center;
 	}
+	.block-title {
+    letter-spacing: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+	.block-title {
+    max-width: 320px;
+	}
+	.menu-section .block-title {
+    background: url(../img/block-title4.png) no-repeat 55% 60%/110%;
+	}
+	.rent::before {
+    left: 79%;
+  }
+  .photo::after {
+    left: 82%;
+	}
+	.about .block-title {
+    background: url(../img/block-title1.png) no-repeat 55% 851%/110%;
+	}
 }
 
 @media (max-width: 400px) {
