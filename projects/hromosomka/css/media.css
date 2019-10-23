@@ -1,0 +1,711 @@
+@media (min-width: 1200px) {
+	.container {
+		max-width: 1430px !important;
+	}
+}
+
+@media (max-width: 1201px){
+	.level-block__button input {
+		max-width: 294px;
+	}
+	.welcome .level-image {
+		margin-top: 0;
+	}
+	.level-image__block {
+		margin-top: 30px;
+	}
+	.hromo-cloud {
+		min-width: 372px;
+		max-height: 278px;
+	}
+	.second-level .hromo-cloud {
+		min-width: 292px;
+		max-height: 228px;
+	}
+	.second-level .level-block iframe {
+		max-width: 100%;
+		min-height: auto;
+	}
+	.second-level .level-block {
+		max-width: 100%;
+		min-height: auto;
+		height: auto;
+	}
+	.level-counter {
+		height: 40px;
+		line-height: 35px;
+	}
+	.level-title {
+		line-height: 1.3em;
+	}
+/*	.level-block__button input {
+	    max-width: 354px;
+	    }*/
+	    .level-block {
+	    	max-width: 536px;
+	    }
+	}
+
+	@media (max-width: 992px){
+		.three-level .level-block {
+			margin: 0 auto;
+		}
+		.sixth-level .level-container {
+			align-items: center;
+		}
+		.hromo-cloud {
+			min-width: 372px;
+			max-height: 278px;
+		}
+		.level-image {
+			display: flex;
+			justify-content: center;
+		}
+		.level-counter {
+			left: 50%;
+		}
+		.first-level .level-image__block .level-image {
+			margin-bottom: 0; 
+		}
+		.first-level .level-image__block {
+			padding-bottom:30px;
+		}
+		.level-completed {
+			margin-left: 0; 
+			margin-top: 41px;
+			text-align: center;
+		}
+	}
+
+	@media (max-width: 768px){
+		.level-block iframe {
+			max-width: 100%;
+			min-height: auto;
+		}
+		.level-block {
+			max-width: 776px;
+			min-height: auto;
+		}
+		.welcome .level-image__block {
+			width: 100%;
+		}
+	}
+
+	@media (max-width: 550px){
+		.secret-level .level-block__button {
+			flex-direction: column;
+		}
+		.secret-level .level-block__button a {
+			margin-top: 15px;
+		}
+	}
+
+	@media (max-width: 500px){
+		.second-level .level-block iframe {
+			max-width: 100%;
+			min-height: auto;
+			max-height: 240px;
+		}
+		.level-block__button {
+			flex-direction: column;
+		}
+		.level-block__button input {
+			margin-bottom: 10px;
+		}
+		.level-answers__option span {
+			margin-right: 15px;
+		}
+		.level-block__button a {
+			margin-top: 10px;
+		}
+		.level-block__button form {
+			flex-direction: column;
+		}
+		.level-block__button button {
+			max-width: 100%;
+		}
+		.level-block {
+			padding: 22px;
+		}
+		.level-block__button input {
+			margin-right: 0;
+			max-width: 100%;
+		}
+	}
+
+	@media (max-width: 380px){
+		.hromo-cloud {
+			padding: 40px 27px 110px 37px;
+		}
+		.level-title, .first-level .level-block span {
+			font-size: 20px;
+		}
+		.level-completed {
+			font-size: 20px;
+		}
+		.hromo-cloud {
+			min-width: 302px;
+		}
+	}
+
+	/*LEVEL MAP MEDIA*/
+
+	@media (max-width: 1201px){
+		.game-map__image {
+			width: 100%;
+			height: 100%;
+			max-width: 100%;
+			min-height: 507px;
+			background: url(../img/map-new.png) no-repeat 50% 50%/cover;
+		}
+	}
+
+	@media (max-width: 1430px){
+		.ribbon {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			position: absolute;
+			left: 50%;
+			top: 64px;
+			transform: translateX(-50%);
+			max-width: 473px;
+		}
+		.ribbon-title {
+			margin-top: 37px;
+			font-size: 22px;
+		}
+		.ribbon-text {
+			font-size: 20px;
+		}
+	}
+
+	@media (max-width: 1380px){
+		.tree1 {
+			top: 223px;
+			left: 63px;
+		}
+		.tree2 {
+			top: 535px;
+			left: 110px;
+		}
+		.home1 {
+			top: 398px;
+			left: 274px;
+		}
+		.home2 {
+			top: 539px;
+			left: 374px;
+		}
+		.tree3 {
+			top: 348px;
+			left: 554px;
+		}
+		.lake {
+			top: 521px;
+			left: 672px;
+			width: 100px;
+			height: 142px;
+		}
+		.tree4 {
+			top: 266px;
+			left: 828px;
+		}
+		.mountain {
+			top: 433px;
+			left: 1037px;
+		}
+		.tree5 {
+			top: 581px;
+			left: 1032px;
+		}
+		.game-map__image {
+			width: 100%;
+			height: 100%;
+			max-width: 1226px;
+			transform: translateX(-50%);
+			left: 50%;
+		}
+		.ribbon {
+			max-width: 373px;
+			top: 114px;
+		}
+		.ribbon-title {
+			font-size: 20px;
+			margin-top: 57px;
+		}
+		.ribbon-text {
+			font-size: 18px;
+		}
+		.level1 {
+			top: 274px;
+			left: 124px;
+		}
+		.level2 {
+			left: 180px;
+		}
+		.level3 {
+			top: 274px;
+			left: 360px;
+		}
+		.level4 {
+			left: 495px;
+		}
+		.level5 {
+			top: 274px;
+			left: 645px;
+		}
+		.level6 {
+			left: 785px;
+		}
+		.level7 {
+			top: 274px;
+			left: 915px;
+		}
+		.line2 {
+			left: 350px;
+		}
+		.line3 {
+			left: 490px;
+		}
+		.line4 {
+			left: 640px;
+		}
+		.line5 {
+			left: 785px;
+		}
+		.line6 {
+			left: 915px;
+		}
+	}
+	@media (max-width: 1200px){
+		.map-level {
+			width: 120px;
+			height: 120px;
+		}
+		.map-level .level-number {
+			font-size: 35px;
+			margin-bottom: 0;
+		}
+		.level-status {
+			margin-top: 9px;
+			width: 36px;
+		}
+		.level-status {
+			margin-top: 0;
+		}
+		.lock {
+			width: 21px;
+			height: 30px;
+		}
+		.ribbon {
+			max-width: 323px;
+			top: -26px;
+		}
+		.ribbon-title {
+			font-size: 18px;
+			margin-top: 72px;
+		}
+		.ribbon-text {
+			font-size: 16px;
+		}
+		.level1 {
+			top: 154px;
+			left: 30%;
+			transform: translateX(-50%);
+		}
+		.level2 {
+			top: 154px;
+			left: 70%;
+			transform: translateX(-50%);
+		}
+		.level3 {
+			top: 314px;
+			left: 30%;
+			transform: translateX(-50%);
+		}
+		.level4 {
+			top: 314px;
+			left: 70%;
+			transform: translateX(-50%);
+		}
+		.level5 {
+			top: 475px;
+			left: 30%;
+			transform: translateX(-50%);
+		}
+		.level6 {
+			top: 475px;
+			left: 70%;
+			transform: translateX(-50%);
+		}
+		.level7 {
+			top: 625px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+		.map-line {
+			height: 160px;
+		}
+		.line1 {
+			transform: rotate(95deg);
+			left: 50%;
+			top: 120px;
+		}
+		.line2 {
+			left: 48%;
+			transform: rotate(75deg);
+			top: 210px;
+		}
+		.line3 {
+			left: 50%;
+			top: 300px;
+			transform: rotate(105deg);
+		}
+		.line4 {
+			left: 45%;
+			top: 380px;
+			transform: rotate(-295deg);
+		}
+		.line5 {
+			left: 50%;
+			top: 440px;
+			transform: rotate(-95deg);
+		}
+		.line6 {
+			left: 50%;
+			top: 545px;
+			transform: rotate(-135deg);
+		}
+		.game-map__image {
+			max-width: 49%;
+			min-height: 837px;
+			background: url(../img/map-newMob.png) no-repeat 100% 100%/cover;
+		}
+		.tree1 {
+			top: 153px;
+			left: 33px;
+			width: 30px;
+			height: 77px;
+		}
+		.tree2 {
+			top: 265px;
+			left: 50px;
+			width: 36px;
+			height: 47px;
+		}
+		.tree3 {
+			top: 408px;
+			left: 34px;
+			width: 42px;
+			height: 60px;
+		}
+		.home1 {
+			top: 298px;
+			left: 204px;
+			width: 60px;
+			height: 50px;
+		}
+		.home2 {
+			top: 259px;
+			left: 354px;
+			width: 65px;
+			height: 54px;
+		}
+		.tree4 {
+			top: 426px;
+			left: 368px;
+			width: 51px;
+			height: 60px;
+		}
+		.lake {
+			top: 621px;
+			left: 312px;
+			width: 90px;
+			height: 112px;
+		}
+		.tree5 {
+			top: 599px;
+			left: 52px;
+			width: 46px;
+			height: 90px;
+		}
+		.mountain {
+			top: 713px;
+			left: 87px;
+			width: 79px;
+			height: 61px;
+		}
+		.level6 img {
+			width: 68px;
+			height: 88px;
+		}
+		.level7 img {
+			width: 68px;
+			height: 88px;
+		}
+	}
+
+	@media(max-width: 992px){
+		.level1 {
+			left: 28%;
+		}
+		.level2 {
+			left: 73%;
+		}
+		.level3 {
+			left: 28%;
+		}
+		.level4 {
+			left: 73%;
+		}
+		.level5 {
+			left: 28%;
+		}
+		.level6 {
+			left: 73%;
+		}
+		.level7 {
+			left: 50%;
+		}
+		.game-map__image {
+			max-width: 65%;
+			min-height: 827px;
+			background: url(../img/map-newMob.png) no-repeat 100% 100%/cover;
+		}
+	}
+	@media (max-width: 750px){
+		.tree1 {
+			top: 147px;
+			left: 28px;
+			width: 23px;
+			height: 47px;
+		}
+		.tree2 {
+			top: 265px;
+			left: 30px;
+		}
+		.tree3 {
+			top: 428px;
+			left: 34px;
+			width: 32px;
+			height: 50px;
+		}
+		.tree5 {
+			top: 599px;
+			left: 42px;
+			width: 36px;
+			height: 60px;
+		}
+		.mountain {
+			top: 663px;
+			left: 67px;
+			width: 59px;
+			height: 51px;
+		}
+		.home1 {
+			left: 183px;
+		}
+		.home2 {
+			top: 269px;
+			left: 314px;
+			width: 55px;
+			height: 44px;
+		}
+		.tree4 {
+			top: 436px;
+			left: 318px;
+			width: 41px;
+			height: 50px;
+		}
+		.lake {
+			top: 621px;
+			left: 272px;
+			width: 70px;
+			height: 92px;
+		}
+
+		.level-map .container {
+			max-width: 740px;
+		}
+		.game-map__image {
+			max-width: 65%;
+			min-height: 847px;
+			background-size: 100%;
+		}
+		.game-map__image {
+			max-width: 400px;
+			min-height: 757px;
+		}
+		.ribbon {
+			max-width: 323px;
+			top: -20px;
+		}
+		.level7 {
+			top: 595px;
+		}
+	}
+
+	@media (max-width: 430px){
+		.ribbon {
+			top: -50px;
+			max-width: 275px;
+		}
+		.tree1 {
+			top: 117px;
+			left: 28px;
+			width: 20px;
+			height: 37px;
+		}
+		.tree2 {
+			top: 245px;
+			left: 30px;
+			width: 20px;
+			height: 27px;
+		}
+		.home1 {
+			top: 208px;
+			left: 143px;
+			width: 40px;
+			height: 30px;
+		}
+		.home2 {
+			top: 269px;
+			left: 157px;
+		}
+		.tree4 {
+			top: 396px;
+			left: 158px;
+			width: 31px;
+			height: 40px;
+		}
+		.tree5 {
+			top: 509px;
+			left: 32px;
+			width: 26px;
+			height: 40px;
+		}
+		.mountain {
+			top: 563px;
+			left: 57px;
+			width: 49px;
+			height: 41px;
+		}
+		.lake {
+			top: 541px;
+			left: 222px;
+			width: 60px;
+			height: 82px;
+		}
+		.game-map__image {
+			max-width: 320px;
+			min-height: 657px;
+			background-size: 100% 100%;
+		}
+		.map-level {
+			width: 90px;
+			height: 90px;
+		}
+		.map-level .level-number {
+			font-size: 25px;
+		}
+		.map-level span {
+			font-size: 12px;
+		}
+		.level-status {
+			margin-top: 0;
+			width: 26px;
+			height: 26px;
+		}
+		.lock {
+			width: 16px;
+			top: 0px;
+		}
+		.level1 {
+			left: 21%;
+		}
+		.level2 {
+			left: 79%;
+		}
+		.level3 {
+			top: 274px;
+			left: 21%;
+		}
+		.level4 {
+			top: 274px;
+			left: 79%;
+		}
+		.level5 {
+			top: 395px;
+			left: 21%;
+		}
+		.level6 {
+			top: 395px;
+			left: 79%;
+		}
+		.level7 {
+			top: 395px;
+			left: 21%;
+		}
+		.level8 {
+			top: 395px;
+			left: 79%;
+		}
+		.level7 {
+			top: 514px;
+			left: 50%;
+		}
+		.line2 {
+			left: 50%;
+			transform: rotate(75deg);
+			top: 190px;
+		}
+		.line3 {
+			left: 50%;
+			top: 260px;
+			transform: rotate(105deg);
+		}
+		.line4 {
+			left: 45%;
+			top: 310px;
+			transform: rotate(-295deg);
+		}
+		.line5 {
+			left: 50%;
+			top: 360px;
+			transform: rotate(-95deg);
+		}
+		.line6 {
+			left: 60%;
+			top: 445px;
+			transform: rotate(-135deg);
+		}
+		.level6 img {
+			width: 55px;
+			height: 73px;
+		}
+		.level7 img {
+			width: 55px;
+			height: 73px;
+		}
+		.ribbon-title {
+			margin-top: 83px;
+			transform: rotate(2deg);
+			font-size: 14px;
+		    letter-spacing: -2px;
+			margin-bottom: 0;
+		}
+		.ribbon-text {
+			font-size: 12px;
+    		letter-spacing: -1.7px;
+		}
+		.level-map .container {
+			padding: 0 0;
+		}
+		.level-tree {
+			padding: 35px 0;
+			display: inline-block;
+			margin-bottom: 0;
+		}
+	}
+/*LEVEL MAP MEDIA END*/

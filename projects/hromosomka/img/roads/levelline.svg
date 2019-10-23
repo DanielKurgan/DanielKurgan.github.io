@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="62.562" height="286.25" viewBox="0 0 62.562 286.25">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #5771ff;
+        stroke-linecap: round;
+        stroke-width: 6.5px;
+        stroke-dasharray: 0.001 13;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="level_1-2.svg" data-name="level 1-2.svg" class="cls-1" d="M513.45,477.325s-82.442,137.947-5.759,249.065C509.26,728.663,522.3,744.75,524,747" transform="translate(-465.313 -469.156)"/>
+</svg>

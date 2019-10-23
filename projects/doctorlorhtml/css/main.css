@@ -31,13 +31,46 @@ div.wrapper {
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
-  margin-left: auto; }
+  margin-left: auto; 
+  overflow: hidden; }
 
 body {
   font-family: "RobotoRegular", sans-serif;
   background: url(../img/background.png) no-repeat;
   background-size: cover; }
 
+  /*POST PAGE*/
+  .post-title {
+    padding: 15px 0;
+    color:  #4575bd;
+    font-weight: 700;
+  }
+  .post-page {
+    font-size: 16px;
+    padding-left: 30px !important;
+  }
+  .post-page hr {
+    margin: 0;
+  }
+  .post-date {
+    font-weight: bold;
+  }
+  .post-date {
+    font-weight: bold;
+    font-size: 12px;
+  }
+  .post-link {
+    font-weight: bold;
+    font-size: 12px;
+  }
+  /*POST PAGE END*/
+div.statistic__item span {
+    color: #ffffff;
+    font-family: RobotoBold;
+    font-size: 18px;
+    font-weight: 800;
+    text-align: center;
+}
 div.header__inner {
   display: flex;
   flex-direction: row;
@@ -313,6 +346,16 @@ div.hamburger {
     top: 0px; } }
 
 @media screen and (max-width: 1200px) {
+  div.aboutImage {
+    padding-right: -10px !important;
+    justify-content: flex-end !important;
+  }
+  div.aboutImage img {
+    width: 300px;
+  }
+  div.wrapper {
+    width: 95% !important;
+  }
   div.logo {
     flex-direction: column;
     justify-content: center; }
@@ -332,6 +375,17 @@ div.hamburger {
     top: 0px; } }
 
 @media screen and (max-width: 992px) {
+  .timepriem.col-lg-3 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  div.timeday {
+    margin-left: 0 !important;
+  }
+  div.aboutImage {
+    justify-content: center !important;
+  }
   div.header__inner {
     flex-direction: column;
     height: auto; }
@@ -406,7 +460,10 @@ div.hamburger {
 
 @media screen and (max-width: 500px) {
   div.timepriem__inner {
-    margin-left: 75px; } }
+    margin-left: 75px; } 
+  div.wrapper {
+    width: 100% !important;}
+  }
 
 @media screen and (max-width: 450px) {
   div.timepriem__inner {
@@ -440,11 +497,11 @@ div.hamburger {
     margin: 0px;
     padding: 0px; }
   div.menu__inner {
-    height: 250px; }
+    height: auto; }
   div.menu__inner ul {
     display: none;
     flex-direction: column;
-    margin-top: 200px; }
+    margin-top: 130px; }
   div.timepriem__inner {
     height: 151px; }
   div.hamburger {
@@ -1034,5 +1091,8 @@ div.telephone h2 {
     display: flex;
     justify-content: center;
   }
+  div.timeday {
+    margin-left: 0px;
+  }
 }
-/*DK STYLES END
+/*DK STYLES END */
