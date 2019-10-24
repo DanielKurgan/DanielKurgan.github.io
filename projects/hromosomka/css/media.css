@@ -690,14 +690,11 @@
 		}
 		.ribbon-title {
 			margin-top: 83px;
-			transform: rotate(2deg);
 			font-size: 14px;
-		    letter-spacing: -2px;
-			margin-bottom: 0;
 		}
 		.ribbon-text {
 			font-size: 12px;
-    		letter-spacing: -1.7px;
+		    margin-top: -15px;
 		}
 		.level-map .container {
 			padding: 0 0;

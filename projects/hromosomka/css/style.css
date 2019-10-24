@@ -521,6 +521,7 @@ input[type='radio']:checked::after {
 	color: #ffea00;
 	font-size: 24px;
 	font-family: GothamProBold;
+	margin-top: -10px;
 }
 .map-level {
 	position: absolute;
@@ -646,7 +647,7 @@ input[type='radio']:checked::after {
 	background: url("../img/levels/locked.svg") no-repeat 100% 100%/100%;
 }
 .ribbon {
-	letter-spacing: -3px;
+	letter-spacing: -1px;
 	display: flex;
 
 }
@@ -656,43 +657,9 @@ input[type='radio']:checked::after {
 }
 
 .ribbon-title {
-	margin-top: 27px;
+	margin-top: 17px;
 	margin-bottom: 5px;
 }
-
-.char1 { transform: rotate(0); }
-.char2 { transform: rotate(-2deg) translateY(-2px); }
-.char3 { transform: rotate(-4deg) translateY(-2px); }
-.char4 { transform: rotate(-3deg) translateY(-3px); }
-.char5 { transform: rotate(-4deg) translateY(-4px); }
-.char6 { transform: rotate(-4deg) translateY(-5px); }
-.char7 { transform: rotate(0deg) translateY(-6px); }
-.char8 { transform: rotate(-1deg) translateY(-6px); }
-.char9 { transform: rotate(4deg) translateY(-6px); }
-.char10 { transform: rotate(0deg) translateY(-5px); }
-.char11{ transform: rotate(3deg) translateY(-4px); }
-.char12 { transform: rotate(4deg) translateY(-3px); }
-.char13 { transform: rotate(5deg) translateY(-1px); }
-
-.char14 { transform: rotate(-6deg) translateY(-0px); }
-.char15 { transform: rotate(-6deg) translateY(-2px); }
-.char16 { transform: rotate(-5deg) translateY(-4px); }
-.char17 { transform: rotate(-5deg) translateY(-6px); }
-.char18 { transform: rotate(-5deg) translateY(-7px); }
-.char19 { transform: rotate(-5deg) translateY(-8px); }
-.char20 { transform: rotate(-5deg) translateY(-9px); }
-.char21 { transform: rotate(-5deg) translateY(-10px); }
-.char22 { transform: rotate(-5deg) translateY(-10px); }
-.char23 { transform: rotate(-2deg) translateY(-10px); }
-.char24 { transform: rotate(0deg) translateY(-10px); }
-.char25 { transform: rotate(0deg) translateY(-9px); }
-.char26 { transform: rotate(4deg) translateY(-8px); }
-.char27 { transform: rotate(0deg) translateY(-7px); }
-.char28 { transform: rotate(7deg) translateY(-5px); }
-.char29 { transform: rotate(0deg) translateY(-3px); }
-.char30 { transform: rotate(7deg) translateY(-2px); }
-.char31 { transform: rotate(12deg) translateY(-1px); }
-.char32 { transform: rotate(10deg) translateY(1px); }
 
 .map-decor {
 	position: absolute;
