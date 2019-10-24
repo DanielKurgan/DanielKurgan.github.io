@@ -1,0 +1,8 @@
+
+RewriteEngine on
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-SSL} !on
+RewriteCond %{HTTP_HOST} ^kalyan\.moscow$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.kalyan\.moscow$
+RewriteRule ^/?$ "https\:\/\/kalyan\.moscow\/" [R=301,L]
+

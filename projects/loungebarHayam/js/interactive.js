@@ -1,4 +1,38 @@
 $(document).ready(function() {
+    
+    // WATER RIPPLE EFFECT
+    $(".menu-section__omar").ripples();
+    // WATER RIPPLE EFFECT END
+    
+    // ANIMATION WHEN SCROLL
+
+$(document).ready(function(){
+      $(document).bind("scroll",function(){
+        $(".about .block-title").each(function(){
+          var position = $(this).offset().top;
+          var classToBeAdded = "visible";
+          
+          if (position < $(window).scrollTop() + $(window).height()){
+            $(".about .block-title .pseudolineLeft").addClass('animateLineLeft');
+            $(".about .block-title .pseudolineRight").addClass('animateLineRight');
+            $(".about .block-title .pseudolineBottom").addClass('animateLineBottom');
+          }
+          
+        });
+        $(".menu-section .block-title").each(function(){
+          var position = $(this).offset().top;
+          var classToBeAdded = "visible";
+          
+          if (position < $(window).scrollTop() + $(window).height()){
+            $(".menu-section .block-title .pseudolineLeft").addClass('animateLineLeft');
+            $(".menu-section .block-title .pseudolineRight").addClass('animateLineRight');
+            $(".menu-section .block-title .pseudolineBottom").addClass('animateLineBottom');
+          }
+          
+        });
+      });
+    });
+    // ANIMATION WHEN SCROLL END
 
     // HAMBURGER
     var $hamburger = $(".hamburger");
@@ -34,7 +68,7 @@ $(document).ready(function() {
 
 	// SLIDER
 	$('.photo-slider').slick({
-		arrows: false,
+		arrows: true,
 		dots: false,
 		infinite: true,
 		slidesToShow: 3,
@@ -70,7 +104,7 @@ jQuery(document).ready(function ($) {
         		event.preventDefault();
         	},
 
-           dblclick: function (event) {
+         dblclick: function (event) {
 
             if ($(window).width() >= 701){
               $.fancybox(gallery, {
@@ -79,13 +113,13 @@ jQuery(document).ready(function ($) {
                 // API options
                 padding: 0,
                 index: i // starts gallery from (double) clicked element
-                });
-              }
+            });
+          }
 
-              else if($(window).width() < 701) {
-                  $.fancybox(gallery, {
-                    minWidth: 345,
-                    minHeight: 450,
+          else if($(window).width() < 701) {
+              $.fancybox(gallery, {
+                minWidth: 345,
+                minHeight: 450,
                         // API options
                         padding: 0,
                         index: i // starts gallery from (double) clicked element
@@ -99,9 +133,42 @@ jQuery(document).ready(function ($) {
 // FANCYBOX END
 
 
+// CLOSE POPUP
+$(function($){
+  $(document).mouseup(function (e){ // событие клика по веб-документу
+    var div = $(".booking-popup .booking-block"); // тут указываем ID элемента
+    if (!div.is(e.target) // если клик был не по нашему блоку
+        && div.has(e.target).length === 0) { // и не по его дочерним элементам
+        $(".booking-popup").css("z-index","-999999");
+        $(".booking-popup").css("display","none");
+      div.toggle(); // скрываем его
+    }
+  });
+});
+// CLOSE POPUP END
+
+// BOOKING POPUP OPEN
+
+$(".hbookingbtn").click(function(){
+    $(".booking-popup").css("display","flex");
+    $(".booking-popup").css("z-index","9999999");
+    $(".booking-block").show();
+    $(".popup-background").show();
+});
+// BOOKING POPUP OPEN CLOSE
+
+// MASK
+ $(function() {
+   $('.mask__number').mask('+0(000)000-00-00');
+ });
+// MASK END
 
 
-
-
+    $(".agelimit").css("display", "flex");
+    $("body").css("overflowY","hidden");
+    $(".agelimit__button").click(function(){
+        $(".agelimit").toggle();
+        $("body").css("overflowY","visible");
+    });
 
 });

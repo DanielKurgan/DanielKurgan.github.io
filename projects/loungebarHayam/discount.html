@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Discount Loungebar Omar Hayam</title>
+
+	<meta name="description" content="Краткое описание страницы">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- FAVICON -->
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	
+	<!-- LINKS -->
+	<link href="https://fonts.googleapis.com/css?family=El+Messiri&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+
+	</head>
+	<body>
+		<!-- Здесь пишем код -->
+		<div class="discount">
+			<div class="discount-container">
+				<div class="discount-card">
+					<div class="discount-block">
+						<img class="discount-image" src="img/rectangle-image-bg.png" alt="">
+
+						<span class="discount-card__title">Название акции</span>
+						<span class="discount-card__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </span>
+						<img src="./img/divider2.png" class="divider">
+					</div>
+				</div>
+				<div class="booking-block">
+					<span class="booking-title">Заявка на бронирование</span>
+					<span class="booking-text">Оставьте заявку, мы вам перезвоним и все подробно расскажем!</span>
+					<form action="./mail.php" method="POST" class="booking-form">
+						<label class="booking-people"><input type="text" name="user_name" placeholder="Имя*" required></label>
+						<label class="booking-phone"><input class="mask__number" type="text" name="user_phone" placeholder="Телефон*" required maxlength="12" value=""></label>
+						<button class="btn">Отправить</button>
+					</form>
+					<span class="booking-notify">Оставьте заявку, мы вам перезвоним и все подробно расскажем!</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="agelimit">
+			<div class="popup-background"></div>
+			<div class="agelimit-pattern"></div>
+			<div class="agelimit-block">
+				<span class="agelimit__title">Возрастное ограничение 18+</span>
+				<span class="agelimit__text">Для использования этого сайта, вы должны подтвердить, что вам уже исполнилось 18 лет.</span>
+				<button class="agelimit__button btn">Мне больше 18 лет</button>
+			</div>
+		</div>
+		
+		<script
+		src="https://code.jquery.com/jquery-3.4.1.min.js"
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+		crossorigin="anonymous"></script>
+		<script src="js/slick.js"></script>
+		<script src="js/jquery.fancybox.pack.js"></script>
+		<script src="js/jquery.fancybox.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+		<script src="js/cookieyandex.js"></script>
+		<script src="js/yandexmap.js"></script>
+		<script src="js/interactive.js"></script>
+
+</body>
+</html>
