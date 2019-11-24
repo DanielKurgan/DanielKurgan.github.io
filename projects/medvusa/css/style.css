@@ -99,7 +99,7 @@ header {
 	left:0;
 	z-index: -2;
 }
-.header-decor__block img {
+.header-decor__block svg {
 	position: absolute;
 }
 .decor-gradusnik {
@@ -194,6 +194,7 @@ header {
 	display: flex;
 }
 .login {
+	font-size: 14px;
 	color: #6064AD;
 	position: relative;
 }
@@ -359,7 +360,7 @@ header .container {
 
 
 .header-text {
-	margin-top: 149px;
+	margin-top: 39px;
 	max-width: 635px;
 	width: 100%;
 	font-weight: bold;
@@ -407,7 +408,7 @@ button.pink-btn {
 .header-content__image img {
 	position: absolute;
 	right: -80px;
-	top: 30px;
+	top: -20px;
 	max-width: 575px;
 	max-height: 508px;
 	width: 100%;
@@ -417,13 +418,16 @@ button.pink-btn {
 
 /*STATS*/
 .stats {
-	background: #fff;
 	padding-top: 150px;
+	background: #fff url(../img/statsbg.png) no-repeat 100% 100%/50%;
 }
 .stats .title {
 	margin-bottom: 30px;
 }
-
+.focus-word {
+	color: #212649;
+	font-weight: 300;
+}
 .title {
 	color: #212649;
 	line-height: 41px;
@@ -641,7 +645,7 @@ label {
 	max-height: 298px;
 	width: 100%;
 	height: 100%;
-	margin-left: -60px;
+	margin-left: -30px;
 	border-radius: 14px;
 	display: none;
 }
@@ -672,6 +676,7 @@ label {
 }
 .platform-block__text h4 {
 	margin-bottom: 14px;
+    color: #212649;
 }
 .platform-block__text p {
 	max-width: 350px;
@@ -679,9 +684,10 @@ label {
 	line-height: 24px;
 }
 .platform-block img {
+    margin-right: 7px;
 	margin-top: -14px;
-	width: 112px;
-	height: 112px;
+    width: 122px;
+    height: 122px;
 }
 
 /*FORWHOM*/
@@ -899,11 +905,15 @@ label {
 	border-radius: 0 0 14px 14px;
 	max-width: 350px;
 	width: 100%;
-	min-height: 444px;
+    min-height: 414px;
 	height: 100%;
 	margin-bottom: 30px;
-	box-shadow: 0px 10px 20px rgba(138, 138, 138, 0.1);
+	box-shadow: 0px 7px 30px rgba(209, 207, 236, 0.4);
 	position: relative;
+	cursor: pointer;
+}
+.course-block:hover {
+	box-shadow: 0px 7px 40px rgba(209, 207, 236, 0.7);
 }
 .course-teacher {
 	top: 155px;
@@ -938,6 +948,15 @@ label {
 	height: 190px;
 	width: 100%;
 }
+.course-image {
+	background-position: center !important;
+}
+.course-image:hover {
+	opacity: 1;
+}
+.bgsize {
+	background-size: 110% !important;
+}
 .course-block1 .course-image {
 	background: url("../img/course1.png") no-repeat 100% 100%/100%;
 }
@@ -959,7 +978,7 @@ label {
 	max-width: 224px;
 	width: 100%;
 	line-height: 20px;
-	margin-bottom: 25px;
+    margin-bottom: 15px;
 	font-size: 20px;
 	font-weight: 500;
 	height: 40px;
@@ -1087,12 +1106,12 @@ label {
 	font-size: 18px;
 	line-height: 27px;
 	font-weight: 500;
+	transition: 0.4s;
 }
-/*.course-about__button:hover {
-	background: black;
-	color: white;
+.course-about__button:hover {
+	color: #636981;
 }
-*/
+
 /*TEACHERS*/
 .teachers {
 	overflow: hidden;
@@ -1111,10 +1130,11 @@ label {
 }
 .teacher-name {
 	font-weight: 500;
+	font-size: 24px;
 }
 .teachers-slider {
 	border-radius: 80px 0 0 0;
-	margin-top: 35px;
+	margin-top: 5px;
 	max-width: 300%;
 	width: 100%;
 }
@@ -1319,13 +1339,14 @@ label {
 	width: 100%;
 	line-height: 31px;
 	margin-top: 5px;
-	font-size: 24px;
+	font-size: 22px;
 	font-weight: 500;
 }
 .teachers-slider__nav {
+    overflow: hidden;
 	max-height: 68px;
 	position: absolute;
-	bottom: -40px;
+    bottom: -70px;
 	left: 320px;
 	cursor: pointer;
 }
@@ -1356,9 +1377,9 @@ label {
 
 /*STUDENTS*/
 .students {
-	padding-top: 90px;
+    padding-top: 160px;
 	overflow: hidden;
-	padding-bottom: 123px;
+	padding-bottom: 0;
 }
 .students .container {
 	flex-direction: column;
@@ -1402,7 +1423,7 @@ label {
 	padding-right: 1600px;
 	position: absolute;
 	padding-top: 100px;
-	top: -120px;
+    top: -100px;
 }
 .students .slick-initialized .slick-slide {
 	margin-right: 30px;
@@ -1423,6 +1444,7 @@ label {
 }
 .students-slide__text h4 {
 	margin-bottom: 19px;
+    color: #212649;
 }
 .students-slide__text p {
 	font-size: 16px;
@@ -1432,7 +1454,7 @@ label {
 }
 .read-more {
 	color: #6E4AFA;
-	font-weight: bold;
+	font-weight: 500;
 	font-size: 16px;
 	margin-top: 12px;
 }
@@ -1457,6 +1479,7 @@ label {
 	font-weight: 500;
 	font-size: 20px;
 	line-height: 26px;
+    margin-bottom: 5px;
 }
 .student-contact {
 	font-size: 14px;
@@ -1481,8 +1504,9 @@ label {
 
 /*MATERIALS*/
 .materials {
-	padding-top: 100px;
-	padding-bottom: 115px;
+    padding-top: 210px;
+	padding-bottom: 135px;
+	background: url(../img/wavebg.png) no-repeat 100% 100%/cover;
 }
 .materials .title {
 	margin-bottom: 25px;
@@ -1502,6 +1526,7 @@ label {
 	padding-bottom: 22px;
 }
 .look-more {
+    font-size: 14px;
 	padding-right: 35px;
 	margin-top: 22px;
 	display: inline-block;
@@ -1627,16 +1652,17 @@ label {
 	margin-bottom: 18px;
 }
 .footer-about p {
-	max-width: 284px;
-	width: 100%;
-	line-height: 18px;
+    max-width: 284px;
+    width: 100%;
+    line-height: 21px;
+    font-size: 14px;
 }
 .footer-list li {
 	list-style: none;
 }
 .footer-list__title {
 	font-size: 16px;
-	font-weight: bold;
+    font-weight: 500;
 	margin-bottom: 28px;
 	display: inline-block;
 }

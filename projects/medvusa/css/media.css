@@ -56,7 +56,7 @@
 		font-size: 36px;
 		line-height: 43px;
 		margin-bottom: 16px;
-		margin-top: 128px;
+		margin-top: 48px;
 	}
 	.header-subtext {
 		font-size: 16px;
@@ -66,7 +66,7 @@
 		max-width: 434px;
 		height: auto;
 		right: 0;
-		top: 45px;
+		top: 0;
 	}
 	.header-text {
 		max-width: 489px;
@@ -276,7 +276,7 @@
 		top: 0px;
 	}
 	.course-block {
-		min-height: 484px;
+	    min-height: 414px;
 	}
 	.course-about {
 		padding: 50px 50px;
@@ -314,7 +314,7 @@
 		max-height: 449px;
 	}
 	.teachers-slider__nav {
-		bottom: -10px;
+		bottom: -50px;
 		left: 130px;
 	}
 	.teachers-slide {
@@ -398,6 +398,7 @@
 	}
 	.materials {
 		padding-top: 40px; 
+		background: none;
 	}
 	.materials-image {
 		height: 349px;
@@ -498,7 +499,7 @@
 
 @media (max-width: 950px){
 	.intensivebg2 {
-	    background: url(../img/intensivebg2.png) no-repeat 100% 70%/100%;
+		background: url(../img/intensivebg2.png) no-repeat 100% 70%/100%;
 	}
 	.intensive-image2 {
 		max-width: 286px;
@@ -555,8 +556,8 @@
 		top: 10px;
 	}
 	.teachers {
-		height: 500px;
-	}	
+	    height: 580px;
+	}
 	.teachers-slider {
 		margin-top: 25px;
 		position: absolute;
@@ -848,7 +849,7 @@
 		height: 130px;
 	}
 	.teachers-slider__nav {
-		bottom: 20px;
+		bottom: -10px;
 		left: 60px;
 	}
 	.teachers-slider__for #prev {
@@ -1050,6 +1051,9 @@
 }
 
 @media (max-width: 700px){
+	.stats {
+	    background: #fff url(../img/statsbg.png) no-repeat 100% 0%/50%;
+	}
 	.footer-list ul li {
 		line-height: 0px;
 	}
@@ -1478,7 +1482,7 @@
 		line-height: 27px;
 	}
 	.teachers-slider {
-		margin-top: -30px;
+	    margin-top: 30px;
 	}
 	.teacher-text {
 		max-width: 320px;

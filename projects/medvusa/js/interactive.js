@@ -1,3 +1,8 @@
+
+
+var parallax = document.getElementById('parallax');
+var parallaxInstance = new Parallax(parallax);
+
 $(document).ready(function(){
 
 // CLEAR LSEP
@@ -26,10 +31,13 @@ $('.teachers-slider__for').slick({
 });
 
 $('.teachers-slider__nav').slick({
-	slidesToShow: 10,
+	slidesToShow: 9,
 	slidesToScroll: 1,
 	asNavFor: '.teachers-slider__for',
 	dots: true,
+	infinite: true,
+	swipe: true,
+	swipeToSlide: true,
 	focusOnSelect: true,
 	variableWidth: true,
 	responsive: [
@@ -57,10 +65,6 @@ $('.students-slider').slick({
 	prevArrow: '<button id="prev" type="button" class="btn btn-juliet"><img src="img/studentsPrev.png"></button>',
 
 });
-
-var parallax = document.getElementById('parallax');
-var parallaxInstance = new Parallax(parallax);
-
 new WOW().init();
 
 var rellax = new Rellax('.rellax', {
@@ -174,5 +178,25 @@ $hamburger.on("click", function(e) {
 
 	}
 });
+
+$(".course-block1").hover(function(){
+	$(".course-block1 .course-image").toggleClass("bgsize");
+})
+
+$(".course-block2").hover(function(){
+	$(".course-block2 .course-image").toggleClass("bgsize");
+})
+
+$(".course-block3").hover(function(){
+	$(".course-block3 .course-image").toggleClass("bgsize");
+})
+
+$(".course-block4").hover(function(){
+	$(".course-block4 .course-image").toggleClass("bgsize");
+})
+
+$(".course-block5").hover(function(){
+	$(".course-block5 .course-image").toggleClass("bgsize");
+})
 
 });
