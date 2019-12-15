@@ -1,0 +1,1356 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <!-- SEO Meta -->
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <!-- <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png"> -->
+    <!-- Title -->
+    <title>Получите 100% комиссионных со своих сделок в новостройках СПб, работая с нашей партнерской программой</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/new.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <!--    <link rel="stylesheet" href="css/new.css">-->
+    <!-- IE8 --><!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+<style type="text/css">
+
+
+    @media (max-width: 700px){
+        .popup-newyear__block-main-title {
+            max-width: 286px;
+            line-height: 24px;
+            font-size: 20px;
+        }
+        .popup-newyear__block-subtitle {
+            max-width: 310px;
+            font-size: 12px;
+            line-height: 17px;
+        }
+        .popup-newyear__cross {
+            background: url(../img/popup-cross.svg) no-repeat 100% 100%/50%;
+            width: 9px;
+            height: 11px;
+            top: 5px;
+            right: 5px;
+        }
+        .popup-newyear__block {
+            overflow: hidden;
+            max-width: 320px !important;
+            max-height: 568px !important;
+            background: url(../img/nymobbg.png) no-repeat 100% 100%/100%;
+        }
+        .popup-newyear__block-inner__decor {
+            display: none;
+        }
+        label {
+            margin: 0 auto !important;
+        }
+        .left-girlyanda {
+            position: absolute;
+            left: -80px;
+            width: 134px;
+            height: 90px;
+        }
+        .right-girlyanda {
+            position: absolute;
+            width: 134px;
+            height: 90px;
+            right: -90px;
+        }
+        .popup-newyear__block-inner {
+           padding-top: 0; 
+       }
+       .popup-newyear__block-title {
+        margin-top: 100px;
+        font-size: 15px;
+        line-height: 24px;
+    }
+    .popup-newyear__block-inner .popup-newyear__block-subtitle {
+        max-width: 255px;
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+
+.main-test {
+    background: #292929;
+    padding: 30px 0;
+}
+
+.main-test:before {
+    position: absolute;
+    bottom: -23px;
+    left: 50%;
+    margin-left: -23px;
+    width: 47px;
+    height: 47px;
+    z-index: 10;
+    content: '';
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #292929 url(../img/arrow-down.svg) no-repeat center center;
+}
+
+.container--width-100 {
+    width: 100%;
+}
+
+.main-test__row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*flex-wrap: wrap;*/
+}
+
+.main-test__test {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 27px;
+}
+
+.main-test__quiz {
+    fill: #fff;
+    width: 51px;
+    min-width: 51px;
+    height: 51px;
+    margin-right: 20px;
+}
+
+.main-test__test-text {
+    font-size: 14px;
+    font-weight: bold;
+    font-style: normal;
+    line-height: 1.36;
+    letter-spacing: normal;
+    color: #ffffff;
+    margin: 0;
+}
+
+.main-test__test-text span {
+    font-weight: normal;
+    display: block;
+}
+
+        /*.main-test__btn {
+          display: inline-block;
+          padding: 16px 18px;
+          width: auto;
+          font-size: 12px;
+          font-weight: bold;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: normal;
+          letter-spacing: 0.7px;
+          margin: 0 63px 0 0;
+          }*/
+          .main-test__play {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            padding-left: 49px;
+        }
+
+        .main-test__play:before {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            margin-top: -22px;
+            background: rgba(255, 255, 255, .26);
+            width: 2px;
+            height: 44px;
+            content: '';
+        }
+
+        .main-test__play-v {
+            fill: #ff2425;
+            width: 53px;
+            min-width: 53px;
+            height: 53px;
+            margin-right: 20px;
+            transition: all .5s ease;
+        }
+
+        .main-test__play-text {
+            font-size: 14px;
+            font-weight: bold;
+            font-style: normal;
+            line-height: 1.36;
+            letter-spacing: normal;
+            color: #ffffff;
+            margin: 0;
+        }
+
+        .main-test__play-text span {
+            font-weight: normal;
+            display: block;
+        }
+
+        .main-test__play-link:hover .main-test__play-v {
+            fill: #af0c17;
+        }
+
+        button, .btn {
+            text-align: center;
+            vertical-align: top;
+            font-weight: bold;
+            font-size: 12px;
+            font-family: "Formular";
+            line-height: 1.7;
+            padding: 8px 15px;
+            text-transform: uppercase;
+            background: #d12e26;
+            color: #fff;
+            border: 0;
+            border-radius: 5px;
+            position: relative;
+            -webkit-transition: all .3s ease-in-out;
+            transition: all .3s ease-in-out;
+            width: 100%;
+            display: block;
+            cursor: pointer;
+            outline: none;
+            letter-spacing: 1px;
+        }
+
+        .main-test__btn {
+            /*display: inline-block;
+            padding: 16px 18px;
+            width: auto;
+            font-size: 12px;
+            font-weight: bold;*/
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: 0.7px;
+            margin: 0 53px 0 0;
+        }
+
+        .btn:hover, .btn.active {
+            color: #fff;
+            background: #af0c17;
+        }
+
+        @media (max-width: 1279px) {
+            .main-test__test {
+                margin-right: 15px;
+            }
+
+            .main-test__btn {
+                margin-right: 15px;
+                /*font-size: 11px;*/
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            .main-test__play {
+                padding-left: 15px;
+            }
+
+            .main-test__play-text {
+                font-size: 12px;
+            }
+
+            .main-test__test-text {
+                font-size: 12px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .main-test__row {
+                flex-wrap: wrap;
+                flex-direction: column;
+            }
+
+            .main-test__test {
+                margin-right: 0;
+                margin-bottom: 15px;
+                flex-direction: column;
+            }
+
+            .main-test__btn {
+                margin-right: 0;
+                margin-bottom: 30px;
+            }
+
+            .main-test__play {
+                padding-left: 0;
+            }
+
+            .main-test__play:before {
+                width: 44px;
+                height: 2px;
+                top: -15px;
+                left: 50%;
+                margin-left: -22px;
+                margin-top: 0;
+            }
+
+            .main-test__test-text {
+                text-align: center;
+            }
+
+            .main-test__btn {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+
+            .main-test__play {
+                flex-direction: column-reverse;
+            }
+
+            .main-test__play-text {
+                text-align: center;
+                margin-bottom: 9px;
+            }
+
+            .main-test__play-v {
+                margin: 0;
+            }
+
+            .main-test__quiz {
+                margin-bottom: 11px;
+                margin-right: 0px;
+                margin-top: 7px;
+            }
+
+            .main-test {
+                padding-bottom: 21px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <!-- Preloader -->
+<!--     <div id="preloader">
+      <div class="cssload-whirlpool"></div>
+  </div> -->
+  <!-- Header -->
+
+  <header id="header">
+    <div class="header-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="left-side">
+                        <div class="logo"><!-- <a href="#"><img src="img/logo.svg" alt="alt"></a> --><img
+                            src="img/logo.svg" alt="alt"></div>
+                            <div class="slogan"><strong>Лучшая партнерская программа </strong>для профессионалов рынка
+                                недвижимости
+                            </div>
+                        </div>
+                        <div class="right-side">
+                            <div class="phone-block"><a href="tel:+78122105073" class="phone">+7 (812) 210-50-73</a></div>
+                            <a href="#popup-1" class="order-call call-popup">Заказать звонок</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="header-descr">
+                            <h1><span>Получите 100% комиссионных со&nbsp;своих сделок </span>в новостройках СПб, работая с
+                            нашей партнёрской программой*</h1>
+                            <p>С предоставлением переговорных в офисе, программ обучения, лучшей тарифной карты от
+                            застройщиков и всех сервисов необходимых для работы.</p><a href="questionnaire.html"
+                            class="button">Стать
+                        партнёром</a>
+                        <p class="small-text">*Только для юр. лиц</span></p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 z-index-10">
+                    <div class="video-bl">
+                        <!--<img src="images/video-holder-img.jpg" />-->
+                        <iframe src="https://player.vimeo.com/video/123938796" width="100%" height="100%"
+                        frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Getting -->
+<section id="getting">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-title">
+                    <h2>Что вы&nbsp;получаете?</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-sm-6">
+                <div class="getting-item">
+                    <div class="icon dot-icon"><img src="img/icon-01.svg" alt="alt"></div>
+                    <h3>100% комиссии</h3>
+                    <p>100% комиссии за&nbsp;свои сделки <span>в&nbsp;новостройках</span></p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="getting-item">
+                    <div class="icon"><img src="img/icon-02.svg" alt="alt"></div>
+                    <h3>Команду брокеров</h3>
+                    <p>Команду ипотечных брокеров</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="getting-item">
+                    <div class="icon"><img src="img/icon-03.svg" alt="alt"></div>
+                    <h3>Программу обучения</h3>
+                    <p>Программа обучения (личный брендинг, технологии переговоров,
+                        продвижение своего бренда в&nbsp;социальных сетях, технологии и&nbsp;каналы привлечения лидов,
+                    тренинги личностного самосовершенствования и&nbsp;другое)</span></p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="getting-item">
+                    <div class="icon"><img src="img/icon-04.svg" alt="alt"></div>
+                    <h3>Лучший процент</h3>
+                    <p>Лучший процент по&nbsp;застройщикам по&nbsp;городу и&nbsp;предоплата по&nbsp;основным из&nbsp;них
+                    в&nbsp;течение 5-10 дней после подписания договора</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+                <div class="getting-item">
+                    <div class="icon"><img src="img/icon-06.svg" alt="alt"></div>
+                    <h3>Конференции с лидерами</h3>
+                    <p>Конференции с&nbsp;лидерами отрасли и&nbsp;представителями ведущих строительных компаний</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="getting-item">
+                    <div class="icon"><img src="img/icon-07.svg" alt="alt"></div>
+                    <h3>Маркетинговые материалы</h3>
+                    <p>Маркетинговые материалы по&nbsp;всем ведущим застройщикам</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="getting-item">
+                    <div class="icon"><img src="img/icon-08.svg" alt="alt"></div>
+                    <h3>Прямые договоры</h3>
+                    <p>Прямые договоры со&nbsp;всеми строительными компаниями города</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="getting-item">
+                    <div class="icon"><img src="img/icon-10.svg" alt="alt"></div>
+                    <h3>Базу остатков</h3>
+                    <p>Доступ к&nbsp;базе остатков, переговорные для&nbsp;проведения встреч</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+                <div class="getting-item">
+                    <div class="icon"><img src="img/icon-05.svg" alt="alt"></div>
+                    <h3>ПЕРЕГОВОРНЫЕ В ОФИСЕ</h3>
+                    <p>Вы&nbsp;можете забронировать переговорную для&nbsp;встречи с&nbsp;клиентом на&nbsp;любое удобное
+                    для&nbsp;Вас&nbsp;время.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- AutoPan -->
+<section class="main-test">
+    <div class="container container--width-100">
+
+        <div class="main-test__row">
+            <div class="main-test__test">
+
+                <svg class="main-test__quiz" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 56 56">
+                <path class="cls-1"
+                d="M55.2,14.6A2.61,2.61,0,0,1,52.6,12,.8.8,0,0,0,51,12a2.61,2.61,0,0,1-2.6,2.61.8.8,0,1,0,0,1.59A2.61,2.61,0,0,1,51,18.8a.8.8,0,1,0,1.59,0,2.61,2.61,0,0,1,2.61-2.6.8.8,0,0,0,0-1.59Zm-3.4,1.74a4.24,4.24,0,0,0-.94-.94,4.24,4.24,0,0,0,.94-.94,4.25,4.25,0,0,0,.94.94A4.25,4.25,0,0,0,51.8,16.34Z"/>
+                <path class="cls-1"
+                d="M3.4,18.8A.8.8,0,1,0,5,18.8,2.61,2.61,0,0,1,7.6,16.2a.8.8,0,0,0,0-1.59A2.61,2.61,0,0,1,5,12,.8.8,0,0,0,3.4,12,2.61,2.61,0,0,1,.8,14.6a.8.8,0,0,0,0,1.59A2.61,2.61,0,0,1,3.4,18.8Zm.8-4.35a4.24,4.24,0,0,0,.94.94,4.25,4.25,0,0,0-.94.94,4.24,4.24,0,0,0-.94-.94A4.24,4.24,0,0,0,4.2,14.46Z"/>
+                <path class="cls-1"
+                d="M23.25,5.89a3.49,3.49,0,0,1,3.48,3.48.8.8,0,1,0,1.61,0,3.49,3.49,0,0,1,3.48-3.48.8.8,0,1,0,0-1.61A3.49,3.49,0,0,1,28.34.8a.8.8,0,0,0-1.61,0,3.49,3.49,0,0,1-3.48,3.48.8.8,0,0,0,0,1.61Zm4.29-2.35a5.13,5.13,0,0,0,1.54,1.54,5.13,5.13,0,0,0-1.54,1.54A5.13,5.13,0,0,0,26,5.09,5.13,5.13,0,0,0,27.53,3.55Z"/>
+                <path class="cls-1"
+                d="M44.65,28.59a.81.81,0,0,0,.1-.74l-3.2-9A1.7,1.7,0,0,0,40,17.73H15.11a1.7,1.7,0,0,0-1.6,1.12l-3.2,9a.82.82,0,0,0,.77,1.09H44A.82.82,0,0,0,44.65,28.59ZM12.25,27.3l2.81-7.9a.06.06,0,0,1,.05,0H40a.06.06,0,0,1,.05,0l2.81,7.9Z"/>
+                <path class="cls-1"
+                d="M43.4,38.27c-2.88,0-5.13,1.43-5.13,3.27s2.25,3.27,5.13,3.27,5.13-1.43,5.13-3.27S46.28,38.27,43.4,38.27Zm0,5c-2,0-3.51-.9-3.51-1.71s1.5-1.71,3.51-1.71,3.51.9,3.51,1.71S45.41,43.24,43.4,43.24Z"/>
+                <path class="cls-1"
+                d="M11.67,38.27c-2.88,0-5.13,1.43-5.13,3.27s2.25,3.27,5.13,3.27,5.13-1.43,5.13-3.27S14.55,38.27,11.67,38.27Zm0,5c-2,0-3.51-.9-3.51-1.71s1.5-1.71,3.51-1.71,3.51.9,3.51,1.71S13.68,43.24,11.67,43.24Z"/>
+                <path class="cls-1"
+                d="M54.24,26.34H49.87a.82.82,0,0,0-.8.62l-.58,2.31-4-11.43A4.33,4.33,0,0,0,40.4,15H15.6a4.33,4.33,0,0,0-4.07,2.88l-4,11.43L6.92,27a.82.82,0,0,0-.8-.62H1.76a.82.82,0,0,0-.82.82v3.5a.82.82,0,0,0,.82.82H6.29L3.49,35.4a4.3,4.3,0,0,0-.8,2.51V48.18a4.32,4.32,0,0,0,1.75,3.47V54.3A1.7,1.7,0,0,0,6.13,56h5.25a1.7,1.7,0,0,0,1.69-1.7V52.5H42.93V54.3A1.7,1.7,0,0,0,44.62,56h5.25a1.7,1.7,0,0,0,1.69-1.7V51.65a4.32,4.32,0,0,0,1.75-3.47V37.92a4.3,4.3,0,0,0-.8-2.51l-2.8-3.92h4.53a.82.82,0,0,0,.82-.82v-3.5A.82.82,0,0,0,54.24,26.34ZM2.58,29.85V28H5.49L6,29.85ZM11.43,54.3a.05.05,0,0,1-.05.05H6.13a.05.05,0,0,1-.05-.05V52.5h5.36Zm38.49,0a.05.05,0,0,1-.05.05H44.62a.05.05,0,0,1-.05-.05V52.5h5.36ZM49,50.86H7A2.68,2.68,0,0,1,4.45,49H51.55A2.68,2.68,0,0,1,49,50.86ZM35.05,42v1.86H20.95V42Zm-14-1.64a2.68,2.68,0,0,1,2.55-1.86h8.75a2.68,2.68,0,0,1,2.55,1.86Zm14,5.14v1.86H20.95V45.49Zm16.12-9.14a2.67,2.67,0,0,1,.5,1.56v9.44h-15V41.17a4.33,4.33,0,0,0-4.32-4.32H23.63a4.33,4.33,0,0,0-4.32,4.32v6.18h-15V37.92a2.67,2.67,0,0,1,.5-1.56L8.3,31.49H38.5a.82.82,0,0,0,0-1.64H9l4-11.45A2.68,2.68,0,0,1,15.6,16.6H40.4a2.68,2.68,0,0,1,2.53,1.79l4,11.45H42a.82.82,0,0,0,0,1.64h5.7Zm2.25-6.51H50L50.51,28h2.91Z"/>
+                <path class="cls-1"
+                d="M14.93,37.33a.87.87,0,0,0-.78-.93h-5a.95.95,0,0,0,0,1.87h5A.87.87,0,0,0,14.93,37.33Z"/>
+                <path class="cls-1"
+                d="M46.67,37.33a.87.87,0,0,0-.78-.93h-5a.95.95,0,0,0,0,1.87h5A.87.87,0,0,0,46.67,37.33Z"/>
+            </svg>
+
+
+            <p class="main-test__test-text">Сложно добраться до&nbsp;ЖК? Нет машины? <span>Новая услуга АвтоПан в&nbsp;помощь партнёрам,</span>
+                <span>комфортные экскурсии за&nbsp;КАД</span></p>
+            </div>
+
+            <a href="http://pan-partner.ru/auto/" class="button main-test__btn" target="_blank">Забронировать</a>
+
+            <div class="main-test__play">
+                <a href="https://www.youtube.com/watch?v=9T0HEiCpgKw" class="main-test__play-link watch-video">
+
+                    <svg class="main-test__play-v" id="play-v" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 53 53">
+                        <path d="M26.5,53A26.5,26.5,0,1,1,53,26.5,26.53,26.53,0,0,1,26.5,53Zm0-51A24.5,24.5,0,1,0,51,26.5,24.53,24.53,0,0,0,26.5,2Z"
+                        transform="translate(0 0)"></path>
+                        <path d="M35,26.5,21.37,34.19V18.81Z" transform="translate(0 0)"></path>
+                    </svg>
+
+                </a>
+                <p class="main-test__play-text">Об услуге <span>за 45 секунд</span></p>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- /AutoPan -->
+<!-- About -->
+<section id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+                <div class="display-block"><img src="img/display.png" alt="alt">
+                    <div class="display-descr"><img src="img/logo-sain-p.svg" alt="alt"><a
+                        href="https://www.youtube.com/watch?v=9T0HEiCpgKw" class="button watch-video">Смотреть
+                    видеоролик</a></div>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="about-descr">
+                    <div class="section-title">
+                        <h2>Кто мы&nbsp;такие?</h2>
+                    </div>
+                    <p>Можно долго расписывать кто мы&nbsp;такие и&nbsp;насколько хороши, но&nbsp;все это слова. Правду
+                    отражают только результаты в&nbsp;цифрах и&nbsp;показателях.</p>
+                    <h4>За&nbsp;2017&nbsp;год: </h4>
+                    <ul>
+                        <li><strong>Мы&nbsp;продали более 1500 квартир </strong>в&nbsp;новостройках Санкт-Петербурга на&nbsp;сумму
+                            более чем 7&nbsp;млрд рублей
+                        </li>
+                        <li><strong>Мы&nbsp;выплатили более 250 млн рублей </strong>нашей команде в&nbsp;качестве
+                            комиссионных за&nbsp;проведение сделок через нас
+                        </li>
+                    </ul>
+                    <p class="bottom-p">Поэтому мы&nbsp;по&nbsp;опыту, а&nbsp;не&nbsp;на&nbsp;словах, знаем как
+                        продавать новостройки и&nbsp;зарабатывать на&nbsp;этом. И&nbsp;можем передать весь наш опыт вам,
+                    если вы&nbsp;станете частью нашей команды.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Events -->
+<section id="events">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-title">
+                    <h2>Наши мероприятия<span>для профессионалов рынка</span></h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+
+            <div class="col-md-8 col-md-offset-2">
+                <div class="events-carousel owl-carousel owl-theme">
+
+                    <a href="https://www.youtube.com/watch?v=MIctXT8sW78" class="item events-item watch-video">
+                        <div class="events-img"><img src="img/ev-1.jpg" alt="alt"></div>
+                        <div class="events-descr">
+                            <h4>Конференция ПАН</h4>
+                            <p>Новые возможности продажи новостроек</p>
+                        </div>
+                    </a>
+
+                    <a href="https://www.youtube.com/watch?v=9MB9Vf3LHoI" class="item events-item watch-video">
+                        <div class="events-img"><img src="img/ev-2.jpg" alt="alt"></div>
+                        <div class="events-descr">
+                            <h4>Конференция &laquo;ПАН&raquo; и&nbsp;&laquo;ЛСР&raquo;. Москва</h4>
+                            <p>Конференция. Москва</p>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+
+<section class="stock">
+    <div class="stock-popup stock-1">
+        <div class="stock-popup__main">
+            <img src="img/clouds.svg" class="stock-popup__clouds">
+            <div class="stock-popup__content">
+                <span class="stock-popup__close"></span>
+                <div class="stock-popup__header">
+                    <img class="stock-popup__img" src="img/panda.png">
+                    <div class="stock-popup__wrap">
+                        <div class="stock-popup__block">
+                            <span class="stock-popup__stock">Акция</span>
+                            <h3 class="stock-popup__title">ЛСР +1 в ПАН в октябре!</h3>
+                        </div>
+                        <div class="stock-popup__date">1 Октября – 31 Октября 2019</div>
+                    </div>
+                </div>
+                <div class="stock-popup__box">
+                    <p>Управляющий Дмитрий Перхуров, +7 (967) 570-85-29, <a href="#">perkhurov@1-an.ru:</a></p>
+                    <ul>
+                        <li>Setl City</li>
+                        <li>Setl City Элит</li>
+                    </ul>
+
+                    <p>Управляющий Дмитрий Перхуров, +7 (967) 570-85-29, <a href="#">perkhurov@1-an.ru:</a></p>
+                    <ul>
+                        <li>Setl City</li>
+                        <li>Setl City Элит</li>
+                    </ul>
+
+                    <p>Управляющий Дмитрий Перхуров, +7 (967) 570-85-29, <a href="#">perkhurov@1-an.ru:</a></p>
+                    <ul>
+                        <li>Setl City</li>
+                        <li>Setl City Элит</li>
+                    </ul>
+
+                    <p>Подпиши с ПАН ЛСР и забирай свое авансирование еще по одной сделке октября по другому
+                    застройщику. Акция действует на сделки ЛСР, подписанные и оплаченные с 1 по 31 октября</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="stock-popup stock-2">
+        <div class="stock-popup__main">
+            <img src="img/clouds.svg" class="stock-popup__clouds">
+            <div class="stock-popup__content">
+                <span class="stock-popup__close"></span>
+                <div class="stock-popup__header">
+                    <img class="stock-popup__img" src="img/panda2.png">
+                    <div class="stock-popup__wrap">
+                        <div class="stock-popup__block">
+                            <span class="stock-popup__stock">Акция</span>
+                            <h3 class="stock-popup__title">Батл по сделкам</h3>
+                        </div>
+                        <div class="stock-popup__date">1 Октября – 31 Октября 2019</div>
+                    </div>
+                </div>
+                <div class="stock-popup__box">
+                    <p>В розыгрыше участвуют все агентства, которые в период акции (с 1 сентября по 30 ноября) провели
+                        суммарно от 20 сделок по ЦДС + Лидер Групп + Полис Групп + Евроинвест + Строительный трест.
+                    Главный приз — 50 000 ₽ для новогоднего корпоратива вашего агентства.</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="stock-popup stock-3">
+        <div class="stock-popup__main">
+            <img src="img/clouds.svg" class="stock-popup__clouds">
+            <div class="stock-popup__content">
+                <span class="stock-popup__close"></span>
+                <div class="stock-popup__header">
+                    <img class="stock-popup__img" src="img/panda.png">
+                    <div class="stock-popup__wrap">
+                        <div class="stock-popup__block">
+                            <span class="stock-popup__stock">Акция</span>
+                            <h3 class="stock-popup__title">ЛСР +1 в ПАН в октябре!</h3>
+                        </div>
+                        <div class="stock-popup__date">1 Октября – 31 Октября 2019</div>
+                    </div>
+                </div>
+                <div class="stock-popup__box">
+                    <p>Управляющий Дмитрий Перхуров, +7 (967) 570-85-29, perkhurov@1-an.ru:</p>
+                    <ul>
+                        <li>Setl City</li>
+                        <li>Setl City Элит</li>
+                    </ul>
+
+                    <p>Управляющий Дмитрий Перхуров, +7 (967) 570-85-29, perkhurov@1-an.ru:</p>
+                    <ul>
+                        <li>Setl City</li>
+                        <li>Setl City Элит</li>
+                    </ul>
+
+                    <p>Управляющий Дмитрий Перхуров, +7 (967) 570-85-29, perkhurov@1-an.ru:</p>
+                    <ul>
+                        <li>Setl City</li>
+                        <li>Setl City Элит</li>
+                    </ul>
+
+                    <p>Подпиши с ПАН ЛСР и забирай свое авансирование еще по одной сделке октября по другому
+                    застройщику. Акция действует на сделки ЛСР, подписанные и оплаченные с 1 по 31 октября</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <img class="stock__cloud" src="img/clouds.svg" alt="">
+    <div class="container">
+        <h2 class="section-title">АКЦИИ ПАНПАРТНЁР</h2>
+
+        <div class="stock-carousel owl-carousel owl-theme">
+            <div class="stock__item" data-stock="stock-1">
+                <div class="stock__top">
+                    <img src="img/panda.png" class="stock__img">
+                    <img src="img/stock-icon.svg" class="stock__icon">
+                </div>
+                <div class="stock__content">
+                    <div class="stock__wrap">
+                        <h3 class="stock__subtitle">ЛСР +1 в ПАН в октябре!</h3>
+                        <p class="stock__text">Подпиши с ПАН ЛСР и забирай свое авансирование еще по одной сделке
+                            октября по
+                        другому застрой</p>
+                    </div>
+                    <div class="stock__date">1 Октября – 31 Октября 2019</div>
+                </div>
+            </div>
+            <div class="stock__item" data-stock="stock-2">
+                <div class="stock__top">
+                    <img src="img/panda.png" class="stock__img">
+                    <img src="img/stock-icon.svg" class="stock__icon">
+                </div>
+                <div class="stock__content">
+                    <div class="stock__wrap">
+                        <h3 class="stock__subtitle">ЛСР +1 в ПАН в октябре! ЛСР +1 в ПАН в октябре!</h3>
+                        <p class="stock__text">Подпиши с ПАН ЛСР и забирай свое авансирование еще по одной сделке
+                            октября по
+                        другому застрой</p>
+                    </div>
+                    <div class="stock__date">1 Октября – 31 Октября 2019</div>
+                </div>
+            </div>
+            <div class="stock__item" data-stock="stock-3">
+                <div class="stock__top">
+                    <img src="img/panda.png" class="stock__img">
+                    <img src="img/stock-icon.svg" class="stock__icon">
+                </div>
+                <div class="stock__content">
+                    <div class="stock__wrap">
+                        <h3 class="stock__subtitle">ЛСР +1 в ПАН в октябре!</h3>
+                        <p class="stock__text">Подпиши с ПАН ЛСР и забирай свое авансирование еще по одной сделке
+                            октября по
+                        другому застрой</p>
+                    </div>
+                    <div class="stock__date">1 Октября – 31 Октября 2019</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- Work -->
+<section id="work">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-title">
+                    <h2>С НАМИ УДОБНО РАБОТАТЬ</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="blue-descr">
+                    <p>Компания&nbsp;&mdash; Первое Агентство Недвижимости уже на&nbsp;протяжении семи лет успешно
+                        работает на&nbsp;рынке строящейся недвижимости Санкт-Петербурга, активно развивая схему
+                    субагентских отношений. </p>
+                    <p>Мы&nbsp;успешно сотрудничаем как с&nbsp;агентствами недвижимости Санкт-Петербурга, так и&nbsp;с&nbsp;агентствами
+                    из&nbsp;других регионов России.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-5">
+                <div class="steps-img"><img src="img/climbingman.svg" alt="alt"></div>
+            </div>
+            <div class="col-md-6">
+                <div class="work-descr">
+                    <h3>&nbsp;</h3>
+                    <div class="work-list-item">
+                        <div class="icon"><img src="img/icon-14.svg" alt="alt"></div>
+                        <p><strong>СИСТЕМА ВЗАИМОРАСЧЕТОВ ПРОСТА: </strong>
+                            <ul>
+                                <li>Вы получаете комиссию за каждую сделку;</li>
+                                <li>Максимально быстрые выплаты.</li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div class="work-list-item last-child">
+                        <div class="icon"><img src="img/icon-15.svg" alt="alt"></div>
+                        <p><strong>ДЛЯ ВАШЕГО УДОБСТВА: </strong>
+                            <ul>
+                                <li>Ваш персональный менеджер;</li>
+                                <li>Агентский портал на нашем сайте;</li>
+                                <li>Индивидуальное и корпоративное обучение;</li>
+                                <li>Возможность забронировать переговорную.</li>
+                            </ul>
+                        </p>
+
+                        <p><b>Если вы&nbsp;готовы попробовать себя и&nbsp;выйти на&nbsp;новый уровень дохода вместе с&nbsp;нами,
+                        тогда нам по&nbsp;пути.</b></p>
+                    </div>
+                    <a href="questionnaire.html" class="button">Стать партнёром</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Program -->
+<section id="program">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-title">
+                    <h2>Пример программы обучения: <span style="
+                    font-size: 13px;
+                    text-transform: none;
+                    font-family: 'OpenSans', sans-serif;"> (актуальное расписание Вы можете получить на нашем поратале <a class="inlink"
+                    href="http://panpartner.ru/">panpartner.ru</a>)</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="program-carousel owl-carousel owl-theme">
+                <div class="item program-item">
+                    <div class="program-img"><img src="img/ev-5.jpg" alt="alt"></div>
+                    <div class="program-descr">
+                        <div class="program-number">1</div>
+                        <div class="p-wrap">
+                            <p>Программа обучения от&nbsp;ведущих застройщиков (ЛСР, Северный Город, Legenda,
+                            ЛенСпецСМУ, ЦДС и&nbsp;другие);</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item program-item">
+                    <div class="program-img"><img src="img/ev-6.jpg" alt="alt"></div>
+                    <div class="program-descr">
+                        <div class="program-number">2</div>
+                        <div class="p-wrap">
+                            <p>Возможности эффективной работы с&nbsp;CRM системой и&nbsp;поисковиком новостроек;</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item program-item">
+                    <div class="program-img"><img src="img/ev-7.jpg" alt="alt"></div>
+                    <div class="program-descr">
+                        <div class="program-number">3</div>
+                        <div class="p-wrap">
+                            <p>Сценарии телефонных переговоров;</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item program-item">
+                    <div class="program-img"><img src="img/ev-8.jpg" alt="alt"></div>
+                    <div class="program-descr">
+                        <div class="program-number">4</div>
+                        <div class="p-wrap">
+                            <p>Сценарии переговоров на встрече с клиентом;</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item program-item">
+                    <div class="program-img"><img src="img/ev-9.jpg" alt="alt"></div>
+                    <div class="program-descr">
+                        <div class="program-number">5</div>
+                        <div class="p-wrap">
+                            <p>Основы работы с&nbsp;Авито и&nbsp;другими площадками для получения обращений;</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item program-item">
+                    <div class="program-img"><img src="img/ev-10.jpg" alt="alt"></div>
+                    <div class="program-descr">
+                        <div class="program-number">6</div>
+                        <div class="p-wrap">
+                            <p>Создание своей команды партнеров;</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item program-item">
+                    <div class="program-img"><img src="img/ev-11.jpg" alt="alt"></div>
+                    <div class="program-descr">
+                        <div class="program-number">7</div>
+                        <div class="p-wrap">
+                            <p>Основы лидогенерации и&nbsp;продвижения своего бренда в&nbsp;социальных сетях.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="program-bottom"><a href="questionnaire.html" class="button">Записаться на&nbsp;ближайшее
+            мероприятие</a>
+            <p>Для того, чтобы прийти на&nbsp;мероприятие, заполните пожалуйста анкету,<span>и&nbsp;если вы&nbsp;пройдете первичный отбор, то&nbsp;мы&nbsp;запишем вас на&nbsp;встречу.</span>
+            </p>
+        </div>
+    </div>
+</div>
+</div>
+</section>
+
+<!-- Team -->
+<!--==========================
+  Our Team Section
+  ============================-->
+  <section id="team" class="wow fadeInUp">
+    <div class="container">
+        <div class="section-title">
+            <h2>Наша команда</h2>
+        </div>
+        <div class="row">
+
+            <div class="col-lg-3 col-md-6">
+                <div class="member">
+                    <div class="pic"><img src="img/team-1.jpg" alt=""></div>
+                    <div class="details">
+                        <h4>Екатерина Трофимчук</h4>
+                        <span>Руководитель отдела партнерских продаж</span>
+                        <!--  <div class="social">
+                           <a href=""><i class="fa fa-twitter"></i></a>
+                           <a href=""><i class="fa fa-facebook"></i></a>
+                           <a href=""><i class="fa fa-google-plus"></i></a>
+                           <a href=""><i class="fa fa-linkedin"></i></a>
+                       </div> -->
+                   </div>
+               </div>
+           </div>
+
+           <div class="col-lg-3 col-md-6">
+            <div class="member">
+                <div class="pic"><img src="img/team-2.jpg" alt=""></div>
+                <div class="details">
+                    <h4>Алексей Нугаев</h4>
+                    <span>Руководитель отдела развития Партнерских продаж</span>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+            <div class="member">
+                <div class="pic"><img src="img/team-3.jpg" alt=""></div>
+                <div class="details">
+                    <h4>Яна Трофимова</h4>
+                    <span>Специалист отдела партнерских продаж</span>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+            <div class="member">
+                <div class="pic"><img src="img/team-4.jpg" alt=""></div>
+                <div class="details">
+                    <h4>Евгения Рохмина</h4>
+                    <span>Специалист отдела партнерских продаж</span>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- next 4-->
+
+    <div class="row">
+
+        <div class="col-lg-3 col-md-6">
+            <div class="member">
+                <div class="pic"><img src="img/team-5.jpg" alt=""></div>
+                <div class="details">
+                    <h4>Дмитрий Перхуров</h4>
+                    <span>Специалист отдела партнерских продаж</span>
+                        <!--  <div class="social">
+                           <a href=""><i class="fa fa-twitter"></i></a>
+                           <a href=""><i class="fa fa-facebook"></i></a>
+                           <a href=""><i class="fa fa-google-plus"></i></a>
+                           <a href=""><i class="fa fa-linkedin"></i></a>
+                       </div> -->
+                   </div>
+               </div>
+           </div>
+
+           <div class="col-lg-3 col-md-6">
+            <div class="member">
+                <div class="pic"><img src="img/team-6.jpg" alt=""></div>
+                <div class="details">
+                    <h4>Рогозина Анна</h4>
+                    <span>Специалист отдела партнерских продаж</span>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+            <div class="member">
+                <div class="pic"><img src="img/team-7.jpg" alt=""></div>
+                <div class="details">
+                    <h4>Маргарита Мирошниченко</h4>
+                    <span>Управляющий отдела развития партнерских продаж</span>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+            <div class="member">
+                <div class="pic"><img src="img/team-8.jpg" alt=""></div>
+                <div class="details">
+                    <h4>Дмитрий Шкляр</h4>
+                    <span>Управляющий отдела развития партнерских продаж</span>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- next 4-->
+    <div class="row">
+
+        <div class="col-lg-3 col-md-6">
+            <div class="member">
+                <div class="pic"><img src="img/team-9.jpg" alt=""></div>
+                <div class="details">
+                    <h4>Ольга Толочина</h4>
+                    <span>Управляющий отдела развития партнерских продаж</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+            <div class="member">
+                <div class="pic"><img src="img/team-10.jpg" alt=""></div>
+                <div class="details">
+                    <h4>Екатерина Клепикова</h4>
+                    <span>Специалист отдела сопровождения сделок</span>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+            <div class="member">
+                <div class="pic"><img src="img/team-11.jpg" alt=""></div>
+                <div class="details">
+                    <h4>Екатерина Гринченко</h4>
+                    <span>Специалист отдела сопровождения сделок</span>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+            <div class="member">
+                <div class="pic"><img src="img/team-12.jpg" alt=""></div>
+                <div class="details">
+                    <h4>Иван Солин</h4>
+                    <span>Ипотечный менеджер<br><br></span>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- next 3-->
+    <div class="row">
+
+        <div class="col-lg-3 col-md-6">
+            <div class="member">
+                <div class="pic"><img src="img/team-13.jpg" alt=""></div>
+                <div class="details">
+                    <h4>Александра Пахарева</h4>
+                    <span>Заместитель руководителя планово-финансового отдела</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+            <div class="member">
+                <div class="pic"><img src="img/team-14.jpg" alt=""></div>
+                <div class="details">
+                    <h4>Мария Завизная</h4>
+                    <span>Специалист планово-финансового отдела</span>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+            <div class="member">
+                <div class="pic"><img src="img/team-15.jpg" alt=""></div>
+                <div class="details">
+                    <h4>Ирина Павлова</h4>
+                    <span>Офисме неджер<br><br></span>
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
+</section><!-- #team -->
+
+<!-- Office -->
+<!--  <section id="office">
+   <div class="container">
+     <div class="row">
+       <div class="col-md-12">
+         <div class="section-title">
+           <h2>Ваш будущий офис</h2>
+         </div>
+       </div>
+     </div>
+     <div class="row">
+       <div class="col-md-6 col-sm-6">
+         <div class="office-img"><a href="img/office-1-b.jpg"><img src="img/office-1.jpg" alt="alt"></a></div>
+       </div>
+       <div class="col-md-6 col-sm-6">
+         <div class="row">
+           <div class="col-md-6 col-sm-6 col-xs-6">
+             <div class="office-img"><a href="img/office-2-b.jpg"><img src="img/office-2.jpg" alt="alt"></a></div>
+           </div>
+           <div class="col-md-6 col-sm-6 col-xs-6">
+             <div class="office-img"><a href="img/office-3-b.jpg"><img src="img/office-3.jpg" alt="alt"></a></div>
+           </div>
+           <div class="col-md-6 col-sm-6 col-xs-6">
+             <div class="office-img"><a href="img/office-4-b.jpg"><img src="img/office-4.jpg" alt="alt"></a></div>
+           </div>
+           <div class="col-md-6 col-sm-6 col-xs-6">
+             <div class="office-img"><a href="img/office-5-b.jpg"><img src="img/office-5.jpg" alt="alt"></a></div>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+</section> -->
+<!-- Contacts -->
+<section id="contacts">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-title"><a name="map"></a>
+                    <h2>Адрес и&nbsp;контакты офиса <span>&laquo;Первого Агентства Недвижимости&raquo;</span></h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-5">
+                <div id="google-map"></div>
+            </div>
+            <div class="col-md-7">
+                <div class="contacts-descr">
+                    <h3>ООО &laquo;ПАН&raquo;</h3>
+                    <div class="contacts-item">
+                        <div class="icon"><img src="img/contacts-1.svg" alt="alt"></div>
+                        <p><strong>БЦ&nbsp;&laquo;Ренессанс Холл&raquo; </strong></p>
+                        <p>Санкт-Петербург, Владимирский&nbsp;пр., д.&nbsp;23&nbsp;Лит &laquo;А&raquo;, офис 704, 7&nbsp;этаж</p>
+                    </div>
+                    <div class="contacts-item n-line">
+                        <div class="icon"><img src="img/contacts-2.svg" alt="alt"></div>
+                        <p><a href="tel:+78122105073">+7 (812) 210-50-73</a></p>
+                    </div>
+                    <div class="contacts-item">
+                        <div class="icon"><img src="img/contacts-3.svg" alt="alt"></div>
+                        <p><a href="mailto:trofimchuk@1-an.ru">trofimchuk@1-an.ru</a></p>
+                    </div>
+                    <div class="contacts-item">
+                        <div class="icon"><img src="img/contacts-4.svg" alt="alt"></div>
+                        <p>Время работы:</p>
+                        <p>пн-пт 9:30 - 19:00</p>
+                        <p>сб-вс Выходной</p>
+                    </div>
+                    <div class="contacts-item n-line">
+                        <div class="icon"><img src="img/contacts-5.svg" alt="alt"></div>
+                        <p>Дежурный менеджер:</p>
+                        <p>Ежедневно до 24:00</p>
+                    </div>
+                    <div class="contacts-img"><img src="img/man-woman.svg" alt="alt"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Footer -->
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-12">
+                <div class="phone-block"><a href="tel:+78122105073">+7 (812) 210-50-73</a></div>
+                <ul class="social-list">
+                    <li><a href="https://t.me/panpartner" target="_blank"><i class="fa fa-paper-plane"></i></a></li>
+                    <li><a href="https://www.instagram.com/panpartner/" target="_blank"><i class="fa fa-instagram"></i></a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="col-md-5 col-sm-6">
+                <div class="address-block">
+                    <h3>Адрес</h3>
+                    <div class="address-descr">
+                        <p>ООО &laquo;ПАН&raquo;</p>
+                        <p>БЦ&nbsp;&laquo;Ренессанс Холл&raquo; </p>
+                        <p>Владимирский&nbsp;пр., д.&nbsp;23&nbsp;Лит &laquo;А&raquo;, офис 704, 7&nbsp;этаж</p>
+                    </div>
+                    <a href="#map">На карте</a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="button-block"><a href="questionnaire.html" class="button">Стать партнёром</a>
+                    <div class="footer-descr"><strong>Лучшая партнерская программа </strong>для профессионалов рынка
+                        недвижимости
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Hidden Popup -->
+<div class="hidden">
+    <div id="popup-1" class="popup">
+        <button class="close-button"></button>
+        <div class="popup-inner">
+            <div class="popup-title">
+                <h4>Заказать звонок</h4>
+            </div>
+            <form class="contacts-form" onsubmit="counters();">
+                <div class="row form-group">
+                    <div class="col-md-5 col-sm-5">
+                        <label class="label-class">Позвоните мне</label>
+                    </div>
+                    <div class="col-md-7 col-sm-7">
+                        <select name="time" required class="select-input">
+                            <option value="В ближайшее время">В ближайшее время</option>
+                            <option value="С 10:00 до 12:00">С 10:00 до 12:00</option>
+                            <option value="С 14:00 до 16:00">С 14:00 до 16:00</option>
+                            <option value="С 17:00 до 19:00">С 17:00 до 19:00</option>
+                            <option value="С 19:00 до 21:00">С 19:00 до 21:00</option>
+                            <option value="Завтра">Завтра</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Ваше имя" required class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="phone" placeholder="Ваш телефон" required class="form-control phone-input">
+                </div>
+                <button class="button" type="submit">Перезвоните мне, пожалуйста</button>
+            </form>
+        </div>
+    </div>
+    <div id="success" class="popup">
+        <button class="close-button"></button>
+        <div class="popup-inner">
+            <div class="popup-title">
+                <h4>Заявка отправлена</h4>
+            </div>
+            <div class="body-text">
+                <p>Спасибо за&nbsp;заявку, <br>наши специалисты свяжутся с&nbsp;Вами <br>в&nbsp;ближайшее время</p>
+            </div>
+            <button type="button" class="button close-button-red">Закрыть</button>
+        </div>
+    </div>
+</div>
+
+<!-- HIDDEN POPUP DK START -->
+<div class="popup-newyear pny1">
+    <div class="popup-newyear__block">
+        <button class="popup-newyear__cross"></button>
+        <span class="popup-newyear__block-main-title">С наступающим Новым Годом!</span>
+        <span class="popup-newyear__block-subtitle">Желаем успехов, удачи и еще больше побед в новом году!
+        Специально для тебя у нас есть приятный новогодний подарок.</span>
+        <div class="popup-newyear__block-inner">
+            <a href="#"><img class="popup-newyear__block-logo" src="img/logo.svg"></a>
+            <span class="popup-newyear__block-title">Только сегодня раскрываем<br> свои техники привлечения лидов.</span>
+            <span class="popup-newyear__block-subtitle">Узнайте, как забить работой свой отдел продаж так, что от клиентов не будет покоя😉 </span>
+            <form action="mail.php" method="post">
+                <label><input required type="text" name="user-name" placeholder="Введите имя"></label>
+                <label><input required type="text" name="user-email" placeholder="Адрес электронной почты"></label>
+                <label><input required type="text" name="user-phone" placeholder="Номер телефона"></label>
+                <label><button type="submit" name="" value="Получить подарок" class="popup-newyear__block-submit">Получить подарок</button></label>
+            </form>
+            <div class="popup-newyear__block-timer">
+                <span class="popup-newyear__block-timer__text">Успейте получить!</span>
+                <span class="popup-newyear__block-timer__count"></span>
+            </div>
+            <div class="popup-newyear__block-inner__decor">
+                <img class="popup-newyear__block-inner__decor1" alt="img" src="img/btm-gifts.svg">
+                <img class="popup-newyear__block-inner__decor2" alt="img" src="img/snow.svg">
+            </div>
+        </div>
+        <div class="popup-newyear__block-girlyands">
+            <img class="left-girlyanda" src="img/leftNewYearToy.svg" alt="img">
+            <img class="right-girlyanda" src="img/rightNewYearToy.svg" alt="img">
+        </div>
+    </div>
+</div>
+
+<div class="popup-newyear pny2">
+    <div class="popup-newyear__block">
+        <button class="popup-newyear__cross"></button>
+        <span class="popup-newyear__block-main-title">Подарок отправлен!</span>
+        <div class="popup-newyear__block-inner">
+            <a href="#"><img class="popup-newyear__block-logo" src="img/logo.svg"></a>
+            <span class="popup-newyear__block-title">Письмо с подарком отправлено 
+            на указанную почту</span>
+            <span class="popup-newyear__block-subtitle">Узнайте, как забить работой свой отдел продаж так, что от клиентов не будет покоя😉 </span>
+
+            <div class="popup-newyear__block-inner__decor">
+                <img class="popup-newyear__block-inner__decor1" alt="img" src="img/btm-gifts.svg">
+                <img class="popup-newyear__block-inner__decor2" alt="img" src="img/snow.svg">
+            </div>
+        </div>
+        <div class="popup-newyear__block-girlyands">
+            <img class="left-girlyanda" src="img/leftNewYearToy.svg" alt="img">
+            <img class="right-girlyanda" src="img/rightNewYearToy.svg" alt="img">
+        </div>
+    </div>
+</div>
+<!-- HIDDEN POPUP DK END -->
+
+<!-- JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/countdown.min.js"></script>
+<script src="js/all.min.js"></script>
+<script src="js/new.js"></script>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSzqemdtz7_jYf2cQOgebPIcIFtTFQ1e4&callback=initMap"
+type="text/javascript"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="2478px" height="400px" viewBox="0 0 2478 400" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>ovals-bg</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0 2502 0 2502 541 0 541"></polygon>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-3">
+            <stop stop-color="#F2FFFD" offset="0%"></stop>
+            <stop stop-color="#2173DB" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ovals-bg" transform="translate(-12.000000, -141.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="a"></g>
+            <g id="Group" mask="url(#mask-2)" fill-rule="nonzero" fill="url(#linearGradient-3)">
+                <g transform="translate(-352.000000, 141.000000)" id="Shape">
+                    <path d="M221.122,630.338 C822.492,-47.692 1330.826,-178.724 1746.122,237.243 C1777.313,268.276 1865.715,362.035 2011.327,518.519 C2156.939,675.003 2238.497,780.258 2256,834.282 L221.122,948 L221.122,630.338 Z" opacity="0.41" transform="translate(1238.561000, 474.000224) scale(-1, 1) translate(-1238.561000, -474.000224) "></path>
+                    <path d="M1401,322 C1590.356,322 1759.4,434.48 1908.134,659.439 C1944.356,714.224 1995.978,811.41 2063,951 L739,951 C921.806,531.667 1142.473,322 1401,322 Z" opacity="0.2"></path>
+                    <path d="M2211,73 L2211,1021 L1209,1021 C1485.695,389 1819.695,73 2211,73 Z" opacity="0.41"></path>
+                    <path d="M3213,73 L3213,1021 L2211,1021 C2487.695,389 2821.695,73 3213,73 Z" opacity="0.41" transform="translate(2712.000000, 547.000000) scale(-1, 1) translate(-2712.000000, -547.000000) "></path>
+                    <path d="M735.963,252 C946.496,252 1134.446,375.567 1299.814,622.7 C1340.087,682.885 1397.482,789.652 1472,943 L734,943 L735.963,252 Z" opacity="0.41"></path>
+                    <path d="M-5.68434189e-14,252 C210.533,252 398.483,375.567 563.851,622.7 C604.124,682.885 661.519,789.652 736.037,943 L2.037,943 L-5.68434189e-14,252 Z" opacity="0.41" transform="translate(368.018500, 597.500000) scale(-1, 1) translate(-368.018500, -597.500000) "></path>
+                    <path d="M734,490.014 C1472.5,951 1472.5,183.96 2211,355.504 C2410.15,403.854 2501.975,475.388 2486.475,570.109 C2471.79,659.853 2634.765,786.817 2975.401,951 L734,951 L734,490.014 Z" opacity="0.41"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
