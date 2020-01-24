@@ -408,3 +408,26 @@ width: 100%;
 .catalog-filter__nav {
     margin-top: 10px;
 }
+
+/* SLIDER RANGE */
+.slider-range {
+	margin-top: 10px;
+	background-image: linear-gradient(to left, #fc98b2 0%, #ffdae4 100%);
+}
+.ui-slider-range {
+	background-image: linear-gradient(to left, #7fc7ef 0%, #c6ebff 100%);
+}
+.ui-slider-handle {
+    border: none !important;
+    background: none !important;
+    background-image: url("../img/range1.png") !important;
+    width: 27px !important;
+    height: 27px !important;
+	top: -12px !important;
+}
+.ui-slider-horizontal {
+    height: 5px;
+}
+.range-input {
+	border:0;
+}
