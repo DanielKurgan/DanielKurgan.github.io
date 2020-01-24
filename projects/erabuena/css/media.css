@@ -20,16 +20,23 @@
         flex-direction: column;
         width: 100%;
     }
-
     .catalog-items__container-banner {
         max-width: 100%;
         width: 100%;
+    }
+    .catalog-items__item.two-banner {
+        max-width: 210px;
     }
 }
 
 /*Средние девайсы («таблетки», < 992px) */
 @media (max-width: 992px) {
-	
+    .catalog-description {
+        text-align: left;
+    }
+	.catalog-sort__numitems {
+        margin-top: 10px;
+    }
 }
 
 /*Малые девайсы («ландшафтные», < 768px)

@@ -329,10 +329,10 @@ width: 100%;
 .catalog-items__item .catalog-items__banner {
 	padding: 20px 10px;
 }
-.catalog-items__item.big-banner {
+.catalog-items__item.two-banner {
     max-width: 420px;
 }
-.catalog-items__item.big-banner .catalog-items__banner-text__name {
+.catalog-items__item.two-banner .catalog-items__banner-text__name {
     font-size: 20px;
     line-height: 22px;
 }
@@ -341,5 +341,13 @@ width: 100%;
 	height: auto;
 }
 .catalog-items__container-banner .catalog-items__banner {
-    height: 100%;
+    height: 99%;
+}
+.four-banner {
+    width: 100%;
+	max-width: 100%;
+	min-height: 240px;
+}
+.four-banner .catalog-items__banner-text__name {
+	max-width: 100%;
 }
