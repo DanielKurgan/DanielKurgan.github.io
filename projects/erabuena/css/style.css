@@ -351,3 +351,44 @@ width: 100%;
 .four-banner .catalog-items__banner-text__name {
 	max-width: 100%;
 }
+.catalog-filter__title {
+	color: #7f5c47;
+	font-family: "ProximaNova-Semibold";
+	font-size: 22px;
+	font-weight: 400;
+}
+.catalog-filter {
+	padding: 25px 20px;
+	box-shadow: 0 5px 24px rgba(255, 99, 0, 0.11);
+	border-radius: 10px;
+	background-color: #ffffff;
+}
+.catalog-filter li {
+	color: #da8c72;
+	font-family: "ProximaNova-Semibold";
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 30px;
+	list-style: none;
+}
+.catalog-filter a:hover {
+	color: #da8c72;
+}
+.child {
+	transition: 0.4s;
+	-webkit-transition: 0.4s;
+	-moz-transition: 0.4s;
+	-ms-transition: 0.4s;
+	-o-transition: 0.4s;
+}
+.child::after {
+	content: ' ';
+	position: absolute;
+	background: url("../img/sidebar-arrow.png") no-repeat 100% 100%/100%
+}
+.child li {
+	display: none;
+}
+.child:hover li {
+	display: block;
+}
