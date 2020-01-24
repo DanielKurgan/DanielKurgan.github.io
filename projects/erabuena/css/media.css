@@ -1,8 +1,30 @@
-/*Экстрабольшие девайсы (большие десктопы)*/
-
 /*Большие девайсы (большие десктопы, < 1200px)*/
 @media (max-width: 1200px) {
-	
+    .catalog-description {
+        font-size: 22px;
+    }
+	.catalog-pagination {
+        margin-top: 10px;
+    }
+    .catalog-items__item.big-banner {
+        max-width: 210px;
+    }
+    .catalog-items__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .catalog-items__container-big {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .catalog-items__container-banner {
+        max-width: 100%;
+        width: 100%;
+    }
 }
 
 /*Средние девайсы («таблетки», < 992px) */
