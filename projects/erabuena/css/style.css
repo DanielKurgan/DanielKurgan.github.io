@@ -20,6 +20,7 @@ p, span, h3 {
 h2, h4 {
 }
 a {
+	outline: 0;
 	color: #fff;
 	text-decoration: none;
 	transition: 0.4s;
@@ -123,6 +124,19 @@ a {
 	-moz-border-radius: 20px 0 0 20px;
 	-ms-border-radius: 20px 0 0 20px;
 	-o-border-radius: 20px 0 0 20px;
+	position: relative;
+}
+.catalog-sort__buttons-blocks::before {
+	content: ' ';
+	position: absolute;
+	width: 13px;
+	height: 13px;
+	background: url("../img/sort-blocks.png") no-repeat 100% 100%/100%;
+	transform: translate(-30%, -50%);
+	-webkit-transform: translate(-30%, -50%);
+	-moz-transform: translate(-30%, -50%);
+	-ms-transform: translate(-30%, -50%);
+	-o-transform: translate(-30%, -50%);
 }
 .catalog-sort__buttons-list {
 	border-radius: 0 20px 20px 0;
@@ -130,6 +144,19 @@ a {
 	-moz-border-radius: 0 20px 20px 0;
 	-ms-border-radius: 0 20px 20px 0;
 	-o-border-radius: 0 20px 20px 0;
+	position: relative;
+}
+.catalog-sort__buttons-list::before {
+	content: ' ';
+	position: absolute;
+	width: 13px;
+	height: 13px;
+	background: url("../img/sort-list.png") no-repeat 100% 100%/100%;
+	transform: translate(-80%, -50%);
+	-webkit-transform: translate(-80%, -50%);
+	-moz-transform: translate(-80%, -50%);
+	-ms-transform: translate(-80%, -50%);
+	-o-transform: translate(-80%, -50%);
 }
 .catalog-items__item {
 	/* max-width: 210px; */
