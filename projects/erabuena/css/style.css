@@ -79,6 +79,9 @@ button {
 	margin-bottom: 20px;
 	flex-wrap: wrap;
 }
+.catalog-items {
+	justify-content: space-between;
+}
 .catalog-pagination__list li {
 	display: inline-block;
 }
@@ -416,6 +419,7 @@ width: 100%;
 	font-weight: 400;
 	line-height: 30px;
 	list-style: none;
+    cursor: pointer;
 }
 .catalog-filter a:hover {
 	color: #da8c72;

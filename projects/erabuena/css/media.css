@@ -65,6 +65,15 @@
     .catalog-items__container-big {
         flex-direction: row;
     }
+    .catalog-items__container:first-child {
+        margin-right: 15px;
+    }
+    .catalog-items__item:nth-child(4n) {
+        padding-right: none;
+    }
+    .catalog-items__container-banner {
+        max-width: 98%;
+    }
     .four-banner {
         width: 100%;
         max-width: 100% !important;
@@ -136,7 +145,12 @@
         -ms-transition: 0.4s    ;
         -o-transition: 0.4s    ;
     }
-
+    .catalog-items__container:first-child {
+        margin-right: 25px;
+    }
+    .catalog-items__item:nth-child(4n) {
+        padding-right: 10px;
+    }
 }
 
 /*Малые девайсы («ландшафтные», < 768px)
@@ -151,7 +165,7 @@
         margin-right: 0;
     }
     .catalog-items__item {
-        max-width: 280px;
+        max-width: 260px;
     }
     .ui-widget.ui-widget-content {
         max-width: 490px;
@@ -159,9 +173,71 @@
     .slider-range__block {
         max-width: 490px;
     }
+    .catalog-items__container:first-child {
+        margin-right: 15px;
+    }
 }
 
 /*Экстрамалые девайсы («телефоны», < 576px)
 */@media (max-width: 576px) {
+    .catalog-items__item {
+        max-width: 230px;
+    }
+    .ui-widget.ui-widget-content {
+        max-width: 420px;
+    }
+    .catalog-items__container .catalog-items__item {
+        max-width: 190px;
+    }
+    .catalog-page .container {
+        padding: 0 10px;
+    }
+    .catalog-items {
+        padding: 0 20px;
+    }
+    .catalog-items__item {
+        padding-right: 0;
+    }
+    .catalog-items__container:first-child {
+        margin-right: auto;
+    }
+    .slider-range__block {
+        max-width: 430px;
+    }
+    .catalog-items__container:nth-child(2) {
+        text-align: right;
+        display: flex;
+        justify-content: flex-end;
+    }
+}
 
+@media (max-width: 520px){
+    .catalog-items__item {
+        max-width: 190px;
+    }
+}
+
+@media (max-width: 450px){
+    .catalog-items__item {
+        max-width: 100%;
+    }
+    .catalog-items__container-big {
+        flex-direction: column;
+    }
+    .catalog-items__container .catalog-items__item {
+        max-width: 100%;
+    }
+    .ui-widget.ui-widget-content {
+        max-width: 100%;
+    }
+    .catalog-filter__buttons button {
+        width: 105px;
+    }
+    .catalog-sort {
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+    .catalog-sort select {
+        font-size: 12px;
+    }
 }
