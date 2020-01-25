@@ -67,22 +67,29 @@
 								<div class="catalog-filter__ranges__range">
 									<span class="catalog-filter__title-name">Розничная цена</span>
 									<div class="slider-range" id="slider-range1"></div>
-									<input class="range-input" type="text" id="amount1" readonly>
-									<div class="range"></div>
+									<div class="slider-range__block">
+										<input class="range-input" type="text" id="amount1" readonly>
+										<input class="range-input text-right" type="text" id="amount2" readonly>
+									</div>
+
 								</div>
 
 								<div class="catalog-filter__ranges__range">
 									<span class="catalog-filter__title-name">Диаметр</span>
 									<div class="slider-range" id="slider-range2"></div>
-									<input class="range-input" type="text" id="amount2" readonly>
-									<div class="range"></div>
+									<div class="slider-range__block">
+										<input class="range-input" type="text" id="amount3" readonly>
+										<input class="range-input text-right" type="text" id="amount4" readonly>
+									</div>
 								</div>
 
 								<div class="catalog-filter__ranges__range">
 									<span class="catalog-filter__title-name">Длина</span>
 									<div class="slider-range" id="slider-range3"></div>
-									<input class="range-input" type="text" id="amount3" readonly>
-									<div class="range"></div>
+									<div class="slider-range__block">
+										<input class="range-input" type="text" id="amount5" readonly>
+										<input class="range-input text-right" type="text" id="amount6" readonly>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -136,6 +143,10 @@
 								<button class="catalog-filter__size-block__button">XXXXL</button>
 							</div>
 						</div>
+						<div class="catalog-filter__buttons">
+							<button class="catalog-filter__buttons-submit">Показать</button>
+							<button class="catalog-filter__buttons-clear">Сбросить</button>
+						</div>
 
 					</div>
 				</div>
@@ -146,7 +157,7 @@
 					<div class="catalog-sort">
 						<div class="catalog-sort__main">
 							<span>Сортировать:</span>
-							<select name="catalog-sort__main-sort">
+							<select class="select" name="catalog-sort__main-sort">
 								<option value="1">Возрастание цены</option>
 								<option value="2">Уменьшение цены</option>
 							</select>
@@ -683,7 +694,11 @@
 										</div>
 									</div>
 								</div>
-								
+						</div>
+
+						<p class="catalog-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						<div class="catalog-button__block">
+							<button class="catalog-button-load">Загрузить ещё товары</button>
 						</div>
 					</div>
 				</div>

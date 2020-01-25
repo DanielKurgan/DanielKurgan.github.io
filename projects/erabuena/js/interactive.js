@@ -6,11 +6,13 @@ $( function() {
       max: 50000,
       values: [ 0, 50000 ],
       slide: function( event, ui ) {
-        $( "#amount1" ).val( ui.values[ 0 ] + " руб" + " - " + ui.values[ 1 ] + " руб" );
+        $( "#amount1" ).val( ui.values[ 0 ] + " руб"  );
+        $( "#amount2" ).val( ui.values[ 1 ] + " руб" );
       }
     });
-    $( "#amount1" ).val( $( "#slider-range1" ).slider( "values", 0 ) + " руб" +
-      " - " + $( "#slider-range1" ).slider( "values", 1 ) + " руб" );
+    $( "#amount1" ).val( $( "#slider-range1" ).slider( "values", 0 ) + " руб");
+    $( "#amount2" ).val( $( "#slider-range1" ).slider( "values", 1 ) + " руб");
+    
   } );
 
 $( function() {
@@ -20,11 +22,12 @@ $( function() {
       max: 50,
       values: [ 0, 50 ],
       slide: function( event, ui ) {
-        $( "#amount2" ).val( ui.values[ 0 ] + " см" + " - " + ui.values[ 1 ] + " см" );
+        $( "#amount3" ).val( ui.values[ 0 ] + " см");
+        $( "#amount4" ).val( ui.values[ 1 ] + " см" );
       }
     });
-    $( "#amount2" ).val( $( "#slider-range2" ).slider( "values", 0 ) + " см" +
-      " - " + $( "#slider-range2" ).slider( "values", 1 ) + " см" );
+    $( "#amount3" ).val( $( "#slider-range2" ).slider( "values", 0 ) + " см");
+    $( "#amount4" ).val( $( "#slider-range2" ).slider( "values", 1 ) + " см" );
   } );
 
 $( function() {
@@ -34,11 +37,13 @@ $( function() {
       max: 50,
       values: [ 0, 50 ],
       slide: function( event, ui ) {
-        $( "#amount3" ).val( ui.values[ 0 ] + " см" + " - " + ui.values[ 1 ] + " см" );
+        $( "#amount5" ).val( ui.values[ 0 ] + " см");
+        $( "#amount6" ).val( ui.values[ 1 ] + " см" );
       }
     });
-    $( "#amount3" ).val( $( "#slider-range3" ).slider( "values", 0 ) + " см" +
-      " - " + $( "#slider-range3" ).slider( "values", 1 ) + " см" );
+   
+    $( "#amount5" ).val( $( "#slider-range3" ).slider( "values", 0 ) + " см");
+    $( "#amount6" ).val( $( "#slider-range3" ).slider( "values", 1 ) + " см" );
   } );
 
 //   ADAPTIVE RANGE SLIDER FOR GLIDE MOBILE
