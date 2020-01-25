@@ -22,7 +22,7 @@
 <body>
 	<!-- Here write code -->
 	<div class="catalog-page">
-		<div class="container">
+		<div class="container p-0">
 			<div class="row">
 
 				<div class="col-md-3">
@@ -63,18 +63,64 @@
 							</li>
 						</ul>
 						<div class="catalog-filter__ranges">
+							<div class="catalog-filter__ranges-container">
+								<div class="catalog-filter__ranges__range">
+									<span class="catalog-filter__title-name">Розничная цена</span>
+									<div class="slider-range" id="slider-range1"></div>
+									<input class="range-input" type="text" id="amount1" readonly>
+									<div class="range"></div>
+								</div>
 
-							<div class="catalog-filter__ranges-range">
-								<div class="slider-range" id="slider-range1"></div>
-								<input class="range-input" type="text" id="amount1" readonly>
-								<div class="range"></div>
+								<div class="catalog-filter__ranges__range">
+									<span class="catalog-filter__title-name">Диаметр</span>
+									<div class="slider-range" id="slider-range2"></div>
+									<input class="range-input" type="text" id="amount2" readonly>
+									<div class="range"></div>
+								</div>
+
+								<div class="catalog-filter__ranges__range">
+									<span class="catalog-filter__title-name">Длина</span>
+									<div class="slider-range" id="slider-range3"></div>
+									<input class="range-input" type="text" id="amount3" readonly>
+									<div class="range"></div>
+								</div>
 							</div>
-
 						</div>
+						<div class="catalog-filter__brand">
+							<span class="catalog-filter__title-name">Производитель:</span>
+							<select name="select-brand">
+								<option value="1">Peterson</option>
+								<option value="2">Docjohnson</option>
+							</select>
+						</div>
+						<div class="catalog-filter__colors">
+							<span class="catalog-filter__title-name">Выбор цвета:</span>
+							<div class="catalog-filter__colors-block">
+								<button class="catalog-filter__colors__color color1"></button>
+								<button class="catalog-filter__colors__color color2"></button>
+								<button class="catalog-filter__colors__color color3"></button>
+								<button class="catalog-filter__colors__color color4"></button>
+								<button class="catalog-filter__colors__color color5"></button>
+								<button class="catalog-filter__colors__color color6"></button>
+								<button class="catalog-filter__colors__color color7"></button>
+								<button class="catalog-filter__colors__color color8"></button>
+							</div>
+						</div>
+						<div class="catalog-filter__choose">
+							<span class="catalog-filter__title-name">Выбор цвета:</span>
+							<div class="catalog-filter__choose-block">
+								<form action="#">
+									<label><input type="radio" name="#">Вариант выбора 1</label>
+									<label><input type="radio" name="#">Вариант выбора 2</label>
+									<label><input type="radio" name="#">Вариант выбора 3</label>
+								</form>
+							</div>
+						</div>
+
 					</div>
 				</div>
 
-				<div class="col-md-9 no-gutters">
+				<div class="col-md-9">
 					<span class="catalog-description">Место для небольшого текстового блока для заманухи</span>
 					
 					<div class="catalog-sort">
