@@ -27,6 +27,65 @@
     .catalog-items__item.two-banner {
         max-width: 210px;
     }
+    .catalog-sort {
+        justify-content: normal;
+    }
+    .catalog-sort__main {
+        margin-right: 20px;
+    }
+    .catalog-sort__buttons {
+        margin-right: 20px;
+    }
+    .catalog-items__item {
+        max-width: 360px;
+    }
+    .catalog-items__item-content__buttons__basket {
+        width: 110px;
+        height: 30px;
+    }
+    .catalog-items__item-content__buttons__basket::before {
+        right: 10px;
+    }
+    .catalog-filter li {
+        font-size: 14px;
+        line-height: 25px;
+    }
+    .catalog-items__item.two-banner {
+        max-width: 100%;
+    }
+    .catalog-items__container-banner {
+        margin-bottom: 20px;
+    }
+    .catalog-items__item {
+        margin-bottom: 20px;
+    }
+    .catalog-items__container .catalog-items__item {
+        max-width: 360px;
+    }
+    .catalog-items__container-big {
+        flex-direction: row;
+    }
+    .four-banner {
+        width: 100%;
+        max-width: 100% !important;
+    }
+    .ui-widget.ui-widget-content {
+        max-width: 160px;
+    }
+    .slider-range__block {
+        max-width: 190px;
+    }
+    .slider-range__block input {
+        width: 80px;
+    }
+    .catalog-filter__buttons button {
+        width: 85px;
+        font-size: 15px;
+    }
+    .catalog-filter__title-name {
+        font-size: 15px;
+        line-height: 20px;
+    }
 }
 
 /*Средние девайсы («таблетки», < 992px) */
@@ -36,6 +95,12 @@
     }
 	.catalog-sort__numitems {
         margin-top: 10px;
+    }
+    .catalog-filter {
+        margin-top: 10px;
+    }
+    .catalog-sort__numitems {
+        margin-top: 0;
     }
 }
 

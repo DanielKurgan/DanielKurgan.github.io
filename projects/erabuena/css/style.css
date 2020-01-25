@@ -22,7 +22,7 @@ h2, h4 {
 }
 .select::after {
 	content: " ";
-	background: url("../img/arrowdown.png") no-repeat 100% 100%/100%;
+	background: url("../img/arrowdown.svg") no-repeat 100% 100%/100%;
 	position: absolute;
 	pointer-events: none;
 	width: 30px;
@@ -165,7 +165,7 @@ button {
 	position: absolute;
 	width: 13px;
 	height: 13px;
-	background: url("../img/sort-blocks.png") no-repeat 100% 100%/100%;
+	background: url("../img/sort-blocks.svg") no-repeat 100% 100%/100%;
 	transform: translate(-30%, -50%);
 	-webkit-transform: translate(-30%, -50%);
 	-moz-transform: translate(-30%, -50%);
@@ -185,7 +185,7 @@ button {
 	position: absolute;
 	width: 13px;
 	height: 13px;
-	background: url("../img/sort-list.png") no-repeat 100% 100%/100%;
+	background: url("../img/sort-list.svg") no-repeat 100% 100%/100%;
 	transform: translate(-80%, -50%);
 	-webkit-transform: translate(-80%, -50%);
 	-moz-transform: translate(-80%, -50%);
@@ -280,7 +280,7 @@ button {
 	width: 19px;
 	height: 15px;
 	position: absolute;
-	background: url("../img/basket-icon.png") no-repeat 100% 100%/100%;
+	background: url("../img/basket-icon.svg") no-repeat 100% 100%/100%;
 	right: 7px;
 	transform: translateY(50%);
 	-webkit-transform: translateY(50%);
@@ -296,10 +296,12 @@ button {
 	margin-right: 15px;
 }
 .catalog-items__item-content__buttons__favourite {
-	width: 18px;
-	height: 16px;
+	/* width: 18px;
+	height: 16px; */
+	width: 21px;
+    height: 19px;
 	border: 0;
-	background: url("../img/favourite-icon.png") no-repeat 100% 100%/100%;
+	background: url("../img/favourite-icon.svg") no-repeat 100% 100%/100%;
 }
 .catalog-items__banner {
 	border-radius: 10px;
@@ -333,12 +335,16 @@ width: 100%;
 	margin-bottom: 20px;
 	position: relative;
 }
+.catalog-items__banner-text__readmore:hover {
+	color: white;
+	opacity: 0.4;
+}
 .catalog-items__banner-text__readmore::before {
 	content: ' ';
 	width: 19px;
 	height: 14px;
 	position: absolute;
-	background: url("../img/readmore-icon.png") no-repeat 100% 100%/100%;
+	background: url("../img/readmore-icon.svg") no-repeat 100% 100%/100%;
 	left: 140px;
     top: 3px;
 }
@@ -419,7 +425,7 @@ width: 100%;
 	right: -20px;
 	content: ' ';
 	position: absolute;
-	background: url("../img/sidebar-arrow.png") no-repeat 100% 100%/100%;
+	background: url("../img/sidebar-arrow.svg") no-repeat 100% 100%/100%;
 	width: 10px;
 	height: 5px;
 	-webkit-transform: translateY(50%);
@@ -461,7 +467,7 @@ width: 100%;
 .ui-slider-handle {
     border: none !important;
     background: none !important;
-    background-image: url("../img/range1.png") !important;
+    background-image: url("../img/range1.svg") !important;
     width: 27px !important;
     height: 27px !important;
 	top: -12px !important;
@@ -705,7 +711,7 @@ label {
   left: 50%;
   width: 18px;
   height: 18px;
-  background: url("../img/checkbox-check.png") no-repeat 100% 100%/100%;
+  background: url("../img/checkbox-check.svg") no-repeat 100% 100%/100%;
   transform: translate(-50%, -50%);
   visibility: visible;
 }
@@ -795,7 +801,7 @@ label {
 	position: absolute;
     left: 35px;
     top: 15px;
-	background: url("../img/button-load.png") no-repeat 100% 100%/100%;
+	background: url("../img/button-load.svg") no-repeat 100% 100%/100%;
 	width: 15px;
 	height: 19px;
 }
