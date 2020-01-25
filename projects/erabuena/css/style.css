@@ -8,7 +8,7 @@
 body {
 	overflow-x: hidden;
 	color: #a77a5e;
-	font-family: "ProximaNova - Regular";
+	font-family: "ProximaNova-Regular";
 	background-color: #fdf0e8;
 }
 a:hover {
@@ -399,6 +399,9 @@ width: 100%;
 	font-family: "ProximaNova-Semibold";
 	font-size: 22px;
 	font-weight: 400;
+}
+.catalog-filter__button {
+	display: none;
 }
 .catalog-filter {
 	padding: 25px 0;
@@ -811,3 +814,7 @@ label {
 	justify-content: center;
 	margin-bottom: 40px;
 }
+
+.filterOpen {
+	height: auto !important;
+} 

@@ -102,11 +102,63 @@
     .catalog-sort__numitems {
         margin-top: 0;
     }
+    .ui-widget.ui-widget-content {
+        max-width: 660px;
+    }
+    .catalog-filter__title-name {
+        font-size: 16px;
+    }
+    .catalog-filter__colors-block {
+        max-width: 100%;
+    }
+    .catalog-filter__buttons button {
+        width: 185px;
+    }
+    .catalog-filter__button {
+        display: inline-block;
+    }
+    .catalog-filter__title-block {
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+    button.catalog-filter__button {
+        position: absolute;
+        top: 0px;
+        right: 30px;
+    }
+    .catalog-filter__container {
+        height: 0;
+        overflow: hidden;
+        transition: 0.4s    ;
+        -webkit-transition: 0.4s    ;
+        -moz-transition: 0.4s    ;
+        -ms-transition: 0.4s    ;
+        -o-transition: 0.4s    ;
+    }
+
 }
 
 /*Малые девайсы («ландшафтные», < 768px)
 */@media (max-width: 768px) {
-	
+	.catalog-sort__numitems {
+        margin-top: 10px;
+    }
+    .catalog-sort {
+        justify-content: space-between;
+    }
+    .catalog-sort__buttons {
+        margin-right: 0;
+    }
+    .catalog-items__item {
+        max-width: 280px;
+    }
+    .ui-widget.ui-widget-content {
+        max-width: 490px;
+    }
+    .slider-range__block {
+        max-width: 490px;
+    }
 }
 
 /*Экстрамалые девайсы («телефоны», < 576px)
