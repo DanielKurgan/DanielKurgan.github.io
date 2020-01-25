@@ -1,3 +1,4 @@
+// RANGE SLIDERS
 $( function() {
     $( "#slider-range1" ).slider({
       range: true,
@@ -39,3 +40,8 @@ $( function() {
     $( "#amount3" ).val( $( "#slider-range3" ).slider( "values", 0 ) + " см" +
       " - " + $( "#slider-range3" ).slider( "values", 1 ) + " см" );
   } );
+
+//   ADAPTIVE RANGE SLIDER FOR GLIDE MOBILE
+  $('#slider-range1').draggable();
+  $('#slider-range2').draggable();
+  $('#slider-range3').draggable();
