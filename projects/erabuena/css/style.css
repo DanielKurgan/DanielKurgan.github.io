@@ -39,6 +39,9 @@ h2, h4 {
 	appearance: none;
 	cursor: pointer !important;
 }
+select {
+	cursor: pointer;
+}
 a {
 	outline: 0;
 	color: #fff;
