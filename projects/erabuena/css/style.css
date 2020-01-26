@@ -549,7 +549,8 @@ line-height: 30px;
 	width: 100%;
 }
 .catalog-filter__brand .select:after {
-		background: url(../img/sidebar-arrow.svg) no-repeat 100% 100%/100%;
+    background: url(../img/sidebar-arrow.svg) no-repeat 100% 100%/100%;
+    right: 17px;
 }
 .catalog-filter__brand span {
 	padding: 0 20px;
