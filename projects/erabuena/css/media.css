@@ -297,6 +297,13 @@
     }
 }
 @media (max-width: 420px){
+    .catalog-items__container .catalog-items__item {
+        max-width: 150px;
+    }
+    .catalog-items__container-big {
+        flex-direction: row;
+    }
+    
     .catalog-items__item {
         max-width: 150px;
     }
