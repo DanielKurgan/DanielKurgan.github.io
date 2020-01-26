@@ -25,10 +25,10 @@ h2, h4 {
 	background: url("../img/arrowdown.svg") no-repeat 100% 100%/100%;
 	position: absolute;
 	pointer-events: none;
-	width: 30px;
-	height: 30px;
-	top: 0;
-	left: 0;
+	width: 10px;
+    height: 10px;
+    top: 13px;
+    right: 37px;
   }
   .select {
 	position: relative;
@@ -541,6 +541,15 @@ line-height: 30px;
 .catalog-filter__brand {
     display: flex;
     flex-direction: column;
+}
+.catalog-filter__brand .select {
+	padding-right: 0;
+}
+.catalog-filter__brand .select select {
+	width: 100%;
+}
+.catalog-filter__brand .select:after {
+		background: url(../img/sidebar-arrow.svg) no-repeat 100% 100%/100%;
 }
 .catalog-filter__brand span {
 	padding: 0 20px;
