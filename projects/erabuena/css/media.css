@@ -31,7 +31,7 @@
         width: 100%;
     }
     .catalog-items__item.second-banner {
-        max-width: 210px;
+        max-width: 220px;
     }
     .catalog-sort {
         justify-content: normal;
@@ -43,7 +43,7 @@
         margin-right: 20px;
     }
     .catalog-items__item {
-        max-width: 230px;
+        max-width: 220px;
     }
     .catalog-items__item-content__buttons__basket {
         width: 110px;
@@ -56,8 +56,8 @@
         font-size: 14px;
         line-height: 25px;
     }
-    .catalog-items__item.second-banner {
-        max-width: 240px;
+    .catalog-items__container .catalog-items__item {
+        max-width: 220px;
     }
     .catalog-items__container-banner {
         margin-bottom: 20px;
@@ -66,7 +66,7 @@
         margin-bottom: 20px;
     }
     .catalog-items__container .catalog-items__item {
-        max-width: 230px;
+        max-width: 220px;
     }
     .catalog-items__container-big {
         flex-direction: column;
@@ -79,7 +79,7 @@
     }
     .fourth-banner {
         width: 100%;
-        max-width: 480px !important;
+        max-width: 460px !important;
     }
     .ui-widget.ui-widget-content {
         max-width: 160px;
@@ -141,7 +141,7 @@
         max-width: 100%;
     }
     .catalog-items__container .catalog-items__item {
-        max-width: 235px;
+        max-width: 225px;
     }
     .catalog-filter__title-name {
         font-size: 16px;
@@ -181,12 +181,15 @@
         max-width: 100%;
     }
     .fourth-banner {
-        max-width: 485px !important;
+        max-width: 465px !important;
     }
 }
 
 /*Малые девайсы («ландшафтные», < 768px)
 */@media (max-width: 768px) {
+    .range-popup {
+        right: 30%;
+    }
     .catalog-items__item .catalog-items__banner {
         height: 100%;
     }
@@ -214,7 +217,7 @@
         margin-right: 0;
     }
     .catalog-items__item {
-        max-width: 260px;
+        max-width: 240px;
     }
     .ui-widget.ui-widget-content {
         max-width: 490px;
@@ -232,7 +235,7 @@
         height: 290px;
     }
     .catalog-items__container-banner {
-        max-width: 96%;
+        max-width: 100%;
     }
     .catalog-items__banner-text__readmore {
         font-size: 14px;
@@ -244,10 +247,10 @@
     }
 
     .catalog-items__item.second-banner {
-        max-width: 93%;
+        max-width: 100%;
     }
     body .fourth-banner {
-        max-width: 94% !important;
+        max-width: 100% !important;
     }
     .row-catalog-filter {
         padding: 0 20px;
@@ -273,6 +276,16 @@
 
 /*Экстрамалые девайсы («телефоны», < 576px)
 */@media (max-width: 576px) {
+    .range-popup span {
+        font-size: 14px;
+    }
+    .range-popup a {
+        font-size: 13px;
+    }
+    .range-popup {
+        width: 170px;
+        height: 40px;
+    }
     .catalog-items__item.second-banner {
         max-width: 510px;
     }
@@ -317,6 +330,9 @@
 }
 
 @media (max-width: 520px){
+    .catalog-items {
+        padding: 0;
+    }
     .catalog-items__item {
         max-width: 190px;
     }
@@ -363,7 +379,7 @@
         max-width: 170px;
     }
     .catalog-items__item.second-banner {
-        max-width: 90%;
+        max-width: 95%;
     }
     .catalog-items__container-big {
         flex-direction: row;
@@ -425,6 +441,9 @@
 }
 
 @media (max-width: 370px){
+    .catalog-items {
+        padding: 0;
+    }
     .catalog-items__item {
         max-width: 150px;
     }
@@ -437,10 +456,22 @@
     .catalog-page .container {
         padding: 0 5px;
     }
+    body .fourth-banner {
+        max-width: 95% !important;
+    }
+    .catalog-items__container-banner {
+        max-width: 97%;
+    }
     .catalog-items__item.second-banner {
         max-width: 95%;
     }
     .catalog-sort select {
         padding: 10px 25px 10px 10px;
+    }
+    .catalog-items__container .catalog-items__item {
+        max-width: 145px;
+    }
+    .catalog-items__item {
+        max-width: 145px;
     }
 }

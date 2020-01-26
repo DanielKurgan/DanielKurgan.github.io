@@ -82,9 +82,9 @@ button {
 	flex-wrap: wrap;
 }
 .catalog-items {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
 .catalog-pagination__list li {
 	display: inline-block;
@@ -93,7 +93,7 @@ button {
 	color: #7f5c47;
 	font-family: "ProximaNova-Regular";
 	margin-right: 13px;
-	font-size: 16px;
+	font-size: 14px;
 	font-weight: 300;
 	line-height: 20px;
 }
@@ -102,7 +102,7 @@ button {
 	height: 40px;
 	border-radius: 20px;
 	background-color: #f7a98f;
-	padding: 10px 35px 10px 20px;
+	padding: 10px 30px 10px 15px;
 	-webkit-border-radius: 20px;
 	-moz-border-radius: 20px;
 	-ms-border-radius: 20px;
@@ -110,7 +110,7 @@ button {
 
 	color: #ffffff;
 	font-family: "ProximaNova-Semibold";
-	font-size: 16px;
+	font-size: 14px;
 	font-weight: 400;
 	line-height: 20px;
 }
@@ -135,6 +135,18 @@ button {
 }
 .catalog-button-active {
 	background-color: #fad1c0;
+}
+.catalog-pagination__list hr {
+	width: 2px;
+	height: 2px;
+	margin-right: 10px;
+}
+.catalog-pagination__button {
+    margin-right: 8px;
+}
+.catalog-pagination__list {
+	display: flex;
+	align-items: center;	
 }
 .catalog-pagination__button {
 	display: flex;
@@ -437,10 +449,10 @@ button {
 	-o-border-radius: 10px;
 }
 .catalog-items__item.second-banner {
-	max-width: 420px;
+	max-width: 410px;
 }
 .catalog-items__container .catalog-items__item {
-	max-width: 206px;
+	max-width: 196px;
 }
 .catalog-items__item.second-banner .catalog-items__banner-text__name {
 	font-size: 20px;

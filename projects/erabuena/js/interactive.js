@@ -63,5 +63,5 @@ $(document).ready(function(){
 
     // FILTER OPEN CHILD
     $(".catalog-filter__nav li").click(function(){
-        $(this).$(".child").toggleClass("child-open");
+        $(this).find(".child").toggleClass("child-open");
     });
