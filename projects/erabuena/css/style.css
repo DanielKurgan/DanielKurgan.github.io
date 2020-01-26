@@ -20,7 +20,7 @@ p, span, h3 {
 }
 h2, h4 {
 }
-.select::after {
+.select:after {
 	content: " ";
 	background: url("../img/arrowdown.svg") no-repeat 100% 100%/100%;
 	position: absolute;
@@ -34,13 +34,12 @@ h2, h4 {
 	position: relative;
 	display: inline-block;
 	padding-right: 25px;
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
-	cursor: pointer !important;
 }
 select {
 	cursor: pointer;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
 }
 a {
 	outline: 0;
@@ -101,7 +100,7 @@ button {
 	height: 40px;
 	border-radius: 20px;
 	background-color: #f7a98f;
-    padding: 10px 15px;
+	padding: 10px 30px 10px 10px;
 	-webkit-border-radius: 20px;
 	-moz-border-radius: 20px;
 	-ms-border-radius: 20px;
