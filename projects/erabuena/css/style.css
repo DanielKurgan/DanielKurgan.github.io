@@ -216,6 +216,8 @@ button {
   .catalog-items__item-image {
 	max-height: 260px;
 	overflow: hidden;
+    background: white;
+	border-radius: 10px 10px 0 0;
 }
 .catalog-items__item-image a {
 	min-height: 260px;
@@ -224,21 +226,12 @@ button {
 	overflow: hidden;
 	width: 100%;
 	height: 100%;
-	border-radius: 20px 20px 0 0;
-	-webkit-border-radius: 20px 20px 0 0;
-	-moz-border-radius: 20px 20px 0 0;
-	-ms-border-radius: 20px 20px 0 0;
-	-o-border-radius: 20px 20px 0 0;
 }
 .catalog-items__item-content {
 	min-height: 140px;
 	background-color: #fff7f2;
 	padding: 20px 10px 10px 10px;
-	border-radius: 0 0 20px 20px;
-	-webkit-border-radius: 0 0 20px 20px;
-	-moz-border-radius: 0 0 20px 20px;
-	-ms-border-radius: 0 0 20px 20px;
-	-o-border-radius: 0 0 20px 20px;
+	border-radius: 0 0 10px 10px;
 }
 .catalog-items__item-content span {
 	color: #7f5c47;
@@ -291,8 +284,8 @@ button {
 }
 .catalog-items__item-content__buttons__basket::before {
 	content: ' ';
-	width: 19px;
-	height: 15px;
+	width: 17px;
+    height: 14.5px;
 	position: absolute;
 	background: url("../img/basket-icon.svg") no-repeat 100% 100%/100%;
 	right: 7px;
@@ -303,7 +296,7 @@ button {
 	-o-transform: translateY(50%);
 }
 .catalog-items__item-content__buttons__analitics {
-	width: 16px;
+	width: 15px;
 	height: 18px;
 	background: url("../img/statics-icon.png") no-repeat 100% 100%/100%;
 	border: 0;
@@ -312,7 +305,7 @@ button {
 .catalog-items__item-content__buttons__favourite {
 	/* width: 18px;
 	height: 16px; */
-	width: 21px;
+    width: 20px;
     height: 19px;
 	border: 0;
 	background: url("../img/favourite-icon.svg") no-repeat 100% 100%/100%;
@@ -367,9 +360,26 @@ width: 100%;
 	flex-direction: column;
 	height: 100%;
 }
-.catalog-items__item-image img {
-	max-width: 100%;
-	align-self: center;
+.catalog-items__item-image a {
+    background: url(../img/item1.jpg) no-repeat 50% 50%/contain;
+}
+.catalog-items__item-image a:hover {
+	
+}
+.item-image4 {
+    background: url(../img/item1.png) no-repeat 50% 50%/contain !important;
+}
+.item-image3 {
+    background: url(../img/item2.png) no-repeat 50% 50%/contain !important;
+}
+.item-image2 {
+    background: url(../img/item2.jpg) no-repeat 50% 50%/contain !important;
+}
+.item-image1 {
+    background: url(../img/item3.png) no-repeat 50% 50%/contain !important;
+}
+.item-image4 {
+    background: url(../img/item3.jpg) no-repeat 50% 50%/contain !important;
 }
 .catalog-items__item .catalog-items__banner {
 	height: 100%;
