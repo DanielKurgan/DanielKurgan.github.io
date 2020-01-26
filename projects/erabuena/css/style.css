@@ -383,24 +383,24 @@ width: 100%;
 	-o-border-radius: 20px 20px 0 0;
 }
 .catalog-items__item.second-banner {
-    max-width: 433px;
+    max-width: 420px;
 }
 .catalog-items__container .catalog-items__item {
-    max-width: 216px;
+    max-width: 206px;
 }
 .catalog-items__item.second-banner .catalog-items__banner-text__name {
     font-size: 20px;
     line-height: 22px;
 }
 .catalog-items__container-banner {
-    max-width: 210px;
+    max-width: 206px;
 	height: auto;
 }
 .catalog-items__container-banner .catalog-items__banner {
     height: 98%;
 }
 .fourth-banner {
-    width: 100%;
+	width: 96%;
 	max-width: 100%;
 	min-height: 240px;
 }
@@ -444,8 +444,8 @@ width: 100%;
 	content: ' ';
 	position: absolute;
 	background: url("../img/sidebar-arrow.svg") no-repeat 100% 100%/100%;
-	width: 10px;
-	height: 5px;
+	width: 11px;
+    height: 5px;
 	-webkit-transform: translateY(50%);
 	-moz-transform: translateY(50%);
 	-ms-transform: translateY(50%);
