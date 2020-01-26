@@ -60,3 +60,8 @@ $(document).ready(function(){
     $(".catalog-filter__button").click(function(){
         $(".catalog-filter__container").toggleClass("filterOpen");
     });
+
+    // FILTER OPEN CHILD
+    $(".catalog-filter__nav li").click(function(){
+        $(this).$(".child").toggleClass("child-open");
+    });

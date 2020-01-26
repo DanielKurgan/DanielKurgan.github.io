@@ -3,7 +3,7 @@
     .catalog-description {
         font-size: 22px;
     }
-	.catalog-pagination {
+    .catalog-pagination {
         margin-top: 10px;
     }
     .catalog-items__item.big-banner {
@@ -12,7 +12,7 @@
     .catalog-items__container {
         display: flex;
         flex-wrap: wrap;
-        /* justify-content: space-between; */
+        justify-content: space-between; 
         width: 100%;
     }
     .catalog-items__container-banner .catalog-items__banner {
@@ -43,7 +43,7 @@
         margin-right: 20px;
     }
     .catalog-items__item {
-        max-width: 240px;
+        max-width: 230px;
     }
     .catalog-items__item-content__buttons__basket {
         width: 110px;
@@ -66,7 +66,7 @@
         margin-bottom: 20px;
     }
     .catalog-items__container .catalog-items__item {
-        max-width: 240px;
+        max-width: 230px;
     }
     .catalog-items__container-big {
         flex-direction: column;
@@ -75,7 +75,7 @@
         margin-right: 15px;
     }
     .catalog-items__container-banner {
-        max-width: 96%;
+        max-width: 100%;
     }
     .fourth-banner {
         width: 100%;
@@ -102,6 +102,13 @@
 
 /*Средние девайсы («таблетки», < 992px) */
 @media (max-width: 992px) {
+    .range-popup {
+        right: 220px;
+        top: 55px;
+    }
+    .slider-range__block {
+        max-width: 100%;
+    }
     .catalog-items {
         justify-content: space-between;
     }
@@ -120,17 +127,21 @@
     .catalog-description {
         text-align: left;
     }
-	.catalog-sort__numitems {
+    .catalog-sort__numitems {
         margin-top: 10px;
     }
     .catalog-filter {
         margin-top: 10px;
+        width: 100%;
     }
     .catalog-sort__numitems {
         margin-top: 0;
     }
     .ui-widget.ui-widget-content {
-        max-width: 660px;
+        max-width: 100%;
+    }
+    .catalog-items__container .catalog-items__item {
+        max-width: 235px;
     }
     .catalog-filter__title-name {
         font-size: 16px;
@@ -170,7 +181,7 @@
         max-width: 100%;
     }
     .fourth-banner {
-        max-width: 495px !important;
+        max-width: 485px !important;
     }
 }
 
@@ -193,7 +204,7 @@
         display: flex;
         justify-content: flex-end;
     }
-	.catalog-sort__numitems {
+    .catalog-sort__numitems {
         margin-top: 10px;
     }
     .catalog-sort {
@@ -221,7 +232,25 @@
         height: 290px;
     }
     .catalog-items__container-banner {
-        max-width: 100%;
+        max-width: 96%;
+    }
+    .catalog-items__banner-text__readmore {
+        font-size: 14px;
+    }
+    .catalog-items__banner-text__readmore::before {
+        width: 16px;
+        left: 125px;
+        top: 2px;
+    }
+
+    .catalog-items__item.second-banner {
+        max-width: 93%;
+    }
+    body .fourth-banner {
+        max-width: 94% !important;
+    }
+    .row-catalog-filter {
+        padding: 0 20px;
     }
     .fourth-banner {
         max-width: 100% !important;
@@ -244,6 +273,9 @@
 
 /*Экстрамалые девайсы («телефоны», < 576px)
 */@media (max-width: 576px) {
+    .catalog-items__item.second-banner {
+        max-width: 510px;
+    }
     .catalog-items {
         justify-content: space-around;
     }
@@ -253,15 +285,15 @@
     .ui-widget.ui-widget-content {
         max-width: 420px;
     }
-.catalog-items__container .catalog-items__item {
-    max-width: 190px;
-}
-.catalog-items__container-big {
-    width: 96%;
-}
-.catalog-items__container-big {
-    flex-direction: row;
-}
+    .catalog-items__container .catalog-items__item {
+        max-width: 230px;
+    }
+    .catalog-items__container-big {
+        width: 96%;
+    }
+    .catalog-items__container-big {
+        flex-direction: row;
+    }
     .catalog-page .container {
         padding: 0 10px;
     }
@@ -270,6 +302,7 @@
     }
     .catalog-items__item {
         padding-right: 0;
+        margin-right: 0;
     }
     .catalog-items__container:first-child {
         margin-right: auto;
@@ -304,9 +337,11 @@
 }
 
 @media (max-width: 450px){
-
+    .catalog-items__container .catalog-items__item {
+        max-width: 185px;
+    }
     .catalog-items__container-big {
-        flex-direction: column;
+        flex-direction: row;
     }
 
     .ui-widget.ui-widget-content {
@@ -323,16 +358,19 @@
         font-size: 12px;
     }
 }
-@media (max-width: 420px){
+@media (max-width: 430px){
     .catalog-items__container .catalog-items__item {
-        max-width: 150px;
+        max-width: 170px;
+    }
+    .catalog-items__item.second-banner {
+        max-width: 90%;
     }
     .catalog-items__container-big {
         flex-direction: row;
     }
     
     .catalog-items__item {
-        max-width: 150px;
+        max-width: 170px;
     }
     .catalog-items__item-image {
         max-height: 200px;
@@ -382,12 +420,27 @@
         padding: 0 10px;
     }
     .catalog-items__item-image a {
-        min-height: auto;
+        min-height: 190px;
+    }
+}
+
+@media (max-width: 370px){
+    .catalog-items__item {
+        max-width: 150px;
+    }
+    .catalog-items__container .catalog-items__item {
+        max-width: 150px;
     }
 }
 
 @media (max-width: 340px){
     .catalog-page .container {
         padding: 0 5px;
+    }
+    .catalog-items__item.second-banner {
+        max-width: 95%;
+    }
+    .catalog-sort select {
+        padding: 10px 25px 10px 10px;
     }
 }
