@@ -65,3 +65,17 @@ $(document).ready(function(){
     $(".catalog-filter__nav li").click(function(){
         $(this).find(".child").toggleClass("child-open");
     });
+
+    // HOVER COLORS
+    $('.catalog-filter__colors__color').click(function(){
+        if ($(".catalog-filter__colors__color").hasClass('color-active') ) {
+            $(".catalog-filter__colors__color").removeClass('color-active');
+                $(this).addClass('color-active');
+                //Insert logic if you want a type of optional click/off click code
+            } 
+            else
+            {
+                $(this).addClass('color-active');
+                //Insert event handling logic
+            }
+    });

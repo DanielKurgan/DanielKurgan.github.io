@@ -64,6 +64,36 @@ button {
 }
 /*STYLES*/
 
+.site-tree {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+.site-tree li {
+	list-style: none;
+	padding-right: 30px;
+	position: relative;
+}
+.site-tree li:after {
+	content: ' ';
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	background: url('../img/treeicon.png') no-repeat 100% 100%/contain;
+	right: 10px;
+    top: 7px;
+}
+.site-tree li:last-child:after {
+	display: none;
+}
+.site-tree a {
+	color: #ac8c78;
+	font-family: "ProximaNova-Regular";
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 20px;
+}
+
 /* CATALOG */
 .catalog-description {
 	margin-top: 10px;
@@ -142,7 +172,7 @@ button {
 	margin-right: 10px;
 }
 .catalog-pagination__button {
-    margin-right: 8px;
+	margin-right: 8px;
 }
 .catalog-pagination__list {
 	display: flex;
@@ -225,12 +255,15 @@ button {
 	margin-right: 10px;
 	display: inline-block;
 	margin-bottom: 10px;
-	border-radius: 20px;
-	-webkit-border-radius: 20px;
-	-moz-border-radius: 20px;
-	-ms-border-radius: 20px;
-	-o-border-radius: 20px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
 	overflow: hidden;
+	transition: 0.4;
+}
+.catalog-items__item:hover {
 	box-shadow: 0 5px 24px rgba(247, 169, 143, 0.48);
 }
 /* .catalog-items__item:nth-child(4n){
@@ -404,6 +437,7 @@ button {
 }
 .catalog-items__item-image {
 	position: relative;
+    border: 10px solid white;
 }
 .catalog-items__item-image a {
 	background: url(../img/item1.jpg) no-repeat 50% 50%/contain;
@@ -430,7 +464,6 @@ button {
 	background: url("../img/search-iconHover.svg") no-repeat 100% 100%/100%;
 	width: 24px;
 	height: 24px;
-	transform: translate(50%);
 	border: 0;
 }
 .catalog-items__item .catalog-items__banner-text__name {
@@ -715,6 +748,10 @@ button {
 .color-active {
 	border: 2px solid orange !important;
 }
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+	cursor: pointer;
+	outline: 0;
+}
 .color1 {
 	background: white;
 	border: 2px solid #f4e2d6;
@@ -913,7 +950,7 @@ label {
 	background-color: #fad1c0;
 }
 .catalog-text {
-	margin: 47px 0;
+	margin: 27px 0;
 	color: #ac8c78;
 	font-family: "ProximaNova-Regular";
 	font-size: 14px;
@@ -958,6 +995,11 @@ label {
 .filterOpen {
 	height: auto !important;
 } 
+.catalog-pagination.footer-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /* BANNERS */
 .banner_bg {
