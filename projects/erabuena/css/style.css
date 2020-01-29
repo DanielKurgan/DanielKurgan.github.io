@@ -1046,6 +1046,7 @@ label {
 	border-radius: 10px;
 	background: white;
 	padding: 20px;
+    margin-bottom: 50px;
 }
 .item-page__content * {
 	color: #7f5c47;
@@ -1753,7 +1754,9 @@ ul.info-text li:before {
     border-bottom: 1px solid lightgray;
 }
 .item-feedback__block {
-	max-width: 411px;
+    max-width: 411px;
+	margin-bottom: 18px;
+    line-height: 21px;
 }
 .item-feedback .item-title span {
 	width: auto;
@@ -1790,6 +1793,74 @@ ul.info-text li:before {
 	width: 14px;
 	height: 13px;
 	margin-right: 6px;
-	background: url("../img/rating-heart2.svg") no-repeat 100% 100%/contain;
+	background: url("../img/rating-heart2.svg") 50% 50%/contain;
+	cursor: pointer;
+}
+.rating-heart:hover,
+.rating-heart:active {
+	background: url("../img/rating-heart1.svg") 50% 50%/contain;
+}
+.rating-heart:last-child {
+	margin-right: 0;
+}
+.item-feedback__block-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.item-feedback__block-date {
+    margin-bottom: 5px;
+}
+.item-feedback__container {
+    margin-bottom: 15px;
+    margin-top: 23px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.item-feedback__block-header__name {
+	color: #7f5c47;
+	font-family: "ProximaNova-Semibold";
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 25px;
+}
+.item-feedback__block-date {
+	color: #ac8c78;
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 20px;
+}
+.item-feedback__block-text {
+	color: #7f5c47;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 20px;
+}
+.item-feedback__footer {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+}
+.item-feedback__footer .info-button {
+    width: 280px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #f7a98f;
+}
+.item-feedback__footer .catalog-pagination__button {
+    margin-right: 14px;
+	font-family: "ProximaNova-Semibold";
+	font-size: 16px;
+	font-weight: 400;
+	color: white;
+}
+.item-feedback__footer .catalog-pagination__list {
+	margin-bottom: 0;
+	margin-right: 15px;
+}
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1180px !important;
 }
 /*CART STYLES END*/
