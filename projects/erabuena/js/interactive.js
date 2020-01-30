@@ -3,14 +3,14 @@ $(document).ready(function(){
     // RANGE SLIDERS
     $( function() {
         $( "#slider-range1" ).slider({
-        range: true,
-        min: 0,
-        max: 50000,
-        values: [ 0, 50000 ],
-        slide: function( event, ui ) {
-            $( "#amount1" ).val( ui.values[ 0 ] + " руб"  );
-            $( "#amount2" ).val( ui.values[ 1 ] + " руб" );
-        }
+            range: true,
+            min: 0,
+            max: 50000,
+            values: [ 0, 50000 ],
+            slide: function( event, ui ) {
+                $( "#amount1" ).val( ui.values[ 0 ] + " руб"  );
+                $( "#amount2" ).val( ui.values[ 1 ] + " руб" );
+            }
         });
         $( "#amount1" ).val( $( "#slider-range1" ).slider( "values", 0 ) + " руб");
         $( "#amount2" ).val( $( "#slider-range1" ).slider( "values", 1 ) + " руб");
@@ -19,14 +19,14 @@ $(document).ready(function(){
 
     $( function() {
         $( "#slider-range2" ).slider({
-        range: true,
-        min: 0,
-        max: 50,
-        values: [ 0, 50 ],
-        slide: function( event, ui ) {
-            $( "#amount3" ).val( ui.values[ 0 ] + " см");
-            $( "#amount4" ).val( ui.values[ 1 ] + " см" );
-        }
+            range: true,
+            min: 0,
+            max: 50,
+            values: [ 0, 50 ],
+            slide: function( event, ui ) {
+                $( "#amount3" ).val( ui.values[ 0 ] + " см");
+                $( "#amount4" ).val( ui.values[ 1 ] + " см" );
+            }
         });
         $( "#amount3" ).val( $( "#slider-range2" ).slider( "values", 0 ) + " см");
         $( "#amount4" ).val( $( "#slider-range2" ).slider( "values", 1 ) + " см" );
@@ -34,16 +34,16 @@ $(document).ready(function(){
 
     $( function() {
         $( "#slider-range3" ).slider({
-        range: true,
-        min: 0,
-        max: 50,
-        values: [ 0, 50 ],
-        slide: function( event, ui ) {
-            $( "#amount5" ).val( ui.values[ 0 ] + " см");
-            $( "#amount6" ).val( ui.values[ 1 ] + " см" );
-        }
+            range: true,
+            min: 0,
+            max: 50,
+            values: [ 0, 50 ],
+            slide: function( event, ui ) {
+                $( "#amount5" ).val( ui.values[ 0 ] + " см");
+                $( "#amount6" ).val( ui.values[ 1 ] + " см" );
+            }
         });
-    
+
         $( "#amount5" ).val( $( "#slider-range3" ).slider( "values", 0 ) + " см");
         $( "#amount6" ).val( $( "#slider-range3" ).slider( "values", 1 ) + " см" );
     } );
@@ -70,7 +70,7 @@ $(document).ready(function(){
     $('.catalog-filter__colors__color').click(function(){
         if ($(".catalog-filter__colors__color").hasClass('color-active') ) {
             $(".catalog-filter__colors__color").removeClass('color-active');
-                $(this).addClass('color-active');
+            $(this).addClass('color-active');
                 //Insert logic if you want a type of optional click/off click code
             } 
             else
@@ -78,6 +78,15 @@ $(document).ready(function(){
                 $(this).addClass('color-active');
                 //Insert event handling logic
             }
-    });
+        });
 
+    // SLICK SLIDERS
+    $('.tab-pane').slick({
+        variableWidth: true,
+        infinite: true,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        dots: true,
+        arrows: false,
+    });
     

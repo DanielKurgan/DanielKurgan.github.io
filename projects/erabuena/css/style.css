@@ -1722,7 +1722,8 @@ ul.info-text li:before {
 .item-delivery__info-confidential {
 	max-width: 280px;
 }
-.item-delivery__info-confidential__link {
+.item-button-simple {
+	display: inline-block;
 	color: #c4a089;
 	font-family: "ProximaNova-Semibold";
 	font-size: 16px;
@@ -1874,6 +1875,7 @@ ul.info-text li:before {
 	line-height: 20px;
 }
 .nav-tabs .nav-link.active {
+	border-bottom: 5px solid #f7a98f !important;
 	border: 0;
 	color: #a77a5e;
 	background: transparent;
@@ -1890,7 +1892,141 @@ ul.info-text li:before {
 	background-color: transparent;
 }
 .tab-content .item-kit__block-image a {
-    background-color: white;
-    border-radius: 10px;
+	border-radius: 10px;
+	background-color: white;
+	border-radius: 10px;
 }
+.nav-link {
+	margin: 7px 30px -3px 0px;
+	padding: 0 0 10px 0;
+}
+.nav-tabs {
+	margin-bottom: 46px;
+}
+.store-info {
+	border-bottom: 1px solid #dee2e6;
+}
+.store-info .item-kit__block-image a {
+	min-height: 280px;
+}
+.tab-content .item-kit__block-image {
+	margin-bottom: 5px;
+}
+.store-info .item-kit__block-prices {
+	margin-bottom: 7px;
+}
+.store-info .item-button-simple {
+	width: 160px;
+	margin-left: -12px;
+	line-height: 43px;
+	height: 43px;
+}
+.store-info .item-kit__block-buttons {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.tab-pane {
+	display: flex !important;
+	justify-content: space-between;
+}
+.item-button-like {
+	width: 22px;
+	height: 20px;
+	background: url("../img/button-like.png") no-repeat 100% 100%/contain;
+	border: 0;
+}
+.slick-slide {
+	width: 200px !important;
+	margin-right: 44px;
+}
+.slick-dots li.slick-active button:before {
+	opacity: 1 !important;
+	color: #f7a98f !important;
+}
+.slick-dots li button:before {
+	font-size: 12px !important;
+}
+.slick-dots li button:before {
+	opacity: 1 !important;
+	color: white !important;
+}
+/* Based on https://github.com/kenwheeler/slick/issues/187#issuecomment-59123524 */
+/* bootstrap hack: fix content width inside hidden tabs */
+.tab-content > .tab-pane,
+.pill-content > .pill-pane {
+	display: block;    /* undo display:none          */
+	height: 0;         /* height:0 is also invisible */
+	overflow: hidden;  /* no-overflow                */
+}
+.tab-content > .active,
+.pill-content > .active {
+	height: auto;      /* let the content decide it  */
+}
+/* bootstrap hack end */
 /*CART STYLES END*/
+.slick-dotted.slick-slider {
+	margin-bottom: 0; 
+}
+.tab-content {
+    padding-bottom: 90px;
+}
+.store-info .slick-dots {
+    bottom: -4px !important;
+}
+.news-mailing {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 40px 0;
+}
+.news-mailing__text {
+	display: flex;
+	flex-direction: column;
+}
+.news-mailing__text span {
+	display: inline-block;
+}
+.news-mailing__text-title {
+	color: #fea5bd;
+	font-family: "ProximaNova-Semibold";
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 20px;
+	margin-bottom: 13px;
+}
+.news-mailing__text-subtitle {
+	color: #7f5c47;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 20px;
+}
+.news-mailing__form {
+	display: flex;
+	justify-content: space-between;
+}
+.news-mailing__form input {
+	width: 240px;
+	height: 50px;
+	border-radius: 25px;
+	background-color: #ffffff;
+	color: #a88670;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 20px;
+	border: 0;
+	text-align: center;
+    padding: 10px;
+    margin-right: 10px;
+}
+.news-mailing__form input::placeholder {
+	color: #a88670;
+}
+.news-mailing__form-button {
+	width: 240px;
+	height: 50px;
+	border-radius: 25px;
+	background-color: #fea5bd;
+	border: 0;
+	color: white;
+}
