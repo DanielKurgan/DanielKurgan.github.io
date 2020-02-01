@@ -89,4 +89,29 @@ $(document).ready(function(){
         dots: true,
         arrows: false,
     });
-    
+
+    // STICKY BLOCK
+    $(window).scroll(function() {
+      if ($(".item-page__content").scrollTop() >= 5) {
+        $('.item-page__sidebar').addClass('fixed');
+      } else {
+        $('.item-page__sidebar').removeClass('fixed');
+      }
+    });
+
+    // INPUT NUMBER
+    $(document).ready(function () {
+        $('.numb').number_plugin();
+    });
+
+    $("select option").click(function(){
+
+    });    
+
+    $(document).ready(function(){
+        // Находим плавающий блок и делаем его плавающим
+        $('.item-page__sidebar-container').stick_in_parent({
+            // Отступ сверху
+            offset_top: 10
+        });
+    });
