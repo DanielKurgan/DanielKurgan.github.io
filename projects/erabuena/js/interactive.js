@@ -170,6 +170,7 @@ $(document).on('click', '.basket-open', function() {
 });
 
 
+
     // SLICK SLIDERS
     $('.tab-pane').slick({
         variableWidth: false,
@@ -178,6 +179,15 @@ $(document).on('click', '.basket-open', function() {
         slidesToScroll: 1,
         dots: true,
         arrows: false,
+        responsive: [ 
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 3,
+            } 
+        },
+        ]
     });
 
     // INPUT NUMBER
