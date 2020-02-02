@@ -266,25 +266,60 @@ $(document).on('mouseover', 'a', function () {
         $(".mobile-nav-block__description").click(function(){
             $(".item-description-text").toggleClass("nav-open-class");
             $(".mobile-nav-block__description").toggleClass("nav-open-button");
+            if ($(".item-description-text").hasClass("nav-open-class")){
+                $(".mobile-nav-block__description span").html("-");
+            } else {
+                $(".mobile-nav-block__description span").html("+");
+            };
         });
         $(".mobile-nav-block__iframe").click(function(){
             $(".item-description iframe").toggleClass("nav-open-class");
             $(".mobile-nav-block__iframe").toggleClass("nav-open-button");
+
+            if ($(".item-description iframe").hasClass("nav-open-class")){
+                $(".mobile-nav-block__iframe span").html("-");
+            } else {
+                $(".mobile-nav-block__iframe span").html("+");
+            };
         });
         $(".mobile-nav-block__sizes").click(function(){
             $(".item-sizes").toggleClass("nav-open-class");
             $(".mobile-nav-block__sizes").toggleClass("nav-open-button");
+
+            if ($(".item-sizes").hasClass("nav-open-class")){
+                $(".mobile-nav-block__sizes span").html("-");
+            } else {
+                $(".mobile-nav-block__sizes span").html("+");
+            };
         });
         $(".mobile-nav-block__delivery").click(function(){
             $(".item-delivery").toggleClass("nav-open-class");
             $(".mobile-nav-block__delivery").toggleClass("nav-open-button");
+
+            if ($(".item-delivery").hasClass("nav-open-class")){
+                $(".mobile-nav-block__delivery span").html("-");
+            } else {
+                $(".mobile-nav-block__delivery span").html("+");
+            };
         });
         $(".mobile-nav-block__guarantee").click(function(){
             $(".item-guarantee").toggleClass("nav-open-class");
             $(".mobile-nav-block__guarantee").toggleClass("nav-open-button");
+
+            if ($(".item-guarantee").hasClass("nav-open-class")){
+                $(".mobile-nav-block__guarantee span").html("-");
+            } else {
+                $(".mobile-nav-block__guarantee span").html("+");
+            };
         });
         $(".mobile-nav-block__feedback").click(function(){
             $(".item-feedback").toggleClass("nav-open-class");
             $(".mobile-nav-block__feedback").toggleClass("nav-open-button");
+
+            if ($(".item-feedback").hasClass("nav-open-class")){
+                $(".mobile-nav-block__feedback span").html("-");
+            } else {
+                $(".mobile-nav-block__feedback span").html("+");
+            };
         });
     });

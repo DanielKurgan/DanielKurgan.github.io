@@ -159,8 +159,13 @@
     }
 }
 
-/*Средние девайсы («таблетки», < 992px) */
 @media (max-width: 992px) {
+    .item-info__button-add {
+        right: -25px;
+    }
+    .store-info .item-button-simple {
+        width: 120px;
+    }
     .range-popup {
         right: 220px;
         top: 55px;
@@ -725,7 +730,7 @@
         border-radius: 0 0 10px 10px;
     }
     .site-info .item-nav ul {
-        width: 852px;
+        width: 901px;
     }
     .item-info__block {
         margin-bottom: 30px;
@@ -833,14 +838,12 @@
         transition: 0.4s;
         position: relative;
     }
-    .mobile-nav-block:after {
-        content: '+';
+    .mobile-nav-block span {
         font-size: 35px;
-        width: 10px;
-        height: 10px;
         top: 6px;
         right: 30px;
         position: absolute;
+        color: white;
     }
     .mobile-nav-block:hover {
         opacity: 0.9;
@@ -892,5 +895,88 @@
     .nav-open-button {
         background: #a77a5e;
     }
+}
+@media (max-width: 880px){
+    .news-mailing__text-title {
+        line-height: 25px;
+        font-size: 25px;
+    }
+    .news-mailing__form {
+        flex-direction: column;
+        align-items: center;
+    }
+    .news-mailing__form input {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 680px){
+    .item-kit {
+        justify-content: space-around;
+    }
+}
+@media (max-width: 540px){
+    .item-block-pink {
+        width: 180px !important;
+        min-height: auto;
+        margin-top: 10px;
+    }
+    .item-kit__block-prices__price {
+        color: #ef86a3;
+        font-size: 16px;
+    }
+    .item-kit__block-name {
+        font-size: 12px;
+    }
+    .item-kit__block-content {
+        padding: 0 5px 0 5px;
+        line-height: 10px;
+    }
+    .item-kit__block-image {
+        padding: 5px 5px 0 5px;
+    }
+    .block-select select {
+        width: 75px;
+        font-size: 12px;
+    }
+    .item-kit__block-buttons label {
+        font-size: 12px;
+        line-height: 14px;
+        margin-left: 10px;
+    }
+    .item-offer__block-title {
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .item-offer__block-price {
+        padding: 0 10px;
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+    .item-offer__block-discount {
+        margin-bottom: 5px;
+    }
+    .item-offer__block-button {
+        width: 150px;
+        height: 50px;
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+    .block-select__element-decor::after {
+        height: 5px;
+        right: 8px;
+    }
+    .store-info .item-button-simple {
+        width: 160px;
+        margin-left: -12px;
+     }   
+     .store-info .nav-tabs {
+    margin-bottom: 46px;
+    width: 600px;
+    overflow: scroll;
+}
+.store-info {
+    overflow: hidden;
+}
 }
 /*CART MEDIA END*/
