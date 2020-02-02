@@ -967,16 +967,105 @@
         right: 8px;
     }
     .store-info .item-button-simple {
-        width: 160px;
-        margin-left: -12px;
-     }   
-     .store-info .nav-tabs {
-    margin-bottom: 46px;
-    width: 600px;
-    overflow: scroll;
+        margin-left: 0;
+    }   
+    .store-info .nav-tabs {
+        margin-bottom: 46px;
+        width: 600px;
+        overflow: scroll;
+    }
+    .store-info {
+        overflow: hidden;
+    }
 }
-.store-info {
-    overflow: hidden;
+
+@media (max-width: 768px){
+    .item-feedback form {
+        flex-wrap: wrap;
+        justify-content: normal;
+    }
+    .item-feedback .info-button {
+        margin-top: 10px;
+    }
+    .item-title span {
+        font-size: 18px
+    }
+    .item-description__text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .item-description__char-title {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .item-description__char li {
+        line-height: 20px;
+        font-size: 14px;
+    }
 }
+
+
+@media (max-width: 680px){
+    .item-delivery__info {
+        flex-wrap: wrap;
+    }
+    .item-block-pink {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 600px){
+    .item-description iframe {
+        height: 330px;
+    }
+    .item-feedback__block-text {
+        font-size: 10px;
+        line-height: 12px;
+    }    
+    .item-feedback__block-date {
+        font-size: 10px;
+        line-height: 10px;
+    }
+    .item-feedback__block-header__name {
+        font-size: 14px;
+        line-height: 15px;
+    }
+    .item-rating__heart {
+        width: 15px;
+        height: 11px;
+        margin-right: 3px;
+    }
+    .item-feedback__footer .info-button {
+        width: 140px;
+        height: 40px;
+    }
+    .item-feedback__footer .info-button:before {
+        left: 5px;
+        top: 12px;
+        width: 26px;
+        height: 13px;
+    }
+    .item-feedback__footer .info-button {
+        width: 140px;
+    }
+    .store-info .nav-link {
+        font-size: 16px;
+        margin: 7px 19px -3px 0px;
+        padding: 0 0 5px 0;
+        line-height: 0px;
+    }
+}
+
+@media (max-width: 530px){
+    .item-feedback__select {
+        margin-top: 10px;
+    }
+    .select:after {
+        top: 20px;
+    }
+    .item-feedback .item-title {
+        margin: 20px 0 0px 0;
+        flex-direction: column;
+    }
 }
 /*CART MEDIA END*/

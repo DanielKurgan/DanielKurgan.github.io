@@ -1952,12 +1952,12 @@ label {
 		width: 14px;
 		height: 13px;
 		margin-right: 6px;
-		background: url("../img/rating-heart2.svg") 50% 50%/contain;
+		background: url("../img/rating-heart2.svg") no-repeat 50% 50%/contain;
 		cursor: pointer;
 	}
 	.item-rating__heart:hover,
 	.item-rating__heart:active {
-		background: url("../img/rating-heart1.svg") 50% 50%/contain;
+		background: url("../img/rating-heart1.svg") no-repeat 50% 50%/contain;
 	}
 	.item-rating__heart:last-child {
 		margin-right: 0;
