@@ -20,6 +20,9 @@ p, span, h3 {
 }
 h2, h4 {
 }
+.mobile-1 {
+	display: none;
+}
 .container, .container-lg, .container-md, .container-sm, .container-xl {
 	max-width: 1180px !important;
 	padding: 0;

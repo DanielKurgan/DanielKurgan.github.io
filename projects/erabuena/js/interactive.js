@@ -184,7 +184,21 @@ $(document).on('click', '.basket-open', function() {
           breakpoint: 1200,
           settings: {
             slidesToShow: 4,
-            slidesToScroll: 3,
+            slidesToScroll: 1,
+            } 
+        },
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            } 
+        },
+        {
+          breakpoint: 750,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
             } 
         },
         ]
@@ -246,3 +260,31 @@ $(document).on('mouseover', 'a', function () {
 });
 
 
+
+    // MOBILE NAV OPEN
+    $(document).ready(function(){
+        $(".mobile-nav-block__description").click(function(){
+            $(".item-description-text").toggleClass("nav-open-class");
+            $(".mobile-nav-block__description").toggleClass("nav-open-button");
+        });
+        $(".mobile-nav-block__iframe").click(function(){
+            $(".item-description iframe").toggleClass("nav-open-class");
+            $(".mobile-nav-block__iframe").toggleClass("nav-open-button");
+        });
+        $(".mobile-nav-block__sizes").click(function(){
+            $(".item-sizes").toggleClass("nav-open-class");
+            $(".mobile-nav-block__sizes").toggleClass("nav-open-button");
+        });
+        $(".mobile-nav-block__delivery").click(function(){
+            $(".item-delivery").toggleClass("nav-open-class");
+            $(".mobile-nav-block__delivery").toggleClass("nav-open-button");
+        });
+        $(".mobile-nav-block__guarantee").click(function(){
+            $(".item-guarantee").toggleClass("nav-open-class");
+            $(".mobile-nav-block__guarantee").toggleClass("nav-open-button");
+        });
+        $(".mobile-nav-block__feedback").click(function(){
+            $(".item-feedback").toggleClass("nav-open-class");
+            $(".mobile-nav-block__feedback").toggleClass("nav-open-button");
+        });
+    });
