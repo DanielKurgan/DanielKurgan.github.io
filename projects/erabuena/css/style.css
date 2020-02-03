@@ -1110,6 +1110,12 @@ label {
 	margin-top: 10px;
 	display: flex;
 }
+.item-nav ul {
+	margin-bottom: 0;
+}
+.item-nav {
+	margin-bottom: 10px;
+}
 .item-info__block {
 	padding: 0 20px;
 }
@@ -2099,7 +2105,7 @@ label {
 		margin: 7px 30px -3px 0px;
 		padding: 0 0 10px 0;
 	}
-	.store-info .nav-tabs {
+	.nav-block-scroll {
 		margin-bottom: 46px;
 	}
 	.store-info {
@@ -2471,7 +2477,7 @@ label {
 	}
 	.item-page__sidebar-block-bonus {
 		margin-top: 5px;
-		width: 280px;
+		width: 270px;
 		background: url(../img/sd-bg2.png) no-repeat bottom center/cover;
 		padding: 0 20px;
 		display: flex;
