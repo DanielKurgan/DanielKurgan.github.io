@@ -2338,13 +2338,13 @@ ul.info-text li:before {
 	border: 5px solid transparent;
 	border-bottom: 7px solid #e07894;
 	top: 20%;
-	right: 10px;
+	right: 15px;
 }
 .classic .minus_plugin_number {
 	border: 5px solid transparent;
 	border-top: 7px solid #e07894;
 	top: 60%;
-	right: 10px;
+	right: 15px;
 }
 .classic .plus_plugin_number:hover {
 	border-bottom-color: #b14c67;

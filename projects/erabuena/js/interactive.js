@@ -296,10 +296,18 @@ $(document).ready(function(){
     });
 
     $(document).ready(function () {
-       
+
         var length = $('.item-info__block-images-group a').length;
         if (length>6){
             $(".item-info__block-images-group").addClass("flex-wrap-class");
         }
+
+    });
+
+    $(document).ready(function () {
+
+        $('select').click(function(){
+            $(this).parent().parent().find( $(".placeholder") ).hide();
+        })
 
     });

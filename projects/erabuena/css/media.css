@@ -163,6 +163,10 @@
 }
 
 @media (max-width: 992px) {
+    .scroll-top {
+        bottom: 24px;
+        right: 34px;
+    }
     .item-info__block-images {
         margin-right: 0;
     }
@@ -1294,6 +1298,9 @@
 }
 
 @media (max-width: 450px){
+    .item-page__sibebar-block__buttons-basket {
+        margin-bottom: 10px !important;
+    }
     .item-offer__button {
         width: 30px;
         height: 30px;
