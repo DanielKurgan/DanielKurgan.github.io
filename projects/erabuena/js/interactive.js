@@ -144,29 +144,29 @@ $(document).ready(function(){
  // FIXED HEADER
 
  $(document).on('click', '.menu-toggle', function() {
-     if (($('.menu-mobile').hasClass('opened')) && width < 1170) {
-        $('.navigation').css({position: 'relative'});
-        $('.header').css({zIndex: 'auto'});
-        window.scrollTo({top: 0, behavior: 'smooth'});
-    }
-    else {
-        $('.navigation').css({position: 'fixed'});
-        $('.header').css({zIndex: '9999'});
-    }
+   if (($('.menu-mobile').hasClass('opened')) && width < 1170) {
+    $('.navigation').css({position: 'relative'});
+    $('.header').css({zIndex: 'auto'});
+    window.scrollTo({top: 0, behavior: 'smooth'});
+}
+else {
+    $('.navigation').css({position: 'fixed'});
+    $('.header').css({zIndex: '9999'});
+}
 });
 
  $(document).on('click', '.basket-open', function() {
-     if (width < 1170 && $('.basket-mob').hasClass('opened')) {
-        $('.navigation').css({position: 'relative'});
-        $('.header').css({zIndex: 'auto'});
-        window.scrollTo({top: 0, behavior: 'smooth'});
-    }
-    else {
-        if (width < 1170) {
-            $('.navigation').css({position: 'fixed'});
-            $('.header').css({zIndex: '9999'});
-        }   
-    }
+   if (width < 1170 && $('.basket-mob').hasClass('opened')) {
+    $('.navigation').css({position: 'relative'});
+    $('.header').css({zIndex: 'auto'});
+    window.scrollTo({top: 0, behavior: 'smooth'});
+}
+else {
+    if (width < 1170) {
+        $('.navigation').css({position: 'fixed'});
+        $('.header').css({zIndex: '9999'});
+    }   
+}
 });
 
 
@@ -304,10 +304,17 @@ $(document).ready(function(){
 
     });
 
+    // SELECT FIX
     $(document).ready(function () {
-
         $('select').click(function(){
             $(this).parent().parent().find( $(".placeholder") ).hide();
         })
+    });
 
+    // SECOND SITE COLOR
+    $(document).ready(function () {
+        $(".item-page__sibebar-block__buttons-basket").click(function(){
+
+            $("body .item-page__sidebar-block").css("background", "linear-gradient(to right top, #7fc7ef, #8dcef3, #9bd6f7, #a8ddfb, #b5e5ff);")
+        });
     });
