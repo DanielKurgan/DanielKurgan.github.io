@@ -318,3 +318,4 @@ else {
             $("body .item-page__sidebar-block").css("background", "linear-gradient(to right top, #7fc7ef, #8dcef3, #9bd6f7, #a8ddfb, #b5e5ff);")
         });
     });
+
