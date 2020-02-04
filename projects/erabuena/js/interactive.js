@@ -311,11 +311,13 @@ else {
         })
     });
 
-    // SECOND SITE COLOR
-    $(document).ready(function () {
-        $(".item-page__sibebar-block__buttons-basket").click(function(){
-
-            $("body .item-page__sidebar-block").css("background", "linear-gradient(to right top, #7fc7ef, #8dcef3, #9bd6f7, #a8ddfb, #b5e5ff);")
-        });
+    // INPUT COLORS OPEN
+    $(".select-block__colors__input").click(function(){
+        $(".select-block__colors").toggleClass("flex");
     });
-
+    // COLOR SELECT INPUT
+    $(document).ready(function () {
+        $('.input-color').click(function(){
+            $(".block-input-color .placeholder").css('background', $inputColor);
+        })
+    });

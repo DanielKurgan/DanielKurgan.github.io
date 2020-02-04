@@ -1436,6 +1436,16 @@
 }
 
 @media (max-width: 450px){
+    .select-block__colors__input {
+        width: 65px;
+    }
+    .block-input-color .block-select__element-decor::after {
+        left: 45px;
+    }
+    .select-block__colors {
+        margin-top: 1px;
+        padding: 0px 0px;
+    }
     .item-page__sibebar-block__buttons-basket {
         margin-bottom: 10px !important;
     }
@@ -1562,6 +1572,12 @@
 }
 
 @media (max-width: 385px){
+    .select-block__colors__input {
+        width: 100%;
+    }
+    .block-input-color .block-select__element-decor::after {
+        left: 93px;
+    }
     .item-block-pink {
         width: 120px !important;
     }
