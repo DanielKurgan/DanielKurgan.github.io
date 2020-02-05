@@ -1620,6 +1620,10 @@ button.catalog-filter__button {
 }
 
 @media (max-width: 415px){
+    .item-delivery__info-buttons .info-button {
+        font-size: 12px;
+        width: 100%;
+    }
     .item-feedback__select {
         width: 90px;
         font-size: 8px;
