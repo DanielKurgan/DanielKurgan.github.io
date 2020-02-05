@@ -578,6 +578,9 @@ button.catalog-filter__button {
 }
 
 @media (max-width: 450px){
+    .store-info .item-kit__block-image a {
+        min-height: 200px;
+    }
     .product-popup .select-block__colors__input {
         width: 100%;
     }
