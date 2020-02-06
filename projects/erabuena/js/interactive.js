@@ -327,6 +327,10 @@ else {
         $(".product-popup").fadeOut();
         $("body").css("overflow", "visible");
     });
+    $(".product-popup__interactive-button").click(function(){
+        $(".product-popup").fadeOut();
+        $("body").css("overflow", "visible");
+    });
     $(".product-popup__background").click(function(){
         $(".product-popup").fadeOut();
         $("body").css("overflow", "visible");
