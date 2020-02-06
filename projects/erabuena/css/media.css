@@ -1,5 +1,8 @@
 /*Большие девайсы (большие десктопы, < 1200px)*/
 @media (max-width: 1200px) {
+    .product-popup .item-page__sidebar-block__interactive {
+        flex-direction: row;
+    }
     body .fourth-banner {
         width: 63% !important;
         max-width: 100% !important;
