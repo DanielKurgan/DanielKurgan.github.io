@@ -915,6 +915,13 @@
 }
 
 @media (max-width: 992px){
+    .product-popup .item-page__sidebar-block__item-info__price-block {
+        flex-direction: unset;
+        align-items: unset;
+    }
+    .item-page__sidebar-block__item-info {
+        margin-top: 10px;
+    }
     .item-offer__block.item-block-pink {
         margin-top: 0 !important;
     }
