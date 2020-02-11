@@ -2309,13 +2309,13 @@ ul.info-text li:before {
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 30px;
-	margin-bottom: 16px;
+	margin-bottom: 10px;
 	display: inline-block;
 }
 .item-page__sidebar-block__buy {
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 9px;
+	margin-bottom: 19px;
 }
 .item-page__sidebar-block__buy-counter,
 .input_plugin_number {
@@ -2406,10 +2406,14 @@ ul.info-text li:before {
 .item-page__sidebar-block__interactive {
 	display: flex;
 	justify-content: space-between;
+	border-bottom: 1px solid #ed7b99;
 }
 .item-page__sidebar-block__interactive .sidebar-pink-text {
-	margin-left: 20px;
-	margin-bottom: 20px;
+	margin-left: 17px;
+	margin-bottom: 13px;
+}
+.item-page__sidebar-block__properties {
+	margin-top: 10px;
 }
 .sidebar-pink-text {
 	font-size: 13px;
@@ -2592,10 +2596,10 @@ label {
 	background-color: black;
 }
 .item-brands img:first-child {
-    margin-left: -5px;
+	margin-left: -5px;
 }
 .block-input-color .placeholder {
-    padding: 0;
+	padding: 0;
 	background: black;
 	width: 18px;
 	height: 18px;
@@ -2693,4 +2697,32 @@ label {
 }
 .blue-version .news-mailing__form-button {
 	background-color: #56b2e4;
+}
+
+/*POPUP*/
+.product-popup {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 999999;
+}
+.product-popup__background {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: black;
+	opacity: 0.3;
+	z-index: 999;
+}
+.product-popup__container {
+	position: relative;
+	background: white;
+	z-index: 9999;
+	width: 100%;
+	height: 100%;
 }

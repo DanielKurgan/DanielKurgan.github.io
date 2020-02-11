@@ -424,6 +424,10 @@
 }
 
 @media (max-width: 650px){
+    .item-offer__button {
+        width: 40px;
+        height: 40px;
+    }
     .item-info__button-add {
         width: 40px;
         height: 40px;
