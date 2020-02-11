@@ -911,6 +911,9 @@
 }
 
 @media (max-width: 992px){
+    .item-offer__block.item-block-pink {
+        margin-top: 0 !important;
+    }
     .item-page__sidebar-block__item-info__price-block {
         max-width: 200px;
     }
@@ -1096,6 +1099,9 @@
     }
 }
 @media (max-width: 880px){
+    .item-offer__block.item-block-pink {
+        margin-top: 10px !important;
+    }
     .site-advantages ul li {
         margin: 0 10px;
     }
