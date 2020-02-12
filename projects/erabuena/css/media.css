@@ -163,6 +163,10 @@
 }
 
 @media (max-width: 992px) {
+    .item-page__sidebar-block {
+        background: #ff98b4;
+        background-image: 0;
+    }
     .blue-version .item-page__sidebar-block__interactive {
         border: 0;
     }
