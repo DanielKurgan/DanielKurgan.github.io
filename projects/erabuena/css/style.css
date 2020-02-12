@@ -2743,7 +2743,7 @@ label {
 .blue-version .item-page__sidebar-mobile .item-page__sidebar-block {
     background: linear-gradient(to right top, #7fc7ef, #8dcef3, #9bd6f7, #a8ddfb, #b5e5ff) !important;
 }
-.blue-version .item-block-pink {
+.blue-version .item-kit .item-block-pink {
     border: 1px dashed #1f7aac !important;
 }
 /*POPUP*/
