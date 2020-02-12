@@ -163,6 +163,9 @@
 }
 
 @media (max-width: 992px) {
+    .blue-version .item-page__sidebar-block__interactive {
+        width: max-content;
+    }
     .product-popup__buttons {
         order: 2;
     }
