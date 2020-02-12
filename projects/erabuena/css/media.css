@@ -431,7 +431,7 @@
     .item-offer__block.item-block-pink {
         margin-top: 0;
     }
-    .item-block-pink {
+    .item-kit .item-block-pink {
         margin-bottom: 10px;
         width: 45% !important;
         max-width: 100%;
@@ -1652,8 +1652,11 @@
         font-size: 10px;
         width: 130px;
     }
-    .item-block-pink {
+    .item-kit .item-block-pink {
         width: 45% !important;
+    }
+    .item-block-pink {
+        width: 150px !important;
     }
     .item-kit__block-name {
         font-size: 10px;
@@ -1758,8 +1761,14 @@
     .block-input-color .block-select__element-decor::after {
         left: 93px;
     }
-    .item-block-pink {
+    .item-kit .item-block-pink {
         width: 45% !important;
+    }
+    .item-block-pink {
+        width: 135px !important;
+    }
+    .store-info {
+        margin: 0 -15px;
     }
     .item-kit {
         padding: 0 0px;
