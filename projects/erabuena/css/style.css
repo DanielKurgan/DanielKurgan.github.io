@@ -2734,6 +2734,12 @@ label {
 .blue-version .item-feedback__select {
     background-color: #1f7aac;
 }
+.blue-version .item-info__button-add {
+    background: url(../img/item-add-icon2.png) no-repeat 100% 100%/cover;
+}
+.blue-version .item-offer__button {
+    background: url(../img/sd-summa-icon2.png);
+}
 /*POPUP*/
 /*.product-popup {
 	display: none;
