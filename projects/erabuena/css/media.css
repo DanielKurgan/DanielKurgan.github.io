@@ -1027,7 +1027,6 @@
         width: 100%;
         border-radius: 0;
         min-height: 100%;
-        background: linear-gradient(to right top, #7fc7ef, #8dcef3, #9bd6f7, #a8ddfb, #b5e5ff) !important;
     }
 
     .item-info__block {
