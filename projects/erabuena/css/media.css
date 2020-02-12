@@ -163,6 +163,30 @@
 }
 
 @media (max-width: 992px) {
+    .product-popup__buttons {
+        order: 2;
+    }
+    .product-popup .item-kit__block-buttons {
+        order: 1;
+    }
+    .product-popup .block-select {
+        margin-top: 10px;
+    }
+    .product-popup .item-page__sibebar-block__buttons {
+        margin-top: 9px;
+    }
+    .product-popup .points-block__point {
+        margin: 0 !important;
+    }
+    .product-popup .item-page__sidebar-block__item-info__price-block {
+        margin: -15px 0;
+    }
+    .product-popup .item-info__block {
+        margin: 0;
+    }
+    .product-popup__interactive {
+        margin: 10px 0;
+    }
     .scroll-top {
         bottom: 24px;
         right: 34px;
@@ -620,6 +644,13 @@
     }
 } 
 @media (max-width: 385px){
+    .product-popup .block-select__element {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .product-popup .block-select__element.block-input-color {
+        margin-left: 0;
+    }
     .item-info__block-text__title {
         font-size: 18px !important;
     }
@@ -915,6 +946,20 @@
 }
 
 @media (max-width: 992px){
+    .product-popup .item-info__block-text__description span {
+        margin: 10px 0;
+    }
+    .product-popup .item-page__sidebar-block__item-info__price-block {
+        max-width: 210px;
+        align-items: center !important;
+    }
+    .product-popup .item-page__sibebar-block__buttons-basket {
+        margin: 0;
+    }
+    .product-popup .item-page__sidebar-block__item-info__price-text {
+        align-items: flex-start;
+        flex-direction: column;
+    }
     .product-popup .item-page__sidebar-block__item-info__price-block {
         flex-direction: unset;
         align-items: unset;
@@ -1206,6 +1251,15 @@
 }
 
 @media (max-width: 500px){
+    .product-popup .item-page__sibebar-block__buttons-basket {
+        height: 40px;
+    }
+    .product-popup .item-page__sibebar-block__buttons-basket::before {
+        top: 12px;
+    }
+    .item-info__block-images__main-image {
+        height: 300px;
+    }
     .item-info__block-images-group a {
         height: 90px;
         width: 20%;

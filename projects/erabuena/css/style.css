@@ -2500,6 +2500,10 @@ ul.info-text li:before {
 .item-page__sidebar-block__delivery-data {
 	font-family: "ProximaNova-Semibold";
 	text-decoration: underline dashed;
+	color: #b24c67;
+}
+.product-popup .item-page__sidebar-block__delivery-data {
+	color: #f1805a;
 }
 .item-page__sidebar-block__delivery .sidebar-pink-text {
 	font-weight: 600;
@@ -2738,6 +2742,8 @@ label {
 	overflow-y: scroll;
 }
 .product-popup__container {
+	padding-left: 20px;
+    padding-right: 20px;
 	display: flex;
 	flex-direction: column;
 	position: relative;
@@ -2756,12 +2762,12 @@ label {
 	border-radius: 10px;
 }
 .product-popup .product-popup__background {
+	opacity: 0.7;
 	cursor: pointer;
 	width: 100%;
 	height: 100%;	
 	position: absolute;
 	background: black;
-	opacity: 0.2;
 }
 .product-popup .item-page__sidebar-block__item-info__price-old {
 	color: #7f5c47;
@@ -2769,6 +2775,12 @@ label {
 }
 .product-popup .item-page__sidebar-block__delivery {
 	margin-bottom: 25px;
+}
+.product-popup .sidebar-delivery-store:before {
+    background: url(../img/store-delivery-icon3.svg)
+}
+.product-popup .sidebar-delivery-home:before {
+    background: url(../img/home-delivery-icon3.svg) no-repeat 100% 100%/contain;
 }
 .product-popup .item-info__block-text__main-block {
 	display: flex;
@@ -2799,9 +2811,9 @@ label {
 }
 .product-popup .sidebar-pink-text {
 }
-.product-popup .sidebar-delivery-home,
-.product-popup .sidebar-delivery-store {
-	color: #ac8c78;
+.product-popup .sidebar-delivery-home, .product-popup .sidebar-delivery-store {
+    color: #ac8c78;
+    opacity: 0.7;
 }
 .product-popup .item-page__sidebar-block__item-info__price-text {
 	display: flex;
@@ -2810,6 +2822,7 @@ label {
 }
 .product-popup .item-info__block-text__description span {
 	margin-bottom: 0;
+	opacity: 1;
 }
 .product-popup .item-info__block-text__description {
 	margin-bottom: inherit;
@@ -2915,6 +2928,13 @@ label {
 }
 .product-popup .item-page__sidebar-block__interactive {
 	border: 0;
+}
+.product-popup .select-block__colors__input {
+    width: 100%;
+}
+.product-popup .block-input-color .block-select__element-decor::after {
+    left: unset;
+    right: 15px;
 }
 
 /*BIG TEASER*/
@@ -3070,6 +3090,7 @@ label {
 .big-teaser__info-prices {
     display: flex;
     flex-direction: column;
+    margin-bottom: auto;
 }
 .big-teaser .big-teaser__info-data {
 	display: flex;
