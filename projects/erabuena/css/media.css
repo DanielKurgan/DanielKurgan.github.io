@@ -1174,6 +1174,36 @@
     }
 }
 
+@media (max-width: 800px){
+    .big-teaser {
+        flex-direction: column;
+    }
+    .big-teaser__info {
+        width: 100%;
+    }
+    .big-teaser__info-prices {
+        flex-direction: row;
+    }
+    .big-teaser .item-page__sidebar-block__item-info__price-old {
+        margin-right: 10px;
+    }
+    .big-teaser .item-page__sibebar-block__buttons-basket {
+        padding-left: 30px;
+        margin: 0;
+    }
+    .big-teaser .big-teaser__info-data {
+        flex-direction: row;
+        margin-top: 10px;
+    }
+    .big-teaser .item-page__sibebar-block__buttons-basket {
+        order: 1 !important;
+        margin-right: 10px;
+    }
+    .big-teaser .big-teaser__info-data * {
+        order: 2;
+    }
+}
+
 @media (max-width: 680px){
     .site-advantages ul li {
         font-size: 14px;
@@ -1251,6 +1281,31 @@
 }
 
 @media (max-width: 500px){
+    .big-teaser .block-select__element {
+        width: 100%;
+    }
+    .big-teaser .block-select {
+        flex-direction: column;
+    }
+    .big-teaser .block-select select {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .big-teaser .item-page__sibebar-block__buttons-basket::before {
+        top: 9px;
+    }
+    .big-teaser .block-input-color .block-select__element-decor::after {
+        left: auto !important;
+        right: 8px !important;
+    }
+    .big-teaser__content-rating {
+        margin-left: 0;
+    }
+    .big-teaser .select-block__colors__input {
+        width: 100%;
+    }
+
+
     .product-popup .item-page__sibebar-block__buttons-basket {
         height: 40px;
     }
@@ -1475,7 +1530,20 @@
 }
 
 @media (max-width: 600px){
-
+    .big-teaser .item-info__block-text__title {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .big-teaser__content-main {
+        flex-direction: column;
+        align-items: center;
+    }
+    .item-info__block-text__description {
+        margin-bottom: 10px;
+    }
+    .big-teaser .big-teaser__content-main__text {
+        margin-left: 0;
+    }
     .news-mailing {
         flex-direction: column;
     }
@@ -1719,5 +1787,11 @@
         margin-left: 3px;
     }
 
+}
+
+@media (max-width: 1024px){
+    .big-teaser__buttons form label {
+        font-size: 12px;
+    }
 }
 /*CART MEDIA END*/
