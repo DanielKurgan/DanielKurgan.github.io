@@ -164,7 +164,7 @@
 
 @media (max-width: 992px) {
     .blue-version .item-page__sidebar-block__interactive {
-        width: max-content;
+        border: 0;
     }
     .product-popup__buttons {
         order: 2;
