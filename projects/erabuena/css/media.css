@@ -1672,6 +1672,9 @@
 }
 
 @media (max-width: 450px){
+    .item-info__block-images {
+        height: 500px !important;
+    }
     .item-info__block-images-group .flex-wrap-class {
         flex-wrap: nowrap;
     }
