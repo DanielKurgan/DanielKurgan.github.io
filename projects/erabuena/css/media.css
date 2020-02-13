@@ -1345,6 +1345,9 @@
 
 @media (max-width: 500px){
 
+    .item-info__block-images {
+        margin-bottom: 100%;
+    }
     .big-teaser .block-select__element {
         width: 100%;
     }
@@ -1672,9 +1675,6 @@
 }
 
 @media (max-width: 450px){
-    .item-info__block-images {
-        margin-bottom: 100%;
-    }
     .item-info__block-images-group .flex-wrap-class {
         flex-wrap: nowrap;
     }
