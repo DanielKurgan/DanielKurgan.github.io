@@ -1672,6 +1672,13 @@
 }
 
 @media (max-width: 450px){
+    .item-info__block-images {
+        height: 500px;
+    }
+    .product-popup__close {
+        width: 20px;
+        height: 20px;
+    }
     .product-popup__close {
         top: 5px;
         right: 5px;
