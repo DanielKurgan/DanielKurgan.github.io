@@ -1675,6 +1675,9 @@
     .item-info__block-images {
         height: 500px;
     }
+    .item-info__block-images__main-image__block {
+        height: 300px;
+    }
     .product-popup__close {
         width: 20px;
         height: 20px;
