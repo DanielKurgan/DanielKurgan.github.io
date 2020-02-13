@@ -2516,6 +2516,7 @@ ul.info-text li:before {
 	padding-left: 20px;
 }
 .scroll-top {
+	z-index: 9;
 	position: fixed;
 	bottom: 14px;
 	right: 14px;
