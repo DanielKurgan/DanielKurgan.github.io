@@ -987,11 +987,11 @@
         right: 15px;
     }
     .product-popup__container {
-        overflow-y: visible;
+        /*overflow-y: visible;*/
     }
     .product-popup .item-info__block {
-        overflow-y: scroll;
-        overflow-x: hidden;
+        /*overflow-y: scroll;*/
+        /*overflow-x: hidden;*/
     }
     .product-popup__container {
         padding: 30px 20px;
