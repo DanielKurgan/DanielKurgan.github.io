@@ -2760,6 +2760,11 @@ label {
 	.product-popup .item-info__block-images-group a {
 	    display: inline-block;
 	}
+	.item-info__block-images__main-image__block {
+	    width: 100%;
+	    height: 100%;
+	    text-align: center;
+	}
 	.product-popup {
 		display: none;
 		z-index: 999;

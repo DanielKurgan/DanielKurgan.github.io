@@ -1672,6 +1672,10 @@
 }
 
 @media (max-width: 450px){
+    .product-popup__close {
+        top: 5px;
+        right: 5px;
+    }
     .product-popup .item-page__sibebar-block__buttons-basket {
         margin-right: 0 !important;
     }
