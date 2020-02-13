@@ -1106,7 +1106,6 @@ label {
 .item-info__block-images a {
 	display: inline-block;
 	width: 100%;
-	height: 100%;
 }
 .flex-wrap-class {
 	flex-wrap: wrap;
