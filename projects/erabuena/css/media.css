@@ -1191,7 +1191,8 @@
         margin-top: 20px;
     }
     .item-info__block-images {
-        min-height: 500px;
+        /*min-height: 500px;*/
+        position: static;
         min-width: 100%;
         align-items: center;
     }
