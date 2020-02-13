@@ -1673,7 +1673,7 @@
 
 @media (max-width: 450px){
     .item-info__block-images {
-        height: 500px !important;
+        margin-bottom: 100%;
     }
     .item-info__block-images-group .flex-wrap-class {
         flex-wrap: nowrap;
