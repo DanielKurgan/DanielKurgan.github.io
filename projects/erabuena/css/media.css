@@ -1204,6 +1204,9 @@
         min-width: 100%;
         align-items: center;
     }
+    .product-popup .item-info__block-images__main-image {
+        height: 300px;
+    }
     .item-info__block-images__main-image {
         height: 350px;
     }
