@@ -1346,6 +1346,9 @@
 
 @media (max-width: 500px){
 
+    .item-info__block-images {
+        margin-bottom: 0;
+    }
     .big-teaser .block-select__element {
         width: 100%;
     }
