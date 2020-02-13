@@ -237,8 +237,8 @@
         width: 100%;
     }
     .item-info__block-images-group a {
-        height: 70px;
-        width: 50px;
+        height: 90px;
+        width: 100px;
     }
     .item-info__button-add {
         right: -25px;
@@ -480,8 +480,8 @@
 /*Экстрамалые девайсы («телефоны», < 576px)
 */@media (max-width: 576px) {
     .item-info__block-images-group a {
-        height: 50px;
-        width: 30px;
+        height: 80px;
+        width: 60px;
         margin: 5px;
     }
     .item-info__block-images-group {
@@ -544,6 +544,9 @@
 }
 
 @media (max-width: 520px){
+    .item-info__block-text__title {
+        margin-top: 10px;
+    }
     .item-kit__title {
         margin-top: 20px !important;
         margin-bottom: 0 !important;
@@ -586,8 +589,12 @@
 }
 
 @media (max-width: 450px){
+    .item-info__block-images-group a {
+        height: 80px;
+        width: 60px;
+    }
     .item-info__button-add {
-        top: 50%;
+        top: 110px;
     }
     .item-page__sidebar-block__buy {
         flex-direction: column;
@@ -973,9 +980,10 @@
     .product-popup .item-page__sidebar-block__item-info__price-block {
         flex-direction: unset;
         align-items: unset;
+        padding: 10px 0;
     }
     .item-page__sidebar-block__item-info {
-        margin-top: 10px;
+        margin-top: 5px;
     }
     .item-offer__block.item-block-pink {
         margin-top: 0 !important;
@@ -984,7 +992,19 @@
         max-width: 200px;
     }
     .item-page__sidebar-block__points-block {
-        margin-bottom: 0;
+        margin-bottom: 5px;
+    }
+    .item-page__sidebar-block__properties {
+        margin-top: 5px;
+    }
+    .item-page__sidebar-block__buy {
+        margin-bottom: 10px;
+    }
+    .item-page__sidebar-block__properties .catalog-filter__colors .catalog-filter__title-name {
+        margin: 10px 0 5px 0;
+    }
+    body .item-page__sidebar-block {
+        padding: 10px 10px !important;
     }
     .item-page__sidebar-block__item-info__price-block {
         margin-top: 0;
@@ -1028,7 +1048,7 @@
         margin-left: 0;
     }
     .item-page__sidebar-block-bonus {
-        margin-top: 5px;
+        margin-top: 0px;
         width: 100%;
         padding: 0 10px;
     }
@@ -1711,6 +1731,9 @@
 }
 
 @media (max-width: 415px){
+    .item-page__sidebar-block__buy {
+        margin-bottom: 0;
+    }
     .item-info__block-images-group a {
         height: 90px;
         width: 17%;
@@ -1798,18 +1821,20 @@
     }
     .item-kit__block-prices {
         margin: 5px 0;
-        flex-direction: column;
     }
     .block-select {
         flex-direction: column;
     }
     .block-select select {
         width: 100%;
+        margin-bottom: 5px;
     }
     .item-kit__block-buttons label {
         font-size: 10px;
         line-height: 10px;
         margin-left: 3px;
+        margin-top: 0;
+        margin-bottom: 5px;
     }
 
 }
