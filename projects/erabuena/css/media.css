@@ -936,6 +936,7 @@
     .item-info__block-images__main-image {
         height: 400px;
         max-width: 270px;
+        width: 270px;
     }
     .item-kit__block-image a {
         min-height: 220px;
