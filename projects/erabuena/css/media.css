@@ -963,7 +963,7 @@
 }
 
 @media (max-width: 992px){
-    .product-popup .item-info__block-images a {
+    .product-popup .item-info__block-images__main-image {
         height: 100%;
     }
     .product-popup__close {
