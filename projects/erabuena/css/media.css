@@ -992,6 +992,7 @@
     .product-popup .item-info__block {
         /*overflow-y: scroll;*/
         /*overflow-x: hidden;*/
+        height: auto;
     }
     .product-popup__container {
         padding: 30px 20px;
@@ -1345,9 +1346,6 @@
 
 @media (max-width: 500px){
 
-    .item-info__block-images {
-        margin-bottom: 100%;
-    }
     .big-teaser .block-select__element {
         width: 100%;
     }
