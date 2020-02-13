@@ -1672,11 +1672,8 @@
 }
 
 @media (max-width: 450px){
-    .item-info__block-images {
-        height: 500px;
-    }
-    .item-info__block-images__main-image__block {
-        height: 300px;
+    .item-info__block-images-group .flex-wrap-class {
+        flex-wrap: nowrap;
     }
     .product-popup__close {
         width: 20px;
