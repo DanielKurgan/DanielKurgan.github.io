@@ -1167,6 +1167,7 @@
     }
     .item-info__block-images {
         min-width: 100%;
+        height: 100%;
         align-items: center;
     }
     .item-info__block-images__main-image {
