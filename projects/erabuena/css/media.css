@@ -1203,9 +1203,6 @@
         min-width: 100%;
         align-items: center;
     }
-    .product-popup .item-info__block-images__main-image {
-        height: 300px !important;
-    }
     .item-info__block-images__main-image {
         height: 350px;
     }
@@ -1371,16 +1368,11 @@
     .big-teaser .select-block__colors__input {
         width: 100%;
     }
-
-
     .product-popup .item-page__sibebar-block__buttons-basket {
         height: 40px;
     }
     .product-popup .item-page__sibebar-block__buttons-basket::before {
         top: 12px;
-    }
-    .item-info__block-images__main-image {
-        height: 300px;
     }
     .item-info__block-images-group a {
         height: 90px;
