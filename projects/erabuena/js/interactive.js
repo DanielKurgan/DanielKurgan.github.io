@@ -346,7 +346,7 @@ $(document).ready(function(){
         e.preventDefault();
     });
 
-    $('[data-fancybox="gallery"]').fancybox({
+    $('[data-fancybox]').fancybox({
         thumbs : {
             fitToView: true, 
             autoResize: true, 
