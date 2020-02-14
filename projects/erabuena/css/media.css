@@ -1449,8 +1449,9 @@
 }
 
 @media (max-width: 768px){
-.item-info__block-images {
-     flex-direction: row;
+    .product-popup .item-info__block-images {
+         flex-direction: row;
+         overflow: hidden;
     }
     body .product-popup .item-info__block {
         overflow-x: hidden !important;
