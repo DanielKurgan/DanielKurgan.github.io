@@ -1451,7 +1451,7 @@
 @media (max-width: 768px){
 
 .product-popup .item-info__block-images-group {
-    height: 120px;
+    height: 120px !important;
 }
     .product-popup .item-info__block-images {
         overflow: hidden !important;
@@ -1460,7 +1460,8 @@
         height: 100%;
 }
 .item-info__block-images__main-image {
-    height: 250px;
+    height: 350px;
+    min-height: 350px;
 }
     body .product-popup .item-info__block {
         overflow-x: hidden !important;
