@@ -1105,7 +1105,7 @@ label {
 	/*overflow: hidden;*/
 }
 .item-info__block-images a {
-	display: inline-block;
+	display: block;
 	width: 100%;
 }
 .flex-wrap-class {
