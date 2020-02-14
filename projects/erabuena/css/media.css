@@ -997,9 +997,6 @@
         /*overflow-y: scroll;*/
         /*overflow-x: hidden;*/
     }
-    .product-popup__container {
-        padding: 30px 20px;
-    }
     .product-popup .item-info__block-text__description span {
         margin: 10px 0;
     }
