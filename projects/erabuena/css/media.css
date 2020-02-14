@@ -1450,7 +1450,7 @@
 
 @media (max-width: 768px){
     .product-popup .item-info__block-images {
-         flex-direction: row;
+         flex-direction: row !important;
          overflow: hidden;
     }
     body .product-popup .item-info__block {
