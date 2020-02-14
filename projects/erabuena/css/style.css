@@ -1101,7 +1101,7 @@ label {
 	width: 100%;
 	border-radius: 5px;
 	background-color: #e6e6e6;
-	background: url("../img/item1.png") no-repeat 50% 50%/contain;
+	background: url("../img/item1.jpg") no-repeat 50% 50%/contain;
 	/*overflow: hidden;*/
 }
 .item-info__block-images a {
