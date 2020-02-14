@@ -1457,9 +1457,12 @@
        overflow: hidden !important;
        min-height: 100% !important;
        margin-bottom: 10px;
-       
+
     height: 600px;
    }
+   .item-info__block-images__main-image {
+        height: 300px;
+    }
    body .product-popup .item-info__block {
     overflow-x: hidden !important;
     overflow-y: scroll !important;
