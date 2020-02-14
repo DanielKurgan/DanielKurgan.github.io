@@ -3175,3 +3175,7 @@ label {
 .product-popup .item-info__popup-images__main-image {
     width: 470px;
 }
+
+.item-info__block-images__main-image__block {
+    height: 350px;
+}
