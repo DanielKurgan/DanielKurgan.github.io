@@ -438,6 +438,10 @@
 }
 
 @media (max-width: 700px){
+    .item-kit__block-buttons label {
+        display: flex;
+        justify-content: space-between;
+    }
     .product-popup__close {
         top: 5px;
         right: 5px;
