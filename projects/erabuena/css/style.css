@@ -2787,7 +2787,7 @@ label {
 	flex-direction: column;
 	position: relative;
 	width: 100%;
-	/*height: 100%;*/
+	height: auto;
 	align-items: center;
 	padding-top: 37px;
 }
@@ -2804,7 +2804,7 @@ label {
 	cursor: pointer;
 	width: 100%;
 	height: 100%;	
-	position: absolute;
+	position: fixed;
 	background: black;
 }
 .product-popup .item-page__sidebar-block__item-info__price-old {
@@ -3170,4 +3170,8 @@ label {
 .big-teaser .big-teaser__info-data {
 	display: flex;
 	flex-direction: column;
+}
+
+.product-popup .item-info__popup-images__main-image {
+    width: 470px;
 }
