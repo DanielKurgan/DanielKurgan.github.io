@@ -335,7 +335,7 @@ $(document).ready(function(){
         $(".product-popup").fadeOut();
         $("body").css("overflow", "visible");
     });
-    $(".item-page__sibebar-block__buttons-buy").click(function(){
+    $(".item-kit__block-image").click(function(){
         $(".product-popup").fadeIn();
         $(".product-popup").css("display", "flex");
         $("body").css("overflow", "hidden");
