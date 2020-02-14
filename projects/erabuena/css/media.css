@@ -1451,7 +1451,6 @@
 @media (max-width: 768px){
     .product-popup .item-info__block-images {
          flex-direction: column !important;
-         overflow: hidden !important;
     }
     body .product-popup .item-info__block {
         overflow-x: hidden !important;
