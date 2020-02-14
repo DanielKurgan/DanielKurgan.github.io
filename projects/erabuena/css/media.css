@@ -1450,6 +1450,9 @@
 
 @media (max-width: 768px){
 
+    .item-info__block-images {
+        min-height: unset;
+    }
 .product-popup .item-info__block-images-group {
     height: 120px !important;
 }
