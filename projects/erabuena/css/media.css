@@ -992,7 +992,6 @@
     .product-popup .item-info__block {
         /*overflow-y: scroll;*/
         /*overflow-x: hidden;*/
-        height: auto;
     }
     .product-popup__container {
         padding: 30px 20px;
