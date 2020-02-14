@@ -1450,9 +1450,9 @@
 
 @media (max-width: 768px){
 
-    .product-popup .item-info__block-images-group {
-        height: 100px;
-    }
+.product-popup .item-info__block-images-group {
+    height: 120px;
+}
     .product-popup .item-info__block-images {
         overflow: hidden !important;
         min-height: 100% !important;
