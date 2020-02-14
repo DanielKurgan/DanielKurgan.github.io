@@ -1200,7 +1200,6 @@
         margin-top: 20px;
     }
     .item-info__block-images {
-        position: static;
         min-width: 100%;
         align-items: center;
     }
@@ -1450,7 +1449,9 @@
 }
 
 @media (max-width: 768px){
-
+.item-info__block-images {
+     flex-direction: row;
+    }
     body .product-popup .item-info__block {
         overflow-x: hidden !important;
         overflow-y: scroll !important;
@@ -1898,4 +1899,4 @@
         font-size: 12px;
     }
 }
-/*CART MEDIA END*/
+/*CART MEDIA END
