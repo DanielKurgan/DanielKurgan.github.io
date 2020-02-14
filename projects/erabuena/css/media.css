@@ -1450,8 +1450,8 @@
 }
 
 @media (max-width: 768px){
-    
-    .product-popup .item-info__block {
+
+    body .product-popup .item-info__block {
         overflow-x: hidden !important;
         overflow-y: scroll !important;
     }
