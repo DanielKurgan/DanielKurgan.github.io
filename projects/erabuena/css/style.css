@@ -1600,6 +1600,10 @@ label {
 .item-nav {
 	margin-top: 37px;
 }
+.site-info .item-nav {
+	border-bottom: 1px solid lightgray;
+    border-radius: 0px;
+}
 
 .item-nav a {
 	display: inline-block;
@@ -1608,7 +1612,6 @@ label {
 	display: flex;
 	list-style: none;
 	justify-content: space-between;
-	border-bottom: 1px solid lightgray;
 }
 .item-nav ul li {
 	padding-bottom: 10px;
@@ -2112,6 +2115,9 @@ ul.info-text li:before {
 	margin-top: 50px;
 	border-bottom: 1px solid #dee2e6;
 }
+.store-info .nav-tabs .nav-link {
+     border: 0 !important;
+}
 .store-info .item-kit__block-image a {
 	min-height: 280px;
 }
@@ -2158,7 +2164,7 @@ ul.info-text li:before {
 	opacity: 1 !important;
 	color: white !important;
 }
-/* Based on https://github.com/kenwheeler/slick/issues/187#issuecomment-59123524 */
+/* Based on https://github.com/kenwheeler/slick/issues/187#issuecomment-59123524 
 /* bootstrap hack: fix content width inside hidden tabs */
 .tab-content > .tab-pane,
 .pill-content > .pill-pane {

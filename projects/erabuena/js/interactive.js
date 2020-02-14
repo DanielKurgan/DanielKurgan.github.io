@@ -144,29 +144,29 @@ $(document).ready(function(){
  // FIXED HEADER
 
  $(document).on('click', '.menu-toggle', function() {
-   if (($('.menu-mobile').hasClass('opened')) && width < 1170) {
-    $('.navigation').css({position: 'relative'});
-    $('.header').css({zIndex: 'auto'});
-    window.scrollTo({top: 0, behavior: 'smooth'});
-}
-else {
-    $('.navigation').css({position: 'fixed'});
-    $('.header').css({zIndex: '9999'});
-}
+     if (($('.menu-mobile').hasClass('opened')) && width < 1170) {
+        $('.navigation').css({position: 'relative'});
+        $('.header').css({zIndex: 'auto'});
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    }
+    else {
+        $('.navigation').css({position: 'fixed'});
+        $('.header').css({zIndex: '9999'});
+    }
 });
 
  $(document).on('click', '.basket-open', function() {
-   if (width < 1170 && $('.basket-mob').hasClass('opened')) {
-    $('.navigation').css({position: 'relative'});
-    $('.header').css({zIndex: 'auto'});
-    window.scrollTo({top: 0, behavior: 'smooth'});
-}
-else {
-    if (width < 1170) {
-        $('.navigation').css({position: 'fixed'});
-        $('.header').css({zIndex: '9999'});
-    }   
-}
+     if (width < 1170 && $('.basket-mob').hasClass('opened')) {
+        $('.navigation').css({position: 'relative'});
+        $('.header').css({zIndex: 'auto'});
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    }
+    else {
+        if (width < 1170) {
+            $('.navigation').css({position: 'fixed'});
+            $('.header').css({zIndex: '9999'});
+        }   
+    }
 });
 
 
@@ -342,6 +342,15 @@ else {
     });
 
     $('a').on('click', function(e){
-    $('html,body').stop().animate({ scrollTop: $(this.hash).offset().top }, 1000);
-    e.preventDefault();
+        $('html,body').stop().animate({ scrollTop: $(this.hash).offset().top }, 1000);
+        e.preventDefault();
+    });
+
+    $('[data-fancybox="gallery"]').fancybox({
+        thumbs : {
+            fitToView: true, 
+            autoResize: true, 
+            autoCenter: true, 
+            autoSize:true
+        }
     });

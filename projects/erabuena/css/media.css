@@ -1126,8 +1126,8 @@
         margin-right: -10px;
     }
     .site-info .item-nav {
-        margin-left: -2px;
-        margin-right: -2px;
+        margin-left: 0;
+        margin-right: 0;
     }
     .item-nav ul a {
         color: #7f5c47;
