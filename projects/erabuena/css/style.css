@@ -3179,3 +3179,9 @@ label {
 .item-info__block-images__main-image__block {
     height: 350px;
 }
+.item-info__block-images {
+    height: 100%;
+}
+.item-info__block-images-group {
+    height: 100%;
+}
