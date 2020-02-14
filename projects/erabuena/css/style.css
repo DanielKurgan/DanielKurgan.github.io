@@ -2799,7 +2799,6 @@ label {
 	padding: 20px;
 	z-index: 999999;
 	border-radius: 10px;
-	height: 100%;
 }
 .product-popup .product-popup__background {
 	opacity: 0.7;
