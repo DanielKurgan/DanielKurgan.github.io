@@ -3177,11 +3177,5 @@ label {
 }
 
 .item-info__block-images__main-image__block {
-    height: 350px !important;
-}
-.item-info__block-images {
-    height: 100% !important;
-}
-.item-info__block-images-group {
-    height: 100% !important;
+    height: 350px;
 }

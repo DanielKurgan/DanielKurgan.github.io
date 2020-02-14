@@ -163,6 +163,9 @@
 }
 
 @media (max-width: 992px) {
+    .product-popup .item-info__block {
+        overflow: hidden;
+    }
     .item-page__sidebar-block__interactive {
         border: 0 !important;
     }
