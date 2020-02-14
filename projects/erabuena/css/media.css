@@ -984,7 +984,7 @@
         margin-top: 20px;
     }
     .item-info__block-images-group {
-        height: auto;
+        /*height: auto;*/
     }
     .product-popup__close {
         top: 15px;
