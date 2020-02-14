@@ -107,6 +107,7 @@ button {
 	display: flex;
 	margin-top: 30px;
 	margin-bottom: 40px;
+	width: 100%;
 }
 .site-tree__back {
 	width: 82px;
