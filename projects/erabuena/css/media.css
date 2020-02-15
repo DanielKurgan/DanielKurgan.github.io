@@ -1347,7 +1347,12 @@
 }
 
 @media (max-width: 500px){
-
+.item-page__sibebar-block__buttons {
+    justify-content: space-between;
+}
+.item-page__sidebar-block__interactive {
+    justify-content: space-between;
+}
     .item-info__block-images {
         margin-bottom: 0;
     }

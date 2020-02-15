@@ -2641,6 +2641,15 @@ label {
 	background-color: blue;
 }
 
+.blue-version .product-popup .item-page__sidebar-block__item-info__price {
+    color: #56b2e4;
+}
+.blue-version .product-popup .points-block__point {
+    color: #56b2e4;
+}
+.blue-version .product-popup .item-page__sibebar-block__buttons-basket {
+    background-color: #56b2e4;
+}
 .blue-version .item-page__sidebar-block__delivery span {
 	color: white;
 }
@@ -2666,7 +2675,6 @@ label {
 	background-color: #1f7aac;
 }
 .blue-version .item-page__sidebar-block__properties-block * {
-	color: #1f7aac;
 }
 .blue-version .item-page__sidebar-block .catalog-filter__colors__color {
 	border: 2px solid #1f7aac;
@@ -2693,34 +2701,34 @@ label {
 	background: url(../img/store-delivery-icon2.svg) no-repeat 100% 100%/contain;
 }
 .blue-version .item-kit__block-prices__price {
-	color: #1f7aac;
+color: #56b2e4;
 }
 .blue-version .item-kit__block-buttons label {
 	color: #1f7aac;
 }
 .blue-version .item-offer__block-button {
-	background-color: #1f7aac;
+	background-color: #82c9ea;
 }
 .blue-version .item-offer__block-discount {
-	background-color: #1f7aac;
+	background-color: #82c9ea;
 }
 .blue-version .item-offer__block-price {
-	color: #1f7aac;
+	color: #56b2e4;
 }
 .blue-version .item-offer__block-text {
 	color: #1f7aac;
 }
 .blue-version .cart-button-add::before {
-	background-color: #1f7aac;
+    background-color: #82c9ea;
 }
 .blue-version .color-pink {
 	color: #1f7aac;
 }
 .blue-version .news-mailing__text-title {
-	color: #1f7aac;
+	color: #56b2e4;
 }
 .blue-version .news-mailing__form-button {
-	background-color: #1f7aac;
+	background-color: #56b2e4;
 }
 .blue-version .sidebar-delivery-home:before {
 	background: url(../img/home-delivery-icon2.svg) no-repeat 100% 100%/contain;
@@ -2745,13 +2753,13 @@ label {
 	border-bottom: 1px solid #1f7aac;
 }
 .blue-version .info-button {
-	background-color: #1f7aac;
+	background-color: #56b2e4;
 }
 .blue-version .info-button:hover {
 	background-color: #1f8aac;
 }
 .blue-version .item-feedback__select {
-	background-color: #1f7aac;
+	background-color: #56b2e4;
 }
 .blue-version .item-info__button-add {
 	background: url(../img/item-add-icon2.png) no-repeat 100% 100%/cover;
@@ -2763,7 +2771,7 @@ label {
 	background: linear-gradient(to right top, #7fc7ef, #8dcef3, #9bd6f7, #a8ddfb, #b5e5ff) !important;
 }
 .blue-version .item-kit .item-block-pink {
-	border: 1px dashed #1f7aac !important;
+	border: 1px dashed #82c9ea !important;
 }
 
 /*POPUP*/
