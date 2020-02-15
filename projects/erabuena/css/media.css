@@ -1461,9 +1461,7 @@
 }
     .product-popup .item-info__block-images {
         overflow: hidden !important;
-        min-height: 100% !important;
         margin-bottom: 10px;
-        height: 100%;
 }
 .item-info__block-images__main-image {
     height: 300px;
