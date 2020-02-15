@@ -163,6 +163,9 @@
 }
 
 @media (max-width: 992px) {
+    .item-info__block {
+        display: inline-block;
+    }
     .item-page__sidebar-block__interactive {
         border: 0 !important;
     }
@@ -1461,6 +1464,7 @@
 }
     .product-popup .item-info__block-images {
         overflow: hidden !important;
+        min-height: 100% !important;
         margin-bottom: 10px;
 }
 .item-info__block-images__main-image {
