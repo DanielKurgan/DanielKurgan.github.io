@@ -1454,13 +1454,12 @@
 @media (max-width: 768px){
 
     .product-popup .item-info__block-images {
-        min-height: unset;
+        /*min-height: unset;*/
     }
     .product-popup .item-info__block-images a {
         width: 200px !important;
     }
 .product-popup .item-info__block-images-group {
-    height: 120px !important;
 }
     .product-popup .item-info__block-images {
         overflow: hidden !important;
