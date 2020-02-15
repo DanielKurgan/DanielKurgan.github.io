@@ -1313,6 +1313,7 @@ label {
 	min-height: 250px;
 }
 .item-kit__block-image a {
+	cursor: pointer;
 	width: 100%;
 	min-height: 250px;
 	display: inline-block;
@@ -1325,13 +1326,13 @@ label {
 	background: url("../img/item5.jpg") no-repeat 50% 50%/contain;
 }
 .kit-image3 {
-	background: url("../img/item1.png") no-repeat 50% 50%/contain;
+	background: url("../img/item11.jpg") no-repeat 50% 50%/contain;
 }
 .kit-image4 {
 	background: url("../img/item6.jpg") no-repeat 50% 50%/contain;
 }
 .kit-image5 {
-	background: url("../img/item1.png") no-repeat 50% 50%/contain;
+	background: url("../img/item11.jpg") no-repeat 50% 50%/contain;
 }
 
 .item-page__sidebar {
@@ -2257,9 +2258,10 @@ ul.info-text li:before {
 	font-weight: 400;
 	border-radius: 10px;
 	border: 1px dashed #ffffff;
-	padding: 5px 20px;
+	padding: 5px 10px;
 	display: inline-block;
 	margin-bottom: 10px;
+	cursor: pointer;
 }
 .item-page__sidebar-block__points-block {
 	margin-bottom: 14px;
