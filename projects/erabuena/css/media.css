@@ -1074,6 +1074,7 @@
         flex-direction: row;
         align-items: normal;
         justify-content: normal;
+        margin-top: 0;
     }
     .item-page__sidebar-block__interactive .sidebar-pink-text {
         margin-left: 20px;
