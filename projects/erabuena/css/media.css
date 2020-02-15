@@ -1459,6 +1459,9 @@
     .product-popup .item-info__block-images a {
         width: 200px !important;
     }
+    .product-popup .item-info__block-images-group a {
+        width: 20% !important;
+    }
 .product-popup .item-info__block-images-group {
 }
     .product-popup .item-info__block-images {
