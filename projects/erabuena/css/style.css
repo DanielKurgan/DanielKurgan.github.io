@@ -1536,6 +1536,7 @@ label {
 	margin-bottom: 15px;
 }
 .item-offer__block-discount {
+	background-image: linear-gradient(-45deg, rgba(255, 218, 228, 0.49) 0%, rgba(252, 152, 178, 0.49) 100%);
 	color: #ffffff;
 	font-family: "ProximaNovaT-Thin";
 	font-size: 39px;
@@ -2422,6 +2423,7 @@ ul.info-text li:before {
 	background: url("../img/sd-point-icon.svg") no-repeat 100% 100%/contain;
 }
 .item-page__sidebar-block__interactive {
+	margin-top: 20px;
 	display: flex;
 	justify-content: space-between;
 	border-bottom: 1px solid #ed7b99;
