@@ -3122,6 +3122,7 @@ padding: 25px 20px;
 	font-size: 22px;
 }
 .big-teaser .points-block__point {
+	height: max-content;
 	margin-top: 5px;
 	color: #c4a089;
 	border: 1px dashed #c4a089;
@@ -3194,6 +3195,10 @@ padding: 25px 20px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+}
+.big-teaser__info-prices__block {
+    display: flex;
+    flex-direction: column;
 }
 .big-teaser .big-teaser__info-data {
     display: flex;
