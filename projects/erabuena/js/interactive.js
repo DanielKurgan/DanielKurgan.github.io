@@ -364,9 +364,3 @@ $(document).ready(function(){
     jQuery(document).ready(function($) {
       $('.catalog-items__item-content').matchHeight();
   });
-
-    jQuery(document).ready(function(){
-        jQuery('.nav-link').click(function(event) {
-          event.preventDefault();
-      });
-    });
