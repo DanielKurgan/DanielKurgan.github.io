@@ -1097,7 +1097,7 @@ label {
 }
 
 .item-info__block-images__main-image {
-	height: 550px;
+	/*height: 550px;*/
 	max-width: 470px;
 	width: 100%;
 	border-radius: 5px;
@@ -1160,6 +1160,7 @@ label {
 	flex-direction: column;
 }
 .item-info__block-text__title {
+	margin-bottom: 7px;
 	margin-top: 20px;
 	font-size: 24px;
 	font-weight: 700;
@@ -1471,7 +1472,7 @@ label {
 	line-height: 20px;
 	width: 100%;
 	height: 100%;
-	padding: 7px 10px;
+    padding: 7px 13px;
 }
 .block-select__element-decor::after {
 	content: ' ';
@@ -2423,14 +2424,12 @@ ul.info-text li:before {
 	background: url("../img/sd-point-icon.svg") no-repeat 100% 100%/contain;
 }
 .item-page__sidebar-block__interactive {
-	margin-top: 20px;
 	display: flex;
 	justify-content: space-between;
 	border-bottom: 1px solid #ed7b99;
 }
 .item-page__sidebar-block__interactive .sidebar-pink-text {
 	margin-left: 17px;
-	margin-bottom: 13px;
 }
 .item-page__sidebar-block__properties {
 	margin-top: 10px;
@@ -2836,6 +2835,7 @@ color: #56b2e4;
 }
 .product-popup .item-info__block-text__main-block {
 	display: flex;
+	flex-wrap: wrap;
 }
 .product-popup .item-page__sidebar-block__item-info__price {
 	color: #ef86a3;
@@ -2885,6 +2885,7 @@ color: #56b2e4;
 	margin-top: 30px;
 }
 .product-popup .item-page__sibebar-block__buttons-basket {
+	padding-left: 30px;
 	width: 100%;
 	background-color: #e07894;
 	color: white;
@@ -2910,8 +2911,8 @@ color: #56b2e4;
 }
 .product-popup .item-page__sibebar-block__buttons-basket::before {
 	background: url(../img/sd-basket-icon-white.svg) no-repeat 100% 100%/contain;
-	left: 17px;
-	top: 15px;
+	left: 65px;
+    top: 14px;
 }
 .product-popup .product-popup .item-info__block-text__description {
 	order: 2;
@@ -2925,7 +2926,10 @@ color: #56b2e4;
 	right: -15px;
 	border-radius: 50px;
 	border: 0;
-	background: #fff url(../img/popup-close.png) no-repeat 100% 100%/contain;
+	background: url(../img/popup-close.png) no-repeat 100% 100%/contain;
+}
+.blue-version .product-popup__close {
+	background: url(../img/popup-close2.png) no-repeat 100% 100%/contain;
 }
 .product-popup__close:hover {
 	box-shadow: 0 5px 24px rgba(255, 152, 180, 0.26);
@@ -3008,6 +3012,7 @@ color: #56b2e4;
 }
 .product-popup .item-page__sidebar-block__interactive {
 	border: 0;
+	margin-bottom: 10px;
 }
 .product-popup .select-block__colors__input {
 	width: 100%;

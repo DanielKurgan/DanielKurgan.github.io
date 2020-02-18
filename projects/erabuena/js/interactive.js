@@ -319,6 +319,7 @@ $(document).ready(function(){
     $(document).ready(function () {
         $('.input-color').click(function(){
             $(".block-input-color .placeholder").css('background', $inputColor);
+            $(".select-block__colors").toggleClass("flex");
         })
     });
 
@@ -340,6 +341,11 @@ $(document).ready(function(){
         $(".product-popup").css("display", "flex");
         $("body").css("overflow", "hidden");
     });
+
+      document.addEventListener('keydown', function (e) {
+        if(e.keyCode === 27) $('.product-popup').fadeOut();
+        $("body").css("overflow", "visible");
+      }); 
 
     $('a').on('click', function(e){
         $('html,body').stop().animate({ scrollTop: $(this.hash).offset().top }, 1000);
