@@ -311,6 +311,9 @@ button {
 		height: 100%;
 	}
 	.catalog-items__item-content {
+		display: flex;
+	    flex-direction: column;
+	    justify-content: space-between;
 		min-height: 140px;
 		background-color: #fff7f2;
 		padding: 20px 10px 10px 10px;
@@ -1457,7 +1460,7 @@ label {
 	color: #898989;
 	font-size: 13px;
 	font-weight: 300;
-	padding: 6px;
+	padding: 0 13px;
 }
 .product-popup .block-select select {
     padding: 5px 13px;
@@ -2632,7 +2635,7 @@ label {
 	width: 18px;
 	height: 18px;
 	border-radius: 50px;
-	left: 10px;
+	left: 13px;
 	top: 5px;
 }
 .input-color.red input:before {

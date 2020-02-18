@@ -167,6 +167,9 @@
 }
 
 @media (max-width: 992px) {
+    .catalog-sort .select:after {
+        top: 14px;
+    }
     .block-select select {
         padding: 5px 9px;
     }
@@ -479,9 +482,9 @@
     .catalog-items__container-banner {
         max-width: 87%;
     }
-    body .fourth-banner {
-        max-width: 87% !important;
-    }
+body .fourth-banner {
+    max-width: 98% !important;
+}
 }
 
 @media (max-width: 650px){
@@ -499,9 +502,9 @@
     .catalog-items__container-banner {
         max-width: 90%;
     }
-    body .fourth-banner {
-        max-width: 90% !important;
-    }
+body .fourth-banner {
+    max-width: 100% !important;
+}
 }
 
 /*Экстрамалые девайсы («телефоны», < 576px)
@@ -575,9 +578,9 @@
         top: 5px;
         right: 5px;
     }
-    .item-info__block-text__title {
-        margin: 10px 0 0 0 !important;
-    }
+.item-info__block-text__title {
+    margin: 20px 0 0 0 !important;
+}
     .item-kit__title {
         margin-top: 20px !important;
         margin-bottom: 0 !important;
@@ -1375,6 +1378,21 @@
 }
 
 @media (max-width: 500px){
+    .item-info__block-text__article {
+        padding: 5px 0;
+    }
+    .item-info__block-text__point {
+        margin-bottom: 20px;
+    }
+    .block-select__element {
+        width: 49%;
+    }
+    .select-block__colors__input {
+        width: 100%;
+    }
+    .block-select__element-decor::after {
+        right: 10px;
+    }
     .big-teaser__info {
         padding: 15px 10px;
     }
@@ -1387,12 +1405,9 @@
     .item-info__block-images {
         margin-bottom: 0;
     }
-    .big-teaser .block-select__element {
-        width: 100%;
-    }
-    .big-teaser .block-select {
-        flex-direction: column;
-    }
+.big-teaser .block-select__element {
+    width: 49%;
+}
     .big-teaser .block-select select {
         width: 100%;
         margin-bottom: 10px;
@@ -1637,6 +1652,9 @@
 }
 
 @media (max-width: 620px){
+    .catalog-sort__numitems {
+        margin-top: 10px;
+    }
     .item-info__block-text__description {
         margin-top: 10px;
         margin-bottom: 10px;
@@ -1947,9 +1965,6 @@
     .item-kit__block-prices {
         margin: 5px 0;
     }
-    .block-select {
-        flex-direction: column;
-    }
     .block-select select {
         width: 100%;
         margin-bottom: 5px;
@@ -1968,7 +1983,7 @@
         line-height: 10px;
         margin-left: 3px;
         margin-top: 0;
-        margin-bottom: 5px;
+        margin-bottom: 0;
     }
 
 }
