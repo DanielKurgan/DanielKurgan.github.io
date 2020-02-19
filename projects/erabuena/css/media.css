@@ -1378,6 +1378,9 @@ body .fourth-banner {
 }
 
 @media (max-width: 500px){
+    .item-info__block-images__main-image {
+        height: 300px !important;
+    }
     .item-info__block-text__article {
         padding: 5px 0;
     }
@@ -1970,7 +1973,7 @@ body .fourth-banner {
         margin-bottom: 5px;
     }
     .product-popup .item-info__block {
-        padding: 10px;
+        padding: 20px;
     }
     .product-popup .block-select select {
         margin-bottom: 0px;
