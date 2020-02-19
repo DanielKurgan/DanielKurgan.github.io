@@ -700,6 +700,9 @@ body .fourth-banner {
         width: 100%;
         margin-bottom: 10px;
     }
+    .product-popup .block-select__element:first-child {
+        margin-right: 10px;
+    }
     .product-popup .block-select__element.block-input-color {
         margin-left: 0;
     }
@@ -1378,7 +1381,7 @@ body .fourth-banner {
 }
 
 @media (max-width: 500px){
-    .product-popup .item-info__block-images {
+    body .product-popup .item-info__block-images {
         min-height: unset !important;
     }
     .item-info__block-images__main-image {
