@@ -813,6 +813,9 @@ body .fourth-banner {
 
 
 @media (max-width: 370px){
+    .placeholder {
+        padding: 7px 7px;
+    }
     .catalog-page .col-md-12.col-lg-9 {
         padding: 0;
     }
@@ -1402,8 +1405,14 @@ body .fourth-banner {
     .select-block__colors__input {
         width: 100%;
     }
+    .item-kit .select-block__colors__input {
+        max-width: 75px;
+    }
     .block-select__element-decor::after {
         right: 10px;
+    }
+    .item-kit .block-select__element-decor::after {
+        display: none;
     }
     .big-teaser__info {
         padding: 15px 10px;
@@ -1515,7 +1524,9 @@ body .fourth-banner {
 }
 
 @media (max-width: 768px){
-
+    .block-input-color .placeholder {
+        top: 6px;
+    }
     .product-popup .item-info__block-images {
         /*min-height: unset;*/
     }
