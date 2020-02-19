@@ -1,5 +1,12 @@
 /*Большие девайсы (большие десктопы, < 1200px)*/
 @media (max-width: 1200px) {
+    .big-teaser .item-page__sibebar-block__buttons-basket::before {
+        top: 9px;
+        left: 18px;
+    }
+    .big-teaser .item-page__sibebar-block__buttons-basket {
+        padding-left: 23px;
+    }
     .product-popup .item-page__sibebar-block__buttons-basket::before {
         left: 142px;
         top: 16px;
@@ -167,6 +174,9 @@
 }
 
 @media (max-width: 992px) {
+     .big-teaser .block-select__element:last-child {
+        margin-right: 0;
+    }
     .product-popup .item-page__sibebar-block__buttons-basket {
         padding-left: 0 !important;
     }
@@ -1294,8 +1304,7 @@ body .fourth-banner {
         margin-right: 10px;
     }
     .big-teaser .item-page__sibebar-block__buttons-basket {
-        padding-left: 30px;
-        margin: 0;
+        padding-left: 25px;
     }
     .big-teaser .big-teaser__info-data {
         flex-direction: row;
@@ -1387,6 +1396,9 @@ body .fourth-banner {
 }
 
 @media (max-width: 500px){
+    .big-teaser .item-page__sibebar-block__buttons-basket::before {
+        left: 12px;
+    }
     body .product-popup .item-info__block-images {
         min-height: unset !important;
     }
