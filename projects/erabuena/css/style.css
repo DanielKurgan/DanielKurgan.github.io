@@ -1396,7 +1396,7 @@ label {
 	font-family: "ProximaNova-Semibold";
 	font-size: 15px;
 	font-weight: 400;
-	line-height: 30px;
+	/*line-height: 30px;*/
 }
 .item-kit__block-buttons label {
 	color: #ef86a3;
