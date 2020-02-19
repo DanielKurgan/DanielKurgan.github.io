@@ -1378,6 +1378,9 @@ body .fourth-banner {
 }
 
 @media (max-width: 500px){
+    .product-popup .item-info__block-images {
+        min-height: unset !important;
+    }
     .item-info__block-images__main-image {
         height: 300px !important;
     }
