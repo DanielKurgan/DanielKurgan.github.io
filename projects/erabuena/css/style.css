@@ -3474,6 +3474,7 @@ body .category-sort__search-result__category * {
 	line-height: 17px;
 }
 .catalog-items__item-container {
+	min-height: 410px;
 	height: 100%;
 	display: flex;
 	flex-direction: column;
@@ -3532,4 +3533,7 @@ body .category-sort__search-result__category * {
 .comparison-page .catalog-items__item {
 	position: relative;
 	overflow: visible;
+}
+.comparison-page .catalog-items__item-content__buttons__basket {
+    height: 30px;
 }
