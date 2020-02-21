@@ -174,7 +174,7 @@
 }
 
 @media (max-width: 992px) {
-   .big-teaser .block-select__element:last-child {
+ .big-teaser .block-select__element:last-child {
     margin-right: 0;
 }
 .product-popup .item-page__sibebar-block__buttons-basket {
@@ -841,6 +841,12 @@ button.catalog-filter__button {
 }
 
 @media (max-width: 390px){
+    .result-page .catalog-items__item {
+        max-width: 141px;
+    }
+    .result-page .catalog-items__item-content__buttons__basket {
+        margin-right: 8px;
+    }
     .catalog-page .container {
         padding: 0 5px;
     }
@@ -885,7 +891,9 @@ button.catalog-filter__button {
 
 /*CART MEDIA*/
 @media (max-width: 1200px){
-
+    .result-page__link {
+        font-size: 20px;
+    }
     .item-kit__block-buttons {
         margin-bottom: 10px;
     }
@@ -1287,9 +1295,25 @@ button.catalog-filter__button {
 }
 
 @media (max-width: 800px){
+    .result-page__link {
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
     .big-teaser__info {
         padding: 15px 20px;
     }
+    body .category-sort__search-result__category, body .category-sort__search-result__category * {
+        font-size: 14px;
+    }
+    .site-item-text {
+        line-height: 20px;
+        margin-bottom: 20px;
+        font-size: 11px;
+    }
+    .result-page .catalog-button__block {
+        margin-bottom: 20px;
+    }
+
     .big-teaser {
         flex-direction: column;
     }
@@ -1643,6 +1667,9 @@ button.catalog-filter__button {
 }
 
 @media (max-width: 730px){
+    .result-page .catalog-items {
+        justify-content: space-around;
+    }
     .mobile-nav-block {
         padding: 10px;
         font-size: 16px;
@@ -1687,6 +1714,13 @@ button.catalog-filter__button {
 }
 
 @media (max-width: 620px){
+    .item-delivery__info-buttons .info-button {
+        font-size: 12px;
+        width: 100%;
+    }
+    .item-button-simple {
+        width: 100%;
+    }
     .catalog-sort__numitems {
         margin-top: 10px;
     }
@@ -1787,7 +1821,7 @@ button.catalog-filter__button {
 
 @media (max-width: 530px){
     .placeholder {
-line-height: 20px;
+        line-height: 20px;
     }
     .item-feedback .select:after {
         top: 10px;
@@ -1808,6 +1842,9 @@ line-height: 20px;
 }
 
 @media (max-width: 450px){
+    .result-page .catalog-items {
+        justify-content: space-between;
+    }
     .item-info__block-images-group .flex-wrap-class {
         flex-wrap: nowrap;
     }

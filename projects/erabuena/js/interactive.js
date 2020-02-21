@@ -365,13 +365,30 @@ $(document).ready(function(){
       $('.catalog-items__item-content').matchHeight();
   });
 
-$(function($){
+    $(function($){
   $(document).mouseup(function (e){ // событие клика по веб-документу
     var div = $(".product-popup__container-block"); // тут указываем ID элемента
     if (!div.is(e.target) // если клик был не по нашему блоку
         && div.has(e.target).length === 0) { // и не по его дочерним элементам
         $(".product-popup").fadeOut();
-        $("body").css("overflow", "visible");
-    }
-  });
+    $("body").css("overflow", "visible");
+}
 });
+}); 
+
+    jQuery(document).ready(function($) {
+        $(".parameters-cloud-icon").mouseover(function(){
+            $(".parameters-cloud").css("opacity", "1");
+            $(".parameters-cloud").css("z-index", "1");
+        });
+        $(".parameters-cloud-icon").mouseout(function(){
+            $(".parameters-cloud").css("opacity", "0");
+            $(".parameters-cloud").css("z-index", "-1");
+        });
+
+        $(".parameters-kit__title").click(function(){
+            $(this).parent().find(".parameters-kit__block-element").toggleClass("max-height100");
+            $(this).parent().find(".parameters-kit__title-text-icon").toggleClass("parameters-kit__title-text-icon__bg2");
+        });
+
+    });

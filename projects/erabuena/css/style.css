@@ -288,7 +288,7 @@ button {
 	-ms-border-radius: 10px;
 	-o-border-radius: 10px;
 	overflow: hidden;
-	transition: 0.4;
+	transition: 0.4s;
 }
 .catalog-items__item:hover {
 	box-shadow: 0 5px 24px rgba(247, 169, 143, 0.48);
@@ -901,7 +901,7 @@ label {
 	content: '';
 	position: absolute;
 	top: 50%;
-	left: 50%;
+	left: 10px;
 	width: 26px;
 	height: 26px;
 	transform: translate(-50%, -50%);
@@ -2199,7 +2199,9 @@ ul.info-text li:before {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin: 40px 0;
+	padding: 40px 0;
+	border-top: 1px solid #f2dbce;
+	border-bottom: 1px solid #f2dbce;
 }
 .news-mailing__text {
 	display: flex;
@@ -2320,7 +2322,7 @@ ul.info-text li:before {
 	font-size: 13px;
 	font-weight: 700;
 	line-height: 30px;
-	text-decoration: underline dashed;
+	/*text-decoration: underline dashed;*/
 	margin-left: 13px;
 }
 .item-page__sidebar-block__rating .item-rating__heart {
@@ -2603,8 +2605,14 @@ ul.info-text li:before {
 .input-color input,
 label {
 	cursor: pointer;
+	color: #919191;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 30px;
 }
-
+input[type=checkbox], input[type=radio] {
+	margin-right: 3px;
+}
 .input-color input {
 	position: relative;
 	height: 18px;
@@ -3213,8 +3221,8 @@ label {
 .big-teaser .button-favourite:before {
 	content: ' ';
 	position: absolute;
-	width: 22px;
-	height: 20px;
+	width: 21px;
+	height: 19px;
 	background: url("../img/favourite-icon.svg") no-repeat 100% 100%/contain;
 	top: 5px;
 	left: 0;
@@ -3245,4 +3253,221 @@ label {
 
 .item-info__block-images__main-image__block {
 	/*height: 350px;*/
+}
+
+/*RESULT PAGE*/
+.result-page .catalog-description {
+	text-align: left;
+}
+.catalog-sort__container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.result-page .catalog-sort__container {
+	border-bottom: 1px solid #f2dbce;
+}
+.catalog-sort__search-result {
+	display: flex;
+	flex-direction: column;
+}
+body .category-sort__search-result__sum {
+	margin-top: 10px;
+	color: #7f5c47;
+	font-family: "ProximaNova-Semibold";
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 25px;
+}
+body .category-sort__search-result__sum * {
+	margin-right: 0;
+}
+.result-page .catalog-sort {
+	margin-bottom: 0;
+}
+body .category-sort__search-result__category {
+	position: relative;
+}
+body .category-sort__search-result__category::after {
+	content: ' ';
+	position: absolute;
+	top: 13px;
+	right: -16px;
+	background: url("../img/arrow-down-pink.svg") no-repeat 100% 100%/100%;
+	width: 11px;
+	height: 7px;
+}
+body .category-sort__search-result__category,
+body .category-sort__search-result__category * {
+	display: inline-block;
+	margin: 6px 0 10px 0;
+}
+.catalog-sort__search-result__category-name {
+	border-bottom: 1px dashed;
+}
+.result-page__link-text {
+	color: #7f5c47;
+	font-family: "ProximaNova-Semibold";
+	font-size: 22px;
+	font-weight: 400;
+	line-height: 20px;
+	border-bottom: 1px dashed;
+	position: relative;
+}
+.result-page__link {
+	margin-bottom: 60px;
+	display: inline-block;
+}
+.site-item-link-image {
+	margin-left: 5px;
+	height: 14px;
+	width: 19px;
+}
+.site-item-text {
+	margin-bottom: 40px;
+	color: #ac8c78;
+	font-size: 13.1px;
+	font-weight: 400;
+	line-height: 25px;
+}
+.result-page .catalog-items__item .catalog-items__banner {
+	height: 290px; 
+}
+.result-page .fourth-banner {
+	width: 100%;
+	max-width: 100% !important;
+}
+
+/*COMPARISON PAGE*/
+.comparison-page__container {
+	padding: 30px 20px;
+	border-radius: 10px;
+	background-color: #ffffff;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.comparison-page__container-title-block {
+	display: flex;
+	justify-content: space-between;
+}
+.comparison-title {
+	color: #a77a5e;
+	font-family: "ProximaNovaT-Thin";
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 20px;
+}
+.button-clear-list {
+	color: #ff98b4;
+	font-family: "ProximaNova-Semibold";
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 20px;
+	background: 0;
+	border: 0;
+	position: relative;
+}
+.button-clear-list::before {
+	position: absolute;
+	content: ' ';
+	top: 0;
+	left: -20px;
+	background: url("../img/basket-icon-pink.png") no-repeat 100% 100%/100%;
+	width: 14px;
+	height: 17px;
+}
+.comparison-page__container__categories {
+	margin-right: 30px;
+}
+.text-simple-pink,
+.text-simple-pink * {
+	color: #ff98b4 !important;
+	font-family: "ProximaNova-Semibold" !important;
+	font-size: 16px !important;
+	font-weight: 400 !important;
+	line-height: 20px !important;
+}
+.comparison-page__container__categories-block {
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+.parameters-kit__block-element {
+	max-height: 0;
+	transition: 0.4s;
+	overflow: hidden;
+
+	display: flex;
+	justify-content: space-between;
+}
+.max-height100 {
+	max-height: 100px;
+}
+.parameters-kit__block-element-container {
+	border-top: 1px solid #fce7da;
+	padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.parameters-kit__block-element__list {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+}
+.parameters-kit__block-element__title {
+	width: 20%;
+	color: #7f5c47;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 20px;
+	position: relative;
+}
+.parameters-kit__block-element__title-block {
+	width: 20%;
+	position: relative;
+}
+.parameters-kit__title {
+	padding: 10px 0;
+}
+.parameters-kit__title-text {
+	position: relative;
+	cursor: pointer;
+}
+.parameters-kit__title-text-icon {
+	background: url("../img/arrow-down-pink.svg") no-repeat 100% 100%/contain;
+	width: 9px;
+	height: 5px;
+	display: inline-block;
+	margin: 2px;
+}
+.parameters-kit__title-text-icon__bg2 {
+	background: url("../img/arrow-top-pink.svg") no-repeat 100% 100%/contain;
+	width: 8px;
+height: 4px;
+}
+.parameters-cloud-icon {
+	width: 19px;
+	height: 19px;
+	margin: -5px 0 0 5px;
+	cursor: pointer;
+	background: url("../img/question-cloud-icon.svg") no-repeat 100% 100%/100%;
+}
+.parameters-cloud {
+	z-index: -1;
+	bottom: 30px;
+	position: absolute;
+	padding: 13px;
+	border-radius: 10px;
+	opacity: 0;
+	transition: 0.4s;
+	display: block;
+	width: 297px;
+	box-shadow: 0 9px 21px rgba(247, 169, 143, 0.33);
+	background-color: #ffffff;
+
+	color: #c4a089;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 17px;
 }
