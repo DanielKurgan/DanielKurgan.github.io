@@ -3388,6 +3388,9 @@ body .category-sort__search-result__category * {
 	font-weight: 400 !important;
 	line-height: 20px !important;
 }
+.flex {
+	display: flex !important;
+}
 .comparison-page__container__categories-block {
 	margin-top: 20px;
 	margin-bottom: 10px;
@@ -3395,9 +3398,8 @@ body .category-sort__search-result__category * {
 .parameters-kit__block-element {
 	max-height: 0;
 	transition: 0.4s;
-	overflow: hidden;
 
-	display: flex;
+	display: none;
 	justify-content: space-between;
 }
 .max-height100 {
@@ -3406,9 +3408,9 @@ body .category-sort__search-result__category * {
 .parameters-kit__block-element-container {
 	border-top: 1px solid #fce7da;
 	padding: 10px 0;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
 }
 .parameters-kit__block-element__list {
 	display: flex;
@@ -3444,7 +3446,7 @@ body .category-sort__search-result__category * {
 .parameters-kit__title-text-icon__bg2 {
 	background: url("../img/arrow-top-pink.svg") no-repeat 100% 100%/contain;
 	width: 8px;
-height: 4px;
+	height: 4px;
 }
 .parameters-cloud-icon {
 	width: 19px;
@@ -3470,4 +3472,64 @@ height: 4px;
 	font-size: 14px;
 	font-weight: 300;
 	line-height: 17px;
+}
+.catalog-items__item-container {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 20px;
+	border-radius: 10px;
+	background-color: #fdefe6;
+}
+.catalog-items__item-text {
+	color: #a77a5e;
+	font-family: "ProximaNova-Semibold";
+	font-size: 18px;
+	font-weight: 400;
+	text-align: center;
+}
+.catalog-items__item-buttons {
+	display: flex;
+	flex-direction: column;
+}
+.btn-white-site {
+	box-shadow: 0 5px 13px rgba(210, 166, 139, 0.2);
+	border-radius: 20px;
+	background-color: #ffffff;
+	color: #c4a089;
+	font-family: "ProximaNova-Semibold";
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 30px;
+	border: 0;
+	height: 40px;
+	margin-bottom: 10px;
+}
+.btn-orange-site {
+	height: 40px;
+	border-radius: 20px;
+	border: 2px solid #c4a089;
+	color: #c4a089;
+	font-family: "ProximaNova-Semibold";
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 30px;
+	background-color: transparent;
+}
+.catalog-items__item-delete {
+	position: absolute;
+	top: -16px;
+	right: -19px;
+	z-index: 999;
+	width: 45px;
+	height: 45px;
+	position: absolute;
+	border: 0;
+	background: url("../img/comparison-item-close.svg") no-repeat 100% 100%/contain;
+	cursor: pointer;
+}
+.comparison-page .catalog-items__item {
+	position: relative;
+	overflow: visible;
 }
