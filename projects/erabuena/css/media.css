@@ -1344,6 +1344,15 @@
 }
 
 @media (max-width: 800px){
+    .result-page .catalog-description {
+        margin-bottom: 10px;
+    }
+    .result-page .fourth-banner {
+        margin-bottom: 0;
+    }
+    body .category-sort__search-result__category {
+        margin: 15px 0 10px 0;
+    }
     .result-page__link {
         font-size: 16px;
         margin-bottom: 40px;

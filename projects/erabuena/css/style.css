@@ -3287,11 +3287,12 @@ body .category-sort__search-result__sum * {
 }
 body .category-sort__search-result__category {
 	position: relative;
+	margin: 6px 0 10px 0;
 }
 body .category-sort__search-result__category::after {
 	content: ' ';
 	position: absolute;
-	top: 13px;
+	top: 8px;
 	right: -16px;
 	background: url("../img/arrow-down-pink.svg") no-repeat 100% 100%/100%;
 	width: 11px;
@@ -3300,7 +3301,8 @@ body .category-sort__search-result__category::after {
 body .category-sort__search-result__category,
 body .category-sort__search-result__category * {
 	display: inline-block;
-	margin: 6px 0 10px 0;
+	margin-left: 0;
+	margin-right: 0;
 }
 .catalog-sort__search-result__category-name {
 	border-bottom: 1px dashed;
