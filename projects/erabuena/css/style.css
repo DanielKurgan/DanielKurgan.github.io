@@ -3488,7 +3488,7 @@ body .category-sort__search-result__category * {
 	line-height: 17px;
 }
 .catalog-items__item-container {
-	min-height: 410px;
+	/*min-height: 410px;*/
 	height: 100%;
 	display: flex;
 	flex-direction: column;
