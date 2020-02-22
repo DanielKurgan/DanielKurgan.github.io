@@ -393,8 +393,8 @@ $(document).ready(function(){
      });
 
      $(".parameters-kit__title").click(function(){
-      $(this).parent().find(".parameters-kit__block-element").toggleClass("max-height100");
-      $(this).parent().find(".parameters-kit__block-element").toggleClass("flex");
+      $(this).parent().find(".parameters-kit__block-element-container").toggleClass("max-height100");
+      // $(this).parent().find(".parameters-kit__block-element").toggleClass("flex");
       $(this).parent().find(".parameters-kit__title-text-icon").toggleClass("parameters-kit__title-text-icon__bg2");
      });
 
