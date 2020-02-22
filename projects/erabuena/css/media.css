@@ -1456,6 +1456,7 @@ button.catalog-filter__button {
     .comparison-slider .slick-slide {
         display: flex;
         justify-content: center;
+        align-items: center;
     }
     .comparison-slider .catalog-items__item {
         max-width: 160px;
