@@ -1453,6 +1453,9 @@ button.catalog-filter__button {
 }
 
 @media (max-width: 500px){
+    .catalog-items__item-delete {
+        top: 18px;
+    }
     .comparison-slider .slick-slide {
         display: flex;
         justify-content: center;

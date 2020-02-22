@@ -3442,6 +3442,7 @@ body .category-sort__search-result__category * {
 	position: relative;
 }
 .parameters-kit__title {
+	cursor: pointer;
 	padding: 10px 0;
 }
 .parameters-kit__title-text {
