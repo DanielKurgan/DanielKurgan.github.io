@@ -401,17 +401,42 @@ $(document).ready(function(){
     });
 
     // SLICK SLIDERS
-    $(document).ready(function(){
 
-     $('.comparison-slider').slick({
-      variableWidth: false,
-      infinite: true,
-      slidesToShow: 5,
-      slidesToScroll: 1,
-      arrows: true,
-            prevArrow: '<button id="prev" type="button"></button>',
-            nextArrow: '<button id="next" type="button"></button>'
-     });
+    $('.comparison-slider').slick({
+     variableWidth: false,
+     infinite: true,
+     slidesToShow: 5,
+     slidesToScroll: 1,
+     arrows: true,
+     prevArrow: '<button id="prev" type="button"></button>',
+     nextArrow: '<button id="next" type="button"></button>',
+
+     responsive: [ 
+     {
+      breakpoint: 1200,
+      settings: {
+       slidesToShow: 4,
+      } 
+     },
+     {
+      breakpoint: 992,
+      settings: {
+       slidesToShow: 3,
+      } 
+     },
+     {
+      breakpoint: 768,
+      settings: {
+       slidesToShow: 2,
+      } 
+     },
+     {
+      breakpoint: 400,
+      settings: {
+       slidesToShow: 1,
+      } 
+     },
+     ]
 
     });
 

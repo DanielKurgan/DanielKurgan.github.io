@@ -3350,6 +3350,7 @@ body .category-sort__search-result__category * {
 .comparison-page__container-title-block {
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 }
 .comparison-title {
 	color: #a77a5e;
@@ -3359,6 +3360,7 @@ body .category-sort__search-result__category * {
 	line-height: 20px;
 }
 .button-clear-list {
+	padding-left: 20px;
 	color: #ff98b4;
 	font-family: "ProximaNova-Semibold";
 	font-size: 16px;
@@ -3372,7 +3374,7 @@ body .category-sort__search-result__category * {
 	position: absolute;
 	content: ' ';
 	top: 0;
-	left: -20px;
+	left: 0;
 	background: url("../img/basket-icon-pink.png") no-repeat 100% 100%/100%;
 	width: 14px;
 	height: 17px;
@@ -3394,6 +3396,8 @@ body .category-sort__search-result__category * {
 .comparison-page__container__categories-block {
 	margin-top: 20px;
 	margin-bottom: 10px;
+	flex-wrap: wrap;
+	display: flex;
 }
 .parameters-kit__block-element {
 	max-height: 0;
@@ -3417,8 +3421,14 @@ body .category-sort__search-result__category * {
 	justify-content: space-around;
 	width: 100%;
 }
+.parameters-kit__block-element__list-element {
+	color: #c4a089;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 20px;
+	padding: 0 10px;
+}
 .parameters-kit__block-element__title {
-	width: 20%;
 	color: #7f5c47;
 	font-size: 16px;
 	font-weight: 300;
@@ -3517,11 +3527,17 @@ body .category-sort__search-result__category * {
 	font-weight: 400;
 	line-height: 30px;
 	background-color: transparent;
+	transition: 0.4s;
+}
+.btn-orange-site:hover {
+	color: #fff !important;
+	background-color: #f7a98f;
+	border: 2px solid #f7a98f;
 }
 .catalog-items__item-delete {
 	position: absolute;
-top: -8px;
-    right: -10px;
+	top: -8px;
+	right: -10px;
 	z-index: 999;
 	width: 45px;
 	height: 45px;
@@ -3538,31 +3554,37 @@ top: -8px;
 	height: 30px;
 }
 .comparison-slider .slick-track {
-    display: flex;
+	display: flex;
 }
 .comparison-slider {
 	overflow: hidden;
 	position: relative;
 	padding: 0 20px;
+	margin: 0 -20px;
 }
 .comparison-slider .catalog-items__item {
-    padding-top: 0;
+	padding-top: 0;
 }
 .comparison-slider .slick-arrow {
-    position: absolute;
-    z-index: 9;
-    width: 50px;
-    height: 50px;
-    border: 0;
-    background: url("../img/slick-arrow.png") no-repeat 100% 100%/100%;
+	position: absolute;
+	z-index: 9;
+	width: 50px;
+	height: 50px;
+	border: 0;
+	background: url("../img/slick-arrow.png") no-repeat 100% 100%/100%;
+	transition: 0.4s;
+	border-radius: 49px;
+}
+.comparison-slider .slick-arrow:hover {
+	box-shadow: 0 5px 24px rgba(255, 152, 180, 0.26);
 }
 .comparison-slider #prev {
-    top: 50%;
-    transform: translateY(-50%);
-    left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 0;
 }
 .comparison-slider #next {
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%) rotate(180deg);
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%) rotate(180deg);
 }
