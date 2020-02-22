@@ -3520,8 +3520,8 @@ body .category-sort__search-result__category * {
 }
 .catalog-items__item-delete {
 	position: absolute;
-	top: -16px;
-	right: -19px;
+top: -8px;
+    right: -10px;
 	z-index: 999;
 	width: 45px;
 	height: 45px;
@@ -3535,5 +3535,34 @@ body .category-sort__search-result__category * {
 	overflow: visible;
 }
 .comparison-page .catalog-items__item-content__buttons__basket {
-    height: 30px;
+	height: 30px;
+}
+.comparison-slider .slick-track {
+    display: flex;
+}
+.comparison-slider {
+	overflow: hidden;
+	position: relative;
+	padding: 0 20px;
+}
+.comparison-slider .catalog-items__item {
+    padding-top: 0;
+}
+.comparison-slider .slick-arrow {
+    position: absolute;
+    z-index: 9;
+    width: 50px;
+    height: 50px;
+    border: 0;
+    background: url("../img/slick-arrow.png") no-repeat 100% 100%/100%;
+}
+.comparison-slider #prev {
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+}
+.comparison-slider #next {
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%) rotate(180deg);
 }
