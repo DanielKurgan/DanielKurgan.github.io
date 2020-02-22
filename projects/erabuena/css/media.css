@@ -2095,6 +2095,15 @@ button.catalog-filter__button {
 }
 
 @media (max-width: 385px){
+    .max-height100 {
+        padding: 0px 0 !important;
+    }
+    .parameters-kit__block-element__title-block {
+        padding: 0px 0;
+    }
+    .parameters-kit__title {
+        padding: 5px 0;
+    }
     .comparison-title {
         margin-bottom: 20px;
     }
