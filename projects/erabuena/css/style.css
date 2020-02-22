@@ -3351,6 +3351,7 @@ body .category-sort__search-result__category * {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
+    align-items: center;
 }
 .comparison-title {
 	color: #a77a5e;
