@@ -3407,7 +3407,6 @@ body .category-sort__search-result__category * {
 	max-height: 100px !important;
 	padding: 10px 0 !important;
 	overflow: visible !important;
-	border-top: 1px solid #fce7da;
 }
 .parameters-kit__block-element-container {
 	transition: 0.4s;
@@ -3441,6 +3440,8 @@ body .category-sort__search-result__category * {
 .parameters-kit__block-element__title-block {
 	width: 20%;
 	position: relative;
+	border-top: 1px solid #fce7da;
+    border-bottom: 1px solid #fce7da;
 }
 .parameters-kit__title {
 	cursor: pointer;
