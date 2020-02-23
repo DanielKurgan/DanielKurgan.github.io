@@ -55,16 +55,20 @@ $(document).ready(function(){
 
    });
 
-    // FILTER BUTTON
 
+
+    // FILTER BUTTON
     $(".catalog-filter__button").click(function(){
      $(".catalog-filter__container").toggleClass("filterOpen");
     });
+
+
 
     // FILTER OPEN CHILD
     $(".catalog-filter__nav li").click(function(){
      $(this).find(".child").toggleClass("child-open");
     });
+
 
 
     // HEADER - BASKET POPUP
@@ -81,6 +85,7 @@ $(document).ready(function(){
     });
 
 
+
     // HEADER - MENU POPUP
     $(document).on('click', '.menu-toggle', function(e) {
      e.preventDefault();
@@ -88,6 +93,8 @@ $(document).ready(function(){
      $( '.basket-icon' ).css({zIndex: '100'});
      $( '.basket-number' ).css({zIndex: '101'});
     });
+
+
 
     // SEARCH - INPUT FOCUS
     $( ".search-input" ).focus(function() {
@@ -121,6 +128,8 @@ $(document).ready(function(){
      $('.phone-popup').toggleClass('show-popup');
     });
 
+
+
     // FOOTER TABLET ADAPTIVE 
     if (width > 767 && width < 1169) {
      $('.element-one, .element-two').wrapAll('<div class="tablet-adaptive">');
@@ -135,14 +144,16 @@ $(document).ready(function(){
   }
  });
 
+
+
   // POPUPS CLOSE ON ESCAPE
   document.addEventListener('keydown', function (e) {
    if(e.keyCode === 27) $('.basket-popup, .phone-popup').removeClass('show-popup');
   }); 
 
 
- // FIXED HEADER
 
+ // FIXED HEADER
  $(document).on('click', '.menu-toggle', function() {
   if (($('.menu-mobile').hasClass('opened')) && width < 1170) {
    $('.navigation').css({position: 'relative'});
@@ -154,6 +165,8 @@ $(document).ready(function(){
    $('.header').css({zIndex: '9999'});
   }
  });
+
+
 
  $(document).on('click', '.basket-open', function() {
   if (width < 1170 && $('.basket-mob').hasClass('opened')) {
@@ -204,23 +217,46 @@ $(document).ready(function(){
      ]
     });
 
+
+
     // INPUT NUMBER
     $(document).ready(function () {
      $('.numb').number_plugin();
     });
 
-    $("select option").click(function(){
 
-    });    
 
-    // STICKY BLOCK
+    // STICKY BLOCK SIDEBAR AND MENU
     $(document).ready(function(){
+
         // Находим плавающий блок и делаем его плавающим
+        // SIDEBAR
         $('.item-page__sidebar-container').stick_in_parent({
             // Отступ сверху
             offset_top: 10
            });
+
+        // MENU
+        if (width < 992 ) {
+
+         $('.item-nav').stick_in_parent({
+            // Отступ сверху
+            offset_top: 0
+           });
+         $('.item-nav').css({
+          "margin": "0",
+          "background": "white",
+          "z-index": "999999999",
+         });
+         $(".item-nav ul").css({
+          "border-bottom":"1px solid",
+        });
+         $(".item-nav ul li").css("padding-top", "10px");
+
+        };
+
        });
+
 
     
     // HOVER COLORS
@@ -304,17 +340,11 @@ $(document).ready(function(){
 
     });
 
-    // SELECT FIX
-    $(document).ready(function () {
-     $('select').click(function(){
-      $(this).parent().parent().find( $(".placeholder") ).hide();
-     })
-    });
-
     // INPUT COLORS OPEN
     $(".select-block__colors__input").click(function(){
      $(".select-block__colors").toggleClass("flex");
     });
+
     // COLOR SELECT INPUT
     $(document).ready(function () {
      $('.input-color').click(function(){
@@ -369,6 +399,9 @@ $(document).ready(function(){
     });
     jQuery(document).ready(function($) {
      $('.catalog-items__item-container').matchHeight();
+    });
+    jQuery(document).ready(function($) {
+     $('.item-kit__block-content').matchHeight();
     });
 
     $(function($){

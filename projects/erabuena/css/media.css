@@ -677,9 +677,11 @@
         margin: 0 10px 0 0 !important;
     }
     .store-info .item-button-simple {
+    display: flex;
+    align-items: center;
+    justify-content: center;
         width: 110px;
-        line-height: 33px;
-        height: 33px;
+        height: 25px;
     }
     .item-offer__block-title {
         font-size: 14px;
@@ -859,6 +861,9 @@
 
 
 @media (max-width: 370px){
+    body .item-feedback__footer .info-button {
+        font-size: 10px;
+    }
     .parameters-kit__block-element__title {
         font-size: 14px;
     }
@@ -1478,6 +1483,43 @@
 }
 
 @media (max-width: 500px){
+    .item-feedback form {
+        justify-content: space-between !important;
+    }
+    .item-feedback .select {
+        width: 49% !important;
+        font-size: 12px;
+    }
+    .item-feedback__select {
+        width: 100% !important;
+        margin-right: 0;
+    }
+    .item-feedback .info-button {
+        width: 100%;
+        font-size: 12px;
+    }
+    .item-feedback .select {
+        padding-right: 0;
+    }
+    .item-feedback form .select:last-child {
+        padding-right: 0 !important;
+    }
+    .item-delivery .info-button {
+        height: 40px !important;
+    }
+    .item-feedback__select {
+        height: 40px !important;
+    }
+    .item-feedback .info-button {
+        height: 40px !important;
+    }
+    .item-feedback .select:after {
+        top: 13px !important;
+    }
+    body .item-feedback__footer .info-button {
+        margin: 0;
+        height: 40px !important;
+    }
     .catalog-items__item-delete {
         top: 18px;
     }
@@ -1601,44 +1643,53 @@
         height: 30px !important;
     }
     .item-feedback__footer .info-button:before {
-        top: 8px !important;
+        top: 13px !important;
         left: 0px !important;
     }
-    .item-page__sibebar-block__buttons-basket {
-        width: 120px;
-        height: 40px;
-        font-size: 14px;
-    }
-    .item-brands img {
-        width: 20%;
-    }
-    .item-brands.mobile-1 {
-        display: flex !important;
-    }
-    .item-page__sibebar-block__buttons {
-        flex-wrap: wrap;
-    }
-    .site-info .item-nav ul {
-        width: 721px;
-    }
-    .site-tree a {
-        font-size: 15px;
-        line-height: 20px;
-        width: 120px;
-        margin-right: -60px;
-        display: inline-block;
-    }
-    .site-tree__block {
-        margin-top: 0px;
-        margin-bottom: 20px;
-        overflow: scroll;
-    }
-    .site-tree__back {
-        padding: 5px 12px 5px 16px;
-    }
+    .item-feedback__footer .catalog-pagination {
+       margin-top: 0; 
+   }
+   .item-page__sibebar-block__buttons-basket {
+    width: 120px;
+    height: 40px;
+    font-size: 14px;
+}
+.item-brands img {
+    width: 20%;
+}
+.item-brands.mobile-1 {
+    display: flex !important;
+}
+.item-page__sibebar-block__buttons {
+    flex-wrap: wrap;
+}
+.site-info .item-nav ul {
+    width: 721px;
+}
+.site-tree a {
+    font-size: 15px;
+    line-height: 20px;
+    width: 120px;
+    margin-right: -60px;
+    display: inline-block;
+}
+.site-tree__block {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    overflow: scroll;
+}
+.site-tree__back {
+    padding: 5px 12px 5px 16px;
+}
 }
 
 @media (max-width: 768px){
+    .item-delivery__info-payment .info-text {
+        padding-left: 38px;
+    }
+    .info-text li:before {
+        left: -29px !important;
+    }
     .block-input-color .placeholder {
         top: 6px;
     }
@@ -1938,6 +1989,9 @@
 }
 
 @media (max-width: 450px){
+    .item-sizes__table-data__name {
+        font-size: 13px;
+    }
     .result-page .catalog-items {
         justify-content: space-between;
     }
@@ -2058,7 +2112,7 @@
     .item-feedback__select {
         width: 90px;
         font-size: 8px;
-        padding-left: 5px;
+        padding-left: 15px;
     }
     .item-feedback .select:after {
         top: 9px;
@@ -2104,6 +2158,10 @@
 }
 
 @media (max-width: 385px){
+
+    body .item-feedback__footer .info-button {
+        margin-top: 10px;
+    }
     .parameters-cloud-icon {
         width: 15px;
         height: 15px;

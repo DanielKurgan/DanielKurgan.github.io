@@ -1362,6 +1362,9 @@ label {
 }
 .item-kit__block-content {
 	padding: 0 10px 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .item-kit__block-name {
 	margin-bottom: 10px;
