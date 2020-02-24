@@ -437,7 +437,7 @@ $(document).ready(function(){
 
     $('.comparison-slider').slick({
      variableWidth: false,
-     infinite: true,
+     infinite: false,
      slidesToShow: 5,
      slidesToScroll: 1,
      arrows: true,
@@ -466,7 +466,7 @@ $(document).ready(function(){
      {
       breakpoint: 400,
       settings: {
-       slidesToShow: 1,
+       slidesToShow: 2,
       } 
      },
      ]
@@ -478,3 +478,9 @@ $(document).ready(function(){
      $catalogItemHeight = $(".catalog-items__item").css('height');
      $(".catalog-items__item-container").css('height', $catalogItemHeight);
     });
+
+    // TEST
+    $(document).ready(function(){
+     $('.foo').offset().top - $('.bar').offset().top
+    });
+
