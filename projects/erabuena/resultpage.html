@@ -89,10 +89,18 @@
 				<div class="col-md-12 col-lg-3">
 					<div class="row row-catalog-filter">
 						<div class="catalog-filter">
-							<div class="catalog-filter__title-block">
-								<span class="catalog-filter__title">Раздел каталога</span>
-								<button class="catalog-filter__button">X</button>
+
+							<div class="catalog-filter__main-buttons-group">
+								<div class="catalog-filter__title-block">
+									<span class="catalog-filter__title">Раздел каталога</span>
+									<button class="catalog-filter__button"></button>
+								</div>
+								<div class="catalog-sort__buttons desktop860">
+									<button class="catalog-sort__buttons-blocks"></button>
+									<button class="catalog-sort__buttons-list sort__button-active"></button>
+								</div>
 							</div>
+
 							<div class="catalog-filter__container">
 
 								<ul class="catalog-filter__nav">
@@ -240,12 +248,12 @@
 								</div>
 							</div>
 
-							<div class="catalog-sort__buttons">
+							<div class="catalog-sort__buttons mobile860">
 								<button class="catalog-sort__buttons-blocks"></button>
 								<button class="catalog-sort__buttons-list sort__button-active"></button>
 							</div>
 
-							<div class="catalog-sort__numitems">
+							<div class="catalog-sort__numitems mobile860">
 								<span>На странице:</span>
 								<div class="select">
 									<select name="catalog-sort__numitems-filter">
@@ -265,6 +273,15 @@
 									<hr>
 									<li><a class="catalog-pagination__button" href="#">22</a></li>
 								</ul>
+							</div>
+							<div class="catalog-sort__numitems desktop860">
+								<span>На странице:</span>
+								<div class="select">
+									<select name="catalog-sort__numitems-filter">
+										<option value="1">20</option>
+										<option value="2">30</option>
+									</select>
+								</div>
 							</div>
 						</div>
 

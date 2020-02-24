@@ -89,10 +89,18 @@
 				<div class="col-md-12 col-lg-3">
 					<div class="row row-catalog-filter">
 						<div class="catalog-filter">
-							<div class="catalog-filter__title-block">
-								<span class="catalog-filter__title">Раздел каталога</span>
-								<button class="catalog-filter__button">X</button>
+
+							<div class="catalog-filter__main-buttons-group">
+								<div class="catalog-filter__title-block">
+									<span class="catalog-filter__title">Раздел каталога</span>
+									<button class="catalog-filter__button"></button>
+								</div>
+								<div class="catalog-sort__buttons desktop860">
+									<button class="catalog-sort__buttons-blocks"></button>
+									<button class="catalog-sort__buttons-list sort__button-active"></button>
+								</div>
 							</div>
+
 							<div class="catalog-filter__container">
 
 								<ul class="catalog-filter__nav">
@@ -133,10 +141,10 @@
 									<div class="catalog-filter__ranges-container">
 										<div class="catalog-filter__ranges__range">
 											<span class="catalog-filter__title-name">Розничная цена</span>
-											<div class="slider-range" id="slider-range1"></div>
+											<div class="slider-range ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content" id="slider-range1"><div class="ui-slider-range ui-corner-all ui-widget-header" style="left: 0%; width: 100%;"></div><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 0%;"></span><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 100%;"></span></div>
 											<div class="slider-range__block">
-												<input class="range-input" type="text" id="amount1" readonly>
-												<input class="range-input text-right" type="text" id="amount2" readonly>
+												<input class="range-input" type="text" id="amount1" readonly="">
+												<input class="range-input text-right" type="text" id="amount2" readonly="">
 											</div>
 											<div class="range-popup">
 												<span>Найдено 24 товара:</span>
@@ -147,19 +155,19 @@
 
 										<div class="catalog-filter__ranges__range">
 											<span class="catalog-filter__title-name">Диаметр</span>
-											<div class="slider-range" id="slider-range2"></div>
+											<div class="slider-range ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content" id="slider-range2"><div class="ui-slider-range ui-corner-all ui-widget-header" style="left: 0%; width: 100%;"></div><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 0%;"></span><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 100%;"></span></div>
 											<div class="slider-range__block">
-												<input class="range-input" type="text" id="amount3" readonly>
-												<input class="range-input text-right" type="text" id="amount4" readonly>
+												<input class="range-input" type="text" id="amount3" readonly="">
+												<input class="range-input text-right" type="text" id="amount4" readonly="">
 											</div>
 										</div>
 
 										<div class="catalog-filter__ranges__range">
 											<span class="catalog-filter__title-name">Длина</span>
-											<div class="slider-range" id="slider-range3"></div>
+											<div class="slider-range ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content" id="slider-range3"><div class="ui-slider-range ui-corner-all ui-widget-header" style="left: 0%; width: 100%;"></div><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 0%;"></span><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 100%;"></span></div>
 											<div class="slider-range__block">
-												<input class="range-input" type="text" id="amount5" readonly>
-												<input class="range-input text-right" type="text" id="amount6" readonly>
+												<input class="range-input" type="text" id="amount5" readonly="">
+												<input class="range-input text-right" type="text" id="amount6" readonly="">
 											</div>
 										</div>
 									</div>
@@ -229,43 +237,53 @@
 					<span class="catalog-description">Место для небольшого текстового блока для заманухи</span>
 
 					<div class="catalog-sort">
-						<div class="catalog-sort__main">
-							<span>Сортировать:</span>
-							<div class="select">
-								<select name="catalog-sort__main-sort">
-									<option value="1">Возрастание цены</option>
-									<option value="2">Уменьшение цены</option>
-								</select>
+						<div class="catalog-sort__container">
+							<div class="catalog-sort__main">
+								<span>Сортировать:</span>
+								<div class="select">
+									<select name="catalog-sort__main-sort">
+										<option value="1">Возрастание цены</option>
+										<option value="2">Уменьшение цены</option>
+									</select>
+								</div>
 							</div>
-						</div>
 
-						<div class="catalog-sort__buttons">
-							<button class="catalog-sort__buttons-blocks"></button>
-							<button class="catalog-sort__buttons-list sort__button-active"></button>
-						</div>
-
-						<div class="catalog-sort__numitems">
-							<span>На странице:</span>
-							<div class="select">
-								<select name="catalog-sort__numitems-filter">
-									<option value="1">20</option>
-									<option value="2">30</option>
-								</select>
+							<div class="catalog-sort__buttons mobile860">
+								<button class="catalog-sort__buttons-blocks"></button>
+								<button class="catalog-sort__buttons-list sort__button-active"></button>
 							</div>
-						</div>
 
-						<div class="catalog-pagination">
-							<ul class="catalog-pagination__list">
-								<li><a class="catalog-pagination__button" href="#">1</a></li>
-								<hr>
-								<li><a class="catalog-pagination__button" href="#">7</a></li>
-								<li><a class="catalog-pagination__button catalog-pagination__button-active" href="#">8</a></li>
-								<li><a class="catalog-pagination__button" href="#">9</a></li>
-								<hr>
-								<li><a class="catalog-pagination__button" href="#">22</a></li>
-							</ul>
-						</div>
-					</div>
+							<div class="catalog-sort__numitems mobile860">
+								<span>На странице:</span>
+								<div class="select">
+									<select name="catalog-sort__numitems-filter">
+										<option value="1">20</option>
+										<option value="2">30</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="catalog-pagination">
+								<ul class="catalog-pagination__list">
+									<li><a class="catalog-pagination__button" href="#">1</a></li>
+									<hr>
+									<li><a class="catalog-pagination__button" href="#">7</a></li>
+									<li><a class="catalog-pagination__button catalog-pagination__button-active" href="#">8</a></li>
+									<li><a class="catalog-pagination__button" href="#">9</a></li>
+									<hr>
+									<li><a class="catalog-pagination__button" href="#">22</a></li>
+								</ul>
+							</div>
+							<div class="catalog-sort__numitems desktop860">
+								<span>На странице:</span>
+								<div class="select">
+									<select name="catalog-sort__numitems-filter">
+										<option value="1">20</option>
+										<option value="2">30</option>
+									</select>
+								</div>
+							</div>
+						</div>					</div>
 
 					<div class="catalog-items">
 

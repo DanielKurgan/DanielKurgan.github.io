@@ -23,6 +23,9 @@ h2, h4 {
 .mobile-1 {
 	display: none !important;
 }
+.desktop860 {
+    display: none !important;
+}
 .container, .container-lg, .container-md, .container-sm, .container-xl {
 	max-width: 1180px !important;
 	padding: 0;
@@ -541,13 +544,18 @@ button {
 }
 .catalog-filter__title {
 	padding: 0 20px;
-	color: #7f5c47;
 	font-family: "ProximaNova-Semibold";
 	font-size: 22px;
 	font-weight: 400;
 }
 .catalog-filter__button {
 	display: none;
+}
+.catalog-filter__button {
+    width: 22px;
+    height: 24px;
+    border: 0;
+    background: url(../img/catalog-sort-dropdown.svg) no-repeat 100% 100%/100%;
 }
 .catalog-filter {
 	padding: 25px 0;
@@ -1023,7 +1031,11 @@ label {
 	justify-content: center;
 	margin-bottom: 40px;
 }
-
+.catalog-filter__main-buttons-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .filterOpen {
 	height: auto !important;
 } 
@@ -1032,7 +1044,9 @@ label {
 	justify-content: center;
 	align-items: center;
 }
-
+.borderRadiusChange {
+    border-radius: 25px 25px 0 0 !important;
+}
 /* BANNERS */
 .banner_bg {
 	border-radius: 20px 20px 0 0;
@@ -3264,6 +3278,7 @@ input[type=checkbox], input[type=radio] {
 	text-align: left;
 }
 .catalog-sort__container {
+	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
