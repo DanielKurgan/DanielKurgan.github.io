@@ -251,7 +251,7 @@ $(document).ready(function(){
          });
          $(".item-nav ul").css({
           "border-bottom":"1px solid",
-        });
+         });
          $(".item-nav ul li").css("padding-top", "10px");
 
         };
@@ -416,14 +416,14 @@ $(document).ready(function(){
   });
  }); 
 
-    jQuery(document).ready(function($) {
+    jQuery(document).ready(function() {
      $(".parameters-cloud-icon").mouseover(function(){
-      $(".parameters-cloud").css("opacity", "1");
-      $(".parameters-cloud").css("z-index", "1");
+      $(this).parent().find(".parameters-cloud").css("opacity", "1");
+      $(this).parent().find(".parameters-cloud").css("z-index", "1");
      });
      $(".parameters-cloud-icon").mouseout(function(){
-      $(".parameters-cloud").css("opacity", "0");
-      $(".parameters-cloud").css("z-index", "-1");
+      $(this).parent().find(".parameters-cloud").css("opacity", "0");
+      $(this).parent().find(".parameters-cloud").css("z-index", "-1");
      });
 
      $(".parameters-kit__title").click(function(){
@@ -485,3 +485,10 @@ $(document).ready(function(){
      $('.foo').offset().top - $('.bar').offset().top
     });
 
+    // DELETE BUTTON CARD COMPRISON OAGE
+    $(document).ready(function(){
+
+     $(".catalog-items__item").hover(function(){
+      $(this).find(".catalog-items__item-delete").toggleClass("opacityVisible");
+     });
+    });
