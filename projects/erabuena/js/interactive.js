@@ -343,14 +343,14 @@ $(document).ready(function(){
 
     // INPUT COLORS OPEN
     $(".select-block__colors__input").click(function(){
-     $(".select-block__colors").toggleClass("flex");
+     $(this).parent().find(".select-block__colors").toggleClass("flex");
     });
 
     // COLOR SELECT INPUT
     $(document).ready(function () {
      $('.input-color').click(function(){
-      $(".block-input-color .placeholder").css('background', $inputColor);
-      $(".select-block__colors").toggleClass("flex");
+      $(this).parent().parent().parent().parent().find(".block-input-color .placeholder").css('background', $inputColor);
+      $(this).parent().parent().find(".select-block__colors").toggleClass("flex");
      })
     });
 

@@ -930,7 +930,7 @@ label {
 	content: '';
 	position: absolute;
 	top: 50%;
-	left: 50%;
+left: 41%;
 	width: 18px;
 	height: 18px;
 	background: url("../img/checkbox-check.svg") no-repeat 100% 100%/100%;
@@ -1420,11 +1420,11 @@ label {
 	/*line-height: 30px;*/
 }
 .item-kit__block-buttons label {
-	color: #ef86a3;
-	font-family: "ProximaNova-Semibold";
-	font-size: 15px;
-	font-weight: 400;
-	line-height: 30px;
+    color: #ef86a3;
+    font-family: "ProximaNova-Semibold";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
 	margin-top: 10px;
 }
 .cart-button-add,
@@ -2075,6 +2075,29 @@ ul.info-text li:before {
 	width: 16px;
 	height: 16px;
 	background: url("../img/pan-icon.svg") no-repeat 100% 100%/contain;
+}
+.pag-arrow-left:hover {
+	opacity: 1;
+}
+.pag-arrow-left {
+	background: #f7a98f url("../img/pag-arrow-left.svg") no-repeat 50% 50%/25%;
+	text-align: center;
+}
+.pag-arrow-right:hover {
+	opacity: 1;
+}
+.pag-points {
+    display: inline-block;
+    margin-right: 10px;
+    letter-spacing: 2px;
+    color: #f7a98f;
+    opacity: 0.4;
+    margin-top: -10px;
+}
+.pag-arrow-right {
+	text-align: center;
+	background: #f7a98f url("../img/pag-arrow-left.svg") no-repeat 50% 50%/25%;
+	transform: rotate(180deg);
 }
 .item-feedback__footer .catalog-pagination__button {
 	margin-right: 14px;
@@ -3290,12 +3313,13 @@ input[type=checkbox], input[type=radio] {
 	border-bottom: 1px solid #f2dbce;
 }
 .catalog-sort__search-result {
-	display: flex;
-	flex-direction: column;
+    width: 100%;
+	display: block;
 }
 body .category-sort__search-result__sum {
-	margin-top: 10px;
-	color: #7f5c47;
+	display: block;
+    margin-top: 20px;
+	color: #7f5c47 !important;
 	font-family: "ProximaNova-Semibold";
 	font-size: 14px;
 	font-weight: 400;
@@ -3303,13 +3327,14 @@ body .category-sort__search-result__sum {
 }
 body .category-sort__search-result__sum * {
 	margin-right: 0;
+	color: #7f5c47 !important;
 }
 .result-page .catalog-sort {
 	margin-bottom: 0;
 }
 body .category-sort__search-result__category {
-	position: relative;
-	margin: 6px 0 10px 0;
+    position: relative;
+    margin: 10px 0 20px 0;
 }
 body .category-sort__search-result__category::after {
 	content: ' ';
