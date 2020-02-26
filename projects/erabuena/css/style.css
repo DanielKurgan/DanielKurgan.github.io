@@ -2106,6 +2106,9 @@ ul.info-text li:before {
 	font-weight: 400;
 	color: white;
 }
+.catalog-sort .catalog-pagination__list {
+    margin-top: 10px;
+    }
 .item-feedback__footer .catalog-pagination__list {
 	margin-bottom: 0;
 	margin-right: 15px;
