@@ -844,7 +844,7 @@
     .mobile400 {
         display: flex;
     }
-    .catalog-sort__buttons {
+    body .catalog-sort__buttons {
         order: 3 !important;
         margin-top: 10px !important;
     }
@@ -1084,6 +1084,9 @@
 
 /*CART MEDIA*/
 @media (max-width: 1200px){
+    .kit-list5 {
+        display: none;
+    }
     .comparison-page .catalog-items__item-content__buttons__basket::before {
         right: 11px;
     }
@@ -1229,6 +1232,9 @@
 }
 
 @media (max-width: 992px){
+    .kit-list4 {
+        display: none;
+    }
     .catalog-filter__title-block {
         position: relative;
         width: 100%;
@@ -1674,6 +1680,14 @@
 }
 
 @media (max-width: 500px){
+
+    .catalog-sort__buttons {
+        order: 5 !important;
+    }
+    .catalog-sort__numitems {
+        order: 2 !important;
+        margin-bottom: 0 !important;
+    }
     .catalog-filter__title-block::after {
         width: 15px;
         height: 8px;
@@ -1895,9 +1909,9 @@
             left: 0px !important;
         }
         .item-feedback__footer .catalog-pagination {
-         margin-top: 0; 
-     }
-     .item-page__sibebar-block__buttons-basket {
+           margin-top: 0; 
+       }
+       .item-page__sibebar-block__buttons-basket {
         width: 120px;
         height: 40px;
         font-size: 14px;
@@ -1932,6 +1946,13 @@
 }
 
 @media (max-width: 768px){
+    .kit-list3 {
+        display: none;
+    }
+    .pag-points {
+        letter-spacing: 1px;
+        margin: 0 3px 0 -5px !important;
+    }
     .catalog-sort__numitems span {
         margin-left: 14px;
     }
@@ -2187,6 +2208,12 @@
 }
 
 @media (max-width: 600px){
+    .pag-points {
+        margin: 0 3px 0 0px !important;
+    }
+    .pag-point {
+        font-size: 12px !important;
+    }
     .catalog-sort__numitems {
         margin-top: 0px;
     }
@@ -2444,13 +2471,6 @@
 }
 
 @media (max-width: 450px){
-    .catalog-sort__buttons {
-        order: 5;
-    }
-    .catalog-sort__numitems {
-        order: 2;
-        margin-bottom: 0;
-    }
     .catalog-sort__buttons {
         margin-right: 0;
         margin-top: 0;

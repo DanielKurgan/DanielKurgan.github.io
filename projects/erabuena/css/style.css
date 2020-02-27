@@ -3494,10 +3494,15 @@ body .category-sort__search-result__category * {
 	width: 100%;
 	opacity: 0;
 }
+.parameters-kit__block-element__list-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
 .parameters-kit__block-element__list {
+    flex-direction: column;
 	display: flex;
 	justify-content: space-around;
-	width: 100%;
 }
 .parameters-kit__block-element__list-element {
 	color: #c4a089;
@@ -3505,6 +3510,7 @@ body .category-sort__search-result__category * {
 	font-weight: 300;
 	line-height: 20px;
 	padding: 0 10px;
+	margin: 10px 0;
 }
 .parameters-kit__block-element__title {
 	color: #7f5c47;
