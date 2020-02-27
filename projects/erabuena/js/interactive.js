@@ -58,7 +58,7 @@ $(document).ready(function(){
 
 
     // FILTER BUTTON
-    $(".catalog-filter__button").click(function(){
+    $(".catalog-filter__title-block").click(function(){
      $(".catalog-filter__container").toggleClass("filterOpen");
      $(".catalog-filter__title-block").toggleClass("borderRadiusChange");
     });
