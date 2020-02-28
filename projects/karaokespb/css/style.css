@@ -1,0 +1,226 @@
+/*DEFAULT SETTINGS*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+button {
+	cursor: pointer;
+	background: transparent;
+	display: inline-block;
+	border: 0;
+}
+input:focus, button:focus, a:focus {
+	outline: 0;
+	border: 0;
+}
+body {
+	font-size: 18px;
+	min-width: 320px;
+	position: relative;
+	line-height: 1.2em;
+	overflow-x: hidden;
+	color: white;
+	font-family: "Lato";
+}
+p, span, h3 {
+	/*margin-bottom: 0;*/
+}
+h2, h4 {
+}
+a {
+	color: #fff;
+	text-decoration: none;
+	transition: 0.4s;
+}
+a:hover {
+	opacity: 0.6;
+}
+
+/*STYLES*/
+.page {
+	background: #FEC107;
+}
+.container {
+    max-width: 1050px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+/*HEADER SECTION*/
+.menu-content {
+	padding-top: 13px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.menu-content_left {
+	display: flex;
+	align-items: center;
+}
+.logo {
+	width: 123px;
+	height: 70px;
+}
+.menu-content .logo {
+	margin-right: 7px;
+}
+.menu ul {
+	display: flex;
+	list-style: none;
+	font-weight: 900;
+	font-size: 20px;
+	line-height: 24px;
+}
+.menu li {
+    margin-right: 38px;
+}
+.menu li:last-child {
+	margin-right: 0px;
+}
+.number {
+	font-weight: 900;
+	font-size: 24px;
+	text-transform: uppercase;
+}
+/*HEADER SECTION END*/
+
+/*WELCOME SECTION*/
+.welcome {
+	padding-top: 49px;
+}
+.welcome-container {
+	display: flex;
+	justify-content: space-between;
+}
+.welcome__image {
+	width: 539px;
+	height: 457px;
+    margin-top: 75px;
+    margin-left: 36px;
+}
+.welcome__content {
+max-width: 424px;
+}
+.title1 {
+	font-weight: 900;
+	font-size: 48px;
+	line-height: 58px;
+	text-transform: uppercase;
+}
+.welcome__description {
+    margin-top: 21px;
+	font-weight: 900;
+	font-size: 20px;
+	line-height: 24px;
+}
+.welcome__link-icons {
+    margin-right: 65px;
+    margin-top: 210px;
+}
+.link-icons {
+    float: right;
+}
+.link-icons__element {
+	width: 39px;
+	height: 39px;
+	display: inline-block;
+	margin-right: 15px;
+	border-radius: 50px;
+}
+.link-icons__element:last-child {
+	margin-right: 0;
+}
+.link-icons__element__instagram {
+	background: url("../img/instagramIcon.svg") no-repeat 100% 100%/contain;
+}
+.link-icons__element__vk {
+	background: url("../img/vkIcon.svg") no-repeat 100% 100%/contain;
+}
+/*WELCOME SECTION END*/
+
+/*BOOKING SECTION*/
+.booking {
+	display: flex;
+	padding-top: 84px;
+	padding-bottom: 60px;
+}
+.booking-content {
+	max-width: 445px;
+	display: flex;
+	flex-direction: column;
+	margin-right: -70px;
+}
+.title2 {
+	font-weight: 900;
+	font-size: 54px;
+	line-height: 26px;
+}
+.booking-description {
+	font-weight: bold;
+	font-size: 30px;
+	line-height: 38px;
+	margin-top: 81px;
+margin-bottom: 15px;
+}
+.booking-button {
+	font-weight: 900;
+	font-size: 30px;
+	line-height: 36px;
+	border: 5px solid #FFFFFF;
+padding: 5px;
+	color: white;
+max-width: 297px;
+}
+.orange_bg {
+	background: #E8AF08;
+}
+.booking-container {
+    display: flex;
+    justify-content: flex-end;
+}
+.booking-slider {
+    margin-right: 51px;
+}
+.booking-slider__element {
+	max-width: 485px;
+	width: 100%;
+		height: 402px;
+}
+.booking-title {
+    margin-top: 32px;
+}
+/*BOOKING SECTION END*/
+
+/*CATALOG SECTION*/
+.catalog {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.catalog-title {
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+    padding-bottom: 92px;
+}
+.catalog-element {
+    max-width: 148px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.catalog-element__image {
+    width: 128px;
+    height: 106px;
+    margin-bottom: 39px;
+}
+.catalog-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    grid-gap: 70px 0;
+}
+/*CATALOG SECTION END*/
