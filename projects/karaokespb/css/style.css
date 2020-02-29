@@ -42,7 +42,7 @@ a:hover {
 	background: #FEC107;
 }
 .container {
-    max-width: 1050px;
+	max-width: 1050px;
 	width: 100%;
 	margin: 0 auto;
 	padding: 0 10px;
@@ -74,7 +74,7 @@ a:hover {
 	line-height: 24px;
 }
 .menu li {
-    margin-right: 38px;
+	margin-right: 38px;
 }
 .menu li:last-child {
 	margin-right: 0px;
@@ -97,11 +97,11 @@ a:hover {
 .welcome__image {
 	width: 539px;
 	height: 457px;
-    margin-top: 75px;
-    margin-left: 36px;
+	margin-top: 75px;
+	margin-left: 36px;
 }
 .welcome__content {
-max-width: 424px;
+	max-width: 424px;
 }
 .title1 {
 	font-weight: 900;
@@ -110,17 +110,17 @@ max-width: 424px;
 	text-transform: uppercase;
 }
 .welcome__description {
-    margin-top: 21px;
+	margin-top: 21px;
 	font-weight: 900;
 	font-size: 20px;
 	line-height: 24px;
 }
 .welcome__link-icons {
-    margin-right: 65px;
-    margin-top: 210px;
+	margin-right: 65px;
+	margin-top: 210px;
 }
 .link-icons {
-    float: right;
+	float: right;
 }
 .link-icons__element {
 	width: 39px;
@@ -162,65 +162,128 @@ max-width: 424px;
 	font-size: 30px;
 	line-height: 38px;
 	margin-top: 81px;
-margin-bottom: 15px;
+	margin-bottom: 15px;
 }
 .booking-button {
 	font-weight: 900;
 	font-size: 30px;
 	line-height: 36px;
 	border: 5px solid #FFFFFF;
-padding: 5px;
+	padding: 5px;
 	color: white;
-max-width: 297px;
+	max-width: 297px;
 }
 .orange_bg {
 	background: #E8AF08;
 }
 .booking-container {
-    display: flex;
-    justify-content: flex-end;
+	display: flex;
+	justify-content: flex-end;
 }
 .booking-slider {
-    margin-right: 51px;
+	margin-right: 51px;
 }
 .booking-slider__element {
 	max-width: 485px;
 	width: 100%;
-		height: 402px;
+	height: 402px;
 }
 .booking-title {
-    margin-top: 32px;
+	margin-top: 32px;
 }
 /*BOOKING SECTION END*/
 
 /*CATALOG SECTION*/
 .catalog {
-    padding-top: 70px;
-    padding-bottom: 70px;
+	padding-top: 70px;
+	padding-bottom: 70px;
 }
 .catalog-title {
 	display: inline-block;
 	text-align: center;
 	width: 100%;
-    padding-bottom: 92px;
+	padding-bottom: 92px;
 }
 .catalog-element {
-    max-width: 148px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+	max-width: 148px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 .catalog-element__image {
-    width: 128px;
-    height: 106px;
-    margin-bottom: 39px;
+	width: 128px;
+	height: 106px;
+	margin-bottom: 39px;
 }
 .catalog-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-items: center;
-    grid-gap: 70px 0;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	justify-items: center;
+	grid-gap: 70px 0;
 }
 /*CATALOG SECTION END*/
+
+/*CONTACT SECTION*/
+.contact {
+	padding-top: 73px;
+	padding-bottom: 48px;
+}
+.contact-container {
+	display: flex;
+	justify-content: space-between;
+}
+.contact-title {
+	font-weight: bold;
+	font-size: 30px;
+	line-height: 36px;
+	max-width: 379px;
+}
+.contact-content__hashtags-block {
+	position: relative;
+}
+.contact-content__hashtags {
+	padding-top: 34px;
+	width: 511px;
+	height: 183px;
+	max-width: 445px;
+	display: inline-block;
+	font-size: 18px;
+	line-height: 26px;
+	text-transform: uppercase;
+	transform: rotate(-8.68deg);
+}
+.contact-content__hashtags::after {
+	content: ' ';
+	background: url(../img/contactHashtagsBg.svg) no-repeat 100% 100%/contain;
+	width: 500px;
+	height: 100%;
+	position: absolute;
+	top: -40px;
+	left: -50px;
+	transform: rotate(8.32deg);
+	z-index: -1;
+}
+.contact-content__warning {
+	width: 130px;
+	height: 101px;
+	font-size: 36px;
+	line-height: 26px;
+	text-transform: uppercase;
+	transform: rotate(8.35deg);
+	display: inline-block;
+	position: relative;
+}
+.contact-content__warning::after {
+	content: ' ';
+	position: absolute;
+	background: url("../img/contactWarningBg.svg") no-repeat 100% 100%/contain;
+	width: 118px;
+	height: 80px;
+	left: -35px;
+	top: -20px;
+	z-index: -1;
+	transform: rotate(6.5deg);
+}
+/*CONTACT SECTION END*/

@@ -404,6 +404,9 @@ $(document).ready(function(){
     jQuery(document).ready(function($) {
      $('.item-kit__block-content').matchHeight();
     });
+    jQuery(document).ready(function($) {
+     $('.order-page__payment-method__block').matchHeight();
+    });
 
     $(function($){
   $(document).mouseup(function (e){ // событие клика по веб-документу
