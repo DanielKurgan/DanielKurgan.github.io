@@ -3,6 +3,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	z-index: 5;
 }
 button {
 	cursor: pointer;
@@ -47,6 +48,48 @@ a:hover {
 	margin: 0 auto;
 	padding: 0 10px;
 }
+.magic-margin-left {
+	margin-left: -52px;
+	max-width: 1050px;
+}
+
+/*TOP SCREEN*/
+.top-screen {
+	position: relative;
+}
+.section-decor {
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+.section-decor,
+.section-decor * {
+	position: absolute;
+	z-index: 3;
+}
+.welcomeBgLeft {
+	left: 0;
+	top: 0;
+	height: 100%;
+}
+.welcomeBgRight {
+	right: 0;
+	top: 0;
+	height: 100%;
+}
+.welcomeBgCenter {
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}	
+.welcomeDecorCircleBig {
+	bottom: 0;
+	left: 115px;
+	z-index: 2;
+}
+/*TOP SCREEN END*/
 
 /*HEADER SECTION*/
 .menu-content {
@@ -142,15 +185,27 @@ a:hover {
 
 /*BOOKING SECTION*/
 .booking {
+	position: relative;
 	display: flex;
 	padding-top: 84px;
 	padding-bottom: 60px;
+}
+.bookingBgLeft {
+    bottom: 0;
+    left: 0;
+}
+.bookingCircleBig {
+	width: 327px;
+	height: 327px;
+	bottom: -111px;
+	left: 0;
+	z-index: 2;
 }
 .booking__content {
 	max-width: 445px;
 	display: flex;
 	flex-direction: column;
-	margin-right: -70px;
+	margin-right: -50px;
 }
 .title2 {
 	font-weight: 900;
@@ -165,7 +220,7 @@ a:hover {
 	margin-bottom: 15px;
 }
 .booking__button {
-	font-weight: 900;
+	font-weight: 700;
 	font-size: 30px;
 	line-height: 36px;
 	border: 5px solid #FFFFFF;
@@ -195,6 +250,7 @@ a:hover {
 
 /*CATALOG SECTION*/
 .catalog {
+	position: relative;
 	padding-top: 70px;
 	padding-bottom: 70px;
 }
@@ -227,6 +283,7 @@ a:hover {
 
 /*CONTACT SECTION*/
 .contact {
+	position: relative;
 	padding-top: 73px;
 	padding-bottom: 48px;
 }
@@ -239,6 +296,7 @@ a:hover {
 	font-size: 30px;
 	line-height: 36px;
 	max-width: 379px;
+	margin-left: 90px;
 }
 .contact__content__hashtags-block {
 	position: relative;
@@ -247,7 +305,7 @@ a:hover {
 	padding-top: 34px;
 	width: 511px;
 	height: 183px;
-	max-width: 445px;
+	max-width: 455px;
 	display: inline-block;
 	font-size: 18px;
 	line-height: 26px;
@@ -275,7 +333,7 @@ a:hover {
 	display: inline-block;
 	position: relative;
 	margin-top: -30px;
-	margin-right: -47px;
+	margin-right: -25px;
 	font-family: 'Montserrat';
 }
 .contact__content__warning::after {
@@ -330,6 +388,9 @@ a:hover {
 /*CONTACT SECTION END*/
 
 /*MOVIE SECTION*/
+.movie {
+	position: relative;
+}
 .movie__container {
 	display: flex;
 	flex-direction: column;
@@ -348,6 +409,9 @@ a:hover {
 /*MOVIE SECTION END*/
 
 /*RESERVATION SECTION*/
+.reservation {
+	position: relative;
+}
 .reservation__container {
 	display: flex;
 	justify-content: space-between;
@@ -364,6 +428,9 @@ a:hover {
 	margin-bottom: 40px;
 	margin-top: 100px;
 	display: inline-block;
+}
+.reservation__content {
+	margin-right: 50px;
 }
 .reservation__form-block {
 	display: flex;
