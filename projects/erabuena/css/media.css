@@ -183,12 +183,37 @@
         right: -50px;
     }
 }
+@media (max-width: 1100px){
+    .order-page__main-data__top {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .order-page__main-data__buttons {
+        padding-top: 10px;
+    }
+}
 @media (max-width: 940px){
     .catalog-sort .catalog-pagination {
         margin-top: 10px;
     }
 }
 @media (max-width: 992px) {
+    .order-page__payment-method label {
+        width: 50%;
+    }
+    .order-page__payment-method__block {
+        max-width: 100%;
+    }
+    .order-page__container {
+        flex-direction: column;
+    }
+    .order-sidebar {
+        order: 1;
+        max-width: unset;
+    }
+    .order-page {
+        order: 2;
+    }
     .result-page .catalog-sort__container {
         border-bottom: 0;
     }
@@ -422,6 +447,16 @@
 }
 
 @media (max-width: 768px) {
+    .order-page__payment-method {
+    flex-direction: column;
+}
+.order-page__payment-method label {
+    width: 100%;
+}
+.order-page__payment-method__block {
+    margin-right: 0;
+    margin-bottom: 10px;
+}
     .catalog-sort .select:after {
         right: 7px;
     }
@@ -537,7 +572,40 @@
     }
 }
 
+@media (max-width: 850px){
+
+    .order-page__basket__content__item-name {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .order-page__basket__content__item-span {
+        font-size: 14px;
+    }
+    .order-page__basket__content__tabs-name {
+        font-size: 12px;
+    }
+    .order-page__result-price {
+        font-size: 14px;
+    }
+    .order-page__result-title {
+        font-size: 14px;
+    }
+    .order-page__result-price {
+        width: 130px;
+    }
+
+}
+
 @media (max-width: 700px){
+
+    /*ORDER MOBILE*/
+    .order-page__basket__content__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    /*ORDER MOBILE END*/
 
     .item-kit__block-buttons label {
         display: flex;
@@ -854,6 +922,23 @@
     }
 }
 @media (max-width: 430px){
+    .order-page__main-data__buttons {
+        width: 100%;
+        flex-direction: column;
+        display: flex;
+    }
+    .order-page__main-data__text {
+        display: flex;
+        flex-direction: column;
+    }
+    .order-page__title1 {
+        line-height: 30px;
+        font-size: 26px;
+    }
+    .order-page__main-data__buttons .white-btn:first-child {
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
     body .catalog-items__item-content__buttons__basket::before {
         right: 6px !important;
     }
@@ -1131,6 +1216,9 @@
 
 /*CART MEDIA*/
 @media (max-width: 1200px){
+    .order-sidebar {
+        margin-left: 10px;
+    }
     .kit-list5 {
         display: none;
     }
@@ -1279,6 +1367,12 @@
 }
 
 @media (max-width: 992px){
+    .order-page__data__element {
+        padding: 5px 0;
+    }
+    .order-page__info .order-page__title2 {
+        margin-bottom: 0px;
+    }
     .kit-list4 {
         display: none;
     }
@@ -1999,9 +2093,9 @@
             left: 0px !important;
         }
         .item-feedback__footer .catalog-pagination {
-         margin-top: 0; 
-     }
-     .item-page__sibebar-block__buttons-basket {
+           margin-top: 0; 
+       }
+       .item-page__sibebar-block__buttons-basket {
         width: 120px;
         height: 40px;
         font-size: 14px;
@@ -2047,14 +2141,17 @@
     body .result-page .catalog-items__item-content__buttons .catalog-items__item-content__buttons__basket {
         width: 120px !important;
     }
-body .result-page .catalog-items__item-content__buttons__basket {
-    padding-right: 9px !important;
-}
-body .result-page .catalog-items__item-content__buttons .catalog-items__item-content__buttons__basket::before {
-    right: 3px !important;
-}
+    body .result-page .catalog-items__item-content__buttons__basket {
+        padding-right: 9px !important;
+    }
+    body .result-page .catalog-items__item-content__buttons .catalog-items__item-content__buttons__basket::before {
+        right: 3px !important;
+    }
 }
 @media (max-width: 768px){
+    .order-page hr {
+        margin: 10px 0;
+    }
     .kit-list3 {
         display: none;
     }
