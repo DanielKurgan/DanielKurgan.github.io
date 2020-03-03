@@ -191,8 +191,8 @@ a:hover {
 	padding-bottom: 60px;
 }
 .bookingBgLeft {
-    bottom: 0;
-    left: 0;
+	bottom: 0;
+	left: 0;
 }
 .bookingCircleBig {
 	width: 327px;
@@ -254,6 +254,19 @@ a:hover {
 	padding-top: 70px;
 	padding-bottom: 70px;
 }
+.catalogBgCircleBig {
+	bottom: 0;
+	left: 0;
+}
+.catalogDecorCircleBig {
+	right: -51px;
+	top: -16px;
+}
+.catalogBgCenter {
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
 .catalog__title {
 	display: inline-block;
 	text-align: center;
@@ -286,6 +299,10 @@ a:hover {
 	position: relative;
 	padding-top: 73px;
 	padding-bottom: 48px;
+}
+.contactBgLeft {
+	bottom: 0;
+	left: 0;
 }
 .contact__container {
 	display: flex;
@@ -391,16 +408,38 @@ a:hover {
 .movie {
 	position: relative;
 }
+.videoBgLeft {
+	left: 0;
+	bottom: 0;
+}
+.videoBgRight {
+	bottom: 0;
+	right: 0;
+}
 .movie__container {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
 .movie__video {
-	max-width: 760px;
-	min-height: 290px;
 	width: 100%;
+	min-height: 290px;
 	margin-bottom: 31px;
+}
+.movie__video-container {
+	position: relative;
+	max-width: 760px;
+	width: 100%;
+}
+.movie__video-container::after {
+	content: ' ';
+	position: absolute;
+	background: url("../img/videoDecorBorder.png") no-repeat 100% 100%/contain;
+	width: 409px;
+	height: 409px;
+	top: -78px;
+	left: -94px;
+	z-index: -1;
 }
 .movie__title {
 	margin-top: 28px;
@@ -411,6 +450,13 @@ a:hover {
 /*RESERVATION SECTION*/
 .reservation {
 	position: relative;
+}
+.reservationDecorCircleBig {
+	top: -114px;
+	right: -63px;
+}
+.reservation .section-decor {
+	overflow: visible;
 }
 .reservation__container {
 	display: flex;
