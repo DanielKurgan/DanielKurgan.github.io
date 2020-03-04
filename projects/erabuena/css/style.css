@@ -3505,6 +3505,9 @@ body .category-sort__search-result__category * {
 	justify-content: space-between;
 	width: 100%;
 }
+.parameters-kit__block-element__list-container .slick-track {
+    display: flex;
+}
 /*.parameters-kit__block-element__list-container {
 	width: 100%;
 	display: flex;
@@ -3512,7 +3515,7 @@ body .category-sort__search-result__category * {
 	}*/
 	.parameters-kit__block-element__list {
 		flex-direction: column;
-		display: flex;
+display: flex !important;
 		justify-content: space-around;
 	}
 	.parameters-kit__block-element__list-element {

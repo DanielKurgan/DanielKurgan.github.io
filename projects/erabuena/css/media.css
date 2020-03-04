@@ -2183,9 +2183,6 @@
     }
 }
 @media (max-width: 768px){
-    .order-page hr {
-        margin: 10px 0;
-    }
     .kit-list3 {
         display: none;
     }

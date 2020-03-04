@@ -540,3 +540,5 @@ $(".parameters-kit__block-element__list-container").slick({
       $(this).find(".catalog-items__item-delete").toggleClass("opacityVisible");
      });
     });
+
+      $('').trigger('click');
