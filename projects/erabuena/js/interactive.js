@@ -485,7 +485,7 @@ $(document).ready(function(){
     });
 
 $(".parameters-kit__block-element__list-container").slick({
-     variableWidth: true,
+     variableWidth: false,
      infinite: false,
      slidesToShow: 5,
      slidesToScroll: 1,

@@ -2468,7 +2468,7 @@
         margin-bottom: 0;
     }
     .catalog-sort__main span {
-        padding-left: 15px;
+        /*padding-left: 15px;*/
     }
     .catalog-sort__container {
         align-items: center;
@@ -2770,6 +2770,12 @@
 }
 
 @media (max-width: 350px){
+    .slider-mobile__arrows__left {
+        width: 51%;
+    }
+    .slider-mobile__arrows__right {
+        width: 51%;
+    }
     .comparison-slider .catalog-items__item {
         max-width: 130px;
     }

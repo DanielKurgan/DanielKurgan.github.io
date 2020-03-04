@@ -3206,7 +3206,7 @@ input[type=checkbox], input[type=radio] {
 .big-teaser .placeholder {
 	color: #898989 !important;
 	font-size: 13px;
-	line-height: 20px;
+	line-height: normal;
 }
 .big-teaser .item-page__sibebar-block__buttons-basket::before {
 	background: url(../img/sd-basket-icon-orange.svg) no-repeat 100% 100%/contain;
@@ -3506,7 +3506,7 @@ body .category-sort__search-result__category * {
 	width: 100%;
 }
 .parameters-kit__block-element__list-container .slick-track {
-    display: flex;
+	/*display: flex;*/
 }
 /*.parameters-kit__block-element__list-container {
 	width: 100%;
@@ -3514,8 +3514,9 @@ body .category-sort__search-result__category * {
 	justify-content: space-around;
 	}*/
 	.parameters-kit__block-element__list {
+		max-width: 200px;
 		flex-direction: column;
-display: flex !important;
+		display: flex !important;
 		justify-content: space-around;
 	}
 	.parameters-kit__block-element__list-element {
@@ -3596,20 +3597,18 @@ display: flex !important;
 		background: white;
 		border-radius: 0 0 0px 10px;
 		display: flex;
+		align-items: center;
 		justify-content: center;
-		padding-left: 20px;
+		
 	}
 	.slider-mobile__arrows__left:before {
 		content: ' ';
-		position: absolute;
-		left: 50%;
-		top: 50%;
 		background: url("../img/sidebar-arrow.svg") no-repeat 100% 100%/contain;
 		width: 30px;
 		height: 15px;
 		width: 27px;
 		height: 13px;
-		transform: rotate(90deg) translate(-9px, 70%);
+		transform: rotate(90deg) translateX(-2px);
 	}
 	.slider-mobile__arrows__right {
 		background: white;
@@ -3620,19 +3619,16 @@ display: flex !important;
 		position: relative;
 		display: flex;
 		justify-content: center;
-		padding-left: 20px;
+		align-items: center;
 	}
 	.slider-mobile__arrows__right:before {
 		content: ' ';
-		position: absolute;
-		left: 50%;
-		top: 50%;
 		background: url("../img/sidebar-arrow.svg") no-repeat 100% 100%/contain;
 		width: 30px;
 		height: 15px;
 		width: 27px;
 		height: 13px;
-		transform: rotate(-90deg) translate(3px, -20%);
+transform: rotate(-90deg) translateX(-4px);
 	}
 	.catalog-items__item-container {
 
