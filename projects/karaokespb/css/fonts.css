@@ -4,5 +4,18 @@ src: url('../fonts/Lato/Lato-Bold.eot');
 src: url('../fonts/Lato/Lato-Bold.eot?#iefix') format('embedded-opentype'),
 url('../fonts/Lato/Lato-Bold.woff') format('woff'),
 url('../fonts/Lato/Lato-Bold.ttf') format('truetype');
+font-weight: 900;
+font-style: normal;
+}
+@font-face {
+font-family: 'Lato';
+src: url('../fonts/Lato/Lato-Regular.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'Lato';
+src: url('../fonts/Lato/Lato-Medium.ttf') format('truetype');
+font-weight: 700;
 font-style: normal;
 }
