@@ -3988,6 +3988,7 @@ body .category-sort__search-result__category * {
 		text-align: right;
 	}
 	.order-detail .container {
+		overflow: hidden;
 		padding: 0 10px !important;
 	}
 	.order-sidebar__title {
