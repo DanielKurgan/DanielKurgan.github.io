@@ -530,9 +530,9 @@
 		max-width: 460px;
 		width: 100%;
 	}
-.contact__content__hashtags {
-    width: 299px;
-}
+	.contact__content__hashtags {
+		width: 299px;
+	}
 	.contact__content__social-networks {
 		max-width: 218px;
 		width: 100%;
@@ -543,44 +543,47 @@
 		height: 143px;
 	}
 	.contact__content__hashtags::after {
-	    top: -40px;
-	    left: -10px;
+		top: -40px;
+		left: -10px;
 	}
-.contact__content__social-networks__vk {
-    width: 43px;
-    height: 40px;
-}
-.contact__content__social-networks__instagram {
-    width: 32px;
-    height: 42px;
-    }
-.contact__content__social-networks::after {
-    max-width: 198px;
-    width: 100%;
-    height: 70px;
-    top: 10px;
-    left: -10px;
-}
-.contact__content__warning::after {
-    width: 88px;
-    height: 80px;
-    left: -20px;
-    top: -30px;
-}
 	.contact__content__social-networks__vk {
-	    top: 26px;
-	    left: 50px;
+		width: 43px;
+		height: 40px;
 	}
 	.contact__content__social-networks__instagram {
-	    top: 10px;
-	    left: 108px;
+		width: 32px;
+		height: 42px;
+	}
+	.contact__content__social-networks::after {
+		max-width: 198px;
+		width: 100%;
+		height: 70px;
+		top: 10px;
+		left: -10px;
+	}
+	.contact__content__warning::after {
+		width: 88px;
+		height: 80px;
+		left: -20px;
+		top: -30px;
+	}
+	.contact__content__social-networks__vk {
+		top: 26px;
+		left: 50px;
+	}
+	.contact__content__social-networks__instagram {
+		top: 10px;
+		left: 108px;
 	}
 	.contact__content__warning {
-	    font-size: 29px;
-	    line-height: 22px;
+		font-size: 29px;
+		line-height: 22px;
 	}
 	.contact__content__group {
-	    height: 0;
-	    margin-bottom: 30px;
+		height: 0;
+		margin-bottom: 30px;
+	}
+	.reservation__form-block {
+		width: 290px;
 	}
 }
