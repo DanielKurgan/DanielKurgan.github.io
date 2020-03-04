@@ -1,21 +1,586 @@
-/*Экстрабольшие девайсы (большие десктопы)*/
-
-/*Большие девайсы (большие десктопы, < 1200px)*/
-@media (max-width: 1200px) {
-	
+@media (max-width: 1350px){
+	.welcomeBgRight {
+		width: 263px;
+	}
+	.welcomeBgLeft {
+		width: 293px;
+	}
+	.welcomeBgCenter {
+		width: 470px;
+		height: 449px;
+	}
+	.decorCircleBig {
+		width: 297px;
+		height: 297px;
+	}
+	.bookingBgLeft {
+		width: 143px;
+	}
+	.bookingCircleBig {
+		left: -30px;
+	}
+	.contactBgLeft {
+		width: 297px;
+	}
+	.videoBgRight {
+		width: 218px;
+	}
+	.movie__video-container::after {
+		width: 389px;
+		height: 389px;
+		top: -58px;
+		left: -94px;
+	}
+	.welcomeCrossSmall {
+		top: 293px;
+		right: 307px;
+	}
 }
 
-/*Средние девайсы («таблетки», < 992px) */
-@media (max-width: 992px) {
-	
+@media (max-width: 1200px){
+	.welcome__image {
+		width: 499px;
+		height: 417px;
+		margin-top: 35px;
+		margin-left: 36px;
+	}
+	.welcomeBgLeft {
+		width: 263px;
+	}
+	.welcomeBgRight {
+		width: 233px;
+	}
+	.welcomeBgCenter {
+		width: 380px;
+		height: 419px;
+	}
+	.welcomeDecorCircleBigLeft {
+		display: none;
+	}
+	.decorCircleBig {
+		width: 267px;
+		height: 267px;
+	}
+	.welcome__container {
+		align-items: flex-end;
+	}
+	.welcomeDecorSquareGroupSmallWhite {
+		display: none;
+	}
+	.welcomeCrossSmall {
+		top: 293px;
+		right: 267px;
+	}
+	.welcomeDecorCircleSmall {
+		top: 348px;
+		right: 160px;
+	}
+	.welcomeDecorSquareGroupSmall {
+		left: 132px;
+		top: 147px;
+	}
+	.welcomeDecorArrowsGroup {
+		left: 125px;
+		top: 270px;
+	}
+	.welcome__container {
+		justify-content: center;
+	}
+	.welcome__link-icons {
+		margin-top: 170px;
+		margin-bottom: 50px;
+		margin-right: 150px;
+	}
+	.magic-margin-left {
+		margin-left: 0;
+	}
+	.booking__content {
+		margin-right: 0px;
+	}
+	.bookingDecorCrossSmall {
+		top: 67px;
+		right: 88px;
+	}
+	.bookingDecorCircleSmall {
+		top: 148px;
+		right: 155px;
+	}
+	.bookingDecorSquareHalfGroupSmallWhiteH {
+		right: 452px;
+	}
+	.contactBgLeft {
+		width: 257px;
+	}
+	.videoDecorSquareGroupSmall {
+		top: 15px;
+		right: 60px;
+	}
+	.videoBgRight {
+		width: 168px;
+	}
+	.videoBgLeft {
+		display: none;
+	}
+	.videoBgRight {
+		display: none;
+	}
+	.reservationDecorCircleBig {
+		top: -84px;
+		right: -103px;
+	}
+	.reservation__img {
+		width: 314px;
+		height: 523px;
+	}
 }
 
-/*Малые девайсы («ландшафтные», < 768px)
-*/@media (max-width: 768px) {
-	
+@media (max-width: 1024px){
+	.welcome__container {
+		flex-direction: column;
+		align-items: center;
+	}
+	.welcome__image {
+		order: 2;
+	}
+	.welcome__link-icons {
+		margin-top: 10px;
+		margin-bottom: 0px;
+		margin-right: 0px;
+		float: left;
+	}
+	.welcomeBgCenter {
+		display: none;
+	}
+	.welcome__image {
+		width: 429px;
+		height: 357px;
+		margin-top: 10px;
+		margin-left: 0;
+	}
+	.welcomeDecorCircleBigRight {
+		top: 70px;
+		right: 20px;
+	}
+	.welcomeDecorCircleSmall {
+		top: 378px;
+		right: 160px;
+	}
+	.welcomeCrossSmall {
+		top: 333px;
+		right: 267px;
+	}
+	.welcomeDecorArrowsGroup {
+		left: 125px;
+		top: 410px;
+	}
+	.welcomeDecorSquareGroupSmall {
+		left: 132px;
+		top: 187px;
+	}
+	.booking__container.magic-margin-left {
+		flex-direction: column;
+		align-items: center;
+	}
+	.booking__slider {
+		order: 2;
+		margin-right: 0;
+	}
+	.booking__content {
+		margin-bottom: 30px;
+	}
+	.booking__description {
+		margin-top: 41px;
+		font-size: 23px;
+		line-height: 28px;
+	}
+	.booking {
+		padding-top: 0px;
+		padding-bottom: 30px;
+	}
+	.bookingDecorSquareHalfGroupSmallWhiteH {
+		left: 20px;
+		right: auto;
+	}
+	.booking__title {
+		margin-top: 30px;
+	}
+	.booking__button {
+		font-size: 26px;
+		line-height: 29px;
+	}
+	.catalogBgCenter {
+		display: none;
+	}
+	.catalogDecorSquareGroupSmall {
+		top: 85px;
+	}
+	.catalogDecorCircleBig {
+		right: -141px;
+		top: -86px;
+	}
+	.catalogDecorSquareHalfGroupSmallWhiteH {
+		right: 90px;
+	}
+	.catalogBgCircleBig {
+		bottom: -100px;
+		left: -50px;
+	}
+	.contact__title {
+		margin-left: 0;
+	}
+	.contact {
+		padding-top: 33px;
+		padding-bottom: 30px;
+	}
+	.contact__content {
+		margin-left: 100px;
+	}
+	.contactDecorCrossSmall {
+		top: 89px;
+		left: 100px;
+	}
+	.contactDecorCircleSmall {
+		top: 270px;
+		left: auto;
+		right: 50px;
+	}
+	.contactDecorSquareHalfGroupSmallWhiteH {
+		top: 15px;
+		left: 740px;
+	}
+	.contact__container.magic-margin-left {
+		flex-direction: column;
+		align-items: center;
+	}
+	.movie__video-container::after {
+		display: none;
+	}
+	.videoDecorSquareGroupSmall {
+		top: 10px;
+		right: 10px;
+	}
+	.reservationDecorCircleBig {
+		top: -124px;
+		right: -183px;
+	}
+	.reservation__img {
+		width: 284px;
+		height: 493px;
+	}
+	.reservation__form-block {
+		width: 310px;
+	}
+	.reservation__title {
+		font-size: 24px;
+		margin-bottom: 18px;
+	}
 }
 
-/*Экстрамалые девайсы («телефоны», < 576px)
-*/@media (max-width: 576px) {
+@media (max-width: 800px){
+	.menu-content__left {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		width: 100%;
+	}
+	.menu-content {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.header__number {
+		margin-top: 14px;
+		text-align: center;
+		width: 100%;
+	}
+	.welcomeBgLeft {
+		display: none;
+	}
+	.welcomeBgRight {
+		display: none;
+	}
+	.welcomeDecorCircleBigRight {
+		right: -140px;
+	}
+	.welcomeDecorSquareGroupSmall {
+		left: 25px;
+		top: 197px;
+	}
+	.welcomeDecorArrowsGroup {
+		left: 25px;
+	}
+	.welcomeDecorCircleSmall {
+		top: 488px;
+		right: 40px;
+	}
+	.welcomeCrossSmall {
+		top: 363px;
+		right: 157px;
+	}
+	.bookingDecorSquareHalfGroupSmallWhiteH {
+		left: -20px;
+		right: auto;
+	}
+	.bookingDecorCircleSmall {
+		top: 198px;
+		right: 35px;
+	}
+	.bookingDecorCrossSmall {
+		top: 47px;
+		right: 118px;
+	}
+	.bookingBgLeft {
+		display: none;
+	}
+	.bookingCircleBig {
+		left: -150px;
+		bottom: 40px;
+	}
+	.catalogDecorCircleBig {
+		top: -126px;
+	}
+	.catalogDecorSquareGroupSmall {
+		left: 92px;
+	}
+	.catalogDecorCircleSmall {
+		top: 380px;
+		right: 132px;
+	}
+	.catalogDecorCrossSmall {
+		right: 247px;
+	}
+	.contactDecorCrossSmall {
+		top: 19px;
+		left: 20px;
+	}
+	.contactBgLeft {
+		display: none;
+	}
+	.movie__title {
+		margin-top: 24px;
+	}
+	.reservation__container {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	.reservation__title {
+		margin-top: 30px;
+	}
+	.reservation__img {
+		width: 244px;
+		height: 413px;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+	}
+	.reservation__content {
+		margin-right: 0;
+	}
+}
 
+@media (max-width: 600px){
+	.welcomeDecorSquareGroupSmall {
+		left: 15px;
+		top: 137px;
+		width: 31px;
+	}
+	.bookingCircleBig {
+		top: 60px;
+	}
+	.decorCircleBig {
+		width: 217px;
+		height: 217px;
+	}
+	.welcome__content {
+		text-align: center;
+	}
+	.welcome__link-icons {
+		text-align: center;
+		width: 100%;
+	}
+	.welcomeDecorArrowsGroup {
+		left: 15px;
+		top: 440px;
+	}
+	.welcome__image {
+		width: 100%;
+		height: auto;
+	}
+	.booking {
+		padding-top: 30px;
+	}
+	.title2 {
+		font-size: 44px;
+		line-height: 16px;
+	}
+	.booking__description {
+		margin-top: 16px;
+		font-size: 19px;
+		line-height: 25px;
+	}
+	.bookingDecorSquareHalfGroupSmallWhiteH.decorSquareHalfGroupSmallWhiteH {
+		display: none;
+	}
+	.catalogDecorSquareGroupSmall {
+		left: 22px;
+	}
+	.catalogDecorSquareHalfGroupSmallWhiteH {
+		display: none;
+	}
+	.catalogDecorCircleSmall {
+		right: 82px;
+	}
+	.contactDecorCrossSmall {
+		left: 10px;
+	}
+	.contact__content__hashtags::after {
+		width: 460px;
+	}
+	.contact__content__social-networks {
+		margin-top: -50px;
+		margin-left: 0px;
+	}
+	.contact__content__warning {
+		margin-top: -60px;
+		margin-right: 65px;
+	}
+	.contactDecorCircleSmall {
+		right: 30px;
+		top: auto;
+		bottom: 30px;
+	}
+	.reservationDecorCircleBig.decorCircleBig {
+		right: -150px;
+	}
+}
+
+@media (max-width: 450px){
+	.menu li {
+		margin-right: 18px;
+	}
+	.menu ul {
+		font-size: 16px;
+		line-height: 18px;
+	}
+	.number {
+		font-size: 19px;
+	}
+	.title1 {
+		font-size: 38px;
+		line-height: 38px;
+	}
+	.welcome__description {
+		margin-top: 21px;
+		font-size: 18px;
+		line-height: 24px;
+	}
+	.decorCircleBig {
+		width: 187px;
+		height: 187px;
+	}
+	.welcomeCrossSmall {
+		top: 323px;
+		right: 37px;
+	}
+	.welcomeDecorSquareGroupSmall {
+		left: 10px;
+		top: 10px;
+		width: 25px;
+	}
+	.welcomeDecorCircleSmall {
+		top: 438px;
+		right: 20px;
+	}
+	.bookingCircleBig {
+		top: 100px;
+		left: -110px;
+	}
+	.catalogDecorCircleBig {
+		top: -96px;
+		right: -111px;
+	}
+	.title2 {
+		font-size: 34px;
+	}
+	.catalog {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+	.catalog__content {
+		grid-template-columns: 1fr 1fr;
+	}
+	.catalog__element {
+		max-width: 145px;
+	}
+	.catalog__element__text {
+		font-size: 16px;
+	}
+	.catalogDecorSquareGroupSmall {
+		top: 100px;
+	}
+	.contact__title {
+		font-size: 26px;
+		line-height: 29px;
+	}
+	.contact__content {
+		margin-left: 0;
+	}
+	.contact__content__hashtags::after {
+		max-width: 460px;
+		width: 100%;
+	}
+.contact__content__hashtags {
+    width: 299px;
+}
+	.contact__content__social-networks {
+		max-width: 218px;
+		width: 100%;
+	}
+	.contact__content__hashtags {
+		font-size: 14px;
+		line-height: 20px;
+		height: 143px;
+	}
+	.contact__content__hashtags::after {
+	    top: -40px;
+	    left: -10px;
+	}
+.contact__content__social-networks__vk {
+    width: 43px;
+    height: 40px;
+}
+.contact__content__social-networks__instagram {
+    width: 32px;
+    height: 42px;
+    }
+.contact__content__social-networks::after {
+    max-width: 198px;
+    width: 100%;
+    height: 70px;
+    top: 10px;
+    left: -10px;
+}
+.contact__content__warning::after {
+    width: 88px;
+    height: 80px;
+    left: -20px;
+    top: -30px;
+}
+	.contact__content__social-networks__vk {
+	    top: 26px;
+	    left: 50px;
+	}
+	.contact__content__social-networks__instagram {
+	    top: 10px;
+	    left: 108px;
+	}
+	.contact__content__warning {
+	    font-size: 29px;
+	    line-height: 22px;
+	}
+	.contact__content__group {
+	    height: 0;
+	    margin-bottom: 30px;
+	}
 }

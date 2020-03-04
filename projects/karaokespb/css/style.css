@@ -41,6 +41,7 @@ a:hover {
 /*STYLES*/
 .page {
 	background: #FEC107;
+	overflow: hidden;
 }
 .container {
 	max-width: 1050px;
@@ -52,6 +53,13 @@ a:hover {
 	margin-left: -52px;
 	max-width: 1050px;
 }
+
+/*DECOR COMMON*/
+.decorCircleBig {
+	width: 337px;
+    height: 337px;
+}
+/*DECOR COMMON END*/
 
 /*TOP SCREEN*/
 .top-screen {
@@ -73,21 +81,54 @@ a:hover {
 	left: 0;
 	top: 0;
 	height: 100%;
+	width: 363px;
 }
 .welcomeBgRight {
 	right: 0;
 	top: 0;
 	height: 100%;
+	width: 333px;
 }
 .welcomeBgCenter {
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
+	width: 520px;
+	height: 519px;
 }	
-.welcomeDecorCircleBig {
+.welcomeDecorCircleBigLeft {
 	bottom: 0;
 	left: 115px;
 	z-index: 2;
+}
+.welcomeDecorCircleBigRight {
+	top: 20px;
+	right: 0;
+	z-index: 2;
+}
+.welcomeCrossSmall {
+	top: 293px;
+    right: 357px;
+}
+.welcomeDecorCircleSmall {
+	top: 348px;
+	right: 210px;
+}
+.welcomeDecorSquareGroupSmall {
+	left: 182px;
+	top: 167px;
+	z-index: 2;
+}
+.welcomeDecorArrowsGroup {
+	left: 175px;
+	top: 330px;
+	z-index: 2;
+}
+.welcomeDecorSquareGroupSmallWhite {
+	top: 33px;
+	right: 126px;
+	width: 74px;
+    height: 90px;
 }
 /*TOP SCREEN END*/
 
@@ -184,6 +225,21 @@ a:hover {
 /*WELCOME SECTION END*/
 
 /*BOOKING SECTION*/
+
+/*BOOKING DECOR*/
+.bookingDecorCrossSmall {
+	top: 67px;
+	right: 168px;
+}
+.bookingDecorCircleSmall {
+	top: 148px;
+	right: 225px;
+}
+.bookingDecorSquareHalfGroupSmallWhiteH {
+	top: 34px;
+	right: 602px;
+}
+/*BOOKING DECOR END*/
 .booking {
 	position: relative;
 	display: flex;
@@ -241,7 +297,13 @@ a:hover {
 .booking__slider__element {
 	max-width: 485px;
 	width: 100%;
-	height: 402px;
+}
+.booking__title {
+    margin-top: 10px;
+}
+.booking__slider__element__image {
+    width: 100%;
+    height: auto;
 }
 .booking__title {
 	margin-top: 32px;
@@ -266,6 +328,24 @@ a:hover {
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
+	width: 520px;
+	height: 518px;
+}
+.catalogDecorSquareGroupSmall {
+	top: 185px;
+	left: 182px;
+}
+.catalogDecorCrossSmall {
+	top: 311px;
+	right: 357px;
+}
+.catalogDecorCircleSmall {
+	top: 360px;
+	right: 212px;
+}
+.catalogDecorSquareHalfGroupSmallWhiteH {
+	top: 5px;
+	right: 100px;
 }
 .catalog__title {
 	display: inline-block;
@@ -303,6 +383,18 @@ a:hover {
 .contactBgLeft {
 	bottom: 0;
 	left: 0;
+}
+.contactDecorCrossSmall {
+	top: 189px;
+	left: 400px;
+}
+.contactDecorCircleSmall {
+	top: 270px;
+	left: 345px;
+}
+.contactDecorSquareHalfGroupSmallWhiteH {
+	top: 35px;
+	left: 760px;
 }
 .contact__container {
 	display: flex;
@@ -415,6 +507,10 @@ a:hover {
 .videoBgRight {
 	bottom: 0;
 	right: 0;
+}
+.videoDecorSquareGroupSmall {
+	top: 15px;
+	right: 190px;
 }
 .movie__container {
 	display: flex;
