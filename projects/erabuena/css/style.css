@@ -3759,6 +3759,7 @@ body .category-sort__search-result__category * {
 
 	/*PRIVATE PAGE*/
 	.order-page {
+		margin-bottom: 30px;
 		/*max-width: 880px;*/
 		width: 100%;
 		background: white;
@@ -4084,11 +4085,14 @@ body .category-sort__search-result__category * {
 	}
 	.order-page__basket__content__item {
 		display: grid;
-		grid-template-columns: 3.7fr 1.5fr 1fr 1fr 1.5fr;
+		grid-template-columns: 3.7fr 5fr;
 		padding: 20px 0;
 		border-bottom: 2px solid #fce7da;
 	}
-
+	.order-page__basket__content__item-group-content {
+		grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
+		display: grid;
+	}
 	.order-page__basket__content__item-image {
 		width: 43px;
 		height: 60px;
@@ -4113,5 +4117,8 @@ body .category-sort__search-result__category * {
 		font-family: "ProximaNova-Semibold";
 		font-size: 16px;
 		line-height: 20px;
+	}
+	.mobile__order-group-name {
+		display: none;
 	}
 /*PRIVATE PAGE END*/
