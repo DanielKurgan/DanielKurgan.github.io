@@ -4107,7 +4107,7 @@ body .category-sort__search-result__category * {
 	}
 	.order-page__basket__content__item-name {
 		color: #7f5c47;
-		font-size: 16px;
+		font-size: 15px;
 		line-height: 20px;
 		max-width: 219px;
 		display: inline-block;
@@ -4115,7 +4115,7 @@ body .category-sort__search-result__category * {
 	.order-page__basket__content__item-span {
 		color: #7f5c47;
 		font-family: "ProximaNova-Semibold";
-		font-size: 16px;
+		font-size: 15px;
 		line-height: 20px;
 	}
 	.mobile__order-group-name {
