@@ -1,4 +1,7 @@
 @media (max-width: 1200px) {
+    .child-name::after {
+        top: 3px;
+    }
     .catalog-sort .catalog-pagination {
         margin-top: 15px;
     }
@@ -931,6 +934,9 @@
     }
 }
 @media (max-width: 400px){
+    .mobile-padding-off {
+        padding: 0 !important;
+    }
     .catalog-sort__numitems select {
         margin-top: 0px;
     }
@@ -1131,9 +1137,11 @@
     }
     body .catalog-items__item-content__buttons .catalog-items__item-content__buttons__basket {
         width: 90px !important;
+            padding-right: 0 !important;
     }
     body .catalog-items__item-content__buttons .catalog-items__item-content__buttons__basket::before {
         right: 6px !important;
+        display: none;
     }
     .catalog-items__item-content__prices__price {
         font-size: 12px;
@@ -1248,9 +1256,6 @@
 @media (max-width: 1200px){
     .order-sidebar {
         margin-left: 10px;
-    }
-    .kit-list5 {
-        display: none;
     }
     .comparison-page .catalog-items__item-content__buttons__basket::before {
         right: 11px;
@@ -1406,9 +1411,6 @@
     }
     .order-page__info .order-page__title2 {
         margin-bottom: 0px;
-    }
-    .kit-list4 {
-        display: none;
     }
     .catalog-filter__title-block {
         position: relative;
@@ -1799,7 +1801,7 @@
         font-size: 16px;
     }
     .item-kit__block-name {
-        font-size: 12px;
+        font-size: 14px;
     }
     .item-kit__block-content {
         padding: 0 5px 0 5px;
@@ -2175,17 +2177,14 @@
     body .result-page .catalog-items__item-content__buttons .catalog-items__item-content__buttons__basket {
         width: 120px !important;
     }
-    body .result-page .catalog-items__item-content__buttons__basket {
+/*    body .result-page .catalog-items__item-content__buttons__basket {
         padding-right: 9px !important;
-    }
+    }*/
     body .result-page .catalog-items__item-content__buttons .catalog-items__item-content__buttons__basket::before {
         right: 3px !important;
     }
 }
 @media (max-width: 768px){
-    .kit-list3 {
-        display: none;
-    }
     .pag-points {
         letter-spacing: 1px;
         margin: 0 3px 0 -5px !important;
@@ -2672,7 +2671,7 @@
         width: 150px !important;
     }
     .item-kit__block-name {
-        font-size: 10px;
+        font-size: 14px;
         line-height: 14px;
     }
     .item-kit__block-prices__price-old {
