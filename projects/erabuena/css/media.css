@@ -2444,13 +2444,12 @@
 
 @media (max-width: 600px){
     .parameters-kit__block-element__list-element {
-    width: 100%;
-}
+        font-size: 12px;
+    }
 .parameters-kit__block-element__list-container {
     display: none;
 }
 .parameters-kit__block-element__list {
-    width: 100% !important;
     margin-right: 0;
     overflow: hidden;
 }
