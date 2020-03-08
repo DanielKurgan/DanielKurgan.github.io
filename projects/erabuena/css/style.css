@@ -3528,6 +3528,9 @@ body .category-sort__search-result__category * {
 	overflow: hidden;
 	width: 100%;
 }
+.parameters-kit__block-element__list-container__mobile {
+	display: none;
+}
 .parameters-kit__block-element__list {
 	margin-right: 22px;
 	width: 200px !important;

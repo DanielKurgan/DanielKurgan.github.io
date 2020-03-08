@@ -526,10 +526,9 @@ $(document).ready(function(){
       $(".comparison-slider-mobile .catalog-items__item").css("width", $catalogItemWidth);
 
       if ($(window).width() < 600) {
-        $('.comparison-slider-mobile').slick({
-          // vertical: true,
-          // fade: true,
-          // asNavFor: '.comparison-slider',
+        
+        $('.comparison-slider-mobile1').slick({
+          asNavFor: '.parameters-slider-mobile1',
           variableWidth: false,
           infinite: false,
           slidesToShow: 1,
@@ -538,6 +537,37 @@ $(document).ready(function(){
           prevArrow: '<button id="prev-charMobile" class="slider-mobile__arrows__left" type="button"></button>',
           nextArrow: '<button id="next-charMobile" class="slider-mobile__arrows__right" type="button"></button>',
         });
+
+        $('.parameters-slider-mobile1').slick({
+          asNavFor: '.comparison-slider-mobile1',
+          variableWidth: false,
+          infinite: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+        });
+
+
+
+        $('.comparison-slider-mobile2').slick({
+          asNavFor: '.parameters-slider-mobile2',
+          variableWidth: false,
+          infinite: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: true,
+          prevArrow: '<button id="prev-charMobile" class="slider-mobile__arrows__left" type="button"></button>',
+          nextArrow: '<button id="next-charMobile" class="slider-mobile__arrows__right" type="button"></button>',
+        });
+        $('.parameters-slider-mobile2').slick({
+          asNavFor: '.comparison-slider-mobile2',
+          variableWidth: false,
+          infinite: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+        });
+
       }
     });
 
