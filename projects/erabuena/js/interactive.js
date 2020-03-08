@@ -526,11 +526,11 @@ $(document).ready(function(){
       $(".comparison-slider-mobile .catalog-items__item").css("width", $catalogItemWidth);
 
       if ($(window).width() < 600) {
-        
+
         $('.comparison-slider-mobile1').slick({
           asNavFor: '.parameters-slider-mobile1',
           variableWidth: false,
-          infinite: false,
+          infinite: true,
           slidesToShow: 1,
           slidesToScroll: 1,
           arrows: true,
@@ -541,7 +541,7 @@ $(document).ready(function(){
         $('.parameters-slider-mobile1').slick({
           asNavFor: '.comparison-slider-mobile1',
           variableWidth: false,
-          infinite: false,
+          infinite: true,
           slidesToShow: 1,
           slidesToScroll: 1,
           arrows: false,
@@ -552,7 +552,7 @@ $(document).ready(function(){
         $('.comparison-slider-mobile2').slick({
           asNavFor: '.parameters-slider-mobile2',
           variableWidth: false,
-          infinite: false,
+          infinite: true,
           slidesToShow: 1,
           slidesToScroll: 1,
           arrows: true,
@@ -562,7 +562,7 @@ $(document).ready(function(){
         $('.parameters-slider-mobile2').slick({
           asNavFor: '.comparison-slider-mobile2',
           variableWidth: false,
-          infinite: false,
+          infinite: true,
           slidesToShow: 1,
           slidesToScroll: 1,
           arrows: false,
