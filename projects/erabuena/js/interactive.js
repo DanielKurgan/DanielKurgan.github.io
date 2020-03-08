@@ -537,7 +537,6 @@ $(document).ready(function(){
           arrows: true,
           prevArrow: '<button id="prev-charMobile" type="button"></button>',
           nextArrow: '<button id="next-charMobile" type="button"></button>',
-
         });
       }
     });
