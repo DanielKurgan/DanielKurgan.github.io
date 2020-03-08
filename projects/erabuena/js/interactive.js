@@ -488,15 +488,14 @@ $(document).ready(function(){
 
 
     $('.parameters-kit__block-element__list-container').slick({
+      swipe: false,
       asNavFor: '.comparison-slider',
       focusOnSelect: true,
       variableWidth: false,
       infinite: false,
       slidesToShow: 5,
       slidesToScroll: 1,
-      arrows: true,
-      prevArrow: '<button id="prev-char" type="button"></button>',
-      nextArrow: '<button id="next-char" type="button"></button>',
+      arrows: false,
 
       responsive: [ 
       {

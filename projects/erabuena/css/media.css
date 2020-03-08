@@ -934,6 +934,19 @@
     }
 }
 @media (max-width: 400px){
+
+    body .catalog-sort__search-result .category-sort__search-result__sum {
+    margin-top: 0;
+}
+body .catalog-sort__container .catalog-sort__numitems {
+    margin-top: 13px !important;
+}
+body .catalog-sort__container .catalog-sort__buttons {
+    margin-top: 15px !important;
+}
+.catalog-sort .catalog-pagination {
+    margin-top: 13px !important;
+}
     .mobile-padding-off {
         padding: 0 !important;
     }
@@ -948,7 +961,6 @@
     }
     body .catalog-sort__buttons {
         order: 3 !important;
-        margin-top: 10px !important;
     }
     .catalog-sort .catalog-pagination {
         width: 100% !important;
@@ -1876,6 +1888,13 @@
     }
 }
 @media (max-width: 500px){
+    body .category-sort__search-result__sum {
+    margin-bottom: -15px;
+    margin-top: 7px;
+}
+    body .catalog-sort__numitems {
+    margin-top: 20px !important;
+}
 .comparison-slider-mobile {
     padding-bottom: 40px !important;
 }
@@ -1906,6 +1925,7 @@
     }
     .catalog-sort__buttons {
         order: 5 !important;
+        margin-top: 20px;
     }
     .catalog-sort__numitems {
         order: 2 !important;
@@ -2443,6 +2463,12 @@
 }
 
 @media (max-width: 600px){
+    .catalog-sort .catalog-pagination {
+    margin-top: 20px;
+}
+.catalog-sort__numitems  {
+    margin-top: 10px;   
+}
     .parameters-kit__block-element__list-element {
         font-size: 12px;
     }
@@ -2518,9 +2544,6 @@
     }
     .pag-point {
         font-size: 12px !important;
-    }
-    .catalog-sort__numitems {
-        margin-top: 0px;
     }
     .catalog-sort .catalog-pagination {
         width: 60%;
@@ -2650,7 +2673,7 @@
     }
     .catalog-sort__numitems select {
         border-radius: 0 20px 20px 0;
-        padding: 5px 25px 5px 17px;
+    padding: 4px 25px 3px 17px;
         margin-top: 1px;
     }
     .catalog-sort__numitems span {
@@ -2777,12 +2800,12 @@
 }
 
 @media (max-width: 450px){
-    .catalog-sort__buttons {
-        margin-right: 0;
-        margin-top: 0;
+.catalog-sort__buttons {
+    margin-right: 0;
+    margin-top: 10px;
     }
-    .catalog-sort .catalog-pagination {
-        margin-top: 10px;
+.catalog-sort .catalog-pagination {
+    margin-top: 20px;
         margin-bottom: 10px;
     }
 }
