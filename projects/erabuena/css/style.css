@@ -3537,7 +3537,7 @@ body .category-sort__search-result__category * {
 	justify-content: space-around;
 	align-items: center;
 }
-.parameters-kit__block-element__list-container .slick-arrow {
+.parameters-kit__block-element__list-container .slick-arrow2 {
 	position: absolute;
 	visibility: hidden;
 }
@@ -3754,7 +3754,7 @@ body .category-sort__search-result__category * {
 .comparison-slider .catalog-items__item-content {
 	background: #fff;
 }
-.comparison-slider .slick-arrow {
+.comparison-slider .slick-arrow2 {
 	position: absolute;
 	z-index: 9;
 	width: 50px;
@@ -3764,7 +3764,7 @@ body .category-sort__search-result__category * {
 	transition: 0.4s;
 	border-radius: 49px;
 }
-.comparison-slider .slick-arrow:hover {
+.comparison-slider .slick-arrow2:hover {
 	box-shadow: 0 5px 24px rgba(255, 152, 180, 0.26);
 }
 .comparison-slider #prev {

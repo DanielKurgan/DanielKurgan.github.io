@@ -460,8 +460,8 @@ $(document).ready(function(){
      arrows: true,
      asNavFor: '.parameters-kit__block-element__list-container',
 
-     nextArrow: '<button id="next" type="button"></button>',
-     prevArrow: '<button id="prev" type="button"></button>',
+     nextArrow: '<button id="next" class="slick-arrow2" type="button"></button>',
+     prevArrow: '<button id="prev" class="slick-arrow2" type="button"></button>',
      responsive: [ 
      {
       breakpoint: 1200,
@@ -535,8 +535,8 @@ $(document).ready(function(){
           slidesToShow: 1,
           slidesToScroll: 1,
           arrows: true,
-          prevArrow: '<button id="prev-charMobile" type="button"></button>',
-          nextArrow: '<button id="next-charMobile" type="button"></button>',
+          prevArrow: '<button id="prev-charMobile" class="slider-mobile__arrows__left" type="button"></button>',
+          nextArrow: '<button id="next-charMobile" class="slider-mobile__arrows__right" type="button"></button>',
         });
       }
     });
