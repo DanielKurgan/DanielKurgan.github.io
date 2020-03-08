@@ -179,6 +179,7 @@ a:hover {
 	justify-content: space-between;
 }
 .welcome__image {
+	z-index: 999999;
 	width: 539px;
 	height: 457px;
 	margin-top: 75px;
@@ -544,6 +545,33 @@ a:hover {
 /*MOVIE SECTION END*/
 
 /*RESERVATION SECTION*/
+.reservationBgLeft {
+    width: 484px;
+    height: 536px;
+    bottom: -223px;
+    left: -174px;
+}
+.reservationDecorSquareGroup {
+    height: 70px;
+    width: 74px;
+    top: 34px;
+    left: 764px;
+}
+.reservationDecorCrossSmall {
+	top: 243px;
+	left: 565px;
+}
+.reservationDecorCircleSmall {
+	top: 271px;
+	left: 245px;
+}
+.reservationDecorArrowsGroup {
+	top: 199px;
+	left: 175px;
+}
+header {
+    z-index: 6;
+}
 .reservation {
 	position: relative;
 }

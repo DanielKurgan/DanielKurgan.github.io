@@ -406,6 +406,9 @@ $(document).ready(function(){
      $('.catalog-items__item').matchHeight();
    });
     jQuery(document).ready(function($) {
+     $('.catalog-items__item-inner').matchHeight();
+   });
+    jQuery(document).ready(function($) {
      $('.catalog-items__item-container').matchHeight();
    });
     jQuery(document).ready(function($) {
@@ -520,6 +523,57 @@ $(document).ready(function(){
  } 
 },
 ]
+});
+
+$(document).ready(function(){
+  // $catalogItemHeight = $(".catalog-items__item").css('height');
+  // $(".catalog-items__item-inner__slider").css('height', $catalogItemHeight);
+
+
+    $( ".search-input" ).focus(function() {
+     if (width > 992) {
+
+      $('.catalog-items__item-inner__slider').slick({
+        // fade: true,
+            asNavFor: '.comparison-slider',
+            focusOnSelect: true,
+            variableWidth: false,
+            infinite: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true,
+            prevArrow: '<button id="prev-char" type="button"></button>',
+            nextArrow: '<button id="next-char" type="button"></button>',
+
+        responsive: [ 
+        {
+          breakpoint: 1200,
+          settings: {
+          } 
+        },
+        {
+          breakpoint: 992,
+          settings: {
+           slidesToShow: 3,
+         } 
+       },
+       {
+        breakpoint: 768,
+        settings: {
+         slidesToShow: 2,
+       } 
+     },
+     {
+      breakpoint: 400,
+      settings: {
+       slidesToShow: 2,
+     } 
+   },
+   ]
+  });
+    }
+  });
+
 });
 
     // СОХРАНЕНИЕ ВЫСОТЫ БЛОКА

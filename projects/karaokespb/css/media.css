@@ -38,6 +38,13 @@
 }
 
 @media (max-width: 1200px){
+	.reservationBgLeft {
+	    width: 444px;
+	    height: 496px;
+	}
+	.reservation__container {
+	    justify-content: space-around;
+	}
 	.welcome__image {
 		width: 499px;
 		height: 417px;
@@ -277,6 +284,9 @@
 }
 
 @media (max-width: 800px){
+	.reservationBgLeft {
+		display: none;
+	}
 	.menu-content__left {
 		display: flex;
 		align-items: center;
