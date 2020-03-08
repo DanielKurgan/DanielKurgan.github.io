@@ -479,10 +479,14 @@ $(document).ready(function(){
   breakpoint: 768,
   settings: {
    slidesToShow: 2,
+   arrows: false,
+   swipe: false,
  } 
 },
 ]
 });
+
+
     $('.parameters-kit__block-element__list-container').slick({
       asNavFor: '.comparison-slider',
       focusOnSelect: true,
@@ -513,53 +517,30 @@ $(document).ready(function(){
      slidesToShow: 2,
    } 
  },
-]
+ ]
 });
 
     $(document).ready(function(){
-  // $catalogItemHeight = $(".catalog-items__item").css('height');
-  // $(".catalog-items__item-inner__slider").css('height', $catalogItemHeight);
-  $catalogItemWidth = $(".catalog-items__item").css("width");
-  $(".comparison-slider-mobile").css("width", $catalogItemWidth);
-  $(".comparison-slider-mobile .catalog-items__item").css("width", $catalogItemWidth);
+      $catalogItemWidth = $(".catalog-items__item").css("width");
+      $(".comparison-slider-mobile").css("width", $catalogItemWidth);
+      $(".comparison-slider-mobile .catalog-items__item").css("width", $catalogItemWidth);
 
-  if ($(window).width() > 600) {
-    $('.comparison-slider-mobile').slick({
-      vertical: true,
-        fade: true,
-        asNavFor: '.comparison-slider',
-        variableWidth: false,
-        infinite: false,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: true,
-        prevArrow: '<button id="prev-char" type="button"></button>',
-        nextArrow: '<button id="next-char" type="button"></button>',
+      if ($(window).width() < 600) {
+        $('.comparison-slider-mobile').slick({
+          // vertical: true,
+          // fade: true,
+          // asNavFor: '.comparison-slider',
+          variableWidth: false,
+          infinite: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: true,
+          prevArrow: '<button id="prev-charMobile" type="button"></button>',
+          nextArrow: '<button id="next-charMobile" type="button"></button>',
 
-        responsive: [ 
-        {
-          breakpoint: 992,
-          settings: {
-           slidesToShow: 1,
-           slidesToScroll: 1,
-         } 
-       },
-       {
-        breakpoint: 768,
-        settings: {
-         slidesToShow: 2,
-       } 
-     },
-     {
-      breakpoint: 400,
-      settings: {
-       slidesToShow: 2,
-     } 
-   },
-   ]
- });
-  }
-});
+        });
+      }
+    });
 
     // СОХРАНЕНИЕ ВЫСОТЫ БЛОКА
     $(document).ready(function(){

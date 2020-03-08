@@ -1888,9 +1888,6 @@
     .catalog-pagination.footer-pagination {
         padding-bottom: 20px;
     }
-    .slider-mobile__arrows {
-        display: flex !important;
-    }
     .comparison-page .catalog-items__item {
         border-radius: 10px 10px 0 0 !important;
     }
@@ -2443,9 +2440,21 @@
 }
 
 @media (max-width: 600px){
-.comparison-slider .catalog-items__item-content {
-    width: 190px;
+
+.comparison-slider-mobile {
+    height: auto !important;
 }
+.slider-mobile__arrows {
+    display: flex !important;
+    margin-top: 0;
+}
+.comparison-page .slick-slide {
+    display: inline-block;
+    }
+/*.comparison-page .catalog-items__item {
+    position: absolute;
+    overflow: hidden;
+}*/
 .comparison-slider-mobile {
     display: flex !important;
 }
