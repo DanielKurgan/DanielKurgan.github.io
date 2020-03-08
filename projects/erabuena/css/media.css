@@ -2004,7 +2004,6 @@
         align-items: center;
     }
     .comparison-slider .catalog-items__item {
-        max-width: 96%;
         margin-bottom: 3px;
     }
     .comparison-slider .catalog-items__item-content__name {
@@ -2444,6 +2443,16 @@
 }
 
 @media (max-width: 600px){
+.comparison-slider .catalog-items__item-content {
+    width: 190px;
+}
+.comparison-slider-mobile {
+    display: flex !important;
+}
+.catalog-items__item-desktop {
+    display: none;
+}
+
     .result-page .item-info__block-text__description {
         margin-bottom: 0px;
     }

@@ -400,23 +400,26 @@ $(document).ready(function(){
   });
 
     jQuery(document).ready(function($) {
+     $('.comparison-slider-mobile').matchHeight();
      $('.catalog-items__item-content').matchHeight();
-   });
-    jQuery(document).ready(function($) {
      $('.catalog-items__item').matchHeight();
-   });
-    jQuery(document).ready(function($) {
      $('.catalog-items__item-inner').matchHeight();
-   });
-    jQuery(document).ready(function($) {
      $('.catalog-items__item-container').matchHeight();
-   });
-    jQuery(document).ready(function($) {
      $('.item-kit__block-content').matchHeight();
-   });
-    jQuery(document).ready(function($) {
      $('.order-page__payment-method__block').matchHeight();
    });
+
+    // Наивысшая высота блока
+    $(document).ready(function(){
+      var array = $(".catalog-items__item-content");
+      var height = 0;
+      for(i = 0; i < array.length; i++){
+        if($(array[i]).height() > height){
+          height = $(array[i]).height();
+        }
+      }
+      $(array).height(height);
+    });
 
     $(function($){
   $(document).mouseup(function (e){ // событие клика по веб-документу
@@ -478,12 +481,6 @@ $(document).ready(function(){
    slidesToShow: 2,
  } 
 },
-{
-  breakpoint: 400,
-  settings: {
-   slidesToShow: 2,
- } 
-},
 ]
 });
     $('.parameters-kit__block-element__list-container').slick({
@@ -516,45 +513,35 @@ $(document).ready(function(){
      slidesToShow: 2,
    } 
  },
- {
-  breakpoint: 400,
-  settings: {
-   slidesToShow: 2,
- } 
-},
 ]
 });
 
-$(document).ready(function(){
+    $(document).ready(function(){
   // $catalogItemHeight = $(".catalog-items__item").css('height');
   // $(".catalog-items__item-inner__slider").css('height', $catalogItemHeight);
+  $catalogItemWidth = $(".catalog-items__item").css("width");
+  $(".comparison-slider-mobile").css("width", $catalogItemWidth);
+  $(".comparison-slider-mobile .catalog-items__item").css("width", $catalogItemWidth);
 
-
-    $( ".search-input" ).focus(function() {
-     if (width > 992) {
-
-      $('.catalog-items__item-inner__slider').slick({
-        // fade: true,
-            asNavFor: '.comparison-slider',
-            focusOnSelect: true,
-            variableWidth: false,
-            infinite: false,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: true,
-            prevArrow: '<button id="prev-char" type="button"></button>',
-            nextArrow: '<button id="next-char" type="button"></button>',
+  if ($(window).width() > 600) {
+    $('.comparison-slider-mobile').slick({
+      vertical: true,
+        fade: true,
+        asNavFor: '.comparison-slider',
+        variableWidth: false,
+        infinite: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        prevArrow: '<button id="prev-char" type="button"></button>',
+        nextArrow: '<button id="next-char" type="button"></button>',
 
         responsive: [ 
         {
-          breakpoint: 1200,
-          settings: {
-          } 
-        },
-        {
           breakpoint: 992,
           settings: {
-           slidesToShow: 3,
+           slidesToShow: 1,
+           slidesToScroll: 1,
          } 
        },
        {
@@ -570,10 +557,8 @@ $(document).ready(function(){
      } 
    },
    ]
-  });
-    }
-  });
-
+ });
+  }
 });
 
     // СОХРАНЕНИЕ ВЫСОТЫ БЛОКА
