@@ -1,0 +1,141 @@
+/*DEFAULT SETTINGS*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+button {
+	background: transparent;
+	display: inline-block;
+	border: 0;
+	transition: 0.4s;
+}
+input:focus, button:focus, a:focus {
+	outline: 0;
+	border: 0;
+}
+body {
+	font-size: 18px;
+	min-width: 320px;
+	position: relative;
+	line-height: 1.2em;
+	overflow-x: hidden;
+	color: #1e1e1c;
+	font-family: 'Montserrat', sans-serif;
+}
+p, span, h3 {
+	margin-bottom: 0;
+}
+h2, h4 {
+}
+a {
+	color: #fff;
+	text-decoration: none;
+	transition: 0.4s;
+}
+
+/*STYLES*/
+
+.relocate-background {
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	min-height: 100vh;
+	height: 100%;
+	background: url(../img/Background.png) no-repeat 50% 50%/cover;
+	z-index: 1;
+}
+.page * {
+	z-index: 2;
+}
+.container {
+	max-width: 921px;
+	width: 100%;
+	margin: 0 auto;
+}
+.relocate-page {
+	display: flex;
+	justify-content: space-between;
+	min-height: 100vh;
+	height: 100%;
+}
+.relocate-video {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
+}
+.relocate-video__iframe {
+	position: relative;
+}
+.relocate-video img {
+	width: 542px;
+	height: 329px;
+}
+.relocate-video iframe {
+	position: absolute;
+	width: 439px;
+	height: 247px;
+	top: 20px;
+	left: 51px;
+}
+.page-right {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+.relocate-content .logo {
+	width: 230px;
+	height: 50px;
+}
+.relocate-content__text {
+	color: #1e1e1c;
+	letter-spacing: 1.47px;
+	font-size: 47px;
+	font-weight: 400;
+	line-height: 69.29px;
+	max-width: 385px;
+	width: 100%;
+}
+.relocate-content__text a {
+	color: #1e1e1c;
+	text-decoration: underline;
+	font-weight: 700;
+}
+.relocate-links {
+	display: flex;
+	flex-direction: column;
+}
+.relocate-links a {
+	color: #1e1e1c;
+	text-align: center;
+}
+.relocate-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+	align-items: flex-start;
+	max-height: 540px;
+}
+.relocate-links a {
+	font-size: 17px;
+	font-weight: 400;
+	line-height: 35px;
+	letter-spacing: 0.3px;
+	width: 285px;
+	height: 40px;
+	border: 2px solid;
+	margin-bottom: 15px;
+}
+.relocate-links a:last-child {
+	margin-bottom: 15px;
+}
+.relocate-links a:hover {
+	color: white;
+	background: #1e1e1c;
+}
