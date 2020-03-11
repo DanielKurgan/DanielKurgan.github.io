@@ -351,6 +351,7 @@ $(document).ready(function(){
      $('.input-color').click(function(){
       $(this).parent().parent().parent().parent().find(".block-input-color .placeholder").css('background', $inputColor);
       $(this).parent().parent().find(".select-block__colors").toggleClass("flex");
+      $(this).parent().parent().parent().parent().find(".select-block__colors-name").html( $(this).find("input").attr('data-color-name') );
     })
    });
 
@@ -398,7 +399,7 @@ $(document).ready(function(){
       autoSize:true
     }
   });
-    
+
 $(document).ready(function(){
     window.onload = function() {
      $('.comparison-slider-mobile').matchHeight();

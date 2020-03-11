@@ -2716,6 +2716,16 @@ input[type=checkbox], input[type=radio] {
 	left: 13px;
 	top: 6px;
 }
+.block-input-color {
+    display: flex;
+}
+.select-block__colors-name {
+	line-height: 30px !important;
+	margin: 0 0 0 10px;
+    color: #898989 !important;
+    font-size: 13px !important;
+    font-weight: 300 !important;
+}
 .input-color.red input:before {
 	background-color: red;
 }
