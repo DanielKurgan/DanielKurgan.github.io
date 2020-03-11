@@ -548,8 +548,6 @@ $(document).ready(function(){
           arrows: false,
         });
 
-
-
         $('.comparison-slider-mobile2').slick({
           asNavFor: '.parameters-slider-mobile2',
           variableWidth: false,

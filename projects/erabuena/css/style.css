@@ -2692,7 +2692,10 @@ input[type=checkbox], input[type=radio] {
 	appearance: none;
 	outline: none;
 }
-
+.parameters-kit__block-element__list .slick-list,
+.parameters-kit__block-element__list .slick-track{
+	width: 100%;
+}
 .input-color input::before {
 	content: '';
 	position: absolute;
