@@ -399,7 +399,7 @@ $(document).ready(function(){
     }
   });
 
-    jQuery(window).load(function($) {
+    jQuery(document).ready(function($) {
      $('.comparison-slider-mobile').matchHeight();
      $('.catalog-items__item-content').matchHeight();
      $('.catalog-items__item').matchHeight();
