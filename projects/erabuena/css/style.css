@@ -2449,6 +2449,9 @@ ul.info-text li:before {
 .classic .minus_plugin_number:hover {
 	border-top-color: #b14c67;
 }
+.block-select__element-decor {
+    width: 100%;
+}
 .item-page__sibebar-block__buttons {
 	display: flex;
 	flex-direction: column;
@@ -3119,9 +3122,12 @@ input[type=checkbox], input[type=radio] {
 	width: 100%;
 }
 .product-popup .block-input-color .block-select__element-decor::after {
+	display: none;
+}
+/*.product-popup .block-input-color .block-select__element-decor::after {
 	left: unset;
 	right: 15px;
-}
+}*/
 
 /*BIG TEASER*/
 .big-teaser {

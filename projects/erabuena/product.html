@@ -1234,10 +1234,11 @@
 						<div class="item-kit__block-buttons">
 							<form action="#">
 								<div class="block-select">
+
 									<div class="block-select__element">
 										<span class="placeholder">Размер</span>
 										<div class="block-select__element-decor">
-											<select name="color">
+											<select name="size">
 												<option value="-1" style="display:none;"></option>
 												<option value="#">XL</option>
 												<option value="#">XLL</option>
@@ -1245,6 +1246,8 @@
 											</select>
 										</div>	
 									</div>
+
+
 									<div class="block-select__element block-input-color">
 										<span class="placeholder"></span>
 
@@ -1253,18 +1256,22 @@
 											<div class="select-block__colors">
 												<form action="#">
 													<label class="input-color red">
-														<input onclick="$inputColor='red'" type="radio" class="input-red" name="input-color">
+														<input data-color-name="Красный" onclick="$inputColor='red'" type="radio" class="input-red" name="input-color">
 													</label>
 													<label class="input-color green">
-														<input onclick="$inputColor='#57d586'" type="radio" class="input-green" name="input-color">
+														<input data-color-name="Зелёный" onclick="$inputColor='#57d586'" type="radio" class="input-green" name="input-color">
 													</label>
 													<label class="input-color blue">
-														<input onclick="$inputColor='blue'" type="radio" class="input-blue" name="input-color">
+														<input data-color-name="Синий" onclick="$inputColor='blue'" type="radio" class="input-blue" name="input-color">
 													</label>
 												</form>
 											</div>
 										</div>
+
+										<span class="select-block__colors-name">Чёрный</span>
+
 									</div>
+
 								</div>
 							</form>
 						</div>

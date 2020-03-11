@@ -2466,7 +2466,7 @@
 
     @media (max-width: 600px){
         .catalog-sort__main span {
-            margin-bottom: 3px !important;
+            margin-bottom: 7px !important;
         }
         .catalog-sort .catalog-pagination {
             margin-top: 20px;

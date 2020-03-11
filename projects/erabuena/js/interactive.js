@@ -380,6 +380,11 @@ $(document).ready(function(){
      $(".product-popup").css("display", "flex");
      $("body").css("overflow", "hidden");
    });
+    $(".comparison-page .catalog-items__item-image").click(function(){
+     $(".product-popup").fadeIn();
+     $(".product-popup").css("display", "flex");
+     $("body").css("overflow", "hidden");
+   });
 
     document.addEventListener('keydown', function (e) {
      if(e.keyCode === 27) $('.product-popup').fadeOut();
