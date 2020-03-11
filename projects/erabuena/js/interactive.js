@@ -398,8 +398,9 @@ $(document).ready(function(){
       autoSize:true
     }
   });
-
-    jQuery(document).ready(function($) {
+    
+$(document).ready(function(){
+    window.onload = function() {
      $('.comparison-slider-mobile').matchHeight();
      $('.catalog-items__item-content').matchHeight();
      $('.catalog-items__item').matchHeight();
@@ -407,8 +408,8 @@ $(document).ready(function(){
      $('.catalog-items__item-container').matchHeight();
      $('.item-kit__block-content').matchHeight();
      $('.order-page__payment-method__block').matchHeight();
-   });
-
+    };
+});
     // Наивысшая высота блока
     $(document).ready(function(){
       var array = $(".catalog-items__item-content");
