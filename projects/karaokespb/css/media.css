@@ -1,10 +1,22 @@
 @media (max-width: 1350px){
-	.welcomeBgRight {
-		width: 263px;
-	}
-	.welcomeBgLeft {
-		width: 293px;
-	}
+	img.welcomeDecorCircleBigRight.decorCircleBig {
+    top: -20px;
+    right: -20px;
+    width: 270px;
+    height: 270px;
+}
+	.welcomeBgTopLeft {
+    width: 202px;
+}
+.welcomeBgBottomLeft {
+    width: 323px;
+}
+.welcomeBgTopRight {
+    width: 203px;
+}
+.welcomeBgBottomRight {
+    width: 271px;
+}
 	.welcomeBgCenter {
 		width: 470px;
 		height: 449px;
@@ -51,12 +63,18 @@
 		margin-top: 35px;
 		margin-left: 36px;
 	}
-	.welcomeBgLeft {
-		width: 263px;
+	.welcomeBgTopLeft {
+	    width: 172px;
 	}
-	.welcomeBgRight {
-		width: 233px;
+	.welcomeBgBottomLeft {
+	    width: 273px;
 	}
+	.welcomeBgTopRight {
+    width: 173px;
+}
+	.welcomeBgBottomRight {
+    width: 241px;
+}
 	.welcomeBgCenter {
 		width: 380px;
 		height: 419px;
@@ -302,10 +320,10 @@
 		text-align: center;
 		width: 100%;
 	}
-	.welcomeBgLeft {
-		display: none;
-	}
-	.welcomeBgRight {
+	.welcomeBgTopLeft,
+	.welcomeBgTopRight,
+	.welcomeBgBottomLeft,
+	.welcomeBgBottomRight {
 		display: none;
 	}
 	.welcomeDecorCircleBigRight {

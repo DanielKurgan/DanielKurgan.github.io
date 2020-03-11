@@ -77,6 +77,27 @@ a:hover {
 	position: absolute;
 	z-index: 3;
 }
+.welcomeBgBottomRight {
+    right: 0;
+    bottom: 0;
+    width: 311px;
+}
+.welcomeBgBottomLeft {
+    left: 0;
+    bottom: 0;
+    width: 363px;
+}
+.welcomeBgTopRight {
+    top: 0;
+    right: 0;
+    width: 243px;
+}
+.welcomeBgTopLeft {
+    left: 0;
+    top: 0;
+    width: 242px;
+}
+
 .welcomeBgLeft {
 	left: 0;
 	top: 0;
@@ -588,6 +609,7 @@ header {
 	padding-bottom: 20px;
 }
 .reservation__img {
+    animation: rotateAnimation 3s infinite 0s linear;
 	width: 354px;
 	height: 543px;
 }
@@ -638,3 +660,24 @@ header {
 	background: #E8AF08;
 }
 /*RESERVATION SECTION END*/
+
+/*ANIMATION*/
+@keyframes rotateAnimation{
+    0%{
+        transform: rotate(0deg);
+        }
+
+    25%{
+        transform: rotate(5deg);
+        }
+    50%{
+        transform: rotate(0deg);
+        }
+    75%{
+        transform: rotate(-5deg);
+        }
+    100%{
+        transform: rotate(0deg);
+        }
+}
+/*ANIMATION*/

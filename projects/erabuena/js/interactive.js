@@ -399,7 +399,7 @@ $(document).ready(function(){
     }
   });
 
-    jQuery(document).ready(function($) {
+    jQuery(document).onload(function($) {
      $('.comparison-slider-mobile').matchHeight();
      $('.catalog-items__item-content').matchHeight();
      $('.catalog-items__item').matchHeight();
@@ -529,7 +529,7 @@ $(document).ready(function(){
         $('.comparison-slider-mobile1').slick({
           asNavFor: '.parameters-slider-mobile1',
           variableWidth: false,
-          infinite: true,
+          infinite: false,
           slidesToShow: 1,
           slidesToScroll: 1,
           arrows: true,
@@ -540,7 +540,7 @@ $(document).ready(function(){
         $('.parameters-slider-mobile1').slick({
           asNavFor: '.comparison-slider-mobile1',
           variableWidth: false,
-          infinite: true,
+          infinite: false,
           slidesToShow: 1,
           slidesToScroll: 1,
           arrows: false,
@@ -551,7 +551,7 @@ $(document).ready(function(){
         $('.comparison-slider-mobile2').slick({
           asNavFor: '.parameters-slider-mobile2',
           variableWidth: false,
-          infinite: true,
+          infinite: false,
           slidesToShow: 1,
           slidesToScroll: 1,
           arrows: true,
@@ -561,7 +561,7 @@ $(document).ready(function(){
         $('.parameters-slider-mobile2').slick({
           asNavFor: '.comparison-slider-mobile2',
           variableWidth: false,
-          infinite: true,
+          infinite: false,
           slidesToShow: 1,
           slidesToScroll: 1,
           arrows: false,
@@ -607,7 +607,7 @@ $(document).ready(function(){
       });
       $(this).parent().parent().css({
         border: "2px solid #ff98b4",
-        padding: "10px 17px",
+        padding: "11px 19px",
       });
     }
   });
