@@ -200,6 +200,7 @@ a:hover {
 	justify-content: space-between;
 }
 .welcome__image {
+    animation: slideAnimation 3s infinite 0s linear;
 	z-index: 999999;
 	width: 539px;
 	height: 457px;
@@ -595,6 +596,7 @@ header {
 }
 .reservation {
 	position: relative;
+    overflow: hidden;
 }
 .reservationDecorCircleBig {
 	top: -114px;
@@ -661,6 +663,14 @@ header {
 }
 /*RESERVATION SECTION END*/
 
+/*FOOTER*/
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*FOOTER END*/
+
 /*ANIMATION*/
 @keyframes rotateAnimation{
     0%{
@@ -678,6 +688,17 @@ header {
         }
     100%{
         transform: rotate(0deg);
+        }
+}
+@keyframes slideAnimation{
+    0%{
+        transform: translateX(0px);
+        }
+    50%{
+        transform: translateX(-10px);
+        }
+    100%{
+        transform: translateX(0px);
         }
 }
 /*ANIMATION*/

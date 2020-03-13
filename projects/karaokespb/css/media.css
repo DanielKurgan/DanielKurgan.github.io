@@ -1,22 +1,22 @@
 @media (max-width: 1350px){
 	img.welcomeDecorCircleBigRight.decorCircleBig {
-    top: -20px;
-    right: -20px;
-    width: 270px;
-    height: 270px;
-}
+		top: -20px;
+		right: -20px;
+		width: 270px;
+		height: 270px;
+	}
 	.welcomeBgTopLeft {
-    width: 202px;
-}
-.welcomeBgBottomLeft {
-    width: 323px;
-}
-.welcomeBgTopRight {
-    width: 203px;
-}
-.welcomeBgBottomRight {
-    width: 271px;
-}
+		width: 202px;
+	}
+	.welcomeBgBottomLeft {
+		width: 323px;
+	}
+	.welcomeBgTopRight {
+		width: 203px;
+	}
+	.welcomeBgBottomRight {
+		width: 271px;
+	}
 	.welcomeBgCenter {
 		width: 470px;
 		height: 449px;
@@ -51,11 +51,11 @@
 
 @media (max-width: 1200px){
 	.reservationBgLeft {
-	    width: 444px;
-	    height: 496px;
+		width: 444px;
+		height: 496px;
 	}
 	.reservation__container {
-	    justify-content: space-around;
+		justify-content: space-around;
 	}
 	.welcome__image {
 		width: 499px;
@@ -64,17 +64,17 @@
 		margin-left: 36px;
 	}
 	.welcomeBgTopLeft {
-	    width: 172px;
+		width: 172px;
 	}
 	.welcomeBgBottomLeft {
-	    width: 273px;
+		width: 273px;
 	}
 	.welcomeBgTopRight {
-    width: 173px;
-}
+		width: 173px;
+	}
 	.welcomeBgBottomRight {
-    width: 241px;
-}
+		width: 241px;
+	}
 	.welcomeBgCenter {
 		width: 380px;
 		height: 419px;
@@ -302,6 +302,18 @@
 }
 
 @media (max-width: 800px){
+	.welcomeDecorCircleBigRight {
+		top: -140px !important;
+		right: -140px !important;
+	}
+	.reservation__img {
+		margin-top: 10px;
+		position: static !important;
+		transform: none !important;
+	}
+	.reservation__container {
+		flex-direction: column-reverse !important;
+	}
 	.reservationBgLeft {
 		display: none;
 	}
@@ -331,7 +343,7 @@
 	}
 	.welcomeDecorSquareGroupSmall {
 		left: 25px;
-		top: 197px;
+		top: 157px;
 	}
 	.welcomeDecorArrowsGroup {
 		left: 25px;
@@ -341,8 +353,8 @@
 		right: 40px;
 	}
 	.welcomeCrossSmall {
-		top: 363px;
-		right: 157px;
+		top: 283px;
+		right: 117px;
 	}
 	.bookingDecorSquareHalfGroupSmallWhiteH {
 		left: -20px;
@@ -408,6 +420,12 @@
 }
 
 @media (max-width: 600px){
+	.footer-container {
+		flex-direction: column;
+	}
+	.footer-container * {
+		padding: 5px 0;
+	}
 	.welcomeDecorSquareGroupSmall {
 		left: 15px;
 		top: 137px;

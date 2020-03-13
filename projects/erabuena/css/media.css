@@ -1887,9 +1887,9 @@
     }
 }
 @media (max-width: 500px){
-.block-select__element-decor {
-    width: 100%;
-}
+    .block-select__element-decor {
+        width: 100%;
+    }
     body .category-sort__search-result__sum {
         margin-bottom: -15px;
         margin-top: 7px;
@@ -2150,9 +2150,9 @@
             left: 0px !important;
         }
         .item-feedback__footer .catalog-pagination {
-           margin-top: 0; 
-       }
-       .item-page__sibebar-block__buttons-basket {
+         margin-top: 0; 
+     }
+     .item-page__sibebar-block__buttons-basket {
         width: 120px;
         height: 40px;
         font-size: 14px;
