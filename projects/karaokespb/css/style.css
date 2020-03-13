@@ -200,7 +200,7 @@ a:hover {
 	justify-content: space-between;
 }
 .welcome__image {
-    animation: slideAnimation 3s infinite 0s linear;
+    animation: slideAnimation 2s infinite 0s linear;
 	z-index: 999999;
 	width: 539px;
 	height: 457px;
