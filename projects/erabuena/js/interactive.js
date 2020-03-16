@@ -1,5 +1,4 @@
 
-$(document).ready(function(){
   window.onload = function() {
    $('.comparison-slider-mobile').matchHeight();
    $('.catalog-items__item-content').matchHeight();
@@ -9,7 +8,6 @@ $(document).ready(function(){
    $('.item-kit__block-content').matchHeight();
    $('.order-page__payment-method__block').matchHeight();
  };
-});
 
     // Наивысшая высота блока
     jQuery(document).ready(function(){
