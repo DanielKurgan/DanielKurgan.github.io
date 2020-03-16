@@ -493,6 +493,8 @@
   breakpoint: 768,
   settings: {
    slidesToShow: 2,
+   arrows: false,
+   swipe: false,
  } 
 },
 // {
