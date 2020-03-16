@@ -486,6 +486,11 @@ $(document).ready(function(){
   breakpoint: 768,
   settings: {
    slidesToShow: 2,
+ } 
+},
+ {
+  breakpoint: 600,
+  settings: {
    arrows: false,
    swipe: false,
  } 
