@@ -406,27 +406,27 @@ $(document).ready(function(){
   });
 
     $(document).ready(function(){
-        window.onload = function() {
-         $('.comparison-slider-mobile').matchHeight();
-         $('.catalog-items__item-content').matchHeight();
-         $('.catalog-items__item').matchHeight();
-         $('.catalog-items__item-inner').matchHeight();
-         $('.catalog-items__item-container').matchHeight();
-         $('.item-kit__block-content').matchHeight();
-         $('.order-page__payment-method__block').matchHeight();
-       };
+      window.onload = function() {
+       $('.comparison-slider-mobile').matchHeight();
+       $('.catalog-items__item-content').matchHeight();
+       $('.catalog-items__item').matchHeight();
+       $('.catalog-items__item-inner').matchHeight();
+       $('.catalog-items__item-container').matchHeight();
+       $('.item-kit__block-content').matchHeight();
+       $('.order-page__payment-method__block').matchHeight();
+     };
    });
     // Наивысшая высота блока
-    $(document).ready(function(){
-      var array = $(".catalog-items__item-content");
-      var height = 0;
-      for(i = 0; i < array.length; i++){
-        if($(array[i]).height() > height){
-          height = $(array[i]).height();
+      window.onload = function() {
+        var array = $(".catalog-items__item-content");
+        var height = 0;
+        for(i = 0; i < array.length; i++){
+          if($(array[i]).height() > height){
+            height = $(array[i]).height();
+          }
         }
-      }
-      $(array).height(height);
-    });
+        $(array).height(height);
+      };
 
     $(function($){
   $(document).mouseup(function (e){ // событие клика по веб-документу
@@ -488,7 +488,7 @@ $(document).ready(function(){
    slidesToShow: 2,
  } 
 },
- {
+{
   breakpoint: 600,
   settings: {
    arrows: false,
