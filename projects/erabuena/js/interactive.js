@@ -415,7 +415,6 @@ $(document).ready(function(){
        $('.item-kit__block-content').matchHeight();
        $('.order-page__payment-method__block').matchHeight();
      };
-   });
     // Наивысшая высота блока
       window.onload = function() {
         var array = $(".catalog-items__item-content");
@@ -427,6 +426,7 @@ $(document).ready(function(){
         }
         $(array).height(height);
       };
+   });
 
     $(function($){
   $(document).mouseup(function (e){ // событие клика по веб-документу
