@@ -416,18 +416,23 @@ $(document).ready(function(){
        $('.order-page__payment-method__block').matchHeight();
      };
    });
-    
-    // Наивысшая высота блока
+
     window.onload = function() {
-      var array = $(".catalog-items__item-content");
-      var height = 0;
-      for(i = 0; i < array.length; i++){
-        if($(array[i]).height() > height){
-          height = $(array[i]).height();
+      function elementsHeightAuto() {
+        var array = $(".catalog-items__item-content");
+        var height = 0;
+        for(i = 0; i < array.length; i++){
+          if($(array[i]).height() > height){
+            height = $(array[i]).height();
+          }
         }
-      }
-      $(array).height(height);
+        $(array).height(height);
+      };
+      elementsHeightAuto();
     };
+    $(window).resize(function(){
+      elementsHeightAuto();
+    });
 
     $(function($){
   $(document).mouseup(function (e){ // событие клика по веб-документу
