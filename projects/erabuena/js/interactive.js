@@ -1,4 +1,29 @@
+
 $(document).ready(function(){
+  window.onload = function() {
+   $('.comparison-slider-mobile').matchHeight();
+   $('.catalog-items__item-content').matchHeight();
+   $('.catalog-items__item').matchHeight();
+   $('.catalog-items__item-inner').matchHeight();
+   $('.catalog-items__item-container').matchHeight();
+   $('.item-kit__block-content').matchHeight();
+   $('.order-page__payment-method__block').matchHeight();
+ };
+});
+
+    // Наивысшая высота блока
+    window.onload = function() {
+      var array = $(".catalog-items__item-content");
+      var height = 0;
+      for(i = 0; i < array.length; i++){
+        if($(array[i]).height() > height){
+          height = $(array[i]).height();
+        }
+      }
+      $(array).height(height);
+    };
+    
+    $(document).ready(function(){
 
     // RANGE SLIDERS
     $( function() {
@@ -405,34 +430,6 @@ $(document).ready(function(){
     }
   });
 
-    $(document).ready(function(){
-      window.onload = function() {
-       $('.comparison-slider-mobile').matchHeight();
-       $('.catalog-items__item-content').matchHeight();
-       $('.catalog-items__item').matchHeight();
-       $('.catalog-items__item-inner').matchHeight();
-       $('.catalog-items__item-container').matchHeight();
-       $('.item-kit__block-content').matchHeight();
-       $('.order-page__payment-method__block').matchHeight();
-     };
-   });
-
-    window.onload = function() {
-      function elementsHeightAuto() {
-        var array = $(".catalog-items__item-content");
-        var height = 0;
-        for(i = 0; i < array.length; i++){
-          if($(array[i]).height() > height){
-            height = $(array[i]).height();
-          }
-        }
-        $(array).height(height);
-      };
-      elementsHeightAuto();
-    };
-    $(window).resize(function(){
-      elementsHeightAuto();
-    });
 
     $(function($){
   $(document).mouseup(function (e){ // событие клика по веб-документу
