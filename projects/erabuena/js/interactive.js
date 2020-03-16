@@ -407,15 +407,6 @@ $(document).ready(function(){
 
     $(document).ready(function(){
       window.onload = function() {
-     };
-   });
-
-$(window).load(elementsHeight);
-$(window).on('resize', elementsHeight);
-
-function elementsHeight() {
-
-
        $('.comparison-slider-mobile').matchHeight();
        $('.catalog-items__item-content').matchHeight();
        $('.catalog-items__item').matchHeight();
@@ -423,7 +414,11 @@ function elementsHeight() {
        $('.catalog-items__item-container').matchHeight();
        $('.item-kit__block-content').matchHeight();
        $('.order-page__payment-method__block').matchHeight();
-
+     };
+   });
+    
+    // Наивысшая высота блока
+    window.onload = function() {
       var array = $(".catalog-items__item-content");
       var height = 0;
       for(i = 0; i < array.length; i++){
@@ -432,10 +427,6 @@ function elementsHeight() {
         }
       }
       $(array).height(height);
-};
-
-    // Наивысшая высота блока
-    window.onload = function() {
     };
 
     $(function($){
