@@ -2465,6 +2465,12 @@
     }
 
     @media (max-width: 600px){
+        body .slick-arrow2 {
+            display: none !important;
+        }
+        body .slick-arrow2 {
+            display: none !important;
+        }
         .catalog-sort__main span {
             margin-bottom: 7px !important;
         }
@@ -2495,7 +2501,7 @@
             display: flex;
             justify-content: space-around;
         }
-        .comparison-slider .slick-disabled {
+        .comparison-slider .comparison-slider-mobile .slick-disabled {
             display: flex !important;
         }
         .comparison-slider-mobile {
