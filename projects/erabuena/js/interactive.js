@@ -12,17 +12,17 @@ $(document).ready(function(){
 });
 
     // Наивысшая высота блока
-$(document).ready(function(){
-      var array = $(".catalog-items__item-content");
+jQuery(document).ready(function(){
+  var array = jQuery(".catalog-items__item-content");
       var height = 0;
       for(i = 0; i < array.length; i++){
-        if($(array[i]).height() > height){
-          height = $(array[i]).height();
+        if(jQuery(array[i]).height() > height){
+          height = jQuery(array[i]).height();
         }
       }
-      $(array).height(height);
+      jQuery(array).height(height);
 });
-    
+
     $(document).ready(function(){
 
     // RANGE SLIDERS
