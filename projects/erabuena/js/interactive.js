@@ -12,16 +12,19 @@ $(document).ready(function(){
 });
 
     // Наивысшая высота блока
-jQuery(document).ready(function(){
-  var array = jQuery(".catalog-items__item-content");
-      var height = 0;
-      for(i = 0; i < array.length; i++){
-        if(jQuery(array[i]).height() > height){
-          height = jQuery(array[i]).height();
+    jQuery(document).ready(function(){
+      function itemContentHeight(){
+        var array = jQuery(".catalog-items__item-content");
+        var height = 0;
+        for(i = 0; i < array.length; i++){
+          if(jQuery(array[i]).height() > height){
+            height = jQuery(array[i]).height();
+          }
         }
+        jQuery(array).height(height);
       }
-      jQuery(array).height(height);
-});
+      setTimeout(itemContentHeight, 2000);
+    });
 
     $(document).ready(function(){
 
