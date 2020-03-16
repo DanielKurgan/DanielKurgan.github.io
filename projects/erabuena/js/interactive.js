@@ -23,7 +23,7 @@ $(document).ready(function(){
         }
         jQuery(array).height(height);
       }
-      setTimeout(itemContentHeight, 2000);
+      setTimeout(itemContentHeight, 1000);
     });
 
     $(document).ready(function(){
