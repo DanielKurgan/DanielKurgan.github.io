@@ -12,7 +12,7 @@ $(document).ready(function(){
 });
 
     // Наивысшая высота блока
-    window.onload = function() {
+$(document).ready(function(){
       var array = $(".catalog-items__item-content");
       var height = 0;
       for(i = 0; i < array.length; i++){
@@ -21,7 +21,7 @@ $(document).ready(function(){
         }
       }
       $(array).height(height);
-    };
+});
     
     $(document).ready(function(){
 
