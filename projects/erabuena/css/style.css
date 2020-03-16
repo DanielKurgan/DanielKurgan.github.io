@@ -36,6 +36,9 @@ h2, h4 {
 .main_header {
 	overflow: hidden;
 }
+body .inner-banner {
+    height: 100% !important;
+}
 .select:after {
 	content: " ";
 	background: url("../img/arrowdown.svg") no-repeat 100% 100%/100%;

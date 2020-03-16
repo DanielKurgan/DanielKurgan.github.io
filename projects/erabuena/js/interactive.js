@@ -26,6 +26,9 @@ $(document).ready(function(){
       setTimeout(itemContentHeight, 1000);
     });
 
+
+
+
     $(document).ready(function(){
 
     // RANGE SLIDERS
@@ -494,13 +497,13 @@ $(document).ready(function(){
    slidesToShow: 2,
  } 
 },
-{
-  breakpoint: 600,
-  settings: {
-   arrows: false,
-   swipe: false,
- } 
-},
+// {
+//   breakpoint: 600,
+//   settings: {
+//    arrows: false,
+//    swipe: false,
+//  } 
+// },
 ]
 });
 
