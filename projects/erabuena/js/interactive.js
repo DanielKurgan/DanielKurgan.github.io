@@ -10,9 +10,32 @@ $(document).ready(function(){
    $('.order-page__payment-method__block').matchHeight();
  };
 });
+$(window).resize(function(){
+   $('.comparison-slider-mobile').matchHeight();
+   $('.catalog-items__item-content').matchHeight();
+   $('.catalog-items__item').matchHeight();
+   $('.catalog-items__item-inner').matchHeight();
+   $('.catalog-items__item-container').matchHeight();
+   $('.item-kit__block-content').matchHeight();
+   $('.order-page__payment-method__block').matchHeight();
+});
 
     // Наивысшая высота блока
     jQuery(document).ready(function(){
+      function itemContentHeight(){
+        var array = jQuery(".catalog-items__item-content");
+        var height = 0;
+        for(i = 0; i < array.length; i++){
+          if(jQuery(array[i]).height() > height){
+            height = jQuery(array[i]).height();
+          }
+        }
+        jQuery(array).height(height);
+      }
+      setTimeout(itemContentHeight, 1000);
+    });
+
+    jQuery(window).resize(function(){
       function itemContentHeight(){
         var array = jQuery(".catalog-items__item-content");
         var height = 0;
