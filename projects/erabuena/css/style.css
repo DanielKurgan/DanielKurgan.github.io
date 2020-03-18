@@ -2533,6 +2533,12 @@ ul.info-text li:before {
 	top: 3px;
 	width: 10px;
 	height: 11px;
+	background: url("../img/heart-pink.svg") no-repeat 100% 100%/contain;
+}
+.element-group {
+    position: relative;
+}
+.heart-icon:hover:before {
 	background: url("../img/heart-pink-active.svg") no-repeat 100% 100%/contain;
 }
 .analytics-icon:before {

@@ -1020,9 +1020,9 @@
     .catalog-pagination__button {
         font-size: 14px;
     }
-    .catalog-items__item-delete {
-        top: -7px !important;
-    }
+.catalog-items__item-delete {
+    top: 3px !important;
+}
     .comparison-page .catalog-items__item-content__buttons__basket {
         height: 20px;
     }
@@ -1887,6 +1887,9 @@
     }
 }
 @media (max-width: 500px){
+    .comparison-slider .catalog-items__item {
+        margin-bottom: 40px !important;
+    }
     .block-select__element-decor {
         width: 100%;
     }
@@ -1898,7 +1901,7 @@
         margin-top: 20px !important;
     }
     .comparison-slider-mobile {
-        padding-bottom: 40px !important;
+        padding-bottom: 0px !important;
     }
     .result-page__link {
         margin-bottom: 60px;
@@ -2465,6 +2468,10 @@
     }
 
     @media (max-width: 600px){
+        .catalog-items__item-delete {
+            top: 3px;
+            right: 3px;
+        }
         body .slick-arrow2 {
             display: none !important;
         }
