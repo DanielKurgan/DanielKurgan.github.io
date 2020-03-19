@@ -578,6 +578,7 @@ $(window).resize(function(){
           slidesToShow: 1,
           slidesToScroll: 1,
           arrows: true,
+          appendArrows: $('.slider-mobile__arrows1'),
           prevArrow: '<button id="prev-charMobile" class="slider-mobile__arrows__left" type="button"></button>',
           nextArrow: '<button id="next-charMobile" class="slider-mobile__arrows__right" type="button"></button>',
         });
@@ -600,6 +601,7 @@ $(window).resize(function(){
           arrows: true,
           prevArrow: '<button id="prev-charMobile" class="slider-mobile__arrows__left" type="button"></button>',
           nextArrow: '<button id="next-charMobile" class="slider-mobile__arrows__right" type="button"></button>',
+          appendArrows: $('.slider-mobile__arrows2'),
         });
         $('.parameters-slider-mobile2').slick({
           asNavFor: '.comparison-slider-mobile2',

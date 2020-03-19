@@ -1731,6 +1731,12 @@
 }
 
 @media (max-width: 800px){
+    .slider-mobile__arrows1 .slick-disabled {
+        display: inline-block !important;
+    }
+    .slider-mobile__arrows2 .slick-disabled {
+        display: inline-block !important;
+    }
     .catalog-items__item {
         margin-bottom: 0;
     }
@@ -1738,7 +1744,7 @@
         min-height: 40px;
     }
     .comparison-slider-mobile {
-        padding-bottom: 40px !important;
+        padding-bottom: 0px !important;
     }
         .catalog-items__item-delete {
             top: 3px;
@@ -1791,6 +1797,7 @@
         .slider-mobile__arrows {
             display: flex !important;
             margin-top: 0;
+            justify-content: space-between;
         }
         .comparison-page .slick-slide {
             display: inline-block;
@@ -1812,13 +1819,13 @@
         height: auto !important;
     }
     #prev-charMobile {
-        position: absolute;
+        position: static;
         left: 0;
         bottom: 5px;
         z-index: 999999;
     }
     #next-charMobile {
-        position: absolute;
+        position: static;
         bottom: 5px;
         right: 0;
         z-index: 999999;
