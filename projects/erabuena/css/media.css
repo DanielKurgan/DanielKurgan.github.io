@@ -1731,6 +1731,9 @@
 }
 
 @media (max-width: 800px){
+    .comparison-slider-mobile {
+        padding-bottom: 40px !important;
+    }
         .catalog-items__item-delete {
             top: 3px;
             right: 3px;
@@ -1979,9 +1982,6 @@
     }
     body .catalog-sort__numitems {
         margin-top: 20px !important;
-    }
-    .comparison-slider-mobile {
-        padding-bottom: 40px !important;
     }
     .comparison-page .catalog-items__item {
     }
