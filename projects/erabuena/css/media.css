@@ -1731,11 +1731,17 @@
 }
 
 @media (max-width: 800px){
-    .slider-mobile__arrows1 .slick-disabled {
-        display: inline-block !important;
+    .comparison-slider .slick-arrow.slick-disabled:before {
+        background: url(../img/sidebar-arrow-active.svg) no-repeat 100% 100%/contain;
     }
-    .slider-mobile__arrows2 .slick-disabled {
-        display: inline-block !important;
+    .comparison-slider .catalog-items__item {
+        margin-bottom: 0px !important;
+    }
+    .comparison-slider-mobile .catalog-items__item {
+        border-radius: 10px 10px 0 0;
+    }
+    .slider-mobile__arrows .slick-disabled {
+        display: flex !important;
     }
     .catalog-items__item {
         margin-bottom: 0;
