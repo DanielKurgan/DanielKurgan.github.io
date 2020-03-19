@@ -3764,7 +3764,7 @@ body .category-sort__search-result__category * {
 }
 .comparison-page .catalog-items__item {
 	position: relative;
-	overflow: visible;
+	/*overflow: visible;*/
 }
 .comparison-page .catalog-items__item-content__buttons__basket {
 	height: 30px;
