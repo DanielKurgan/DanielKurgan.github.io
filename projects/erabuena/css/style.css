@@ -36,8 +36,8 @@ h2, h4 {
 .main_header {
 	overflow: hidden;
 }
-body .inner-banner .catalog-items__item-container {
-    height: 100% !important;
+.inner-banner .catalog-items__item {
+	margin-bottom: 0;
 }
 .select:after {
 	content: " ";

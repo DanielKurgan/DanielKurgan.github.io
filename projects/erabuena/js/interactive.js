@@ -515,7 +515,7 @@ $(window).resize(function(){
    } 
  },
  {
-  breakpoint: 768,
+  breakpoint: 800,
   settings: {
    slidesToShow: 2,
    swipe: false,
@@ -550,7 +550,7 @@ $(window).resize(function(){
      } 
    },
    {
-    breakpoint: 768,
+    breakpoint: 800,
     settings: {
      slidesToShow: 2,
    } 
@@ -563,7 +563,7 @@ $(window).resize(function(){
       $(".comparison-slider-mobile").css("width", $catalogItemWidth);
       $(".comparison-slider-mobile .catalog-items__item").css("width", $catalogItemWidth);
 
-      if ($(window).width() < 600) {
+      if ($(window).width() < 800) {
 
         $('.comparison-slider-mobile1').slick({
           asNavFor: '.parameters-slider-mobile1',
@@ -609,6 +609,10 @@ $(window).resize(function(){
 
     // СОХРАНЕНИЕ ВЫСОТЫ БЛОКА
     $(document).ready(function(){
+     $catalogItemHeight = $(".catalog-items__item").css('height');
+     $(".catalog-items__item-container").css('height', $catalogItemHeight);
+   });
+    $(window).resize(function(){
      $catalogItemHeight = $(".catalog-items__item").css('height');
      $(".catalog-items__item-container").css('height', $catalogItemHeight);
    });
