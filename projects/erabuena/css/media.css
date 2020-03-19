@@ -1731,6 +1731,9 @@
 }
 
 @media (max-width: 800px){
+    .catalog-items__item {
+        margin-bottom: 0;
+    }
     .catalog-items__item-content {
         min-height: 40px;
     }
