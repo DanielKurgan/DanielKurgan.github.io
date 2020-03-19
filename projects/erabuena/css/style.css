@@ -39,6 +39,9 @@ h2, h4 {
 .inner-banner .catalog-items__item {
 	margin-bottom: 0;
 }
+.inner-banner .catalog-items__item-container {
+    height: 100% !important;
+}
 .select:after {
 	content: " ";
 	background: url("../img/arrowdown.svg") no-repeat 100% 100%/100%;
