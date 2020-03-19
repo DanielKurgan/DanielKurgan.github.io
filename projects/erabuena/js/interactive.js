@@ -16,6 +16,7 @@ $(window).resize(function(){
  $('.catalog-items__item').matchHeight();
  $('.catalog-items__item-inner').matchHeight();
  $('.catalog-items__item-container').matchHeight();
+
  $('.item-kit__block-content').matchHeight();
  $('.order-page__payment-method__block').matchHeight();
 });
@@ -47,6 +48,33 @@ $(window).resize(function(){
         jQuery(array).height(height);
       }
       setTimeout(itemContentHeight, 1000);
+    });
+
+    jQuery(document).ready(function(){
+      function itemContentHeight222(){
+        var array22 = jQuery(".catalog-items__item");
+        var height22 = 0;
+        for(i = 0; i < array22.length; i++){
+          if(jQuery(array22[i]).height() > height22){
+            height22 = jQuery(array22[i]).height();
+          }
+        }
+        jQuery(array22).height(height22);
+      }
+      setTimeout(itemContentHeight222, 1000);
+    });
+    jQuery(window).resize(function(){
+      function itemContentHeight222(){
+        var array22 = jQuery(".catalog-items__item");
+        var height22 = 0;
+        for(i = 0; i < array22.length; i++){
+          if(jQuery(array22[i]).height() > height22){
+            height22 = jQuery(array22[i]).height();
+          }
+        }
+        jQuery(array22).height(height22);
+      }
+      setTimeout(itemContentHeight222, 1000);
     });
 
 
