@@ -20,39 +20,61 @@ $(window).resize(function(){
  $('.order-page__payment-method__block').matchHeight();
 });
 
-    // Наивысшая высота блока
-    jQuery(document).ready(function(){
-      function itemContentHeight(){
-        var array = jQuery(".catalog-items__item-content");
-        var height = 0;
-        for(i = 0; i < array.length; i++){
-          if(jQuery(array[i]).height() > height){
-            height = jQuery(array[i]).height();
+
+
+
+
+
+
+jQuery(document).ready(function(){
+
+ if (width > 800) {
+        // Наивысшая высота блока
+        jQuery(document).ready(function(){
+          function itemContentHeight(){
+            var array = jQuery(".catalog-items__item-content");
+            var height = 0;
+            for(i = 0; i < array.length; i++){
+              if(jQuery(array[i]).height() > height){
+                height = jQuery(array[i]).height();
+              }
+            }
+            jQuery(array).height(height);
           }
-        }
-        jQuery(array).height(height);
+          setTimeout(itemContentHeight, 1000);
+        });
+
+        jQuery(window).resize(function(){
+          function itemContentHeight(){
+            var array = jQuery(".catalog-items__item-content");
+            var height = 0;
+            for(i = 0; i < array.length; i++){
+              if(jQuery(array[i]).height() > height){
+                height = jQuery(array[i]).height();
+              }
+            }
+            jQuery(array).height(height);
+          }
+          setTimeout(itemContentHeight, 1000);
+        });
       }
-      setTimeout(itemContentHeight, 1000);
     });
 
-    jQuery(window).resize(function(){
-      function itemContentHeight(){
-        var array = jQuery(".catalog-items__item-content");
-        var height = 0;
-        for(i = 0; i < array.length; i++){
-          if(jQuery(array[i]).height() > height){
-            height = jQuery(array[i]).height();
-          }
-        }
-        jQuery(array).height(height);
-      }
-      setTimeout(itemContentHeight, 1000);
-    });
 
 
 
 
-    $(document).ready(function(){
+
+
+
+
+
+
+
+
+
+
+$(document).ready(function(){
 
     // RANGE SLIDERS
     $( function() {
@@ -563,7 +585,7 @@ $(window).resize(function(){
       $(".comparison-slider-mobile").css("width", $catalogItemWidth);
       $(".comparison-slider-mobile .catalog-items__item").css("width", $catalogItemWidth);
     });
-    
+
     $(document).ready(function(){
       $catalogItemWidth = $(".catalog-items__item").css("width");
       $(".comparison-slider-mobile").css("width", $catalogItemWidth);
