@@ -558,6 +558,12 @@ $(window).resize(function(){
  ]
 });
 
+    $(window).resize(function(){
+      $catalogItemWidth = $(".catalog-items__item").css("width");
+      $(".comparison-slider-mobile").css("width", $catalogItemWidth);
+      $(".comparison-slider-mobile .catalog-items__item").css("width", $catalogItemWidth);
+    });
+    
     $(document).ready(function(){
       $catalogItemWidth = $(".catalog-items__item").css("width");
       $(".comparison-slider-mobile").css("width", $catalogItemWidth);
