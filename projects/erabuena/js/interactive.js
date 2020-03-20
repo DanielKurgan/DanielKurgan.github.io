@@ -501,11 +501,11 @@ $(window).resize(function(){
 
     jQuery(document).ready(function() {
      $(".parameters-cloud-icon").mouseover(function(){
-      $(this).parent().find(".parameters-cloud").css("opacity", "1 !important");
+      $(this).parent().find(".parameters-cloud").css("opacity", "1");
       $(this).parent().find(".parameters-cloud").css("z-index", "1");
     });
      $(".parameters-cloud-icon").mouseout(function(){
-      $(this).parent().find(".parameters-cloud").css("opacity", "0 !important");
+      $(this).parent().find(".parameters-cloud").css("opacity", "0");
       $(this).parent().find(".parameters-cloud").css("z-index", "-1");
     });
 

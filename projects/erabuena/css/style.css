@@ -2991,7 +2991,6 @@ input[type=checkbox], input[type=radio] {
 }
 .product-popup .item-info__block-text__description span {
 	margin-bottom: 0;
-	opacity: 1;
 }
 .product-popup .item-info__block-text__description {
 	margin-bottom: inherit;
@@ -3622,7 +3621,7 @@ body .category-sort__search-result__category * {
 	background: url("../img/question-cloud-icon.svg") no-repeat 100% 100%/100%;
 }
 .parameters-cloud {
-	opacity: 0 !important;
+	opacity: 0;
 	transform: translateX(-50%);
 	left: 50%;
 	z-index: -1;
