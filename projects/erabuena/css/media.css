@@ -2121,9 +2121,6 @@
         margin: 0;
         height: 40px !important;
     }
-    .catalog-items__item-delete {
-        top: 18px;
-    }
     .comparison-slider .slick-slide {
         display: flex;
         justify-content: center;
