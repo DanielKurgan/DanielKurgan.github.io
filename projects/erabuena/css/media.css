@@ -1815,9 +1815,6 @@
     .comparison-page .slick-slide {
         display: inline-block;
     }
-    .comparison-slider .slick-slide {
-        display: flex;
-    }
 /*.comparison-page .catalog-items__item {
     position: absolute;
     overflow: hidden;

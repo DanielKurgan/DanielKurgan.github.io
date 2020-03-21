@@ -21,6 +21,12 @@ $(window).resize(function(){
  $('.order-page__payment-method__block').matchHeight();
 });
 
+
+
+$(document).ready(function(){
+
+  if(width > 800){
+
     // Наивысшая высота блока
     jQuery(document).ready(function(){
       function itemContentHeight(){
@@ -63,6 +69,7 @@ $(window).resize(function(){
       }
       setTimeout(itemContentHeight222, 1000);
     });
+
     jQuery(window).resize(function(){
       function itemContentHeight222(){
         var array22 = jQuery(".catalog-items__item");
@@ -76,11 +83,77 @@ $(window).resize(function(){
       }
       setTimeout(itemContentHeight222, 1000);
     });
+  };
+});
+
+
+
+$(document).ready(function(){
+
+  if(width < 800){
+    jQuery(document).ready(function(){
+      function itemContentHeightMob(){
+        var array33 = jQuery(".comparison-slider-mobile .catalog-items__item-content");
+        var height33 = 0;
+        for(i = 0; i < array33.length; i++){
+          if(jQuery(array33[i]).height() > height33){
+            height33 = jQuery(array33[i]).height();
+          }
+        }
+        jQuery(array33).height(height33);
+      }
+      setTimeout(itemContentHeightMob, 1100);
+    });
+
+    jQuery(window).resize(function(){
+      function itemContentHeightMob(){
+        var array33 = jQuery(".comparison-slider-mobile .catalog-items__item-content");
+        var height33 = 0;
+        for(i = 0; i < array33.length; i++){
+          if(jQuery(array33[i]).height() > height33){
+            height33 = jQuery(array33[i]).height();
+          }
+        }
+        jQuery(array33).height(height33);
+      }
+      setTimeout(itemContentHeightMob, 1100);
+    });
+
+    jQuery(document).ready(function(){
+      function itemContentHeight233(){
+        var array23 = jQuery(".comparison-slider-mobile .catalog-items__item");
+        var height23 = 0;
+        for(i = 0; i < array23.length; i++){
+          if(jQuery(array23[i]).height() > height23){
+            height23 = jQuery(array23[i]).height();
+          }
+        }
+        jQuery(array23).height(height23);
+      }
+      setTimeout(itemContentHeight233, 1000);
+    });
+    jQuery(window).resize(function(){
+      function itemContentHeight233(){
+        var array23 = jQuery(".comparison-slider-mobile .catalog-items__item");
+        var height23 = 0;
+        for(i = 0; i < array23.length; i++){
+          if(jQuery(array23[i]).height() > height23){
+            height23 = jQuery(array23[i]).height();
+          }
+        }
+        jQuery(array23).height(height23);
+      }
+      setTimeout(itemContentHeight233, 1000);
+    });
+  };
+});
 
 
 
 
-    $(document).ready(function(){
+
+
+$(document).ready(function(){
 
     // RANGE SLIDERS
     $( function() {
@@ -691,8 +764,8 @@ $(document).ready(function(){
 });
 
 
-    $(".catalog-items__item-image").click(function(){
-     $(".product-popup").fadeIn();
-     $(".product-popup").css("display", "flex");
-     $("body").css("overflow", "hidden");
-   });
+$(".catalog-items__item-image").click(function(){
+ $(".product-popup").fadeIn();
+ $(".product-popup").css("display", "flex");
+ $("body").css("overflow", "hidden");
+});
