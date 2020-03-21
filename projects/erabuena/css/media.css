@@ -1738,9 +1738,6 @@
 }
 
 @media (max-width: 800px){
-    .slider-mobile__arrows1 {
-        padding: 0 3px;
-    }
     .comparison-slider .slick-arrow.slick-disabled:before {
         background: url(../img/sidebar-arrow-active.svg) no-repeat 100% 100%/contain;
     }
@@ -1817,7 +1814,6 @@
     }
     .comparison-page .slick-slide {
         display: inline-block;
-        margin: 0 auto;
     }
     .catalog-items__item-inner {
     height: auto !important;

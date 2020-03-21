@@ -659,14 +659,6 @@ $(document).ready(function(){
  ]
 });
 
-    $(document).ready(function(){
-      $sliderMobileArrowsWidth = $(".comparison-slider-mobile .catalog-items__item").css("width");
-      $(".slider-mobile__arrows").css("width", $sliderMobileArrowsWidth);
-    });
-    $(window).resize(function(){
-      $sliderMobileArrowsWidth = $(".comparison-slider-mobile .catalog-items__item").css("width");
-      $(".slider-mobile__arrows").css("width", $sliderMobileArrowsWidth);
-    });
 
 
 
@@ -780,3 +772,13 @@ $(".catalog-items__item-image").click(function(){
  $(".product-popup").css("display", "flex");
  $("body").css("overflow", "hidden");
 });
+
+
+    $(document).ready(function(){
+      $sliderMobileArrowsWidth = $(".comparison-slider-mobile .catalog-items__item").css("width");
+      $(".slider-mobile__arrows").css("width", $sliderMobileArrowsWidth);
+    });
+    $(window).resize(function(){
+      $sliderMobileArrowsWidth = $(".comparison-slider-mobile .catalog-items__item").css("width");
+      $(".slider-mobile__arrows").css("width", $sliderMobileArrowsWidth);
+    });
