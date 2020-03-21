@@ -3648,7 +3648,7 @@ body .category-sort__search-result__category * {
 	border-right: none;
 	border: 1px solid #fff0e6;
 	border-radius: 0 0 10px 10px;
-	width: 48%;
+	width: 50%;
 	height: 30px;
 	position: relative;
 	background: white;
@@ -3671,7 +3671,7 @@ body .category-sort__search-result__category * {
 	background: white;
 	border: 1px solid #fff0e6;
 	border-radius: 0 0 10px 0px;
-	width: 48%;
+	width: 50%;
 	height: 30px;
 	position: relative;
 	display: flex;
