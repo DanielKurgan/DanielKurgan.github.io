@@ -782,3 +782,8 @@ $(".catalog-items__item-image").click(function(){
       $sliderMobileArrowsWidth = $(".comparison-slider-mobile .catalog-items__item").css("width");
       $(".slider-mobile__arrows").css("width", $sliderMobileArrowsWidth);
     });
+
+      window.addEventListener("orientationchange", function() {
+      $sliderMobileArrowsWidth = $(".comparison-slider-mobile .catalog-items__item").css("width");
+      $(".slider-mobile__arrows").css("width", $sliderMobileArrowsWidth);
+    }, false);
