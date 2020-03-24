@@ -3,7 +3,7 @@ var width = $(window).width();
 $(document).ready(function(){
 
   // Выравниваем по высоте
-  window.onload = function() {
+  $(window).on('load resize', function () {
    $('.comparison-slider-mobile').matchHeight();
    $('.catalog-items__item-content').matchHeight();
    $('.catalog-items__item').matchHeight();
@@ -11,17 +11,7 @@ $(document).ready(function(){
    $('.catalog-items__item-container').matchHeight();
    $('.item-kit__block-content').matchHeight();
    $('.order-page__payment-method__block').matchHeight();
- };
-  $(window).resize(function(){
-   $('.comparison-slider-mobile').matchHeight();
-   $('.catalog-items__item-content').matchHeight();
-   $('.catalog-items__item').matchHeight();
-   $('.catalog-items__item-inner').matchHeight();
-   $('.catalog-items__item-container').matchHeight();
-
-   $('.item-kit__block-content').matchHeight();
-   $('.order-page__payment-method__block').matchHeight();
-  });
+ });
 
   // Наивысшая высота блока на декстопных карточках товара
   if(width > 800){
