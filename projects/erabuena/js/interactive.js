@@ -897,7 +897,7 @@ function sliderMobileArrowsWidth() {
 $(document).ready(sliderMobileArrowsWidth);
 $(window).resize(sliderMobileArrowsWidth);
 
-// window.addEventListener("orientationchange", function() {
-//   $sliderMobileArrowsWidth = $(".catalog-items__item").css("width");
-//   $(".slider-mobile__arrows").css("width", $sliderMobileArrowsWidth);
-// });
+window.addEventListener("orientationchange", function() {
+  $sliderMobileArrowsWidth = $(".catalog-items__item").css("width");
+  $(".slider-mobile__arrows").css("width", $sliderMobileArrowsWidth);
+});
