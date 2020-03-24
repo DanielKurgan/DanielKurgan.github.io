@@ -699,11 +699,16 @@ $(".parameters-kit__title").click(function(){
  ]
 });
 
-    $(window).on('load resize', function () {
+
+    $(window).resize(function(){
       $catalogItemWidth = $(".catalog-items__item").css("width");
       $(".comparison-slider-mobile").css("width", $catalogItemWidth);
       $(".comparison-slider-mobile .catalog-items__item").css("width", $catalogItemWidth);
     });
+
+    $catalogItemWidth = $(".catalog-items__item").css("width");
+    $(".comparison-slider-mobile").css("width", $catalogItemWidth);
+    $(".comparison-slider-mobile .catalog-items__item").css("width", $catalogItemWidth);
 
     $(function (){
 
