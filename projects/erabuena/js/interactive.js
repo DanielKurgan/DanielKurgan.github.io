@@ -16,62 +16,62 @@ $(document).ready(function(){
   // Наивысшая высота блока на декстопных карточках товара
   if(width > 800){
 
-    $(window).on('load resize', function () {
-      function itemContentHeight(){
-        var arrayICH = jQuery(".catalog-items__item-content");
-        var heightICH = 0;
-        for(i = 0; i < arrayICH.length; i++){
-          if(jQuery(arrayICH[i]).height() > heightICH){
-            heightICH = jQuery(arrayICH[i]).height();
-          }
+    function itemContentHeight(){
+      var arrayICH = jQuery(".catalog-items__item-content");
+      var heightICH = 0;
+      for(i = 0; i < arrayICH.length; i++){
+        if(jQuery(arrayICH[i]).height() > heightICH){
+          heightICH = jQuery(arrayICH[i]).height();
         }
-        jQuery(arrayICH).height(height);
       }
-      setTimeout(itemContentHeight, 100);
+      jQuery(arrayICH).height(heightICH);
+    }
+    $(document).ready(itemContentHeight);
+    $(window).resize(itemContentHeight);
 
-      function itemHeight(){
-        var arrayIH = jQuery(".catalog-items__item");
-        var heightIH = 0;
-        for(i = 0; i < arrayIH.length; i++){
-          if(jQuery(arrayIH[i]).height() > heightIH){
-            heightIH = jQuery(arrayIH[i]).height();
-          }
+    function itemHeight(){
+      var arrayIH = jQuery(".catalog-items__item");
+      var heightIH = 0;
+      for(i = 0; i < arrayIH.length; i++){
+        if(jQuery(arrayIH[i]).height() > heightIH){
+          heightIH = jQuery(arrayIH[i]).height();
         }
-        jQuery(arrayIH).height(heightIH);
       }
-      setTimeout(itemHeight, 100);
-    });
+      jQuery(arrayIH).height(heightIH);
+    }
+    $(document).ready(itemHeight);
+    $(window).resize(itemHeight);
 
   };
 
   // Наивысшая высота на мобильных слайдерах у карточки
   if (width < 799){
 
-    $(window).on('load resize', function () {
-      function itemContentHeightMob(){
-        var arrayICHM = jQuery(".comparison-slider-mobile .catalog-items__item-content");
-        var heightICHM = 0;
-        for(i = 0; i < arrayICHM.length; i++){
-          if(jQuery(arrayICHM[i]).height() > heightICHM){
-            heightICHM = jQuery(arrayICHM[i]).height();
-          }
+    function itemContentHeightMob(){
+      var arrayICHM = jQuery(".comparison-slider-mobile .catalog-items__item-content");
+      var heightICHM = 0;
+      for(i = 0; i < arrayICHM.length; i++){
+        if(jQuery(arrayICHM[i]).height() > heightICHM){
+          heightICHM = jQuery(arrayICHM[i]).height();
         }
-        jQuery(arrayICHM).height(heightICHM);
       }
-      setTimeout(itemContentHeightMob, 100);
+      jQuery(arrayICHM).height(heightICHM);
+    }
+    $(document).ready(itemContentHeightMob);
+    $(window).resize(itemContentHeightMob);
 
-      function itemHeightMob(){
-        var arrayIHM = jQuery(".comparison-slider-mobile .catalog-items__item");
-        var heightIHM = 0;
-        for(i = 0; i < arrayIHM.length; i++){
-          if(jQuery(arrayIHM[i]).height() > heightIHM){
-            heightIHM = jQuery(arrayIHM[i]).height();
-          }
+    function itemHeightMob(){
+      var arrayIHM = jQuery(".comparison-slider-mobile .catalog-items__item");
+      var heightIHM = 0;
+      for(i = 0; i < arrayIHM.length; i++){
+        if(jQuery(arrayIHM[i]).height() > heightIHM){
+          heightIHM = jQuery(arrayIHM[i]).height();
         }
-        jQuery(arrayIHM).height(heightIHM);
       }
-      setTimeout(itemHeightMob, 100);
-    });
+      jQuery(arrayIHM).height(heightIHM);
+    }
+    $(document).ready(itemHeightMob);
+    $(window).resize(itemHeightMob);
 
   };
 
@@ -124,10 +124,10 @@ $(document).ready(function(){
  } );
 
 
-    // Чтобы можно было перемещать ползунки на мобилке свайпом
-    $('#slider-range1').draggable();
-    $('#slider-range2').draggable();
-    $('#slider-range3').draggable();
+    // // Чтобы можно было перемещать ползунки на мобилке свайпом
+    // $('#slider-range1').draggable();
+    // $('#slider-range2').draggable();
+    // $('#slider-range3').draggable();
 
 
     // FILTER OPEN CHILD
@@ -482,27 +482,27 @@ $('.tab-pane').slick({
     }
   });
 
-    $(document).on('mouseover', 'a', function () {
-     var $this = $(this);
-     var menu;
-     if ((menu = $this.attr('id'))) 
-      var target = menu; {
-       target.toggleClass('visible');
-       if (!target.is(":visible")) {
-        $this.removeClass('active');
-        target.unbind('mouseover');
-      } else $this.addClass('active');
-      target.one('mouseover', function () {
-        target.one('mouseout', function mouseout() {
-         if (target.is(':hover')) {
-          target.one('mouseout', mouseout);
-          return;
-        }
-        $this.removeClass('active');
-      });
-      });
-    }
-  });
+  //   $(document).on('mouseover', 'a', function () {
+  //    var $this = $(this);
+  //    var menu;
+  //    if ((menu = $this.attr('id'))) 
+  //     var target = menu; {
+  //      target.toggleClass('visible');
+  //      if (!target.is(":visible")) {
+  //       $this.removeClass('active');
+  //       target.unbind('mouseover');
+  //     } else $this.addClass('active');
+  //     target.one('mouseover', function () {
+  //       target.one('mouseout', function mouseout() {
+  //        if (target.is(':hover')) {
+  //         target.one('mouseout', mouseout);
+  //         return;
+  //       }
+  //       $this.removeClass('active');
+  //     });
+  //     });
+  //   }
+  // });
 
 
     // MOBILE NAV OPEN
@@ -700,15 +700,14 @@ $(".parameters-kit__title").click(function(){
 });
 
 
-    $(window).resize(function(){
+    function sliderMobileItemWidth(){
       $catalogItemWidth = $(".catalog-items__item").css("width");
       $(".comparison-slider-mobile").css("width", $catalogItemWidth);
       $(".comparison-slider-mobile .catalog-items__item").css("width", $catalogItemWidth);
-    });
+    }
+    $(document).ready(sliderMobileItemWidth);
+    $(window).resize(sliderMobileItemWidth);
 
-    $catalogItemWidth = $(".catalog-items__item").css("width");
-    $(".comparison-slider-mobile").css("width", $catalogItemWidth);
-    $(".comparison-slider-mobile .catalog-items__item").css("width", $catalogItemWidth);
 
     $(function (){
 
@@ -841,15 +840,15 @@ $('.parameters-slider-mobile2').slick({
 
 
     // СОХРАНЕНИЕ ВЫСОТЫ БЛОКА
-    $catalogItemHeight = $(".catalog-items__item").css('height');
-    $(".catalog-items__item-container").css('height', $catalogItemHeight);
-    $(window).resize(function(){
-     $catalogItemHeight = $(".catalog-items__item").css('height');
-     $(".catalog-items__item-container").css('height', 'max-content');
-   });
+    function catalogItemHeightContainer(){
+      $catalogItemHeightContainer = $(".catalog-items__item").css('height');
+      $(".catalog-items__item-container").css('height', $catalogItemHeightContainer);
+    }
+    $(document).ready(catalogItemHeightContainer);
+    $(window).resize(catalogItemHeightContainer);
 
-    // TEST
-    $('.foo').offset().top - $('.bar').offset().top
+    // // TEST
+    // $('.foo').offset().top - $('.bar').offset().top
 
     // DELETE BUTTON CARD COMPRISON OAGE
 
@@ -890,17 +889,13 @@ $(".catalog-items__item-image").click(function(){
 
 });
 
-
-$(document).ready(function(){
+function sliderMobileArrowsWidth() {
   $sliderMobileArrowsWidth = $(".comparison-slider-mobile .catalog-items__item").css("width");
   $(".slider-mobile__arrows").css("width", $sliderMobileArrowsWidth);
-});
-$(window).resize(function(){
-  $sliderMobileArrowsWidth = $(".catalog-items__item").css("width");
-  $(".slider-mobile__arrows").css("width", $sliderMobileArrowsWidth);
-});
-
-window.addEventListener("orientationchange", function() {
-  $sliderMobileArrowsWidth = $(".catalog-items__item").css("width");
-  $(".slider-mobile__arrows").css("width", $sliderMobileArrowsWidth);
-});
+};
+$(document).ready(sliderMobileArrowsWidth);
+$(window).resize(sliderMobileArrowsWidth);
+// window.addEventListener("orientationchange", function() {
+//   $sliderMobileArrowsWidth = $(".catalog-items__item").css("width");
+//   $(".slider-mobile__arrows").css("width", $sliderMobileArrowsWidth);
+// });
