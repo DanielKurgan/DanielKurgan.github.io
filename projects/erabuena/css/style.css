@@ -292,9 +292,6 @@ button {
 .comparison-page .catalog-items__item:hover .catalog-items__item-delete {
 	opacity: 1;
 }
-.comparison-slider .catalog-items__item {
-	height: 100% !important;
-}
 .catalog-items__item {
 	max-width: 200px;
 	width: 100%;
