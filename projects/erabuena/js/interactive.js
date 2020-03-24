@@ -1,7 +1,9 @@
+var width = $(window).width();
+
 $(document).ready(function(){
 
   // Выравниваем по высоте
-$(window).on('load resize', function () {
+  $(window).on('load resize', function () {
    $('.comparison-slider-mobile').matchHeight();
    $('.catalog-items__item-content').matchHeight();
    $('.catalog-items__item').matchHeight();
@@ -9,115 +11,68 @@ $(window).on('load resize', function () {
    $('.catalog-items__item-container').matchHeight();
    $('.item-kit__block-content').matchHeight();
    $('.order-page__payment-method__block').matchHeight();
-});
+ });
 
   // Наивысшая высота блока на декстопных карточках товара
   if(width > 800){
 
-    function itemContentHeight(){
-      var array = jQuery(".catalog-items__item-content");
-      var height = 0;
-      for(i = 0; i < array.length; i++){
-        if(jQuery(array[i]).height() > height){
-          height = jQuery(array[i]).height();
-        }
-      }
-      jQuery(array).height(height);
-    }
-    setTimeout(itemContentHeight, 100);
-
-    jQuery(window).resize(function(){
+    $(window).on('load resize', function () {
       function itemContentHeight(){
-        var array = jQuery(".catalog-items__item-content");
-        var height = 0;
-        for(i = 0; i < array.length; i++){
-          if(jQuery(array[i]).height() > height){
-            height = jQuery(array[i]).height();
+        var arrayICH = jQuery(".catalog-items__item-content");
+        var heightICH = 0;
+        for(i = 0; i < arrayICH.length; i++){
+          if(jQuery(arrayICH[i]).height() > heightICH){
+            heightICH = jQuery(arrayICH[i]).height();
           }
         }
-        jQuery(array).height(height);
+        jQuery(arrayICH).height(height);
       }
       setTimeout(itemContentHeight, 100);
-    });
 
-    function itemContentHeight222(){
-      var array22 = jQuery(".catalog-items__item");
-      var height22 = 0;
-      for(i = 0; i < array22.length; i++){
-        if(jQuery(array22[i]).height() > height22){
-          height22 = jQuery(array22[i]).height();
-        }
-      }
-      jQuery(array22).height(height22);
-    }
-    setTimeout(itemContentHeight222, 100);
-    jQuery(window).resize(function(){
-      function itemContentHeight222(){
-        var array22 = jQuery(".catalog-items__item");
-        var height22 = 0;
-        for(i = 0; i < array22.length; i++){
-          if(jQuery(array22[i]).height() > height22){
-            height22 = jQuery(array22[i]).height();
+      function itemHeight(){
+        var arrayIH = jQuery(".catalog-items__item");
+        var heightIH = 0;
+        for(i = 0; i < arrayIH.length; i++){
+          if(jQuery(arrayIH[i]).height() > heightIH){
+            heightIH = jQuery(arrayIH[i]).height();
           }
         }
-        jQuery(array22).height(height22);
+        jQuery(arrayIH).height(heightIH);
       }
-      setTimeout(itemContentHeight222, 100);
+      setTimeout(itemHeight, 100);
     });
+
   };
 
   // Наивысшая высота на мобильных слайдерах у карточки
-  if(width < 799){
-    function itemContentHeightMob(){
-      var array33 = jQuery(".comparison-slider-mobile .catalog-items__item-content");
-      var height33 = 0;
-      for(i = 0; i < array33.length; i++){
-        if(jQuery(array33[i]).height() > height33){
-          height33 = jQuery(array33[i]).height();
-        }
-      }
-      jQuery(array33).height(height33);
-    }
-    setTimeout(itemContentHeightMob, 100);
+  if (width < 799){
 
-    jQuery(window).resize(function(){
+    $(window).on('load resize', function () {
       function itemContentHeightMob(){
-        var array33 = jQuery(".comparison-slider-mobile .catalog-items__item-content");
-        var height33 = 0;
-        for(i = 0; i < array33.length; i++){
-          if(jQuery(array33[i]).height() > height33){
-            height33 = jQuery(array33[i]).height();
+        var arrayICHM = jQuery(".comparison-slider-mobile .catalog-items__item-content");
+        var heightICHM = 0;
+        for(i = 0; i < arrayICHM.length; i++){
+          if(jQuery(arrayICHM[i]).height() > heightICHM){
+            heightICHM = jQuery(arrayICHM[i]).height();
           }
         }
-        jQuery(array33).height(height33);
+        jQuery(arrayICHM).height(heightICHM);
       }
       setTimeout(itemContentHeightMob, 100);
-    });
 
-    function itemContentHeight233(){
-      var array23 = jQuery(".comparison-slider-mobile .catalog-items__item");
-      var height23 = 0;
-      for(i = 0; i < array23.length; i++){
-        if(jQuery(array23[i]).height() > height23){
-          height23 = jQuery(array23[i]).height();
-        }
-      }
-      jQuery(array23).height(height23);
-    }
-    setTimeout(itemContentHeight233, 100);
-    jQuery(window).resize(function(){
-      function itemContentHeight233(){
-        var array23 = jQuery(".comparison-slider-mobile .catalog-items__item");
-        var height23 = 0;
-        for(i = 0; i < array23.length; i++){
-          if(jQuery(array23[i]).height() > height23){
-            height23 = jQuery(array23[i]).height();
+      function itemHeightMob(){
+        var arrayIHM = jQuery(".comparison-slider-mobile .catalog-items__item");
+        var heightIHM = 0;
+        for(i = 0; i < arrayIHM.length; i++){
+          if(jQuery(arrayIHM[i]).height() > heightIHM){
+            heightIHM = jQuery(arrayIHM[i]).height();
           }
         }
-        jQuery(array23).height(height23);
+        jQuery(arrayIHM).height(heightIHM);
       }
-      setTimeout(itemContentHeight233, 100);
+      setTimeout(itemHeightMob, 100);
     });
+
   };
 
   // Ползунки у Range Sliders
@@ -168,6 +123,7 @@ $(window).on('load resize', function () {
    $( "#amount6" ).val( $( "#slider-range3" ).slider( "values", 1 ) + " см" );
  } );
 
+
     // Чтобы можно было перемещать ползунки на мобилке свайпом
     $('#slider-range1').draggable();
     $('#slider-range2').draggable();
@@ -184,14 +140,11 @@ $(window).on('load resize', function () {
 
 
     // HEADER - BASKET POPUP
-    var width = $(window).width();
-
     $(document).on('click', '#basket-toggle', function(e) {
      e.preventDefault();
      if (width > 1169) {
       $( '.basket-popup' ).toggleClass('show-popup');
-    }
-    else {
+    } else {
       $( '.basket-mob, .basket-block-mobile' ).fadeToggle(150).toggleClass('opened');
       $( '.basket-icon' ).css({zIndex: '2003'});
       $( '.basket-number' ).css({zIndex: '2004'});
@@ -210,6 +163,7 @@ $(window).on('load resize', function () {
 
 
     $(document).ready(function(){
+
 
     // SEARCH - INPUT FOCUS
     $( ".search-input" ).focus(function() {
@@ -237,16 +191,19 @@ $(window).on('load resize', function () {
     }
   });
 
+
     // HEADER - PHONE POPUP 
     $(document).on('click', '.phone-toggle', function(e) {
      e.preventDefault();
      $('.phone-popup').toggleClass('show-popup');
    });
 
+
     // FOOTER TABLET ADAPTIVE 
     if (width > 767 && width < 1169) {
      $('.element-one, .element-two').wrapAll('<div class="tablet-adaptive">');
    };
+
 
     // POPUPS CLOSE ON BODY CLICK
     $(document).click(function(event) {
@@ -261,6 +218,7 @@ $(window).on('load resize', function () {
   document.addEventListener('keydown', function (e) {
    if(e.keyCode === 27) $('.basket-popup, .phone-popup').removeClass('show-popup');
  }); 
+
 
  // FIXED HEADER
  $(document).on('click', '.menu-toggle', function() {
@@ -340,6 +298,7 @@ $(document).on('click', '.sm-li_main', function (e) {
     target.fadeToggle('fast');
   };
 });
+
 
 // SLIDER
 
@@ -448,7 +407,6 @@ $(function() {
 });
 
 
-
 // BOOTSTRAP TABS
 $('.tab-pane').slick({
  variableWidth: false,
@@ -488,7 +446,6 @@ $('.tab-pane').slick({
 
 
     // STICKY BLOCK SIDEBAR AND MENU
-    // Находим плавающий блок и делаем его плавающим
     // SIDEBAR
     $('.item-page__sidebar-container').stick_in_parent({
         // Отступ сверху
@@ -511,7 +468,6 @@ $('.tab-pane').slick({
       "border-bottom":"1px solid",
     });
      $(".item-nav ul li").css("padding-top", "10px");
-
    };
 
 
@@ -520,14 +476,11 @@ $('.tab-pane').slick({
      if ($(".catalog-filter__colors__color").hasClass('color-active') ) {
       $(".catalog-filter__colors__color").removeClass('color-active');
       $(this).addClass('color-active');
-                //Insert logic if you want a type of optional click/off click code
-              } 
-              else
-              {
-                $(this).addClass('color-active');
-                //Insert event handling logic
-              }
-            });
+    } else {
+      $(this).addClass('color-active');
+      //Insert event handling logic
+    }
+  });
 
     $(document).on('mouseover', 'a', function () {
      var $this = $(this);
@@ -632,10 +585,12 @@ $('.tab-pane').slick({
      $("body").css("overflow", "visible");
    }); 
 
+
     $('a').on('click', function(e){
      $('html,body').stop().animate({ scrollTop: $(this.hash).offset().top }, 1000);
      e.preventDefault();
    });
+
 
     $('[data-fancybox]').fancybox({
      thumbs : {
@@ -647,8 +602,8 @@ $('.tab-pane').slick({
   });
 
 
-
-    $(function($){
+// Скрываем попап по клику на фон
+$(function($){
   $(document).mouseup(function (e){ // событие клика по веб-документу
     var div = $(".product-popup__container-block"); // тут указываем ID элемента
     if (!div.is(e.target) // если клик был не по нашему блоку
@@ -659,21 +614,21 @@ $('.tab-pane').slick({
 });
 }); 
 
-    $(".parameters-cloud-icon").mouseover(function(){
-      $(this).parent().find(".parameters-cloud").css("opacity", "1");
-      $(this).parent().find(".parameters-cloud").css("z-index", "1");
-    });
-    $(".parameters-cloud-icon").mouseout(function(){
-      $(this).parent().find(".parameters-cloud").css("opacity", "0");
-      $(this).parent().find(".parameters-cloud").css("z-index", "-1");
-    });
+$(".parameters-cloud-icon").mouseover(function(){
+  $(this).parent().find(".parameters-cloud").css("opacity", "1");
+  $(this).parent().find(".parameters-cloud").css("z-index", "1");
+});
+$(".parameters-cloud-icon").mouseout(function(){
+  $(this).parent().find(".parameters-cloud").css("opacity", "0");
+  $(this).parent().find(".parameters-cloud").css("z-index", "-1");
+});
 
-    $(".parameters-kit__title").click(function(){
-      $(this).parent().find(".parameters-kit__block-element-container").toggleClass("max-height100");
-      // $(this).parent().find(".parameters-kit__block-element-container").toggleClass("max-height100");
-      // $(this).parent().find(".parameters-kit__block-element").toggleClass("flex");
-      $(this).parent().find(".parameters-kit__title-text-icon").toggleClass("parameters-kit__title-text-icon__bg2");
-    });
+$(".parameters-kit__title").click(function(){
+  $(this).parent().find(".parameters-kit__block-element-container").toggleClass("max-height100");
+  // $(this).parent().find(".parameters-kit__block-element-container").toggleClass("max-height100");
+  // $(this).parent().find(".parameters-kit__block-element").toggleClass("flex");
+  $(this).parent().find(".parameters-kit__title-text-icon").toggleClass("parameters-kit__title-text-icon__bg2");
+});
 
 
     // SLICK SLIDERS
@@ -744,16 +699,11 @@ $('.tab-pane').slick({
  ]
 });
 
-
-    $(window).resize(function(){
+    $(window).on('load resize', function () {
       $catalogItemWidth = $(".catalog-items__item").css("width");
       $(".comparison-slider-mobile").css("width", $catalogItemWidth);
       $(".comparison-slider-mobile .catalog-items__item").css("width", $catalogItemWidth);
     });
-
-    $catalogItemWidth = $(".catalog-items__item").css("width");
-    $(".comparison-slider-mobile").css("width", $catalogItemWidth);
-    $(".comparison-slider-mobile .catalog-items__item").css("width", $catalogItemWidth);
 
     $(function (){
 
