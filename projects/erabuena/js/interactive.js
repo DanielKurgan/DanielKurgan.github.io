@@ -12,6 +12,7 @@ $(document).ready(function(){
    $('.catalog-items__item-container').matchHeight();
    $('.item-kit__block-content').matchHeight();
    $('.order-page__payment-method__block').matchHeight();
+   $('.comparison-slider .slick-slide').matchHeight();
  };
  $(document).ready(matchHeight);
  $(window).resize(matchHeight);
