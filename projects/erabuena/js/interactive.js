@@ -851,12 +851,6 @@ $('.parameters-slider-mobile2').slick({
     // // TEST
     // $('.foo').offset().top - $('.bar').offset().top
 
-    // DELETE BUTTON CARD COMPRISON OAGE
-
-    $(".catalog-items__item").hover(function(){
-      $(this).find(".catalog-items__item-delete").toggleClass("opacityVisible");
-    });
-
     // Synchronization slider with slider char
     $(".comparison-slider #next").click(function(){
       $('#next-char').trigger('click');

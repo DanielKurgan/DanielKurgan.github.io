@@ -289,6 +289,9 @@ button {
 	-ms-transform: translate(-80%, -50%);
 	-o-transform: translate(-80%, -50%);
 }
+.comparison-page .catalog-items__item:hover .catalog-items__item-delete {
+	opacity: 1;
+}
 .catalog-items__item {
 	max-width: 200px;
 	width: 100%;
@@ -3821,10 +3824,6 @@ input[type=checkbox], input[type=radio] {
 		background: white;
 		border-radius: 10px;
 		padding: 30px 20px;
-	}
-	.method-payment-input:checked .order-page__payment-method__block {
-		border: 1px solid #eccdba;
-		padding: 12px 20px;
 	}
 	.order-sidebar {
 		margin-left: 20px;
