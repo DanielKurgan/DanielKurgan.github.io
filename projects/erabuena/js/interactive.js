@@ -5,8 +5,11 @@ $(document).ready(function(){
   // Выравниваем по высоте
   function matchHeight(){
    $('.comparison-slider-mobile').matchHeight();
+   // $('.catalog-items__item-content').matchHeight();
+   // $('.catalog-items__item-inner').matchHeight();
+   // $('.catalog-items__item-container').matchHeight();
+   $('.catalog-items__item-content__name').matchHeight();
    $('.catalog-items__item').matchHeight();
-
    $('.item-kit__block-content').matchHeight();
    $('.order-page__payment-method__block').matchHeight();
  };
