@@ -17,6 +17,19 @@ $(document).ready(function(){
   // Наивысшая высота блока на декстопных карточках товара
   if(width > 800){
 
+    function itemContentHeight2(){
+      var arrayICH2 = jQuery(".catalog-items__item-inner");
+      var heightICH2 = 0;
+      for(i = 0; i < arrayICH2.length; i++){
+        if(jQuery(arrayICH2[i]).height() > heightICH2){
+          heightICH2 = jQuery(arrayICH2[i]).height();
+        }
+      }
+      jQuery(arrayICH2).height(heightICH2);
+    }
+    $(document).ready(itemContentHeight2);
+    $(window).resize(itemContentHeight2);
+
     function itemContentHeight(){
       var arrayICH = jQuery(".catalog-items__item-content");
       var heightICH = 0;
