@@ -5,10 +5,6 @@ $(document).ready(function(){
   // Выравниваем по высоте
   function matchHeight(){
    $('.comparison-slider-mobile').matchHeight();
-   $('.catalog-items__item-content').matchHeight();
-   $('.catalog-items__item-inner').matchHeight();
-   $('.catalog-items__item-container').matchHeight();
-   $('.catalog-items__item-content').matchHeight();
    $('.item-kit__block-content').matchHeight();
    $('.order-page__payment-method__block').matchHeight();
  };
@@ -17,31 +13,31 @@ $(document).ready(function(){
   // Наивысшая высота блока на декстопных карточках товара
   if(width > 800){
 
-    // function itemContentHeight(){
-    //   var arrayICH = jQuery(".catalog-items__item-content");
-    //   var heightICH = 0;
-    //   for(i = 0; i < arrayICH.length; i++){
-    //     if(jQuery(arrayICH[i]).height() > heightICH){
-    //       heightICH = jQuery(arrayICH[i]).height();
-    //     }
-    //   }
-    //   jQuery(arrayICH).height(heightICH);
-    // }
-    // $(document).ready(itemContentHeight);
-    // $(window).resize(itemContentHeight);
+    function itemContentHeight(){
+      var arrayICH = jQuery(".catalog-items__item-content");
+      var heightICH = 0;
+      for(i = 0; i < arrayICH.length; i++){
+        if(jQuery(arrayICH[i]).height() > heightICH){
+          heightICH = jQuery(arrayICH[i]).height();
+        }
+      }
+      jQuery(arrayICH).height(heightICH);
+    }
+    $(document).ready(itemContentHeight);
+    $(window).resize(itemContentHeight);
 
-    // function itemHeight(){
-    //   var arrayIH = jQuery(".catalog-items__item");
-    //   var heightIH = 0;
-    //   for(i = 0; i < arrayIH.length; i++){
-    //     if(jQuery(arrayIH[i]).height() > heightIH){
-    //       heightIH = jQuery(arrayIH[i]).height();
-    //     }
-    //   }
-    //   jQuery(arrayIH).height(heightIH);
-    // }
-    // $(document).ready(itemHeight);
-    // $(window).resize(itemHeight);
+    function itemHeight(){
+      var arrayIH = jQuery(".catalog-items__item");
+      var heightIH = 0;
+      for(i = 0; i < arrayIH.length; i++){
+        if(jQuery(arrayIH[i]).height() > heightIH){
+          heightIH = jQuery(arrayIH[i]).height();
+        }
+      }
+      jQuery(arrayIH).height(heightIH);
+    }
+    $(document).ready(itemHeight);
+    $(window).resize(itemHeight);
 
   };
 
