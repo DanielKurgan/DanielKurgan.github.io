@@ -6,7 +6,6 @@ $(document).ready(function(){
   function matchHeight(){
    $('.comparison-slider-mobile').matchHeight();
    // $('.catalog-items__item-content').matchHeight();
-   $('.catalog-items__item').matchHeight();
    $('.catalog-items__item-inner').matchHeight();
    $('.catalog-items__item-container').matchHeight();
    $('.item-kit__block-content').matchHeight();
