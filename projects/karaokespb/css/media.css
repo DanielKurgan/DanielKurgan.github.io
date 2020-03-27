@@ -302,6 +302,12 @@
 }
 
 @media (max-width: 800px){
+	.catalog__content {
+	    grid-template-columns: 1fr 1fr;
+	}
+	.catalog__element__image {
+	    height: auto;
+	}
 	.welcomeDecorCircleBigRight {
 		top: -140px !important;
 		right: -140px !important;
