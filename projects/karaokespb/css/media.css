@@ -159,7 +159,21 @@
 	}
 }
 
+@media (max-width: 1150px){
+	.catalogDecorCircleBig {
+	    right: -111px;
+	    top: -96px;
+	}
+	.catalogDecorSquareGroupSmall {
+	    left: 102px;
+	}
+}
+
 @media (max-width: 1024px){
+	.catalog__title {
+	    padding-bottom: 52px;
+	    font-size: 34px;
+	}
 	.welcome__container {
 		flex-direction: column;
 		align-items: center;
@@ -227,7 +241,7 @@
 		right: auto;
 	}
 	.booking__title {
-		margin-top: 30px;
+		margin-top: 10px;
 	}
 	.booking__button {
 		font-size: 26px;
@@ -302,6 +316,9 @@
 }
 
 @media (max-width: 800px){
+	.catalogDecorSquareGroupSmall {
+		display: none;
+	}
 	.catalog__content {
 	    grid-template-columns: 1fr 1fr;
 	}
@@ -426,8 +443,16 @@
 }
 
 @media (max-width: 600px){
+	.catalogDecorCircleBig {
+		display: none;
+	}
+	.footer-container a {
+	    width: 100%;
+	    display: inline-block;
+	}
 	.footer-container {
 		flex-direction: column;
+		text-align: center;
 	}
 	.footer-container * {
 		padding: 5px 0;
@@ -444,8 +469,8 @@
 		width: 217px;
 		height: 217px;
 	}
-	.welcome__content {
-		text-align: center;
+	.welcome__description br {
+		display: none;
 	}
 	.welcome__link-icons {
 		text-align: center;
@@ -462,10 +487,10 @@
 	.booking {
 		padding-top: 30px;
 	}
-	.title2 {
-		font-size: 44px;
-		line-height: 16px;
-	}
+.title2 {
+    font-size: 44px;
+    line-height: 44px;
+}
 	.booking__description {
 		margin-top: 16px;
 		font-size: 19px;
