@@ -115,19 +115,6 @@ $(document).ready(function () {
     $(document).ready(itemHeightMob);
     $(window).resize(itemHeightMob);
 
-    function itemNameHeightMob() {
-      var arrayINHM = jQuery(".catalog-items__item-content__name");
-      var heightINHM = 0;
-      for (i = 0; i < arrayINHM.length; i++) {
-        if (jQuery(arrayINHM[i]).height() > heightINHM) {
-          heightINHM = jQuery(arrayINHM[i]).height();
-        }
-      }
-      jQuery(arrayINHM).height(heightINHM);
-    }
-    $(document).ready(itemNameHeightMob);
-    $(window).resize(itemNameHeightMob);
-
   };
 
   // Ползунки у Range Sliders
