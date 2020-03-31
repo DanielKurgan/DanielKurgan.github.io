@@ -85,6 +85,25 @@ button {
 	margin: 0 !important;
 }
 /*STYLES*/
+/*
+.select2 {
+	font-size: 13px;
+	width: 100%;
+}
+.select2, .select2-selection {
+    width: 100% !important;
+    padding: 0 !important;
+}
+.select2-selection__rendered {
+    padding: 5px 13px !important;
+    border: 1px solid #e4e4e4 !important;
+}
+.select2 * {
+	border-radius: 15px !important;
+	height: 30px;
+}
+*/
+
 
 .site-tree {
 	display: flex;
@@ -118,9 +137,8 @@ button {
 .site-tree__block {
 	display: flex;
 	margin-top: 30px;
-	margin-bottom: 40px;
+	margin-bottom: 30px;
 	width: 100%;
-	padding: 0 10px;
 }
 .site-tree__back {
 	width: 82px;
@@ -2203,7 +2221,7 @@ ul.info-text li:before {
 }
 .store-info {
 	margin-top: 50px;
-	border-bottom: 1px solid #dee2e6;
+	border-bottom: 1px solid #f3e5dc;
 }
 .store-info .nav-tabs .nav-link {
 	border: 0 !important;
@@ -2219,8 +2237,7 @@ ul.info-text li:before {
 	margin-bottom: 7px;
 }
 .store-info .item-button-simple {
-	width: 160px;
-	margin-left: -12px;
+	width: 140px;
 	line-height: 43px;
 	height: 43px;
 }
@@ -2273,15 +2290,13 @@ ul.info-text li:before {
 	margin-bottom: 0; 
 }
 .tab-content {
-	padding-bottom: 90px;
+	padding-bottom: 30px;
 }
 .news-mailing {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 40px 0;
-	border-top: 1px solid #f2dbce;
-	border-bottom: 1px solid #f2dbce;
+	padding-top: 30px;
 }
 .news-mailing__text {
 	display: flex;
@@ -3019,7 +3034,7 @@ input[type=checkbox], input[type=radio] {
 	border-radius: 25px;
 }
 .product-popup .block-select {
-	justify-content: normal;
+    justify-content: space-between;
 	margin-top: 20px;
 }
 .product-popup .block-select__element.block-input-color {
@@ -3124,7 +3139,10 @@ input[type=checkbox], input[type=radio] {
 	padding-left: 10px;
 }
 .product-popup .block-select__element {
-	width: 50%;
+	width: 49%;
+}
+.block-select__element * {
+	line-height: unset !important;
 }
 .product-popup .block-select select {
 	width: 100%;
@@ -3305,7 +3323,7 @@ input[type=checkbox], input[type=radio] {
 	.big-teaser__buttons form label input,
 	.big-teaser__buttons form label button {
 		opacity: 1;
-		color: #A77A5E !important;
+		color: #919191 !important;
 		font-size: 14px !important;
 		font-weight: 300;
 		line-height: 30px;
