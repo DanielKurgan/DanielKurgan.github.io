@@ -587,6 +587,10 @@ $(document).ready(function () {
   })
 
   // PRODUCT POPUP
+  $(".product-popup .product-popup__background").click(function () {
+    $(".product-popup").fadeOut();
+    $("body").css("overflow", "visible");
+  });
   $(".product-popup__close").click(function () {
     $(".product-popup").fadeOut();
     $("body").css("overflow", "visible");
