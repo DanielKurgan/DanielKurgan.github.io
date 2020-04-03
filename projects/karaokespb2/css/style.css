@@ -320,6 +320,7 @@ input {
 }
 .booking__button:hover {
 	opacity: 0.7;
+	border: 5px solid #FF0000 !important;
 }
 .orange_bg {
 	background: #E8AF08;
@@ -651,7 +652,7 @@ header {
 	background: #FEC107;
 	overflow: hidden;
 }
-.reservation__form-block:before {
+.popup-reservation .reservation__form-block:before {
 	content: ' ';
 	position: absolute;
 	top: -160px;
@@ -693,7 +694,7 @@ header {
 }
 .form__button_default {
 	width: 100%;
-	height: 50px;
+	min-height: 50px;
 	font-size: 30px;
 	line-height: 36px;
 	color: white;
@@ -701,7 +702,8 @@ header {
 	transition: 0.4s;
 }
 .form__button_default:hover {
-	opacity: 0.4;
+	color: #FF0000;
+	background: white;
 }
 /*RESERVATION SECTION END*/
 
