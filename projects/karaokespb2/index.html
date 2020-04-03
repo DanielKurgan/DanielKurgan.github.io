@@ -12,6 +12,7 @@
 	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
 	
 	<!-- LINKS -->
+	<link rel="stylesheet" href="css/hamburgers.css">
 	<link rel="stylesheet" href="css/animate.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/fonts.css">
@@ -47,7 +48,13 @@
 						<div class="menu-content">
 							<div class="menu-content__left">
 								<a href="https://karaokefriends.ru/"><img src="img/logo.png" alt="img" class="logo"></a>
+
 								<div class="menu">
+									<button class="hamburger hamburger--squeeze" type="button">
+									  <span class="hamburger-box">
+									    <span class="hamburger-inner"></span>
+									  </span>
+									</button>
 									<ul>
 										<li><a href="https://karaokefriends.ru/">Главная</a></li>
 										<li><a href="/karaoke-na-nevskom-spb.html">На Конюшенной</a></li>
@@ -55,6 +62,7 @@
 										<li><a href="karaoke-v-centre-spb.html">На Жуковского</a></li>
 									</ul>
 								</div>
+
 							</div>
 							<a href="tel:+78129850011" class="header__number number">+7(812)985-00-11</a>
 						</div>
@@ -215,8 +223,8 @@
 						<span class="reservation__title ">Забронировать столик</span>
 						<div class="reservation__form-block">
 							<form class="reservation__form" action="mail.php" method="POST">
-								<input name="user_name" class="reservation__form__input form__input_default" type="text" placeholder="Имя">	
-								<input name="user_phone" class="reservation__form__input form__input_default mask-phone form-control" type="text" placeholder="Телефон">	
+								<input required name="user_name" class="reservation__form__input form__input_default" type="text" placeholder="Имя">	
+								<input required name="user_phone" class="reservation__form__input form__input_default mask-phone form-control" type="text" placeholder="Телефон">	
 								<button class="form__button_default">Отправить</button>
 							</form>
 						</div>
@@ -240,8 +248,8 @@
 				<div class="reservation__form-block">
 					<div class="popup-reservation__close"></div>
 					<form class="reservation__form" action="mail.php" method="POST">
-						<input name="user_name" class="reservation__form__input form__input_default" type="text" placeholder="Имя">	
-						<input name="user_phone" class="reservation__form__input form__input_default mask-phone form-control" type="text" placeholder="Телефон">	
+						<input required name="user_name" class="reservation__form__input form__input_default" type="text" placeholder="Имя">	
+						<input required name="user_phone" class="reservation__form__input form__input_default mask-phone form-control" type="text" placeholder="Телефон">	
 						<button class="form__button_default">Отправить</button>
 					</form>
 				</div>
