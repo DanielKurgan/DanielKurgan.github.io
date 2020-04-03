@@ -299,8 +299,8 @@
 		right: 10px;
 	}
 	.reservationDecorCircleBig {
-		top: -124px;
-		right: -183px;
+    top: -124px;
+    right: -133px;
 	}
 	.reservation__img {
 		width: 284px;
@@ -527,9 +527,10 @@
 		top: auto;
 		bottom: 30px;
 	}
-	.reservationDecorCircleBig.decorCircleBig {
-		right: -150px;
-	}
+.reservationDecorCircleBig {
+    top: -104px;
+    right: -113px;
+}
 }
 
 @media (max-width: 450px){
@@ -555,6 +556,8 @@
 	.decorCircleBig {
 		width: 187px;
 		height: 187px;
+	    top: -94px;
+	    right: -93px;
 	}
 	.welcomeCrossSmall {
 		top: 323px;
