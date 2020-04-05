@@ -615,6 +615,7 @@ $(document).ready(function () {
     $("body").css("overflow", "hidden");
   });
 
+<<<<<<< HEAD
   $(".catalog-items__item-image").click(function () {
     $(".product-popup").fadeIn();
     $(".product-popup").css("display", "flex");
@@ -625,6 +626,88 @@ $(document).ready(function () {
     e.preventDefault();
     $(this).closest('.point-block').fadeOut();
   });
+=======
+    // INPUT COLORS OPEN
+    $(".select-block__colors__input").click(function(){
+     $(this).parent().find(".select-block__colors").toggleClass("flex");
+   });
+
+    // COLOR SELECT INPUT
+    $(document).ready(function () {
+     $('.input-color').click(function(){
+      $(this).parent().parent().parent().parent().find(".block-input-color .placeholder").css('background', $inputColor);
+      $(this).parent().parent().find(".select-block__colors").toggleClass("flex");
+    })
+   });
+
+    // SIZE INPUT HIDE PLACEHOLDER
+    $(document).ready(function () {
+     $('.block-select__element select').click(function(){
+      $(this).parent().parent().find(".placeholder").css("opacity","0");
+    })
+   });
+
+    // PRODUCT POPUP
+    $(".product-popup__close").click(function(){
+     $(".product-popup").fadeOut();
+     $("body").css("overflow", "visible");
+   });
+    $(".product-popup__interactive-button").click(function(){
+     $(".product-popup").fadeOut();
+     $("body").css("overflow", "visible");
+   });
+    $(".product-popup__background").click(function(){
+     $(".product-popup").fadeOut();
+     $("body").css("overflow", "visible");
+   });
+    $(".item-kit .item-kit__block-image").click(function(){
+     $(".product-popup").fadeIn();
+     $(".product-popup").css("display", "flex");
+     $("body").css("overflow", "hidden");
+   });
+
+    document.addEventListener('keydown', function (e) {
+     if(e.keyCode === 27) $('.product-popup').fadeOut();
+     $("body").css("overflow", "visible");
+   }); 
+
+    $('a').on('click', function(e){
+     $('html,body').stop().animate({ scrollTop: $(this.hash).offset().top }, 1000);
+     e.preventDefault();
+   });
+
+    $('[data-fancybox]').fancybox({
+     thumbs : {
+      fitToView: true, 
+      autoResize: true, 
+      autoCenter: true, 
+      autoSize:true
+    }
+  });
+    
+$(document).ready(function(){
+    window.onload = function() {
+     $('.comparison-slider-mobile').matchHeight();
+     $('.catalog-items__item-content').matchHeight();
+     $('.catalog-items__item').matchHeight();
+     $('.catalog-items__item-inner').matchHeight();
+     $('.catalog-items__item-container').matchHeight();
+     $('.item-kit__block-content').matchHeight();
+     $('.order-page__payment-method__block').matchHeight();
+    };
+});
+    // Наивысшая высота блока
+    $(document).ready(function(){
+      var array = $(".catalog-items__item-content");
+      var height = 0;
+      for(i = 0; i < array.length; i++){
+        if($(array[i]).height() > height){
+          height = $(array[i]).height();
+        }
+      }
+      $(array).height(height);
+    });
+>>>>>>> parent of 488dbac... Правки
 
   $('.select-profile, .select-filter').select2({
     minimumResultsForSearch: Infinity
