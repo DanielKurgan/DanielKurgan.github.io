@@ -19,9 +19,14 @@ $(document).ready(function () {
   });
 });
 
+$('.order-reload').click(function () {
+  $('.order-reload').removeClass('delivery-here-selected');
+  $(this).addClass('delivery-here-selected');
+});
+
+
 var width = $(window).width();
 $(document).ready(function () {
-
 
     $(".select-block__colors__input").click(function(){
      $(this).parent().find(".select-block__colors").toggleClass("flex");
@@ -38,10 +43,7 @@ $(document).ready(function () {
       $('.block-select__element select').click(function(){
         $(this).parent().parent().find(".placeholder").css("opacity","0");
       });
-
-
-
-
+      
   // COLOR SELECT INPUT
   $('.select2-results__option').click(function () {
     alert("HELO");
@@ -56,14 +58,14 @@ $(document).ready(function () {
     alert("XUY");
   });
 
-  // $(".select-size select").select2({
-  //   placeholder: "Размер",
-  //   minimumResultsForSearch: -1,
-  // });
-  // $(".select-color select").select2({
-  //   placeholder: "Цвет",
-  //   minimumResultsForSearch: -1,
-  // });
+  $(".select-size select").select2({
+    placeholder: "Размер",
+    minimumResultsForSearch: -1,
+  });
+  $(".select-color select").select2({
+    placeholder: "Цвет",
+    minimumResultsForSearch: -1,
+  });
 
   // Выравниваем по высоте
   function matchHeight() {
@@ -207,18 +209,22 @@ $(document).on('click', '#basket-toggle', function (e) {
   if (width > 1169) {
     $('.basket-popup').toggleClass('show-popup');
   } else {
-    $('.basket-mob, .basket-block-mobile').fadeToggle(150).toggleClass('opened');
-    $('.basket-icon').css({ zIndex: '2003' });
-    $('.basket-number').css({ zIndex: '2004' });
+    $('.basket-mob').toggleClass('opened');
+    $('.dark-bg-basket').toggleClass('opened');
   };
 });
+
+$('.dark-bg-basket').click(function () {
+  $('.basket-mob, .basket-block-mobile, .dark-bg-basket, .menu-mobile').removeClass('opened');
+  $('body').removeClass('overflow-none');
+})
 
 // HEADER - MENU POPUP
 $(document).on('click', '.menu-toggle', function (e) {
   e.preventDefault();
-  $('.menu-mobile').fadeToggle(150).toggleClass('opened');
-  $('.basket-icon').css({ zIndex: '100' });
-  $('.basket-number').css({ zIndex: '101' });
+  $('.menu-mobile').toggleClass('opened');
+  $('body').removeClass('overflow-none');
+  $('.dark-bg-basket').toggleClass('opened');
 });
 
 
@@ -283,50 +289,68 @@ $(document).ready(function () {
 
 
   // FIXED HEADER
-  $(document).on('click', '.menu-toggle', function () {
-    if (($('.menu-mobile').hasClass('opened')) && width < 1170) {
-      $('.navigation').css({ position: 'relative' });
-      $('.header').css({ zIndex: 'auto' });
-      window.scrollTo({ top: 0 });
-      $('.remover').removeClass('menu-fixed');
-    }
-    else {
-      $('.navigation').css({ position: 'fixed' });
-      $('.header').css({ zIndex: '9999' });
-      $('.remover').addClass('menu-fixed');
-    }
-  });
+
+
+$('.address-input').click(function () {
+ if ($('#radio0').is(':checked')) {
+   $('.pickpoint-btn').fadeIn();
+ }
+ else {
+   $('.pickpoint-btn').fadeOut();
+ }
+});
+
 
   $('#addAddress').click(function (e) {
     e.preventDefault();
-    $('.background-dark').fadeIn();
-    $('.address-popup__wrapper').fadeIn();
+    $("body").css("overflow", "hidden");
+    $('.address-popup__wrapper, .background-dark, .close-first-btn, .first-btn').fadeIn();
   });
 
   $('#addDelivery').click(function (e) {
     e.preventDefault();
-    $('.background-dark').fadeIn();
-    $('.delivery-popup__wrapper').fadeIn();
+    $('.delivery-popup__wrapper, .third-btn, .select-btn, .close-second-btn').fadeIn();
+    $('.first-btn, .close-first-btn').hide();
+  });
+
+  $('.third-btn, .close-second-btn').click(function () {
+    $('.delivery-popup__wrapper, .third-btn').fadeOut();
+    $('.first-btn, .close-first-btn').fadeIn();
+    $('.select-btn, .close-second-btn').hide();
+  });
+
+  $('#addDelivery-btn').click(function (e) {
+    e.preventDefault();
+    $("body").css("overflow", "hidden");
+    $('.delivery-popup__wrapper, .second-btn, .background-dark, .select-btn, .close-first-btn').fadeIn();
   });
 
 
-  $('.background-dark').click(function () {
-    $('.address-popup__wrapper, .delivery-popup__wrapper, .background-dark').fadeOut();
+  $('.background-dark, .first-btn, .second-btn, .first-btn, .close-first-btn').click(function () {
+    $('.address-popup__wrapper, .delivery-popup__wrapper, .background-dark, .popup-close-button, .select-btn, .close-first-btn, .close-second-btn').fadeOut();
+    $("body").css("overflow", "visible");
   });
 
 
   $(document).on('click', '.basket-open', function () {
     if (width < 1170 && $('.basket-mob').hasClass('opened')) {
-      $('.navigation').css({ position: 'relative' });
-      $('.header').css({ zIndex: 'auto' });
-      window.scrollTo({ top: 0 });
-      $('.remover').removeClass('menu-fixed');
       $('body').addClass('overflow-none');
     }
     else {
       if (width < 1170) {
-        $('.navigation').css({ position: 'fixed' });
-        $('.header').css({ zIndex: '9999' });
+        $('.remover').addClass('menu-fixed');
+        $('body').removeClass('overflow-none');
+      }
+    }
+  });
+
+  
+  $(document).on('click', '.menu-toggle', function () {
+    if (width < 1170 && $('.menu-mobile').hasClass('opened')) {
+      $('body').addClass('overflow-none');
+    }
+    else {
+      if (width < 1170) {
         $('.remover').addClass('menu-fixed');
         $('body').removeClass('overflow-none');
       }
@@ -397,24 +421,24 @@ $(document).ready(function () {
       arrows: false,
       dots: true,
       responsive: [
-      {
-        breakpoint: 3000,
-        settings: "unslick"
-      },
-      {
-        breakpoint: 1000,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2
-        }
-      },
-      {
-        breakpoint: 700,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      },
+        {
+          breakpoint: 3000,
+          settings: "unslick"
+        },
+        {
+          breakpoint: 1000,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 700,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        },
       ]
     });
   });
@@ -429,27 +453,27 @@ $(document).ready(function () {
         dots: false,
         asNavFor: '.sponsors-botblock',
         responsive: [
-        {
-          breakpoint: 1160,
-          settings: {
-            slidesToShow: 4,
-            slidesToScroll: 4,
+          {
+            breakpoint: 1160,
+            settings: {
+              slidesToShow: 4,
+              slidesToScroll: 4,
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2
+            }
           }
-        },
-        {
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2
-          }
-        }
         ]
       });
     };
@@ -465,27 +489,27 @@ $(document).ready(function () {
         dots: true,
         asNavFor: '.sponsors-upblock',
         responsive: [
-        {
-          breakpoint: 1160,
-          settings: {
-            slidesToShow: 4,
-            slidesToScroll: 4,
+          {
+            breakpoint: 1160,
+            settings: {
+              slidesToShow: 4,
+              slidesToScroll: 4,
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2
+            }
           }
-        },
-        {
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2
-          }
-        }
         ]
       });
     };
@@ -501,27 +525,27 @@ $(document).ready(function () {
     dots: true,
     arrows: false,
     responsive: [
-    {
-      breakpoint: 1200,
-      settings: {
-        slidesToShow: 4,
-        slidesToScroll: 1,
-      }
-    },
-    {
-      breakpoint: 992,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 1,
-      }
-    },
-    {
-      breakpoint: 750,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1,
-      }
-    },
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 750,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        }
+      },
     ]
   });
 
@@ -607,10 +631,6 @@ $(document).ready(function () {
   })
 
   // PRODUCT POPUP
-  $(".product-popup .product-popup__background").click(function () {
-    $(".product-popup").fadeOut();
-    $("body").css("overflow", "visible");
-  });
   $(".product-popup__close").click(function () {
     $(".product-popup").fadeOut();
     $("body").css("overflow", "visible");
@@ -641,20 +661,71 @@ $(document).ready(function () {
     $("body").css("overflow", "hidden");
   });
 
+  $(".item-counter-btn").on("click", function () {
+    var $button = $(this);
+    var oldValue = $button.parent().find("input").val();
+    if ($button.text() == "+") {
+        var newVal = parseFloat(oldValue) + 1;
+    } else {
+        if (oldValue > 1) {
+            var newVal = parseFloat(oldValue) - 1;
+        } else {
+            newVal = 1;
+        }
+    }
+    $button.parent().find("input").val(newVal);
+});
+
+
   $('.remove-address').click(function (e) {
     e.preventDefault();
     $(this).closest('.point-block').fadeOut();
   });
-
+  $('.your-order-remove').click(function () {
+    $(this).closest('.your-order__item').fadeOut();
+  });
   $('.select-profile, .select-filter').select2({
     minimumResultsForSearch: Infinity
   });
 
   document.addEventListener('keydown', function (e) {
-    if (e.keyCode === 27) $('.product-popup, .address-popup__wrapper, .background-dark, .delivery-popup__wrapper').fadeOut();
+    if (e.keyCode === 27) $('.product-popup, .address-popup__wrapper, .delivery-popup__wrapper, .background-dark, .popup-close-button, .select-btn, .close-first-btn, .close-second-btn').fadeOut();
     $("body").css("overflow", "visible");
   });
 
+  $('#order-pickpoint').click(function () {
+    if ($('#order-pickpoint').is(':checked')) {
+      $('.order-cour').slideUp();
+      $('.delivery-type-block').removeClass('order-block-opened');
+    $('#order-pickpoint').closest('.delivery-type-block').addClass('order-block-opened');
+    $('.order-pick').slideDown('slow');
+    }
+    else {
+    $('.order-pick').slideUp();
+    }
+  });
+
+  $('#order-courier').click(function () {
+    if ($('#order-courier').is(':checked')) {
+      $('.delivery-type-block').removeClass('order-block-opened');
+      $('.order-pick').slideUp();
+    $('#order-courier').closest('.delivery-type-block').addClass('order-block-opened');
+    $('.order-cour').slideDown('slow');
+    }
+    else {
+    $('.order-cour').slideUp();
+    }
+  });
+
+  $('#order-yourself').click(function () {
+    if ($('#order-yourself').is(':checked')) {
+    $('.delivery-type-block').removeClass('order-block-opened');
+    $('.order-pick, .order-cour').slideUp();
+    $('#order-yourself').closest('.delivery-type-block').addClass('order-block-opened');
+    }
+    else {
+    }
+  });
 
   $('a').on('click', function (e) {
     $('html,body').stop().animate({ scrollTop: $(this.hash).offset().top }, 1000);
@@ -713,25 +784,25 @@ $(document).ready(function () {
     nextArrow: '<button id="next" class="slick-arrow2" type="button"></button>',
     prevArrow: '<button id="prev" class="slick-arrow2" type="button"></button>',
     responsive: [
-    {
-      breakpoint: 1200,
-      settings: {
-        slidesToShow: 4,
-      }
-    },
-    {
-      breakpoint: 992,
-      settings: {
-        slidesToShow: 3,
-      }
-    },
-    {
-      breakpoint: 800,
-      settings: {
-        slidesToShow: 2,
-        swipe: false,
-      }
-    },
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 4,
+        }
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 2,
+          swipe: false,
+        }
+      },
 
     ]
   });
@@ -748,24 +819,24 @@ $(document).ready(function () {
     arrows: false,
 
     responsive: [
-    {
-      breakpoint: 1200,
-      settings: {
-        slidesToShow: 4,
-      }
-    },
-    {
-      breakpoint: 992,
-      settings: {
-        slidesToShow: 3,
-      }
-    },
-    {
-      breakpoint: 800,
-      settings: {
-        slidesToShow: 2,
-      }
-    },
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 4,
+        }
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
     ]
   });
 
@@ -793,24 +864,24 @@ $(document).ready(function () {
       prevArrow: '<button id="prev-charMobile" class="slider-mobile__arrows__left" type="button"></button>',
       nextArrow: '<button id="next-charMobile" class="slider-mobile__arrows__right" type="button"></button>',
       responsive: [
-      {
-        breakpoint: 300,
-        settings: 'unslick'
-      },
-      {
-        breakpoint: 800,
-        settings: {
-          asNavFor: '.parameters-slider-mobile1',
-          variableWidth: false,
-          infinite: false,
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          arrows: true,
-          appendArrows: $('.slider-mobile__arrows1'),
-          prevArrow: '<button id="prev-charMobile" class="slider-mobile__arrows__left" type="button"></button>',
-          nextArrow: '<button id="next-charMobile" class="slider-mobile__arrows__right" type="button"></button>',
-        }
-      },
+        {
+          breakpoint: 300,
+          settings: 'unslick'
+        },
+        {
+          breakpoint: 800,
+          settings: {
+            asNavFor: '.parameters-slider-mobile1',
+            variableWidth: false,
+            infinite: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true,
+            appendArrows: $('.slider-mobile__arrows1'),
+            prevArrow: '<button id="prev-charMobile" class="slider-mobile__arrows__left" type="button"></button>',
+            nextArrow: '<button id="next-charMobile" class="slider-mobile__arrows__right" type="button"></button>',
+          }
+        },
       ]
     });
 
@@ -826,21 +897,21 @@ $(document).ready(function () {
       slidesToScroll: 1,
       arrows: false,
       responsive: [
-      {
-        breakpoint: 300,
-        settings: 'unslick'
-      },
-      {
-        breakpoint: 800,
-        settings: {
-          asNavFor: '.comparison-slider-mobile1',
-          variableWidth: false,
-          infinite: false,
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          arrows: false,
-        }
-      },
+        {
+          breakpoint: 300,
+          settings: 'unslick'
+        },
+        {
+          breakpoint: 800,
+          settings: {
+            asNavFor: '.comparison-slider-mobile1',
+            variableWidth: false,
+            infinite: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+          }
+        },
       ]
     });
 
@@ -856,24 +927,24 @@ $(document).ready(function () {
       nextArrow: '<button id="next-charMobile" class="slider-mobile__arrows__right" type="button"></button>',
       appendArrows: $('.slider-mobile__arrows2'),
       responsive: [
-      {
-        breakpoint: 300,
-        settings: 'unslick'
-      },
-      {
-        breakpoint: 800,
-        settings: {
-          asNavFor: '.parameters-slider-mobile2',
-          variableWidth: false,
-          infinite: false,
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          arrows: true,
-          prevArrow: '<button id="prev-charMobile" class="slider-mobile__arrows__left" type="button"></button>',
-          nextArrow: '<button id="next-charMobile" class="slider-mobile__arrows__right" type="button"></button>',
-          appendArrows: $('.slider-mobile__arrows2'),
-        }
-      },
+        {
+          breakpoint: 300,
+          settings: 'unslick'
+        },
+        {
+          breakpoint: 800,
+          settings: {
+            asNavFor: '.parameters-slider-mobile2',
+            variableWidth: false,
+            infinite: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true,
+            prevArrow: '<button id="prev-charMobile" class="slider-mobile__arrows__left" type="button"></button>',
+            nextArrow: '<button id="next-charMobile" class="slider-mobile__arrows__right" type="button"></button>',
+            appendArrows: $('.slider-mobile__arrows2'),
+          }
+        },
       ]
     });
 
@@ -887,21 +958,21 @@ $(document).ready(function () {
       slidesToScroll: 1,
       arrows: false,
       responsive: [
-      {
-        breakpoint: 300,
-        settings: 'unslick'
-      },
-      {
-        breakpoint: 800,
-        settings: {
-          asNavFor: '.comparison-slider-mobile2',
-          variableWidth: false,
-          infinite: false,
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          arrows: false,
-        }
-      },
+        {
+          breakpoint: 300,
+          settings: 'unslick'
+        },
+        {
+          breakpoint: 800,
+          settings: {
+            asNavFor: '.comparison-slider-mobile2',
+            variableWidth: false,
+            infinite: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+          }
+        },
       ]
     });
 
