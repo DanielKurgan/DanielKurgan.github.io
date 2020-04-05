@@ -749,6 +749,29 @@ $(document).ready(function () {
     ]
   });
 
+<<<<<<< HEAD
+=======
+
+
+        $('.comparison-slider-mobile2').slick({
+          asNavFor: '.parameters-slider-mobile2',
+          variableWidth: false,
+          infinite: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: true,
+          prevArrow: '<button id="prev-charMobile" class="slider-mobile__arrows__left" type="button"></button>',
+          nextArrow: '<button id="next-charMobile" class="slider-mobile__arrows__right" type="button"></button>',
+        });
+        $('.parameters-slider-mobile2').slick({
+          asNavFor: '.comparison-slider-mobile2',
+          variableWidth: false,
+          infinite: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+        });
+>>>>>>> parent of c22ec21... 1
 
   function sliderMobileItemWidth() {
     $catalogItemWidth = $(".catalog-items__item").css("width");
