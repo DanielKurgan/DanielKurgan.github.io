@@ -2934,7 +2934,7 @@ body .select-block__colors-name {
 }
 .product-popup {
 	display: none;
-	z-index: 999;
+	z-index: 999999;
 	position: fixed;
 	top: 0;
 	right: 0;
@@ -3484,6 +3484,7 @@ body .select-block__colors-name {
 		width: 100%;
 		max-width: 100% !important;
 		margin-bottom: 0;
+		height: auto !important;
 	}
 
 	/*COMPARISON PAGE*/

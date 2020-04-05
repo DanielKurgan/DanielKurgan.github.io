@@ -56,14 +56,14 @@ $(document).ready(function () {
     alert("XUY");
   });
 
-  $(".select-size select").select2({
-    placeholder: "Размер",
-    minimumResultsForSearch: -1,
-  });
-  $(".select-color select").select2({
-    placeholder: "Цвет",
-    minimumResultsForSearch: -1,
-  });
+  // $(".select-size select").select2({
+  //   placeholder: "Размер",
+  //   minimumResultsForSearch: -1,
+  // });
+  // $(".select-color select").select2({
+  //   placeholder: "Цвет",
+  //   minimumResultsForSearch: -1,
+  // });
 
   // Выравниваем по высоте
   function matchHeight() {
