@@ -2772,7 +2772,7 @@ input[type=checkbox], input[type=radio] {
 .block-input-color {
 	display: flex;
 }
-.select-block__colors-name {
+body .select-block__colors-name {
 	line-height: 30px !important;
 	margin: 0 0 0 10px;
 	color: #898989 !important;

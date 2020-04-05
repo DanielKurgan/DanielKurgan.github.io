@@ -23,7 +23,9 @@ var width = $(window).width();
 $(document).ready(function () {
 
 
-
+    $(".select-block__colors__input").click(function(){
+     $(this).parent().find(".select-block__colors").toggleClass("flex");
+   });
 
     // COLOR SELECT INPUT
       $('.input-color').click(function(){
