@@ -939,3 +939,14 @@ window.addEventListener("orientationchange", function () {
   $(".slider-mobile__arrows").css("width", $sliderMobileArrowsWidth);
 });
 
+<<<<<<< HEAD
+=======
+    $(document).ready(function(){
+      $sliderMobileArrowsWidth = $(".comparison-slider-mobile .catalog-items__item").css("width");
+      $(".slider-mobile__arrows").css("width", $sliderMobileArrowsWidth);
+    });
+    $(window).resize(function(){
+      $sliderMobileArrowsWidth = $(".comparison-slider-mobile .catalog-items__item").css("width");
+      $(".slider-mobile__arrows").css("width", $sliderMobileArrowsWidth);
+    });
+>>>>>>> parent of ea349f5... 1
