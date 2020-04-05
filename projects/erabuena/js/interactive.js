@@ -45,6 +45,7 @@ $(document).ready(function () {
     minimumResultsForSearch: -1,
   });
 
+<<<<<<< HEAD
   // Выравниваем по высоте
   function matchHeight() {
     $('.comparison-slider-mobile').matchHeight();
@@ -54,6 +55,36 @@ $(document).ready(function () {
   $(document).ready(matchHeight);
   $(window).resize(matchHeight);
 
+=======
+    // Наивысшая высота блока
+    jQuery(document).ready(function(){
+      function itemContentHeight(){
+        var array = jQuery(".catalog-items__item-content");
+        var height = 0;
+        for(i = 0; i < array.length; i++){
+          if(jQuery(array[i]).height() > height){
+            height = jQuery(array[i]).height();
+          }
+        }
+        jQuery(array).height(height);
+      }
+      setTimeout(itemContentHeight, 1000);
+    });
+
+    jQuery(window).resize(function(){
+      function itemContentHeight(){
+        var array = jQuery(".catalog-items__item-content");
+        var height = 0;
+        for(i = 0; i < array.length; i++){
+          if(jQuery(array[i]).height() > height){
+            height = jQuery(array[i]).height();
+          }
+        }
+        jQuery(array).height(height);
+      }
+      setTimeout(itemContentHeight, 1000);
+    });
+>>>>>>> parent of 5515cda... Перенёс правки бэкенда
 
   // Наивысшая высота блока на декстопных карточках товара
   if (width > 800) {
@@ -66,6 +97,7 @@ $(document).ready(function () {
           heightICH = jQuery(arrayICH[i]).height();
         }
       }
+<<<<<<< HEAD
       jQuery(arrayICH).height(heightICH);
     }
     $(document).ready(itemContentHeight);
@@ -77,26 +109,60 @@ $(document).ready(function () {
       for (i = 0; i < arrayIH.length; i++) {
         if (jQuery(arrayIH[i]).height() > heightIH) {
           heightIH = jQuery(arrayIH[i]).height();
+=======
+      setTimeout(itemContentHeight222, 1000);
+    });
+
+    jQuery(window).resize(function(){
+      function itemContentHeight222(){
+        var array22 = jQuery(".catalog-items__item");
+        var height22 = 0;
+        for(i = 0; i < array22.length; i++){
+          if(jQuery(array22[i]).height() > height22){
+            height22 = jQuery(array22[i]).height();
+          }
+>>>>>>> parent of 5515cda... Перенёс правки бэкенда
         }
       }
+<<<<<<< HEAD
       jQuery(arrayIH).height(heightIH);
     }
     $(document).ready(itemHeight);
     $(window).resize(itemHeight);
+=======
+      setTimeout(itemContentHeight222, 1000);
+    });
+  };
+});
+
+>>>>>>> parent of 5515cda... Перенёс правки бэкенда
 
   };
 
   // Наивысшая высота на мобильных слайдерах у карточки
   if (width < 799) {
 
+<<<<<<< HEAD
     function itemContentHeightMob() {
       var arrayICHM = jQuery(".comparison-slider-mobile .catalog-items__item-content");
       var heightICHM = 0;
       for (i = 0; i < arrayICHM.length; i++) {
         if (jQuery(arrayICHM[i]).height() > heightICHM) {
           heightICHM = jQuery(arrayICHM[i]).height();
+=======
+  if(width < 800){
+    jQuery(document).ready(function(){
+      function itemContentHeightMob(){
+        var array33 = jQuery(".comparison-slider-mobile .catalog-items__item-content");
+        var height33 = 0;
+        for(i = 0; i < array33.length; i++){
+          if(jQuery(array33[i]).height() > height33){
+            height33 = jQuery(array33[i]).height();
+          }
+>>>>>>> parent of 5515cda... Перенёс правки бэкенда
         }
       }
+<<<<<<< HEAD
       jQuery(arrayICHM).height(heightICHM);
     }
     $(document).ready(itemContentHeightMob);
@@ -108,13 +174,58 @@ $(document).ready(function () {
       for (i = 0; i < arrayIHM.length; i++) {
         if (jQuery(arrayIHM[i]).height() > heightIHM) {
           heightIHM = jQuery(arrayIHM[i]).height();
+=======
+      setTimeout(itemContentHeightMob, 1100);
+    });
+
+    jQuery(window).resize(function(){
+      function itemContentHeightMob(){
+        var array33 = jQuery(".comparison-slider-mobile .catalog-items__item-content");
+        var height33 = 0;
+        for(i = 0; i < array33.length; i++){
+          if(jQuery(array33[i]).height() > height33){
+            height33 = jQuery(array33[i]).height();
+          }
+>>>>>>> parent of 5515cda... Перенёс правки бэкенда
         }
       }
+<<<<<<< HEAD
       jQuery(arrayIHM).height(heightIHM);
     }
     $(document).ready(itemHeightMob);
     $(window).resize(itemHeightMob);
 
+=======
+      setTimeout(itemContentHeightMob, 1100);
+    });
+
+    jQuery(document).ready(function(){
+      function itemContentHeight233(){
+        var array23 = jQuery(".comparison-slider-mobile .catalog-items__item");
+        var height23 = 0;
+        for(i = 0; i < array23.length; i++){
+          if(jQuery(array23[i]).height() > height23){
+            height23 = jQuery(array23[i]).height();
+          }
+        }
+        jQuery(array23).height(height23);
+      }
+      setTimeout(itemContentHeight233, 1000);
+    });
+    jQuery(window).resize(function(){
+      function itemContentHeight233(){
+        var array23 = jQuery(".comparison-slider-mobile .catalog-items__item");
+        var height23 = 0;
+        for(i = 0; i < array23.length; i++){
+          if(jQuery(array23[i]).height() > height23){
+            height23 = jQuery(array23[i]).height();
+          }
+        }
+        jQuery(array23).height(height23);
+      }
+      setTimeout(itemContentHeight233, 1000);
+    });
+>>>>>>> parent of 5515cda... Перенёс правки бэкенда
   };
 
   // Ползунки у Range Sliders
@@ -261,6 +372,7 @@ $(document).ready(function () {
     if (e.keyCode === 27) $('.basket-popup, .phone-popup').removeClass('show-popup');
   });
 
+<<<<<<< HEAD
 
   // FIXED HEADER
   $(document).on('click', '.menu-toggle', function () {
@@ -504,11 +616,29 @@ $(document).ready(function () {
       },
     ]
   });
+=======
+
+
+ $(document).on('click', '.basket-open', function() {
+  if (width < 1170 && $('.basket-mob').hasClass('opened')) {
+   $('.navigation').css({position: 'relative'});
+   $('.header').css({zIndex: 'auto'});
+   window.scrollTo({top: 0, behavior: 'smooth'});
+ }
+ else {
+   if (width < 1170) {
+    $('.navigation').css({position: 'fixed'});
+    $('.header').css({zIndex: '9999'});
+  }   
+}
+});
+>>>>>>> parent of 5515cda... Перенёс правки бэкенда
 
 
   // INPUT NUMBER
   $('.numb').number_plugin();
 
+<<<<<<< HEAD
 
   // STICKY BLOCK SIDEBAR AND MENU
   // SIDEBAR
@@ -516,6 +646,40 @@ $(document).ready(function () {
     // Отступ сверху
     offset_top: 10
   });
+=======
+    // SLICK SLIDERS
+    $('.tab-pane').slick({
+     variableWidth: false,
+     infinite: true,
+     slidesToShow: 5,
+     slidesToScroll: 1,
+     dots: true,
+     arrows: false,
+     responsive: [ 
+     {
+      breakpoint: 1200,
+      settings: {
+       slidesToShow: 4,
+       slidesToScroll: 1,
+     } 
+   },
+   {
+    breakpoint: 992,
+    settings: {
+     slidesToShow: 3,
+     slidesToScroll: 1,
+   } 
+ },
+ {
+  breakpoint: 750,
+  settings: {
+   slidesToShow: 2,
+   slidesToScroll: 1,
+ } 
+},
+]
+});
+>>>>>>> parent of 5515cda... Перенёс правки бэкенда
 
   // MENU
   if (width < 992) {
@@ -749,6 +913,7 @@ $(document).ready(function () {
     ]
   });
 
+<<<<<<< HEAD
 
   function sliderMobileItemWidth() {
     $catalogItemWidth = $(".catalog-items__item").css("width");
@@ -883,6 +1048,79 @@ $(document).ready(function () {
           }
         },
       ]
+=======
+    $(document).ready(function(){
+      $catalogItemWidth = $(".catalog-items__item").css("width");
+      $(".comparison-slider-mobile").css("width", $catalogItemWidth);
+      $(".comparison-slider-mobile .catalog-items__item").css("width", $catalogItemWidth);
+
+      if ($(window).width() < 800) {
+
+        $('.comparison-slider-mobile1').slick({
+          asNavFor: '.parameters-slider-mobile1',
+          variableWidth: false,
+          infinite: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: true,
+          appendArrows: $('.slider-mobile__arrows1'),
+          prevArrow: '<button id="prev-charMobile" class="slider-mobile__arrows__left" type="button"></button>',
+          nextArrow: '<button id="next-charMobile" class="slider-mobile__arrows__right" type="button"></button>',
+        });
+
+        $('.parameters-slider-mobile1').slick({
+          asNavFor: '.comparison-slider-mobile1',
+          variableWidth: false,
+          infinite: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+        });
+
+        $('.comparison-slider-mobile2').slick({
+          asNavFor: '.parameters-slider-mobile2',
+          variableWidth: false,
+          infinite: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: true,
+          prevArrow: '<button id="prev-charMobile" class="slider-mobile__arrows__left" type="button"></button>',
+          nextArrow: '<button id="next-charMobile" class="slider-mobile__arrows__right" type="button"></button>',
+          appendArrows: $('.slider-mobile__arrows2'),
+        });
+        $('.parameters-slider-mobile2').slick({
+          asNavFor: '.comparison-slider-mobile2',
+          variableWidth: false,
+          infinite: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+        });
+
+      }
+    });
+
+    // СОХРАНЕНИЕ ВЫСОТЫ БЛОКА
+    $(document).ready(function(){
+     $catalogItemHeight = $(".catalog-items__item").css('height');
+     $(".catalog-items__item-container").css('height', $catalogItemHeight);
+   });
+    $(window).resize(function(){
+     $catalogItemHeight = $(".catalog-items__item").css('height');
+     $(".catalog-items__item-container").css('height', $catalogItemHeight);
+   });
+
+    // TEST
+    $(document).ready(function(){
+     $('.foo').offset().top - $('.bar').offset().top
+   });
+
+    // DELETE BUTTON CARD COMPRISON OAGE
+    $(document).ready(function(){
+
+     $(".catalog-items__item").hover(function(){
+      $(this).find(".catalog-items__item-delete").toggleClass("opacityVisible");
+>>>>>>> parent of 5515cda... Перенёс правки бэкенда
     });
 
   });
@@ -939,3 +1177,19 @@ window.addEventListener("orientationchange", function () {
   $(".slider-mobile__arrows").css("width", $sliderMobileArrowsWidth);
 });
 
+<<<<<<< HEAD
+=======
+    $(document).ready(function(){
+      $sliderMobileArrowsWidth = $(".comparison-slider-mobile .catalog-items__item").css("width");
+      $(".slider-mobile__arrows").css("width", $sliderMobileArrowsWidth);
+    });
+    $(window).resize(function(){
+      $sliderMobileArrowsWidth = $(".comparison-slider-mobile .catalog-items__item").css("width");
+      $(".slider-mobile__arrows").css("width", $sliderMobileArrowsWidth);
+    });
+
+      window.addEventListener("orientationchange", function() {
+      $sliderMobileArrowsWidth = $(".comparison-slider-mobile .catalog-items__item").css("width");
+      $(".slider-mobile__arrows").css("width", $sliderMobileArrowsWidth);
+    }, false);
+>>>>>>> parent of 5515cda... Перенёс правки бэкенда
