@@ -2769,7 +2769,6 @@ input[type=checkbox], input[type=radio] {
 	left: 13px;
 	top: 6px;
 }
-<<<<<<< HEAD
 .block-input-color {
 	display: flex;
 }
@@ -2780,8 +2779,6 @@ input[type=checkbox], input[type=radio] {
 	font-size: 13px !important;
 	font-weight: 300 !important;
 }
-=======
->>>>>>> parent of 488dbac... Правки
 .input-color.red input:before {
 	background-color: red;
 }
